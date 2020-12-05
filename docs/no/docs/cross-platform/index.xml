@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zup&#39;s Open Source – Flere plattformer</title>
-    <link>https://zupit.github.io/docs-ritchie/no/docs/cross-platform/</link>
-    <description>Recent content in Flere plattformer on Zup&#39;s Open Source</description>
+    <title>Horusec – Flere plattformer</title>
+    <link>https://zupit.github.io/docs-horus/no/docs/cross-platform/</link>
+    <description>Recent content in Flere plattformer on Horusec</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="https://zupit.github.io/docs-ritchie/no/docs/cross-platform/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://zupit.github.io/docs-horus/no/docs/cross-platform/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Innsiden av monolitter: De grunnleggende konseptene</title>
-      <link>https://zupit.github.io/docs-ritchie/no/docs/cross-platform/the-inside-of-monoliths-the-core-concepts/</link>
+      <link>https://zupit.github.io/docs-horus/no/docs/cross-platform/the-inside-of-monoliths-the-core-concepts/</link>
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-ritchie/no/docs/cross-platform/the-inside-of-monoliths-the-core-concepts/</guid>
+      <guid>https://zupit.github.io/docs-horus/no/docs/cross-platform/the-inside-of-monoliths-the-core-concepts/</guid>
       <description>
         
         
@@ -210,19 +210,19 @@
 &lt;pre&gt;&lt;code&gt;foo := &amp;quot;bar&amp;quot;;
 bar := &amp;quot;foo&amp;quot;;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Code can also use syntax highlighting.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;`var foo = &amp;#34;bar&amp;#34;;`&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#447fcf&#34;&gt;main&lt;/span&gt;() {
+  input := &lt;span style=&#34;color:#ed9d13&#34;&gt;`var foo = &amp;#34;bar&amp;#34;;`&lt;/span&gt;
 
-  &lt;span style=&#34;color:#000&#34;&gt;lexer&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;lexers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;javascript&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;iterator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;_&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;lexer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Tokenise&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;nil&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;styles&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;formatter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;New&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;WithLineNumbers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;())&lt;/span&gt;
+  lexer := lexers.&lt;span style=&#34;color:#447fcf&#34;&gt;Get&lt;/span&gt;(&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;javascript&amp;#34;&lt;/span&gt;)
+  iterator, _ := lexer.&lt;span style=&#34;color:#447fcf&#34;&gt;Tokenise&lt;/span&gt;(&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;nil&lt;/span&gt;, input)
+  style := styles.&lt;span style=&#34;color:#447fcf&#34;&gt;Get&lt;/span&gt;(&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;github&amp;#34;&lt;/span&gt;)
+  formatter := html.&lt;span style=&#34;color:#447fcf&#34;&gt;New&lt;/span&gt;(html.&lt;span style=&#34;color:#447fcf&#34;&gt;WithLineNumbers&lt;/span&gt;())
 
-  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;bytes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Buffer&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;formatter&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Format&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;iterator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;var&lt;/span&gt; buff bytes.Buffer
+  formatter.&lt;span style=&#34;color:#447fcf&#34;&gt;Format&lt;/span&gt;(&amp;amp;buff, style, iterator)
 
-  &lt;span style=&#34;color:#000&#34;&gt;fmt&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Println&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;())&lt;/span&gt;
-&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+  fmt.&lt;span style=&#34;color:#447fcf&#34;&gt;Println&lt;/span&gt;(buff.&lt;span style=&#34;color:#447fcf&#34;&gt;String&lt;/span&gt;())
+}
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Inline code inside table cells should still be distinguishable.&lt;/p&gt;
 &lt;table&gt;
@@ -310,10 +310,10 @@ This is a warning with a title.
     
     <item>
       <title>Docs: Innsiden av rekursjon: Hvordan virker det?</title>
-      <link>https://zupit.github.io/docs-ritchie/no/docs/cross-platform/the-inside-of-recursion-how-does-it-work/</link>
+      <link>https://zupit.github.io/docs-horus/no/docs/cross-platform/the-inside-of-recursion-how-does-it-work/</link>
       <pubDate>Sat, 07 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-ritchie/no/docs/cross-platform/the-inside-of-recursion-how-does-it-work/</guid>
+      <guid>https://zupit.github.io/docs-horus/no/docs/cross-platform/the-inside-of-recursion-how-does-it-work/</guid>
       <description>
         
         
@@ -504,19 +504,19 @@ This is a warning with a title.
 &lt;pre&gt;&lt;code&gt;foo := &amp;quot;bar&amp;quot;;
 bar := &amp;quot;foo&amp;quot;;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Code can also use syntax highlighting.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;`var foo = &amp;#34;bar&amp;#34;;`&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#447fcf&#34;&gt;main&lt;/span&gt;() {
+  input := &lt;span style=&#34;color:#ed9d13&#34;&gt;`var foo = &amp;#34;bar&amp;#34;;`&lt;/span&gt;
 
-  &lt;span style=&#34;color:#000&#34;&gt;lexer&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;lexers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;javascript&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;iterator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;_&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;lexer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Tokenise&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;nil&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;styles&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;formatter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;New&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;WithLineNumbers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;())&lt;/span&gt;
+  lexer := lexers.&lt;span style=&#34;color:#447fcf&#34;&gt;Get&lt;/span&gt;(&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;javascript&amp;#34;&lt;/span&gt;)
+  iterator, _ := lexer.&lt;span style=&#34;color:#447fcf&#34;&gt;Tokenise&lt;/span&gt;(&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;nil&lt;/span&gt;, input)
+  style := styles.&lt;span style=&#34;color:#447fcf&#34;&gt;Get&lt;/span&gt;(&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;github&amp;#34;&lt;/span&gt;)
+  formatter := html.&lt;span style=&#34;color:#447fcf&#34;&gt;New&lt;/span&gt;(html.&lt;span style=&#34;color:#447fcf&#34;&gt;WithLineNumbers&lt;/span&gt;())
 
-  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;bytes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Buffer&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;formatter&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Format&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;iterator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;var&lt;/span&gt; buff bytes.Buffer
+  formatter.&lt;span style=&#34;color:#447fcf&#34;&gt;Format&lt;/span&gt;(&amp;amp;buff, style, iterator)
 
-  &lt;span style=&#34;color:#000&#34;&gt;fmt&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Println&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;())&lt;/span&gt;
-&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+  fmt.&lt;span style=&#34;color:#447fcf&#34;&gt;Println&lt;/span&gt;(buff.&lt;span style=&#34;color:#447fcf&#34;&gt;String&lt;/span&gt;())
+}
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Inline code inside table cells should still be distinguishable.&lt;/p&gt;
 &lt;table&gt;
@@ -604,10 +604,10 @@ This is a warning with a title.
     
     <item>
       <title>Docs: Steg for steg hjelpeartikler</title>
-      <link>https://zupit.github.io/docs-ritchie/no/docs/cross-platform/tutorials/</link>
+      <link>https://zupit.github.io/docs-horus/no/docs/cross-platform/tutorials/</link>
       <pubDate>Fri, 06 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-ritchie/no/docs/cross-platform/tutorials/</guid>
+      <guid>https://zupit.github.io/docs-horus/no/docs/cross-platform/tutorials/</guid>
       <description>
         
         
@@ -623,10 +623,10 @@ This is a warning with a title.
     
     <item>
       <title>Docs: Innsiden av monografer: Hvordan virker det?</title>
-      <link>https://zupit.github.io/docs-ritchie/no/docs/cross-platform/the-inside-of-monographs-how-does-it-work/</link>
+      <link>https://zupit.github.io/docs-horus/no/docs/cross-platform/the-inside-of-monographs-how-does-it-work/</link>
       <pubDate>Fri, 06 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-ritchie/no/docs/cross-platform/the-inside-of-monographs-how-does-it-work/</guid>
+      <guid>https://zupit.github.io/docs-horus/no/docs/cross-platform/the-inside-of-monographs-how-does-it-work/</guid>
       <description>
         
         
@@ -817,19 +817,19 @@ This is a warning with a title.
 &lt;pre&gt;&lt;code&gt;foo := &amp;quot;bar&amp;quot;;
 bar := &amp;quot;foo&amp;quot;;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Code can also use syntax highlighting.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;`var foo = &amp;#34;bar&amp;#34;;`&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#447fcf&#34;&gt;main&lt;/span&gt;() {
+  input := &lt;span style=&#34;color:#ed9d13&#34;&gt;`var foo = &amp;#34;bar&amp;#34;;`&lt;/span&gt;
 
-  &lt;span style=&#34;color:#000&#34;&gt;lexer&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;lexers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;javascript&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;iterator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;_&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;lexer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Tokenise&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;nil&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;styles&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;formatter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;New&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;WithLineNumbers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;())&lt;/span&gt;
+  lexer := lexers.&lt;span style=&#34;color:#447fcf&#34;&gt;Get&lt;/span&gt;(&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;javascript&amp;#34;&lt;/span&gt;)
+  iterator, _ := lexer.&lt;span style=&#34;color:#447fcf&#34;&gt;Tokenise&lt;/span&gt;(&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;nil&lt;/span&gt;, input)
+  style := styles.&lt;span style=&#34;color:#447fcf&#34;&gt;Get&lt;/span&gt;(&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;github&amp;#34;&lt;/span&gt;)
+  formatter := html.&lt;span style=&#34;color:#447fcf&#34;&gt;New&lt;/span&gt;(html.&lt;span style=&#34;color:#447fcf&#34;&gt;WithLineNumbers&lt;/span&gt;())
 
-  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;bytes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Buffer&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;formatter&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Format&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;iterator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;var&lt;/span&gt; buff bytes.Buffer
+  formatter.&lt;span style=&#34;color:#447fcf&#34;&gt;Format&lt;/span&gt;(&amp;amp;buff, style, iterator)
 
-  &lt;span style=&#34;color:#000&#34;&gt;fmt&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Println&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;())&lt;/span&gt;
-&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+  fmt.&lt;span style=&#34;color:#447fcf&#34;&gt;Println&lt;/span&gt;(buff.&lt;span style=&#34;color:#447fcf&#34;&gt;String&lt;/span&gt;())
+}
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Inline code inside table cells should still be distinguishable.&lt;/p&gt;
 &lt;table&gt;
@@ -917,10 +917,10 @@ This is a warning with a title.
     
     <item>
       <title>Docs: Detaljert om kryptografi: Detaljert spesifikasjon</title>
-      <link>https://zupit.github.io/docs-ritchie/no/docs/cross-platform/in-depth-cryptography-detailed-spec/</link>
+      <link>https://zupit.github.io/docs-horus/no/docs/cross-platform/in-depth-cryptography-detailed-spec/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-ritchie/no/docs/cross-platform/in-depth-cryptography-detailed-spec/</guid>
+      <guid>https://zupit.github.io/docs-horus/no/docs/cross-platform/in-depth-cryptography-detailed-spec/</guid>
       <description>
         
         
@@ -1111,19 +1111,19 @@ This is a warning with a title.
 &lt;pre&gt;&lt;code&gt;foo := &amp;quot;bar&amp;quot;;
 bar := &amp;quot;foo&amp;quot;;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Code can also use syntax highlighting.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;`var foo = &amp;#34;bar&amp;#34;;`&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#447fcf&#34;&gt;main&lt;/span&gt;() {
+  input := &lt;span style=&#34;color:#ed9d13&#34;&gt;`var foo = &amp;#34;bar&amp;#34;;`&lt;/span&gt;
 
-  &lt;span style=&#34;color:#000&#34;&gt;lexer&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;lexers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;javascript&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;iterator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;_&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;lexer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Tokenise&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;nil&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;styles&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;formatter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;New&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;WithLineNumbers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;())&lt;/span&gt;
+  lexer := lexers.&lt;span style=&#34;color:#447fcf&#34;&gt;Get&lt;/span&gt;(&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;javascript&amp;#34;&lt;/span&gt;)
+  iterator, _ := lexer.&lt;span style=&#34;color:#447fcf&#34;&gt;Tokenise&lt;/span&gt;(&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;nil&lt;/span&gt;, input)
+  style := styles.&lt;span style=&#34;color:#447fcf&#34;&gt;Get&lt;/span&gt;(&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;github&amp;#34;&lt;/span&gt;)
+  formatter := html.&lt;span style=&#34;color:#447fcf&#34;&gt;New&lt;/span&gt;(html.&lt;span style=&#34;color:#447fcf&#34;&gt;WithLineNumbers&lt;/span&gt;())
 
-  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;bytes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Buffer&lt;/span&gt;
-  &lt;span style=&#34;color:#000&#34;&gt;formatter&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Format&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;iterator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;var&lt;/span&gt; buff bytes.Buffer
+  formatter.&lt;span style=&#34;color:#447fcf&#34;&gt;Format&lt;/span&gt;(&amp;amp;buff, style, iterator)
 
-  &lt;span style=&#34;color:#000&#34;&gt;fmt&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Println&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;())&lt;/span&gt;
-&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+  fmt.&lt;span style=&#34;color:#447fcf&#34;&gt;Println&lt;/span&gt;(buff.&lt;span style=&#34;color:#447fcf&#34;&gt;String&lt;/span&gt;())
+}
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Inline code inside table cells should still be distinguishable.&lt;/p&gt;
 &lt;table&gt;
@@ -1211,10 +1211,10 @@ This is a warning with a title.
     
     <item>
       <title>Docs: Praktiske eksempler</title>
-      <link>https://zupit.github.io/docs-ritchie/no/docs/cross-platform/examples/</link>
+      <link>https://zupit.github.io/docs-horus/no/docs/cross-platform/examples/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-ritchie/no/docs/cross-platform/examples/</guid>
+      <guid>https://zupit.github.io/docs-horus/no/docs/cross-platform/examples/</guid>
       <description>
         
         
