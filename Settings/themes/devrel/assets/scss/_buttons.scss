@@ -1,0 +1,38 @@
+// Buttons
+
+@if $enable-rounded {
+    .btn {
+        border-radius: 1rem;
+
+        &-lg {
+            border-radius: 2rem;
+        }
+
+        &-sm {
+            border-radius: 1rem;
+        }
+    }
+}
+
+.feedback--answer {
+    font-family: Dosis;
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    line-height: 23px;
+    border: 0;
+    border-radius: 12px;
+    padding: 5px 20px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &-yes {
+        background: linear-gradient(90deg, #8dc63f 0%, #40ba8d 100%);
+    }
+
+    &-no {
+        background: linear-gradient(90deg, #ef4123 0%, #f7941e 100%);
+    }
+}

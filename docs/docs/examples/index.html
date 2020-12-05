@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.76.4" />
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+<link rel="alternate" type="application/rss&#43;xml" href="https://zupit.github.io/docs-ritchie/docs/examples/index.xml">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/docs-ritchie/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/docs-ritchie/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/docs-ritchie/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/docs-ritchie/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/docs-ritchie/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/docs-ritchie/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/docs-ritchie/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/docs-ritchie/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/docs-ritchie/favicons/android-192x192.png" sizes="192x192">
+
+<title>Examples | Zup&#39;s Open Source</title><meta property="og:title" content="Examples" />
+<meta property="og:description" content="See your project in action!
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://zupit.github.io/docs-ritchie/docs/examples/" />
+<meta property="og:updated_time" content="2020-11-11T16:05:00-03:00" /><meta property="og:site_name" content="Zup&#39;s Open Source" />
+<meta itemprop="name" content="Examples">
+<meta itemprop="description" content="See your project in action!
+">
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Examples"/>
+<meta name="twitter:description" content="See your project in action!
+"/>
+
+
+
+
+
+<link rel="preload" href="/docs-ritchie/scss/main.min.26502a624d0e0402e1f63adb0b323fad86c0247f19d35ab9df6cf174c270c21c.css" as="style">
+<link href="/docs-ritchie/scss/main.min.26502a624d0e0402e1f63adb0b323fad86c0247f19d35ab9df6cf174c270c21c.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+
+
+
+  </head>
+  <body class="td-section">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+  <a href="/docs-ritchie/">
+    <span class="navbar-logo">
+      
+        
+          <svg width="98" height="50" viewBox="0 0 98 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M28.4381 1.46442 40.5619 8.49913C43.927 10.4517 46 14.0602 46 17.9653V32.0347C46 35.9398 43.927 39.5483 40.5619 41.5009L28.4381 48.5356C25.073 50.4881 20.927 50.4881 17.5619 48.5356L5.43809 41.5009C2.07299 39.5483.0 35.9398.0 32.0347V17.9653C0 14.0602 2.07299 10.4517 5.43809 8.49913L17.5619 1.46442C20.927-.48814 25.073-.48814 28.4381 1.46442zM23.017 8.38859C13.9371 8.38859 6.57629 15.7862 6.57629 24.9116 6.57629 30.4772 9.33675 35.575 13.8442 38.6256 14.5309 39.0903 15.4624 38.9076 15.9248 38.2175 16.3873 37.5274 16.2055 36.5912 15.5188 36.1264L15.4086 36.051C11.7853 33.5467 9.57431 29.4186 9.57431 24.9116 9.57431 17.5886 15.3716 11.6264 22.6054 11.4078L16.5538 17.4896C16.1664 17.879 15.9828 18.3955 16.0039 18.9056 16.0011 18.9453 15.9997 18.9854 15.9997 19.0259 15.9997 19.9652 16.7575 20.7267 17.6922 20.7267L24.5116 20.7261 16.076 29.2044C15.9097 29.3715 15.7809 29.5621 15.6902 29.766 15.5189 30.0318 15.4195 30.3488 15.4195 30.6891 15.4195 31.5706 16.0867 32.2955 16.9415 32.3808 17.2341 32.4559 17.5412 32.4593 17.8352 32.3911L23.7527 32.3897 18.3484 37.8212C17.6119 38.5613 17.6119 39.7614 18.3484 40.5015 18.6667 40.8215 19.0707 41.0032 19.4861 41.0464 19.5299 41.0599 19.5746 41.0715 19.6203 41.0812 20.7295 41.3155 21.8661 41.4345 23.017 41.4345 32.097 41.4345 39.4578 34.037 39.4578 24.9116 39.4578 19.3054 36.6568 14.1754 32.0954 11.1341 31.4056 10.6741 30.4753 10.8633 30.0176 11.5566 29.5599 12.2499 29.7482 13.1848 30.438 13.6448L30.5496 13.72C34.2163 16.2175 36.4597 20.3719 36.4597 24.9116 36.4597 32.2935 30.5686 38.2927 23.2535 38.4195L23.0856 38.4204 29.2215 32.2543C29.7125 31.7609 29.8761 31.0631 29.7125 30.4334L29.7009 30.3596C29.5482 29.578 28.8627 28.9882 28.0402 28.9882h-6.416L29.9581 20.6135C30.6945 19.8734 30.6945 18.6734 29.9581 17.9332 29.8805 17.8553 29.7979 17.7855 29.7105 17.7247 29.416 17.4753 29.0357 17.325 28.6204 17.325L22.0513 17.3245 27.4269 11.9228C28.1634 11.1826 28.1634 9.98259 27.4269 9.24244 27.0727 8.88645 26.6126 8.70167 26.1487 8.68826 25.1236 8.48948 24.0764 8.38859 23.017 8.38859z" fill="url(#paint0_linear)"/><path d="M54.676 19.101V15.474C54.676 14.4427 54.949 13.6887 55.495 13.212 56.0497 12.7353 56.7907 12.497 57.718 12.497 58.6453 12.497 59.3863 12.7353 59.941 13.212 60.4957 13.6887 60.773 14.4427 60.773 15.474V19.101C60.773 20.1323 60.4957 20.8863 59.941 21.363 59.3863 21.8397 58.6453 22.078 57.718 22.078 56.7907 22.078 56.0497 21.8397 55.495 21.363 54.949 20.8863 54.676 20.1323 54.676 19.101zM56.366 19.101C56.366 20.0977 56.8167 20.596 57.718 20.596 58.628 20.596 59.083 20.0977 59.083 19.101V15.474C59.083 14.4773 58.628 13.979 57.718 13.979 56.8167 13.979 56.366 14.4773 56.366 15.474V19.101zM62.2195 21.467v-8.45C62.2195 12.8783 62.2758 12.757 62.3885 12.653 62.5098 12.549 62.6658 12.497 62.8565 12.497H65.4695C66.3621 12.497 67.0771 12.7353 67.6145 13.212 68.1518 13.68 68.4205 14.4167 68.4205 15.422V15.5C68.4205 16.514 68.1388 17.2593 67.5755 17.736 67.0208 18.2127 66.2841 18.451 65.3655 18.451H63.9095V21.467C63.9095 21.6317 63.8228 21.7617 63.6495 21.857 63.4848 21.9523 63.2898 22 63.0645 22 62.8305 22 62.6311 21.9523 62.4665 21.857 62.3018 21.7617 62.2195 21.6317 62.2195 21.467zM63.9095 17.125H65.3655C65.7988 17.125 66.1325 16.9993 66.3665 16.748 66.6091 16.4967 66.7305 16.124 66.7305 15.63V15.474C66.7305 14.98 66.6091 14.6073 66.3665 14.356 66.1325 14.1047 65.7988 13.979 65.3655 13.979H63.9095V17.125zM69.4558 21.467V13.03C69.4558 12.8653 69.5294 12.7353 69.6768 12.64 69.8241 12.5447 69.9974 12.497 70.1968 12.497h4.628C74.9981 12.497 75.1281 12.5707 75.2148 12.718 75.3101 12.8653 75.3578 13.0343 75.3578 13.225 75.3578 13.433 75.3101 13.6107 75.2148 13.758 75.1194 13.9053 74.9894 13.979 74.8248 13.979H71.1458V16.579H73.1218C73.2864 16.579 73.4164 16.6483 73.5118 16.787 73.6071 16.917 73.6548 17.073 73.6548 17.255 73.6548 17.4197 73.6071 17.5713 73.5118 17.71 73.4251 17.84 73.2951 17.905 73.1218 17.905H71.1458V20.518H74.8248C74.9894 20.518 75.1194 20.5917 75.2148 20.739 75.3101 20.8863 75.3578 21.064 75.3578 21.272 75.3578 21.4627 75.3101 21.6317 75.2148 21.779 75.1281 21.9263 74.9981 22 74.8248 22h-4.628C69.9974 22 69.8241 21.9523 69.6768 21.857 69.5294 21.7617 69.4558 21.6317 69.4558 21.467zM76.3493 21.467V13.03C76.3493 12.8567 76.4317 12.7267 76.5963 12.64 76.761 12.5447 76.9603 12.497 77.1943 12.497 77.5063 12.497 77.7447 12.5533 77.9093 12.666 78.074 12.7787 78.256 13.0213 78.4553 13.394L80.9643 18.243V13.017C80.9643 12.8437 81.0467 12.7137 81.2113 12.627 81.376 12.5403 81.5753 12.497 81.8093 12.497 82.0433 12.497 82.2427 12.5403 82.4073 12.627 82.572 12.7137 82.6543 12.8437 82.6543 13.017v8.45C82.6543 21.6317 82.5677 21.7617 82.3943 21.857 82.2297 21.9523 82.0347 22 81.8093 22 81.35 22 81.025 21.8223 80.8343 21.467L78.0393 16.241V21.467C78.0393 21.6317 77.9527 21.7617 77.7793 21.857 77.6147 21.9523 77.4197 22 77.1943 22 76.9603 22 76.761 21.9523 76.5963 21.857 76.4317 21.7617 76.3493 21.6317 76.3493 21.467zM54.312 36.505C54.312 36.3057 54.3857 36.1063 54.533 35.907 54.689 35.699 54.8623 35.595 55.053 35.595 55.1657 35.595 55.2913 35.647 55.43 35.751 55.5773 35.855 55.716 35.972 55.846 36.102 55.9847 36.2233 56.1797 36.336 56.431 36.44S56.9597 36.596 57.263 36.596C57.679 36.596 58.0257 36.5007 58.303 36.31 58.5803 36.1193 58.719 35.8377 58.719 35.465 58.719 35.205 58.641 34.9753 58.485 34.776 58.3377 34.568 58.1383 34.399 57.887 34.269 57.6443 34.1303 57.3757 34.0003 57.081 33.879 56.7863 33.749 56.4873 33.606 56.184 33.45 55.8893 33.294 55.6163 33.1207 55.365 32.93 55.1223 32.7307 54.923 32.4707 54.767 32.15 54.6197 31.8207 54.546 31.448 54.546 31.032 54.546 30.5727 54.637 30.1697 54.819 29.823 55.0097 29.4677 55.261 29.1947 55.573 29.004 55.885 28.8047 56.2187 28.6617 56.574 28.575 56.9293 28.4797 57.3063 28.432 57.705 28.432 57.9303 28.432 58.1687 28.4493 58.42 28.484 58.6713 28.51 58.9357 28.5577 59.213 28.627 59.499 28.6963 59.7287 28.8047 59.902 28.952 60.084 29.0993 60.175 29.2727 60.175 29.472 60.175 29.6627 60.1143 29.862 59.993 30.07 59.8717 30.2693 59.707 30.369 59.499 30.369 59.421 30.369 59.2087 30.2867 58.862 30.122S58.1297 29.875 57.705 29.875C57.237 29.875 56.873 29.966 56.613 30.148 56.3617 30.3213 56.236 30.564 56.236 30.876 56.236 31.1273 56.34 31.3483 56.548 31.539 56.756 31.721 57.0117 31.8727 57.315 31.994 57.627 32.1067 57.9607 32.254 58.316 32.436 58.68 32.6093 59.0137 32.8 59.317 33.008 59.629 33.216 59.889 33.5193 60.097 33.918 60.305 34.308 60.409 34.7673 60.409 35.296 60.409 36.1973 60.123 36.895 59.551 37.389 58.9877 37.8743 58.2423 38.117 57.315 38.117 56.4917 38.117 55.7853 37.948 55.196 37.61S54.312 36.9037 54.312 36.505zM61.468 35.101V31.474C61.468 30.4427 61.741 29.6887 62.287 29.212 62.8417 28.7353 63.5827 28.497 64.51 28.497 65.4373 28.497 66.1783 28.7353 66.733 29.212 67.2877 29.6887 67.565 30.4427 67.565 31.474V35.101C67.565 36.1323 67.2877 36.8863 66.733 37.363 66.1783 37.8397 65.4373 38.078 64.51 38.078 63.5827 38.078 62.8417 37.8397 62.287 37.363 61.741 36.8863 61.468 36.1323 61.468 35.101zM63.158 35.101C63.158 36.0977 63.6087 36.596 64.51 36.596 65.42 36.596 65.875 36.0977 65.875 35.101V31.474C65.875 30.4773 65.42 29.979 64.51 29.979 63.6087 29.979 63.158 30.4773 63.158 31.474V35.101zM68.9724 35.101V29.017C68.9724 28.8437 69.0548 28.7137 69.2194 28.627 69.3841 28.5403 69.5834 28.497 69.8174 28.497 70.0514 28.497 70.2508 28.5403 70.4154 28.627 70.5801 28.7137 70.6624 28.8437 70.6624 29.017v6.084C70.6624 36.0977 71.1391 36.596 72.0924 36.596 73.0458 36.596 73.5224 36.0977 73.5224 35.101V29.017C73.5224 28.8437 73.6048 28.7137 73.7694 28.627 73.9341 28.5403 74.1334 28.497 74.3674 28.497 74.6014 28.497 74.8008 28.5403 74.9654 28.627 75.1301 28.7137 75.2124 28.8437 75.2124 29.017v6.084C75.2124 36.1237 74.9264 36.8777 74.3544 37.363 73.7911 37.8397 73.0371 38.078 72.0924 38.078 71.1478 38.078 70.3894 37.8397 69.8174 37.363 69.2541 36.8863 68.9724 36.1323 68.9724 35.101zM76.7302 37.467v-8.45C76.7302 28.8783 76.7822 28.757 76.8862 28.653 76.9902 28.549 77.1202 28.497 77.2762 28.497H79.8502C81.9042 28.497 82.9312 29.4027 82.9312 31.214 82.9312 31.9247 82.7752 32.4967 82.4632 32.93 82.1599 33.3633 81.7482 33.658 81.2282 33.814L82.9312 36.973C82.9745 37.025 82.9962 37.0943 82.9962 37.181 82.9962 37.3977 82.8835 37.6013 82.6582 37.792 82.4329 37.974 82.1945 38.065 81.9432 38.065S81.4969 37.9307 81.3582 37.662L79.5122 34.074H78.4202V37.467C78.4202 37.6317 78.3379 37.7617 78.1732 37.857 78.0085 37.9523 77.8092 38 77.5752 38 77.3499 38 77.1505 37.9523 76.9772 37.857 76.8125 37.7617 76.7302 37.6317 76.7302 37.467zM78.4202 32.748H79.8502C80.7775 32.748 81.2412 32.2887 81.2412 31.37 81.2412 30.4427 80.7775 29.979 79.8502 29.979H78.4202V32.748zM84.0533 35.101V31.474C84.0533 30.4513 84.3306 29.7017 84.8853 29.225 85.4399 28.7397 86.1636 28.497 87.0563 28.497 87.9663 28.497 88.7073 28.7223 89.2793 29.173 89.8599 29.6237 90.1503 30.2217 90.1503 30.967 90.1503 31.2877 90.0853 31.5087 89.9553 31.63 89.8253 31.7427 89.6086 31.799 89.3053 31.799 88.7506 31.799 88.4689 31.6213 88.4603 31.266 88.4516 31.1533 88.4386 31.058 88.4213 30.98 88.4126 30.8933 88.3779 30.785 88.3173 30.655 88.2653 30.5163 88.1959 30.4037 88.1093 30.317 88.0226 30.2217 87.8926 30.1437 87.7193 30.083 87.5459 30.0137 87.3423 29.979 87.1083 29.979 86.1983 29.979 85.7433 30.4773 85.7433 31.474V35.101C85.7433 36.0977 86.2069 36.596 87.1343 36.596 87.4116 36.596 87.6413 36.5527 87.8233 36.466 88.0139 36.3793 88.1483 36.258 88.2263 36.102 88.3129 35.9373 88.3693 35.7943 88.3953 35.673 88.4299 35.543 88.4516 35.387 88.4603 35.205 88.4863 34.8497 88.7636 34.672 89.2923 34.672 89.5956 34.672 89.8123 34.7327 89.9423 34.854 90.0809 34.9667 90.1503 35.1833 90.1503 35.504 90.1503 36.284 89.8599 36.908 89.2793 37.376 88.7073 37.844 87.9619 38.078 87.0433 38.078 86.1506 38.078 85.4269 37.8397 84.8723 37.363 84.3263 36.8777 84.0533 36.1237 84.0533 35.101zM91.2917 37.467V29.03C91.2917 28.8653 91.3654 28.7353 91.5127 28.64 91.6601 28.5447 91.8334 28.497 92.0327 28.497h4.628C96.8341 28.497 96.9641 28.5707 97.0507 28.718 97.1461 28.8653 97.1937 29.0343 97.1937 29.225 97.1937 29.433 97.1461 29.6107 97.0507 29.758 96.9554 29.9053 96.8254 29.979 96.6607 29.979H92.9817V32.579H94.9577C95.1224 32.579 95.2524 32.6483 95.3477 32.787 95.4431 32.917 95.4907 33.073 95.4907 33.255 95.4907 33.4197 95.4431 33.5713 95.3477 33.71 95.2611 33.84 95.1311 33.905 94.9577 33.905H92.9817V36.518H96.6607C96.8254 36.518 96.9554 36.5917 97.0507 36.739 97.1461 36.8863 97.1937 37.064 97.1937 37.272 97.1937 37.4627 97.1461 37.6317 97.0507 37.779 96.9641 37.9263 96.8341 38 96.6607 38h-4.628C91.8334 38 91.6601 37.9523 91.5127 37.857 91.3654 37.7617 91.2917 37.6317 91.2917 37.467z" fill="#0c3455"/><defs><linearGradient id="paint0_linear" x1="7.34606" y1="38.0484" x2="39.6904" y2="11.512" gradientUnits="userSpaceOnUse"><stop stop-color="#ef4123"/><stop offset="1" stop-color="#f7941e"/></linearGradient></defs></svg>
+        
+      
+    </span>
+  </a>
+  
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/docs-ritchie/docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/docs-ritchie/no/">Norsk</a>
+	
+</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+<input type="search" class="form-control td-search-input" placeholder="&#xf002 Search this site…" aria-label="Search this site…" autocomplete="off">
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+<input type="search" class="form-control td-search-input" placeholder="&#xf002 Search this site…" aria-label="Search this site…" autocomplete="off">
+
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	English
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/docs-ritchie/no/">Norsk</a>
+	
+</div>
+    </div>
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-ritchie/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs-ritchiedocs">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-ritchie/docs/overview/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Overview</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-ritchiedocsoverview">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-ritchie/docs/getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Getting Started</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-ritchiedocsgetting-started">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-ritchiedocsgetting-startedexample-page" href="/docs-ritchie/docs/getting-started/example-page/">Example Page</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-ritchie/docs/examples/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Examples</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs-ritchiedocsexamples">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-ritchie/docs/concepts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Concepts</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-ritchiedocsconcepts">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-ritchie/docs/tasks/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Core Tasks</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-ritchiedocstasks">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-ritchiedocstasksbeds" href="/docs-ritchie/docs/tasks/beds/">Bed and Chair Metrics</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-ritchiedocstasksporridge" href="/docs-ritchie/docs/tasks/porridge/">Porridge Assessment</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-ritchiedocstaskstask" href="/docs-ritchie/docs/tasks/task/">Another Task</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-ritchie/docs/tasks/ponycopters/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Working with Ponycopters</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-ritchiedocstasksponycopters">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-ritchiedocstasksponycoptersconfiguring-ponycopters" href="/docs-ritchie/docs/tasks/ponycopters/configuring-ponycopters/">Configuring Ponycopters</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-ritchiedocstasksponycopterslaunching-ponycopters" href="/docs-ritchie/docs/tasks/ponycopters/launching-ponycopters/">Launching Ponycopters</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-ritchie/docs/tutorials/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Tutorials</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-ritchiedocstutorials">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-ritchiedocstutorialsmulti-bear" href="/docs-ritchie/docs/tutorials/multi-bear/">Multi-Bear Domicile Setup</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-ritchiedocstutorialstutorial2" href="/docs-ritchie/docs/tutorials/tutorial2/">Another Tutorial</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-ritchie/docs/reference/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Reference</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-ritchiedocsreference">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-ritchiedocsreferenceparameter-reference" href="/docs-ritchie/docs/reference/parameter-reference/">Parameter Reference</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-ritchie/docs/contribution-guidelines/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Contribution Guidelines</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-ritchiedocscontribution-guidelines">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+
+
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/ZupIT/docs-ritchie/tree/master/Settings/edit/master/content/en/docs/Examples/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/ZupIT/docs-ritchie/tree/master/Settings/new/master/content/en/docs/Examples/_index.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" target="_blank"><i class="fa fa-edit fa-fw"></i> Create child page</a>
+<a href="https://github.com/ZupIT/docs-ritchie/tree/master/Settings/issues/new?title=Examples" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+
+
+<a href="https://github.com/ZupIT/docs-ritchie/tree/master/Settings/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+
+</div>
+
+
+
+
+
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://zupit.github.io/docs-ritchie/docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="https://zupit.github.io/docs-ritchie/docs/examples/">Examples</a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="td-content">
+	<h1>Examples</h1>
+        <div class="lead">See your project in action!</div>
+	
+	
+
+<div class="pageinfo pageinfo-primary">
+<p>This is a placeholder page that shows you how to use this template site.</p>
+
+</div>
+
+<p>Do you have any example <strong>applications</strong> or <strong>code</strong> for your users in your repo or elsewhere? Link to your examples here.</p>
+
+        <div class="section-index">
+    
+    
+    
+    
+    <hr class="panel-line">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+</div>
+
+	
+		<style>
+  .feedback--answer {
+    display: inline-block;
+  }
+  .feedback--answer-no {
+    margin-left: 1em;
+  }
+  .feedback--response {
+    display: none;
+    margin-top: 1em;
+  }
+  .feedback--response__visible {
+    display: block;
+  }
+</style>
+<h2 class="feedback--title">Feedback</h2>
+<p class="feedback--question">Was this page helpful?</p>
+<button class="feedback--answer feedback--answer-yes">Yes</button>
+<button class="feedback--answer feedback--answer-no">No</button>
+<p class="feedback--response feedback--response-yes">
+  Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.
+</p>
+<p class="feedback--response feedback--response-no">
+  Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.
+</p>
+<script>
+  const yesButton = document.querySelector('.feedback--answer-yes');
+  const noButton = document.querySelector('.feedback--answer-no');
+  const yesResponse = document.querySelector('.feedback--response-yes');
+  const noResponse = document.querySelector('.feedback--response-no');
+  const disableButtons = () => {
+    yesButton.disabled = true;
+    noButton.disabled = true;
+  };
+  const sendFeedback = (value) => {
+    if (typeof ga !== 'function') return;
+    const args = {
+      command: 'send',
+      hitType: 'event',
+      category: 'Helpful',
+      action: 'click',
+      label: window.location.pathname,
+      value: value
+    };
+    ga(args.command, args.hitType, args.category, args.action, args.label, args.value);
+  };
+  yesButton.addEventListener('click', () => {
+    yesResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(1);
+  });
+  noButton.addEventListener('click', () => {
+    noResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(0);
+  });
+</script>
+
+		<br />
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified November 11, 2020: <a  href="https://github.com/ZupIT/docs-ritchie/tree/master/Settings/commit/d5bcfc6eeef36f01903f47e1dd3183987560b329">add docs (d5bcfc6)</a>
+</div>
+</div>
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Instagram" aria-label="Instagram">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/zupinnovation">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Linkedin" aria-label="Linkedin">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/zup-it-solutions/">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Youtube" aria-label="Youtube">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCJWZyJ-36yNscqnnHiwjkhQ">
+      <i class="fab fa-youtube"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://twitter.com/ZupInnovation">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Medium" aria-label="Medium">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://medium.com/zup-it">
+      <i class="fab fa-medium"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Slack" aria-label="Slack">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="">
+      <i class="fab fa-slack"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Developer mailing list" aria-label="Developer mailing list">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2020 Zup All Rights Reserved</small>
+        <small class="ml-1"><a href="https://insights.zup.com.br/politica-privacidade" target="_blank" class="privacy-link">Privacy Policy</a></small>
+	
+		
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script src="/docs-ritchie/js/main.min.f58076f5ed93e6b7d3cd9377ad76160882c45c3ba0e83292c773a4877e120074.js" integrity="sha256-9YB29e2T5rfTzZN3rXYWCILEXDug6DKSx3Okh34SAHQ=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>

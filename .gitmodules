@@ -1,0 +1,3 @@
+[submodule "Settings/themes/devrel"]
+	path = Settings/themes/devrel
+	url = git@github.com:darwinaraujozup/docs-devrel-theme.git
