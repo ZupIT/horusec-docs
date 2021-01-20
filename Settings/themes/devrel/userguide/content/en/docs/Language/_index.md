@@ -27,8 +27,8 @@ weight = 1
 [languages.no]
 title = "Docsy"
 description = "Docsy er operativsystem for skyen"
-languageName ="Norsk"
-contentDir = "content/no"
+languageName ="Português"
+contentDir = "content/pt"
 time_format_default = "02.01.2006"
 time_format_blog = "02.01.2006"
 ```

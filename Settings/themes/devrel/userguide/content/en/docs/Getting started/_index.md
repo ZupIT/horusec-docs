@@ -235,14 +235,14 @@ The Docsy example site supports content in English and Norwegian. You can find o
 If you don't intend to translate your site to Norwegian, you can remove the language switcher by removing the following lines from `config.toml`:
 
 ```
-[languages.no]
+[languages.pt]
 title = "Docsy"
 description = "Docsy er operativsystem for skyen"
-languageName ="Norsk"
-contentDir = "content/no"
+languageName ="Português"
+contentDir = "content/pt"
 ```
 
-To remove the translated source files, delete the `docsy-example/content/no` directory.
+To remove the translated source files, delete the `docsy-example/content/pt` directory.
 
 ### Search
 
