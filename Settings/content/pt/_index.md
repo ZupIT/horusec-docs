@@ -5,7 +5,7 @@ type = "docs"
 +++
 
 {{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
+Esta é uma página de espaço reservado que mostra como usar este site modelo.
 {{% /pageinfo %}}
 
 Esta seção é onde reside a documentação do usuário para o seu projeto - todas as informações que os usuários precisam para entender e usar o projeto com sucesso.

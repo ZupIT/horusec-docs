@@ -79,7 +79,7 @@ Se existir alguma falha de segurança no código, o Horusec aponta o arquivo, o 
 
 ### **Visão CLI** 
 
-![](/docs-horusec/image%20%285%29.png)
+![](/docs-horus/image%20%285%29.png)
 
 ### **Visão interface Web** 
 

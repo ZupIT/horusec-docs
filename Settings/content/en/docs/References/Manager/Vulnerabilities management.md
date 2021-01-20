@@ -21,4 +21,4 @@ After you alter the vulnerability status, it won't be counted as a analytical vi
 Besides that, you can only change a vulnerability status of the ones using the access token on Horusec-CLI. 
 {{% /alert %}}
 
-![](/docs-horusec/gestaovulneen_us.gif)
+![](/docs-horus/gestaovulneen_us.gif)

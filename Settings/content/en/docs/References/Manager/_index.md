@@ -20,13 +20,13 @@ You will see below more details on how to make each one of these activities.
 
 Manager has a functionality for you to create an account inside Horusec. After your user is created, you just need to confirm the account on your email. 
 
-![](/docs-horusec/image%20%282%29.png)
+![](/docs-horus/image%20%282%29.png)
 
 ## Authentication
 
 Horusec offers a simple authentication managed by its own system. 
 
-![](/docs-horusec/image%20%2812%29.png)
+![](/docs-horus/image%20%2812%29.png)
 
 ## Analytics dashboard
 
@@ -93,11 +93,11 @@ See more about these data in the table below:
 
 {{< tabs name="T0" >}}
 {{% tab name="Dashboard with organization view" %}}
-![Organization view](/docs-horusec/painel-analitico-english.gif)
+![Organization view](/docs-horus/painel-analitico-english.gif)
 {{% /tab %}}
 
 {{% tab name="Dashboard with repository view " %}}
-![Repository view](/docs-horusec/visao-por-repo-eng.gif)
+![Repository view](/docs-horus/visao-por-repo-eng.gif)
 {{% /tab %}}
 {{< /tabs >}}
 

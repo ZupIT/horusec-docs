@@ -12,6 +12,8 @@ theme = ["devrel"]
 # Will give values to .Lastmod etc.
 enableGitInfo = true
 
+staticDir = ["static"]
+
 # Language settings
 contentDir = "content/en"
 defaultContentLanguage = "en"
