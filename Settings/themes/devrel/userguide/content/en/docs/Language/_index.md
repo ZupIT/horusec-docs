@@ -24,7 +24,7 @@ description = "Docsy does docs"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
-[languages.no]
+[languages.pt]
 title = "Docsy"
 description = "Docsy er operativsystem for skyen"
 languageName ="Português"
