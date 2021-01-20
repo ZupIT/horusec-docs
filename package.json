@@ -1,21 +1,13 @@
 {
-  "name": "tech-doc-hugo",
+  "name": "horusec",
   "version": "0.0.1",
-  "description": "Hugo theme for technical documentation.",
-  "main": "none.js",
+  "displayName": "Horusec",
+  "description": "Horusec is an open source tool that improves identification of vulnerabilities in your project with just one command.",
+  "publisher": "ZupInnovation",
+  "icon": "https://github.com/ZupIT/docs-horusec/blob/master/static/horusec_logo.png?raw=true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "hugo serve"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/google/docsy-example.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/google/docsy-example/issues"
-  },
-  "homepage": "https://github.com/google/docsy-example#readme",
   "dependencies": {
     "postcss": "^8.1.0"
   },
