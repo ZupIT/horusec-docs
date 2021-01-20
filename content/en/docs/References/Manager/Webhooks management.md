@@ -18,7 +18,7 @@ On the webhook configuration, you have to choose:
 
 See the a configuration example below: 
 
-![](/docs-horus/webhooken_us.gif)
+![](/docs/webhooken_us.gif)
 
 After configuring the webhook, your API you receive a JSON with the format below: 
 

@@ -22,7 +22,7 @@ Lembre-se de que ao criar um token de acesso, ele será visto apenas uma vez.
 
 Você pode ver como fica o painel de token dentro da plataforma do Horusec:
 
-![](/docs-horus/tokenpt_br.gif)
+![](/docs/tokenpt_br.gif)
 
 ### Usuários da organização
 
@@ -44,4 +44,4 @@ Ao fazer o convite,  você tem que escolher a **função deste usuário** dentro
 
    * Visualizar o dashboard dos repositórios que o usuário tem acesso.
 
-![P&#xE1;gina para gest&#xE3;o de usu&#xE1;rios da sua organiza&#xE7;&#xE3;o](/docs-horus/usuariodeorganpt_br.gif)
+![P&#xE1;gina para gest&#xE3;o de usu&#xE1;rios da sua organiza&#xE7;&#xE3;o](/usuariodeorganpt_br.gif)

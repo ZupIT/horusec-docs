@@ -7,7 +7,7 @@ weight: 72
 
 O Horusec disponibiliza a extensão do VS Code para realizar análises de código, na qual é possível você fazer análises completas em seu projeto com apenas um clique.
 
-![](/docs-horus/install-horusec-vscode.gif)
+![](/docs/install-horusec-vscode.gif)
 
 ## **Instalação**
 

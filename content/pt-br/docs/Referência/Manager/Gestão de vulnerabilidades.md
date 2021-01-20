@@ -21,4 +21,4 @@ Depois que você alterar o status de uma vulnerabilidade, não será mais contab
 Além disso, você só pode alterar o status de vulnerabilidades que estão utilizando o token de acesso no Horusec-CLI.
 {{% /alert %}}
 
-![](/docs-horus/gestaovulnerpt_br.gif)
+![](/docs/gestaovulnerpt_br.gif)

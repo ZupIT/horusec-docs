@@ -20,13 +20,13 @@ A seguir, você verá em detalhes como realizar cada uma dessas atividades.
 
 O Manager conta com uma funcionalidade para você criar sua conta dentro do próprio Horusec. Depois que seu usuário é criado, basta confirmar a conta direto no seu e-mail. 
 
-![](/docs-horus/image%20%282%29.png)
+![](/docs/image%20%282%29.png)
 
 ## Autenticação
 
 O Horusec também oferece uma autenticação simples gerenciada pelo próprio sistema.
 
-![](/docs-horus/image%20%2812%29.png)
+![](/docs/image%20%2812%29.png)
 
 ## Painel analítico
 
@@ -48,11 +48,11 @@ Veja mais sobre quais são esses dados na tabela a seguir:
 
 {{< tabs name="T0" >}}
 {{% tab name="Dash com visão por organização" %}}
-![Vis&#xE3;o por organiza&#xE7;&#xE3;o](/docs-horus/painel-analitico-e-dash-com-visao-por-or.gif)
+![Vis&#xE3;o por organiza&#xE7;&#xE3;o](/painel-analitico-e-dash-com-visao-por-or.gif)
 {{% /tab %}}
 
 {{% tab name="Dash com a visão por repositório" %}}
-![](/docs-horus/visao-por-repo.gif)
+![](/docs/visao-por-repo.gif)
 {{% /tab %}}
 {{< /tabs >}}
 

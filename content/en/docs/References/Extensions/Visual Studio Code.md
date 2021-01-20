@@ -8,7 +8,7 @@ weight: 72
 Horusec can help you analyse codes with the VS Code extension, with just one click you can make a complete analysis of the code on your project.  
 
 
-![](/docs-horus/install-horusec-vscode.gif)
+![](/docs/install-horusec-vscode.gif)
 
 ## **Installation**
 

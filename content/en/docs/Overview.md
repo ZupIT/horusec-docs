@@ -77,7 +77,7 @@ If there is a security breach in the code, Horusec points the file, the severity
 
 ###  **CLI view** 
 
-![](/docs-horus/image%20%285%29.png)
+![](/docs/image%20%285%29.png)
 
 ### **Interface Web view** 
 

@@ -13,7 +13,7 @@ When you create a repository, you have some functionalities such as:
 * Manage which users have access; 
 * Manage the access tokens of the repository. 
 
-![](/docs-horus/repo-management-en_us.gif)
+![](/docs/repo-management-en_us.gif)
 
 ### Repository's token
 
@@ -27,7 +27,7 @@ For example, if you add this token in your pipeline, Horusec will send an analys
 Remember. when creating an access token it will be seen only one time.
 {{% /alert %}}
 
-![](/docs-horus/token-de-repo-en_us.gif)
+![](/docs/token-de-repo-en_us.gif)
 
 ### Repository's users
 
@@ -43,4 +43,4 @@ You can invite new users to join the repository. When you invite, it is possible
 
 See the gif below an example with the repository invitation to new users: 
 
-![](/docs-horus/usuario-de-repo-en_us.gif)
+![](/docs/usuario-de-repo-en_us.gif)
