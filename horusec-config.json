@@ -1,0 +1,11 @@
+{
+  "horusecCliFilesOrPathsToIgnore": [
+    "**/themes/**",
+    "**/*.md"
+  ],
+  "horusecCliToolsConfig": {
+    "Eslint": {
+      "isToIgnore": true
+    }
+  }
+}
