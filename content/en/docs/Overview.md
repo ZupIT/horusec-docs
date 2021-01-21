@@ -2,7 +2,7 @@
 title: Overview
 weight: 1
 description: >-
-  Here, you will find find all initial information about Horusec before getting
+  You will find here all initial information about Horusec before getting
   deeper on the project.
 ---
 
@@ -10,7 +10,7 @@ description: >-
 
 ## **What is Horusec?**
 
-It is an open source tool that orchestrates other security tools and identifies security flaws or vulnerabilities in projects and put all results in a database for analysis and generation of metrics.
+Horusec is an open source tool that orchestrates other security tools and identifies security flaws or vulnerabilities in projects and put all results in a database for analysis and generation of metrics.
 
 The languages ​​and tools that we currently use are:
 
