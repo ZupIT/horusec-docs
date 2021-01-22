@@ -1,26 +1,26 @@
 ---
 title: Organization management
 weight: 32
-description: 'On this section, you will find information about organization management.'
+description: On this section, you will find information about organization management.
 ---
 
 ---
 
-Here you can see on the platform all the organizations you have created. Besides that, you can manage your organization's token or to make a permission management of your users. 
+Here you can see on the platform all the organizations you have created. You can also manage your organization's token or to make a permission management of your users. 
 
 ###  Organization's token 
 
 The token is a resource you can create to use in your analysis. The main goal is to help Horusec identify the organization and the repository when the [**CLI** ](../../cli)sends a new analysis to the platform. 
 
-For example, if you create an organization with 100 repositories, you will need only 1 access token. At the moment you send an analyis to this repository, you will have to pass the repository's name that you want to create or it already exists to the CLI. 
+For example, if you create an organization with 100 repositories, you will only need 1 access token. When you send an analyis to this repository, you will have to pass the repository's name you want to create or it already exists to the CLI. 
 
-Despite you have the option to create the token, it is safer to generate only one token to the repository and revoke it after a while. This way, you make sure the organization will always be safe. 
+You have the option to create the token, but it is safer to generate only one to the repository and revoke it after a while. This way, you make sure the organization will always be safe. 
 
 {{% alert color="danger" %}}
-Remember when creating an access token, it only be seen once.
+Remember when creating an access token, it can only be seen once.
 {{% /alert %}}
 
-You can see how the token dashboard is in Horusec: 
+Check below how the token dashboard is in Horusec: 
 
 ![](/docs/tokenen_us.gif)
 
@@ -38,7 +38,7 @@ When you invite, you have to choose the user's function inside the organization.
    * Add new repositories;
    * View all the repositories in the organization;
    * View the organization's dashboard;
-   * Visualizar repositories' dashboard the user has access to.
+   * View repositories' dashboard the user has access to.
 
 2. **User**
 

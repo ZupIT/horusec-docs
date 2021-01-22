@@ -6,7 +6,7 @@ description: 'On this section, you will find information about repository manage
 
 ---
 
-Here you can view all the repositories of your organization in the platform, besides that you can manage the token and the users who have the repository registered.
+Here you can view all the repositories of your organization in the platform, besides that you can manage the token and the users who have the registered repository.
 
 When you create a repository, you have some functionalities such as: 
 
@@ -17,14 +17,14 @@ When you create a repository, you have some functionalities such as:
 
 ### Repository's token
 
-The token in the repository can be used to all analysis you make and it has the main goal to help Horusec identify the organization and the analysis repository sent through [**CLI.**](../../cli) 
+The token in the repository can be used to all analysis you make and it helps Horusec identify the organization and the analysis repository sent through [**CLI.**](../../cli) 
 
 The token in the repository is unique and it can only be created by a manager in the repository or the organization.  
 
-For example, if you add this token in your pipeline, Horusec will send an analysis and store so you can have an analytical view of the vulnerabilities of your repository.
+For example, if you add this token in your pipeline, Horusec will send an analysis and store it, so you can have an analytical view of the vulnerabilities of your repository.
 
 {{% alert color="danger" %}}
-Remember. when creating an access token it will be seen only one time.
+Remember. when creating an access token you only see it once.
 {{% /alert %}}
 
 ![](/docs/token-de-repo-en_us.gif)
@@ -41,6 +41,6 @@ You can invite new users to join the repository. When you invite, it is possible
 * **Repository user**
   * View the repository's dashboard users have access to. 
 
-See the gif below an example with the repository invitation to new users: 
+See an example below with the repository invitation to new users: 
 
 ![](/docs/usuario-de-repo-en_us.gif)

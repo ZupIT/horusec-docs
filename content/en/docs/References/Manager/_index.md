@@ -46,7 +46,7 @@ See more about these data in the table below:
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p>&lt;b&gt;&lt;/b&gt;</p>
+        <p></p>
         <p><b>Amount of developers</b>
         </p>
       </td>
