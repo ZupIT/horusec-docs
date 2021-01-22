@@ -8,7 +8,7 @@ description: You will find here informations about HORUSEC-CLI
 
 ## What is it?
 
-The CLI, or Command Line Interface, is the Horusec code part, in which you can run commands to make safety analysis or [**vulnerabilities**](vulnerabilities/) identification and classification. 
+CLI, or Command Line Interface, is the Horusec code part, in which you can run commands to make safety analysis or [**vulnerabilities**](vulnerabilities/) identification and classification. 
 
 ## What are the commands?
 
@@ -272,7 +272,7 @@ export HORUSEC_CLI_ENABLE_INFORMATION_SEVERITY=""
 
 On the [**start command**](cli#1-start) case, you can pass some flags and change its values. 
 
-For example, you can pass some flags and alter its values`horusec start --ignore="**/*test.go"` or  even use a short flag `horusec start -i **/*test.go`
+For example, you can pass some flags and alter its values `horusec start --ignore="**/*test.go"` or  even use a short flag `horusec start -i **/*test.go`
 
 On the table below, you can see all the available flags: 
 
@@ -307,7 +307,7 @@ To view all the information on table, slide to the right.
       <td style="text-align:left">output-format</td>
       <td style="text-align:left">o</td>
       <td style="text-align:left">text</td>
-      <td style="text-align:left">The exit can be changed among <code>json</code> or<code>sonarqube</code> or <code>text</code>
+      <td style="text-align:left">The exit can be changed among <code>json</code> or <code>sonarqube </code> or <code>text</code>
       </td>
     </tr>
     <tr>
@@ -318,7 +318,7 @@ To view all the information on table, slide to the right.
       <td style="text-align:left"></td>
       <td style="text-align:left">
         <p>You can specify some type of vulnerability to not apply with an error.
-          The available types are: &quot;LOW, MEDIUM, HIGH&quot;. Example: LOW<del>,</del> MEDIUM
+          The available types are: &quot;LOW, MEDIUM, HIGH&quot;. Example: LOW <del>,</del> MEDIUM
           all the vulnerabilities of the configured type are ignored.</p>
         <p></p>
       </td>
@@ -329,7 +329,7 @@ To view all the information on table, slide to the right.
       <td style="text-align:left">json-output-file</td>
       <td style="text-align:left">O</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">In case the exit is<code>sonarqube</code> or<code>json</code> it must have
+      <td style="text-align:left">In case the exit is <code>sonarqube</code> or<code>json</code> it must have
         a name to be saved.
         <br />Ex.:<code>./output.json</code>
       </td>
@@ -375,7 +375,7 @@ To view all the information on table, slide to the right.
       <td style="text-align:left">t</td>
       <td style="text-align:left">600</td>
       <td style="text-align:left">This configuration will identify how much time I want to wait in seconds
-        to make an analysis that includes: &quot;getting a project&quot;, &quot;sending
+        to make an analysis that includes: &quot;getting a project, &quot;sending
         to analysis&quot;, &quot;containers exit&quot; and &quot;getting an answer&quot;.
         The minimum time is 10.</td>
     </tr>
@@ -640,7 +640,7 @@ Horusec has its image that can be used in its pipeline or locally to perform the
 
 ### Using locally
 
-See that in this example the `horusec start` command is already at the start of the image, just add the flags you want.
+See in this example `horusec start` command is already at the start of the image, just add the flags you want.
 
 {{% alert color="warning" %}}
 When used in this way, it is necessary to create a volume of your project for the image and its destination location is recommended to always be in the location _`/project`_
@@ -652,7 +652,7 @@ docker run --privileged -v /path/of/my/project/local:/project -it horuszup/horus
 
 ### Using in your pipeline
 
-Let's use [**AWS Code Build**](https://docs.horusec.io/v/v1-eng/adicionando-o-horusec-em-sua-pipeline#aws-code-build) as an example to perform the analysis. See that in this example we have to use the command `sh /usr/local/bin/horusec-cli.sh`, because in this script we have some necessary configurations when starting the analysis. Notice that the `horusec start` command was also started, just add the flags you want .
+Let's use [**AWS Code Build**](https://docs.horusec.io/v/v1-eng/adicionando-o-horusec-em-sua-pipeline#aws-code-build) as an example to perform the analysis. See that in this example you have to use the command `sh /usr/local/bin/horusec-cli.sh`, because in this script there are some necessary configurations when starting the analysis. Notice that `horusec start` command was also started, just add the flags you want.
 
 {{% alert color="warning" %}}
 In pipelines it is extremely important to have the **privileged configuration enabled**, without this is not possible to carry out the analysis as expected.

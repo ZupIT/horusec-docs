@@ -6,12 +6,12 @@ description: 'On this section, you will find information about webhooks manageme
 
 ---
 
-The webhooks are triggered when they receive a new analysis on Horusec's database. After you have inserted this analysis, Horusec verifies if there is some configured webhook to the selected repository and sen the analysis via HTTP to the configured place.
+The webhooks are triggered when they receive a new analysis on Horusec's database. After you have inserted this analysis, Horusec verifies if there is some configured webhook to the selected repository and send the analysis via HTTP to the configured place.
 
 On the webhook configuration, you have to choose:
 
 * URL;
-* Método \(for now, it is POST\); 
+* Method \(for now, it is POST\); 
 * Headers \(5 max\);
 * Description \(optional\);
 * Repository.

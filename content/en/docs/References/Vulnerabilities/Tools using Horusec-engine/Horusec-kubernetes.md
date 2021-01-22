@@ -1,6 +1,9 @@
 ---
 title: Horusec-kubernetes
 weight: 62
+description: >-
+  Here, you will find informations about vulnerabilities that Horusec can find
+  on Kurbenetes projects.
 ---
 
 ---

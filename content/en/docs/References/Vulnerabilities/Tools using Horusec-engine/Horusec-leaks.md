@@ -1,6 +1,9 @@
 ---
 title: Horusec-leaks
 weight: 54
+description: >-
+  Here, you will find informations about vulnerabilities that Horusec can find
+  on Leaks projects.
 ---
 
 ---

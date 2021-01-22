@@ -22,7 +22,7 @@ It is declared when it is found, even when you find and analyze a vulnerability 
 
 On this case, the vulnerability is a false positive. 
 
-An example: A test file that you want to know if the URL for connecting to the database is being assembled correctly. The URL would be: 
+For example, a test file that you want to know if the URL for connecting to the database is being assembled correctly. The URL would be: 
 
 ```text
 conn := "postgresql://root:root@postgresql:5432/horusec_db?sslmode=disable"
@@ -36,7 +36,7 @@ It is declared when you find and analyze a vulnerability in a safe code, you wan
 
 On this case, the vulnerability is an accepted risk, because you are already aware this can let your application vulnerable, you decide to take risks and move on to the next step. 
 
-Example: you have a file that it has been accused to log a sensitive information. See: 
+For example, you have a file that it has been accused to log a sensitive information. See: 
 
 `log.Info("User logged with CPF: " + cpf_user)`
 
