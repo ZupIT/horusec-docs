@@ -1,7 +1,7 @@
 ---
 title: Key concepts
 weight: 2
-description: 'In this section, you will find information on the main concepts of Horusec.'
+description: You will find here all information on the main concepts of Horusec.
 ---
 
 ---
