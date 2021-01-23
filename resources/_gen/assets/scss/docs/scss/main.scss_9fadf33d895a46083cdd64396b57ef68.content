@@ -13950,7 +13950,24 @@ pre {
   color: #000 !important;
   background: transparent; }
 
-.nav-tabs > li.active > a {
-  background: #8dc63f; }
+.alert-warning {
+  border-color: #f7941e; }
+
+.alert-info {
+  border-color: #0c3455; }
+
+.alert-success {
+  border-color: #8dc63f; }
+
+.td-sidebar-nav__section-title {
+  font-weight: unset; }
+
+.section-index h5 a {
+  color: #ef4123;
+  text-decoration: underline; }
+
+.td-content a {
+  font-style: italic;
+  text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */

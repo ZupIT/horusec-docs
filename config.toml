@@ -143,6 +143,9 @@ navbar_logo = true
 # Set to true to disable the About link in the site footer
 footer_about_disable = false
 
+main_slug_to_hide_primary = "docs"
+main_slug_to_hide_secondary = "docspt-br"
+
 # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
 # This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.
 # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
