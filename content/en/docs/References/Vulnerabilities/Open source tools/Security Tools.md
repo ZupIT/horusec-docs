@@ -78,4 +78,4 @@ If you want to know more about Semgrep criteria, access the [**rules list**](htt
 
  [**YarnAudit**](https://classic.yarnpkg.com/en/docs/cli/audit/) is a security tool that makes dependency audit on **yarn** packages on **Javascript** projects. 
 
-For that, it sends a description of the configured dependencies in your project to the default register and requests a report of the vulnerabilities.
+It sends a description of the configured dependencies in your project to the default register and requests a report of the vulnerabilities.
