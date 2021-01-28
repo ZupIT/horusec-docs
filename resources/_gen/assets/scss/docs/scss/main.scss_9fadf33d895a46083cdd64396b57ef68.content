@@ -13885,13 +13885,6 @@ Nothing defined here. The Hugo project that uses this theme can override Bootstr
 assets/scss/_styles_project.scss
 
 */
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: Dosis; }
-
 .privacy-link {
   color: #fff;
   text-decoration: underline; }
@@ -13950,7 +13943,62 @@ pre {
   color: #000 !important;
   background: transparent; }
 
-.nav-tabs > li.active > a {
-  background: #8dc63f; }
+.alert-warning {
+  border-color: #f7941e; }
+
+.alert-info {
+  border-color: #0c3455; }
+
+.alert-success {
+  border-color: #8dc63f; }
+
+.td-sidebar-nav__section-title {
+  font-weight: unset; }
+
+.section-index h5 a {
+  color: #ef4123;
+  text-decoration: underline; }
+
+.td-content a {
+  font-style: italic;
+  text-decoration: underline; }
+
+body {
+  font-size: 15px;
+  color: #242a31; }
+
+.td-sidebar-nav a.active {
+  color: #d53b19; }
+
+.td-sidebar-nav .td-sidebar-link__page {
+  color: #3b454e; }
+
+.td-sidebar-nav__section-title a {
+  color: #666f77; }
+
+.td-sidebar-nav .td-sidebar-link__page,
+.td-sidebar-nav__section-title a {
+  font-weight: 600; }
+
+.td-content .lead {
+  color: #74818d; }
+
+.td-content strong {
+  color: #3b454e; }
+
+.td-content a {
+  font-style: normal;
+  color: #d53b19;
+  text-decoration: none; }
+  .td-content a strong {
+    color: inherit; }
+  .td-content a:hover {
+    text-decoration: underline; }
+
+.td-toc #TableOfContents a:hover {
+  color: #d53b19; }
+
+.td-content > blockquote {
+  border-color: rgba(213, 59, 25, 0.8); }
 
 /*# sourceMappingURL=main.css.map */
