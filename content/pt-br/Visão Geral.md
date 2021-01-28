@@ -2,7 +2,7 @@
 title: Visão Geral
 weight: 1
 description: >-
-  Nesta seção, você encontra informações iniciais sobre o Horusec antes de se
+  Você vai encontrar aqui as informações iniciais sobre o Horusec antes de se
   aprofundar no produto.
 ---
 
@@ -10,9 +10,9 @@ description: >-
 
 ## **O que é o Horusec?**
 
-É uma ferramenta open source que orquestra outras ferramentas de segurança e identifica falhas de segurança ou vulnerabilidades em projetos e centraliza todos os resultados em um banco de dados para análise e geração de métricas. 
+É uma ferramenta open source que orquestra outras ferramentas de segurança e identifica falhas de segurança ou vulnerabilidades em projetos, centralizando todos os resultados em um banco de dados para análise e geração de métricas. 
 
-As linguagens e ferramentas que são utilizamos atualmente são:
+As linguagens e ferramentas utilizadas atualmente são:
 
 * **Python**
   * [**Bandit**](https://github.com/PyCQA/bandit)
@@ -65,11 +65,11 @@ Existem duas principais tarefas no Horusec: acessar o Dashboard e gerar as anál
 
 ### **1. Acesso ao Dashboard**
 
-Para acessar, é necessário criar um login e senha. Após isso, você pode navegar no Dashboard e realizar ações como:
+Para acessar, é necessário criar um login e senha. Feito isso, você pode navegar no Dashboard e realizar ações como:
 
-* Definir as permissões para os outros usuários
-* Criar repositórios
-* Gerar tokens para realizar a análise de um projeto
+* Definir as permissões para os outros usuários;
+* Criar repositórios;
+* Gerar tokens para realizar a análise de um projeto.
 
 ### **2. Processo de Análises** 
 
@@ -120,6 +120,14 @@ Garante a segurança dos projetos no processo de CI e CD e, assim, reduz os cust
 
 O Horusec realiza 3 tipos de análises de desempenho para identificar se existe alguma falha de segurança: 
 
-1. **SAST \(Static Application Security Testing \|Teste Estático de Segurança de Aplicação\)**  O SAST faz a análise estática de vulnerabilidade de código. Elas podem ser feitas em código fonte, byte code ou binário. 
-2. **Leaks \(Vazamento de chaves\)** O Leaks procura no código fonte possíveis vazamentos de credenciais, chaves privadas ou senhas Hard coded.  
-3. **Auditoria de dependência**   É realizada uma auditoria de dependência  para verificar a possibilidade de vulnerabilidades em bibliotecas de terceiros.
+1. **SAST \(Static Application Security Testing \|Teste Estático de Segurança de Aplicação\)**  
+
+O SAST faz a análise estática de vulnerabilidade de código. Elas podem ser feitas em código fonte, byte code ou binário.
+
+2. **Leaks \(Vazamento de chaves\)** 
+
+O Leaks procura no código fonte possíveis vazamentos de credenciais, chaves privadas ou senhas Hard coded.
+
+3. **Auditoria de dependência**   
+
+É realizada uma auditoria de dependência  para verificar a possibilidade de vulnerabilidades em bibliotecas de terceiros.
