@@ -2,7 +2,7 @@ baseURL = "https://zupit.github.io/docs/"
 
 title = "Horusec"
 
-publishDir = "../docs"
+publishDir = "./dist"
 
 enableRobotsTXT = true
 
