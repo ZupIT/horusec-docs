@@ -5,7 +5,7 @@ weight: 70
 
 ---
 
-Horusec can be easily integrated with several tooks, see some available ones below: 
+Horusec can be easily integrated with several tools, see some available ones below: 
 
 
 

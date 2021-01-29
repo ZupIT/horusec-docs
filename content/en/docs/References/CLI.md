@@ -8,11 +8,11 @@ description: You will find here informations about HORUSEC-CLI
 
 ## What is it?
 
-CLI, or Command Line Interface, is the Horusec code part, in which you can run commands to make safety analysis or [**vulnerabilities**](vulnerabilities/) identification and classification. 
+CLI or Command Line Interface is Horusec's code part, in which you can run commands to make safety analysis or [**vulnerabilities**](vulnerabilities/) identification and classification. 
 
 ## What are the commands?
 
-Horusec is divided in two commands: 
+Horusec has two commands: 
 
 ### 1. start
 
@@ -20,19 +20,19 @@ Horusec is divided in two commands:
 horusec start
 ```
 
-When you run the start command, there are some configuration it can be changed. These configurations can happen of 3 ways:
+When you run the start command, there are 3 ways configurations can change: 
 
 * Configuration files;
 * Environment variables; 
 * Flags.
 
 {{% alert color="info" %}}
-One replacing the other and the flag is the highest level. 
+One configuration can replace the other and the flag is the highest level. 
 {{% /alert %}}
 
 ### 2. version
 
-It is used when you want verify which version Horusec is lately. 
+It is used when you want to verify which is the latest Horusec's version. 
 
 ## **Global flags** 
 
@@ -240,7 +240,7 @@ By default, Horusec will fetch the configuration file from the same directory wh
 
 ### Using environment variables 
 
-For the environment variables of the user configure how the horusec will run, you have to configure like the example below: 
+There are specific configuration for the user environment variables to configure how Horusec will run, check out the example below: 
 
 ```text
 export HORUSEC_CLI_HORUSEC_API_URI="http://0.0.0.0:8000"
@@ -329,7 +329,7 @@ To view all the information on table, slide to the right.
       <td style="text-align:left">json-output-file</td>
       <td style="text-align:left">O</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">In case the exit is <code>sonarqube</code> or<code>json</code> it must have
+      <td style="text-align:left">In case the exit is <code>sonarqube</code> or <code>json</code> it must have
         a name to be saved.
         <br />Ex.:<code>./output.json</code>
       </td>
@@ -478,10 +478,8 @@ To view all the information on table, slide to the right.
       <td style="text-align:left">false-positive</td>
       <td style="text-align:left">F</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Usado para ignorar vulnerabilidade nas analises e configurar com o tipo <code>Falso positivo</code> .
-        ATEN&#xC7;&#xC3;O quando voc&#xEA; adiciona esta configura&#xE7;&#xE3;o
-        diretamente na CLI, a configura&#xE7;&#xE3;o ir&#xE1; sobre escrever as
-        configura&#xE7;&#xF5;es da interface gr&#xE1;fica do Horusec.</td>
+      <td style="text-align:left">Used to ignore the vulnerabilities in the analyis and configure with the type <code>False positive</code> .
+        Pay Attention: when you add this configuration directly on CLI, it will overwrite Horusec's graphic interface configuration.</td>
     </tr>
     <tr>
       <td style="text-align:left">HORUSEC_CLI_RISK_ACCEPT_HASHES</td>
@@ -491,7 +489,7 @@ To view all the information on table, slide to the right.
       <td style="text-align:left"></td>
       <td style="text-align:left">Used to ignore the analysis vulnerabilities and to configure with <code>accepted risk</code> type.
         Pay attention when you add this configuration directly to CLI, the configuration
-        will writer the graphic interface configuration of Horusec.</td>
+        will write the graphic interface configuration of Horusec.</td>
     </tr>
     <tr>
       <td style="text-align:left">HORUSEC_CLI_CUSTOM_RULES_PATH</td>
@@ -542,8 +540,7 @@ To view all the information on table, slide to the right.
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">This setting tells to horusec configurations of tools how if will run
-        out not and image path to download image.</td>
+      <td style="text-align:left">This setting tells Horusec how it will run the image path to download.</td>
     </tr>
   </tbody>
 </table>

@@ -9,9 +9,9 @@ weight: 7
 
 Horusec allows you to enable and disable the messaging service.
 
-By default,  [**horusec-account**](https://github.com/ZupIT/horusec/tree/master/horusec-account) **,** [**horusec-api**](https://github.com/ZupIT/horusec/tree/master/horusec-api) **,** [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth)**,** [**horusec-webhook**](https://github.com/ZupIT/horusec/tree/master/horusec-webhook) microsservices starts with the environment variable **`HORUSEC_DISABLED_BROKER`**  with its value **false**. In this way, Horusec will send e-mails and other features that use the messaging service.
+By default,  [**horusec-account**](https://github.com/ZupIT/horusec/tree/master/horusec-account) **,** [**horusec-api**](https://github.com/ZupIT/horusec/tree/master/horusec-api) **,** [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth)**,** [**horusec-webhook**](https://github.com/ZupIT/horusec/tree/master/horusec-webhook) microsservices starts with the environment variable **`HORUSEC_DISABLED_BROKER`**  with a **false** value. Then, Horusec will send e-mails and other features that use the messaging service.
 
-When the value is **true**, the messaging service will not be used,  therefore there aren't some features, such as sending e-mails. In this case, when there is an interaction “is the e-mail confirmed?” it is automatically accepted by Horusec,  these e-mails aren't triggered.
+When the value is **true**, the messaging service will not be used,  therefore there aren't some features, such as sending e-mails. In this case, when there is an interaction like “is the e-mail confirmed?”, it is automatically accepted by Horusec,  these e-mails aren't triggered.
 
 ### Enable / Disable Application Admin
 

@@ -6,7 +6,7 @@ description: On this section, you will find information about organization manag
 
 ---
 
-Here you can see on the platform all the organizations you have created. You can also manage your organization's token or to make a permission management of your users. 
+Here you can see all the organizations you have created on the platform. You can also manage your organization's token or to make a permission management of your users. 
 
 ###  Organization's token 
 
@@ -26,7 +26,7 @@ Check below how the token dashboard is in Horusec:
 
 ### Organization's users
 
-You can invite new users to enter your organization. To do that, you have do register them in Horusec's database and at the end of the process, an email is sent to invite the users to enter that organization. 
+You can invite new users to enter your organization. To do that, you have do register them in Horusec's database and at the end of the process, an email is sent to invite the users to enter it. 
 
 When you invite, you have to choose the user's function inside the organization. There are two main funtions, each one has the following permissions:
 
@@ -44,4 +44,4 @@ When you invite, you have to choose the user's function inside the organization.
 
    * View repositories' dashboard the user has access to. 
 
-![Page to manage the users of your organization](/usuariodeorgaen_us.gif)
+![](https://gblobscdn.gitbook.com/assets%2F-M8uhrgP4gufXunrPh6I%2F-MO1l1OozGcaSw5v7TpO%2F-MO1p_jcl08rArE0PKy7%2Fusuariodeorganpt_br.gif?alt=media&token=b5a287f4-dd2c-4bfc-8b01-171a8e8d49e7)

@@ -38,7 +38,7 @@ If you want to know more about GitLeaks criteria, access the [**rules list**](ht
 
 [**NpmAudit**](https://docs.npmjs.com/cli/audit.html)  is a security tool that makes dependencies audit if you use **npm** packages on **Javascript** projects.
 
-For that, it sends a description of the configured dependencies in your project to the default register and requests a report of the known vulnerabilities
+For that, it sends a description of the configured dependencies in your project to the default register and requests a report of the known vulnerabilities.
 
 ### PHP Code Sniffer
 
@@ -50,7 +50,7 @@ For that, it sends a description of the configured dependencies in your project 
 
 ### Security Code Scan
 
-[**Security Code Scan**](https://github.com/security-code-scan/security-code-scan) is a security tool for applications that use **.NetCore** or**.Net** .
+[**Security Code Scan**](https://github.com/security-code-scan/security-code-scan) is a security tool for applications that use **.NetCore** or **.Net**.
 
 There are two ways to use it, both applied on Horusec analysis:
 
@@ -78,4 +78,4 @@ If you want to know more about Semgrep criteria, access the [**rules list**](htt
 
  [**YarnAudit**](https://classic.yarnpkg.com/en/docs/cli/audit/) is a security tool that makes dependency audit on **yarn** packages on **Javascript** projects. 
 
-It sends a description of the configured dependencies in your project to the default register and requests a report of the vulnerabilities.
+It sends a description of the configured dependencies of your project to the default register and requests a report of the vulnerabilities.

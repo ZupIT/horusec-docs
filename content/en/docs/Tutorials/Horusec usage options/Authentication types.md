@@ -17,7 +17,7 @@ See below how to use each one of them:
 
 This is the most simple type of authentication. To use it, follow the next steps: 
 
-1. Add the environment variable**`HORUSEC_AUTH_TYPE = "horusec"`**
+1. Add the environment variable **`HORUSEC_AUTH_TYPE = "horusec"`**
 
     in the **horusec-auth** microservice and you will enable the native authentication; 
 
