@@ -2,7 +2,7 @@
 title: Principais Conceitos
 weight: 2
 description: >-
-  Você vai encontrar aqui as informações sobre os principais conceitos do Horusec.
+  Nesta seção, você vai encontrar mais informações sobre os principais conceitos do Horusec.
 ---
 
 ---

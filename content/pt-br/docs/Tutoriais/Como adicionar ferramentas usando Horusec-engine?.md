@@ -1,15 +1,16 @@
 ---
 title: Como adicionar ferramentas usando Horusec-engine?
 weight: 25
+description: Você vai encontrar aqui as informações necessárias para adicionar ferramentas pelo Horusec-engine.
 ---
 
----?
+---
 
-O Horusec também permite que você adicione ferramentas usando seu próprio motor \([**Horusec-engine**](https://github.com/ZupIT/horusec-engine)\) à sua stack. Para incluir uma nova ferramentas de análises ao horusec-cli, siga esses passos:
+O Horusec também permite que você adicione ferramentas usando um próprio motor \([**Horusec-engine**](https://github.com/ZupIT/horusec-engine)\) à sua stack. Para incluir uma nova ferramentas de análises ao horusec-cli, siga esses passos:
 
 ### **1. Crie um novo CLI** 
 
-Para fazer isso, basta copiar um dos CLIs existentes e renomear seguindo o padrão horusec-{nome-do-cli} 
+Para fazer isso, basta copiar um dos CLIs existentes e renomear seguindo o padrão **horusec-{nome-do-cli}** 
 
 Exemplos: 
 
@@ -21,11 +22,11 @@ Exemplos:
 
 É necessário criar as regras que valerão para o novo CLI antes dele ser, de fato, criado. Veja mais neste [**exemplo**](https://github.com/ZupIT/horusec/tree/master/development-kit/pkg/engines).
 
-Se for um cliente que estiver usando o motor, você pode simplesmente fazer a importação sem ter necessidade de uma imagem docker. Você pode encontrar um exemplo seguindo este caminho:
+Se for um cliente que estiver usando o motor, você pode simplesmente fazer a importação sem ter a necessidade de uma imagem docker. Você pode encontrar um exemplo seguindo este caminho:
 
 ![](https://lh3.googleusercontent.com/NygPCob59o2k9D2Fk7uG-AmwKXxUOb6nIZzOP8CJ4icfKELWbAnmp5EBc0MgLrLnBP7DYkD5QaFY3Wnmqmq3mmhstVe9wa403dLzasDAKqN8vOmqjklZno7CEqd5a4Hbu-RhQEcC)
 
-Você só vai precisar importar as regras e fazer a análise, como no exemplo abaixo:
+Depois, você só vai precisar importar as regras e fazer a análise, como no exemplo abaixo:
 
 ![](https://lh6.googleusercontent.com/2tmuCbBwVPQj33RZvVIWRgTnWWPe13fbbl6M9WxeiKqLteAIYjMhTDc9AEbJnxMQFX37VLkkzzLDrva4AVum99_ituhqX-WXAr4NtVrN4PJqaVTH8QmS3kHhOQu2PcYg2gc5EJwB)
 
@@ -33,12 +34,14 @@ Você encontra os exemplos da regra neste caminho:
 
 ![](https://lh3.googleusercontent.com/uPCrSnkIhM95mmyHBxvox-fnxfbgpWarNXfZz0r1mhh9mghwJHyS5R_ULFCBf5D273v5kAu26JEE_lB1P4ahoWzlveQxQuiVxcCSI9wWML5ZPWEeuhxIebL8ZUu2seq3Z91BTa6Y)
 
-### 3**. Atualize o CLI com as novas regras** 
+### **3. Atualize o CLI com as novas regras** 
 
 Depois de criar as regras, atualize o seu CLI para finalizar a configuração. Veja mais no exemplo a seguir. 
 
 {{% alert color="info" %}}
+
 Para usar este exemplo no seu projeto, substitua o texto entre chaves com as suas definições novas do seu CLI. 
+
 {{% /alert %}}
 
 ```text

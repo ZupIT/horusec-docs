@@ -1,7 +1,7 @@
 ---
 title: Gestão de conta
 weight: 38
-description: 'Nesta seção, você encontra informações sobre gerenciamento de conta e webhook.'
+description: 'Nesta seção, você vai encontrar informações sobre gerenciamento de conta e webhook.'
 ---
 
 ---

@@ -1,11 +1,32 @@
 ---
 title: Instalando o Horusec
-weight: 11
+weight: 3
 description: >-
-  Você vai encontrar aqui as orientações para instalar o Horusec de acordo com seu sistema operacional.
+ Nesta seção, você vai encontrar mais orientações para instalar o Horusec de acordo com seu sistema operacional.
 ---
 
 ---
+
+## Requisitos
+
+Estes são os requisitos para você usar o Horusec localmente: 
+
+{{% alert color="info" %}}
+* docker
+* git
+* docker-compose/helm
+* golang
+* rabbitmq
+* postgres
+* account-of-email (opcional)
+
+Se você quiser utilizar o horusec-cli: 
+
+* docker
+* git (Obrigatório se você estiver usando busca por histórico de projetos no git)
+{{% /alert %}}
+
+
 
 ## **MAC ou Linux**
 
@@ -54,7 +75,7 @@ https://horusec.io/bin/$versão/$sistema_operacional/horusec
 
 ```text
 https://horusec.io/bin/$versão/$sistema_operacional/horusec.exe
-````
+```
 
 **Exemplo: https://horusec.io/bin/v1-1-0/win\_x64/horusec.exe**
 
@@ -71,7 +92,7 @@ Quando você inicializa a imagem com o comando de `run` basta executar com o com
 
 ```text
 docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src horuszup/horusec-cli:latest horusec start -p /src -P $(pwd)
-````
+```
 
 Este é um exemplo utilizando a pipeline do [**aws code build**](adicionando-o-horusec-em-sua-pipeline.md).
 

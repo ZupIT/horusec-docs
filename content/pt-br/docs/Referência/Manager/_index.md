@@ -1,7 +1,7 @@
 ---
 title: Manager
 weight: 30
-description: 'Nesta seção, você encontra informações referentes ao Manager do Horusec.'
+description: Nesta seção, você vai encontrar mais informações referentes ao Manager do Horusec.
 ---
 
 ---
@@ -42,13 +42,13 @@ Veja mais sobre quais são esses dados na tabela a seguir:
 | **Total de repositórios** | Quantidade de repos na organização ou do repositório. |
 | **Total de vulnerabilidades**  \(por **severidade**\) | Quantidade de vulnerabilidades classificadas por severidade \(high, medium, low\) na visão da organização ou do repositório. |
 | **Total de vulnerabilidades**  \(pelos **5 desenvolvedores com mais vulnerabilidades ativas**\) | Quantidade de vulnerabilidades classificadas de acordo com os 5 desenvolvedores que mais possuem vulnerabilidades ativas, na visão da organização ou do repositório. |
-| **Total de vulnerabilidades** \(por **severidade e** por **linguagem de programação**\) | Quantidade de vulnerabilidades classificadas de acordo com a severidade e a linguagem de programação usada, na visão da organização ou do repositório. |
+| **Total de vulnerabilidades** \(por **severidade** e por **linguagem de programação**\) | Quantidade de vulnerabilidades classificadas de acordo com a severidade e a linguagem de programação usada, na visão da organização ou do repositório. |
 | **Linha do tempo de vulnerabilidades** | Linha do tempo com detalhes das vulnerabilidades classificadas de acordo com severidade e data, na visão da organização ou do repositório. |
 | **Detalhes das vulnerabilidades ativas**  | Visão detalhada das vulnerabilidades que estão ativas, na visão da organização ou do repositório.  |
 
-{{< tabs name="T0" >}}
+{{< tabs id="Dash" >}}
 {{% tab name="Dash com visão por organização" %}}
-![Vis&#xE3;o por organiza&#xE7;&#xE3;o](/painel-analitico-e-dash-com-visao-por-or.gif)
+![](/docs/painel-analitico-e-dash-com-visao-por-or.gif)
 {{% /tab %}}
 
 {{% tab name="Dash com a visão por repositório" %}}

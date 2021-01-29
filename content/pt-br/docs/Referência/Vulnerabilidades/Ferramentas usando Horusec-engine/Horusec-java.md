@@ -2,7 +2,7 @@
 title: Horusec-java
 weight: 56
 description: >-
-  Nesta seção, você encontra informações das vulnerabilidades que o Horusec
+  Nesta seção, você vai encontrar as informações das vulnerabilidades que o Horusec
   encontra em projetos Java.
 ---
 

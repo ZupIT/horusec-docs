@@ -2,7 +2,7 @@
 title: Horusec-kotlin
 weight: 60
 description: >-
-  Nesta seção, você encontra informações das vulnerabilidades que o Horusec
+ Nesta seção, você vai encontrar as informações das vulnerabilidades que o Horusec
   encontra em projetos Kotlin.
 ---
 
@@ -10,7 +10,7 @@ description: >-
 
 ## O que é?
 
-O  [**Horusec-Kotlin**](https://github.com/ZupIT/horusec/tree/master/horusec-kotlin#horusec-kotlin-cli) é  uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos Kotlin.
+O  [**Horusec-Kotlin**](https://github.com/ZupIT/horusec/tree/master/horusec-kotlin#horusec-kotlin-cli) é uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos Kotlin.
 
 ## Exemplos de vulnerabilidades 
 
