@@ -12,7 +12,9 @@ description: >-
 
 Horusec is an open source tool that orchestrates other security tools and identifies security flaws or vulnerabilities in projects and put all results in a database for analysis and generation of metrics.
 
-The languages ​​and tools that we currently use are:
+Currently, Horusec can select the languages ​​and/or tools to be used on the project based on the available stack.
+
+These languages and tools are:
 
 * **Python**
   * [**Bandit**](https://github.com/PyCQA/bandit)
@@ -56,6 +58,22 @@ The languages ​​and tools that we currently use are:
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
 * **JSON**
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
+* **Shell Script**
+  * [**Shellcheck**](https://github.com/koalaman/shellcheck)
+* **Elixir**
+  * [**Mix Audit**](https://github.com/mirego/mix_audit)
+  * [**Sobelow**](https://github.com/nccgroup/sobelow)
+
+{{% alert color="info" %}}
+
+In case you don't want Horusec to use a certain language and/or tool, you can just disable this configuration on the CLI.
+
+{{% /alert %}}
+
+### **Horusec Architecture**
+
+![](/docs/architecturehorusec.png)
+
 
 ## **How does Horusec work?**
 
