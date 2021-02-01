@@ -52,13 +52,13 @@ The SAST analyzes the source code of the systems. Tests are usually performed be
 **Horusec** is currently labeled as **SAST**.
 {{% /alert %}}
 
-### DAST**\(Dynamic Application Security Testing\)**
+### DAST **\(Dynamic Application Security Testing\)**
 
 The DAST tests exposed interfaces for vulnerabilities. DAST is great for finding externally visible vulnerabilities. 
 
-For this test, the URL to be tested is already more than sufficient for the specialist who will perform the test or the binary to be executed. The downside is that this type of test depends on experts to write, making it difficult to scale, but once written it can be 100% automated.
+For this test, the URL to be tested is already more than sufficient for you to perform the test or the binary to be executed. The downside is that this type of test depends on experts to write, making it difficult to scale, but once written it can be 100% automated.
 
-### IAST**\(Interactive Application Security Testing\)**
+### IAST **\(Interactive Application Security Testing\)**
 
 IAST is the combination of static and dynamic test models \(SAST and DAST\) and presents the best results.
 

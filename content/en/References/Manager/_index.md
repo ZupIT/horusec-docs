@@ -1,7 +1,7 @@
 ---
 title: Manager
 weight: 30
-description: 'Nesta seção, você encontra informações referentes ao Horusec-Manager.'
+description: 'On this section you will find information about Horusec-Manager.'
 ---
 
 ---
@@ -18,7 +18,7 @@ You will see below more details on how to make each one of these activities.
 
 ## Creating an account 
 
-Manager has a functionality for you to create an account inside Horusec. After your user is created, you just need to confirm the account on your email. 
+Manager creates an account inside Horusec. After your user is created, you just need to confirm the account on your email. 
 
 ![](/docs/image%20%282%29.png)
 
@@ -91,16 +91,18 @@ See more about these data in the table below:
   </tbody>
 </table>
 
+
 {{< tabs name="T0" >}}
-{{% tab name="Dashboard with organization view" %}}
-![Organization view](/painel-analitico-english.gif)
+{{% tab name= "Dashboard with organization view" %}}
+![Organization view](/docs/painel-analitico-english.gif)
 {{% /tab %}}
 
-{{% tab name="Dashboard with repository view " %}}
-![Repository view](/visao-por-repo-eng.gif)
+{{% tab name="Dashboard with repository view" %}}
+![Repository view](/docs/visao-por-repo-eng.gif)
 {{% /tab %}}
 {{< /tabs >}}
 
 ## Managements
 
 On Horusec, you have a variety of management types. Check below more information about each one of them:
+

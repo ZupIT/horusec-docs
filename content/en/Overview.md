@@ -112,11 +112,11 @@ It brings you security, ensuring that possible unknown vulnerabilities will be f
 
 * **Improves your experience**
 
-It ensures the safety of projects in the CI and CD process and, thus, reduces the costs of correcting a vulnerability.
+It ensures the safety of projects in the CI and CD process and it reduces the costs of correcting a vulnerability.
 
 ## **Horusec analysis' types**
 
-Horusec performs 3 types of performance analysis to identify if there are any security flaws:
+Horusec performs 3 types of analysis to identify if there are any security flaws:
 
 1. **SAST \(Static Application Security Testing\)**  
 

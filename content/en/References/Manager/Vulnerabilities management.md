@@ -6,7 +6,7 @@ description: 'On this section, you will find information about vulnerabilities m
 
 ---
 
-When you send an analysis to Horusec, it can be classified inside the platform with some status types: 
+When you send an analysis to Horusec, it can be categorized inside the platform with some status types: 
 
 * Vulnerability;
 * False positive;
