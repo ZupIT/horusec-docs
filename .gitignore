@@ -1,3 +1,4 @@
 .horusec
 **/node_modules/**
 dist
+themes/**
