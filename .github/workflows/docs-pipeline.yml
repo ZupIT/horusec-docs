@@ -20,7 +20,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Install
         run: npm install
-      - name: Setup
-        run: git submodule init && git submodule update
       - name: Build
-        run: npm run build
+        run: |
+          git submodule init
+          git submodule update
+          npm run build
