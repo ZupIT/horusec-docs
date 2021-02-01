@@ -1,0 +1,26 @@
+
+name: DocsHorusecPipeline
+
+on:
+  pull_request:
+    branches: [ "**" ]
+
+jobs:
+  install-lint-build:
+    name: install-lint-build
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - name: Set up Node 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+        id: node
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: Install
+        run: npm install
+      - name: Setup
+        run: git submodule init && git submodule update
+      - name: Build
+        run: npm run build
