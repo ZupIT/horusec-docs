@@ -2,8 +2,7 @@
 title: Ferramentas de segurança
 weight: 49
 description: >-
-  Nesta seção, você encontra informações das ferramentas SAST utilizadas pelo
-  Horusec nas suas análises.
+  Nesta seção, você vai encontrar aqui mais informações das ferramentas SAST utilizadas pelo Horusec nas suas análises.
 ---
 
 ---
@@ -30,11 +29,11 @@ Para entender melhor os critérios do EsLint, acesse a [**lista de regras**](htt
 
 ### Flawfinder
 
-[**Flawfinder**](https://github.com/david-a-wheeler/flawfinder) é uma ferramenta open source que escaneia e reportar potenciais falhas de segurança em códigos fonte C/C++ . Além da busca por vulnerabilidades, a ferramenta também pode ser usada como uma introdução a recursos de análise de código fonte estático.
+[**Flawfinder**](https://github.com/david-a-wheeler/flawfinder) é uma ferramenta open source que escaneia e reporta potenciais falhas de segurança em códigos fonte C/C++ . Além da busca por vulnerabilidades, a ferramenta também pode ser usada como uma introdução a recursos de análise de código fonte estático.
 
 ### GoSec
 
-O [**Gosec**](https://github.com/securego/gosec) é uma ferramenta que inspeciona o código-fonte em busca de problemas de segurança examinando o Go AST em aplicações utilizando **GoLang**. 
+O [**Gosec**](https://github.com/securego/gosec) é uma ferramenta que inspeciona o código fonte em busca de problemas de segurança examinando o Go AST em aplicações utilizando **GoLang**. 
 
 Para entender melhor os critérios do Gosec, acesse a [**lista de regras** ](https://github.com/securego/gosec#available-rules)que a ferramenta aplica em suas análises.
 
@@ -61,7 +60,7 @@ O [**Safety**](https://github.com/pyupio/safety)  é uma ferramenta que verifica
 ### Security Code Scan
 
 O [**Security Code Scan**](https://github.com/security-code-scan/security-code-scan) é uma ferramenta de segurança para aplicações que utilizam **.NetCore** ou **.Net** .  
-Atualmente, existe dois modos de uso, ambos aplicados na análise do Horusec: 
+Atualmente, existem dois modos de uso, ambos aplicados na análise do Horusec: 
 
 1. Para desenvolvedores;
 2. Para auditores. 

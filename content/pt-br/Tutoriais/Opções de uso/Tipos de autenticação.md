@@ -1,6 +1,7 @@
 ---
 title: Tipos de autenticação
 weight: 9
+description: Você vai encontrar aqui os tipos de autenticação disponíveis no Horusec.
 ---
 
 ---
@@ -8,23 +9,26 @@ weight: 9
 O Horusec possui 3 tipos de autenticação:
 
 1. **Nativa Horusec**
-2. **Ldap**
+2. **LDAP**
 3. **Keycloak**
 
 Veja abaixo como utilizar cada uma delas:
 
-### Nativa Horusec
+### **Nativa Horusec**
 
 Este é o tipo mais simples de autenticação. Para utilizá-la,  siga os passos:
 
-1. Adicione a variável de ambiente **`HORUSEC_AUTH_TYPE=”horusec”`** no microsserviço “**horusec-auth**” para você habilitar a autenticação nativa. 
+1. Adicione a variável de ambiente **`HORUSEC_AUTH_TYPE=”horusec”`** no microsserviço “**horusec-auth**” para você habilitar a autenticação nativa.
+
 2. Essa autenticação será adicionada em todos os microsserviços \(horusec-auth, horusec-account, horusec-api, horusec-analytic\) e na variável de ambiente  **`HORUSEC_JWT_SECRET_KEY=”horusec-secret”`** - lembrando que seu valor pode ser qualquer um e, de preferência, um hash forte. 
 
 {{% alert color="info" %}}
+
 Lembre que você não poderá mais alterar a configuração depois que ela for feita.
+
 {{% /alert %}}
 
-### **Ldap**
+### **LDAP**
 
 Este tipo de autenticação utiliza o protocolo de aplicação aberto LDAP \(Lightweight Directory Access Protocol\). Isso permite que o Horusec se integre a uma ferramenta como o [**OpenLDAP**](https://www.openldap.org/)**,** em que estão todos os usuários, grupos de acesso e organizações. 
 
@@ -32,7 +36,8 @@ O Horusec irá consumir os dados da ferramenta e, assim,  as demais funcionalida
 
 Para configurar essa autenticação, siga os passos: 
 
-1. Adicione a variável de ambiente **`HORUSEC_AUTH_TYPE=”ldap”`**no microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth)  para definir a autenticação via LDAP; 
+1. Adicione a variável de ambiente `HORUSEC_AUTH_TYPE=”ldap”` no microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth)  para definir a autenticação via LDAP.
+
 2. Adicione algumas variáveis de ambiente no microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) para realizar a conexão com a ferramenta. 
 
 Na tabela abaixo, veja como seguir com a configuração:   
@@ -117,10 +122,11 @@ Este tipo de autenticação utiliza o [**Keycloak**](https://www.keycloak.org/do
 
 Para configurar essa autenticação, siga os passos:
 
-1. Adicione a variável de ambiente **`HORUSEC_AUTH_TYPE=”keycloak”`**no microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) que você irá utilizar na autenticação via Keycloak.  
-2. Adicione as variáveis de conexão com o Keycloak
+1. Adicione a variável de ambiente `HORUSEC_AUTH_TYPE=”keycloak”` no microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) que você irá utilizar na autenticação via Keycloak.
 
-Na tabela abaixo, veja como funciona essas variáveis:
+2. Adicione as variáveis de conexão com o Keycloak.
+
+Na tabela abaixo, veja como funcionam essas variáveis:
 
 | **Nome da variável de ambiente** | **Valor padrão** | **Descrição** |
 | :--- | :--- | :--- |

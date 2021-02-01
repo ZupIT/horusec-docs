@@ -1,12 +1,14 @@
 ---
 title: Gestão de webhook
 weight: 40
-description: 'Nesta seção, você encontra informações sobre a gestão de webhooks.'
+description: Nesta seção, você vai encontrar mais informações sobre a gestão de webhooks.
 ---
 
 ---
 
-Os webhooks são disparados quando recebem uma nova análise na base de dados do Horusec. Após inserir essa análise, o próprio Horusec verifica se tem algum webhook configurado para o repositório selecionado e envia a análise via HTTP para o destino configurado.
+Este recurso permite que você gerencie os webhooks que são disparados ao receberem uma nova análise na base de dados do Horusec. 
+
+Depois que essa análise é inserida, o próprio Horusec verifica se tem algum webhook configurado para o repositório selecionado e envia a análise via HTTP para o destino configurado.
 
 Você deve escolher na configuração do webhook:
 

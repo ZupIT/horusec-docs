@@ -2,7 +2,7 @@
 title: Visão Geral
 weight: 1
 description: >-
-  Você vai encontrar aqui as informações iniciais sobre o Horusec antes de se
+  Nesta seção, você vai encontrar as informações iniciais sobre o Horusec antes de se
   aprofundar no produto.
 ---
 

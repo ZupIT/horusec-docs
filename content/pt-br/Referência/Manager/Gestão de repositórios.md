@@ -1,12 +1,12 @@
 ---
 title: Gestão de repositórios
 weight: 34
-description: 'Nesta seção, você encontra informações sobre a gestão de repositórios.'
+description: Nesta seção, você vai encontrar mais informações sobre a gestão de repositórios.
 ---
 
 ---
 
-Aqui, você consegue visualizar na plataforma todos os repositórios da sua organização, além de fazer a gestão do token e dos usuários que fazem parte de cada repo cadastrado. 
+Este recurso permite que você visualize na plataforma todos os repositórios da sua organização, além de fazer a gestão do token e dos usuários que fazem parte de cada repo cadastrado. 
 
 Ao criar um repositório, você tem algumas funcionalidades como:
 
@@ -21,10 +21,10 @@ Assim como na organização, o token no repositório pode ser usado para todas a
 
 O token de repositório é único e só pode ser criado por quem tem acesso de administrador dentro do repositório ou da organização. 
 
-Por exemplo, se você adicionar este token em sua pipeline, o Horusec irá enviar a análise e armazenar para ter uma visão analítica das [**vulnerabilidades**](.././#gestao-de-vulnerabilidades) do seu repositório.
+Por exemplo, se você adicionar este token em sua pipeline, o Horusec irá enviar a análise e armazená-la para ter uma visão analítica das [**vulnerabilidades**](.././#gestao-de-vulnerabilidades) do seu repositório.
 
 {{% alert color="danger" %}}
-Lembre-se de que ao criar um token de acesso será visto apenas uma vez.
+Lembre-se de que, ao criar um token de acesso, ele será visto apenas uma vez.
 {{% /alert %}}
 
 ![](/docs/token-de-repo-pt_br.gif)
