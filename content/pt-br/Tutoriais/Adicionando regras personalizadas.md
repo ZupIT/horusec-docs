@@ -1,19 +1,51 @@
 ---
 title: Adicionando regras personalizadas
 weight: 27
+description: Você vai encontrar aqui orientações de como adicionar regras personalizadas ao Horusec.
 ---
 
 ---
 
-Com o Horusec você pode adicionar dinamicamente regras personalizadas, que serão executadas nos nossos motores.
+Você pode utilizar o Horusec para adicionar dinamicamente regras personalizadas, que serão executadas nos nossos motores.
 
-## **1. JSON de regras personalizadas do Horusec**
+Veja como fazer esta configuração, seguindo os passos: 
+
+## **1. Crie um arquivo JSON de regras personalizadas**
 
 Para executar regras personalizadas no Horusec, você deverá criar um arquivo **.json** contendo o seguinte código:
 
-![](https://lh4.googleusercontent.com/gnGcT4IOd4vfEtSUrWcxfDhaCWk4qxGiF32H82gqhmv3fHLTdW2MvQWIpTSqN-Py5iXEnWKIFy05rhbGyQ_yr5hv1uSxygc80aS3d1rVIyAoCGvz6TBELFozLpVa2lcE97_lNlKY)
+```text
+[
+  {
+     "ID": "0d6c505a-4986-4771-91db-ec4f4ebface7",
+     "Name": "Vulnerability name",
+     "Description": "Description of the vulnerability",
+     "Severity": "Vulnerability severity",
+     "Confidence": "Confidence of the vulnerability",
+     "Type": "Regex type",
+     "Tool": "HorusecCsharp",
+     "Expressions": [
+        "Regex to respective vulnerability"
+     ]
+  },
+  {
+     "ID": "837c504d-38b4-4ea6-987b-d91e92ac86a2",
+     "Name": "Cookie Without HttpOnly Flag",
+     "Description": "It is recommended to specify the HttpOnly flag to new cookie. For more information access: (https://security-code-scan.github.io/#SCS0009) or (https://cwe.mitre.org/data/definitions/1004.html).",
+     "Severity": "LOW",
+     "Confidence": "LOW",
+     "Type": "OrMatch",
+     "Tool": "HorusecCsharp",
+     "Expressions": [
+        "httpOnlyCookies\s*=\s*['|"]false['|"]",
+        "(new\sHttpCookie\(.*\))(.*|\n)*(\.HttpOnly\s*=\s*false)",
+        "(new\sHttpCookie)(([^H]|H[^t]|Ht[^t]|Htt[^p]|Http[^O]|HttpO[^n]|HttpOn[^l]|HttpOnl[^y])*)(})"
+     ]
+  }
+]
+```
 
-## **2. Atributos do JSON** 
+## **2. Defina os atributos do JSON** 
 
 Na tabela abaixo você pode conhecer mais sobre cada atributo:
 
@@ -28,7 +60,7 @@ Na tabela abaixo você pode conhecer mais sobre cada atributo:
 | Tool | String | Ferramenta onde as regras serão executadas contendo esses possíveis valores: HorusecCsharp, HorusecKotlin, HorusecKubernetes, HorusecLeaks e HorusecNodejs. |
 | Expressions | Array | Contém todos os RegExps que detectarão a vulnerabilidade.    |
 
-## **3. Tipos de RegExps**
+## **3. Estabeleça os tipos de RegExps**
 
 Nosso motor trabalha com três tipos de RegExps \(Expressões Regulares\). 
 
@@ -38,8 +70,10 @@ Nosso motor trabalha com três tipos de RegExps \(Expressões Regulares\).
 | Regular | É bem similar ao OrMatch, porém a ideia é que contenha múltiplas formas de se detectar o mesmo padrão. |
 | AndMatch | São regras que precisam que o arquivo manifeste múltiplos padrões para ser considerado algo a ser reportado, portanto, a engine realiza a operação lógica em cada uma das RegExps cadastradas para garantir que todas as condições foram encontradas. |
 
-## **4. Flag de regras personalizadas**
+## **4. Aplique uma flag de regras personalizadas**
 
 Para começar a usar as regras que você criou, basta aplicar a **flag -c** para passar o caminho direto ao seu arquivo **.json**. 
 
-![](https://lh6.googleusercontent.com/1JYtHKUmYY8n4tpRzPjXgC8r6tRA24qpD0xU9fMJMAYj8xvPvjhcTVVww6MArhpA9iLVJC0ojbetqJyN1VMlLPhRCDKb_Ryqe8wJBj1XcvU29V-eDJjBgYKeWY6DGzcSarGm9Fc-)
+```text
+horusec start -c="{path to your horusec custom rules json file}"
+```

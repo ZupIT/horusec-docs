@@ -1,7 +1,7 @@
 ---
 title: Gestão de vulnerabilidades
 weight: 36
-description: 'Nesta seção, você encontra informações sobre a gestão de vulnerabilidades.'
+description: Nesta seção, você vai encontrar mais informações sobre a gestão de vulnerabilidades.
 ---
 
 ---

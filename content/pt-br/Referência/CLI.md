@@ -1,14 +1,14 @@
 ---
 title: CLI
 weight: 43
-description: 'Nesta seção, você encontra informações referentes ao HORUSEC-CLI'
+description: Nesta seção, você vai encontrar as informações referentes ao HORUSEC-CLI.
 ---
 
 ---
 
 ## O que é?
 
-A CLI, ou Interfaces de Linhas de Comando, é a parte de código do Horusec, pela qual são rodados comandos de análise de segurança e de identificação e classificação de [**vulnerabilidades**](vulnerabilidades/). 
+A CLI, ou Interfaces de Linhas de Comando, é a parte de código do Horusec pela qual são rodados comandos de análise de segurança e de identificação e classificação de [**vulnerabilidades**](vulnerabilidades/). 
 
 ## Quais os comandos?
 
