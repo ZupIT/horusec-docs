@@ -1,5 +1,5 @@
 ---
-title: 2. Crie um Formatter e um Config
+title: Crie um Formatter e um Config
 weight: 16
 description: 'Passo 2: Crie um Formatter e um Config'
 ---
