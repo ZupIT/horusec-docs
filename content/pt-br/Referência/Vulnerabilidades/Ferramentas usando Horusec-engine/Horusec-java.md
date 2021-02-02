@@ -17,7 +17,7 @@ O [**Horusec-Java**](https://github.com/ZupIT/horusec/tree/master/horusec-java#h
 {{% alert color="info" %}}
 A seguir, você encontra todos os exemplos de vulnerabilidades que o Horussec-Java identifica. O conteúdo está em inglês porque é assim que ele aparece no sistema. 
 
-Para visualizar vulnerabilidades específicas para projetos mobile em java, acesse a [**página Horusec-Kotlin**](horusec-kotlin) porque são as mesmas com as de Kotlin
+Para visualizar vulnerabilidades específicas para projetos mobile em java, acesse a [**página Horusec-Kotlin**](../horusec-kotlin) porque são as mesmas com as de Kotlin
 {{% /alert %}}
 
 ### File Is World Readable

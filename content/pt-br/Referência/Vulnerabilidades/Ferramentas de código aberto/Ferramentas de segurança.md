@@ -19,7 +19,7 @@ Para entender melhor os critérios do Brakemen, acesse a [**lista de vulnerabili
 
 ### EsLint
 
-[**Eslint**](https://github.com/eslint/eslint) é uma ferramenta  [**SAST**](../../../../../../principais-conceitos#sast-static-application-security-testing)para identificar e relatar os padrões encontrados no código ECMAScript/JavaScript. Em muitos aspectos, é semelhante a JSLint e JSHint, com algumas exceções:
+[**Eslint**](https://github.com/eslint/eslint) é uma ferramenta  [**SAST**](../../../../principais-conceitos/#sast-static-application-security-testing) para identificar e relatar os padrões encontrados no código ECMAScript/JavaScript. Em muitos aspectos, é semelhante a JSLint e JSHint, com algumas exceções:
 
 * ESLint usa [Espree](https://github.com/eslint/espree) para análise de JavaScript.
 * ESLint usa um AST para avaliar padrões no código.
@@ -39,7 +39,7 @@ Para entender melhor os critérios do Gosec, acesse a [**lista de regras** ](htt
 
 ### GitLeaks
 
-O [**GitLeaks**](https://github.com/zricethezav/gitleaks) é uma ferramenta [**SAST**](../../../principais-conceitos#sast-static-application-security-testing) para detectar segredos codificados como senhas, chaves de API e tokens em todo o histórico dos repositórios git.
+O [**GitLeaks**](https://github.com/zricethezav/gitleaks) é uma ferramenta [**SAST**](../../../../principais-conceitos/#sast-static-application-security-testing) para detectar segredos codificados como senhas, chaves de API e tokens em todo o histórico dos repositórios git.
 
 Para entender melhor os critérios do GitLeaks, acesse a [**lista de regras** ](https://github.com/ZupIT/horusec/blob/master/deployments/dockerfiles/gitleaks/rules.toml)que a ferramenta aplica em suas análises.
 
@@ -70,18 +70,18 @@ Para entender melhor os critérios do Security Code Scan, acesse a [**lista de r
 
 ### Semgrep
 
-[**Semgrep**](https://github.com/returntocorp/semgrep) é uma ferramenta  [**SAST**](../../../principais-conceitos#sast-static-application-security-testing), que se destaca na expressão de padrões de código - sem consultas complicadas - e na detecção de bugs no início do editor, no commit e no tempo de CI. Regras precisas se parecem com o código que você está pesquisando; não mais percorrer árvores de sintaxe abstrata ou lutar com regexes.
+[**Semgrep**](https://github.com/returntocorp/semgrep) é uma ferramenta  [**SAST**](../../../../principais-conceitos/#sast-static-application-security-testing), que se destaca na expressão de padrões de código - sem consultas complicadas - e na detecção de bugs no início do editor, no commit e no tempo de CI. Regras precisas se parecem com o código que você está pesquisando; não mais percorrer árvores de sintaxe abstrata ou lutar com regexes.
 
 Para entender melhor os critérios do Semgrep, acesse a [**lista de regras**](https://semgrep.dev/docs/rules/) que a ferramenta aplica em suas análises.
 
 ### TFSec
 
-O [**TFSec**](https://github.com/tfsec/tfsec) é uma ferramenta de segurança que usa análise estática de **terraform templates** para detectar possíveis problemas de segurança. Veja abaixo a lista de regras que a ferramenta aplica em suas análises:
+O [**TFSec**](https://github.com/tfsec/tfsec) é uma ferramenta de segurança que usa análise estática de **terraform templates** para detectar possíveis problemas de segurança. Veja abaixo a lista de regras que a ferramenta aplica em suas análises para:
 
-* De modo geral \([**General**](https://github.com/tfsec/tfsec/blob/master/docs/GENERAL_CHECKS)**\)**
-* Para [**AWS**](https://github.com/tfsec/tfsec/blob/master/docs/AWS_CHECKS)
-* Para [**Azure**](https://github.com/tfsec/tfsec/blob/master/docs/AZURE_CHECKS)
-* Para [**Google**](https://github.com/tfsec/tfsec/blob/master/docs/GOOGLE_CHECKS)
+* [**General**](https://github.com/tfsec/tfsec/blob/master/docs-website/docs/general/home.md)
+* [**AWS**](https://github.com/tfsec/tfsec/blob/master/docs-website/docs/aws/home.md)
+* [**Azure**](https://github.com/tfsec/tfsec/blob/master/docs-website/docs/azure/home.md)
+* [**Google**](https://github.com/tfsec/tfsec/blob/master/docs-website/docs/google/home.md)
 
 ### YarnAudit
 

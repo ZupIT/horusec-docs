@@ -34,7 +34,6 @@ Essas linguagens e ferramentas são:
 * **C\#**
   * [**SecuriyCodeScan**](https://security-code-scan.github.io)
   * [**HorusecCSharp**](https://github.com/ZupIT/horusec/tree/master/horusec-csharp)
-  * [**Flawfinder**](https://github.com/david-a-wheeler/flawfinder)
 * **Java**
   * [**HorusecJava**](https://github.com/ZupIT/horusec/tree/master/horusec-java)
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
@@ -51,7 +50,7 @@ Essas linguagens e ferramentas são:
 * **PHP**
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
   * [**PHP Code Scan**](https://github.com/FloeDesignTechnologies/phpcs-security-audit)
-* **C**
+* **C\/C++**
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
   * [**Flawfinder**](https://github.com/david-a-wheeler/flawfinder)
 * **HTML**
@@ -59,7 +58,7 @@ Essas linguagens e ferramentas são:
 * **JSON**
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
 * **Dart**
-  * **HorusecDart**
+  * [**HorusecDart**](https://github.com/ZupIT/horusec/tree/master/horusec-dart)
 * **Shell Script**
   * [**Shellcheck**](https://github.com/koalaman/shellcheck)
 * **Elixir**
