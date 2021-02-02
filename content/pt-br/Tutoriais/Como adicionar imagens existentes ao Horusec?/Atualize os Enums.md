@@ -1,5 +1,5 @@
 ---
-title: 3. Atualize os Enums
+title: Atualize os Enums
 weight: 18
 description: 'Passo 3: Atualizando Enums'
 ---
