@@ -1,5 +1,5 @@
 ---
-title: 5. Atualize validações
+title: Atualize validações
 weight: 22
 description: 'Passo 5: Atualize as validações'
 ---
