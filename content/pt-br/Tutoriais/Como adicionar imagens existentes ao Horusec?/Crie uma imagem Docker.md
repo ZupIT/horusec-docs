@@ -1,5 +1,5 @@
 ---
-title: 1. Crie uma imagem Docker
+title: Crie uma imagem Docker
 weight: 14
 description: 'Passo 1: Crie uma Docker image'
 ---
