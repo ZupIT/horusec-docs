@@ -1,5 +1,5 @@
 ---
-title: 3. Updating Enums
+title: 3 Updating Enums
 description: 'Step 3: How to update Enums.'
 weight: 15
 ---
