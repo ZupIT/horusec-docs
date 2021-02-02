@@ -6,7 +6,8 @@
   "publisher": "ZupInnovation",
   "icon": "https://github.com/ZupIT/docs-horusec/blob/master/static/horusec_logo.png?raw=true",
   "scripts": {
-    "start": "hugo serve"
+    "start": "hugo serve",
+    "build": "hugo"
   },
   "dependencies": {
     "postcss": "^8.1.0"
