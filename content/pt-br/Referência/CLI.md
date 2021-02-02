@@ -8,7 +8,7 @@ description: Nesta seção, você vai encontrar as informações referentes ao H
 
 ## O que é?
 
-A CLI, ou Interfaces de Linhas de Comando, é a parte de código do Horusec pela qual são rodados comandos de análise de segurança e de identificação e classificação de [**vulnerabilidades**](vulnerabilidades/). 
+A CLI, ou Interfaces de Linhas de Comando, é a parte de código do Horusec pela qual são rodados comandos de análise de segurança e de identificação e classificação de [**vulnerabilidades**](../vulnerabilidades/). 
 
 ## Quais os comandos?
 
@@ -80,7 +80,7 @@ As flags globais que atualmente temos em nossa CLI são:
       <td style="text-align:left">Diret&#xF3;rio de trabalho atual/horusec-config.json</td>
       <td style="text-align:left">Diret&#xF3;rio onde est&#xE1; localizado o arquivo de configura&#xE7;&#xE3;o.
         Com este arquivo voc&#xEA; pode realizar algumas configura&#xE7;&#xF5;es
-        como por exemplo<b> </b><a href="cli#usando-arquivo-de-configuracao"><b>usando arquivo de configura&#xE7;&#xE3;o</b></a><b>.</b>
+        como por exemplo<b> </b><a href="#usando-arquivo-de-configuração"><b>usando arquivo de configura&#xE7;&#xE3;o</b></a><b>.</b>
       </td>
     </tr>
   </tbody>
@@ -277,7 +277,7 @@ export HORUSEC_CLI_ENABLE_INFORMATION_SEVERITY=""
 
 ### Usando flags no comando start
 
-No caso do [**comando start**](cli#1-start), você pode passar algumas flags para alterar seus valores. 
+No caso do [**comando start**](#1-start), você pode passar algumas flags para alterar seus valores. 
 
 Por exemplo, é possível utilizar uma flag `horusec start --ignore="**/*test.go"` ou mesmo usar uma flag curta `horusec start -i **/*test.go`.
 
@@ -420,7 +420,7 @@ docker run --privileged -v /path/of/my/project/local:/project -it horuszup/horus
 
 ### Utilizando em sua pipeline
 
-Vamos utilizar como exemplo a [AWS Code Build](https://docs.horusec.io/adicionando-o-horusec-em-sua-pipeline#aws-code-build) para realizar a análise. Veja que neste exemplo temos que utilizar o comando `sh /usr/local/bin/horusec-cli.sh`, pois neste script temos algumas configurações necessárias ao iniciar a análise perceba que o comando `horusec start` também foi iniciado basta você adicionar as flags que deseja. 
+Vamos utilizar como exemplo a [AWS Code Build](../../primeiros-passos/adicionando-o-horusec-em-sua-pipeline/#aws-code-build) para realizar a análise. Veja que neste exemplo temos que utilizar o comando `sh /usr/local/bin/horusec-cli.sh`, pois neste script temos algumas configurações necessárias ao iniciar a análise perceba que o comando `horusec start` também foi iniciado basta você adicionar as flags que deseja. 
 
 {{% alert color="warning" %}}
 Em pipelines é de extrema importância ter a **configuração privileged habilitada**, sem ela não é possível realizar a análise da forma esperada.

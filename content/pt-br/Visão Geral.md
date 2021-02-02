@@ -12,7 +12,9 @@ description: >-
 
 É uma ferramenta open source que orquestra outras ferramentas de segurança e identifica falhas de segurança ou vulnerabilidades em projetos, centralizando todos os resultados em um banco de dados para análise e geração de métricas. 
 
-As linguagens e ferramentas utilizadas atualmente são:
+Atualmente, o Horusec seleciona as linguagens e ferramentas a serem utilizadas no projeto de acordo com a stack disponível.
+
+Essas linguagens e ferramentas são:
 
 * **Python**
   * [**Bandit**](https://github.com/PyCQA/bandit)
@@ -32,7 +34,6 @@ As linguagens e ferramentas utilizadas atualmente são:
 * **C\#**
   * [**SecuriyCodeScan**](https://security-code-scan.github.io)
   * [**HorusecCSharp**](https://github.com/ZupIT/horusec/tree/master/horusec-csharp)
-  * [**Flawfinder**](https://github.com/david-a-wheeler/flawfinder)
 * **Java**
   * [**HorusecJava**](https://github.com/ZupIT/horusec/tree/master/horusec-java)
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
@@ -49,7 +50,7 @@ As linguagens e ferramentas utilizadas atualmente são:
 * **PHP**
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
   * [**PHP Code Scan**](https://github.com/FloeDesignTechnologies/phpcs-security-audit)
-* **C**
+* **C\/C++**
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
   * [**Flawfinder**](https://github.com/david-a-wheeler/flawfinder)
 * **HTML**
@@ -57,7 +58,26 @@ As linguagens e ferramentas utilizadas atualmente são:
 * **JSON**
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
 * **Dart**
-  * **HorusecDart**
+  * [**HorusecDart**](https://github.com/ZupIT/horusec/tree/master/horusec-dart)
+* **Shell Script**
+  * [**Shellcheck**](https://github.com/koalaman/shellcheck)
+* **Elixir**
+  * [**Mix Audit**](https://github.com/mirego/mix_audit)
+  * [**Sobelow**](https://github.com/nccgroup/sobelow)
+
+
+{{% alert color="info" %}}
+
+Caso você não queira que o Horusec utilize uma determinada linguagem e/ou ferramenta, basta desabilitar essa configuração na CLI.
+
+{{% /alert %}}
+
+
+### **Arquitetura do Horusec**
+
+![](/docs/architecturehorusec.png)
+
+
 
 ## **Como funciona?**
 
