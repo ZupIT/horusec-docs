@@ -1,0 +1,3 @@
+[submodule "themes/devrel"]
+	path = themes/devrel
+	url = https://github.com/ZupIT/horusec-docs-hugo-theme.git

@@ -1,0 +1,5 @@
+.horusec
+node_modules
+**/node_modules/**
+dist
+.DS_Store
