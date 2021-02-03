@@ -1,5 +1,5 @@
 ---
-title: 5. Update validations
+title: 5 Update validations
 description: 'Step 5: How to update validations'
 weight: 17
 ---
