@@ -1,5 +1,5 @@
 ---
-title: 4. Chame o Formatter
+title: Chame o Formatter
 weight: 20
 description: 'Passo 4: Chamando o Formatter'
 ---
