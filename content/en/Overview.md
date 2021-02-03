@@ -64,6 +64,7 @@ These languages and tools are:
   * [**Mix Audit**](https://github.com/mirego/mix_audit)
   * [**Sobelow**](https://github.com/nccgroup/sobelow)
 
+
 {{% alert color="info" %}}
 
 In case you don't want Horusec to use a certain language and/or tool, you can just disable this configuration on the CLI.
@@ -87,7 +88,7 @@ To access Horusec, it is necessary to create a login and password. After that, y
 * Create repositories;
 * Generate tokens to perform a project analysis.
 
-### **2.** Analysis Process
+### **2. Analysis Process**
 
 To perform the analysis, you must use the CLI \(Command Line Interface\). If you want to check the result, you can also access a web interface, which guarantees a more analytical and detailed view.
 
@@ -105,7 +106,7 @@ If there is a security breach in the code, Horusec points the file, the severity
 
 ![](https://lh3.googleusercontent.com/FsOq3UQckswg7aCTszEP7lECRhk8q286ngGl2NV9Y_rL6zrTOYh61HON_8hhLnUlyeok1qPrlMQcJWjcfp1lIQ56TsuV_E0fbiFwrmSm4RZfdQnvQw8Ql_heTs2-xP6kV5XV29fD)
 
-Examples of vulnerabilities
+**Examples of vulnerabilities**
 
 ```text
 Language: Leaks

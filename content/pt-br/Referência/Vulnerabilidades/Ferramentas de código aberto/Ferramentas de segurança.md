@@ -88,3 +88,36 @@ O [**TFSec**](https://github.com/tfsec/tfsec) é uma ferramenta de segurança qu
  O [**YarnAudit**](https://classic.yarnpkg.com/en/docs/cli/audit/) é uma ferramenta de segurança que realiza a auditoria de dependências que utilizam o pacotes do **yarn** em projetos **Javascript**. 
 
 Para isso, ele envia uma descrição das dependências configuradas em seu projeto para o registro padrão e solicita um relatório de vulnerabilidades.
+
+### ShellCheck
+
+ O [**ShellCheck**](https://github.com/koalaman/shellcheck) é uma ferramenta de segurança GPLv3 que oferece advertências e sugestões para scripts de **bash/shell/bat**. 
+Ela aponta para o usuário: 
+- erros de sintaxe que permitem o shell mostrar mensagens de erro enigmáticas;
+- problemas de nível semântico que podem causar um comportamento estranho do shell;
+- ameaças sutis, casos extremos e armadilhas que podem causar falha a um script em andamento.
+
+### MixAudit
+
+ O [**MixAudit**](https://github.com/mirego/mix_audit) é uma ferramenta de segurança para a linguagem de programação Elixir que providencia a tarefa mix deps.audit para escanear as dependências de vulnerabilidade de segurança.
+
+MixAudit constrói duas listas quando é executado em um projeto:
+ 1. Uma lista de avisos de segurança que são obtidas no repositório elixir-security-advisories.
+2. Uma lista de um mix de dependecias de vários arquivosmix.lock no projeto.
+
+Depois disso, ocorre um loop em cada dependência do projeto para tentar encontrar avisos de segurança que serão aplicados. 
+
+### Sobelow
+
+ O [**Sobelow**](https://github.com/nccgroup/sobelow) é uma ferramenta de segurança estática focada na análise do framework Phoenix da linguagem de programação Elixir. É usada para obter uma visão dos pontos de interesse e para prevenir vulnerabilidades comuns. Quando encontradas são sinalizadas de cores diferente de acordo com a certeza de sua insegurança. 
+
+**Sobelow** detecta alguns tipos de problemas de segurança, como:
+
+- Insegurança na configuração;
+- Dependências vulneráveis conhecidas;
+- SQL injection
+- Comando injection;
+- Execução de código;
+- Negação de serviço;
+- Diretório transversal;
+- Serialização insegura.

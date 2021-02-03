@@ -1,6 +1,6 @@
 ---
 title: Usando o Horusec
-weight: 3
+weight: 2
 description: >-
   Nesta seção, você vai encontrar mais orientações para usar o Horusec.
 ---
@@ -285,6 +285,6 @@ Se você enviou a flag com o token de autorização, sua análise agora pode ser
 
 Nesta seção, você viu como usar o Horusec no seu projeto. Para continuar lendo sobre o produto: 
 
-👉 Vá para seção [**adicionando o Horusec em sua pipeline**](adicionando-o-horusec-em-sua-pipeline.md) e ponha em prática a ferramenta para sua esteira de desenvolvimento. 
+👉 Vá para seção [**adicionando o Horusec em sua pipeline**](/docs/pt-br/primeiros-passos/adicionando-o-horusec-em-sua-pipeline/) e ponha em prática a ferramenta para sua esteira de desenvolvimento. 
 
-👉 Vá para página de [**Manager**](referencia/manager/) para descobrir as funcionalidades da interface gráfica do Horusec. 
+👉 Vá para página de [**Manager**](/docs/pt-br/referência/manager/) para descobrir as funcionalidades da interface gráfica do Horusec. 

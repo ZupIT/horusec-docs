@@ -108,6 +108,6 @@ It is recommended to use the Horusec executable in your environment!
 
 On this section, you accomplished the Horusec installation. To keep reading about the product: 
 
-👉 **Go to** [**using Horusec** ](using-horusec.md)section if you want to know how to use the tool. 
+👉 **Go to** [**using Horusec** ](/docs/getting-started/using-horusec/) section if you want to know how to use the tool. 
 
-👉 Go to [**adding Horusec in the pipeline**](adding-horusec-in-the-pipeline.md) if you want to go directly to the tool's application on your development pipeline.
+👉 Go to [**adding Horusec in the pipeline**](/docs/getting-started/adding-horusec-in-the-pipeline/) if you want to go directly to the tool's application on your development pipeline.

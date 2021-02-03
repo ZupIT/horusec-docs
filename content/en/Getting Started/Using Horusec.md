@@ -4,9 +4,7 @@ weight: 5
 description: You will find here some guidelines on how to use Horusec.
 ---
 
-# Using Horusec
-
-## Initial set up 
+## **Initial set up**
 
 Before you use Horusec, make sure the installation is correct. 
 
@@ -64,7 +62,7 @@ If you want to use complete feature of horusec, you can enter using the default 
 ``` 
 email: dev@example.com
 password: Devpass0*```
-{{% /alert %}}
+{{% /alert %}} 
 
 **Step 1.2:** After that, login and create an organization, click on "Add an organization" and fill the name of your company, then save:
 
@@ -277,7 +275,7 @@ On the output above, the project contains:
 
 **The total amount is**: 7 vulnerabilities to be corrected on the project. 
 
-### Analytical analysis
+### **Analytical analysis**
 
 If you have sent a flag with the authorization token, your analysis can be seen as analytical.  For that, you just have to: 
 
@@ -291,6 +289,6 @@ If you have sent a flag with the authorization token, your analysis can be seen 
 
 On this section, you saw how to use Horusec on your project. To keep reading about the product: 
 
-👉 Go to [**adding Horusec in the pipeline**](adding-horusec-in-the-pipeline.md) and get into practice of how to add the tool on your development pipeline.
+👉 Go to [**adding Horusec in the pipeline**](/docs/getting-started/adding-horusec-in-the-pipeline/) and get into practice of how to add the tool on your development pipeline.
 
-👉 Go to [**Manager**](references/manager/) page to find out all the functionalities you have on the Horusec graphic interface.
+👉 Go to [**Manager**](/docs/references/manager/) page to find out all the functionalities you have on the Horusec graphic interface.

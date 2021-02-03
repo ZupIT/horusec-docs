@@ -1,6 +1,6 @@
 ---
 title: Instalando o Horusec
-weight: 3
+weight: 1
 description: >-
  Nesta seção, você vai encontrar mais orientações para instalar o Horusec de acordo com seu sistema operacional.
 ---
@@ -107,6 +107,6 @@ ATENÇÃO! Quando se usa o Horusec em imagem docker é necessário criar um volu
 
 Nesta seção, você fez a instalação do Horusec no seu projeto. Para continuar lendo sobre o produto: 
 
-👉 Vá para seção [**usando o Horusec** ](../usando-o-horusec/)se quiser orientações de uso da ferramenta.
+👉 Vá para seção [**usando o Horusec** ](/docs/pt-br/primeiros-passos/usando-o-horusec/)se quiser orientações de uso da ferramenta.
 
-👉 Vá para seção [**adicionando o Horusec em sua pipeline**](../adicionando-o-horusec-em-sua-pipeline) caso queira ir direto para aplicação da ferramenta na sua esteira de desenvolvimento. 
+👉 Vá para seção [**adicionando o Horusec em sua pipeline**](/docs/pt-br/primeiros-passos/adicionando-o-horusec-em-sua-pipeline/) caso queira ir direto para aplicação da ferramenta na sua esteira de desenvolvimento. 

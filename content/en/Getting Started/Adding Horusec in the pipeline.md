@@ -4,7 +4,6 @@ weight: 6
 description: You will find here a guideline on how to use Horusec in your pipeline.
 ---
 
-# Adding Horusec in the pipeline
 
 ## Introduction
 
@@ -43,7 +42,7 @@ jobs:
   * Privileged:  `true`
   * Allow AWS CodeBuild to modify this service role so it can be used with this build project: `true`
 
-  \*\*\*\*
+
 
 * **Buildspec:**
 
@@ -130,6 +129,6 @@ horusec-security:
 
 On this section, you saw how to add Horusec in your pipeline. To keep reading about the product:
 
-👉 Go to [**Manager**](references/manager/) page to find out how Horusec graphic interface works. 
+👉 Go to [**Manager**](/docs/references/manager/) page to find out how Horusec graphic interface works. 
 
-👉 Go to [**Vulnerabilities**](references/vulnerabilities/) section and check out the security tools Horusec use in its analysis, including the static analysis motor \([**Horusec-engine**](references/vulnerabilities/#tools-that-use-horusec-engine)\). 
+👉 Go to [**Vulnerabilities**](/docs/references/vulnerabilities/) section and check out the security tools Horusec use in its analysis, including the static analysis motor \([**Horusec-engine**](/docs/references/vulnerabilities/tools-using-horusec-engine/)\). 
