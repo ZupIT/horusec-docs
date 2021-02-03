@@ -7,6 +7,7 @@
   "icon": "https://github.com/ZupIT/docs-horusec/blob/master/static/horusec_logo.png?raw=true",
   "scripts": {
     "start": "hugo serve",
+    "dependences": "npm i && git submodule init && git submodule update",
     "build": "hugo"
   },
   "dependencies": {
