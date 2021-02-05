@@ -1,0 +1,19 @@
+<style>
+  .custom-youtube-player {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      padding-top: 25px;
+      margin-top: 25px;
+      width: 100%;
+  }
+  .custom-youtube-player iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+  </style>
+  <div class="custom-youtube-player">
+    <iframe src="https://www.youtube.com/embed/{{ index .Params 0 }}" allowfullscreen="true" frameborder="0"></iframe>
+  </div>
