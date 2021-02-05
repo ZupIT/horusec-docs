@@ -14001,8 +14001,4 @@ body {
 .td-content > blockquote {
   border-color: rgba(213, 59, 25, 0.8); }
 
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-  font-weight: bold; }
-
 /*# sourceMappingURL=main.css.map */
