@@ -12,7 +12,7 @@ To edit, run and build this project is necessary some requirements, they are:
 # Install
 For install all dependences this project run the command
 ```bash
-npm run dependences
+npm run dependencies
 ```
 
 # Running
