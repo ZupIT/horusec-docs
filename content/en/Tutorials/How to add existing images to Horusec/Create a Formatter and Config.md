@@ -22,9 +22,9 @@ The `config.go` must contain the following constant:
 2. `ImageTag`: it is the download version that will be performed \(it should be the last version added in the **`.semver.yaml`** file created before\);
 3.  `ImageCmd` is the command that it will run the tool. It is necessary to add the first part of the code `{{WORK_DIR}}`, because to run the container, Horousec will replace the path where the project of the user is inside the container. It also must contain all the commands that will run inside the container to analyze the code. 
 
-{% hint style="info" %}
+{{% alert color="info" %}}
 Remember, the expected output must be on a JSON format to help the data transformation. 
-{% endhint %}
+{{% /alert %}}
 
 See below the container config example:
 

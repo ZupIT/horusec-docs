@@ -5,11 +5,11 @@ weight: 66
 
 ---
 
-## What is it?
+## **What is it?**
 
 The [**Horusec-Csharp**](https://github.com/ZupIT/horusec/tree/master/horusec-csharp) is a SAST tool created by the Horusec team in order to search vulnerabilities on C\# projects. 
 
-## Rules
+## **Rules**
 
 ### **Command Injection**
 

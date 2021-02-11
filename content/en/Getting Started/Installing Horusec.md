@@ -82,7 +82,7 @@ https://horusec.io/bin/$versão/$sistema_operacional/horusec.exe
 
 Another way to carry out your analysis is through a docker image that you can run locally or use in your pipeline. See some examples below:
 
-#### Starting image with run command:
+#### **Starting image with run command:**
 
 Quando você inicializa a imagem com o comando de `run` seu ponto de entrada já será por padrão: `horusec start` sendo assim basta você adicionar suas flags para executar o comando
 
@@ -92,7 +92,7 @@ When you initialize the image with the `run` command, your entry point will alre
 docker run --privileged -v /path/of/my/project/local:/project -it horuszup/horusec-cli:latest -p /project
 ```
 
-#### Starting image in your pipeline:
+#### **Starting image in your pipeline:**
 
 This is an example using the pipeline of [**aws code build**](adding-horusec-in-the-pipeline.md).
 

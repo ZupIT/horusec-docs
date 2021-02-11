@@ -8,11 +8,11 @@ description: >-
 
 ---
 
-## What is it?
+## **What is it?**
 
 The  [**Horusec-Kotlin**](https://github.com/ZupIT/horusec/tree/master/horusec-kotlin#horusec-kotlin-cli) is a SAST tool created by Horusec team to  team in order to search vulnerabilities on Kotlin projects.
 
-## Examples of vulnerabilities 
+## **Examples of vulnerabilities** 
 
 {{% alert color="info" %}}
 Next, you find all the vulnerabilities examples identified by Horusec-Kotlin. The content is shown as it appears in the system.

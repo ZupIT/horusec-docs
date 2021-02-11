@@ -8,11 +8,11 @@ description: >-
 
 # Horusec Mobile \(Java e Kotlin\)
 
-## O que é?
+## **O que é?**
 
 O  [**Horusec-Kotlin**](https://github.com/ZupIT/horusec/tree/master/horusec-kotlin#horusec-kotlin-cli)  e o [**Horusec-Java**](https://github.com/ZupIT/horusec/tree/master/horusec-java#horusec-java-cli) são ferramentas SAST criadas pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos Kotlin e Java.
 
-## Exemplos de vulnerabilidades 
+## **Exemplos de vulnerabilidades** 
 
 {{% alert color="info" %}}
 A seguir, você encontra todos os exemplos de vulnerabilidades que o Horusec-Kotlin e o Horusec-Java identificam. O conteúdo está em inglês porque é assim que ele aparece no sistema. 

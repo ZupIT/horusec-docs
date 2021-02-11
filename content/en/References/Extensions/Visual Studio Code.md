@@ -55,7 +55,7 @@ The vulnerabilities are shown with an icon that informs its criticality level. T
 * undefined **MEDIUM**
 * undefined **HIGH**
 
-### Present diagnostics
+### **Present diagnostics**
 
 ![](https://lh3.googleusercontent.com/DZg1ADi8VNrBtz25P6ccKZXYuQUAdJZpjmi7xSaWFiBqYSuOzDwZyQU3kFzdFcS8HZsTY1xpnhAPyxmq7Pwi4kXRGKwTGCZzzlnylMmngvbhOMZFKAyy6__qIcdvf1zlgrdRKJsE)
 

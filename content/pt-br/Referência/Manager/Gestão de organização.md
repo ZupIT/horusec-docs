@@ -10,7 +10,7 @@ Este recurso permite que você visualize, na plataforma, todas as organizações
 
 ###  Token da organização
 
-O token é um recurso que você pode criar para utilizar em todas as suas análises. O principal objetivo dele é ajudar o Horusec a identificar a organização e o repositório quando a [**CLI**](../../cli) envia uma nova análise para plataforma.
+O token é um recurso que você pode criar para utilizar em todas as suas análises. O principal objetivo dele é ajudar o Horusec a identificar a organização e o repositório quando a [**CLI**](/docs/pt-br/referência/cli/) envia uma nova análise para plataforma.
 
 Por exemplo, se você criar uma organização com 100 repositórios, basta utilizar apenas 1 token de acesso. No momento em que for enviar a análise para este repositório, você só terá de passar o nome do repositório que deseja criar ou o que já existe para a CLI.
 

@@ -8,11 +8,11 @@ description: >-
 
 ---
 
-## What is it?
+## **What is it?**
 
 The [**Horusec-NodeJS**](https://github.com/ZupIT/horusec/tree/master/horusec-nodejs) is a SAST tool created by the Horusec team in order to search vulnerabilities on NodeJS projects. 
 
-## Rules
+## **Rules**
 
 ### No use request method using data from request of user input
 
