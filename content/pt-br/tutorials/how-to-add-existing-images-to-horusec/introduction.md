@@ -10,12 +10,12 @@ Horusec trabalha como uma ferramenta de análise centralizada usando diferentes 
 
 Você deve seguir estes passos caso queira adicionar uma imagem existente:
 
-[**Crie uma imagem Docker**](/docs/pt-br/tutoriais/como-adicionar-imagens-existentes-ao-horusec/crie-uma-imagem-docker/)
+[**Crie uma imagem Docker**](/docs/pt-br/tutorials/how-to-add-existing-images-to-horusec/create-a-docker-image/)
  
-[**Crie um Formatter e uma Config**](/docs/pt-br/tutoriais/como-adicionar-imagens-existentes-ao-horusec/crie-um-formatter-e-um-config/) 
+[**Crie um Formatter e uma Config**](/docs/pt-br/tutorials/how-to-add-existing-images-to-horusec/create-a-formatter-and-config/) 
 
-[**Atualize os Enums**](/docs/pt-br/tutoriais/como-adicionar-imagens-existentes-ao-horusec/atualize-os-enums/)
+[**Atualize os Enums**](/docs/pt-br/tutorials/how-to-add-existing-images-to-horusec/updating-enums/)
  
-[**Chame o Formatter**](/docs/pt-br/tutoriais/como-adicionar-imagens-existentes-ao-horusec/chame-o-formatter/) 
+[**Chame o Formatter**](/docs/pt-br/tutorials/how-to-add-existing-images-to-horusec/calling-formatter/) 
 
-[**Atualize validações**](/docs/pt-br/tutoriais/como-adicionar-imagens-existentes-ao-horusec/atualize-validações/) 
+[**Atualize validações**](/docs/pt-br/tutorials/how-to-add-existing-images-to-horusec/update-validations/) 

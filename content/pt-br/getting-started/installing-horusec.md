@@ -94,7 +94,7 @@ Quando você inicializa a imagem com o comando de `run` basta executar com o com
 docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src horuszup/horusec-cli:latest horusec start -p /src -P $(pwd)
 ```
 
-Este é um exemplo utilizando a pipeline do [**aws code build**](../adicionando-o-horusec-em-sua-pipeline/#aws-code-build).
+Este é um exemplo utilizando a pipeline do [**aws code build**](../adding-horusec-in-the-pipeline/#aws-code-build).
 
 
 {{% alert color="danger" %}}
@@ -107,6 +107,6 @@ ATENÇÃO! Quando se usa o Horusec em imagem docker é necessário criar um volu
 
 Nesta seção, você fez a instalação do Horusec no seu projeto. Para continuar lendo sobre o produto: 
 
-👉 Vá para seção [**usando o Horusec** ](/docs/pt-br/primeiros-passos/usando-o-horusec/)se quiser orientações de uso da ferramenta.
+👉 Vá para seção [**usando o Horusec** ](/docs/pt-br/getting-started/using-horusec/)se quiser orientações de uso da ferramenta.
 
-👉 Vá para seção [**adicionando o Horusec em sua pipeline**](/docs/pt-br/primeiros-passos/adicionando-o-horusec-em-sua-pipeline/) caso queira ir direto para aplicação da ferramenta na sua esteira de desenvolvimento. 
+👉 Vá para seção [**adicionando o Horusec em sua pipeline**](/docs/pt-br/getting-started/adding-horusec-in-the-pipeline/) caso queira ir direto para aplicação da ferramenta na sua esteira de desenvolvimento. 

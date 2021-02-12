@@ -127,6 +127,6 @@ build-code-job:
 
 Nesta seção, você viu como adicionar o Horusec na sua pipeline. Para continuar lendo sobre o produto: 
 
-👉 Vá para página de [**Manager**](/docs/pt-br/referência/manager/) para ver como funciona a interface gráfica do Horusec. 
+👉 Vá para página de [**Manager**](/docs/pt-br/references/manager/introduction) para ver como funciona a interface gráfica do Horusec. 
 
-👉 Vá para seção de [**Vulnerabilidades**](/docs/pt-br/referência/vulnerabilidades/) e veja as ferramentas que o Horusec utiliza nas suas análises, incluindo os motores de análise estática \([**Horusec-engine**](/docs/pt-br/referência/vulnerabilidades/ferramentas-usando-horusec-engine/)\). 
+👉 Vá para seção de [**Vulnerabilidades**](/docs/pt-br/references/vulnerabilidades/introduction) e veja as ferramentas que o Horusec utiliza nas suas análises, incluindo os motores de análise estática \([**Horusec-engine**](/docs/pt-br/references/vulnerabilidades/ferramentas-usando-horusec-engine/)\). 

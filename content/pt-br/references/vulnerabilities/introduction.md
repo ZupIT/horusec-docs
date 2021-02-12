@@ -14,6 +14,6 @@ O Horusec consegue identificar vulnerabilidades não só usando ferramentas de s
 
 Veja mais detalhes sobre as ferramentas utilizadas na análise do Horusec:
 
-- [**Ferramentas de código aberto**](/docs/pt-br/referência/vulnerabilidades/ferramentas-de-código-aberto/)
-- [**Ferramentas usando Horusec-Engine**](/docs/pt-br/referência/vulnerabilidades/ferramentas-usando-horusec-engine/)
+- [**Ferramentas de código aberto**](/docs/pt-br/references/vulnerabilities/open-source-tools/introduction/)
+- [**Ferramentas usando Horusec-Engine**](/docs/pt-br/references/vulnerabilities/tools-using-horusec-engine/introduction/)
 

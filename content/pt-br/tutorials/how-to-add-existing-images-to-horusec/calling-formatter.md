@@ -6,7 +6,7 @@ description: 'Passo 4: Chamando o Formatter'
 
 ---
 
-Depois de terminar a [**implementação do formatter**](como-adicionar-imagens-existentes-ao-horusec/2.-crie-um-formatter-e-um-config), você deve chamar a função no **analyzer controller**. 
+Depois de terminar a [**implementação do formatter**](how-to-add-existing-images-to-horusec/create-a-formatter-and-config/), você deve chamar a função no **analyzer controller**. 
 
 Veja o seguinte path:
 `horusec-cli/internal/controllers/analyser/analyser.go`

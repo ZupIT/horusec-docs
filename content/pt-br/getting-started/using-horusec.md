@@ -86,7 +86,7 @@ senha: Devpass0*```
 ### **Passo 2: Análise do projeto**
 
 
-Depois de [**instalar e configurar**](instalando-o-horusec.md) o Horusec na sua máquina, você precisa verificar se está rodando correntamente, digite "horusec version" no seu terminal, e essa tela deve aparecer:
+Depois de [**instalar e configurar**](/docs/pt-br/getting-started/installing-horusec) o Horusec na sua máquina, você precisa verificar se está rodando correntamente, digite "horusec version" no seu terminal, e essa tela deve aparecer:
 
 ```text
 ~ ᐅ horusec version
@@ -285,6 +285,6 @@ Se você enviou a flag com o token de autorização, sua análise agora pode ser
 
 Nesta seção, você viu como usar o Horusec no seu projeto. Para continuar lendo sobre o produto: 
 
-👉 Vá para seção [**adicionando o Horusec em sua pipeline**](/docs/pt-br/primeiros-passos/adicionando-o-horusec-em-sua-pipeline/) e ponha em prática a ferramenta para sua esteira de desenvolvimento. 
+👉 Vá para seção [**adicionando o Horusec em sua pipeline**](/docs/pt-br/getting-started/adding-horusec-in-the-pipeline/) e ponha em prática a ferramenta para sua esteira de desenvolvimento. 
 
-👉 Vá para página de [**Manager**](/docs/pt-br/referência/manager/) para descobrir as funcionalidades da interface gráfica do Horusec. 
+👉 Vá para página de [**Manager**](/docs/pt-br/references/manager/introduction/) para descobrir as funcionalidades da interface gráfica do Horusec. 
