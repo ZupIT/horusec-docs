@@ -1,7 +1,7 @@
 ---
 title: Adding Horusec in the pipeline
 weight: 6
-description: You will find here a guideline on how to use Horusec in your pipeline.
+description: In this section, you will find a guideline on how to use Horusec in your pipeline.
 ---
 
 

@@ -146,4 +146,4 @@ Exemplo:
 
 ### **5. Crie um novo formatter** 
 
-Por fim, adicione a nova ferramenta do Horusec-CLI. Para isso, basta seguir o tutorial  a partir da página [**crie um Formatter e um Config**](../como-adicionar-imagens-existentes-ao-horusec/2.-crie-um-formatter-e-um-config/) até o quinto passo \(atualize validações\).
+Por fim, adicione a nova ferramenta do Horusec-CLI. Para isso, basta seguir o tutorial  a partir da página [**crie um Formatter e um Config**](/docs/pt-br/tutorials/how-to-add-existing-images-to-horusec/create-a-formatter-and-config) até o quinto passo \(atualize validações\).

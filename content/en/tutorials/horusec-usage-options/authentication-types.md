@@ -1,6 +1,7 @@
 ---
 title: Authentication types
 weight: 9
+description: You will find here the authentication types available on Horusec.
 ---
 
 ---

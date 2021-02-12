@@ -1,12 +1,5 @@
 ---
 title: Ferramentas que utilizam Horusec-engine
 weight: 52
+description: Nesta seção, você vai encontrar aqui informações sobre as ferramentas que utilizam Horusec-engine. 
 ---
-
----
-
-### Ferramentas que utilizam Horusec-engine 
-
-Existem ferramentas SAST criadas especificamente pelo Horusec para detectar vulnerabilidades em projetos com determinadas linguagens de programação. 
-
-Veja mais sobre elas nas próximas páginas:

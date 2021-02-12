@@ -1,6 +1,7 @@
 ---
 title: Horusec-CSharp
 weight: 66
+description: Here, you will find informations about vulnerabilities that Horusec can find on csharp projects.
 ---
 
 ---

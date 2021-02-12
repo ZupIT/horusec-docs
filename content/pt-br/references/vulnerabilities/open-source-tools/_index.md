@@ -1,11 +1,7 @@
 ---
 title: Ferramentas de código aberto
 weight: 47
+description: Nesta seção, você vai encontrar informações sobre ferramentas de código aberto. 
 ---
 
 ---
-### Ferramentas de código aberto
-
-### Ferramentas de segurança
-
-Existem ferramentas SAST do mercado com as quais o Horusec trabalha na identificação de vulnerabilidades. Veja em detalhes na página a seguir:

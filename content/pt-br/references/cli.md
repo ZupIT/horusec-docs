@@ -8,7 +8,7 @@ description: Nesta seção, você vai encontrar as informações referentes ao H
 
 ## O que é?
 
-A CLI, ou Interfaces de Linhas de Comando, é a parte de código do Horusec pela qual são rodados comandos de análise de segurança e de identificação e classificação de [**vulnerabilidades**](../vulnerabilidades/). 
+A CLI, ou Interfaces de Linhas de Comando, é a parte de código do Horusec pela qual são rodados comandos de análise de segurança e de identificação e classificação de [**vulnerabilidades**](../vulnerabilities/introduction/). 
 
 ## Quais os comandos?
 
@@ -420,7 +420,7 @@ docker run --privileged -v /path/of/my/project/local:/project -it horuszup/horus
 
 ### Utilizando em sua pipeline
 
-Vamos utilizar como exemplo a [AWS Code Build](../../primeiros-passos/adicionando-o-horusec-em-sua-pipeline/#aws-code-build) para realizar a análise. Veja que neste exemplo temos que utilizar o comando `sh /usr/local/bin/horusec-cli.sh`, pois neste script temos algumas configurações necessárias ao iniciar a análise perceba que o comando `horusec start` também foi iniciado basta você adicionar as flags que deseja. 
+Vamos utilizar como exemplo a [AWS Code Build](../../getting-started/adding-horusec-in-the-pipeline/#aws-code-build) para realizar a análise. Veja que neste exemplo temos que utilizar o comando `sh /usr/local/bin/horusec-cli.sh`, pois neste script temos algumas configurações necessárias ao iniciar a análise perceba que o comando `horusec start` também foi iniciado basta você adicionar as flags que deseja. 
 
 {{% alert color="warning" %}}
 Em pipelines é de extrema importância ter a **configuração privileged habilitada**, sem ela não é possível realizar a análise da forma esperada.

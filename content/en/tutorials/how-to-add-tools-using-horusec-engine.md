@@ -1,6 +1,7 @@
 ---
 title: How to add tools using Horusec-engine? 
 weight: 27
+description: You will find here how to add existing images to Horusec.
 ---
 
 Horusec also allows you to add tools using its own engine \([**Horusec-engine**](https://github.com/ZupIT/horusec-engine)\) to your stack. To do so, follow the steps:

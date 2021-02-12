@@ -1,7 +1,7 @@
 ---
 title: Using Horusec
 weight: 5
-description: You will find here some guidelines on how to use Horusec.
+description: In this section, you will find some guidelines on how to use Horusec.
 ---
 
 ## **Initial set up**

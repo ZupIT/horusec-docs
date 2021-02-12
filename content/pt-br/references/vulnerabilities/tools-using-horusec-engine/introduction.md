@@ -9,4 +9,4 @@ weight: 52
 
 Existem ferramentas SAST criadas especificamente pelo Horusec para detectar vulnerabilidades em projetos com determinadas linguagens de programação. 
 
-Veja mais sobre elas nas próximas páginas:
+Veja mais sobre elas nas próximas páginas.
