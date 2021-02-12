@@ -1,5 +1,5 @@
 ---
-title: Ferramentas de segurança de código aberto
+title: Ferramentas de segurança
 weight: 49
 description: >-
   Nesta seção, você vai encontrar aqui mais informações das ferramentas SAST utilizadas pelo Horusec nas suas análises.

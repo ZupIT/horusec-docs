@@ -1,6 +1,7 @@
 ---
 title: Adding custom rules
 weight: 31
+description: You will find here how to add custom rules to Horusec.
 ---
 
 ---

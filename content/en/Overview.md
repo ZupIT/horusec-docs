@@ -3,7 +3,7 @@ title: Overview
 weight: 1
 description: >-
   You will find here all initial information about Horusec before getting
-  deeper on the project.
+  deeper in the project.
 ---
 
 ---

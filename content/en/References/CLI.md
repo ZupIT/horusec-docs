@@ -1,7 +1,7 @@
 ---
 title: CLI
 weight: 43
-description: You will find here informations about HORUSEC-CLI
+description: You will find here information about HORUSEC-CLI.
 ---
 
 ---

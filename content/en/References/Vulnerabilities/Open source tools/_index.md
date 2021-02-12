@@ -1,10 +1,7 @@
 ---
 title: Open source tools
 weight: 47
+description: You will find information about open source tools. 
 ---
 
----
 
-### Security tools
-
-There are SAST tool which Horusec works in order to identify vulnerabilities. See more details in the following page:

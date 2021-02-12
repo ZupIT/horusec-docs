@@ -1,10 +1,7 @@
 ---
 title: Tools using Horusec-engine
 weight: 47
+description: You will find here about tools using Horusec-engine.
 ---
 
 ---
-
-### Security tools
-
-There are SAST tool which Horusec works in order to identify vulnerabilities. See more details in the following page:
