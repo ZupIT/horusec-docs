@@ -8,7 +8,7 @@ weight: 72
 Horusec can help you analyse codes with the VS Code extension, with just one click you can make a complete analysis of the code on your project.  
 
 
-![](/docs/en/references/extensions/vscode/1-simulation.gif)
+![](https://horusec.io/public/docs/en/references/extensions/vscode/1-simulation.gif)
 
 ## **Installation**
 
@@ -18,14 +18,14 @@ Horusec can help you analyse codes with the VS Code extension, with just one cli
 
 To install it, follow the next steps: 
 
-![](/docs/en/references/extensions/vscode/2-horusec-not-installed.png)
+![](https://horusec.io/public/docs/en/references/extensions/vscode/2-horusec-not-installed.png)
 
 1. Click on the "**Extensions**" icon or press and hold **CTRL + Shift + X;**
 2. Type "**Horusec**" in the search bar;
 3. Click on "**Install**";
 4. Once it's complete, Horusec's icon will be displayed on the VS Code screen: 
 
-![](/docs/en/references/extensions/vscode/3-horusec-installed.png)
+![](https://horusec.io/public/docs/en/references/extensions/vscode/3-horusec-installed.png)
 
 ## **Features**
 
@@ -35,7 +35,7 @@ By starting an analysis, Horusec will run all the security tools needed for your
 
 You can identify an ongoing analysis when you spot the loading icon displayed at the bottom right bar, as in the image below: 
 
-![](/docs/en/references/extensions/vscode/4-analysis-running.png)
+![](https://horusec.io/public/docs/en/references/extensions/vscode/4-analysis-running.png)
 
 ### **Stop analysis**
 
@@ -45,19 +45,19 @@ You can identify an ongoing analysis when you spot the loading icon displayed at
 
 In case a vulnerability is founded, the user can investigate it in the Horusec tab or in the Diagnostics section. By clicking on the vulnerability, Horusec will show the exact line that needs to be edited. 
 
-![](/docs/en/references/extensions/vscode/5-vuln-found.png)
+![](https://horusec.io/public/docs/en/references/extensions/vscode/5-vuln-found.png)
 
 The vulnerabilities are shown with an icon that informs its criticality level. They are:
 
-* ![](/docs/en/references/extensions/vscode/7-info.svg) **INFO**
-* ![](/docs/en/references/extensions/vscode/8-audit.svg) **AUDIT**
-* ![](/docs/en/references/extensions/vscode/9-low.svg) **LOW**
-* ![](/docs/en/references/extensions/vscode/10-medium.svg) **MEDIUM**
-* ![](/docs/en/references/extensions/vscode/11-high.svg) **HIGH**
+* ![](https://horusec.io/public/docs/en/references/extensions/vscode/7-info.svg) **INFO**
+* ![](https://horusec.io/public/docs/en/references/extensions/vscode/8-audit.svg) **AUDIT**
+* ![](https://horusec.io/public/docs/en/references/extensions/vscode/9-low.svg) **LOW**
+* ![](https://horusec.io/public/docs/en/references/extensions/vscode/10-medium.svg) **MEDIUM**
+* ![](https://horusec.io/public/docs/en/references/extensions/vscode/11-high.svg) **HIGH**
 
 ### **Present diagnostics**
 
-![](/docs/en/references/extensions/vscode/6-problems-to-fix.png)
+![](https://horusec.io/public/docs/en/references/extensions/vscode/6-problems-to-fix.png)
 
 ### **Notification Types** 
 

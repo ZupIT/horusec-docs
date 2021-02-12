@@ -53,7 +53,7 @@ If you don't use Horusec's UI \(user interface\), go straight to step 2.
 
 **Step 1.1:** Create your account on your web application _**horusec-manager**_**.**  After that you will receive a confirmation on your email, if this option is enabled: 
 
-![](/docs/en/getting-started/using-horusec/0-login-horusec.gif)
+![](https://horusec.io/public/docs/en/getting-started/using-horusec/0-login-horusec.gif)
 
 {{% alert color="info" %}}
 Default Development account:
@@ -66,14 +66,14 @@ password: Devpass0*```
 
 **Step 1.2:** After that, login and create an organization, click on "Add an organization" and fill the name of your company, then save:
 
-![](/docs/en/getting-started/using-horusec/1-create-organization.gif)
+![](https://horusec.io/public/docs/en/getting-started/using-horusec/1-create-organization.gif)
 
 **Step 1.3:**  After that, open the side menu and click on **Repositories;**
 
 * Click on **Create repository, to create one that it** will be saved in the organization selected. 
 * Fill the fields and then save. 
 
-![](/docs/en/getting-started/using-horusec/2-create-repository.gif)
+![](https://horusec.io/public/docs/en/getting-started/using-horusec/2-create-repository.gif)
 
   
 **Step** **1.4:** Now you have to create an access token, to do so
@@ -86,7 +86,7 @@ password: Devpass0*```
 When this token is successfully saved, it will show an access token to the repository, keep it safe and don't share it. 
 {{% /alert %}}
 
-![](/docs/en/getting-started/using-horusec/3-add-token.gif)
+![](https://horusec.io/public/docs/en/getting-started/using-horusec/3-add-token.gif)
 
 ### **Step 2: Project analysis** 
 
@@ -283,7 +283,7 @@ If you have sent a flag with the authorization token, your analysis can be seen 
 2. Go to '**Dashboard'** area;
 3. Click on **search** and you will have the details about the scenario. See image below:  
 
-![](/docs/en/getting-started/using-horusec/4-dashboard.gif)
+![](https://horusec.io/public/docs/en/getting-started/using-horusec/4-dashboard.gif)
 
 ## **Next Steps** 
 

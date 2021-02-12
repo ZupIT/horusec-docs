@@ -13,7 +13,7 @@ Ao criar um repositório, você tem algumas funcionalidades como:
 * Gerenciar quais usuários da organização tem acesso;
 * Gerenciar tokens de acesso do repositório.
 
-![](/docs/ptbr/references/manager/repository-management/1-repository-organization.gif)
+![](https://horusec.io/public/docs/ptbr/references/manager/repository-management/1-repository-organization.gif)
 
 ### Token de repositório
 
@@ -27,7 +27,7 @@ Por exemplo, se você adicionar este token em sua pipeline, o Horusec irá envia
 Lembre-se de que, ao criar um token de acesso, ele será visto apenas uma vez.
 {{% /alert %}}
 
-![](/docs/ptbr/references/manager/repository-management/2-token-repository.gif)
+![](https://horusec.io/public/docs/ptbr/references/manager/repository-management/2-token-repository.gif)
 
 ### Usuários do repositório
 
@@ -43,4 +43,4 @@ Você pode convidar novos usuários para fazer parte do repositório. Ao fazer e
 
 Veja no gif abaixo um exemplo de convite de novos usuários para o repositório: 
 
-![](/docs/ptbr/references/manager/repository-management/3-invite-user.gif)
+![](https://horusec.io/public/docs/ptbr/references/manager/repository-management/3-invite-user.gif)

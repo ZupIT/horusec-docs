@@ -14,4 +14,4 @@ No Horusec você também pode gerenciar os dados da sua conta. Veja abaixo algum
 
 Veja no gif abaixo: 
 
-![](/docs/ptbr/references/manager/account-management/1-manager-account.gif)
+![](https://horusec.io/public/docs/ptbr/references/manager/account-management/1-manager-account.gif)

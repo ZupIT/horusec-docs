@@ -73,7 +73,7 @@ In case you don't want Horusec to use a certain language and/or tool, you can ju
 
 ### **Horusec Architecture**
 
-![](/docs/en/overview/1-arquitecture.png)
+![](https://horusec.io/public/docs/en/overview/1-arquitecture.png)
 
 
 ## **How does Horusec work?**
@@ -96,15 +96,15 @@ If there is a security breach in the code, Horusec points the file, the severity
 
 ###  **CLI view** 
 
-![](/docs/en/overview/2-output.png)
+![](https://horusec.io/public/docs/en/overview/2-output.png)
 
 ### **Interface Web view** 
 
-![](/docs/en/overview/3-graph-language.png)
+![](https://horusec.io/public/docs/en/overview/3-graph-language.png)
 
 
 
-![](/docs/en/overview/4-graph-repository.png)
+![](https://horusec.io/public/docs/en/overview/4-graph-repository.png)
 
 **Examples of vulnerabilities**
 

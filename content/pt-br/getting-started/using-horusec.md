@@ -52,7 +52,7 @@ Se você não quiser utilizar a UI (user interface) do Horusec, vá direto ao pa
 
 **Passo 1.1:** Crie sua conta na sua aplicação web horusec-manager. Depois disso você receberá um e-mail de confirmação, caso o essa função esteja habilitada:
 
-![](/docs/ptbr/getting-started/using-horusec/0-login-horusec.gif)
+![](https://horusec.io/public/docs/ptbr/getting-started/using-horusec/0-login-horusec.gif)
 
 {{% alert color="info" %}}
 Default development account: se você quiser fazer o uso completo das features do Horusec, você pode entrar usando este usuário default: 
@@ -63,7 +63,7 @@ senha: Devpass0*```
 
 **Passo 1.2:** Depois disso, faça o login na plataforma e crie a primeira empresa, clique em "Adicione uma organização" e salve.
 
-![](/docs/ptbr/getting-started/using-horusec/1-create-organization.gif)
+![](https://horusec.io/public/docs/ptbr/getting-started/using-horusec/1-create-organization.gif)
 
 **Passo 1.3:** Abra o menu lateral e clique em Repositórios.
 
@@ -71,7 +71,7 @@ senha: Devpass0*```
 
 * Preencha os campos e clique em Salvar. 
 
-![](/docs/ptbr/getting-started/using-horusec/2-create-repository.gif)
+![](https://horusec.io/public/docs/ptbr/getting-started/using-horusec/2-create-repository.gif)
 
 **Passo 1.4:** Agora você precisa criar o token de acesso, para fazer isso: 
 
@@ -81,7 +81,7 @@ senha: Devpass0*```
 
 * Agora clique em “New token” e preencha os campos necessário. Após isso clique em salvar. 
 
-![](/docs/ptbr/getting-started/using-horusec/3-add-token.gif)
+![](https://horusec.io/public/docs/ptbr/getting-started/using-horusec/3-add-token.gif)
 
 ### **Passo 2: Análise do projeto**
 
@@ -277,7 +277,7 @@ Se você enviou a flag com o token de autorização, sua análise agora pode ser
 2. Vá até a área de 'Dashboard';
 3. Clique em pesquisar para você ter detalhes sobre o cenário. Veja a imagem abaixo:
 
-![](/docs/ptbr/getting-started/using-horusec/4-dashboard.gif)
+![](https://horusec.io/public/docs/ptbr/getting-started/using-horusec/4-dashboard.gif)
 
 
 
