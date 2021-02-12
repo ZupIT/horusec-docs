@@ -24,15 +24,60 @@ Exemplos:
 
 Se for um cliente que estiver usando o motor, você pode simplesmente fazer a importação sem ter a necessidade de uma imagem docker. Você pode encontrar um exemplo seguindo este caminho:
 
-![](https://lh3.googleusercontent.com/NygPCob59o2k9D2Fk7uG-AmwKXxUOb6nIZzOP8CJ4icfKELWbAnmp5EBc0MgLrLnBP7DYkD5QaFY3Wnmqmq3mmhstVe9wa403dLzasDAKqN8vOmqjklZno7CEqd5a4Hbu-RhQEcC)
+```
+ -horusec
+ --horusec-cli
+ ---internal
+ ----services
+ -----fomatters
+ -----interface.go
+ ------csharp
+ -------fomatter.go
+```
 
 Depois, você só vai precisar importar as regras e fazer a análise, como no exemplo abaixo:
 
-![](https://lh6.googleusercontent.com/2tmuCbBwVPQj33RZvVIWRgTnWWPe13fbbl6M9WxeiKqLteAIYjMhTDc9AEbJnxMQFX37VLkkzzLDrva4AVum99_ituhqX-WXAr4NtVrN4PJqaVTH8QmS3kHhOQu2PcYg2gc5EJwB)
+```go
+type IAnalysis interface {
+    StartAnalysis() error
+}
+
+type Analysis struct {
+    configs      *config.Config
+    serviceRules csharp.Interface // Change the import to get your respective rules
+}
+
+func NewAnalysis(configs *config.Config) IAnalysis {
+return &Analysis{
+        configs:      configs,
+        serviceRules: csharp.NewRules(), // Change the import to get your respective rules
+    }
+}
+
+func (a *Analysis) StartAnalysis() error {
+    textUnit, err := a.serviceRules.GetTextUnitByRulesExt(a.configs.GetProjectPath())
+    if err != nil {
+        return err
+    }
+    
+    return engine.RunOutputInJSON(textUnit, a.getAllRules(), a.configs.GetOutputFilePath())
+}
+
+func (a *Analysis) getAllRules() []engine.Rule {
+    return a.serviceRules.GetAllRules()
+}
+
+```
 
 Você encontra os exemplos da regra neste caminho:
 
-![](https://lh3.googleusercontent.com/uPCrSnkIhM95mmyHBxvox-fnxfbgpWarNXfZz0r1mhh9mghwJHyS5R_ULFCBf5D273v5kAu26JEE_lB1P4ahoWzlveQxQuiVxcCSI9wWML5ZPWEeuhxIebL8ZUu2seq3Z91BTa6Y)
+```
+ -horusec
+ --development-kit
+ ---pkg
+ ----engines
+```
+
 
 ### **3. Atualize o CLI com as novas regras** 
 

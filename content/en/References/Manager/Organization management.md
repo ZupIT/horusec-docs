@@ -22,7 +22,7 @@ Remember when creating an access token, it can only be seen once.
 
 Check below how the token dashboard is in Horusec: 
 
-![](/docs/tokenen_us.gif)
+![](https://horusec.io/public/docs/en/references/manager/organization-management/1.gif)
 
 ### Organization's users
 
@@ -44,4 +44,4 @@ When you invite, you have to choose the user's function inside the organization.
 
    * View repositories' dashboard the user has access to. 
 
-![](https://gblobscdn.gitbook.com/assets%2F-M8uhrgP4gufXunrPh6I%2F-MO1l1OozGcaSw5v7TpO%2F-MO1p_jcl08rArE0PKy7%2Fusuariodeorganpt_br.gif?alt=media&token=b5a287f4-dd2c-4bfc-8b01-171a8e8d49e7)
+![](https://horusec.io/public/docs/en/references/manager/organization-management/2.gif)

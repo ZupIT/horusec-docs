@@ -1,26 +1,28 @@
 ---
-title: Webhooks management
+title: Gestão de webhook
 weight: 40
-description: 'On this section, you will find information about webhooks management.'
+description: Nesta seção, você vai encontrar mais informações sobre a gestão de webhooks.
 ---
 
 ---
 
-Webhooks are triggered when they receive a new analysis on Horusec's database. After you have inserted this analysis, Horusec verifies if there is some configured webhook to the selected repository and send the analysis via HTTP to the configured place.
+Este recurso permite que você gerencie os webhooks que são disparados ao receberem uma nova análise na base de dados do Horusec. 
 
-On the webhook configuration, you have to choose:
+Depois que essa análise é inserida, o próprio Horusec verifica se tem algum webhook configurado para o repositório selecionado e envia a análise via HTTP para o destino configurado.
+
+Você deve escolher na configuração do webhook:
 
 * URL;
-* Method \(for now, it is POST\); 
-* Headers \(5 max\);
-* Description \(optional\);
-* Repository.
+* Método \(por enquanto, é fixo do tipo POST\); 
+* Headers \(no máximo 5\);
+* Descrição \(opcional\);
+* Repositório.
 
-See the a configuration example below: 
+Veja abaixo o exemplo de como é a configuração: 
 
 ![](https://horusec.io/public/docs/en/references/manager/webhooks-management/1.gif)
 
-After configuring the webhook, your API you receive a JSON with the format below: 
+Depois de configurar o webhook, sua API receberá um JSON no seguinte formato:
 
 ```go
 {

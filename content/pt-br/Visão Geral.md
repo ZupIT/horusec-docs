@@ -75,7 +75,7 @@ Caso você não queira que o Horusec utilize uma determinada linguagem e/ou ferr
 
 ### **Arquitetura do Horusec**
 
-![](/docs/architecturehorusec.png)
+![](https://horusec.io/public/docs/ptbr/overview/1.png)
 
 
 
@@ -99,15 +99,15 @@ Se existir alguma falha de segurança no código, o Horusec aponta o arquivo, o 
 
 ### **Visão CLI** 
 
-![](/docs/image%20%285%29.png)
+![](https://horusec.io/public/docs/ptbr/overview/2.png)
 
 ### **Visão interface Web** 
 
-![](https://lh3.googleusercontent.com/9ETkR59CP7wF9LJ8-cLunT-6jU93pmGq3nwXkNdg2T6g3FH9M6oZ7k5d4OCbR2e6Ph1v2EvBERgWHHUoCVKp_Df-0e7Zgp_uoKygRq7fcTC36VzmjcKJI77iR1n75ST7HeZE8ZuO)
+![](https://horusec.io/public/docs/ptbr/overview/3.png)
 
 
 
-![](https://lh3.googleusercontent.com/FsOq3UQckswg7aCTszEP7lECRhk8q286ngGl2NV9Y_rL6zrTOYh61HON_8hhLnUlyeok1qPrlMQcJWjcfp1lIQ56TsuV_E0fbiFwrmSm4RZfdQnvQw8Ql_heTs2-xP6kV5XV29fD)
+![](https://horusec.io/public/docs/ptbr/overview/4.png)
 
 Exemplos de vulnerabilidades: 
 

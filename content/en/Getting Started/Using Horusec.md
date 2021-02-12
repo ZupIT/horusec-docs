@@ -19,7 +19,7 @@ $ horusec version
 The answer must be: 
 
 ```text
-Actual version installed of the horusec is: v1.4.0
+Actual version installed of the horusec is: v1.x.x
 ```
 
 To run Horusec, find the project and activate the command in the terminal: 
@@ -53,7 +53,7 @@ If you don't use Horusec's UI \(user interface\), go straight to step 2.
 
 **Step 1.1:** Create your account on your web application _**horusec-manager**_**.**  After that you will receive a confirmation on your email, if this option is enabled: 
 
-![](/docs/criacaodecontaen_us.gif)
+![](https://horusec.io/public/docs/en/getting-started/using-horusec/0.gif)
 
 {{% alert color="info" %}}
 Default Development account:
@@ -66,14 +66,14 @@ password: Devpass0*```
 
 **Step 1.2:** After that, login and create an organization, click on "Add an organization" and fill the name of your company, then save:
 
-![](/docs/1.2en_us.gif)
+![](https://horusec.io/public/docs/en/getting-started/using-horusec/1.gif)
 
 **Step 1.3:**  After that, open the side menu and click on **Repositories;**
 
 * Click on **Create repository, to create one that it** will be saved in the organization selected. 
 * Fill the fields and then save. 
 
-![](/docs/1.3en_us.gif)
+![](https://horusec.io/public/docs/en/getting-started/using-horusec/2.gif)
 
   
 **Step** **1.4:** Now you have to create an access token, to do so
@@ -86,7 +86,7 @@ password: Devpass0*```
 When this token is successfully saved, it will show an access token to the repository, keep it safe and don't share it. 
 {{% /alert %}}
 
-![](/docs/1.4en_us.gif)
+![](https://horusec.io/public/docs/en/getting-started/using-horusec/3.gif)
 
 ### **Step 2: Project analysis** 
 
@@ -94,7 +94,7 @@ After you have [**installed and configured**](installing-horusec.md) Horusec on 
 
 ```text
 ~ ᐅ horusec version
-Actual version installed of the horusec is: v1.4.0
+Actual version installed of the horusec is: v1.x.x
 ```
 
 Now, you have to check if the project has vulnerabilities, for that we will use a random project as an example. 
@@ -283,7 +283,7 @@ If you have sent a flag with the authorization token, your analysis can be seen 
 2. Go to '**Dashboard'** area;
 3. Click on **search** and you will have the details about the scenario. See image below:  
 
-![](https://lh4.googleusercontent.com/I8eT3Ou3L8FgSRHR3mnSXvnDYuHPKwsYiiTVvL2lyf9uiGGWnOKSkTtjh89224KQUkkAvtA8ZEW_X8o8qBuS0RMmnWnz9Vfmw5voE3U6XRginuBhtjxhExYQzpCnRers92PpFFtO)
+![](https://horusec.io/public/docs/en/getting-started/using-horusec/4.gif)
 
 ## **Next Steps** 
 

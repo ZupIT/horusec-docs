@@ -8,7 +8,7 @@ weight: 72
 Horusec can help you analyse codes with the VS Code extension, with just one click you can make a complete analysis of the code on your project.  
 
 
-![](/docs/install-horusec-vscode.gif)
+![](https://horusec.io/public/docs/en/references/extensions/vscode/1.gif)
 
 ## **Installation**
 
@@ -18,14 +18,14 @@ Horusec can help you analyse codes with the VS Code extension, with just one cli
 
 To install it, follow the next steps: 
 
-![](https://lh4.googleusercontent.com/y9Wow6GWtMk41o2lcXoetqdW_cnTZG8MDfpyoyZpDG2Wxjyd3qCcfLBdSMg9cuqtyHK_97nqfLqaT7PyMynmuvoOPfltOBwWuzQmmtggOW0YxUF3VB-X3LprL7Eq5e1rpv3PtCYT)
+![](https://horusec.io/public/docs/en/references/extensions/vscode/2.png)
 
 1. Click on the "**Extensions**" icon or press and hold **CTRL + Shift + X;**
 2. Type "**Horusec**" in the search bar;
 3. Click on "**Install**";
 4. Once it's complete, Horusec's icon will be displayed on the VS Code screen: 
 
-![](https://lh5.googleusercontent.com/-tryd3bt4wOKUGtD17cCSzmQor35Kj73maN_HVl37ANs094i3_rarvCNConZOtf7qgXXTedFx6JmkCpBuaASvyQEiKTnl4rufByvr283H46aRtrpdcOXSCutcwbDeRdGOYUFNVHC)
+![](https://horusec.io/public/docs/en/references/extensions/vscode/3.png)
 
 ## **Features**
 
@@ -35,7 +35,7 @@ By starting an analysis, Horusec will run all the security tools needed for your
 
 You can identify an ongoing analysis when you spot the loading icon displayed at the bottom right bar, as in the image below: 
 
-![](https://lh3.googleusercontent.com/KHQUug4xdC6Xu295Lt7sPGezmratMa_j27Vld2_yPDW2HcaoCbMJMs35qxvREtGnBXWsryQDXZ4zqNaRBn7VL-8bPtxnwNnikJ9RzI4pj70suPtbAr2E2Eccv2P8dWMx553VMO1f)
+![](https://horusec.io/public/docs/en/references/extensions/vscode/4.png)
 
 ### **Stop analysis**
 
@@ -45,19 +45,19 @@ You can identify an ongoing analysis when you spot the loading icon displayed at
 
 In case a vulnerability is founded, the user can investigate it in the Horusec tab or in the Diagnostics section. By clicking on the vulnerability, Horusec will show the exact line that needs to be edited. 
 
-![](https://lh4.googleusercontent.com/rqiLcUBsCo_2fEmoBapFLUdioEBN0YP3k0BprUX_jlSkcKnzCIClZSiknWQlP4qoduDX6uVmU07UPsc53Pby3ue5RSMHbZUFxmlEY1kMyjkDOOLsSbmMpX5OpcQg5-LKu-ElHTgb)
+![](https://horusec.io/public/docs/en/references/extensions/vscode/5.png)
 
 The vulnerabilities are shown with an icon that informs its criticality level. They are:
 
-* undefined **INFO**
-* undefined **AUDIT**
-* undefined **LOW**
-* undefined **MEDIUM**
-* undefined **HIGH**
+* ![](https://horusec.io/public/docs/en/references/extensions/vscode/info.svg) **INFO**
+* ![](https://horusec.io/public/docs/en/references/extensions/vscode/audit.svg) **AUDIT**
+* ![](https://horusec.io/public/docs/en/references/extensions/vscode/low.svg) **LOW**
+* ![](https://horusec.io/public/docs/en/references/extensions/vscode/medium.svg) **MEDIUM**
+* ![](https://horusec.io/public/docs/en/references/extensions/vscode/high.svg) **HIGH**
 
 ### **Present diagnostics**
 
-![](https://lh3.googleusercontent.com/DZg1ADi8VNrBtz25P6ccKZXYuQUAdJZpjmi7xSaWFiBqYSuOzDwZyQU3kFzdFcS8HZsTY1xpnhAPyxmq7Pwi4kXRGKwTGCZzzlnylMmngvbhOMZFKAyy6__qIcdvf1zlgrdRKJsE)
+![](https://horusec.io/public/docs/en/references/extensions/vscode/6.png)
 
 ### **Notification Types** 
 

@@ -15,12 +15,12 @@ Antes de começar a usar o Horusec, verifique se a instalação está correta. P
 
    ```text
 $ horusec version
-```     
+```
 A resposta deverá ser algo como:
 
  ```text
-Actual version installed of the horusec is: v1.4.0
-```   
+Actual version installed of the horusec is: v1.x.x
+```
 Para rodar o Horusec, localize seu projeto e ative o comando no terminal:
 
 ```text
@@ -52,7 +52,7 @@ Se você não quiser utilizar a UI (user interface) do Horusec, vá direto ao pa
 
 **Passo 1.1:** Crie sua conta na sua aplicação web horusec-manager. Depois disso você receberá um e-mail de confirmação, caso o essa função esteja habilitada:
 
-![](/docs/criacaodecontapt_br.gif)
+![](https://horusec.io/public/docs/ptbr/getting-started/using-horusec/0.gif)
 
 {{% alert color="info" %}}
 Default development account: se você quiser fazer o uso completo das features do Horusec, você pode entrar usando este usuário default: 
@@ -63,7 +63,7 @@ senha: Devpass0*```
 
 **Passo 1.2:** Depois disso, faça o login na plataforma e crie a primeira empresa, clique em "Adicione uma organização" e salve.
 
-![](/docs/1.2pt_br.gif)
+![](https://horusec.io/public/docs/ptbr/getting-started/using-horusec/1.gif)
 
 **Passo 1.3:** Abra o menu lateral e clique em Repositórios.
 
@@ -71,7 +71,7 @@ senha: Devpass0*```
 
 * Preencha os campos e clique em Salvar. 
 
-![](/docs/1.3pt_br.gif)
+![](https://horusec.io/public/docs/ptbr/getting-started/using-horusec/2.gif)
 
 **Passo 1.4:** Agora você precisa criar o token de acesso, para fazer isso: 
 
@@ -81,7 +81,7 @@ senha: Devpass0*```
 
 * Agora clique em “New token” e preencha os campos necessário. Após isso clique em salvar. 
 
-![](/docs/1.4pt_br.gif)
+![](https://horusec.io/public/docs/ptbr/getting-started/using-horusec/3.gif)
 
 ### **Passo 2: Análise do projeto**
 
@@ -90,7 +90,7 @@ Depois de [**instalar e configurar**](instalando-o-horusec.md) o Horusec na sua 
 
 ```text
 ~ ᐅ horusec version
-Actual version installed of the horusec is: v1.4.0
+Actual version installed of the horusec is: v1.x.x
 ```
 Agora vamos verificar se o projeto contém vulnerabilidade para isso será usado um projeto de exemplo.
 
@@ -277,7 +277,7 @@ Se você enviou a flag com o token de autorização, sua análise agora pode ser
 2. Vá até a área de 'Dashboard';
 3. Clique em pesquisar para você ter detalhes sobre o cenário. Veja a imagem abaixo:
 
-![](https://lh4.googleusercontent.com/I8eT3Ou3L8FgSRHR3mnSXvnDYuHPKwsYiiTVvL2lyf9uiGGWnOKSkTtjh89224KQUkkAvtA8ZEW_X8o8qBuS0RMmnWnz9Vfmw5voE3U6XRginuBhtjxhExYQzpCnRers92PpFFtO)
+![](https://horusec.io/public/docs/ptbr/getting-started/using-horusec/4.gif)
 
 
 

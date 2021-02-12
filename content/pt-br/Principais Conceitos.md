@@ -21,9 +21,9 @@ Trata-se de uma falha de segurança no projeto que pode ocasionar em algum dano 
 
 É quando você declara que as falhas de segurança encontradas em um determinado código seguro não representam riscos à aplicação.
 
-Neste caso, a vulnerabilidade passa a ser classificada como falso positivo. 
+Neste caso, a vulnerabilidade passa a ser classificada como falso positivo.
 
-Um exemplo prático: você tem um arquivo de teste e quer saber se a URL de conexão com o banco de dados está sendo montada corretamente. Nesse caso, a URL seria algo como: 
+Um exemplo prático: você tem um arquivo de teste e quer saber se a URL de conexão com o banco de dados está sendo montada corretamente. Nesse caso, a URL seria algo como:
 
 ```text
 conn := "postgresql://root:root@postgresql:5432/horusec_db?sslmode=disable"

@@ -1,0 +1,76 @@
+---
+title: Visual Studio Code
+weight: 72
+---
+
+---
+
+O Horusec disponibiliza a extensão do VS Code para realizar análises de código, na qual é possível você fazer análises completas em seu projeto com apenas um clique.
+
+![](https://horusec.io/public/docs/ptbr/references/extensions/vscode/1.gif)
+
+## **Instalação**
+
+### Requisitos
+
+* Docker
+
+Para instalar, siga os próximos passos: 
+
+![](https://horusec.io/public/docs/ptbr/references/extensions/vscode/2.png)
+
+1. Clique no ícone de **extensões** ou digite **CRTL+ SHIFT+ X;**
+2. Na barra de pesquisa, digite **Horusec**; 
+3. Clique em **instalar**;
+4. Após a instalação, o ícone do Horusec no VS Code irá aparecer, como a imagem abaixo: 
+
+![](https://horusec.io/public/docs/ptbr/references/extensions/vscode/3.png)
+
+## **Funcionalidades**
+
+### **Iniciar análise**
+
+Ao iniciar uma análise, o Horusec irá rodar todas as ferramentas de segurança necessárias para seu projeto e mostrar as vulnerabilidades encontradas na aba do Horusec e na seção de diagnósticos. 
+
+Você identifica uma análise em andamento quando encontra o ícone de loading na barra inferior a direita, veja a imagem abaixo:   
+
+![](https://horusec.io/public/docs/ptbr/references/extensions/vscode/4.png)
+
+### **Parar análise**
+
+Ao parar a análise do Horusec, a extensão irá remover a imagem da ferramenta de análise, porém esta ação não é recomendada até que a análise seja encerrada. 
+
+### **Ir até o código vulnerável**
+
+Quando uma vulnerabilidade é encontrada, o usuário pode verificar na aba do Horusec ou na seção de diagnósticos. Basta você clicar nessa vulnerabilidade que o Horusec mostra a linha exata que precisa ser alterada.
+
+![](https://horusec.io/public/docs/ptbr/references/extensions/vscode/5.png)
+
+As vulnerabilidades são mostradas com um ícone informando qual é o  nível de criticidade. Confira quais são:
+
+* ![](https://horusec.io/public/docs/ptbr/references/extensions/vscode/info.svg) **INFO**
+* ![](https://horusec.io/public/docs/ptbr/references/extensions/vscode/audit.svg) **AUDIT**
+* ![](https://horusec.io/public/docs/ptbr/references/extensions/vscode/low.svg) **LOW**
+* ![](https://horusec.io/public/docs/ptbr/references/extensions/vscode/medium.svg) **MEDIUM**
+* ![](https://horusec.io/public/docs/ptbr/references/extensions/vscode/high.svg) **HIGH**
+
+### **Apresentar diagnósticos**
+
+![](https://horusec.io/public/docs/ptbr/references/extensions/vscode/6.png)
+
+### Tipos de notificações
+
+Quando o Horusec realiza uma ação você recebe uma notificação informando os detalhes. Confira abaixo quais são:   
+
+
+> ------ **INFO Início da análise \(Hold on! Horusec started to analysis your code\)**
+
+> ---**--- INFO Fim da análise \(Horusec: Analysis finished with success\)**
+
+> **------ WARN Já existe uma análise em andamento \(Hold on! Horusec is analyzing his code\)**
+
+> **------ WARN Foi forçado a ser parado \(Horusec was forced to stop\)**
+
+> **------ ERROR Nenhum workspace foi selecionado \(Horusec: No valid workspace found\)**
+
+> **------ ERROR Algo inesperado ocorreu \(Something unexpected happened\)**
