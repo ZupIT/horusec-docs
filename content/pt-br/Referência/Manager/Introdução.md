@@ -20,13 +20,13 @@ A seguir, você verá em detalhes como realizar cada uma dessas atividades.
 
 O Manager conta com uma funcionalidade para você criar sua conta dentro do próprio Horusec. Depois que seu usuário é criado, basta confirmar a conta direto no seu e-mail. 
 
-![](https://horusec.io/public/docs/ptbr/references/manager/introduction/1.png)
+![](/docs/ptbr/references/manager/introduction/1-login.png)
 
 ## Autenticação
 
 O Horusec também oferece uma autenticação simples gerenciada pelo próprio sistema.
 
-![](https://horusec.io/public/docs/ptbr/references/manager/introduction/2.png)
+![](/docs/ptbr/references/manager/introduction/2-login-empty.png)
 
 ## Painel analítico
 
@@ -48,11 +48,11 @@ Veja mais sobre quais são esses dados na tabela a seguir:
 
 {{< tabs id="Dash" >}}
 {{% tab name="Dash com visão por organização" %}}
-![](https://horusec.io/public/docs/ptbr/references/manager/introduction/3.gif)
+![](/docs/ptbr/references/manager/introduction/3-dashboard-organization.gif)
 {{% /tab %}}
 
 {{% tab name="Dash com a visão por repositório" %}}
-![](https://horusec.io/public/docs/ptbr/references/manager/introduction/4.gif)
+![](/docs/ptbr/references/manager/introduction/4-dashboard-repository.gif)
 {{% /tab %}}
 {{< /tabs >}}
 
