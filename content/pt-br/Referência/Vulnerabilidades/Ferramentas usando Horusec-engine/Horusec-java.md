@@ -8,7 +8,7 @@ description: >-
 
 ---
 
-## O que é?
+## **O que é?**
 
 O [**Horusec-Java**](https://github.com/ZupIT/horusec/tree/master/horusec-java#horusec-java-cli) é  uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos java.
 

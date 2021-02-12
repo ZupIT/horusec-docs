@@ -8,17 +8,17 @@ description: >-
 
 ---
 
-## O que é?
+## **O que é?**
 
 O  [**Horusec-Kotlin**](https://github.com/ZupIT/horusec/tree/master/horusec-kotlin#horusec-kotlin-cli) é uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos Kotlin.
 
-## Exemplos de vulnerabilidades 
+## **Exemplos de vulnerabilidades**
 
 {{% alert color="info" %}}
 A seguir, você encontra todos os exemplos de vulnerabilidades que o Horussec-Kotlin identifica. O conteúdo está em inglês porque é assim que ele aparece no sistema. 
 {{% /alert %}}
 
-### No Log Sensitive Information
+### **No Log Sensitive Information**
 
 > The App logs information. Sensitive information should never be logged. For more information checkout the CWE-532 \([https://cwe.mitre.org/data/definitions/532.html](https://cwe.mitre.org/data/definitions/532.html)\) advisory.
 
@@ -32,7 +32,7 @@ Log.info("Connection string of the database: " + DatabaseURI)
 
 ```
 
-### HTTP Requests, Connections and Sessions 
+### **HTTP Requests, Connections and Sessions** 
 
 Ninguém utiliza a requisição http, conexão e sessões com insegurança. 
 
@@ -44,7 +44,7 @@ Exemplo de código vulnerável:
 import http.client.HttpClient
 ```
 
-### No uses Content Provider 
+### **No uses Content Provider** 
 
 Ninguém utiliza o provedor de conteúdo. 
 
@@ -56,7 +56,7 @@ Exemplo de código vulnerável:
 import android.content.ContentProvider
 ```
 
-### No uses safety API
+### **No uses safety API**
 
 Ninguém utiliza a API de segurança
 
@@ -68,7 +68,7 @@ Exemplo de código vulnerável:
 import com.google.android.gms.safetynet.SafetyNetApi
 ```
 
-### Local File I/O Operations 
+### **Local File I/O Operations** 
 
 Ninguém utiliza operações de entrada e saída de arquivos. 
 
@@ -80,19 +80,19 @@ Exemplo de código vulnerável:
 var query: [String: Any] = [kSecAttrAccessible as String: kSecAttrAccessibleWhenUnlocked]
 ```
 
-### WebView Component 
+### **WebView Component** 
 
 Ninguém utiliza o componente WebView.
 
 > No use WebView Component.
 
-### Encryption API 
+### **Encryption API** 
 
 Ninguém utiliza API de criptografia com vulnerabilidades. 
 
 > No use Encryption API with vulnerabilities.
 
-### No Use Prohibited APIs 
+### **No Use Prohibited APIs** 
 
 A aplicação pode conter API proibidas. Essas APIs são inseguras e não devem ser usadas. 
 
@@ -106,13 +106,13 @@ A aplicação pode conter API proibidas. Essas APIs são inseguras e não devem 
 > * `sprintf`
 > * `vsprintf`
 
-### UIWebView in application ignoring errors SSL 
+### **UIWebView in application ignoring errors SSL** 
 
 A UIWebView ignora os erros do SSL e aceita qualquer certificado SSL. A aplicação é vulnerável a ataques do MITM \(Man-in-the-middle\). 
 
 > The in-app UIWebView ignores SSL errors and accepts any SSL certificate. The application is vulnerable to attacks from MITM \(Man-In-The-Middle\). For more information checkout the CWE-295 \([https://cwe.mitre.org/data/definitions/295.html](https://cwe.mitre.org/data/definitions/295.html)\) advisory.
 
-### No List changes on the clipboard 
+### **No List changes on the clipboard** 
 
 A aplicação permite que você liste as mudanças do clipboard. Alguns malwares também listam mudanças no clipboard. 
 
@@ -124,7 +124,7 @@ Exemplo de código vulnerável:
 const NSNotificationName UIPasteboardChangedNotification
 ```
 
-### No copies data to the Clipboard 
+### **No copies data to the Clipboard** 
 
 A aplicação copia o dado para o clipboard. Os dados confidencias não devem ser copiados para o clipboard, assim outras aplicações podem acessar. 
 
@@ -136,7 +136,7 @@ Exemplo de código vulnerável:
 var clipboard UIPasteboard
 ```
 
-### The application is using SQLite 
+### **The application is using SQLite** 
 
 A aplicação está usando SQLite. Informações confidenciais devem estar criptografadas. 
 
@@ -148,7 +148,7 @@ Exemplo de código vulnerável:
 sqlite3_exec(...)
 ```
 
-### No use NSTemporaryDirectory 
+### **No use NSTemporaryDirectory** 
 
 Usuário em "NSTemporaryDirectory \(\)" não é confiável e pode resultar em vulnerabilidade no diretório. 
 
@@ -160,7 +160,7 @@ Exemplo de código vulnerável:
 const tempDirectory NSTemporaryDirectory
 ```
 
-### Send SMS 
+### **Send SMS** 
 
 Essa aplicação envia sms sem segurança. 
 
@@ -172,7 +172,7 @@ Exemplo de código vulnerável:
 import telephony.SmsManager
 ```
 
-### Super User Privileges 
+### **Super User Privileges** 
 
 Essa aplicação pode fazer a requisição no  usuário root \(super user\).
 
@@ -184,7 +184,7 @@ Exemplo de código vulnerável:
 import com.noshufou.android.su
 ```
 
-### Base64 Encode 
+### **Base64 Encode** 
 
 Autenticação básica que significa obfuscação na Base64 da codificação. 
 
@@ -199,7 +199,7 @@ org.apache.http.client.methods.HttpPost httppost = new HttpPost(url);
 httppost.setHeader("Authorization", "Basic " + encoding);  // Noncompliant
 ```
 
-### Base64 Decode 
+### **Base64 Decode** 
 
 > Basic authentication's only means of obfuscation is Base64 decoding. Since Base64 decoding is easily recognized and reversed, it offers only the thinnest veil of protection to your users, and should not be used. For more information checkout the OWASP Top Ten 2017 A3\([https://owasp.org/www-project-top-ten/2017/A3\_2017-Sensitive\_Data\_Exposure.html](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html)\) advisory and CWE-522 \([https://cwe.mitre.org/data/definitions/522.html](https://cwe.mitre.org/data/definitions/522.html)\).
 
@@ -210,13 +210,13 @@ var password = "PASSWORD_IN_BASE64";
 String passwordDecoded = Base64Encoder.decode(password);
 ```
 
-### GPS Location Known
+### **GPS Location Known**
 
 Sem uso do GPS para a última localização.
 
 > No use GPS Location to get last known location.
 
-### Jailbreak Detection Methods
+### **Jailbreak Detection Methods**
 
 A aplicação pode conter mecanismos de detecção de jailbreak.
 
@@ -261,7 +261,7 @@ cydia://
 frida-server
 ```
 
-### No Download File Using Android Download Manager
+### **No Download File Using Android Download Manager**
 
 Essa aplicação faz o download de arquivos usando o Android download manager. 
 
@@ -271,19 +271,19 @@ Essa aplicação faz o download de arquivos usando o Android download manager.
 import android.app.DownloadManager;
 ```
 
-### Android Keystore
+### **Android Keystore**
 
 Ninguém utiliza o gerenciamento do Android Keystore.
 
 > No use Android Keystore to manager.
 
-### Android Notifications
+### **Android Notifications**
 
 Ninguém utiliza as notificações do Android. 
 
 > No read android notifications
 
-### Potential Android SQL Injection
+### **Potential Android SQL Injection**
 
 A entrada de valores inclusas nas consultas SQL precisam ser passadas com segurança. Variáveis bind em instruções preparadas podem ser facilmente mitigar o risco de uma injenção de SQL. 
 
@@ -303,7 +303,7 @@ String query = "SELECT * FROM  messages WHERE uid= ?" ;
 Cursor cursor = this.getReadableDatabase().rawQuery(query,new String[] {userInput});
 ```
 
-### SQL Injection With SQLite
+### **SQL Injection With SQLite**
 
 Aplicação usa a base de dados SQLite e roda consultas SQL.  Entrada de dados de usuários não confiáveis podem causar injeção de SQL. Informação sensível também deve ser criptografada e escritas na base de dados.
 
@@ -329,7 +329,7 @@ String query = "SELECT * FROM  messages WHERE uid= ?" ;
 Cursor cursor = conn.rawQuery(query,new String[] {userInput});
 ```
 
-### Cookie Storage
+### **Cookie Storage**
 
 O armazenamento de cookie não é usado para salvar informações sensíveis. 
 
@@ -339,43 +339,43 @@ O armazenamento de cookie não é usado para salvar informações sensíveis.
 
 > sharedHTTPCookieStorage
 
-### Using LoadHTMLString can result Inject
+### **Using LoadHTMLString can result Inject**
 
 A entrada de dados do usuário não é sanitária em 'loadHTMLString' e pode resultar em uma injeção de JavaScript no contexto da sua aplicação, o que permite o acesso a dados privados.
 
 > User input not sanitized in 'loadHTMLString' can result in an injection of JavaScript in the context of your application, allowing access to private data. For more information checkout the CWE-95 \([https://cwe.mitre.org/data/definitions/95.html](https://cwe.mitre.org/data/definitions/95.html)\) advisory.
 
-### No Use SFAntiPiracy Jailbreak
+### **No Use SFAntiPiracy Jailbreak**
 
 Verificações encontradas são um tipo de SFAAntiPiracy Jailbreak. 
 
 > Verifications found of type SFAntiPiracy Jailbreak.
 
-### No Use SFAntiPiracy IsPirated
+### **No Use SFAntiPiracy IsPirated**
 
 Verificações são um tipo de SFAntiPiracy isPirate.
 
 > Verifications found of type SFAntiPiracy isPirated.
 
-### Weak5 hash using
+### **Weak5 hash using**
 
 MD5 é um hash fraco, o que pode gerar hashes repetidos.
 
 > MD5 is a weak hash, which can generate repeated hashes. For more information checkout the CWE-327 \([https://cwe.mitre.org/data/definitions/327.html](https://cwe.mitre.org/data/definitions/327.html)\) advisory.
 
-### Weak sha1 hash using
+### **Weak sha1 hash using**
 
 SHA1 é um hash fraco, que pode gerar hashes repetidos. 
 
 > SHA1 is a weak hash, which can generate repeated hashes. For more information checkout the CWE-327 \([https://cwe.mitre.org/data/definitions/327.html](https://cwe.mitre.org/data/definitions/327.html)\) advisory.
 
-### Weak ECB encryption algorithm using
+### **Weak ECB encryption algorithm using**
 
 A aplicação usa o modo ECB na criptografia do algoritmo. É conhecido que o modo ECB é fraco, como resultado do mesmo texto cifrado para blocos identicos de texto.
 
 > The application uses ECB mode in the encryption algorithm. It is known that the ECB mode is weak, as it results in the same ciphertext for identical blocks of plain text. For more information checkout the CWE-327 \([https://cwe.mitre.org/data/definitions/327.html](https://cwe.mitre.org/data/definitions/327.html)\) advisory.
 
-### The application has anti-debugger using ptrace\(\)
+### **The application has anti-debugger using ptrace\(\)**
 
 A aplicação possui um anti-debugger usando o ptrace\(\).
 

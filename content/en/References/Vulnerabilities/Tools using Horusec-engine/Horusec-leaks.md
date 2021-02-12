@@ -8,11 +8,11 @@ description: >-
 
 ---
 
-## What is it? 
+## **What is it?** 
 
 [**Horusec-Leaks**](https://github.com/ZupIT/horusec/tree/master/horusec-leaks#horusec-leaks-cli) is a SAST tool created by Horusec team in order to search for vulnerabilities in projects, searching for coded secrets such as passwords, API keys, tokens and others possible vulnerabilities.
 
-## Examples of vulnerabilities
+## **Examples of vulnerabilities**
 
 You will find below all the vulnerabilities examples that Horusec-Leaks identify: 
 

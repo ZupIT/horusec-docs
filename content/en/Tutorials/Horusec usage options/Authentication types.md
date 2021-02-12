@@ -13,7 +13,7 @@ Currently Horusec has 3 types of authentication:
 
 See below how to use each one of them: 
 
-### Nativa Horusec
+### **Nativa Horusec**
 
 This is the most simple type of authentication. To use it, follow the next steps: 
 
@@ -27,7 +27,7 @@ This is the most simple type of authentication. To use it, follow the next steps
 Remember: once set it cannot be changed.
 {{% /alert %}}
 
-### Ldap
+### **Ldap**
 
 This type of authentication uses the open application protocol LDAP \(Lightweight Directory Access Protocol\), with this Horusec integrates with a tool such as [**OpenLDAP**](https://www.openldap.org/) where all users, access groups and organizations are located.
 

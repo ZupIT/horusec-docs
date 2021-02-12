@@ -5,11 +5,11 @@ weight: 66
 
 ---
 
-## O que é?
+## **O que é?**
 
 O  [**Horusec-Leaks**](https://github.com/ZupIT/horusec/tree/master/horusec-leaks#horusec-leaks-cli) é uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos C\#.
 
-## Regras
+## **Regras**
 
 {{% alert color="info" %}}
 A seguir, você encontra todas as regras para o Horusec-C\#. O conteúdo está em inglês porque é assim que ele aparece no sistema. 

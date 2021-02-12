@@ -6,7 +6,7 @@ description: You will find here all information on the main concepts of Horusec.
 
 ---
 
-## Vulnerability
+## **Vulnerability**
 
 Vulnerability means a security breach in the project and can cause some damage to the system or the organization. Horusec can identify **5 types of security breaches**: 
 
@@ -16,7 +16,7 @@ Vulnerability means a security breach in the project and can cause some damage t
 4. **Audit**
 5. **Info**
 
-### False positive
+### **False positive**
 
 It is declared when it is found, even when you find and analyze a vulnerability in a safe code, you - as responsible for the project - decide to take that the identified flaws doesn't represent any risk to the application. 
 
@@ -30,7 +30,7 @@ conn := "postgresql://root:root@postgresql:5432/horusec_db?sslmode=disable"
 
 On this example, Horusec tells you that a ''Password found in a hardcoded URL". It is a test file, therefore a 'controlled environment' - you can say it is a false positive vulnerability.
 
-### Accepted risk
+### **Accepted risk**
 
 It is declared when you find and analyze a vulnerability in a safe code, you want to take the risk over it. 
 
@@ -42,7 +42,7 @@ For example, you have a file that it has been accused to log a sensitive informa
 
 On this example, it will tell you it found a "No Log Sensitive Information", but this change demands a cost to be done - or it can be done at the moment - you can say it is a accepted risk until a correction can be done on it. 
 
-## SAST x DAST x IAST differences
+## **SAST x DAST x IAST differences**
 
 ### SAST **\(Static Application Security Testing\)**
 

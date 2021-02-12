@@ -5,7 +5,7 @@ weight: 64
 
 ---
 
-## O que é?
+## **O que é?**
 
 O  [**Horusec-NodeJS**](https://github.com/ZupIT/horusec/tree/master/horusec-nodejs) é uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos NodeJS.
 

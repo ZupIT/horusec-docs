@@ -35,7 +35,7 @@ func (a *Analyser) mapDetectVulnerabilityByLanguage() map[languages.Language]fun
 
 ### Is it an existing language?
 
-If it is, just add the call to the new formatter in the existing **`detectVulnerability`**function.
+If it is, just add the call to the new formatter in the existing **`detectVulnerability`** function.
 
 **See it how it was before you added:**
 
@@ -58,6 +58,6 @@ func (a *Analyser) detectVulnerabilityJavascript(projectSubPath string) {
 
 ```
 
-{% hint style="info" %}
+{{% alert color="info" %}}
 Don't forget that these functions must be performed in go routines and for each new go routine, it is necessary to update the monitor, as in the previous example, passing the total of new calls. If you forget this step the Horusec will finish before the tool finishes analyze.
-{% endhint %}
+{{% /alert %}}

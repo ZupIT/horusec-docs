@@ -13,6 +13,7 @@ This image must have the desired tool installed.  The output of this container s
 The **Dockerfile** is expected to be in this directory:  `deployments/dockerfiles/[NEW_IMAGE]`
 {{% /alert %}}
 
+
 See a **Dockerfile** example below: 
 
 ```yaml

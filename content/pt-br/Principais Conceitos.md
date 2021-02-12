@@ -7,7 +7,7 @@ description: >-
 
 ---
 
-### Vulnerabilidade
+### **Vulnerabilidade**
 
 Trata-se de uma falha de segurança no projeto que pode ocasionar em algum dano ao sistema ou à organização. No total, o Horusec consegue identificar **5 diferentes tipos de falha de segurança**: 
 
@@ -17,7 +17,7 @@ Trata-se de uma falha de segurança no projeto que pode ocasionar em algum dano 
 4. **Audit**
 5. **Info**
 
-### Falso Positivo
+### **Falso Positivo**
 
 É quando você declara que as falhas de segurança encontradas em um determinado código seguro não representam riscos à aplicação.
 
@@ -31,7 +31,7 @@ conn := "postgresql://root:root@postgresql:5432/horusec_db?sslmode=disable"
 
 Neste exemplo, o Horusec aponta ter encontrado uma "Password found in a hardcoded URL". Por se tratar de um arquivo de teste - portanto, um "ambiente controlado" -, podemos classificar essa vulnerabilidade como um falso positivo.
 
-### Risco Aceito
+### **Risco Aceito**
 
 É quando você declara estar ciente de uma vulnerabilidade em código seguro e, depois de analisá-la, decide assumir um risco sobre ela.
 
@@ -43,7 +43,7 @@ Um exemplo prático: você tem um arquivo que está sendo acusado de logar uma i
 
 Neste exemplo, ele acusará que encontrou um "No Log Sensitive Information", mas como essa alteração demanda um custo para ser realizada - ou que não pode ser feita no momento -, podemos classificá-la como um risco aceito até que possa ser feita alguma correção nela.
 
-## Diferença entre SAST, DAST e IAST
+## **Diferença entre SAST, DAST e IAST**
 
 ### SAST **\(Static Application Security Testing\)**
 

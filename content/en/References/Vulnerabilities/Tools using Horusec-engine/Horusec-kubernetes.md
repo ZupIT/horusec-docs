@@ -8,11 +8,11 @@ description: >-
 
 ---
 
-## What is it?
+## **What is it?**
 
 The  [**Horusec-Kubernetes**](https://github.com/ZupIT/horusec/tree/master/horusec-kubernetes) is a SAST tool created by the Horusec team in order to search vulnerabilities in projects that use kubernetes _.yaml_ files.
 
-## Rules
+## **Rules**
 
 ### Allow Privilege Escalation
 
