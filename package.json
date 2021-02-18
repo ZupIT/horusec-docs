@@ -4,7 +4,6 @@
   "displayName": "Horusec",
   "description": "Horusec is an open source tool that improves identification of vulnerabilities in your project with just one command.",
   "publisher": "ZupInnovation",
-  "icon": "https://github.com/ZupIT/docs-horusec/blob/master/static/horusec_logo.png?raw=true",
   "scripts": {
     "start": "hugo serve",
     "dependencies": "npm i && git submodule init && git submodule update",
