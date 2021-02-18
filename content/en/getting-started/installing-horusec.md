@@ -84,8 +84,6 @@ Another way to carry out your analysis is through a docker image that you can ru
 
 #### **Starting image with run command:**
 
-Quando você inicializa a imagem com o comando de `run` seu ponto de entrada já será por padrão: `horusec start` sendo assim basta você adicionar suas flags para executar o comando
-
 When you initialize the image with the `run` command, your entry point will already be by default: `horusec start`, so you just need to add your flags to execute the command.
 
 ```text
