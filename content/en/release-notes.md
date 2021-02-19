@@ -6,4 +6,4 @@ description: >-
 ---
 
 
-Check out [**Release Notes**](https://github.com/ZupIT/horusec/releases) page. 
+Check out [**Release Notes**](https://github.com/ZupIT/horusec/releases) page.

@@ -137,13 +137,10 @@ It ensures the safety of projects in the CI and CD process and it reduces the co
 
 Horusec performs 3 types of analysis to identify if there are any security flaws:
 
-1. **SAST \(Static Application Security Testing\)**  
+1. **SAST \(Static Application Security Testing\)**
+   The SAST does static code vulnerability analysis. They can be done in source code, byte code or binary.
 
-
-   The SAST does static code vulnerability analysis. They can be done in source code, byte code or binary.  
-   
-
-2. **Leaks**   
-   The "Leaks checks the source code for possible leaks of credentials, private keys or hard coded passwords. 
+2. **Leaks**
+   The "Leaks checks the source code for possible leaks of credentials, private keys or hard coded passwords.
 
 3.  **Dependency audit** You analyze the project's dependencies to check for vulnerabilities in third-party libraries.   in third-party libraries.
