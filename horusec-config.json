@@ -3,9 +3,8 @@
     "aba58b1e3a90f42803c245bbacb95c6e4115cb7638c0fa4b49e809b8baeea42f"
   ],
   "horusecCliFilesOrPathsToIgnore": [
-    "**/themes/devrel/static/**",
-    "**/content/en/**",
-    "**/content/pt-br/**"
+    "**/themes/devrel/**",
+    "**/content/**"
   ],
   "horusecCliToolsConfig": {
     "Eslint": {
