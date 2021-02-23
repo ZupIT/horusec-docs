@@ -13816,12 +13816,12 @@ readers do not read off random characters that represent icons */
 .section-index .entry {
   padding: 0.75rem; }
 
-.section-index h2 {
+.section-index h5 {
   margin-bottom: 0; }
-  .section-index h2 a {
+  .section-index h5 a {
     font-size: 22px;
     font-weight: 700; }
-    .section-index h2 a:hover {
+    .section-index h5 a:hover {
       opacity: 0.8; }
 
 .section-index p {
@@ -13955,7 +13955,7 @@ pre {
 .td-sidebar-nav__section-title {
   font-weight: unset; }
 
-.section-index h2 a {
+.section-index h5 a {
   color: #ef4123;
   text-decoration: underline; }
 
@@ -14004,8 +14004,5 @@ body {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   font-weight: bold; }
-
-.dr-last-modified-text {
-  color: #336354; }
 
 /*# sourceMappingURL=main.css.map */
