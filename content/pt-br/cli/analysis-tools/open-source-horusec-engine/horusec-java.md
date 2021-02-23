@@ -82,7 +82,7 @@ Indica que o código está sensível e qualquer app pode ler ou escrever no arma
   
 Exemplo de código sensível:
 
-```text
+```java
 import android.content.Context;
 import android.os.Environment;
 

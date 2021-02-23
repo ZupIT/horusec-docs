@@ -16,4 +16,4 @@ You can also manage the data of your account on Horusec. See below some function
 
 See the gif below: 
 
-![](https://horusec.io/public/docs/en/references/manager/account-management/1-manager-account.gif)
+![](/docs/en/references/manager/account-management/1-manager-account.gif)

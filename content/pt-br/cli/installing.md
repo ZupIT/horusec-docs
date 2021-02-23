@@ -82,7 +82,7 @@ Um dos objetivos do Horusec é garantir que a entrega do seu projeto em produç�
 
 ### Github Actions
 
-```text
+```yaml
 name: SecurityPipeline
 
 on: [push]
@@ -114,7 +114,7 @@ jobs:
 
 * Buildspec:
 
-```text
+```yaml
 version: 0.2
 
 phases:
@@ -128,7 +128,7 @@ phases:
 
 ### Circle CI
 
-```text
+```yaml
 version: 2.1
 
 executors:
@@ -154,7 +154,7 @@ workflows:
 
 ### Jenkins
 
-```text
+```groovy
 stages {
         stage('Security') {
             agent {
@@ -170,7 +170,7 @@ stages {
 
 ### Azure DevOps Pipeline
 
-```text
+```yaml
 pool:
   vmImage: 'ubuntu-18.04'
 
@@ -180,7 +180,7 @@ steps:
 
 ### GitLab CI/CD
 
-```text
+```yaml
 image: docker:latest
 
 services:

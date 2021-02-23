@@ -9,7 +9,7 @@ Este serviço é responsável pelo envio de e-mails quando o broker está habili
 
 [What is transactional email and what is it used for?](https://postmarkapp.com/blog/what-is-transactional-email-and-how-is-it-used)
 
-![](https://raw.githubusercontent.com/ZupIT/horusec/master/assets/horusec-messages.jpg)
+![](/docs/ptbr/web/services/messages/0-arquitecture.jpg)
 
 ## **Requisitos**
 Para rodar este serviço localmente basta ter:

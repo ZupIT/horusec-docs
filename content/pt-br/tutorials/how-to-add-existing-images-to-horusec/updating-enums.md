@@ -16,7 +16,7 @@ O enum de ferramentas se encontra no diretório:`development-kit/pkg/enums/tools
 
 Veja o exemplo abaixo:
 
-```text
+```go
 ...
 const (
 	...
@@ -31,7 +31,7 @@ O enum de linguagens se encontra no diretório:
 
 Veja um exemplo abaixo:
 
-```text
+```go
 ...
 const (
 	...

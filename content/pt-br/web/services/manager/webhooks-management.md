@@ -20,7 +20,7 @@ Você deve escolher na configuração do webhook:
 
 Veja abaixo o exemplo de como é a configuração: 
 
-![](https://horusec.io/public/docs/en/references/manager/webhooks-management/1-webhook-management.gif)
+![](/docs/en/references/manager/webhooks-management/1-webhook-management.gif)
 
 Depois de configurar o webhook, sua API receberá um JSON no seguinte formato:
 

@@ -20,11 +20,11 @@ Atualmente o Horusec disponibiliza para você um arquivo de configuração com t
 
 Clone o repositório do horusec em seu ambiente entre na pasta onde clonou e rode o comando `make install` para subir todas as aplicações web como mostra os comandos abaixo:
 ```bash
-$ git clone https://github.com/ZupIT/horusec.git
+git clone https://github.com/ZupIT/horusec.git
 
-$ cd horusec
+cd horusec
 
-$ make install
+make install
 ```
 
 
@@ -37,6 +37,10 @@ Para casos de teste o horusec disponibiliza um email e senha padrão para você 
 email: dev@example.com
 password: Devpass0*
 ```
+
+{{% alert color="info" %}}
+Todos os serviços backend são expostos utilizando **network_mode: "host"** verifique se suas [configurações estão habilitadas](https://docs.docker.com/network/host/) para fazer uso desta funcionalidade
+{{% /alert %}}
 
 ## **Imagens**
 Hoje o Horusec disponibiliza todas as suas imagens no [dockerhub](https://hub.docker.com/u/horuszup) para você utiliza-las.

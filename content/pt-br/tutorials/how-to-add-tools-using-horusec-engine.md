@@ -89,7 +89,7 @@ Para usar este exemplo no seu projeto, substitua o texto entre chaves com as sua
 
 {{% /alert %}}
 
-```text
+```go
 // horusec-{name-of-the-cli}//app/main.go
 package main
 

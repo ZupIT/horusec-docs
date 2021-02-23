@@ -531,7 +531,7 @@ docker run --privileged -v /path/of/my/project/local:/project -it horuszup/horus
 Vamos utilizar como exemplo a AWS Code Build para realizar a análise. Veja que neste exemplo temos que utilizar o comando sh /usr/local/bin/horusec-cli.sh, pois neste script temos algumas configurações necessárias ao iniciar a análise perceba que o comando horusec start também foi iniciado basta você adicionar as flags que deseja.
 Em pipelines é de extrema importância ter a configuração privileged habilitada, sem ela não é possível realizar a análise da forma esperada.
 
-```text
+```yaml
  build:
     commands:
        - sh /usr/local/bin/hoursec-cli.sh -p="./" -e="true"

@@ -7,7 +7,7 @@ description: Nesta seção, você vai encontrar mais informações referentes do
 # Horusec-Auth
 Este serviço é responsável pelo gerenciamento de autenticação e criação de conta dos usuários.
 
-![](https://raw.githubusercontent.com/ZupIT/horusec/master/assets/horusec-auth.jpg)
+![](/docs/ptbr/web/services/auth/0-arquitecture.jpg)
 
 ## **Requisitos**
 Para rodar este serviço localmente basta ter:

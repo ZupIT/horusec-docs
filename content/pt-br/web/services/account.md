@@ -7,7 +7,7 @@ description: Nesta seção, você vai encontrar mais informações referentes do
 # Horusec-Account
 Este serviço é responsável pelo gerenciamento de workspaces, repositórios, webhook, atualização de acessos.
 
-![](https://raw.githubusercontent.com/ZupIT/horusec/master/assets/horusec-account.jpg)
+![](/docs/ptbr/web/services/account/0-arquitecture.jpg)
 
 ## **Requisitos**
 Para rodar este serviço localmente basta ter:

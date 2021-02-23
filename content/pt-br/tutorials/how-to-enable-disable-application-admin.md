@@ -12,9 +12,8 @@ O microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master
 
 Quando o valor é **true**, o [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) cria um usuário que está configurado na variável de ambiente **`HORUSEC_APPLICATION_ADMIN_DATA`** com seu valor:
 
-```text
- `{\"username\": \"horusec-admin\", \"email\":\"horusec-admin@example.com\", 
- \"password\":\"Devpass0*\"}` 
- ```
+```bash
+ HORUSEC_APPLICATION_ADMIN_DATA="{\"username\": \"horusec-admin\", \"email\":\"horusec-admin@example.com\", \"password\":\"Devpass0*\"}"
+```
 
 Este usuário tem uma função específica dentro do Horusec, pois somente ele irá criar as empresas e informar quem será o usuário administrador, podendo ser o próprio usuário ou outro já existente na plataforma.

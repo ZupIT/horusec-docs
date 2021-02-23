@@ -7,7 +7,7 @@ description: Nesta seção, você vai encontrar mais informações referentes do
 # Horusec-Webhook
 Este serviço é responsável pelo disparo de dados para serviços de terceiros quando o broker está habilitado.
 
-![](https://raw.githubusercontent.com/ZupIT/horusec/master/assets/horusec-webhook.jpg)
+![](/docs/ptbr/web/services/webhook/0-arquitecture.jpg)
 
 ## **Requisitos**
 Para rodar este serviço localmente basta ter:

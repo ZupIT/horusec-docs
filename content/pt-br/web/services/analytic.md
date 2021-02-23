@@ -8,7 +8,7 @@ description: Nesta seção, você vai encontrar mais informações referentes do
 Horusec-Analytic é responsável por ler o banco de dados e mostrar também os dados gerados pela análise e retorno para o painel de visualização no horusec-manager
 Este serviço possui integração com GraphQL para retorno de detalhes das vulnerabilidades encontradas, e também outras rotas para conteúdo analítico.
 
-![](https://raw.githubusercontent.com/ZupIT/horusec/master/assets/horusec-analytic.jpg)
+![](/docs/ptbr/web/services/analytic/0-arquitecture.jpg)
 
 ## **Requisitos**
 Para rodar este serviço localmente basta ter:

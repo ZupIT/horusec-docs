@@ -14,7 +14,7 @@ Este serviço terá dois recursos:
 * Salvar em um sistema centralizado;
 * Se tiver configurado publique na fila do webhook a fim de enviar esta análise a terceiros.
 
-![](https://raw.githubusercontent.com/ZupIT/horusec/master/assets/horusec-api.jpg)
+![](/docs/ptbr/web/services/api/0-arquitecture.jpg)
 
 ## **Requisitos**
 Para rodar este serviço localmente basta ter:

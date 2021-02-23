@@ -9,4 +9,4 @@ Atualmente o horusec guarda todos os seus dados usando a ferramenta [PostgreSQL]
 
 A arquitetura do banco é baseada na seguinte arquitetura:
 
-![](https://horusec.io/public/docs/db.png)
+![](/docs/ptbr/web/services/database/0-arquitecture.png)

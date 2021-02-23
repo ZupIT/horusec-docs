@@ -22,7 +22,7 @@ A seguir, você encontra todos os exemplos de vulnerabilidades que o Horusec-Lea
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -33,7 +33,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -48,7 +48,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -59,7 +59,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -74,7 +74,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -85,7 +85,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -100,7 +100,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -111,7 +111,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -126,7 +126,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -137,7 +137,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -152,7 +152,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -163,7 +163,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -178,7 +178,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -189,7 +189,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -204,7 +204,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -215,7 +215,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -230,7 +230,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -241,7 +241,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -256,7 +256,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -267,7 +267,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -282,7 +282,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -293,7 +293,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -308,7 +308,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -319,7 +319,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -334,7 +334,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -345,7 +345,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -360,7 +360,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -371,7 +371,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -386,7 +386,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -397,7 +397,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -412,7 +412,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -423,7 +423,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -438,7 +438,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -449,7 +449,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -464,7 +464,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -475,7 +475,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -490,7 +490,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -501,7 +501,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -516,7 +516,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -527,7 +527,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -542,7 +542,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -553,7 +553,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -568,7 +568,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -579,7 +579,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -594,7 +594,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -605,7 +605,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -620,7 +620,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -631,7 +631,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -646,7 +646,7 @@ services:
 
 Código vulnerável
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -657,7 +657,7 @@ services:
 
 Código seguro
 
-```text
+```yaml
 version: '3'
 services:
   backend:
@@ -672,7 +672,7 @@ services:
 
 Código vulnerável
 
-```text
+```go
 package main
 
 import (
@@ -697,7 +697,7 @@ func main() {
 
 Código seguro
 
-```text
+```go
 package main
 
 import (
@@ -727,7 +727,7 @@ func main() {
 
 Código vulnerável
 
-```text
+```go
 package main
 
 import (
@@ -747,7 +747,7 @@ func main() {
 
 Código seguro
 
-```text
+```go
 package main
 
 import (
@@ -772,14 +772,14 @@ func main() {
 
 Código vulnerável
 
-```text
+```php
 <?php
 define( 'AUTH_KEY', 'put your unique phrase here' );
 ```
 
 Código seguro
 
-```text
+```php
 <?php
 define( 'AUTH_KEY', getenv("AUTH_KEY") );
 ```

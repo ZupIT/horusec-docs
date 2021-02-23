@@ -16,7 +16,7 @@ No arquivo **`analysis.go`** você deve procurar:
 
 * A função **`sliceTools`**  e atualizá-la, veja como no exemplo abaixo:
 
-```text
+```go
 func (au *UseCases) sliceTools() []interface{} {
 	return []interface{}{
 		...
@@ -27,7 +27,7 @@ func (au *UseCases) sliceTools() []interface{} {
 
 * A função **`sliceLanguages`** e atualizá-la, veja como no exemplo abaixo:
 
-```text
+```go
 func (au *UseCases) sliceLanguages() []interface{} {
 	return []interface{}{
 		...
