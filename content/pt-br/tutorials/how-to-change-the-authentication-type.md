@@ -1,7 +1,7 @@
 ---
-title: Como alterar o tipo de autenticação?
+title: Como alterar o tipo de autenticação na aplicação web ?
 weight: 5
-description: Você vai encontrar aqui os tipos de autenticação disponíveis no Horusec.
+description: Você vai encontrar aqui os tipos de autenticação disponíveis na aplicação web do Horusec.
 ---
 
 ---

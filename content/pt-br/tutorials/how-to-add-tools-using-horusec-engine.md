@@ -1,5 +1,5 @@
 ---
-title: Como adicionar ferramentas usando Horusec-engine?
+title: Como adicionar ferramentas usando Horusec-engine ?
 weight: 3
 description: Você vai encontrar aqui as informações necessárias para adicionar ferramentas pelo Horusec-engine.
 ---

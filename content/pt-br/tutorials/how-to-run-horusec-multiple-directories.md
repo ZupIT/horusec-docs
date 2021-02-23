@@ -1,5 +1,5 @@
 ---
-title: Como rodar o horusec em multiplos diretórios
+title: Como rodar o horusec em multiplos diretórios ?
 weight: 8
 description: Você vai encontrar aqui as informações sobre como rodar o horusec em multiplos diretórios
 ---

@@ -1,5 +1,5 @@
 ---
-title: Como criar um token de autorização
+title: Como criar um token de autorização ?
 weight: 1
 description: Você vai encontrar aqui as informações necessárias para criar um token de autorização realizando a integração da Horusec-CLI com a web application.
 ---

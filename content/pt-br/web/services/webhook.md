@@ -35,15 +35,15 @@ swagger running on url:  http://localhost:8008/swagger/index.html
 ## **Variáveis de ambiente**
 Essas são as possíveis váriaveis de ambiente que você pode configurar neste serviço.
 
-| Environment Name                              | Default Value                                                                              | Description                                                  |
-|-----------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| HORUSEC_SWAGGER_HOST                          | 0.0.0.0                                                                                    | This environment get host to run in swagger                  |
-| HORUSEC_BROKER_HOST                           | 127.0.0.1                                                                                  | This environment get host to connect on broker RABBITMQ        | 
-| HORUSEC_BROKER_PORT                           | 5672                                                                                       | This environment get port to connect on broker RABBITMQ        |
-| HORUSEC_BROKER_USERNAME                       | guest                                                                                      | This environment get username to connect on broker RABBITMQ    |
-| HORUSEC_BROKER_PASSWORD                       | guest                                                                                      | This environment get password to connect on broker RABBITMQ    |
-| HORUSEC_DATABASE_SQL_URI                      | postgresql://root:root@localhost:5432/horusec_db?sslmode=disable                           | This environment get uri to connect on database POSTGRES     |
-| HORUSEC_DATABASE_SQL_DIALECT                  | postgres                                                                                   | This environment get dialect to connect on database POSTGRES |
-| HORUSEC_DATABASE_SQL_LOG_MODE                 | false                                                                                      | This environment get bool to enable logs on POSTGRES         |
-| HORUSEC_PORT                                  | 8008                                                                                       | This environment get the port that the service will start    |
-| HORUSEC_HTTP_TIMEOUT                          | 60                                                                                         | This environment get the time in seconds for wait response of request http |
+| Environment Name                            | Default Value         | Description                  |
+|---------------------------------------------|-----------------------|------------------------------|
+| HORUSEC_SWAGGER_HOST             | localhost                                                        | Esta variável de ambiente obtém qual é o host que estará disponível o swagger| 
+| HORUSEC_DATABASE_SQL_DIALECT     | postgres                                                         | Esta variável de ambiente obtém dialeto para conectar no banco de dados POSTGRES |
+| HORUSEC_DATABASE_SQL_URI         | postgresql://root:root@localhost:5432/horusec_db?sslmode=disable | Esta variável de ambiente obtém uri para conectar no banco de dados POSTGRES |
+| HORUSEC_DATABASE_SQL_LOG_MODE    | false                                                            | Esta variável de ambiente obtém o valor para habilitar logs no POSTGRES |
+| HORUSEC_PORT                     | 8008                                                             | Esta variável de ambiente obtém a porta que o serviço irá iniciar |
+| HORUSEC_BROKER_HOST              | 127.0.0.1                                                        | Esta variável de ambiente obtém host para se conectar ao broker RABBITMQ | 
+| HORUSEC_BROKER_PORT              | 5672                                                             | Esta variável de ambiente obtém porta para conectar no broker RABBITMQ |
+| HORUSEC_BROKER_USERNAME          | guest                                                            | Esta variável de ambiente obtém nome de usuário para se conectar no broker RABBITMQ |
+| HORUSEC_BROKER_PASSWORD          | guest                                                            | Esta variável de ambiente obtém a senha para se conectar no broker RABBITMQ |
+| HORUSEC_HTTP_TIMEOUT             | 60                                                               | Esta variável de ambiente obtém o tempo em segundos a esperar por uma resposta na requisição HTTP |

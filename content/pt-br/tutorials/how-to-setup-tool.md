@@ -1,5 +1,5 @@
 ---
-title: Como configurar uma ferramenta do horusec?
+title: Como configurar uma ferramenta do horusec ?
 weight: 9
 description: Você vai encontrar aqui as informações sobre como configurar uma ferramenta do horusec
 ---
