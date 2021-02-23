@@ -139,31 +139,24 @@ A seguir, um exemplo de um arquivo de configuração:
         },
         "HorusecCsharp":{
             "istoignore":false,
-            "imagepath":""
         },
         "HorusecDart":{
             "istoignore":false,
-            "imagepath":""
         },
         "HorusecJava":{
             "istoignore":false,
-            "imagepath":""
         },
         "HorusecKotlin":{
             "istoignore":false,
-            "imagepath":""
         },
         "HorusecKubernetes":{
             "istoignore":false,
-            "imagepath":""
         },
         "HorusecLeaks":{
             "istoignore":false,
-            "imagepath":""
         },
         "HorusecNodeJS":{
             "istoignore":false,
-            "imagepath":""
         },
         "NpmAudit":{
             "istoignore":false,
@@ -448,6 +441,14 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">I</td>
             <td style="text-align:left">false</td>
             <td style="text-align:left">Usado para habilitar ou desabilitar a severidade das informações da vulnerabilidade, elas podem conter falso positivo. Ex.: <code>I=&quot;true&quot;</code></td>
+        </tr>
+        <tr>
+            <td style="text-align:left">HORUSEC_CLI_DISABLE_DOCKER</td>
+            <td style="text-align:left">horusecCliDisableDocker</td>
+            <td style="text-align:left">disable-docker</td>
+            <td style="text-align:left">D</td>
+            <td style="text-align:left">false</td>
+            <td style="text-align:left">Used to run horusec without docker if enabled it will only run the following tools: horusec-csharp, horusec-kotlin, horusec-kubernetes, horusec-leaks, horusec-nodejs, horusec-dart. Example: -D=\"true\"</code></td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_CONTAINER_BIND_PROJECT_PATH</td>

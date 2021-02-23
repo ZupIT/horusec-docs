@@ -5,6 +5,13 @@ description: >-
  Nesta seção, você vai encontrar mais orientações para instalar o Horusec-CLI.
 ---
 
+## Requisitos
+Para realizar a instalação da Horusec-CLI alguns passos são necessários.
+- Docker(opcional)
+  - O docker é um requisito opcional caso você realize a instalação e não tenha instalado em sua máquina basta utilizar as análises com o docker desabilitado usando a flag `--disable-docker`, como consequência sua análise será [limitada apenas a serviços que utilizam a horusec-engine](https://horusec.io/docs/cli/analysis-tools/open-source-horusec-engine/introduction).
+- Git(opcional)
+  - O git é um requisito opcional apenas em caso tiver habilitando análise em histórico do git ou para visualizar os autores das vulnerabilidades.
+
 ## **Localmente**
 Ao instalar localmente você poderá utilizar o Horusec em sua máquina tendo agilidade e podendo verificar
 
@@ -41,25 +48,17 @@ Se você precisa fazer o download para uma versão/sistema operacional específi
 ## **Instalação Manual**
 Faça download manualmente escolhendo seu sistema operacional e a versão que deseja:
 Escolha abaixo um dos links para realizar download da última versão, caso queira uma versão específica basta trocar a palavra “latest” no link pela versão que você deseja:
+
 - Windows x64:
-
-    📥 https://horusec.io/bin/latest/win_x64/horusec.exe
-
+  - 📥 https://horusec.io/bin/latest/win_x64/horusec.exe
 - Windows x86:
-
-    📥 https://horusec.io/bin/latest/win_x86/horusec.exe
-
+  - 📥 https://horusec.io/bin/latest/win_x86/horusec.exe
 - Linux x64:
-
-    📥 https://horusec.io/bin/latest/linux_x64/horusec
-
+  - 📥 https://horusec.io/bin/latest/linux_x64/horusec
 - Linux x86:
-
-    📥 https://horusec.io/bin/latest/linux_x86/horusec
-
+  - 📥 https://horusec.io/bin/latest/linux_x86/horusec
 - Mac x64:
-
-    📥 https://horusec.io/bin/latest/mac_x64/horusec
+  - 📥 https://horusec.io/bin/latest/mac_x64/horusec
 
 
 ## **Imagem Docker**
