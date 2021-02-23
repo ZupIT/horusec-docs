@@ -1,6 +1,6 @@
 ---
 title: Como habilitar e desabilitar o administrador da aplicação
-weight: 5
+weight: 6
 description: Você vai encontrar aqui as opções de uso disponíveis para o Horusec.
 ---
 

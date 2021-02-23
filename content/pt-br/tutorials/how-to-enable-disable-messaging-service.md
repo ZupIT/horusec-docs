@@ -1,6 +1,6 @@
 ---
 title: Como habilitar e desabilitar o serviço de mensageria
-weight: 6
+weight: 7
 description: Você vai encontrar aqui as opções de uso disponíveis para o Horusec.
 ---
 

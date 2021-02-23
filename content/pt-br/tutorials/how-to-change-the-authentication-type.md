@@ -1,6 +1,6 @@
 ---
 title: Como alterar o tipo de autenticação?
-weight: 4
+weight: 5
 description: Você vai encontrar aqui os tipos de autenticação disponíveis no Horusec.
 ---
 
