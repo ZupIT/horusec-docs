@@ -60,6 +60,40 @@ helm install rabbitmq bitnami/rabbitmq -n horusec-system
 helm install postgresql --set postgresqlDatabase=horusec_db bitnami/postgresql -n horusec-system
 ```
 
+## **Configuração de dados sensíveis**
+
+**1.** Caso não o tenha feito, crie o namespace `horusec-system` para os componentes do Horusec:
+
+```bash
+kubectl create namespace horusec-system
+```
+
+**2.** Os serviços que compõem a solução utilizam de Secrets do Kubernetes para gerenciar dados sensíveis como senhas de
+acesso, tokens OAuth e chaves SSH. Por esse motivo, é preciso configurar algumas Secrets antes de começar a instalação.
+
+(Opcional) Caso tenha instalado o `PostgreSQL` e o `RabbitMQ` com os Charts da Bitnami basta obter suas credenciais da
+seguinte forma:
+
+```bash
+export POSTGRES_PASSWORD=$(kubectl get secret --namespace horusec postgresql -o jsonpath="{.data.postgresql-password}" | base64 --decode)
+export RABBITMQ_PASSWORD=$(kubectl get secret --namespace horusec rabbitmq -o jsonpath="{.data.rabbitmq-password}" | base64 --decode)"
+```
+
+Crie as Secrets do Kubernetes:
+
+```bash
+kubectl create secret generic database-username --from-literal=database-username=postgres
+kubectl create secret generic database-password --from-literal=database-password=$POSTGRES_PASSWORD
+kubectl create secret generic database-uri --from-literal=database-uri=postgresql://postgres:LGGaP7GCul@postgresql.horusec:5432/horusec_db?sslmode=disable
+
+kubectl create secret generic broker-username --from-literal=broker-username=user
+kubectl create secret generic broker-password --from-literal=broker-password=$RABBITMQ_PASSWORD
+
+kubectl create secret generic jwt-token --from-literal=jwt-token=4ff42f67-5929-fc52-65f1-3afc77ad86d5
+```
+
+> **Atenção**: Os valores informados nas Secrets deste guia são meros exemplos e não se destinam ao uso em produção.
+
 ## **Instalação dos serviços da Horusec**
 
 Navegue para o diretório raiz do pacote da release e siga as instruções abaixo.
