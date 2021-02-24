@@ -147,7 +147,37 @@ helm install webhook horusec-webhook/deployments/helm/horusec-webhook -n horusec
 ```
 
 ## **Acessando**
-Após ter todos os serviços rodando em seu ambiente basta acessar a interface gráfica pelo link que está sendo exposta sua aplicação web que está sendo oferecida pelo serviço [Horusec-Manager](/docs/pt-br/web/services/manager) em [http://YOUR_DOMAIN:8043](http://YOUR_DOMAIN:8043)
+
+Após ter todos os serviços rodando em seu ambiente basta acessar a interface gráfica pelo link que está sendo exposta
+sua aplicação web que está sendo oferecida pelo serviço [Horusec-Manager](/docs/pt-br/web/services/manager).
+
+É altamente recomendável usar um Ingress Controller para gerenciar o acesso externo aos serviços do seu cluster do
+Kubernetes. Por esse motivo, o comportamento padrão dos Charts é criar um Ingress com uma regra de entrada roteando o
+tráfego HTTP para seu serviço baseado em um host específico.
+
+```bash
+kubectl -n horusec-system get ingresses manager-horusec-manager -o jsonpath='{.status.loadBalancer.ingress[0].ip}'
+```
+
+> **Obs**: Em certos ambientes, o load balancer pode ser exposto usando um nome de host, em vez de um endereço IP. Nesses casos, use o jsonpath como no exemplo a seguir:
+> ```bash
+> kubectl -n horusec-system get ingresses manager-horusec-manager -o jsonpath='{.status.loadBalancer.ingress[0].hostname}'
+> ```
+
+A maneira mais fácil de acessar esses endereços sem que seja necessária uma configuração de DNS, é adicionando-os no
+arquivo de Hosts da sua máquina. Por exemplo:
+
+```bash
+export INGRESS_HOST=$(kubectl -n horusec-system get ingresses manager-horusec-manager -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+
+echo "$INGRESS_HOST        api-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
+echo "$INGRESS_HOST        horus-dev.zup.com.br" | sudo tee -a /etc/hosts
+echo "$INGRESS_HOST        account-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
+echo "$INGRESS_HOST        analytic-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
+echo "$INGRESS_HOST        auth-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
+```
+
+Em seguida, acesse http://horus-dev.zup.com.br/
 
 Para casos de teste o horusec disponibiliza um email e senha padrão para você acessar a plataforma que é:
 ```text
