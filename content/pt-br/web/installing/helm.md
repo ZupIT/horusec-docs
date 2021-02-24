@@ -98,44 +98,50 @@ kubectl create secret generic jwt-token --from-literal=jwt-token=4ff42f67-5929-f
 
 Navegue para o diretório raiz do pacote da release e siga as instruções abaixo.
 
-1. Crie o namespace `horusec-system` para os componentes do Horusec:
-```bash
-kubectl create namespace horusec-system
-```
+**1.** Instale o Chart que contém os componentes do [serviço de account](/docs/pt-br/web/services/account):
 
-2. Instale o Chart que contém os componentes do [serviço de account](/docs/pt-br/web/services/account):
 ```bash
 helm install account horusec-account/deployments/helm/horusec-account -n horusec-system
 ```
 
-3. Instale o Chart que contém os componentes do [serviço de analytic](/docs/pt-br/web/services/analytic):
+**2.** Instale o Chart que contém os componentes do [serviço de analytic](/docs/pt-br/web/services/analytic):
+
 ```bash
 helm install analytic horusec-analytic/deployments/helm/horusec-analytic -n horusec-system
 ```
 
-4. Instale o Chart que contém os componentes do [serviço de api](/docs/pt-br/web/services/api):
+**3.** Instale o Chart que contém os componentes do [serviço de api](/docs/pt-br/web/services/api):
+
 ```bash
 helm install api horusec-api/deployments/helm/horusec-api -n horusec-system
 ```
 
-5. Instale o Chart que contém os componentes do [serviço de auth](/docs/pt-br/web/services/auth):
+**4.** Instale o Chart que contém os componentes do [serviço de auth](/docs/pt-br/web/services/auth):
+
 ```bash
 helm install auth horusec-auth/deployments/helm/horusec-auth -n horusec-system
 ```
 
-6. Instale o Chart que contém os componentes do [serviço de manager](/docs/pt-br/web/services/manager):
+**5.** Instale o Chart que contém os componentes do [serviço de manager](/docs/pt-br/web/services/manager):
+
 ```bash
 helm install manager horusec-manager/deployments/helm/horusec-manager -n horusec-system
 ```
 
-7. Instale o Chart que contém os componentes do [serviço de messages](/docs/pt-br/web/services/messages):
-  - Obrigatório apenas se estiver utilizando o [serviço de mensageria](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service)
+**6.** Instale o Chart que contém os componentes do [serviço de messages](/docs/pt-br/web/services/messages):
+
+- Obrigatório apenas se estiver utilizando
+  o [serviço de mensageria](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service)
+
 ```bash
 helm install messages horusec-messages/deployments/helm/horusec-messages -n horusec-system
 ```
 
-8. Instale o Chart que contém os componentes do [serviço de webhook](/docs/pt-br/web/services/webhook):
-  - Obrigatório apenas se estiver utilizando o [serviço de mensageria](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service)
+**7.** Instale o Chart que contém os componentes do [serviço de webhook](/docs/pt-br/web/services/webhook):
+
+- Obrigatório apenas se estiver utilizando
+  o [serviço de mensageria](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service)
+
 ```bash
 helm install webhook horusec-webhook/deployments/helm/horusec-webhook -n horusec-system
 ```
