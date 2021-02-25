@@ -27,6 +27,7 @@ Para realizar consumo das filas os serviços que estão sendo utilizados é:
 
 E os serviços que recebem ações quando é necessário publicar em suas respectivas filas são:
 * [Horusec-Auth](/docs/pt-br/web/services/auth)
+* [Horusec-Account](/docs/pt-br/web/services/Account)
 * [Horusec-Api](/docs/pt-br/web/services/api)
 
 {{% alert color="info" %}}
