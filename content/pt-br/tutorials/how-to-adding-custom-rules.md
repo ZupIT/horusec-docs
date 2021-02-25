@@ -1,7 +1,7 @@
 ---
-title: Como adicionar regras personalizadas
-weight: 1
-description: Você vai encontrar aqui orientações de como adicionar regras personalizadas ao Horusec.
+title: Como adicionar regras personalizadas na Horusec-CLI ?
+weight: 2
+description: Você vai encontrar aqui orientações de como adicionar regras personalizadas ao Horusec-CLI.
 ---
 
 ---
@@ -37,9 +37,9 @@ Para executar regras personalizadas no Horusec, você deverá criar um arquivo *
      "Type": "OrMatch",
      "Tool": "HorusecCsharp",
      "Expressions": [
-        "httpOnlyCookies\s*=\s*['|"]false['|"]",
-        "(new\sHttpCookie\(.*\))(.*|\n)*(\.HttpOnly\s*=\s*false)",
-        "(new\sHttpCookie)(([^H]|H[^t]|Ht[^t]|Htt[^p]|Http[^O]|HttpO[^n]|HttpOn[^l]|HttpOnl[^y])*)(})"
+        "httpOnlyCookies\\s*=\\s*['|\"]false['|\"]",
+        "(new\\sHttpCookie\\(.*\\))(.*|\n)*(\\.HttpOnly\\s*=\\s*false)",
+        "(new\\sHttpCookie)(([^H]|H[^t]|Ht[^t]|Htt[^p]|Http[^O]|HttpO[^n]|HttpOn[^l]|HttpOnl[^y])*)(})"
      ]
   }
 ]

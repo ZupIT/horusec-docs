@@ -1,9 +1,8 @@
 ---
-title: "Usando docker compose"
-linkTitle: "Usando docker compose"
+title: "Instale utilizando Docker-Compose"
 weight: 10
 description: >-
-  Nessa seção você encontra como subir a aplicação web do horusec em seu ambiente usando docker-compose
+  Nessa seção você encontra como subir a aplicação web do Horusec em seu ambiente usando docker-compose
 ---
 
 
@@ -11,6 +10,7 @@ description: >-
 Para você utilizar o Horusec Web application com docker-compose você precisa de algumas ferramentas em seu ambiente que são:
 * [docker-compose](https://docs.docker.com/compose/install/)
 * [docker](https://docs.docker.com/get-docker/)
+* **Linux**
 
 ## **O que é docker-compose e como funciona ?**
 Compose é uma ferramenta para definir e executar aplicativos Docker de vários contêineres. Com o Compose, você usa um arquivo YAML para configurar os serviços do seu aplicativo. Então, com um único comando, você cria e inicia todos os serviços de sua configuração.Para saber mais sobre todos os recursos do Compose, consulte a lista de recursos. [Veja mais aqui](https://docs.docker.com/compose/)
@@ -30,7 +30,7 @@ make install
 
 ## **Acessando**
 Nesse arquivo temos todos os serviços do horusec que vão ser executados e expostos dentro da sua máquina.
-Caso você tenha feito esses passos em sua máquina local basta acessar o link para visualizar as telas da aplicação web em [http://localhost:8043](http://localhost:8043)
+Caso você tenha feito esses passos em sua máquina local basta acessar o link para visualizar as telas da aplicação web que está sendo oferecida pelo serviço [Horusec-Manager](/docs/pt-br/web/services/manager) em [http://localhost:8043](http://localhost:8043)
 
 Para casos de teste o horusec disponibiliza um email e senha padrão para você acessar a plataforma que é:
 ```text
@@ -45,14 +45,16 @@ Todos os serviços backend são expostos utilizando **network_mode: "host"** ver
 ## **Imagens**
 Hoje o Horusec disponibiliza todas as suas imagens no [dockerhub](https://hub.docker.com/u/horuszup) para você utiliza-las.
 
-* horuszup/horusec-manager:latest
-* horuszup/horusec-auth:latest
-* horuszup/horusec-account:latest
-* horuszup/horusec-webhook:latest
-* horuszup/horusec-api:latest
-* horuszup/horusec-analytic:latest
-* horuszup/horusec-messages:latest
-* horuszup/horusec-migration:latest
+* [horuszup/horusec-manager](https://hub.docker.com/r/horuszup/horusec-manager)
+* [horuszup/horusec-auth](https://hub.docker.com/r/horuszup/horusec-auth)
+* [horuszup/horusec-account](https://hub.docker.com/r/horuszup/horusec-account)
+* [horuszup/horusec-api](https://hub.docker.com/r/horuszup/horusec-api)
+* [horuszup/horusec-analytic](https://hub.docker.com/r/horuszup/horusec-analytic)
+* [horuszup/horusec-migration](https://hub.docker.com/r/horuszup/horusec-migration)
+* [horuszup/horusec-messages](https://hub.docker.com/r/horuszup/horusec-messages) (obrigatório apenas se estiver utilizando o [serviço de mensageria](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service))
+* [horuszup/horusec-webhook](https://hub.docker.com/r/horuszup/horusec-webhook) (obrigatório apenas se estiver utilizando o [serviço de mensageria](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service))
+
+![](/docs/ptbr/web/installing/docker-compose/0-installing.gif)
 
 ## **Avisos importantes**
 

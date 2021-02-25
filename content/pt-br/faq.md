@@ -11,13 +11,13 @@ description: >-
 Basta verificar na nossa documentação [todas as linguagens disponíveis](/docs/pt-br/cli/analysis-tools/introduction/)
 
 ### **Qual é o roadmap do horusec 2021 ?**
-- Phase 0: Support for all horusec-cli features into horusec-vscode (Q1)
-- Phase 1: Support for the Theia(VsCode Web) (Q1)
-- Phase 2: Support to Flutter, Dart, Bash, Shell, Elixir, Cloujure e Scala in analysis (Q1)
-- Phase 3: New service to manager vulnerabilities founds (Q2)
-- Phase 4: Dependency analysis for all supported languages (Q3)
-- Phase 5: SAST with MVP Semantic Analysis (Q4)
-- Phase 6: DAST with MVP symbolic analysis (Q4)
+- Fase 0: Suporte para todos os recursos horusec-cli no horusec-vscode (Q1)
+- Fase 1: Suporte para Theia (VsCode Web) (Q1)
+- Fase 2: Suporte a flutter, dardo, bash, shell, elixir, cloujure e Scala em análise (Q1)
+- Fase 3: Novo serviço para gerenciadoras de vulnerabilidades (Q2)
+- Fase 4: Análise de Dependência para todos os idiomas suportados (Q3)
+- Fase 5: Sast com análise semântica MVP (Q4)
+- Fase 6: DAST com análise simbólica MVP (Q4)
 
 ### **Tem possibilidade de adicionar o horusec como plugins para IDE ?**
 Sim, inclusive já temos para vscode

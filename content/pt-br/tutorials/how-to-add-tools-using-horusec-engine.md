@@ -1,5 +1,5 @@
 ---
-title: Como adicionar ferramentas usando Horusec-engine?
+title: Como adicionar ferramentas usando Horusec-engine ?
 weight: 3
 description: Você vai encontrar aqui as informações necessárias para adicionar ferramentas pelo Horusec-engine.
 ---
@@ -8,7 +8,13 @@ description: Você vai encontrar aqui as informações necessárias para adicion
 
 O Horusec também permite que você adicione ferramentas usando um próprio motor \([**Horusec-engine**](https://github.com/ZupIT/horusec-engine)\) à sua stack. Para incluir uma nova ferramentas de análises ao horusec-cli, siga esses passos:
 
-### **1. Crie um novo CLI** 
+### **1. Clone o projeto**
+Clone o projeto do horusec em sua máquina local para realizar as modificações.
+```bash
+git clone https://github.com/ZupIT/horusec.git
+```
+
+### **2. Crie um novo CLI**
 
 Para fazer isso, basta copiar um dos CLIs existentes e renomear seguindo o padrão **horusec-{nome-do-cli}** 
 
@@ -18,7 +24,7 @@ Exemplos:
 * [**horusec-kotlin**](https://github.com/ZupIT/horusec/blob/master/horusec-kotlin)
 * [**horusec-leaks**](https://github.com/ZupIT/horusec/blob/master/horusec-leakse)
 
-### **2. Crie regras** 
+### **3. Crie regras** 
 
 É necessário criar as regras que valerão para o novo CLI antes dele ser, de fato, criado. Veja mais neste [**exemplo**](https://github.com/ZupIT/horusec/tree/master/development-kit/pkg/engines).
 
@@ -79,7 +85,7 @@ Você encontra os exemplos da regra neste caminho:
 ```
 
 
-### **3. Atualize o CLI com as novas regras** 
+### **4. Atualize o CLI com as novas regras** 
 
 Depois de criar as regras, atualize o seu CLI para finalizar a configuração. Veja mais no exemplo a seguir. 
 
@@ -136,7 +142,7 @@ func main() {
 }
 ```
 
-### **4. Atualize o dockerfile** 
+### **5. Atualize o dockerfile** 
 
 Ao final das configurações do CLI, você precisa retornar aos arquivos no docker para atualizá-lo com as novas definições. 
 
@@ -144,6 +150,6 @@ Exemplo:
 
 * [**horusec-java dockerfile**](https://github.com/ZupIT/horusec/blob/master/horusec-java/deployments/Dockerfile)
 
-### **5. Crie um novo formatter** 
+### **6. Crie um novo formatter** 
 
 Por fim, adicione a nova ferramenta do Horusec-CLI. Para isso, basta seguir o tutorial  a partir da página [**crie um Formatter e um Config**](/docs/pt-br/tutorials/how-to-add-existing-images-to-horusec/create-a-formatter-and-config) até o quinto passo \(atualize validações\).

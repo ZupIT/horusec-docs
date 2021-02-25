@@ -69,21 +69,16 @@ Caso queira uma versão específica, basta trocar a palavra `latest` no link pel
 
     📥 https://horusec.io/bin/latest/win_x64/horusec.exe
 
+- Windows x64:
+  - 📥 https://horusec.io/bin/latest/win_x64/horusec.exe
 - Windows x86:
-
-    📥 https://horusec.io/bin/latest/win_x86/horusec.exe
-
+  - 📥 https://horusec.io/bin/latest/win_x86/horusec.exe
 - Linux x64:
-
-    📥 https://horusec.io/bin/latest/linux_x64/horusec
-
+  - 📥 https://horusec.io/bin/latest/linux_x64/horusec
 - Linux x86:
-
-    📥 https://horusec.io/bin/latest/linux_x86/horusec
-
+  - 📥 https://horusec.io/bin/latest/linux_x86/horusec
 - Mac x64:
-
-    📥 https://horusec.io/bin/latest/mac_x64/horusec
+  - 📥 https://horusec.io/bin/latest/mac_x64/horusec
 
 
 👉[**A última versão disponível**](https://horusec.io/bin/version-cli-latest.txt)
@@ -159,7 +154,7 @@ phases:
       docker: 19
   build:
     commands:
-      - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec-vscode horuszup/horusec-cli:latest horusec start -p /src/horusec-vscode -P $(pwd)
+      - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd)
 ```
 
 ### Circle CI
@@ -225,5 +220,5 @@ services:
 build-code-job:
   stage: build
   script:
-    - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec-vscode horuszup/horusec-cli:latest horusec start -p /src/horusec-vscode -P $(pwd)
+    - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd)
 ```

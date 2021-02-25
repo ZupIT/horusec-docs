@@ -141,32 +141,25 @@ A seguir, um exemplo de um arquivo de configuração:
             "imagepath":""
         },
         "HorusecCsharp":{
-            "istoignore":false,
-            "imagepath":""
+            "istoignore":false
         },
         "HorusecDart":{
-            "istoignore":false,
-            "imagepath":""
+            "istoignore":false
         },
         "HorusecJava":{
-            "istoignore":false,
-            "imagepath":""
+            "istoignore":false
         },
         "HorusecKotlin":{
-            "istoignore":false,
-            "imagepath":""
+            "istoignore":false
         },
         "HorusecKubernetes":{
-            "istoignore":false,
-            "imagepath":""
+            "istoignore":false
         },
         "HorusecLeaks":{
-            "istoignore":false,
-            "imagepath":""
+            "istoignore":false
         },
         "HorusecNodeJS":{
-            "istoignore":false,
-            "imagepath":""
+            "istoignore":false
         },
         "NpmAudit":{
             "istoignore":false,
@@ -457,6 +450,14 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left">Esta configuração é usada para habilitar ou desabilitar a severidade das informações da vulnerabilidade que podem conter falso positivo. Ex.: <code>I=&quot;true&quot;</code></td>
         </tr>
         <tr>
+            <td style="text-align:left">HORUSEC_CLI_DISABLE_DOCKER</td>
+            <td style="text-align:left">horusecCliDisableDocker</td>
+            <td style="text-align:left">disable-docker</td>
+            <td style="text-align:left">D</td>
+            <td style="text-align:left">false</td>
+            <td style="text-align:left">Used to run horusec without docker if enabled it will only run the following tools: horusec-csharp, horusec-kotlin, horusec-kubernetes, horusec-leaks, horusec-nodejs, horusec-dart. Example: -D=\"true\"</code></td>
+        </tr>
+        <tr>
             <td style="text-align:left">HORUSEC_CLI_CONTAINER_BIND_PROJECT_PATH</td>
             <td style="text-align:left">EnvContainerBindProjectPath</td>
             <td style="text-align:left">container-bind-project-path</td>
@@ -562,7 +563,7 @@ Veja que, neste exemplo, o comando `horusec start` já é executado. Por isso, a
 Quando o comando é usado dessa forma, você precisa criar um volume do seu projeto para a imagem e seu local de destino. Para isso, é recomendado que esse local seja sempre na localização `/project`.
 
 ```bash
-docker run --privileged -v /path/of/my/project/local:/project -it horuszup/horusec-cli:latest -p /project
+docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src horuszup/horusec-cli:latest horusec start -p /src -P $(pwd)
 ```
 
 ### Exemplo 7: Usando como imagem docker em sua pipeline
@@ -579,7 +580,7 @@ Em pipelines, é de extrema importância ter a configuração privileged habilit
 {{% /alert %}}
 
 ```yaml
- build:
+  build:
     commands:
-       - sh /usr/local/bin/hoursec-cli.sh -p="./" -e="true"
+      - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd)
 ```
