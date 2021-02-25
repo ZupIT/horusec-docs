@@ -16,6 +16,25 @@ Dentro do horusec possui algumas funcionalidades que são realizadas de modo ass
 * Envio de e-mail para convidar usuário a fazer parte de seu workspace
 * Disparo via webhook das análises realizadas pelo Horusec-CLI para um destino HTTP
 
+# Quais serviços fazem uso desta funcionalidade?
+Para realizar consumo das filas os serviços que estão sendo utilizados é:
+* [Horusec-Messages](/docs/pt-br/web/services/messages)
+* [Horusec-Webhook](/docs/pt-br/web/services/webhook)
+
+{{% alert color="info" %}}
+É comum quando você desabilita o serviço de mensageria ver estes serviços "parados", pois eles não vão ser utilizados
+{{% /alert %}}
+
+E os serviços que recebem ações quando é necessário publicar em suas respectivas filas são:
+* [Horusec-Auth](/docs/pt-br/web/services/auth)
+* [Horusec-Api](/docs/pt-br/web/services/api)
+
+{{% alert color="info" %}}
+Quando você desabilita o serviço de mensageria este serviços ignoram a ação de publicar na fila e seguem para a próxima funcionalidade.
+{{% /alert %}}
+
+
+
 # Como alterar?
 Por padrão, os microsserviços:
 

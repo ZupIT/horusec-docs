@@ -1,6 +1,6 @@
 ---
 title: Introdução
-weight: 12
+weight: 1
 description: Você vai encontrar aqui as orientações para adicionar imagens ao Horusec.
 ---
 
