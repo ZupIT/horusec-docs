@@ -75,21 +75,23 @@ acesso, tokens OAuth e chaves SSH. Por esse motivo, é preciso configurar alguma
 seguinte forma:
 
 ```bash
-export POSTGRES_PASSWORD=$(kubectl get secret --namespace horusec postgresql -o jsonpath="{.data.postgresql-password}" | base64 --decode)
-export RABBITMQ_PASSWORD=$(kubectl get secret --namespace horusec rabbitmq -o jsonpath="{.data.rabbitmq-password}" | base64 --decode)"
+export POSTGRES_USERNAME="postgres"
+export POSTGRES_PASSWORD=$(kubectl get secret --namespace horusec-system postgresql -o jsonpath="{.data.postgresql-password}" | base64 --decode)
+export RABBITMQ_USERNAME=$(kubectl get secret --namespace horusec-system rabbitmq -o jsonpath="{.data.rabbitmq-password}" | base64 --decode)
+export JWT_SECRET="4ff42f67-5929-fc52-65f1-3afc77ad86d5"
 ```
 
 Crie as Secrets do Kubernetes:
 
 ```bash
-kubectl create secret generic database-username --from-literal=database-username=postgres
+kubectl create secret generic database-username --from-literal=database-username=$POSTGRES_USERNAME
 kubectl create secret generic database-password --from-literal=database-password=$POSTGRES_PASSWORD
-kubectl create secret generic database-uri --from-literal=database-uri=postgresql://postgres:LGGaP7GCul@postgresql.horusec:5432/horusec_db?sslmode=disable
+kubectl create secret generic database-uri --from-literal=database-uri=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@postgresql.horusec:5432/horusec_db?sslmode=disable
 
-kubectl create secret generic broker-username --from-literal=broker-username=user
+kubectl create secret generic broker-username --from-literal=broker-username=$RABBITMQ_USERNAME
 kubectl create secret generic broker-password --from-literal=broker-password=$RABBITMQ_PASSWORD
 
-kubectl create secret generic jwt-token --from-literal=jwt-token=4ff42f67-5929-fc52-65f1-3afc77ad86d5
+kubectl create secret generic jwt-token --from-literal=jwt-token=$JWT_SECRET
 ```
 
 > **Atenção**: Os valores informados nas Secrets deste guia são meros exemplos e não se destinam ao uso em produção.

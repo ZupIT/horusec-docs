@@ -54,6 +54,8 @@ Hoje o Horusec disponibiliza todas as suas imagens no [dockerhub](https://hub.do
 * [horuszup/horusec-messages](https://hub.docker.com/r/horuszup/horusec-messages) (obrigatório apenas se estiver utilizando o [serviço de mensageria](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service))
 * [horuszup/horusec-webhook](https://hub.docker.com/r/horuszup/horusec-webhook) (obrigatório apenas se estiver utilizando o [serviço de mensageria](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service))
 
+![](/docs/ptbr/web/installing/docker-compose/0-installing.gif)
+
 ## **Avisos importantes**
 
 {{% alert color="info" %}}
