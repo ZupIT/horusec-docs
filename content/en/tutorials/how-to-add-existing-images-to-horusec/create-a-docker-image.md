@@ -9,9 +9,9 @@ Horusec uses docker to run the analysis tools, which avoids configuration and en
 
 This image must have the desired tool installed.  The output of this container should be as clean as possible, or a JSON with the vulnerabilities found.
 
-{{% alert color="warning" %}}
+{{%/* alert color="warning" %}}
 The **Dockerfile** is expected to be in this directory:  `deployments/dockerfiles/[NEW_IMAGE]`
-{{% /alert %}}
+{{% /alert */%}}
 
 
 See a **Dockerfile** example below: 
@@ -31,9 +31,9 @@ RUN chmod +x /bin/tfsec
 CMD ["/bin/sh"]
 ```
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 The image must contain only the necessary, so it won't get too big.
-{{% /alert %}}
+{{% /alert */%}}
 
 In the same directory, add a versioning file of this image with the  **`.semver.yaml`** name.  See an example below: 
 

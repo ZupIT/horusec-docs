@@ -1,7 +1,7 @@
 ---
 title: Horusec NodeJS
 weight: 16
-description: Nesta seção, você vai encontrar as informações das vulnerabilidades que o Horusec encontra em projetos nodejs.
+description: Nesta seção, você vai encontrar mais informações sobre vulnerabilidades que o Horusec encontra em projetos nodejs.
 ---
 
 ---
@@ -11,6 +11,12 @@ description: Nesta seção, você vai encontrar as informações das vulnerabili
 O  [**Horusec-NodeJS**](https://github.com/ZupIT/horusec/tree/master/horusec-nodejs) é uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos NodeJS.
 
 ## Regras
+
+{{% alert color="info" %}}
+
+A seguir, você encontra todas as regras para o Horusec-nodejs. O conteúdo foi traduzido, porém também foi mantido em inglês porque é assim que a mensagem aparece no sistema. 
+
+{{% /alert %}}
 
 ### No use request method using data from request of user input
 
@@ -56,19 +62,19 @@ Indica a necessidade verificar servidores certificados durante conexões SSL/TLS
 
 ### **Untrusted content should not be included**
 
-Indica um alerta para que conteúdo não confiável  não seja incluído.
+Indica um alerta para que conteúdo não confiável não seja incluído.
 
 > Including content in your site from an untrusted source can expose your users to attackers and even compromise your own site. For that reason, this rule raises an issue for each non-relative URL. For more information checkout the OWASP A1:2017 \(https://owasp.org/www-project-top-ten/2017/A1\_2017-Injection.html\) advisory.
 
-### **Mysql Hard-coded credentials are security-sensitive**
+### **MySQL Hard-coded credentials are security-sensitive**
 
-Indica que credenciais Mysql possuem sensibilidades de segurança.
+Indica que credenciais MySQL possuem sensibilidades de segurança.
 
 > Because it is easy to extract strings from an application source code or binary, credentials should not be hard-coded. This is particularly true for applications that are distributed or that are open-source. It's recommended to customize the configuration of this rule with additional credential words such as \"oauthToken\", \"secret\", others. For more information checkout the CWE-798 \(https://cwe.mitre.org/data/definitions/798.html\) advisory.
 
 ### **Using shell interpreter when executing OS commands**
 
-Indica possível risco de vulnerabilidades em casos de execução de comandos OS. 
+Indica possível risco de vulnerabilidade em casos de execução de comandos OS. 
 
 > Arbitrary OS command injection vulnerabilities are more likely when a shell is spawned rather than a new process, indeed shell meta-chars can be used \(when parameters are user-controlled for instance\) to inject OS commands. For more information checkout the CWE-78 \(https://cwe.mitre.org/data/definitions/78.html\) advisory.
 
@@ -86,7 +92,7 @@ Sinaliza a permissão para acesso de informações confidenciais ao logar com si
 
 ### **Allowing browsers to perform DNS prefetching**
 
-Indica a permissão para usar como pré-busca de DNS.
+Indica a permissão para usar browsers como pré-busca de DNS.
 
 > By default, web browsers perform DNS prefetching to reduce latency due to DNS resolutions required when an user clicks links from a website page. It can add significant latency during requests, especially if the page contains many links to cross-origin domains. DNS prefetch allows web browsers to perform DNS resolving in the background before the user clicks a link. This feature can cause privacy issues because DNS resolving from the user's computer is performed without his consent if he doesn't intent to go to the linked website. On a complex private webpage, a combination \"of unique links/DNS resolutions\" can indicate, to a eavesdropper for instance, that the user is visiting the private page. For more information checkout the OWASP A3:2017 \(https://owasp.org/www-project-top-ten/OWASP\_Top\_Ten\_2017/Top\_10-2017\_A3-Sensitive\_Data\_Exposure.html\) advisory.
 
@@ -98,7 +104,7 @@ Indica a desabilitação do monitoramento por CT \(certificado de transparência
 
 ### **Disabling strict HTTP no-referrer policy**
 
-Indica  a desabilitação do HTTP restrito para política de não referência.
+Indica a desabilitação do HTTP restrito para política de não referência.
 
 > Confidential information should not be set inside URLs \(GET requests\) of the application and a safe \(ie: different from unsafe-url or no-referrer-when-downgrade\) referrer-Policy header, to control how much information is included in the referer header, should be used. For more information checkout the OWASP A3:2017 \(https://owasp.org/www-project-top-ten/OWASP\_Top\_Ten\_2017/Top\_10-2017\_A3-Sensitive\_Data\_Exposure.html\) advisory.
 
@@ -140,7 +146,7 @@ Indica a criação de cookies sem a flag \"secure\".
 
 ### **No use socket manually**
 
-Sinaliza para que não se use sockets manualmente. 
+Sinaliza para que não se usem sockets manualmente. 
 
 > Sockets are vulnerable in multiple ways: They enable a software to interact with the outside world. As this world is full of attackers it is necessary to check that they cannot receive sensitive information or inject dangerous input.The number of sockets is limited and can be exhausted. Which makes the application unresponsive to users who need additional sockets. In many cases there is no need to open a socket yourself. Use instead libraries and existing protocols For more information checkout the CWE-20 \(https://cwe.mitre.org/data/definitions/20.html\) advisory.
 

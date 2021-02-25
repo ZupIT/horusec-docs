@@ -63,8 +63,8 @@ func (a *Analyser) detectVulnerabilityJavascript(projectSubPath string) {
 
 ```
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 
 Não esqueça que essas funções devem ser realizadas em **go routines** e para cada nova go routine, é necessário atualizar o monitor, como no exemplo anterior, passando o número total de chamadas. Se você esquecer esse passo, o Horusec irá finalizar antes da ferramenta terminar a análise. 
 
-{{% /alert %}}
+{{% /alert */%}}

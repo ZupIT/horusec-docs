@@ -10,11 +10,11 @@ O Horusec usa o docker para executar as ferramentas de análise, o que evita pro
 
 Essa imagem deve ter a ferramenta desejada instalada. O resultado desse container deve ser o mais limpo possível. 
 
-{{% alert color="warning" %}}
+{{%/* alert color="warning" %}}
 
 É esperado que o arquivo Dockerfile esteja nesse diretório `deployments/dockerfiles/[NEW_IMAGE]`
 
-{{% /alert %}}
+{{% /alert */%}}
 
 Veja abaixo um exemplo de **Dockerfile**: 
 
@@ -33,11 +33,11 @@ RUN chmod +x /bin/tfsec
 CMD ["/bin/sh"]
 ```
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 
 A imagem deve conter apenas o necessário para que não ficar muito grande. 
 
-{{% /alert %}}
+{{% /alert */%}}
 
 Ainda no mesmo diretório adicione o arquivo de versionamento desta imagem com o nome **`.semver.yaml.`**Veja abaixo um exemplo: 
 

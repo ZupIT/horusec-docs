@@ -1,7 +1,7 @@
 ---
 title: Horusec CSharp
 weight: 17
-description: Nesta seção, você vai encontrar as informações das vulnerabilidades que o Horusec encontra em projetos csharp.
+description: Nesta seção, você vai encontrar mais informações sobre vulnerabilidades que o Horusec encontra em projetos csharp.
 ---
 
 ---
@@ -13,12 +13,12 @@ O  [**Horusec-Leaks**](https://github.com/ZupIT/horusec/tree/master/horusec-leak
 ## **Regras**
 
 {{% alert color="info" %}}
-A seguir, você encontra todas as regras para o Horusec-C\#. O conteúdo está em inglês porque é assim que ele aparece no sistema. 
+A seguir, você encontra todas as regras para o Horusec-C\#. O conteúdo está traduzido, porém foi também mantido em inglês porque é assim que a mensagem aparece no sistema. 
 {{% /alert %}}
 
 ### **Command Injection**
 
-Se um usuário malicioso controla o FileName ou Arguments, ele pode executar comandos indesejáveis ou adicionar argumentos indesejáveis. Esse comportamento não pode ser possível se o parâmetro do input são validados contra uma lista branca  de caracteres. 
+Se um usuário malicioso controla o FileName ou Arguments, ele pode executar comandos indesejáveis ou adicionar argumentos indesejáveis. Esse comportamento não pode ser possível se os parâmetros do input são validados contra uma "lista branca"  de caracteres. 
 
 > If a malicious user controls either the FileName or Arguments, he might be able to execute unwanted commands or add unwanted argument. This behavior would not be possible if input parameter are validate against a white-list of characters. For more information access: \(https://security-code-scan.github.io/\#SCS0001\).
 
@@ -36,7 +36,7 @@ O parser XML é configurado incorretamente. Essa operação pode ser vulnerável
 
 ### Path Traversal
 
-O ataque path traversal foca no acesso de arquivos e diretórios que são salvos fora do repositório esperado. Pela manipulação de variáveis que referenciam arquivos com sequencias de ../ e suas variações ou por usar caminhos de arquivo absolutos. 
+O ataque path traversal foca no acesso de arquivos e diretórios que são salvos fora do repositório esperado pela manipulação de variáveis que referenciam arquivos com sequencias de `../` e suas variações, ou por usar caminhos de arquivo absolutos. 
 
 > A path traversal attack \(also known as directory traversal\) aims to access files and directories that are stored outside the expected directory.By manipulating variables that reference files with “dot-dot-slash \(../\)” sequences and its variations or by using absolute file paths, it may be possible to access arbitrary files and directories stored on file system including application source code or configuration and critical system files. For more information access: \(https://security-code-scan.github.io/\#SCS0018\).
 
@@ -48,19 +48,19 @@ Usuários maliciosos podem ler ou escrever na base de dados. Se a base de dados 
 
 ### Weak Cipher Mode
 
-O criptograma não providencia nenhuma maneira de detectar dados que tenham sido adulterado. Se o criptograma pode ser controlado por alguém que atacar, ele pode ser alterado sem detecção. O uso de do modo AES e CBC com HMAC é recomendado para garantir a integridade e a confiabilidade. 
+O criptograma não providencia nenhuma maneira de detectar dados que tenham sido adulterados. Se o criptograma pode ser controlado por alguém que atacar, ele pude ser alterado sem detecção. O uso de do modo AES e CBC com HMAC é recomendado para garantir a integridade e a confiabilidade. 
 
 > The cipher provides no way to detect that the data has been tampered with. If the cipher text can be controlled by an attacker, it could be altered without detection. The use of AES in CBC mode with a HMAC is recommended guaranteeing integrity and confidentiality. For more information access: \(https://security-code-scan.github.io/\#SCS0013\).
 
 ### Forms Authentication Cookieless Mode
 
-Autenticação de cookies não deveriam ser enviadas na URL. Ao fazer isso, permite aos agressores ganharem acesso não autorizado para autenticação de tokens \(web server logs, referrer headers, e browser history\) e fica mais fácil de fazer uma sessão de ataques.
+Autenticação de cookies não deveria ser enviada na URL. Ao fazer isso, permite aos agressores ganharem acesso não autorizado para autenticação de tokens \(web server logs, referrer headers, e browser history\) e fica mais fácil de fazer uma sessão de ataques.
 
 > Authentication cookies should not be sent in the URL. Doing so allows attackers to gain unauthorized access to authentication tokens \(web server logs, referrer headers, and browser history\) and more easily perform session fixation / hijacking attacks. For more information checkout the CWE-598 \(https://cwe.mitre.org/data/definitions/598.html\) advisory.
 
 ### Forms Authentication Cross App Redirects
 
-Permitir redirecionamento de aplicação cruzada permite ataques invalidados via o parâmetro returnURL durante o processo de login. Desative os redirecionamentos de aplicativos cruzados para definir o atributo enableCrossAppRedirects como false.
+Habilitar o redirecionamento de aplicação cruzada permite ataques invalidados via o parâmetro returnURL durante o processo de login. Desative os redirecionamentos de aplicativos cruzados para definir o atributo enableCrossAppRedirects como false.
 
 > Enabling cross-application redirects can allow unvalidated redirect attacks via the returnUrl parameter during the login process. Disable cross-application redirects to by setting the enableCrossAppRedirects attribute to false. For more information checkout the CWE-601 \(https://cwe.mitre.org/data/definitions/601.html\) advisory.
 
@@ -90,7 +90,7 @@ A versão da resposta do HTTP header é ativada.
 
 ### Event Validation Disabled
 
-Validação de evento previne post inautorizados.
+Validação de evento previne post inautorizado.
 
 > Event validation prevents unauthorized post backs in web form applications. Disabling this feature can allow attackers to forge requests from controls not visible or enabled on a given web form. Enable event validation by setting the page element’s eventValidation attribute to true. For more information checkout the CWE-807 \(https://cwe.mitre.org/data/definitions/807.html\) advisory.
 
@@ -150,31 +150,31 @@ Ação de validação da requisição desativada.
 
 ### Xml Document External Entity Expansion
 
-Expansão de entidade externo de documento Xml. 
+Expansão de entidade externa de documento XML. 
 
 > XML External Entity \(XXE\) vulnerabilities occur when applications process untrusted XML data without disabling external entities and DTD processing. Processing untrusted XML data with a vulnerable parser can allow attackers to extract data from the server, perform denial of service attacks, and in some cases gain remote code execution. The XmlDocument class is vulnerable to XXE attacks when setting the XmlResolver property to resolve external entities. To prevent XmlDocument XXE attacks, set the XmlResolver property to null. For more information checkout the CWE-611 \(https://cwe.mitre.org/data/definitions/611.html\) advisory.
 
-### **Ldap Injection Filter Assignment**
+### **LDAP Injection Filter Assignment**
 
 Atribuição de filtro de injeção Ldap. 
 
 > LDAP Injection vulnerabilities occur when untrusted data is concatenated into a LDAP Path or Filter expression without properly escaping control characters. This can allow attackers to change the meaning of an LDAP query and gain access to resources for which they are not authorized. For more information checkout the CWE-90 \(https://cwe.mitre.org/data/definitions/90.html\) advisory.
 
-### Sql Injection: Dynamic NHibernate Query
+### SQL Injection: Dynamic NHibernate Query
 
-Injeção Sql: a query dinâmica NHibernate. 
+Injeção SQL: a query dinâmica NHibernate. 
 
 > Concatenating untrusted data into a dynamic SQL string and calling vulnerable NHibernate Framework methods can allow SQL Injection. To ensure calls to vulnerable NHibernate Framework methods are parameterized, pass positional or named parameters in the statement. The following NHibernate methods allow for raw SQL queries to be executed: CreateQuery CreateSqlQuery To ensure calls to vulnerable NHibernate methods are parameterized, use named parameters in the raw SQL query. Then, set the named parameter values when executing the query. For more information checkout the CWE-89 \(https://cwe.mitre.org/data/definitions/89.html\) advisory.
 
-### Ldap Injection Directory Searcher
+### LDAP Injection Directory Searcher
 
-Injeção Ldap que procura diretórios. 
+Injeção LDAP que procura diretórios. 
 
 > LDAP Injection vulnerabilities occur when untrusted data is concatenated into a LDAP Path or Filter expression without properly escaping control characters. This can allow attackers to change the meaning of an LDAP query and gain access to resources for which they are not authorized. For more information checkout the CWE-90 \(https://cwe.mitre.org/data/definitions/90.html\) advisory.
 
-### Ldap Injection Path Assignment
+### LDAP Injection Path Assignment
 
-Atribuição de path com a injeção Ldap. 
+Atribuição de path com a injeção LDAP. 
 
 > LDAP Injection vulnerabilities occur when untrusted data is concatenated into a LDAP Path or Filter expression without properly escaping control characters. This can allow attackers to change the meaning of an LDAP query and gain access to resources for which they are not authorized. For more information checkout the CWE-90 \(https://cwe.mitre.org/data/definitions/90.html\) advisory.
 
@@ -222,7 +222,7 @@ Cookie sem a flag SSL.
 
 ### Cookie Without HttpOnly Flag
 
-Cookie se a flag HttpOnly. 
+Cookie sem a flag HttpOnly. 
 
 > It is recommended to specify the HttpOnly flag to new cookie. For more information access: \(https://security-code-scan.github.io/\#SCS0009\) or \(https://cwe.mitre.org/data/definitions/1004.html\).
 
@@ -234,13 +234,13 @@ Variável sem entrada.
 
 ### Identity Weak Password Complexity
 
-Identidade fraca e complexidade de senha. 
+Identidade fraca de complexidade de senha. 
 
 > Weak passwords can allow attackers to easily guess user passwords using wordlist or brute force attacks. Enforcing a strict password complexity policy mitigates these attacks by significantly increasing the time to guess a user’s valid password. For more information checkout the CWE-521 \(https://cwe.mitre.org/data/definitions/521.html\) advisory.
 
 ### **No Log Sensitive Information in console**
 
-Sem informação de log sensível  no console 
+Sem informação de log sensível no console 
 
 > The App logs information. Sensitive information should never be logged. For more information checkout the CWE-532 \(https://cwe.mitre.org/data/definitions/532.html\) advisory.
 
@@ -366,7 +366,7 @@ Função de hashing fraca com cripto DES.
 
 ### No Use Cipher mode
 
-Sem o uso do modo criptografia. 
+Sem uso do modo criptografia. 
 
 > This mode is not recommended because it opens the door to various security exploits. If the plain text to be encrypted contains substantial repetitions, it is possible that the cipher text will be broken one block at a time. You can also use block analysis to determine the encryption key. In addition, an active opponent can replace and exchange individual blocks without detection, which allows the blocks to be saved and inserted into the stream at other points without detection. ECB and OFB mode will produce the same result for identical blocks. The use of AES in CBC mode with an HMAC is recommended, ensuring integrity and confidentiality. https://docs.microsoft.com/en-us/visualstudio/code-quality/ca5358?view=vs-2019. For more information checkout the CWE-326 \(https://cwe.mitre.org/data/definitions/326.html\) and CWE-327 \(https://cwe.mitre.org/data/definitions/327.html\) advisory.
 
@@ -382,9 +382,9 @@ Pacote de referência vulnerável.
 
 > Dependencies on open source frameworks and packages introduce additional vulnerabilities into the runtime environment. Vulnerabilities in open source libraries are continuously discovered and documented in publicly available vulnerability databases. Attackers can recognize a package being used by an application, and leverage known vulnerabilities in the library to attack the application. For more information checkout the CWE-937 \(https://cwe.mitre.org/data/definitions/937.html\) advisory.
 
-### Cors Allow Origin Wild Card
+### CORS Allow Origin Wild Card
 
-Cors permite a origem do wild card. 
+CORS permite a origem do wild card. 
 
 > Cross-Origin Resource Sharing \(CORS\) allows a service to disable the browser’s Same-origin policy, which prevents scripts on an attacker-controlled domain from accessing resources and data hosted on a different domain. The CORS Access-Control-Allow-Origin HTTP header specifies the domain with permission to invoke a cross-origin service and view the response data. Configuring the Access-Control-Allow-Origin header with a wildcard \(\*\) can allow code running on an attacker-controlled domain to view responses containing sensitive data. For more information checkout the CWE-942 \(https://cwe.mitre.org/data/definitions/942.html\) advisory.
 
@@ -448,14 +448,14 @@ Tamanho de chave Rsa fraca.
 
 > Due to advances in cryptanalysis attacks and cloud computing capabilities, the National Institute of Standards and Technology \(NIST\) deprecated 1024-bit RSA keys on January 1, 2011. The Certificate Authority Browser Forum, along with the latest version of all browsers, currently mandates a minimum key size of 2048-bits for all RSA keys. For more information checkout the CWE-326 \(https://cwe.mitre.org/data/definitions/326.html\) advisory.
 
-### Xml Reader External Entity Expansion
+### XML Reader External Entity Expansion
 
 Expansão de entidade externa do leitor de XML. 
 
 > XML External Entity \(XXE\) vulnerabilities occur when applications process untrusted XML data without disabling external entities and DTD processing. Processing untrusted XML data with a vulnerable parser can allow attackers to extract data from the server, perform denial of service attacks, and in some cases gain remote code execution. The XmlReaderSettings and XmlTextReader classes are vulnerable to XXE attacks when setting the DtdProcessing property to DtdProcessing.Parse or the ProhibitDtd property to false.\n\n \n\nTo prevent XmlReader XXE attacks, avoid using the deprecated ProhibitDtd property. Set the DtdProcessing property to DtdProcessing.Prohibit. For more information checkout the CWE-611 \(https://cwe.mitre.org/data/definitions/611.html\) advisory.
 
-### Ldap Injection Directory Entry
+### LDAP Injection Directory Entry
 
-Entrada de diretório de injeção Ldap.
+Entrada de diretório de injeção LDAP.
 
 > LDAP Injection vulnerabilities occur when untrusted data is concatenated into a LDAP Path or Filter expression without properly escaping control characters. This can allow attackers to change the meaning of an LDAP query and gain access to resources for which they are not authorized. Fixing the LDAP Injection Directory Entry vulnerability requires untrusted data to be encoded using the appropriate Web Protection Library \(aka AntiXSS\) LDAP encoding method: Encoder.LdapDistinguishedNameEncode\(\). For more information checkout the CWE-90 \(https://cwe.mitre.org/data/definitions/90.html\) advisory.

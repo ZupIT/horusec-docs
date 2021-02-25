@@ -1,19 +1,19 @@
 ---
 title: Horusec Leaks
 weight: 11
-description: Nesta seção, você vai encontrar as informações das vulnerabilidades que o Horusec encontra em projetos Leaks.
+description: Nesta seção, você vai encontrar mais informações sobre vulnerabilidades que o Horusec encontra em projetos Leaks.
 ---
 
 ---
 
 ## **O que é?**
 
-O  [**Horusec-Leaks**](https://github.com/ZupIT/horusec/tree/master/horusec-leaks#horusec-leaks-cli) é  uma ferramenta SAST criado pela equipe do Horusec, para fazer a busca de vulnerabilidades em projetos a partir de pesquisas por segredos codificados como senhas, chaves de API, tokens, dentre outras possíveis vulnerabilidades.  
+O  [**Horusec-Leaks**](https://github.com/ZupIT/horusec/tree/master/horusec-leaks#horusec-leaks-cli) é  uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos a partir de pesquisas por segredos codificados, como senhas, chaves de API, tokens, dentre outras possíveis vulnerabilidades.  
 
 ## **Exemplos de vulnerabilidades** 
 
 {{% alert color="info" %}}
-A seguir, você encontra todos os exemplos de vulnerabilidades que o Horusec-Leaks identifica. O conteúdo está em inglês porque é assim que ele aparece no sistema. 
+A seguir, você encontra todos os exemplos de vulnerabilidades que o Horusec-Leaks identifica. O conteúdo foi mantido em inglês porque é assim que ele aparece no sistema. 
 {{% /alert %}}
 
 ### AWS Manager ID

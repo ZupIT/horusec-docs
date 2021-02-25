@@ -44,9 +44,9 @@ Now you can check the vulnerabilities found in an analytical way in Horusec inte
 
 See below the steps to use Horusec: 
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 If you don't use Horusec's UI \(user interface\), go straight to step 2.
-{{% /alert %}}
+{{% /alert */%}}
 
 
 ### **Step 1: Access to the platform**
@@ -55,14 +55,14 @@ If you don't use Horusec's UI \(user interface\), go straight to step 2.
 
 ![](/docs/en/getting-started/using-horusec/0-login-horusec.gif)
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 Default Development account:
 If you want to use complete feature of horusec, you can enter using the default user:
 
 ``` 
 email: dev@example.com
 password: Devpass0*```
-{{% /alert %}} 
+{{% /alert */%}} 
 
 **Step 1.2:** After that, login and create an organization, click on "Add an organization" and fill the name of your company, then save:
 
@@ -82,9 +82,9 @@ password: Devpass0*```
 * Add token; 
 * Now, click on 'New token' and fill the fields. After that save it. 
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 When this token is successfully saved, it will show an access token to the repository, keep it safe and don't share it. 
-{{% /alert %}}
+{{% /alert */%}}
 
 ![](/docs/en/getting-started/using-horusec/3-add-token.gif)
 
@@ -112,18 +112,18 @@ horusec start -p=”./”
 ~/Projects/my-project (branch-with-vulnerability) ᐅ horusec start -p=”./”
 ```
 
-{{% alert color="warning" %}}
+{{%/* alert color="warning" %}}
 On this example, the access token was not mentioned, if you want to check horusec's vunelrabilities found in the analytical way, it is necessary to run the command below: 
 
 **horusec start -p=”./” -a=”SEU\_TOKEN\_DE\_AUTORIZAÇÃO” -u=”[**https://horusec.io/horusec\_api**](https://horusec.zup.com.br/horus_api)”**
-{{% /alert %}}
+{{% /alert */%}}
 
 
 On the step above, you can see the **-a** flag was added to the access token that was generated in the interface. And the **-u** flag was inserted the link where Horusec's API is hosted to send analysis. 
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 If you have any doubt about how each flag for this command works, type in your terminal: **horusec start --help.**
-{{% /alert %}}
+{{% /alert */%}}
 
 
 ### Step 3: Verify the analysis 

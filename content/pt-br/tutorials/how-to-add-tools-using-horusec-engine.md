@@ -83,11 +83,11 @@ Você encontra os exemplos da regra neste caminho:
 
 Depois de criar as regras, atualize o seu CLI para finalizar a configuração. Veja mais no exemplo a seguir. 
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 
 Para usar este exemplo no seu projeto, substitua o texto entre chaves com as suas definições novas do seu CLI. 
 
-{{% /alert %}}
+{{% /alert */%}}
 
 ```go
 // horusec-{name-of-the-cli}//app/main.go

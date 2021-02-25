@@ -12,9 +12,9 @@ The [**Horusec-Kotlin**](https://github.com/ZupIT/horusec/tree/master/horusec-ko
 
 ## **Examples of vulnerabilities**
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 Next, you find all the vulnerabilities examples identified by Horusec-Mobile \(Java and Kotlin\). The content is shown as it appears in the system.
-{{% /alert %}}
+{{% /alert */%}}
 
 ### No Log Sensitive Information
 

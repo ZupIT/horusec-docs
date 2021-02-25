@@ -1,9 +1,9 @@
 ---
-title: "Primeiros passos"
-linkTitle: "Primeiros passos"
+title: "Recursos"
+linkTitle: "Recursos"
 weight: 20
 description: >-
- Nessa seção você encontra exemplos de como utilizar a horusec-cli e suas opções de utilização
+ Nessa seção você vai encontra detalhes de recursos da CLI e como utilizar cada uma delas.
 ---
 
 ## **Flags globais**
@@ -53,30 +53,33 @@ A CLI está dividido em 3 principais comandos:
 
 
 ### Version 
-Utilizado quando você deseja verificar qual é a atual versão do Horusec.
+Comando utilizado para verificar é a atual versão do Horusec. Para usá-lo, basta rodar:
 
 ```bash
 horusec version
 ``` 
 
 ### Generate 
-Com este comando o Horusec irá gerar no diretório atual um arquivo de configuração onde você terá algumas opções de customização em sua análise realizada no Horusec.
+Comando usado para gerar um arquivo de configuração no diretório atual e, com isso, ter algumas [opções de customização](/docs/pt-br/cli/resources/#3-flags) na análise realizada no Horusec.
+
+{{% alert color="info" %}}
+Estas opções de configuração são as flags, que você pode conferir na tabela ao final da página, na terceira opção de uso do comando Start. 
+{{% /alert %}}
 
 ```bash
 horusec generate
 ```
 ### Start
-Este comando irá iniciar uma análise em busca de possíveis vulnerabilidades
-
-Utilizado para alterar algumas configurações, que podem ocorrer de 3 maneiras:
+Comando usado para iniciar uma análise em busca de possíveis vulnerabilidades e/ou para alterar algumas configurações.
 
 ```bash
 horusec start
 ```
 #### **Opções de uso para o comando start**
 
-#### Arquivo de configuração
-Todas as configurações de flags também podem ser realizadas através de um arquivo chamado `horusec-config.json`
+#### 1. Arquivo de configuração
+
+Neste caso, todas as configurações de flags podem ser realizadas através de um arquivo chamado `horusec-config.json`
 
 A seguir, um exemplo de um arquivo de configuração:
 
@@ -217,13 +220,16 @@ A seguir, um exemplo de um arquivo de configuração:
     }
 }
 ```
-Por definição padrão, o Horusec vai buscar esse arquivo de configuração automática na mesma pasta onde o comando `horusec.start` estiver sendo executado. Portanto, é recomendado que você esteja na raiz do seu projeto e que o comando mencionado esteja sendo executado lá.
+Por definição padrão, o Horusec vai buscar esse arquivo de configuração automática na mesma pasta em que for executado o comando `horusec.start`. 
 
-#### **Variável de ambiente**
-Você também pode utilizar algumas váriaveis de ambiente para realizar alterar as opções de configuração do horusec.
+Portanto, é recomendado que você esteja na raiz do seu projeto, assim como o comando start.
+
+#### **2. Variável de ambiente**
+
+Neste caso, você pode utilizar algumas váriaveis de ambiente para alterar as opções de configuração do Horusec.
 
 {{% alert color="info" %}}
-As variáveis de ambiente sobreescreve as opções do arquivo de configuração.
+Importante reforçar que as variáveis de ambiente sobreescrevem as opções do arquivo de configuração.
 {{% /alert %}}
 
 ```bash
@@ -253,22 +259,22 @@ export HORUSEC_CLI_CUSTOM_RULES_PATH=""
 export HORUSEC_CLI_ENABLE_INFORMATION_SEVERITY="false"
 ```
 
-#### **Flags**
+#### **3. Flags**
 
-Você pode passar algumas flags para alterar seus valores.
+Neste caso, você pode passar algumas flags para alterar seus valores.
+
 Por exemplo, é possível utilizar uma flag
 `horusec start --ignore="**/*test.go"`
 ou mesmo usar uma flag curta
 `horusec start -i **/*test.go`.
-Na tabela abaixo, você confere todas as flags disponíveis:
 
 {{% alert color="info" %}}
 As flags sobreescrevem as opções das variáveis de ambiente e do arquivo de configuração.
 {{% /alert %}}
 
-{{% alert color="info" %}}
-Para visualizar todas as informações da tabela, arraste pro lado.
-{{% /alert %}}
+Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visualização, basta arrastar para o lado: 
+
+
 <table>
     <thead>
         <tr>
@@ -287,7 +293,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">monitor-retry-count</td>
             <td style="text-align:left">m</td>
             <td style="text-align:left">15</td>
-            <td style="text-align:left">Esta configuração identificará quantos em quantos segundos quero verificar se minha análise está perto do tempo limite. O tempo mínimo é 10.</td>
+            <td style="text-align:left">Esta configuração identifica em quantos segundos quero verificar se minha análise está perto do tempo limite. O tempo mínimo é 10s.</td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_PRINT_OUTPUT_TYPE</td>
@@ -303,7 +309,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">ignore-severity</td>
             <td style="text-align:left">s</td>
             <td style="text-align:left"></td>
-            <td style="text-align:left">Você pode especificar algum tipo de vulnerabilidade para não aplicar com um erro. Os tipos disponíveis são: &quot;LOW, MEDIUM, HIGH&quot;. Ex .: LOW<del>,</del> MEDIUM todas as vulnerabilidades do tipo configurado são ignoradas</td>
+            <td style="text-align:left">Esta configuração especifica algum tipo de vulnerabilidade para não aplicar com um erro. Os tipos disponíveis são: &quot;LOW, MEDIUM, HIGH&quot;. Ex .: LOW<del>,</del> MEDIUM todas as vulnerabilidades do tipo configurado são ignoradas</td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_JSON_OUTPUT_FILEPATH</td>
@@ -319,7 +325,8 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">ignore</td>
             <td style="text-align:left">i</td>
             <td style="text-align:left"></td>
-            <td style="text-align:left">Você pode especificar alguns caminhos absolutos de arquivos ou pastas e até padrões para ignorar no envio para análise. Ex.: <code>/home/user/go/project/helpers/ , /home/user/go/project/utils/logger.go, **/*tests.go</code> Este exemplo mostra todos os arquivos dentro da pasta helpers são ignorados, o arquivo logger.go é ignorado também e todos os arquivos terminados em tests.go. Por padrão o horusec não realiza a analise em imagens, videos, binarios, pastas de IDE, pastas de dependencias como node modules e vendor</td>
+            <td style="text-align:left">Esta configuração especifica alguns caminhos absolutos de arquivos ou pastas e até padrões para ignorar no envio para análise. 
+            Ex.: <code>/home/user/go/project/helpers/ , /home/user/go/project/utils/logger.go, **/*tests.go</code> Este exemplo mostra todos os arquivos dentro da pasta helpers sendo ignorados, assim como o arquivo logger.go e todos os arquivos terminados em tests.go. Por padrão, o Horusec não realiza a análise em imagens, vídeos, binários, pastas de IDE e pastas de dependências, como node modules e vendor.</td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_HORUSEC_API_URI</td>
@@ -335,7 +342,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">request-timeout</td>
             <td style="text-align:left">r</td>
             <td style="text-align:left">300</td>
-            <td style="text-align:left">Essa configuração identificará quanto tempo desejo esperar em segundos para enviar o objeto de análise para horusec-api. O tempo mínimo é 10.</td>
+            <td style="text-align:left">Esta configuração identifica quanto tempo, em segundos, desejo esperar para enviar o objeto de análise para horusec-api. O tempo mínimo é 10s.</td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_TIMEOUT_IN_SECONDS_ANALYSIS</td>
@@ -343,7 +350,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">analysis-timeout</td>
             <td style="text-align:left">t</td>
             <td style="text-align:left">600</td>
-            <td style="text-align:left">Esta configuração identificará quanto tempo quero esperar em segundos para realizar uma análise que inclui: &quot;adquirindo um projeto&quot;, &quot;enviando para análise&quot;, &quot;saída de containers&quot; e &quot;adquirindo uma resposta&quot;. O tempo mínimo é 10.</td>
+            <td style="text-align:left">Esta configuração identifica quanto tempo, em segundos, quero esperar para realizar uma análise que inclui: &quot;adquirindo um projeto&quot;, &quot;enviando para análise&quot;, &quot;saída de containers&quot; e &quot;adquirindo uma resposta&quot;. O tempo mínimo é 10.</td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_REPOSITORY_AUTHORIZATION</td>
@@ -359,7 +366,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">return-error</td>
             <td style="text-align:left">e</td>
             <td style="text-align:left">false</td>
-            <td style="text-align:left">Essa configuração é para saber se eu quero retornar a saída (1) se eu encontrar alguma vulnerabilidade na análise. (Bastante utilizado em pipelines)</td>
+            <td style="text-align:left">Esta configuração é feita para saber se eu quero retornar a saída (1) caso eu encontre alguma vulnerabilidade na análise. (Bastante utilizado em pipelines)</td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_PROJECT_PATH</td>
@@ -367,7 +374,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">project-path</td>
             <td style="text-align:left">p</td>
             <td style="text-align:left">${CURRENT_DIRECTORY}</td>
-            <td style="text-align:left">Esta configuração serve para saber se desejo alterar o diretório de análise e não desejo executar no diretório atual. Se este valor não for passado, o Horusec perguntará se você deseja executar a análise no diretório atual. Se passar ele iniciará a análise no diretório informado por você sem perguntar nada.</td>
+            <td style="text-align:left">Esta configuração serve para saber se desejo alterar o diretório de análise e não desejo executar no diretório atual. Se este valor não for passado, o Horusec perguntará se você deseja executar a análise no diretório atual. Se passar, ele iniciará a análise no diretório informado por você sem perguntar nada.</td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_CERT_INSECURE_SKIP_VERIFY</td>
@@ -375,7 +382,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">insecure-skip-verify</td>
             <td style="text-align:left">S</td>
             <td style="text-align:left">false</td>
-            <td style="text-align:left">Isso é usado para desativar a validação do certificado. Seu uso não é recomendado fora dos casos de teste.</td>
+            <td style="text-align:left">Esta configuração usada para desativar a validação do certificado. Seu uso não é recomendado fora dos casos de teste.</td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_CERT_PATH</td>
@@ -391,7 +398,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">filter-path</td>
             <td style="text-align:left">f</td>
             <td style="text-align:left"></td>
-            <td style="text-align:left">Esta configuração serve para configurar o caminho para executar a análise e manter o caminho atual em sua base. Exemplo projeto contem backend e frontend quero rodar no path base mas desejo análisar somente o frontend então seria Ex.: <code>-f=&quot;./frontend&quot;</code></td>
+            <td style="text-align:left">Esta configuração serve para definir o caminho para executar a análise e manter o caminho atual em sua base. Exemplo: um projeto que contém backend e frontend em que quero rodar no path base, mas desejo analisar somente o frontend. Ficaria assim: <code>-f=&quot;./frontend&quot;</code></td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_ENABLE_GIT_HISTORY_ANALYSIS</td>
@@ -399,7 +406,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">enable-git-history</td>
             <td style="text-align:left"></td>
             <td style="text-align:left">false</td>
-            <td style="text-align:left">Esta configuração serve para saber se eu desejo habilitar ferramentas e análises de execução do gitleaks em todo o histórico do git pesquisando vulnerabilidades.</td>
+            <td style="text-align:left">Esta configuração serve para saber se eu desejo habilitar ferramentas e análises de execução do gitleaks em todo o histórico do git pesquisando por vulnerabilidades.</td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_ENABLE_COMMIT_AUTHOR</td>
@@ -407,7 +414,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">enable-commit-author</td>
             <td style="text-align:left">G</td>
             <td style="text-align:left">false</td>
-            <td style="text-align:left">Usado para habilitar e desabilitar o autor de commit. Se não passar o author ficará vazio. Se passar iremos pesquisar no histórico git quem é o author da vulnerabilidade encontrada pelo Horusec. Se essa opção for habilitada  o usuário deve ter git instalado na máquina e ter a pasta <code>.git</code> na base onde esteja executando a análise.</td>
+            <td style="text-align:left">Esta configuração é usada para habilitar e desabilitar o autor de commit. Se não passar, o author ficará vazio. Se passar, iremos pesquisar no histórico git quem é o author da vulnerabilidade encontrada pelo Horusec. Caso essa opção não esteja habilitada,  o usuário deve ter git instalado na máquina e ter a pasta <code>.git</code> na base em que estiver executando a análise.</td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_REPOSITORY_NAME</td>
@@ -415,7 +422,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">repository-name</td>
             <td style="text-align:left">n</td>
             <td style="text-align:left"></td>
-            <td style="text-align:left">Caso o token de autorização seja da empresa deverá enviar o nome do repositório a ser analisado, se o repositório não existir na base do Horusec iremos criar com o nome apresentado nessa configuração.</td>
+            <td style="text-align:left">Caso o token de autorização seja da empresa, você deverá enviar o nome do repositório a ser analisado. Se o repositório não existir na base do Horusec, iremos criar com o nome apresentado nesta configuração.</td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_FALSE_POSITIVE_HASHES</td>
@@ -423,7 +430,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">false-positive</td>
             <td style="text-align:left">F</td>
             <td style="text-align:left"></td>
-            <td style="text-align:left">Usado para ignorar vulnerabilidade nas analises e configurar com o tipo <code>Falso positivo</code> . ATENÇÃO quando você adiciona esta configuração diretamente na CLI, a configuração irá sobre escrever as configurações da interface gráfica do Horusec.</td>
+            <td style="text-align:left">Usado para ignorar vulnerabilidade nas análises e configurar com o tipo <code>Falso positivo</code> . Quando você adiciona esta configuração diretamente na CLI, a configuração irá sobre escrever as configurações da interface gráfica do Horusec.</td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_RISK_ACCEPT_HASHES</td>
@@ -431,7 +438,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">risk-accept</td>
             <td style="text-align:left">R</td>
             <td style="text-align:left"></td>
-            <td style="text-align:left">Usado para ignorar vulnerabilidade nas analises e configurar com o tipo <code>Risco aceito</code> . ATENÇÃO quando você adiciona esta configuração diretamente na CLI, a configuração irá sobre escrever as configurações da interface gráfica do Horusec.</td>
+            <td style="text-align:left">Esta configuração é usada para ignorar vulnerabilidades nas análises e configurar com o tipo <code>Risco aceito</code> . Quando você adiciona esta configuração diretamente na CLI, a configuração irá sobrescrever as configurações da interface gráfica do Horusec.</td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_CUSTOM_RULES_PATH</td>
@@ -439,7 +446,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">custom-rules-path</td>
             <td style="text-align:left">c</td>
             <td style="text-align:left"></td>
-            <td style="text-align:left">Usado para passar o caminho para o arquivo das regras personalizadas do horusec. Exemplo: -c=&quot;./horusec/horusec-custom-rules.json&quot;.</td>
+            <td style="text-align:left">Esta configuração é usada para passar o caminho para o arquivo das regras personalizadas do Horusec. Exemplo: -c=&quot;./horusec/horusec-custom-rules.json&quot;.</td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_ENABLE_INFORMATION_SEVERITY</td>
@@ -447,7 +454,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">information-severity</td>
             <td style="text-align:left">I</td>
             <td style="text-align:left">false</td>
-            <td style="text-align:left">Usado para habilitar ou desabilitar a severidade das informações da vulnerabilidade, elas podem conter falso positivo. Ex.: <code>I=&quot;true&quot;</code></td>
+            <td style="text-align:left">Esta configuração é usada para habilitar ou desabilitar a severidade das informações da vulnerabilidade que podem conter falso positivo. Ex.: <code>I=&quot;true&quot;</code></td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_CONTAINER_BIND_PROJECT_PATH</td>
@@ -455,7 +462,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">container-bind-project-path</td>
             <td style="text-align:left">P</td>
             <td style="text-align:left"></td>
-            <td style="text-align:left">Usado para passar o path do projeto para host quando rodando o horusec CLI dentro de um container.</td>
+            <td style="text-align:left">Esta configuração é usada para passar o path do projeto para host quando rodando o horusec CLI dentro de um container.</td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_HEADERS</td>
@@ -463,7 +470,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left">headers</td>
             <td style="text-align:left"></td>
             <td style="text-align:left"></td>
-            <td style="text-align:left">Usado para enviar headers dinâmicos to send dynamic headers on dispatch http request to horusec api service</td>
+            <td style="text-align:left">Esta configuração é usada para enviar cabeçalhos adicionais em todas as requisições HTTP da horusec-cli e, dessa forma, garantir que o seu servidor tenha acesso aos dados gerados no dashboard do Horusec.</td>
         </tr>
         <tr>
             <td style="text-align:left"></td>
@@ -471,7 +478,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left"></td>
             <td style="text-align:left"></td>
             <td style="text-align:left"></td>
-            <td style="text-align:left">Esta configuração informa ao horusec o diretório correto para executar uma linguagem específica.</td>
+            <td style="text-align:left">Esta configuração informa ao Horusec o diretório correto para executar uma linguagem específica.</td>
         </tr>
         <tr>
             <td style="text-align:left"></td>
@@ -479,7 +486,7 @@ Para visualizar todas as informações da tabela, arraste pro lado.
             <td style="text-align:left"></td>
             <td style="text-align:left"></td>
             <td style="text-align:left"></td>
-            <td style="text-align:left">Essa configuração informa ao horusec como ele irá rodar o caminho da imagem para download.</td>
+            <td style="text-align:left">Esta configuração informa ao Horusec como ele irá rodar o caminho da imagem para download.</td>
         </tr>
     </tbody>
 </table>
@@ -488,48 +495,88 @@ Para visualizar todas as informações da tabela, arraste pro lado.
 ## **Exemplos**
 A seguir, você pode conferir alguns exemplos práticos de comandos usando a CLI do Horusec:
 
-### Exemplo 1: Usando outro diretório.
-Neste exemplo estamos utilizando a flag -p para informar o local onde está o projeto, a flag -a passando o token de autorização a fim de enviar essa análise para nossa interface web
+### Exemplo 1: Usando outro diretório
+
+Neste exemplo, estamos utilizando:
+
+*  A `flag -p` para informar o local onde está o projeto;
+*  A `flag -a` passando o token de autorização a fim de enviar essa análise para nossa interface web.
+
 ```bash
 horusec start -a="REPOSITORY_TOKEN" -p="/home/user/project" 
 ```
 
 ### Exemplo 2: Usando nome de flag completo de diretório
-Neste exemplo estamos utilizando a flag --project-path para informar o local onde está o projeto, a flag --authorization passando o token de autorização a fim de enviar essa análise para nossa interface web
+
+Neste exemplo, estamos utilizando:
+
+* A `flag --project-path` para informar o local onde está o projeto;
+* A `flag --authorization` passando o token de autorização a fim de enviar essa análise para nossa interface web.
+
 ```bash
 horusec start --authorization="REPOSITORY_TOKEN" --project-path="/home/user/project" 
 ```
 
 ### Exemplo 3: Usando outro nome de flag completo de diretório
-Neste exemplo estamos utilizando a flag -p para informar o local onde está o projeto, a flag -a passando o token de autorização a fim de enviar essa análise para nossa interface web, a flag -i onde iremos ignorar essas pastas ou arquivos
+
+Neste exemplo, estamos utilizando:
+
+* A `flag -p` para informar o local onde está o projeto;
+* A `flag -a` passando o token de autorização a fim de enviar essa análise para nossa interface web;
+* A `flag -i` onde iremos ignorar essas pastas ou arquivos.
+
+
 ```bash
 horusec start -p="/home/user/project" -a="REPOSITORY_TOKEN" -i="**/node_modules/**, **/vendor/**, **/*_test.go"
 ```
 
 ### Exemplo 4: Usando para obter uma saída JSON
-Neste exemplo estamos utilizando a flag -p para informar o local onde está o projeto, a flag -a passando o token de autorização a fim de enviar essa análise para nossa interface web, a flag -o onde o output está sendo utilizado é “json” e o local do arquivo de saída será em “./output.json”
+
+Neste exemplo, estamos utilizando: 
+
+* A `flag -p` para informar o local onde está o projeto;
+* A `flag -a` passando o token de autorização a fim de enviar essa análise para nossa interface web,
+* A `flag -o`onde o output está sendo utilizado é `"json"` e o local do arquivo de saída será em `"./output.json”`.
+
+
 ```bash
 horusec start -p="/home/user/project" -a="REPOSITORY_TOKEN" -o="json" -O="./output.json"
 ```
 
 ### Exemplo 5: Usando para obter uma saída sonarqube
-Neste exemplo estamos utilizando a flag -p para informar o local onde está o projeto, a flag -a passando o token de autorização a fim de enviar essa análise para nossa interface web, a flag -o onde o output está sendo utilizado é “sonarqube” e o local do arquivo de saída será em “./sonarqube.json”
+
+Neste exemplo, estamos utilizando:
+
+* A `flag -p` para informar o local onde está o projeto;
+* A `flag -a` passando o token de autorização a fim de enviar essa análise para nossa interface web;
+* A `flag -o` onde o output está sendo utilizado é `“sonarqube”` e o local do arquivo de saída será em `“./sonarqube.json”`
+
 ```bash
 horusec start -p="/home/user/project" -a="REPOSITORY_TOKEN" -o="sonarqube" -O="./sonarqube.json"
 ```
 
 ### Exemplo 6: Usando como imagem docker localmente
-Veja que neste exemplo o comando horusec start já está ao iniciar a imagem basta você adicionar as flags que deseja.
 
-Quando se é utilizado desta forma é necessário criar um volume do seu projeto para a imagem e seu local de destino é recomendado que seja sempre na localização /project
+Veja que, neste exemplo, o comando `horusec start` já é executado. Por isso, ao iniciar a imagem, basta adicionar as flags que deseja.
+
+Quando o comando é usado dessa forma, você precisa criar um volume do seu projeto para a imagem e seu local de destino. Para isso, é recomendado que esse local seja sempre na localização `/project`.
 
 ```bash
 docker run --privileged -v /path/of/my/project/local:/project -it horuszup/horusec-cli:latest -p /project
 ```
 
 ### Exemplo 7: Usando como imagem docker em sua pipeline
-Vamos utilizar como exemplo a AWS Code Build para realizar a análise. Veja que neste exemplo temos que utilizar o comando sh /usr/local/bin/horusec-cli.sh, pois neste script temos algumas configurações necessárias ao iniciar a análise perceba que o comando horusec start também foi iniciado basta você adicionar as flags que deseja.
-Em pipelines é de extrema importância ter a configuração privileged habilitada, sem ela não é possível realizar a análise da forma esperada.
+
+Vamos utilizar como exemplo a **AWS Code Build** para realizar a análise. 
+
+Veja que, neste exemplo, temos que utilizar o comando `sh /usr/local/bin/horusec-cli.sh`, pois neste script temos algumas configurações necessárias. 
+
+Ao iniciar a análise,  perceba que o comando `horusec start` também foi iniciado e, por isso, basta você adicionar as flags que deseja.
+
+
+{{% alert color="info" %}}
+Em pipelines, é de extrema importância ter a configuração privileged habilitada, sem ela não é possível realizar a análise da forma esperada.
+{{% /alert %}}
 
 ```yaml
  build:

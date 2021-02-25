@@ -1,30 +1,47 @@
 ---
-title: Instalando
+title: Instalação
 weight: 20
 description: >-
- Nesta seção, você vai encontrar mais orientações para instalar o Horusec-CLI.
+ Nesta seção, você vai encontrar todas as orientações para instalar o Horusec-CLI.
 ---
 
-## **Localmente**
-Ao instalar localmente você poderá utilizar o Horusec em sua máquina tendo agilidade e podendo verificar
+É possível instalar o Horusec-CLI de 4 maneiras:
+
+1. Instalação Local
+2. Instalação Manual 
+3. Instalação via Imagem Docker 
+4. Instalação via Pipeline
+
+A seguir, você irá entender melhor cada uma delas.
+
+## **Instalação Local**
+A instalação feita direto no seu computador é ideal para quem quer usar logo o Horusec, seja fazer análises ou verificar as vulnerabilidades de um projeto.
+
+Confira, a seguir, o comando necessário para instalar o Horusec localmente de acordo com o sistema operacional:
 
 ### MAC ou Linux
-Rode o comando abaixo no seu terminal para realizar a instalação nos sistemas operacionais mac ou linux:
+Para instalar o Horusec nos sistemas MacOS ou Linux, basta rodar o comando abaixo no seu terminal:
 
 ```bash
 curl -fsSL https://horusec.io/bin/install.sh | bash
 ```
 
 ### Windows
-Rode o comando abaixo no seu terminal para realizar a instalação nos sistema operacional windows:
+Para instalar o Horusec-CLI no Windows, basta rodar o comando abaixo no seu terminal:
 
-ATENÇÃO no caso do windows você terá que executar sempre no local onde foi feito o download que está o executável.
+{{% alert color="warning" %}}
+
+No caso do windows, você terá que executar o comando sempre no local onde foi feito o download que está o executável.
+
+{{% /alert %}}
+
 ```bash
 curl "https://horusec.io/bin/latest/win_x64/horusec.exe" -o "./horusec.exe" && ./horusec.exe version
 ```
 
+
 {{% alert color="info" %}}
-Se você precisa fazer o download para uma versão/sistema operacional específico. Nesse caso, os sistemas operacionais suportados são:
+Caso você precise fazer o download para uma versão e/ou sistema operacional específico, os sistemas que o Horusec suporta são:
 
 - linux_x86
 - linux_x64
@@ -39,8 +56,15 @@ Se você precisa fazer o download para uma versão/sistema operacional específi
 {{% /alert %}}
 
 ## **Instalação Manual**
-Faça download manualmente escolhendo seu sistema operacional e a versão que deseja:
-Escolha abaixo um dos links para realizar download da última versão, caso queira uma versão específica basta trocar a palavra “latest” no link pela versão que você deseja:
+
+A instalação manual é feita de acordo com o sistema operacional e a versão que deseja fazer download. 
+
+Os links abaixo abaixo um dos links para realizar download da última versão. 
+
+{{% alert color="info" %}}
+Caso queira uma versão específica, basta trocar a palavra `latest` no link pela versão que você desejar.
+{{% /alert %}}
+
 - Windows x64:
 
     📥 https://horusec.io/bin/latest/win_x64/horusec.exe
@@ -62,23 +86,35 @@ Escolha abaixo um dos links para realizar download da última versão, caso quei
     📥 https://horusec.io/bin/latest/mac_x64/horusec
 
 
-## **Imagem Docker**
-Outra forma de realizar suas análises é através de uma imagem docker que você pode rodar localmente ou utilizar em sua pipeline veja abaixo alguns exemplos:
+👉[**A última versão disponível**](https://horusec.io/bin/version-cli-latest.txt)
 
-**Iniciando imagem com comando run:**
+👉[**Todas as versões disponíveis** ](https://horusec.io/bin/all-version-cli.txt)
 
-Quando você inicializa a imagem com o comando de run basta executar com o comando que você deseja:
+
+## **Instalação via Imagem Docker**
+
+Esta forma de instalação permite que você realize suas análises por meio de uma imagem docker, que você roda localmente ou utilizando sua pipeline. 
+
+Veja alguns casos de uso:
+
+
+### **Iniciando imagem com comando run:**
+
+Quando você inicializa a imagem com o comando run, basta executar o Horusec com o comando que você deseja:
+
 ```bash
 docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src horuszup/horusec-cli:latest horusec start -p /src -P $(pwd)
 ```
 
-{{% alert color="info" %}}
-ATENÇÃO! Quando se usa o Horusec em imagem docker é necessário criar um volume bidirecional, verifique se é possível em seu ambiente!
-
+{{% alert color="warning" %}}
+Verifique se o ambiente que você está trabalhando permite a criação de um volume bidirecional, pois isso é necessário para usar o Horusec em imagem docker.
 {{% /alert %}}
 
-## **Pipeline**
-Um dos objetivos do Horusec é garantir que a entrega do seu projeto em produção esteja segura. Para isso acontecer, é preciso adicioná-lo na sua pipeline. Veja como abaixo
+## **Instalação via Pipeline**
+
+Este tipo de instalação garante que a entrega do seu projeto em produção seja segura, já que o Horusec é adicionado à sua pipeline. 
+
+Veja a seguir as formas de instalação considerando diferentes tipos de pipeline:
 
 ### Github Actions
 
