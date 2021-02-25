@@ -38,9 +38,9 @@ email: dev@example.com
 password: Devpass0*
 ```
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 Todos os serviços backend são expostos utilizando **network_mode: "host"** verifique se suas [configurações estão habilitadas](https://docs.docker.com/network/host/) para fazer uso desta funcionalidade
-{{% /alert %}}
+{{% /alert */%}}
 
 ## **Imagens**
 Hoje o Horusec disponibiliza todas as suas imagens no [dockerhub](https://hub.docker.com/u/horuszup) para você utiliza-las.
@@ -58,14 +58,14 @@ Hoje o Horusec disponibiliza todas as suas imagens no [dockerhub](https://hub.do
 
 ## **Avisos importantes**
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 Todas essas configurações que o horusec disponibiliza em seu [docker-compose.yaml](https://github.com/ZupIT/horusec/blob/master/deployments/docker-compose.yaml) são padrões e com dados padrões ao utilizar em produção é recomendável alterar usuários e acessos como usuário e senha do banco de dados dentre outros.
-{{% /alert %}}
+{{% /alert */%}}
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 O Horusec está sempre atualizando sa imagens e realizando correções para saber qual imagem utilizar para versão específica basta verificar em nossas [release-notes](https://github.com/ZupIT/horusec/releases) as versões corretas de cada serviço
-{{% /alert %}}
+{{% /alert */%}}
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 Com a [nova política de acesso para realizar download de imagens publicas do dockerhub](https://docs.docker.com/docker-hub/download-rate-limit/) recomendamos subir as imagens em um registro de sua preferencia para não ter imprevistos no futuro.
-{{% /alert %}}
+{{% /alert */%}}

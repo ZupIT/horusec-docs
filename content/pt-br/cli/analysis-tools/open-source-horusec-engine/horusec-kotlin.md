@@ -2,8 +2,7 @@
 title: Horusec Kotlin
 weight: 14
 description: >-
- Nesta seção, você vai encontrar as informações das vulnerabilidades que o Horusec
-  encontra em projetos Kotlin.
+ Nesta seção, você vai encontrar mais informações sobre vulnerabilidades que o Horusec encontra em projetos Kotlin.
 ---
 
 ---
@@ -15,7 +14,7 @@ O  [**Horusec-Kotlin**](https://github.com/ZupIT/horusec/tree/master/horusec-kot
 ## **Exemplos de vulnerabilidades**
 
 {{% alert color="info" %}}
-A seguir, você encontra todos os exemplos de vulnerabilidades identificados pelo Horusec-Kotlin. O conteúdo é mostrado como aparece no sistema.
+A seguir, você encontra todos os exemplos de vulnerabilidades identificados pelo Horusec-Kotlin. O conteúdo foi mantido em inglês porque é mostrado ele aparece no sistema.
 
 Para verificar vulnerabilidades relacionadas a aplicativos móveis, você pode acessar a [**página Horusec Mobile \(Java e Kotlin\).**](../horusec-mobile-java-and-kotlin)
 {{% /alert %}}

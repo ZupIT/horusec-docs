@@ -8,11 +8,11 @@ description: 'Passo 3: Atualizando Enums'
 
 Você também precisa adicionar a nova ferramenta nos enums de ferramentas aceitas. Se for uma linguagem que ainda não é suportada pelo Horusec, será necessário adicioná-la ao enum de linguagens.
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 
 O enum de ferramentas se encontra no diretório:`development-kit/pkg/enums/tools/tools.go`
 
-{{% /alert %}}
+{{% /alert */%}}
 
 Veja o exemplo abaixo:
 

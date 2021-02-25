@@ -23,9 +23,9 @@ O token de repositório é único e só pode ser criado por quem tem acesso de a
 
 Por exemplo, se você adicionar este token em sua pipeline, o Horusec irá enviar a análise e armazená-la para ter uma visão analítica das [**vulnerabilidades**](/docs/pt-br/references/vulnerabilities/introduction/) do seu repositório.
 
-{{% alert color="danger" %}}
+{{%/* alert color="danger" %}}
 Lembre-se de que, ao criar um token de acesso, ele será visto apenas uma vez.
-{{% /alert %}}
+{{% /alert */%}}
 
 ![](/docs/ptbr/web/services/manager/repository-management/2-token-repository.gif)
 

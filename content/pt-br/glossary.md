@@ -49,9 +49,11 @@ Neste exemplo, ele acusará que encontrou um "No Log Sensitive Information", mas
 
 A sigla SAST - em português, Teste Estático de Segurança de Aplicação - se refere às ferramentas que analisam o código fonte dos sistemas. Estes testes normalmente são realizados antes que o sistema esteja em produção e somente no código fonte. 
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
+
 Atualmente o **Horusec** é classificado como um **SAST**.
-{{% /alert %}}
+
+{{% /alert */%}}
 
 ### DAST **\(Dynamic Application Security Testing\)**
 

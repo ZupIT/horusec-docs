@@ -27,11 +27,11 @@ O arquivo `config.go` deve conter as constantes:
 3.  `Image`: é o comando que irá executar a ferramenta. Nesse comando, é necessário adicionar na primeira parte o código `{{WORK_DIR}}`, porque ao executar o container, o Horusec irá substituir pelo caminho onde está o projeto do usuário dentro do container. 
 Além disso, o comando também deve conter todos os comandos que serão executados dentro do container para analisar o código.
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 
 Lembre-se que a saída esperada deverá ser no formato JSON para facilitar a transformação de dados. 
  
-{{% /alert %}}
+{{% /alert */%}}
 
 Veja abaixo o exemplo do arquivo config: 
 

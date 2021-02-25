@@ -24,9 +24,9 @@ This is the most simple type of authentication. To use it, follow the next steps
 
 2. This authentication will be added in all microservices - "horusec-auth, horusec-account, horusec-api, horusec- analytic ”the environment variable **`HORUSEC_JWT_SECRET_KEY=”horusec-secret”`** ”- its value can be any and preferably a strong hash.
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 Remember: once set it cannot be changed.
-{{% /alert %}}
+{{% /alert */%}}
 
 ### **Ldap**
 
