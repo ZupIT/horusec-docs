@@ -6,6 +6,14 @@ description: 'Passo 1: Crie uma Docker image'
 
 ---
 
+### **1. Clone o projeto**
+Clone o projeto do horusec em sua máquina local para realizar as modificações.
+```bash
+git clone https://github.com/ZupIT/horusec.git
+```
+
+### **2. Crie uma imagem docker**
+
 O Horusec usa o docker para executar as ferramentas de análise, o que evita problemas de configuração e de ambiente. Todas as ferramentas usadas tem suas respectivas imagens docker.
 
 Essa imagem deve ter a ferramenta desejada instalada. O resultado desse container deve ser o mais limpo possível. 
@@ -39,7 +47,7 @@ A imagem deve conter apenas o necessário para que não ficar muito grande.
 
 {{% /alert %}}
 
-Ainda no mesmo diretório adicione o arquivo de versionamento desta imagem com o nome **`.semver.yaml.`**Veja abaixo um exemplo: 
+Ainda no mesmo diretório adicione o arquivo de versionamento desta imagem com o nome **.semver.yaml**. Veja abaixo um exemplo: 
 
 ```yaml
 alpha: 0

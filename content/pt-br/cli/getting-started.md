@@ -138,25 +138,25 @@ A seguir, um exemplo de um arquivo de configuração:
             "imagepath":""
         },
         "HorusecCsharp":{
-            "istoignore":false,
+            "istoignore":false
         },
         "HorusecDart":{
-            "istoignore":false,
+            "istoignore":false
         },
         "HorusecJava":{
-            "istoignore":false,
+            "istoignore":false
         },
         "HorusecKotlin":{
-            "istoignore":false,
+            "istoignore":false
         },
         "HorusecKubernetes":{
-            "istoignore":false,
+            "istoignore":false
         },
         "HorusecLeaks":{
-            "istoignore":false,
+            "istoignore":false
         },
         "HorusecNodeJS":{
-            "istoignore":false,
+            "istoignore":false
         },
         "NpmAudit":{
             "istoignore":false,
@@ -525,15 +525,23 @@ Veja que neste exemplo o comando horusec start já está ao iniciar a imagem bas
 Quando se é utilizado desta forma é necessário criar um volume do seu projeto para a imagem e seu local de destino é recomendado que seja sempre na localização /project
 
 ```bash
-docker run --privileged -v /path/of/my/project/local:/project -it horuszup/horusec-cli:latest -p /project
+docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src horuszup/horusec-cli:latest horusec start -p /src -P $(pwd)
 ```
 
 ### Exemplo 7: Usando como imagem docker em sua pipeline
-Vamos utilizar como exemplo a AWS Code Build para realizar a análise. Veja que neste exemplo temos que utilizar o comando sh /usr/local/bin/horusec-cli.sh, pois neste script temos algumas configurações necessárias ao iniciar a análise perceba que o comando horusec start também foi iniciado basta você adicionar as flags que deseja.
-Em pipelines é de extrema importância ter a configuração privileged habilitada, sem ela não é possível realizar a análise da forma esperada.
+Vamos utilizar como exemplo a AWS Code Build para realizar a análise. Veja que neste exemplo estamos utilizando
+* Em pipelines é de extrema importância ter a configuração privileged habilitada, sem ela não é possível realizar a análise da forma esperada.
+* Um volume entre o docker.sock local e o docker.sock da imagem
+  * `-v /var/run/docker.sock:/var/run/docker.sock`
+* Um volume entre seu projeto local e o diretório onde ele será armazenado na imagem
+  * `-v $(pwd):/src/horusec`
+* Iniciamos o horusec informando o local onde está o projeto
+  * `horusec start -p /src/horusec`
+* Informamos onde está o diretório para realizar bind do volume local
+  * `-P $(pwd)`
 
 ```yaml
- build:
+  build:
     commands:
-       - sh /usr/local/bin/hoursec-cli.sh -p="./" -e="true"
+      - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd)
 ```

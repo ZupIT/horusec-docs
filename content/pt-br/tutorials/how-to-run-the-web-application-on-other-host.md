@@ -1,5 +1,5 @@
 ---
-title: Como rodar o aplicação web em outro host?
+title: Como rodar a aplicação web em outro host?
 weight: 13
 description: Você vai encontrar aqui as informações sobre como rodar a aplicação web do Horusec em uma máquina virtual
 ---

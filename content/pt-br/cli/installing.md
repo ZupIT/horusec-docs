@@ -122,7 +122,7 @@ phases:
       docker: 19
   build:
     commands:
-      - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec-vscode horuszup/horusec-cli:latest horusec start -p /src/horusec-vscode -P $(pwd)
+      - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd)
 ```
 
 ### Circle CI
@@ -188,5 +188,5 @@ services:
 build-code-job:
   stage: build
   script:
-    - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec-vscode horuszup/horusec-cli:latest horusec start -p /src/horusec-vscode -P $(pwd)
+    - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd)
 ```

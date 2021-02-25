@@ -26,3 +26,6 @@ Se preferir que o Horusec inicie a análise imediatamente basta digitar o comand
 ```bash
 horusec start -p ./
 ```
+
+
+![](/docs/ptbr/cli/introduction/0-running-horusec.gif)

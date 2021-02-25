@@ -37,25 +37,25 @@ O Horusec disponibiliza uma opção para você realizar configurações das ferr
             "imagepath":""
         },
         "HorusecCsharp":{
-            "istoignore":false,
+            "istoignore":false
         },
         "HorusecDart":{
-            "istoignore":false,
+            "istoignore":false
         },
         "HorusecJava":{
-            "istoignore":false,
+            "istoignore":false
         },
         "HorusecKotlin":{
-            "istoignore":false,
+            "istoignore":false
         },
         "HorusecKubernetes":{
-            "istoignore":false,
+            "istoignore":false
         },
         "HorusecLeaks":{
-            "istoignore":false,
+            "istoignore":false
         },
         "HorusecNodeJS":{
-            "istoignore":false,
+            "istoignore":false
         },
         "NpmAudit":{
             "istoignore":false,
