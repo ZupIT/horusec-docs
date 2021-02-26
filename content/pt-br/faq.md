@@ -35,7 +35,7 @@ Não, é opcional o uso do docker e git para aprimorar a análise
 O Horusec é uma ferramenta de análise de segurança buscando possíveis vazamentos e vulnerabilidades expostas em sua aplicação, enquanto uma ferramenta de qualidade de código garante que seu código tenha uma boa qualidade e um bom desempenho, mas não garante a segurança?
 
 ### **É possível subir toda a estrutura do horusec na minha infra pessoal?**
-Sim, basta seguir nosso tutorial "instalando o horusec em minha infra"
+Sim, basta seguir nosso tutorial "[Como rodar a aplicação web em outro host?](/docs/pt-br/tutorials/how-to-run-the-web-application-on-other-host)"
 
 ### **Como envio exporto o output do horusec em arquivo?**
 Basta seguir nosso exemplo exportando output para o tipo [json](/docs/pt-br/cli/getting-started/#exemplo-4-usando-para-obter-uma-saída-json) ou tipo [sonarqube](/docs/pt-br/cli/getting-started/#exemplo-5-usando-para-obter-uma-sa%C3%ADda-sonarqube)
