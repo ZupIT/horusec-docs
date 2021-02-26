@@ -65,11 +65,11 @@ These languages and tools are:
   * [**Sobelow**](https://github.com/nccgroup/sobelow)
 
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 
 In case you don't want Horusec to use a certain language and/or tool, you can just disable this configuration on the CLI.
 
-{{% /alert %}}
+{{% /alert */%}}
 
 ### **Horusec Architecture**
 

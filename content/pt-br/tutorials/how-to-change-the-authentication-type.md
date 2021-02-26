@@ -1,7 +1,7 @@
 ---
-title: Como alterar o tipo de autenticação?
-weight: 4
-description: Você vai encontrar aqui os tipos de autenticação disponíveis no Horusec.
+title: Como alterar o tipo de autenticação na aplicação web ?
+weight: 5
+description: Você vai encontrar aqui os tipos de autenticação disponíveis na aplicação web do Horusec.
 ---
 
 ---
@@ -22,11 +22,11 @@ Este é o tipo mais simples de autenticação. Para utilizá-la,  siga os passos
 
 2. Essa autenticação será adicionada em todos os microsserviços \(horusec-auth, horusec-account, horusec-api, horusec-analytic\) e na variável de ambiente  **`HORUSEC_JWT_SECRET_KEY=”horusec-secret”`** - lembrando que seu valor pode ser qualquer um e, de preferência, um hash forte. 
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 
 Lembre que você não poderá mais alterar a configuração depois que ela for feita.
 
-{{% /alert %}}
+{{% /alert */%}}
 
 ### **LDAP**
 

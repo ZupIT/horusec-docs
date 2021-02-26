@@ -2,30 +2,29 @@
 title: Código aberto no mercado
 weight: 20
 description: >-
-  Nesta seção, você vai encontrar aqui mais informações das ferramentas de código aberto no mercado utilizadas pelo Horusec em suas análises
+  Nesta seção, você vai encontrar mais informações sobre as ferramentas de código aberto no mercado que são utilizadas pelo Horusec em suas análises.
 ---
 
 ---
 ## **Ferramentas**
-Existem ferramentas SAST do mercado com as quais o Horusec trabalha na identificação de vulnerabilidades. Veja em detalhes na página a seguir:
+
+Existem ferramentas SAST do mercado com as quais o Horusec trabalha na identificação de vulnerabilidades. Veja em detalhes a seguir:
 
 ### **Bandit**
 
-O [**Bandit**](https://github.com/PyCQA/bandit)  é uma ferramenta projetada para encontrar problemas de segurança comuns no código **Python**. Para entender melhor os critérios que o Bandit aplica, você pode acessar [**a lista de regras** ](https://bandit.readthedocs.io/en/latest/plugins/index.html#complete-test-plugin-listing) aplicadas nas análises.
+O [**Bandit**](https://github.com/PyCQA/bandit) é uma ferramenta projetada para encontrar problemas de segurança comuns no código **Python**. Para entender melhor os critérios que o Bandit aplica, você pode acessar [**a lista de regras** ](https://bandit.readthedocs.io/en/latest/plugins/index.html#complete-test-plugin-listing) aplicadas nas análises.
 
 ### **Brakeman**
 
-O [**Brakeman**](https://github.com/presidentbeef/brakeman) é uma ferramenta de análise estática que verifica os aplicativos **Ruby on Rails** para vulnerabilidades de segurança.
-
-Para entender melhor os critérios do Brakemen, acesse a [**lista de vulnerabilidades** ](https://brakemanscanner.org/docs/warning_types/)que podem ser encontradas pela ferramenta.
+O [**Brakeman**](https://github.com/presidentbeef/brakeman) é uma ferramenta de análise estática que verifica os aplicativos **Ruby on Rails** para vulnerabilidades de segurança. Para entender melhor os critérios do Brakemen, acesse a [**lista de vulnerabilidades** ](https://brakemanscanner.org/docs/warning_types/)que podem ser encontradas pela ferramenta.
 
 ### **EsLint**
 
-[**Eslint**](https://github.com/eslint/eslint) é uma ferramenta  [**SAST**](../../../../key-concepts/#sast-static-application-security-testing) para identificar e relatar os padrões encontrados no código ECMAScript/JavaScript. Em muitos aspectos, é semelhante a JSLint e JSHint, com algumas exceções:
+[**Eslint**](https://github.com/eslint/eslint) é uma ferramenta SAST para identificar e relatar os padrões encontrados no código ECMAScript/JavaScript. Em muitos aspectos, é semelhante a JSLint e JSHint, com algumas exceções:
 
 * ESLint usa [Espree](https://github.com/eslint/espree) para análise de JavaScript.
 * ESLint usa um AST para avaliar padrões no código.
-* ESLint é completamente plugável, cada regra é um plugin e você pode adicionar mais em tempo de execução.
+* ESLint é completamente plugável; cada regra é um plugin e você pode adicionar mais em tempo de execução.
 
 Para entender melhor os critérios do EsLint, acesse a [**lista de regras**](https://eslint.org/docs/rules/) que a ferramenta aplica em suas análises.
 
@@ -35,21 +34,15 @@ Para entender melhor os critérios do EsLint, acesse a [**lista de regras**](htt
 
 ### **GoSec**
 
-O [**Gosec**](https://github.com/securego/gosec) é uma ferramenta que inspeciona o código fonte em busca de problemas de segurança examinando o Go AST em aplicações utilizando **GoLang**. 
-
-Para entender melhor os critérios do Gosec, acesse a [**lista de regras** ](https://github.com/securego/gosec#available-rules)que a ferramenta aplica em suas análises.
+O [**Gosec**](https://github.com/securego/gosec) é uma ferramenta que inspeciona o código fonte em busca de problemas de segurança examinando o Go AST em aplicações utilizando **GoLang**. Para entender melhor os critérios do Gosec, acesse a [**lista de regras** ](https://github.com/securego/gosec#available-rules) que a ferramenta aplica em suas análises.
 
 ### **GitLeaks**
 
-O [**GitLeaks**](https://github.com/zricethezav/gitleaks) é uma ferramenta [**SAST**](../../../../key-concepts/#sast-static-application-security-testing) para detectar segredos codificados como senhas, chaves de API e tokens em todo o histórico dos repositórios git.
-
-Para entender melhor os critérios do GitLeaks, acesse a [**lista de regras** ](https://github.com/ZupIT/horusec/blob/master/deployments/dockerfiles/gitleaks/rules.toml)que a ferramenta aplica em suas análises.
+O [**GitLeaks**](https://github.com/zricethezav/gitleaks) é uma ferramenta [**SAST**](../../../../key-concepts/#sast-static-application-security-testing) para detectar segredos codificados como senhas, chaves de API e tokens em todo o histórico dos repositórios git. Para entender melhor os critérios do GitLeaks, acesse a [**lista de regras** ](https://github.com/ZupIT/horusec/blob/master/deployments/dockerfiles/gitleaks/rules.toml)que a ferramenta aplica em suas análises.
 
 ### **NpmAudit**
 
-O [**NpmAudit**](https://docs.npmjs.com/cli/audit.html) é uma ferramenta de segurança que realiza a auditoria de dependências que utilizam o pacotes do **npm** em projetos **Javascript**. 
-
-Para isso, ele envia uma descrição das dependências configuradas em seu projeto para o registro padrão e solicita um relatório de vulnerabilidades conhecidas.
+O [**NpmAudit**](https://docs.npmjs.com/cli/audit.html) é uma ferramenta de segurança que realiza a auditoria de dependências que utilizam o pacotes do **npm** em projetos **Javascript**. Para isso, ele envia uma descrição das dependências configuradas em seu projeto para o registro padrão e solicita um relatório de vulnerabilidades conhecidas.
 
 ### **PHP Code Scan**
 
@@ -72,7 +65,7 @@ Para entender melhor os critérios do Security Code Scan, acesse a [**lista de r
 
 ### **Semgrep**
 
-[**Semgrep**](https://github.com/returntocorp/semgrep) é uma ferramenta  [**SAST**](../../../../key-concepts/#sast-static-application-security-testing), que se destaca na expressão de padrões de código - sem consultas complicadas - e na detecção de bugs no início do editor, no commit e no tempo de CI. Regras precisas se parecem com o código que você está pesquisando; não mais percorrer árvores de sintaxe abstrata ou lutar com regexes.
+[**Semgrep**](https://github.com/returntocorp/semgrep) é uma ferramenta SAST, que se destaca na expressão de padrões de código - sem consultas complicadas - e na detecção de bugs no início do editor, no commit e no tempo de CI. Regras precisas se parecem com o código que você está pesquisando; não mais percorrer árvores de sintaxe abstrata ou lutar com regexes.
 
 Para entender melhor os critérios do Semgrep, acesse a [**lista de regras**](https://semgrep.dev/docs/rules/) que a ferramenta aplica em suas análises.
 
@@ -95,17 +88,17 @@ Para isso, ele envia uma descrição das dependências configuradas em seu proje
 
  O [**ShellCheck**](https://github.com/koalaman/shellcheck) é uma ferramenta de segurança GPLv3 que oferece advertências e sugestões para scripts de **bash/shell/bat**. 
 Ela aponta para o usuário: 
-- erros de sintaxe que permitem o shell mostrar mensagens de erro enigmáticas;
-- problemas de nível semântico que podem causar um comportamento estranho do shell;
-- ameaças sutis, casos extremos e armadilhas que podem causar falha a um script em andamento.
+- Erros de sintaxe que permitem o shell mostrar mensagens de erro enigmáticas;
+- Problemas de nível semântico que podem causar um comportamento estranho do shell;
+- Ameaças sutis, casos extremos e armadilhas que podem causar falha a um script em andamento.
 
 ### **MixAudit**
 
- O [**MixAudit**](https://github.com/mirego/mix_audit) é uma ferramenta de segurança para a linguagem de programação Elixir que providencia a tarefa mix deps.audit para escanear as dependências de vulnerabilidade de segurança.
+ O [**MixAudit**](https://github.com/mirego/mix_audit) é uma ferramenta de segurança para a linguagem de programação Elixir que providencia a tarefa `mix deps.audit` para escanear as dependências de vulnerabilidade de segurança.
 
 MixAudit constrói duas listas quando é executado em um projeto:
- 1. Uma lista de avisos de segurança que são obtidas no repositório elixir-security-advisories.
-2. Uma lista de um mix de dependecias de vários arquivosmix.lock no projeto.
+ 1. Uma **lista de avisos de segurança** que são obtidas no repositório elixir-security-advisories.
+2. Uma **lista de um mix de dependêcias** de vários arquivosmix.lock no projeto.
 
 Depois disso, ocorre um loop em cada dependência do projeto para tentar encontrar avisos de segurança que serão aplicados. 
 
@@ -113,7 +106,7 @@ Depois disso, ocorre um loop em cada dependência do projeto para tentar encontr
 
  O [**Sobelow**](https://github.com/nccgroup/sobelow) é uma ferramenta de segurança estática focada na análise do framework Phoenix da linguagem de programação Elixir. É usada para obter uma visão dos pontos de interesse e para prevenir vulnerabilidades comuns. Quando encontradas são sinalizadas de cores diferente de acordo com a certeza de sua insegurança. 
 
-**Sobelow** detecta alguns tipos de problemas de segurança, como:
+O **Sobelow** detecta alguns tipos de problemas de segurança, como:
 
 - Insegurança na configuração;
 - Dependências vulneráveis conhecidas;

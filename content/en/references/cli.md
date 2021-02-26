@@ -26,9 +26,9 @@ When you run the start command, there are 3 ways configurations can change:
 * Environment variables; 
 * Flags.
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 One configuration can replace the other and the flag is the highest level. 
-{{% /alert %}}
+{{% /alert */%}}
 
 ### 2. version
 
@@ -234,9 +234,9 @@ See an example of a configuration file:
 }
 ```
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 By default, Horusec will fetch the configuration file from the same directory where the `horusec.start` command is running. Therefore, it is recommended that you are at the root of your project and the mentioned command is being executed there.
-{{% /alert %}}
+{{% /alert */%}}
 
 ### Using environment variables 
 
@@ -276,9 +276,9 @@ For example, you can pass some flags and alter its values `horusec start --ignor
 
 On the table below, you can see all the available flags: 
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 To view all the information on table, slide to the right. 
-{{% /alert %}}
+{{% /alert */%}}
 
 <table>
   <thead>
@@ -639,9 +639,9 @@ Horusec has its image that can be used in its pipeline or locally to perform the
 
 See in this example `horusec start` command is already at the start of the image, just add the flags you want.
 
-{{% alert color="warning" %}}
+{{%/* alert color="warning" %}}
 When used in this way, it is necessary to create a volume of your project for the image and its destination location is recommended to always be in the location _`/project`_
-{{% /alert %}}
+{{% /alert */%}}
 
 ```text
 docker run --privileged -v /path/of/my/project/local:/project -it horuszup/horusec-cli:latest -p /project
@@ -651,9 +651,9 @@ docker run --privileged -v /path/of/my/project/local:/project -it horuszup/horus
 
 Let's use [**AWS Code Build**](https://docs.horusec.io/v/v1-eng/adicionando-o-horusec-em-sua-pipeline#aws-code-build) as an example to perform the analysis. See that in this example you have to use the command `sh /usr/local/bin/horusec-cli.sh`, because in this script there are some necessary configurations when starting the analysis. Notice that `horusec start` command was also started, just add the flags you want.
 
-{{% alert color="warning" %}}
+{{%/* alert color="warning" %}}
 In pipelines it is extremely important to have the **privileged configuration enabled**, without this is not possible to carry out the analysis as expected.
-{{% /alert %}}
+{{% /alert */%}}
 
 ```text
   build:

@@ -48,9 +48,9 @@ On this example, it will tell you it found a "No Log Sensitive Information", but
 
 The SAST analyzes the source code of the systems. Tests are usually performed before the system is in production and only in the source code.
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 **Horusec** is currently labeled as **SAST**.
-{{% /alert %}}
+{{% /alert */%}}
 
 ### DAST **\(Dynamic Application Security Testing\)**
 

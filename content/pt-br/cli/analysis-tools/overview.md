@@ -1,14 +1,14 @@
 ---
-title: Introdução
+title: Visão Geral
 weight: 10
 type: list
 description: >-
- Nesta seção, você vai encontrar mais informações sobre os tipos de ferramentas que a Horusec-CLI usa nas suas análises.
+ Nesta seção, você vai encontrar mais informações sobre os tipos de ferramentas que a Horusec-CLI usa em suas análises.
 ---
 
 ---
 
-## **As linguagens e ferramentas disponíveis**
+## **Linguagens de programação e ferramentas disponíveis**
 
 Atualmente, o Horusec seleciona as linguagens e ferramentas a serem utilizadas no projeto de acordo com a stack disponível.
 

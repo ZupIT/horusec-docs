@@ -83,9 +83,9 @@ You can find rule examples following this path:
 
 After you create the rules, update your CLI to finish the configuration. See more on the following example.
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 To use this example on your project, replace the text between curles braces with your new CLI definitions.
-{{% /alert %}}
+{{% /alert */%}}
 
 
 ```text

@@ -16,9 +16,9 @@ For example, if you create an organization with 100 repositories, you will only 
 
 You have the option to create the token, but it is safer to generate only one to the repository and revoke it after a while. This way, you make sure the organization will always be safe. 
 
-{{% alert color="danger" %}}
+{{%/* alert color="danger" %}}
 Remember when creating an access token, it can only be seen once.
-{{% /alert %}}
+{{% /alert */%}}
 
 Check below how the token dashboard is in Horusec: 
 

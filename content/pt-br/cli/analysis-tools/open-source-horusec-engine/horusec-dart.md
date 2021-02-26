@@ -1,7 +1,7 @@
 ---
 title: Horusec Dart
 weight: 18
-description: Nesta seção, você vai encontrar as informações das vulnerabilidades que o Horusec encontra em projetos dart.
+description: Nesta seção, você vai encontrar mais informações sobre vulnerabilidades que o Horusec encontra em projetos dart.
 ---
 
 ---
@@ -11,6 +11,12 @@ description: Nesta seção, você vai encontrar as informações das vulnerabili
 O  [**Horusec-Dart**](https://github.com/ZupIT/horusec/tree/master/horusec-dart) é uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos Dart.
 
 ## Regras
+
+{{% alert color="info" %}}
+
+A seguir, você encontra todas as regras para o Horusec-Dart. O conteúdo foi mantido em inglês porque é assim que a mensagem aparece no sistema.
+
+{{% /alert %}}
 
 ### **Prevent XSS Attack**
 > A potential Cross-Site Scripting (XSS) was found. The endpoint returns a variable from the client entry that has not been coded. Always encode untrusted input before output, regardless of validation or cleaning performed. For more information checkout the CWE-79 (https://cwe.mitre.org/data/definitions/79.html) advisory.
@@ -39,7 +45,7 @@ O  [**Horusec-Dart**](https://github.com/ZupIT/horusec/tree/master/horusec-dart)
 ### **No Use Cipher mode**
 > This mode is not recommended because it opens the door to various security exploits. If the plain text to be encrypted contains substantial repetitions, it is possible that the cipher text will be broken one block at a time. You can also use block analysis to determine the encryption key. In addition, an active opponent can replace and exchange individual blocks without detection, which allows the blocks to be saved and inserted into the stream at other points without detection. ECB and OFB mode will produce the same result for identical blocks. The use of AES in CBC mode with an HMAC is recommended, ensuring integrity and confidentiality. https://docs.microsoft.com/en-us/visualstudio/code-quality/ca5358?view=vs-2019. For more information checkout the CWE-326 (https://cwe.mitre.org/data/definitions/326.html) and CWE-327 (https://cwe.mitre.org/data/definitions/327.html) advisory.
 
-### **Cors Allow Origin Wild Card**
+### **CORS Allow Origin Wild Card**
 > Cross-Origin Resource Sharing (CORS) allows a service to disable the browser’s Same-origin policy, which prevents scripts on an attacker-controlled domain from accessing resources and data hosted on a different domain. The CORS Access-Control-Allow-Origin HTTP header specifies the domain with permission to invoke a cross-origin service and view the response data. Configuring the Access-Control-Allow-Origin header with a wildcard (*) can allow code running on an attacker-controlled domain to view responses containing sensitive data. For more information checkout the CWE-942 (https://cwe.mitre.org/data/definitions/942.html) advisory.
 
 ### **Using shell interpreter when executing OS commands**
@@ -54,7 +60,7 @@ O  [**Horusec-Dart**](https://github.com/ZupIT/horusec/tree/master/horusec-dart)
 ### **No use biometrics types face or fingerprint for login in account**
 > If the mobile app uses a feature like TouchID, it suffers from insecure authentication. For more information checkout the OWSAP M4:2016 (https://owasp.org/www-project-mobile-top-10/2016-risks/m4-insecure-authentication) advisory.
 
-### **Xml Reader External Entity Expansion**
+### **XML Reader External Entity Expansion**
 > XML External Entity (XXE) vulnerabilities occur when applications process untrusted XML data without disabling external entities and DTD processing. Processing untrusted XML data with a vulnerable parser can allow attackers to extract data from the server, perform denial of service attacks, and in some cases gain remote code execution. The XmlReaderSettings and XmlTextReader classes are vulnerable to XXE attacks when setting the DtdProcessing property to DtdProcessing.Parse or the ProhibitDtd property to false. To prevent XmlReader XXE attacks, avoid using the deprecated ProhibitDtd property. Set the DtdProcessing property to DtdProcessing.Prohibit. For more information checkout the CWE-611 (https://cwe.mitre.org/data/definitions/611.html) advisory.
 
 ### **No use connection without SSL**
