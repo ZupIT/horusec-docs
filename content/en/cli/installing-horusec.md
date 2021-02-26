@@ -1,6 +1,6 @@
 ---
-title: Installing Horusec
-weight: 4
+title: Installation 
+weight: 5
 description: >-
   In this section, you will find guidelines for installing Horusec according to
   your operating system.
