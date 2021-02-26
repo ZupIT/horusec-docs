@@ -8,7 +8,7 @@ description: >-
 ---
 
 ### **Quais são as linguagens de programação que o horusec cobre?**
-Basta verificar na nossa documentação [todas as linguagens disponíveis](/docs/pt-br/cli/analysis-tools/introduction/)
+Basta verificar na nossa documentação [todas as linguagens disponíveis](/docs/pt-br/cli/analysis-tools/overview/)
 
 ### **Qual é o roadmap do horusec 2021 ?**
 - Fase 0: Suporte para todos os recursos horusec-cli no horusec-vscode (Q1)
@@ -38,4 +38,4 @@ O Horusec é uma ferramenta de análise de segurança buscando possíveis vazame
 Sim, basta seguir nosso tutorial "[Como rodar a aplicação web em outro host?](/docs/pt-br/tutorials/how-to-run-the-web-application-on-other-host)"
 
 ### **Como envio exporto o output do horusec em arquivo?**
-Basta seguir nosso exemplo exportando output para o tipo [json](/docs/pt-br/cli/getting-started/#exemplo-4-usando-para-obter-uma-saída-json) ou tipo [sonarqube](/docs/pt-br/cli/getting-started/#exemplo-5-usando-para-obter-uma-sa%C3%ADda-sonarqube)
+Basta seguir nosso exemplo exportando output para o tipo [json](/docs/pt-br/cli/resources/#exemplo-4-usando-para-obter-uma-saída-json) ou tipo [sonarqube](/docs/pt-br/cli/resources/#exemplo-5-usando-para-obter-uma-saída-sonarqube)
