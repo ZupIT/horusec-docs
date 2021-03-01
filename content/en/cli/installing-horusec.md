@@ -2,47 +2,46 @@
 title: Installation 
 weight: 5
 description: >-
-  In this section, you will find guidelines for installing Horusec according to
-  your operating system.
+  In this section, you will find guidelines to install Horusec-CLI.
 ---
 
-# Requirements 
-These are the requirements if you want to use Horusec **locally**:
+There are 4 ways to install Horusec-CLI:
 
-{{%/* alert color="info" %}}
-- docker
-- git
-- docker-compose/helm
-- golang
-- rabbitmq
-- postgres
-- email account (optional)
+1. Local Installation 
+2. Manual Installation  
+3. Installation via Imagem Docker 
+4. Installation via Pipeline
 
-If you want to use Horusec-cli:
-- docker
-- git (Mandatory if you are using search throughout the project's git history)
-{{% /alert */%}}
+Next, you will understand better each one of them. 
 
+## **Local Installation**
+The installation directly done in your computer is ideal if you want to use Horusec as soon as possible, either to perform analysis or verify vulnerabilities in your project. 
 
-# Installing Horusec
+Check out next, the command you need to install Horusec locally according to your operating system. 
+
 
 ### **MAC or Linux**
+To install Horusec-CLI on MacOS or Linux, you have to run the command below in your terminal: 
 
-Installation: 
-
-```text
+```bash
 curl -fsSL https://horusec.io/bin/install.sh | bash
 ```
 
 ### **Windows**
 
-Installation: 
+To install Horusec-CLI on Windows, you have to run the command below in your terminal: 
+
+{{% alert color="warning" %}}
+
+Here, you have to run the command where you have downloaded the executable.
+
+{{% /alert %}}
 
 ```bash
 curl "https://horusec.io/bin/latest/win_x64/horusec.exe" -o "./horusec.exe" && ./horusec.exe version
 ```
 
-{{%/* alert color="info" %}}
+{{% alert color="info" %}}
 If you need to download for a specific version / operating system. In this case, the supported operating systems are:
 
 * linux\_x86
@@ -55,57 +54,170 @@ If you need to download for a specific version / operating system. In this case,
 👉[**Latest version available**](https://horusec.io/bin/version-cli-latest.txt)
 
 👉[**All versions available** ](https://horusec.io/bin/all-version-cli.txt)
-{{% /alert */%}}
+
+{{% /alert %}}
 
 
 
-### **Manual installation**
+## **Manual installation**
 
-Download manually choosing your operating system and the version you want. 
+The manual installation is done according to your operation system and the version you want to download. 
 
-**MAC or Linux:**
+The links below are to download the lastest version:
 
-```text
-https://horusec.io/bin/$versão/$sistema_operacional/horusec
+- Windows x64:
+
+    📥 https://horusec.io/bin/latest/win_x64/horusec.exe
+
+- Windows x64:
+  - 📥 https://horusec.io/bin/latest/win_x64/horusec.exe
+- Windows x86:
+  - 📥 https://horusec.io/bin/latest/win_x86/horusec.exe
+- Linux x64:
+  - 📥 https://horusec.io/bin/latest/linux_x64/horusec
+- Linux x86:
+  - 📥 https://horusec.io/bin/latest/linux_x86/horusec
+- Mac x64:
+  - 📥 https://horusec.io/bin/latest/mac_x64/horusec
+
+
+👉[**Lastest available version**](https://horusec.io/bin/version-cli-latest.txt)
+
+👉[**All available versions** ](https://horusec.io/bin/all-version-cli.txt)
+
+
+## **Installation via image docker**
+
+Another way to carry out your analysis is through a docker image that you can run locally or use in your pipeline. 
+
+See some use cases below:
+
+### **Starting image with run command:**
+
+When you initialize the image with the `run` command, just run Horusec with the command you want.
+
+```bash
+docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src horuszup/horusec-cli:latest horusec start -p /src -P $(pwd)
 ```
 
-**Windows:**
+{{% alert color="warning" %}}
+Check if the environment you are working allows you to create a bidirectional volume, because this is necessary to use Horusec in a docker image.
+{{% /alert %}}
 
-```text
-https://horusec.io/bin/$versão/$sistema_operacional/horusec.exe
+## **Installation via pipeline:**
 
+This type of installation assures the safety in the deliver of your project in production, since Horusec is added to your pipeline.
+
+See next the ways to install considering different types of pipeline:
+
+### Github Actions
+
+```yaml
+name: SecurityPipeline
+
+on: [push]
+
+jobs:
+  horusec-security:
+    name: horusec-security
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+    - name: Running Horusec Security
+      run: |
+        curl -fsSL https://horusec.io/bin/install.sh | bash
+        horusec start -p="./" -e="true"
 ```
 
-**Example:** https://horusec-cli.s3.amazonaws.com/v1-1-0/win\_x64/horusec.exe
+### AWS Code Build
 
-## Using Horusec with image docker
+* **Environment:**
 
-Another way to carry out your analysis is through a docker image that you can run locally or use in your pipeline. See some examples below:
+  * Managed image
+  * Operational sytem: `Ubuntu`
+  * Execution time: `Standard`
+  * Image: `Any`
+  * Image Version:  `Latest`
+  * Privileged:  `true`
+  * Allow AWS CodeBuild to modify this service role so it can be used with this build project: `true`
 
-#### **Starting image with run command:**
+* Buildspec:
 
-When you initialize the image with the `run` command, your entry point will already be by default: `horusec start`, so you just need to add your flags to execute the command.
+```yaml
+version: 0.2
 
-```text
-docker run --privileged -v /path/of/my/project/local:/project -it horuszup/horusec-cli:latest -p /project
+phases:
+  install:
+    runtime-versions:
+      docker: 19
+  build:
+    commands:
+      - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd)
 ```
 
-#### **Starting image in your pipeline:**
+### Circle CI
 
-This is an example using the pipeline of [**aws code build**](adding-horusec-in-the-pipeline.md).
+```yaml
+version: 2.1
 
-{{%/* alert color="danger" %}}
-ATTENTION! When using Horusec in a docker image, some features will not work as:
+executors:
+  horusec-executor:
+    machine:
+      image: ubuntu-1604:202004-01
 
-* Export files;
+jobs:
+  horusec:
+    executor: horusec-executor
+    steps:
+      - checkout
+      - run:
+          name: Horusec Security Test
+          command: |
+            curl -fsSL https://horusec.io/bin/install.sh | bash
+            horusec start -p="./" -e="true"
+workflows:
+  pipeline:
+    jobs:
+      - horusec
+```
 
-It is recommended to use the Horusec executable in your environment!
-{{% /alert */%}}
+### Jenkins
 
-## **Next Steps** 
+```groovy
+stages {
+        stage('Security') {
+            agent {
+                docker { image 'docker:dind' }
+            }
+            steps {
+                sh 'curl -fsSL https://horusec.io/bin/install.sh | bash'
+                sh 'horusec start -p="./" -e="true"'
+            }
+        }
+    }
+```
 
-On this section, you accomplished the Horusec installation. To keep reading about the product: 
+### Azure DevOps Pipeline
 
-👉 **Go to** [**using Horusec** ](/docs/getting-started/using-horusec/) section if you want to know how to use the tool. 
+```yaml
+pool:
+  vmImage: 'ubuntu-18.04'
 
-👉 Go to [**adding Horusec in the pipeline**](/docs/getting-started/adding-horusec-in-the-pipeline/) if you want to go directly to the tool's application on your development pipeline.
+steps:
+- script: curl -fsSL https://horusec.io/bin/install.sh | bash && horusec start -p ./
+```
+
+### GitLab CI/CD
+
+```yaml
+image: docker:latest
+
+services:
+  - docker:dind
+
+build-code-job:
+  stage: build
+  script:
+    - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd)
+```
