@@ -49,9 +49,9 @@ Essas são as possíveis váriaveis de ambiente que você pode configurar neste 
 | HORUSEC_DATABASE_SQL_URI         | postgresql://root:root@localhost:5432/horusec_db?sslmode=disable | Esta variável de ambiente obtém uri para conectar no banco de dados POSTGRES |
 | HORUSEC_DATABASE_SQL_LOG_MODE    | false                                                            | Esta variável de ambiente obtém o valor para habilitar logs no POSTGRES |
 | HORUSEC_PORT                     | 8000                                                             | Esta variável de ambiente obtém a porta que o serviço irá iniciar |
-| HORUSEC_GRPC_AUTH_URL            | localhost:8007                                                   | Esta variável de ambiente obtém o url horusec-auth de conexão com o GRCP |
-| HORUSEC_GRPC_USE_CERTS           | false                                                            | Esta variável de ambiente obtém se o uso de certificados no GRCP está ativo ou não |
-| HORUSEC_GRPC_CERT_PATH           |                                                                  | Esta variável de ambiente obtém o caminho do certificado GRCP | 
+| HORUSEC_GRPC_AUTH_URL            | localhost:8007                                                   | Esta variável de ambiente obtém o url horusec-auth de conexão com o GRPC |
+| HORUSEC_GRPC_USE_CERTS           | false                                                            | Esta variável de ambiente obtém se o uso de certificados no GRPC está ativo ou não |
+| HORUSEC_GRPC_CERT_PATH           |                                                                  | Esta variável de ambiente obtém o caminho do certificado GRPC | 
 | HORUSEC_DISABLED_BROKER          | false                                                            | Esta variável de ambiente obtém se o broker está habilitado ou não | 
 | HORUSEC_BROKER_HOST              | 127.0.0.1                                                        | Esta variável de ambiente obtém host para se conectar ao broker RABBITMQ | 
 | HORUSEC_BROKER_PORT              | 5672                                                             | Esta variável de ambiente obtém porta para conectar no broker RABBITMQ |
