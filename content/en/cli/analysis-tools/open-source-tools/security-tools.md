@@ -1,12 +1,14 @@
 ---
-title: Security Tools
+title: Other Tools
 weight: 49
 description: >-
-  Here, you will find more information about SAST tools used by Horusec in the
+  In this section, you will find more information about tools used by Horusec in the
   analysis.
 ---
 
 ---
+## **Other Tools**
+There are SAST tools which Horusec works in vulnerabilities identification. Check them below:
 
 ### Bandit
 

@@ -1,6 +1,6 @@
 ---
 title: Introduction
-weight: 7
+weight: 8
 description: You will find here, Horusec's usage option. 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: How to add existing images to Horusec?
-weight: 12
+weight: 10
 description: You will find here how to add existing images to Horusec.
 ---
 

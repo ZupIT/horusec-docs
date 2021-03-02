@@ -1,6 +1,6 @@
 ---
-title: Key concepts
-weight: 2
+title: Glossary
+weight: 50
 description: You will find here all about Horusec's main concepts.
 ---
 
