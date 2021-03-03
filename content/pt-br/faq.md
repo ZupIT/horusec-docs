@@ -26,7 +26,7 @@ Sim, inclusive já temos para vscode
 Sim, usando nossa CLI
 
 ### **Quando rodo o horusec localmente via CLI como vejo as vulnerabilidades no manager?**
-Sim, Basta seguir nossa documentação para [instalar a aplicação web do horusec](http://localhost:1313/docs/pt-br/web/installing/)
+Sim, Basta seguir nossa documentação para [instalar a aplicação web do horusec](/docs/pt-br/web/installing/)
 
 ### **O horusec depende de algo para rodar localmente via CLI ?**
 Não, é opcional o uso do docker e git para aprimorar a análise

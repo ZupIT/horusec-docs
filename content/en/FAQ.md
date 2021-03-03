@@ -8,7 +8,7 @@ description: >-
 ---
 
 ### **What languages does Horusec support?**
-You can check the documentation [all available languages](/docs/pt-br/cli/analysis-tools/introduction/)
+You can check the documentation [all available languages](/docs/cli/analysis-tools/overview/)
 
 ### **What is Horusec's 2021 roadmap?**
 - Phase 0: Support for all horusec-cli features into horusec-vscode (Q1)
@@ -26,7 +26,7 @@ Yes, we already have a VSCode one.
 Sim, usando nossa CLI
 
 ### **Quando rodo o horusec localmente via CLI como vejo as vulnerabilidades no manager?**
-Sim, Basta seguir nossa documentação para [instalar a aplicação web do horusec](http://localhost:1313/docs/pt-br/web/installing/)
+Sim, Basta seguir nossa documentação para [instalar a aplicação web do horusec](/docs/web/installing/)
 
 ### **O horusec depende de algo para rodar localmente via CLI ?**
 Não, é opcional o uso do docker e git para aprimorar a análise
@@ -38,4 +38,4 @@ O Horusec é uma ferramenta de análise de segurança buscando possíveis vazame
 Sim, basta seguir nosso tutorial "instalando o horusec em minha infra"
 
 ### **Como envio exporto o output do horusec em arquivo?**
-Basta seguir nosso exemplo exportando output para o tipo [json](/docs/pt-br/cli/getting-started/#exemplo-4-usando-para-obter-uma-saída-json) ou tipo [sonarqube](/docs/pt-br/cli/getting-started/#exemplo-5-usando-para-obter-uma-sa%C3%ADda-sonarqube)
+Basta seguir nosso exemplo exportando output para o tipo [json](/docs/cli/resources/#example-4-using-to-get-the-json-exit) ou tipo [sonarqube](/docs/cli/resources/#example-5-using-to-get-sonarqube-exit)
