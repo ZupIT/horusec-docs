@@ -1,41 +1,12 @@
 ---
-title: CLI
-weight: 43
-description: You will find here information about HORUSEC-CLI.
+title: "Resources"
+linkTitle: "Resources"
+weight: 20
+description: >-
+ In this section, you will find examples and options to use Horusec-CLI. 
 ---
 
----
-
-## What is it?
-
-CLI or Command Line Interface is Horusec's code part, in which you can run commands to make safety analysis or [**vulnerabilities**](vulnerabilities/) identification and classification. 
-
-## What are the commands?
-
-Horusec has two commands: 
-
-### 1. start
-
-```text
-horusec start
-```
-
-When you run the start command, there are 3 ways configurations can change: 
-
-* Configuration files;
-* Environment variables; 
-* Flags.
-
-{{%/* alert color="info" %}}
-One configuration can replace the other and the flag is the highest level. 
-{{% /alert */%}}
-
-### 2. version
-
-It is used when you want to verify which is the latest Horusec's version. 
-
-## **Global flags** 
-
+## **Global flags**
 The current global flags on CLI are: 
 
 <table>
@@ -56,8 +27,7 @@ The current global flags on CLI are:
       <td style="text-align:left">-</td>
       <td style="text-align:left">info</td>
       <td style="text-align:left">
-        <p>This configuration will define which log level you want to view, it can
-          be:</p>
+        <p>This configuration will define which log level you want to view, it can be:</p>
         <ul>
           <li>&quot;panic&quot;</li>
           <li>fatal&quot;</li>
@@ -73,176 +43,191 @@ The current global flags on CLI are:
       <td style="text-align:left">config-file-path</td>
       <td style="text-align:left">-</td>
       <td style="text-align:left">Actual work directory /horusec-config.json</td>
-      <td style="text-align:left">Directory where the configuration file is. You can perform some configurations
-        with this file, for example, <a href="cli#using-the-configuration-file"><b>using the configuration file</b></a>.</td>
+      <td style="text-align:left">Directory where the configuration file is. You can perform some configurations with this file, for example, using the configuration file.</td>
     </tr>
   </tbody>
 </table>
 
-## CLI configuration
+## **Commands**
+CLI is divided in 3 main commands:
 
-### Using the configuration file
 
-All flags configuration can be made through a  `horusec-config.json` file.
+### Version 
+Command used to verify the current Horusec version. To use it, just run:
 
-See an example of a configuration file: 
+```bash
+horusec version
+``` 
 
-```text
+### Generate 
+Command used to generate a configuration file in the current directory and it has some [customization options](/docs/cli/resources/#global-flags) in the analysis made by Horusec. 
+
+
+{{% alert color="info" %}}
+These configuration options are flags that you can check on the table in the end of the page, the third use option is the Start command. 
+{{% /alert %}}
+
+```bash
+horusec generate
+```
+### Start
+Command used to start an analysis searching possible vulnerabilities and/or to alter some configurations.
+
+When you run the start command, there are some configuration it can be changed. These configurations can happen of 3 ways:
+
+```bash
+horusec start
+```
+#### **Use options for the start command**
+
+#### 1. Configuration file
+
+On this case, all flags configuration can be performed through a file called `horusec-config.json`
+
+See next, an example of a configuration file:
+```json
 {
-  "horusecCliHorusecApiUri":"http://0.0.0.0:8000",
-  "horusecCliTimeoutInSecondsRequest":300,
-  "horusecCliTimeoutInSecondsAnalysis":600,
-  "horusecCliMonitorRetryInSeconds":15,
-  "horusecCliRepositoryAuthorization":"00000000-0000-0000-0000-000000000000",
-  "horusecCliPrintOutputType":"text",
-  "horusecCliJsonOutputFilepath":"",
-  "horusecCliTypesOfVulnerabilitiesToIgnore":"",
-  "horusecCliFilesOrPathsToIgnore":"",
-  "horusecCliReturnErrorIfFoundVulnerability":false,
-  "horusecCliProjectPath":"",
-  "horusecCliFilterPath":"",
-  "horusecCliEnableGitHistoryAnalysis":false,
-  "horusecCliCertPath":"",
-  "horusecCliCertInsecureSkipVerify":false,
-  "horusecCliEnableCommitAuthor":false,
-  "horusecCliRepositoryName":"",
-  "horusecCliFalsePositiveHashes":"",
-  "horusecCliRiskAcceptHashes":"",
-  "horusecCliContainerBindProjectPath":"",
-  "horusecCliWorkDir":{
-    "go":[
-
+    "horusecCliCertInsecureSkipVerify":false,
+    "horusecCliCertPath":"",
+    "horusecCliContainerBindProjectPath":"",
+    "horusecCliCustomRulesPath":"",
+    "horusecCliDisableDocker":false,
+    "horusecCliEnableCommitAuthor":false,
+    "horusecCliEnableGitHistoryAnalysis":false,
+    "horusecCliEnableInformationSeverity":false,
+    "horusecCliFalsePositiveHashes":[],
+    "horusecCliFilesOrPathsToIgnore":[
+        "*tmp*",
+        "**/.vscode/**"
     ],
-    "csharp":[
-
+    "horusecCliFilterPath":"",
+    "horusecCliHeaders":{},
+    "horusecCliHorusecApiUri":"http://0.0.0.0:8000",
+    "horusecCliJsonOutputFilepath":"",
+    "horusecCliMonitorRetryInSeconds":15,
+    "horusecCliPrintOutputType":"text",
+    "horusecCliProjectPath":"/home/wilian/Downloads",
+    "horusecCliRepositoryAuthorization":"00000000-0000-0000-0000-000000000000",
+    "horusecCliRepositoryName":"Downloads",
+    "horusecCliReturnErrorIfFoundVulnerability":false,
+    "horusecCliRiskAcceptHashes":[],
+    "horusecCliSeveritiesToIgnore":[
+        "AUDIT",
+        "INFO"
     ],
-    "ruby":[
-
-    ],
-    "python":[
-
-    ],
-    "java":[
-
-    ],
-    "kotlin":[
-
-    ],
-    "javaScript":[
-
-    ],
-    "leaks":[
-
-    ],
-    "generic":[
-
-    ],
-    "php":[
-
-    ],
-    "c":[
-
-    ],
-    "yaml":[
-
-    ],
-    "hlc":[
-
-    ]
-  },
-  "horusecCliToolsConfig":{
-    "Bandit":{
-      "isToIgnore":false,
-      "imagePath":""
+    "horusecCliTimeoutInSecondsAnalysis":600,
+    "horusecCliTimeoutInSecondsRequest":300,
+    "horusecCliToolsConfig":{
+        "Bandit":{
+            "istoignore":false,
+            "imagepath":""
+        },
+        "Brakeman":{
+            "istoignore":false,
+            "imagepath":""
+        },
+        "Eslint":{
+            "istoignore":false,
+            "imagepath":""
+        },
+        "Flawfinder":{
+            "istoignore":false,
+            "imagepath":""
+        },
+        "GitLeaks":{
+            "istoignore":false,
+            "imagepath":""
+        },
+        "GoSec":{
+            "istoignore":false,
+            "imagepath":""
+        },
+        "HorusecCsharp":{
+            "istoignore":false
+        },
+        "HorusecDart":{
+            "istoignore":false
+        },
+        "HorusecJava":{
+            "istoignore":false
+        },
+        "HorusecKotlin":{
+            "istoignore":false
+        },
+        "HorusecKubernetes":{
+            "istoignore":false
+        },
+        "HorusecLeaks":{
+            "istoignore":false
+        },
+        "HorusecNodeJS":{
+            "istoignore":false
+        },
+        "NpmAudit":{
+            "istoignore":false,
+            "imagepath":""
+        },
+        "PhpCS":{
+            "istoignore":false,
+            "imagepath":""
+        },
+        "Safety":{
+            "istoignore":false,
+            "imagepath":""
+        },
+        "SecurityCodeScan":{
+            "istoignore":false,
+            "imagepath":""
+        },
+        "Semgrep":{
+            "istoignore":false,
+            "imagepath":""
+        },
+        "ShellCheck":{
+            "istoignore":false,
+            "imagepath":""
+        },
+        "TfSec":{
+            "istoignore":false,
+            "imagepath":""
+        },
+        "YarnAudit":{
+            "istoignore":false,
+            "imagepath":""
+        }
     },
-    "Brakeman":{
-      "isToIgnore":false,
-      "imagePath":""
-    },
-    "Eslint":{
-      "isToIgnore":false,
-      "imagePath":""
-    },
-    "Flawfinder":{
-      "isToIgnore":false,
-      "imagePath":""
-    },
-    "GitLeaks":{
-      "isToIgnore":false,
-      "imagePath":""
-    },
-    "GoSec":{
-      "isToIgnore":false,
-      "imagePath":""
-    },
-    "HorusecCsharp":{
-      "isToIgnore":false,
-      "imagePath":""
-    },
-    "HorusecJava":{
-      "isToIgnore":false,
-      "imagePath":""
-    },
-    "HorusecKotlin":{
-      "isToIgnore":false,
-      "imagePath":""
-    },
-    "HorusecKubernetes":{
-      "isToIgnore":false,
-      "imagePath":""
-    },
-    "HorusecLeaks":{
-      "isToIgnore":false,
-      "imagePath":""
-    },
-    "HorusecNodeJS":{
-      "isToIgnore":false,
-      "imagePath":""
-    },
-    "NpmAudit":{
-      "isToIgnore":false,
-      "imagePath":""
-    },
-    "PhpCS":{
-      "isToIgnore":false,
-      "imagePath":""
-    },
-    "Safety":{
-      "isToIgnore":false,
-      "imagePath":""
-    },
-    "SecurityCodeScan":{
-      "isToIgnore":false,
-      "imagePath":""
-    },
-    "Semgrep":{
-      "isToIgnore":false,
-      "imagePath":""
-    },
-    "TfSec":{
-      "isToIgnore":false,
-      "imagePath":""
-    },
-    "YarnAudit":{
-      "isToIgnore":false,
-      "imagePath":""
+    "horusecCliToolsToIgnore":[],
+    "horusecCliWorkDir":{
+        "go":[],
+        "netCore":[],
+        "csharp":[],
+        "ruby":[],
+        "python":[],
+        "java":[],
+        "kotlin":[],
+        "javaScript":[],
+        "leaks":[],
+        "hcl":[],
+        "php":[],
+        "c":[],
+        "yaml":[],
+        "generic":[ ]
     }
-  },
-  "horusecCliHeaders":{
-
-  }
 }
 ```
+By default, Horusec will search for this automated configuration file in the same folder the `horusec.start` command is executed.
 
-{{%/* alert color="info" %}}
-By default, Horusec will fetch the configuration file from the same directory where the `horusec.start` command is running. Therefore, it is recommended that you are at the root of your project and the mentioned command is being executed there.
-{{% /alert */%}}
+Therefore, you should be in the root of your project, just like the start command. 
 
-### Using environment variables 
+#### **2. Environment variable**
 
-There are specific configuration for the user environment variables to configure how Horusec will run, check out the example below: 
+Here, you can use some environment variables to alter Horusec's configuration options. 
 
-```text
+{{% alert color="info" %}}
+It's important to remember the environment variables overwrite the configuration files options.
+{{% /alert %}}
+
+```bash
 export HORUSEC_CLI_HORUSEC_API_URI="http://0.0.0.0:8000"
 export HORUSEC_CLI_TIMEOUT_IN_SECONDS_REQUEST="300"
 export HORUSEC_CLI_TIMEOUT_IN_SECONDS_ANALYSIS="600"
@@ -250,8 +235,8 @@ export HORUSEC_CLI_MONITOR_RETRY_IN_SECONDS="15"
 export HORUSEC_CLI_REPOSITORY_AUTHORIZATION="00000000-0000-0000-0000-000000000000"
 export HORUSEC_CLI_PRINT_OUTPUT_TYPE="text"
 export HORUSEC_CLI_JSON_OUTPUT_FILEPATH=""
-export HORUSEC_CLI_TYPES_OF_VULNERABILITIES_TO_IGNORE=""
-export HORUSEC_CLI_FILES_OR_PATHS_TO_IGNORE=""
+export HORUSEC_CLI_SEVERITIES_TO_IGNORE="AUDIT, INFO"
+export HORUSEC_CLI_FILES_OR_PATHS_TO_IGNORE="*tmp*, **/.vscode/**"
 export HORUSEC_CLI_RETURN_ERROR_IF_FOUND_VULNERABILITY="false"
 export HORUSEC_CLI_PROJECT_PATH=""
 export HORUSEC_CLI_FILTER_PATH=""
@@ -262,23 +247,28 @@ export HORUSEC_CLI_ENABLE_COMMIT_AUTHOR="false"
 export HORUSEC_CLI_REPOSITORY_NAME=""
 export HORUSEC_CLI_FALSE_POSITIVE_HASHES=""
 export HORUSEC_CLI_RISK_ACCEPT_HASHES=""
+export HORUSEC_CLI_TOOLS_TO_IGNORE=""
 export HORUSEC_CLI_CONTAINER_BIND_PROJECT_PATH=""
 export HORUSEC_CLI_DISABLE_DOCKER="false"
 export HORUSEC_CLI_CUSTOM_RULES_PATH=""
-export HORUSEC_CLI_ENABLE_INFORMATION_SEVERITY=""
+export HORUSEC_CLI_ENABLE_INFORMATION_SEVERITY="false"
 ```
 
-### Using flags on start command 
+#### **3. Flags**
 
-On the [**start command**](cli#1-start) case, you can pass some flags and change its values. 
+You can pass some flags to alter your values.
 
-For example, you can pass some flags and alter its values `horusec start --ignore="**/*test.go"` or  even use a short flag `horusec start -i **/*test.go`
+For example, it is possible to use a flag
+`horusec start --ignore="**/*test.go"`
+or even use a short flag
+`horusec start -i **/*test.go`.
 
-On the table below, you can see all the available flags: 
+{{% alert color="info" %}}
+The flags overwrite the environment variables options and the file configuration.
+{{% /alert %}}
 
-{{%/* alert color="info" %}}
-To view all the information on table, slide to the right. 
-{{% /alert */%}}
+On the table below, you can see all the available flags. To see it better, just swipe right: 
+
 
 <table>
   <thead>
@@ -545,118 +535,93 @@ To view all the information on table, slide to the right.
   </tbody>
 </table>
 
-### **WorkDir**
-
-WorkDir is a representation to run several projects in a directory, that can be configured through a **horusec-config.json** file. If you project is a netcore application using angular, you have the following structure: 
-
-```text
-|- NetCoreProject/
-|--- horusec-config.json
-|--- controllers/
-|--- NetCoreProject.csproj
-|--- views/
-|------ pages/
-|------ package.json
-|------ package-lock.json
-```
-
-Your initial `.csproj` is inside `/NetCoreProject` and your `package-lock` is inside  `/NetCoreProject/views`. Then, you have to configure the workdir. For this specific example, the configuration would be: 
-
-```text
-{
-    "horusecCliWorkDir": {
-        "netCore": [
-            "NetCoreProject"
-        ],
-        "javaScript": [
-            "NetCoreProject/views"
-        ]
-    }
-}
-```
-
-As you can see, the project structure will be divided by languages and it can support several in each one of them. The language interface is: 
-
-```text
-{
-    go         []string
-    csharp     []string
-    ruby       []string
-    python     []string
-    java       []string
-    kotlin     []string
-    javaScript []string
-    leaks      []string
-    hlc        []string
-    generic    []string
-    php        []string
-    c          []string
-    yaml       []string
-}
-```
-
-## Examples
-
+## **Examples**
 You can see next, some use examples of commands using Horusec CLI:
 
-**Example 1:** Using other directory. 
+### Example 1: Using other directory
 
-You can see when a flag -p pass, Horusec doesn't ask you if the directory is correct, it just start to make the analysis:
+In this example, we used: 
 
-```text
+*  `flag -p` to inform the where the project is;
+*  `flag -a` passing the authorization token to send this analysis to our web interface. 
+
+```bash
 horusec start -a="REPOSITORY_TOKEN" -p="/home/user/project" 
 ```
 
-**Example 2:** Using the whole flag name in the directory: 
+### Example 2: Using the whole flag name in the directory
 
-```text
+In this example, we used: 
+
+* `flag --project-path` to inform where the project is;
+* `flag --authorization` passing the authorization token to send the analysis to our web interface. 
+
+```bash
 horusec start --authorization="REPOSITORY_TOKEN" --project-path="/home/user/project" 
 ```
 
-**Example 3:** Using other whole flag name in the directory: 
+### Example 3: Using other whole flag name in the directory
 
-```text
-horusec start -p="/home/user/project" -a="REPOSITORY_TOKEN" -i="./node_modules,./vendor,./public"
+In this example, we used: 
+
+* `flag -p` to inform where the project is;
+* A `flag -a` passing the authorization token to send the analysis to our web interface;
+* A `flag -i` where we will ignore these folders and files.
+
+
+```bash
+horusec start -p="/home/user/project" -a="REPOSITORY_TOKEN" -i="**/node_modules/**, **/vendor/**, **/*_test.go"
 ```
 
-**Example 4:** To get the json exit: 
+### Example 4: Using To get the JSON exit 
 
-```text
+In this example, we are using:
+
+* `flag -p` to inform where the project is;
+* `flag -a` passing the authorization token to send the analysis to our web interface;
+* `flag -o` where the output is being used is `"json"` and the local file output will be `"./output.json”`.
+
+
+```bash
 horusec start -p="/home/user/project" -a="REPOSITORY_TOKEN" -o="json" -O="./output.json"
 ```
 
-**Example 5:** To get sonarqube exit:  
+### Example 5: Using to get sonarqube exit  
 
-```text
+In this example, we are using:
+
+* A `flag -p` to inform where the project is;
+* A `flag -a` passing the authorization token to send the analysis to our web interface;
+* A `flag -o` where the output is being used is  `“sonarqube”` and the local file output will be  `“./sonarqube.json”`
+
+```bash
 horusec start -p="/home/user/project" -a="REPOSITORY_TOKEN" -o="sonarqube" -O="./sonarqube.json"
 ```
 
-## Docker image
+### Example 6: Using as docker image locally 
 
-Horusec has its image that can be used in its pipeline or locally to perform the analysis. Below are some examples of how to use it:
+See, this example the `horusec start` command is already executed. When starting the image, just add the flag you want. 
 
-### Using locally
+When the command is used this way, you need to create a volume of your project for the image and its destination location is recommended to always be in the `/project` location. 
 
-See in this example `horusec start` command is already at the start of the image, just add the flags you want.
-
-{{%/* alert color="warning" %}}
-When used in this way, it is necessary to create a volume of your project for the image and its destination location is recommended to always be in the location _`/project`_
-{{% /alert */%}}
-
-```text
-docker run --privileged -v /path/of/my/project/local:/project -it horuszup/horusec-cli:latest -p /project
+```bash
+docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src horuszup/horusec-cli:latest horusec start -p /src -P $(pwd)
 ```
 
-### Using in your pipeline
+### Example 7: Using docker image in your pipeline
 
-Let's use [**AWS Code Build**](https://docs.horusec.io/v/v1-eng/adicionando-o-horusec-em-sua-pipeline#aws-code-build) as an example to perform the analysis. See that in this example you have to use the command `sh /usr/local/bin/horusec-cli.sh`, because in this script there are some necessary configurations when starting the analysis. Notice that `horusec start` command was also started, just add the flags you want.
+Let's use **AWS Code Build** as an example to perform the analysis
 
-{{%/* alert color="warning" %}}
-In pipelines it is extremely important to have the **privileged configuration enabled**, without this is not possible to carry out the analysis as expected.
-{{% /alert */%}}
+See, this example you have to use the `sh /usr/local/bin/horusec-cli.sh` command, because this script there is some necessary configurations. 
 
-```text
+To start the analysis, see the `horusec start` command had also started, and you just have to add the flags you want.
+
+{{% alert color="info" %}}
+In pipelines it is extremely important to have the privileged configuration enabled, without this is not possible to carry out the analysis as expected.
+{{% /alert %}}
+
+```yaml
   build:
     commands:
-       - sh /usr/local/bin/hoursec-cli.sh -p="./" -e="true"
+      - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd)
 ```
