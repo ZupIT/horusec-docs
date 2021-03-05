@@ -1,5 +1,5 @@
 ---
 title: Manager
-weight: 30
+weight: 10
 description: You will find here information about Horusec-Manager.
 ---
