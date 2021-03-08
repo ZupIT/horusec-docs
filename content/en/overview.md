@@ -8,62 +8,54 @@ description: >-
 
 ---
 
-## **What is Horusec?**
+![](/docs/ptbr/overview/0-horusec-logo.png)
+
 
 Horusec is an open source tool that orchestrates other security tools and identifies security flaws or vulnerabilities in projects and put all results in a database for analysis and generation of metrics.
 
+Horusec chooses the languages and tools to be used in the project according to the available stack. **[Check out all the supported languages and available tools](/docs/cli/analysis-tools/overview/)**
 
-### **Horusec Architecture**
+## **Where can you use Horusec?**
+### Locally
+O Horusec conta com uma CLI intuitiva e pensada para desenvolvedores onde é possível realizar uma análise localmente da máquina do desenvolvedor.
 
-![](/docs/en/overview/1-arquitecture.png)
+### CI/CD pipeline
+It is possible to add Horusec to the `Continuos Integration` or `Continuos Deploy` pipeline, ensuring one more security layer in your project, besides preventing a malicious code to enter in production. 
+
+### IDE extensions 
+IDE means Integrated Development Environment and it's very common to use plugins and extensions to help the development. Horusec comes to help you deliver with velocity, it is possible to perform analysis through extensions.
 
 
 ## **How does Horusec work?**
 
-There are two main tasks in Horusec: accessing the Dashboard and generating analysis.
+![](/docs/en/overview/1-arquitecture.png)
 
-### **1.  Dashboard access**
+When Horusec starts an analysis, it follows the next steps: 
 
-To access Horusec, it is necessary to create a login and password. After that, you can browse the Dashboard and perform actions such as:
+- **1-** When you start an analysis through Horusec-CLI, it will identify what are the current languages in your project; 
 
-* Set permissions for other users;
-* Create repositories;
-* Generate tokens to perform a project analysis.
+- **2-** Now, the tool will start the analysis according to the identified languages, searching for vulnerabilities; 
 
-### **2. Analysis Process**
+- **3-** When the analysis finish, it will start 3 actions: 
 
-To perform the analysis, you must use the CLI \(Command Line Interface\). If you want to check the result, you can also access a web interface, which guarantees a more analytical and detailed view.
+  - **3.1-** Show the analyis' output in your interface or in the file;
 
-If there is a security breach in the code, Horusec points the file, the severity level and tells you the best way to correct it. See the example below:
+  ![](/docs/ptbr/overview/2-output.png)
 
-###  **CLI view** 
+  - **3.2-** If you have been using the CI/CD process in your pipeline and you want to abort the operations, a return type `exit 1`  will be send and it won't go on until all the vulnerabilities are corrected. If there isn't any vulnerabilities, a status type `exit 0` will be returned and it will proceed to the next step. 
+  
 
-![](/docs/en/overview/2-output.png)
+  ![](/docs/ptbr/overview/3-pipeline-failed.gif)
+  ![](/docs/ptbr/overview/4-pipeline-success.gif)
 
-### **Interface Web view** 
+  - **3.3-** Send to Horusec-Manager(web platform) where you can see all the vulnerabilities found, in an analytical way, you can also manage your project;
 
-![](/docs/en/overview/3-graph-language.png)
+  ![](/docs/ptbr/overview/5-dashboard-organization.gif)
 
+**See below a Horusec example:**
 
+<p align="center" margin="20 0"><img src="/docs/ptbr/overview/6-full-usage.gif" alt="usage_horusec" width="99%"/></p>
 
-![](/docs/en/overview/4-graph-repository.png)
-
-**Examples of vulnerabilities**
-
-```text
-Language: Leaks
-Severity: HIGH
-Line: 1
-Column: 27
-SecurityTool: HorusecLeaks
-Confidence: MEDIUM
-File: deployments/certs/server-cert.pem
-Code: -----BEGIN CERTIFICATE-----
-Details: Asymmetric Private Key
-Found SSH and/or x.509 Cerficates among the files of your project, make sure you want this kind of information inside your Git repo, since it can be missused by someone with access to any kind of copy.  For more information checkout the CWE-312 (https://cwe.mitre.org/data/definitions/312.html) advisory.
-Type: Vulnerability
-ReferenceHash: 178bf5090b749f5eb7b081bccb0112eadac3d9ed3229d813e727ede62a3c6f15
-```
 
 ## **Why use Horusec?**
 
@@ -86,3 +78,4 @@ Horusec performs 3 types of analysis to identify if there are any security flaws
    The "Leaks checks the source code for possible leaks of credentials, private keys or hard coded passwords.
 
 3.  **Dependency audit** You analyze the project's dependencies to check for vulnerabilities in third-party libraries.   in third-party libraries.
+

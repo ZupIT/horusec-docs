@@ -1,6 +1,6 @@
 ---
-title: Código aberto no mercado
-weight: 20
+title: Outras ferramentas
+weight: 30
 description: >-
   Nesta seção, você vai encontrar mais informações sobre as ferramentas de código aberto no mercado que são utilizadas pelo Horusec em suas análises.
 ---
