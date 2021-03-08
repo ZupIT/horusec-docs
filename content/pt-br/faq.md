@@ -26,7 +26,7 @@ Sim, inclusive já temos para vscode
 Sim, usando nossa CLI
 
 ### **Quando rodo o horusec localmente via CLI como vejo as vulnerabilidades no manager?**
-Sim, Basta seguir nossa documentação para [instalar a aplicação web do horusec](http://localhost:1313/docs/pt-br/web/installing/)
+Sim, Basta seguir nossa documentação para [instalar a aplicação web do horusec](/docs/pt-br/web/installing/)
 
 ### **O horusec depende de algo para rodar localmente via CLI ?**
 Não, é opcional o uso do docker e git para aprimorar a análise
@@ -39,8 +39,3 @@ Sim, basta seguir nosso tutorial "[Como rodar a aplicação web em outro host?](
 
 ### **Como envio exporto o output do horusec em arquivo?**
 Basta seguir nosso exemplo exportando output para o tipo [json](/docs/pt-br/cli/resources/#exemplo-4-usando-para-obter-uma-saída-json) ou tipo [sonarqube](/docs/pt-br/cli/resources/#exemplo-5-usando-para-obter-uma-saída-sonarqube)
-
-
-
-
-### ** O que é Horusec?**

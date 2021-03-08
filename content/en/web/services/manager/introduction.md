@@ -1,5 +1,5 @@
 ---
-title: Introduction 
+title: Overview
 weight: 30
 description: 'On this section you will find information about Horusec-Manager.'
 ---
