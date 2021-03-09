@@ -1,14 +1,14 @@
 ---
-title: Introdução
+title: Visão Geral
 weight: 30
-description: Nesta seção, você vai encontrar mais informações referentes ao Manager do Horusec.
+description: Nesta seção, você vai encontrar mais informações sobre o Manager do Horusec.
 ---
 
 ---
 
 ## O que é?
 
-O manager é uma **interface gráfica** do Horusec, na qual é possível:
+O Manager é uma **interface gráfica** do Horusec, na qual é possível:
 
 * Criar uma conta e fazer sua autenticação; 
 * Visualizar e analisar vulnerabilidades encontradas pelo CLI;
@@ -16,23 +16,26 @@ O manager é uma **interface gráfica** do Horusec, na qual é possível:
 
 A seguir, você verá em detalhes como realizar cada uma dessas atividades.
 
-## Criação de conta
+## Configurações do Manager
+
+
+### Criação de conta
 
 O Manager conta com uma funcionalidade para você criar sua conta dentro do próprio Horusec. Depois que seu usuário é criado, basta confirmar a conta direto no seu e-mail. 
 
 ![](/docs/ptbr/web/services/manager/introduction/1-login.png)
 
-## Autenticação
+### Autenticação
 
 O Horusec também oferece uma autenticação simples gerenciada pelo próprio sistema.
 
 ![](/docs/ptbr/web/services/manager/introduction/2-login-empty.png)
 
-## Painel analítico
+### Painel analítico
 
 Quando uma análise é enviada para o Horusec armazenar, você tem acesso a um dashboard detalhado com a visão da organização ou do repositório em relação àquela análise. 
 
-Essa visão analítica facilita os gestores em dar treinamentos sobre desenvolvimento seguro para seus desenvolvedores ou até mesmo para identificarem se o repositório está com muitas vulnerabilidades a serem corrigidas a partir de sua severidade.
+Essa visão analítica permite aos gestores dar treinamentos sobre desenvolvimento seguro para seus desenvolvedores ou até mesmo identificar se o repositório está com muitas vulnerabilidades a serem corrigidas a partir de sua severidade.
 
 Veja mais sobre quais são esses dados na tabela a seguir:
 
@@ -56,6 +59,6 @@ Veja mais sobre quais são esses dados na tabela a seguir:
 {{% /tab %}}
 {{< /tabs >}}
 
-## Gerenciamentos
+### Gerenciamentos
 
 No Horusec, você pode fazer diversos tipos de gerenciamento. Veja abaixo mais detalhes sobre cada um deles:

@@ -1,6 +1,6 @@
 ---
-title: "Instalando"
-linkTitle: "Instalando"
+title: "Instalação"
+linkTitle: "Instalação"
 weight: 10
 type: list
 description: >-

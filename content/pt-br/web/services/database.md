@@ -1,12 +1,13 @@
 ---
 title: Database
 weight: 80
-description: Nesta seção, você vai encontrar mais informações referentes do serviço de Banco de dados.
+description: Nesta seção, você encontra mais informações sobre o serviço de Banco de dados.
 ---
 
-# Horusec-Database
-Atualmente o horusec guarda todos os seus dados usando a ferramenta [PostgreSQL](https://www.postgresql.org/).
+## **O que é?** 
 
-A arquitetura do banco é baseada na seguinte arquitetura:
+O Horusec-Database é um microsserviço reponsável por armazenar todos os seus dados utilizando como base a ferramenta [**PostgreSQL**](https://www.postgresql.org/).
+
+A arquitetura do banco é baseada na seguinte estrutura:
 
 ![](/docs/ptbr/web/services/database/0-arquitecture.png)
