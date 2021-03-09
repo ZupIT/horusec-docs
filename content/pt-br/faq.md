@@ -11,46 +11,64 @@ description: >-
 
 Confira as [linguagens e ferramentas](/docs/pt-br/cli/analysis-tools/overview/) do Horusec
 
-## Qual é o roadmap para o Horusec em 2021?
+2. **Qual é o roadmap para o Horusec em 2021?**
+
 O roadmap do Horusec em 2021 é composto das seguintes fases:
 
-Fase 0: Suporte para todos os recursos horusec-cli no horusec-vscode (Q1);
-Fase 1: Suporte para Theia (VsCode Web) (Q1);
-Fase 2: Suporte a flutter, dardo, bash, shell, elixir, cloujure e Scala em análise (Q1);
-Fase 3: Novo serviço para gerenciadoras de vulnerabilidades (Q2);
-Fase 4: Análise de Dependência para todos os idiomas suportados (Q3);
-Fase 5: Sast com análise semântica MVP (Q4);
-Fase 6: DAST com análise simbólica MVP (Q4).
+* Fase 0: Suporte para todos os recursos horusec-cli no horusec-vscode (Q1)*
+
+* Fase 1: Suporte para Theia (VsCode Web) (Q1)*
+
+* Fase 2: Suporte a flutter, dardo, bash, shell, elixir, cloujure e Scala em análise (Q1)*
+
+* Fase 3: Novo serviço para gerenciadoras de vulnerabilidades (Q2)*
+
+* Fase 4: Análise de Dependência para todos os idiomas suportados (Q3)*
+
+* Fase 5: Sast com análise semântica MVP (Q4)*
+
+* Fase 6: DAST com análise simbólica MVP (Q4)
  
-## Existe a possibilidade de adicionar o Horusec como plugin para IDE?
+3. **Existe a possibilidade de adicionar o Horusec como plugin para IDE?** 
+
 Sim, inclusive está disponível para VScode.
 
-## O Horusec roda localmente, sem nenhuma dependência de servidor?
+4. **O Horusec roda localmente, sem nenhuma dependência de servidor?** 
+
 O Horusec roda localmente sem problemas usando a CLI.
 
-## Quando rodo o Horusec localmente via CLI, como vejo as vulnerabilidades no manager?
-Para verificar as vulnerabilidades encontradas, você precisa ter acesso ao manager, que é uma interface gráfica do Horusec, na qual é possível:
-Criar uma conta e fazer sua autenticação;
-Visualizar e analisar vulnerabilidades encontradas pelo CLI;
-Gerenciar acessos à plataforma.
-Quando uma análise é enviada para o Horusec armazenar, pelo manager você tem acesso a um dashboard detalhado com a visão da organização ou do repositório em relação àquela análise.
+5. **Quando rodo o Horusec localmente via CLI, como vejo as vulnerabilidades no manager?** 
 
-## O Horusec depende de algo para rodar localmente via CLI ?
+Para verificar as vulnerabilidades encontradas, você precisa ter acesso ao manager: 
+
+* Criar uma conta e fazer sua autenticação*
+* Visualizar e analisar vulnerabilidades encontradas pelo CLI*
+* Gerenciar acessos à plataforma.*
+
+Quando uma análise é enviada para o Horusec armazenar pelo manager, você tem acesso a um dashboard detalhado com a visão da organização ou do repositório em relação àquela análise.
+
+6. **O Horusec depende de algo para rodar localmente via CLI?** 
+
 Não, é opcional o uso de docker e git para aprimorar a análise.
 
-## Qual é a diferença entre o Horusec e qualquer ferramenta de análise de qualidade de código?
+7. **Qual é a diferença entre o Horusec e qualquer ferramenta de análise de qualidade de código?** 
+
 O Horusec é uma ferramenta de análise de segurança que atua buscando possíveis vazamentos e vulnerabilidades expostas em sua aplicação, enquanto uma ferramenta de qualidade de código garante que seu código tenha uma boa qualidade e um bom desempenho, mas não garante que ele esteja seguro de ameaças.
 
-## É possível subir toda a estrutura do Horusec na minha infra pessoal?
+8. **É possível subir toda a estrutura do Horusec na minha infra pessoal?** 
+
 Sim, acesse o tutorial "Como rodar a aplicação web em outro host?" para saber mais.
  
-## Como acessar o Manager? 
+9. **Como acessar o Manager?**  
+
 O Horus não disponibiliza infraestrutura aberta para comunidade usar a sua aplicação web. 
 Para acessar o manager, você pode subir em sua infrapessoal usando os itens Docker Compose ou Helm, através da porta 8043 ou do roteamento que você criou. 
 Exemplo: http://SEU-DOMINIO:8043.
  
-## Como exportar o output do Horusec em arquivo?
+10. **Como exportar o output do Horusec em arquivo?** 
+
 Para fazer isso, siga os exemplos "exportando output" para o tipo json ou sonarqube.
 
-## Como importar o output do Horusec dentro do SonarQube? 
+11. **Como importar o output do Horusec dentro do SonarQube?**  
+
 Siga nosso exemplo "como exportar o arquivo do output do sonarqube" e acesse o tutorial no link https://docs.sonarqube.org/latest/analysis/generic-issue/. 
