@@ -1,15 +1,19 @@
 ---
 title: Broker
 weight: 90
-description: Nesta seção, você vai encontrar mais informações referentes do serviço de Broker.
+description: Nesta seção, você encontrar mais informações sobre o serviço de Broker.
 ---
 
-# Horusec-Broker
-Atualmente o horusec utiliza a ferramenta [RabbitMQ](https://www.rabbitmq.com/) para gerenciamento de pacotes assincronos dentro da aplicação como por exemplo:
+## **O que é?** 
 
-* Ao receber uma análise no serviço Horusec-API será publicado na fila onde o serviço Horusec-webhook receberá essa análise e será realizado o disparo via http para o destino que o cliente configurou
-* Ao cadastrar sua conta no serviço Horusec-Auth será publicado na fila onde o serviço Horusec-messages vai enviar um e-mail para confirmar o cadastro registrado na plataforma.
-* Ao pedir para resetar sua senha no serviço Horusec-Auth será publicado na fila onde o serviço Horusec-messages vai enviar um e-mail com um código unico de autenticação para resetar sua senha.
-* Ao convidar outro usuário a fazer parte do seu workspace no serviço Horusec-Auth será publicado na fila onde o serviço Horusec-messages vai enviar um e-mail para que ele possa visualizar o convite realizado.
+O Horusec-Broker é um microsserviço que utiliza a  [RabbitMQ](https://www.rabbitmq.com/) para gerenciar pacotes assíncronos dentro da sua aplicação. 
 
-Dentre outras funcionálidades.
+Alguns exemplos:
+
+* Ao receber uma análise no sserviço Horusec-API, o Broker irá publicar na fila onde o serviço Horusec-webhook, que irá receber essa análise e, assim, realizará o disparo via http para o destino que o cliente configurou.
+
+* Ao cadastrar sua conta no serviço Horusec-Auth, elo Broker irá publicar na fila onde o serviço Horusec-messages, que vai enviar um e-mail para confirmar o cadastro registrado na plataforma.
+
+* Ao pedir para apagar sua senha no serviço Horusec-Auth, o Broker irá publicar na fila onde o serviço Horusec-messages, que vai enviar um e-mail com um código unico de autenticação para fazer o reset da sua senha.
+
+* Ao convidar outro usuário a fazer parte do seu workspace no serviço Horusec-Auth, o Broker irá publicar na fila onde o serviço Horusec-messages, que vai enviar um e-mail para que ele possa visualizar o convite realizado.

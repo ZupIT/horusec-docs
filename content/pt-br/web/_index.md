@@ -4,5 +4,5 @@ linkTitle: "Aplicação web"
 weight: 4
 type: list
 description: >-
-  Nessa seção você encontra como subir a aplicação web do horusec em seu ambiente
+  Nesta seção, você encontra mais informações sobre como subir a aplicação web do Horusec em seu ambiente.
 ---

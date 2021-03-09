@@ -1,20 +1,24 @@
 ---
 title: Migration
 weight: 100
-description: Nesta seção, você vai encontrar mais informações referentes do serviço de migração para o banco de dados.
+description: Nesta seção, você encontra mais informações sobre o serviço de migração para o banco de dados.
 ---
 
-# Horusec-Migration
-Este serviço é responsável por realizar a migração no banco de dados do horusec. Este serviço é baseado no [golang-migrate](https://github.com/golang-migrate/migrate)
+## **O que é?** 
+
+O Horusec-Migration é um microsserviço responsável por realizar a migração no banco de dados do Horusec. Ele é baseado no [**golang-migrate**](https://github.com/golang-migrate/migrate)
 
 
 ## **Requisitos**
-Para rodar este serviço localmente basta ter:
-* PostgreSQL
-* Docker
 
-## **Rodando**
-Clone o projeto do horusec em sua máquina e rode o comando baixo
+Para rodar este serviço local, basta ter:
+
+* PostgreSQL;
+* Docker.
+
+## **Execução**
+
+Clone o projeto do Horusec em sua máquina e rode o comando abaixo:
 
 ```bash
 MIGRATION_PATH="./development-kit/pkg/databases/relational/migration" \
