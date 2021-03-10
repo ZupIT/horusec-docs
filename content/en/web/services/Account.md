@@ -4,8 +4,8 @@ weight: 30
 description: In this section, you will find more information about Horusec-Account service. 
 ---
 
-# Horusec-Account
-This service is responsible for the workspace, repository, webhook and accesss update management.
+## **What is it?**
+Horusec-Account is responsible for the management of workspaces, repository, webhooks and access updates.
 
 ![](/docs/ptbr/web/services/account/0-arquitecture.jpg)
 
@@ -16,19 +16,20 @@ To run this service locally, you need:
 * Horusec-Auth
 * Golang
 
-## **Installing dependencies**
+## **Installation**
+
+**Step 1:** Install dependencies: 
 ```bash
 go get ./...
 ```
 
-## **Run the service**
-You can run this service with the command:
+**Step 2:** Run the service with the command below: 
 
 ```bash
 go run ./horusec-analytic/cmd/app/main.go
 ```
 
-See the log:
+It will return this log:
 
 ```bash
 service running on port :8003

@@ -4,8 +4,8 @@ weight: 50
 description: In this section, you will find information about Horusec-Api service.
 ---
 
-# Horusec-API
-Horusec-API receives [HORUSEC-CLI](/docs/cli/overview/) requests via  http to start a new analysis. Besides that, it acquires and returns the saved analysis in the system. 
+## **What is it?**
+Horusec-API is microservice responsible for [HORUSEC-CLI](/docs/cli/overview/) requests via  http to start a new analysis. It also acquires and returns the saved analysis in the system. 
 
 This service resources are:
 
@@ -17,24 +17,28 @@ This service resources are:
 ![](/docs/ptbr/web/services/api/0-arquitecture.jpg)
 
 ## **Requisites**
+
 To locally run this service, you will need:
+
 * PostgreSQL (with the migration applied)
 * Horusec-Auth
 * Golang
 
-## **Installing dependencies**
+## **Installation**
+
+**Step 1:** Install dependencies: 
 ```bash
 go get ./...
 ```
 
-## **Run the service**
-Just run the command below: 
+**Step 2:** Run the service with the command below:
 
 ```bash
 go run ./horusec-api/cmd/app/main.go
 ```
 
-And you will see the log:
+It will return this log:
+
 ```bash
 service running on port :8000
 swagger running on url:  http://localhost:8000/swagger/index.html

@@ -4,8 +4,8 @@ weight: 70
 description: In this section, you will find information about Horusec-Webhook service. 
 ---
 
-# Horusec-Webhook
-This service triggers the data to third party services when the broker is enabled.
+## **What is it?**
+Horusec-webhook is a microservice that triggers the data to third party services when the broker is enabled.
 
 ![](/docs/ptbr/web/services/webhook/0-arquitecture.jpg)
 
@@ -15,19 +15,20 @@ To locally run this service, you will need:
 * Horusec-Auth;
 * Golang.
 
-## **Installing dependencies**
+## **Installation** 
+
+**Step 1:** Install dependencies: 
 ```bash
 go get ./...
 ```
 
-## **Run the service**
-Just run the command below: 
+**Step 2:** Run the service with the command below:
 
 ```bash
 go run ./horusec-webhook/cmd/app/main.go
 ```
 
-And you will see the log:
+It will return this log:
 
 ```bash
 service running on port :8008

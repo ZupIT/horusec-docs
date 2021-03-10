@@ -4,31 +4,35 @@ weight: 40
 description: In this section, you will find information about Horusec-Analytic service.
 ---
 
-# Horusec-Analytic
-Horusec-Analytic reads the database and shows the generated data by analysis and then returns to the horusec-manager dashboard. 
+## **What is it?**
+Horusec-Analytic reads the database and shows the analysis' generated data and it also returns information to the horusec-manager dashboard. 
+
 This service is integrated with GraphQL to return details of the vulnerabilities found and also the analytical content found. 
 
 ![](/docs/ptbr/web/services/analytic/0-arquitecture.jpg)
 
 ## **Requisites**
 To locally run this service, you will need:
+
 * PostgreSQL (with the migration applied);
 * Horusec-Auth;
 * Golang.
 
-## **Installing dependencies**
+## **Installation**
+
+**Step 1:** Install dependencies: 
 ```bash
 go get ./...
 ```
 
-## **Run the service**
-Just run the command below: 
+**Step 2:** Run the service with the command below: 
+
 
 ```bash
 go run ./horusec-analytic/cmd/app/main.go
 ```
 
-And you will see the log:
+It will return this log:
 ```bash
 service running on port :8005
 swagger running on url:  http://localhost:8005/swagger/index.html

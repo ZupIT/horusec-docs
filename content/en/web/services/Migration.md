@@ -4,8 +4,8 @@ weight: 90
 description: In this section, you will find information about migration service to the database. 
 ---
 
-# Horusec-Migration
-This service migrates the database on Horusec. It is based on [golang-migrate](https://github.com/golang-migrate/migrate)
+## **What is it?**
+Horusec-Migration is a microservice resposible for the migration on Horusec's database. It is based on [golang-migrate](https://github.com/golang-migrate/migrate)
 
 
 ## **Requisites**
@@ -13,7 +13,8 @@ To run locally run this service, you will need:
 * PostgreSQL
 * Docker
 
-## **Run the service**
+## **Execute**
+
 Clone Horusec project and run the command below:
 
 ```bash

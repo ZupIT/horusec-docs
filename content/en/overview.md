@@ -20,7 +20,7 @@ Horusec chooses the languages and tools to be used in the project according to t
 O Horusec conta com uma CLI intuitiva e pensada para desenvolvedores onde é possível realizar uma análise localmente da máquina do desenvolvedor.
 
 ### CI/CD pipeline
-It is possible to add Horusec to the `Continuos Integration` or `Continuos Deploy` pipeline, ensuring one more security layer in your project, besides preventing a malicious code to enter in production. 
+It is possible to add Horusec to the `Continuous Integration` or `Continuous Deploy` pipeline, ensuring one more security layer in your project, besides preventing a malicious code to enter in production. 
 
 ### IDE extensions 
 IDE means Integrated Development Environment and it's very common to use plugins and extensions to help the development. Horusec comes to help you deliver with velocity, it is possible to perform analysis through extensions.
