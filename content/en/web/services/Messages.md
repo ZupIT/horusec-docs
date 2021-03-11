@@ -4,10 +4,11 @@ weight: 60
 description: In this section, you will find information about Horusec-Messages service. 
 ---
 
-# Horusec-Messages
-This service ends e-mails when the broker is enabled. 
+## **What is it?**
 
-Check out here more information on [what is transactional email and what is it used for.](https:/postmarkapp.com/blog/what-is-transactional-email-and-how-is-it-used)
+ Horusec-Messages is a microservice responsible for sending transactional e-mails when `horusec-broker` is enabled. 
+
+[Check out here more information about transactional emails.](https:/postmarkapp.com/blog/what-is-transactional-email-and-how-is-it-used)
 
 ![](/docs/ptbr/web/services/messages/0-arquitecture.jpg)
 
@@ -17,19 +18,22 @@ To locally run this service, you will need:
 * Valid e-mail account;
 * Golang.
 
-## **Installing dependencies**
+## **Installation**
+
+**Step 1:** Install dependencies: 
+
 ```bash
 go get ./...
 ```
 
-## **Run the service**
-Just run the command below: 
+**Step 2:** Run the service with the command below:
+
 
 ```bash
 go run ./horusec-messages/cmd/app/main.go
 ```
 
-And you will see the log:
+It will return this log:
 
 ```bash
 service running on port :8004

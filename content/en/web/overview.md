@@ -8,41 +8,44 @@ description: >-
 ---
 
 ## **What is it?**
-Horusec's web application is an extension of the CLI functionalities in order to manage the vulnerabilities found and sort them. 
+Horusec's **web applications** are an extension of the CLI functionalities in order to manage the vulnerabilities found and sort them. 
 
-## **Functionalities**
+## **What are the web application's functionalities?**
 
 There are several functionalities in these applications, see examples below: 
 
-### **Multitenant**
+### **1. Multitenant**
 
 You can have several workspaces to control each environment or organize the way it works better for you. 
 
-### **Access control**
+### **2. Access control**
 
 It is possible to control the user access the way the admin wants.
 
-### **Analytical vision**
+### **3. Analytical vision**
 
-Manage your project is simple.  You can have a complete view of your workspace, for example, it is possible to know which repository has more vulnerabilities, which languages has more leaks or even the person who is probably merging some vulnerabilities causing a failure in your project.
+It allows you to manage your project through a dashboard that gives you data like, for example:  You can have a complete view of your workspace, for example, it is possible to know which repository has more vulnerabilities, which languages has more leaks or even the person who is probably merging some vulnerabilities causing a failure in your project.
 
-### **Vulnerabilities classification**
+Permite que você faça a gestão do seu projeto a partir de um dashboard que fornece dados como, por exemplo: 
 
-It is common security tools to find some false positive. So,there is an option in Horusec's application where you can rank them to be ignored or to perform corrections. 
+* Which repository has more vulnerabilities;
+* Which languages has more leaks;
+* Who is responsible for merging some vulnerabilities causing a failure in your project.
+
+### **4. Vulnerabilities classification**
+
+It allows you to rank vulnerabilities found by Horusec. It is also possible to ignore (in some false positive cases, for example) or perform corrections.
 
 
-### **Integration with other oAuth types**
+### **5. Integration with other oAuth types**
 
-Horusec has its own authentication service, but if your organization already has another tool, for example, Keycloak or Ldap, it is possible to integrate with Horusec to make the implementation process easier.
+It allows you to integrate your organization's tool with Horusec's authentication service, like for example, Keycloak or LDAP. You can speed up the implementation process of your project. 
 
-### **Integration with messenger service**
+### **6. Integration with messenger service**
 
-When the messenger service is enabled, you have some functionalities, for example: 
-Quando o serviço de menssageria está habilitado você tem algumas funcionalidades a mais como por exemplo:
+It allows you to enable the messenger service and use some functionalities, like: 
 
 - Send e-mail to confirm the account; 
 - Send e-mail with a security code to reset the password; 
 - Send e-mail to invite other users to join your workspace;
 - Manage webhooks and get all Horusec-CLI performed analysis. 
-
-There are other functionalities as well. 

@@ -4,32 +4,35 @@ weight: 20
 description:  In this section, you will find information about Horusec-Auth service. 
 ---
 
-# Horusec-Auth
-This service is responsible for the authentication management and the users account creation. 
+## **What is it?**
+Horusec-Auth is responsible for the authentication management and the users account creation. 
 
 ![](/docs/ptbr/web/services/auth/0-arquitecture.jpg)
 
 ## **Requisites**
+
 To locally run this service, you will need:
+
 * PostgreSQL (with the migration applied);
 * RabbitMQ (only if the broker is enabled);
 * Keycloak service (only if your authentication type is keycloak);
 * LDAP service (only if the authentication type is Ldap);
 * Golang.
 
-## **Installing dependencies**
+## **Installation**
+
+**Step 1:** Install dependencies: 
 ```bash
 go get ./...
 ```
 
-## **Run the service**
-Just run the command below: 
-comando
+**Step 2:** Run the service with the command below:
+
 ```bash
 go run ./horusec-analytic/cmd/app/main.go
 ```
 
-And you will see the log:
+It will return this log:
 
 ```bash
 service running on port :8006
