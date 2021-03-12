@@ -1,7 +1,7 @@
 ---
-title: Como adicionar imagens existentes ao Horusec ?
+title: Como adicionar imagens existentes ao Horusec?
 weight: 4
-description: Você vai encontrar aqui as orientações para adicionar imagens ao Horusec.
+description: Nesta seção, você encontra as orientações para adicionar imagens ao Horusec.
 ---
 
 ---

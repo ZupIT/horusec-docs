@@ -1,13 +1,13 @@
 ---
-title: Como configurar uma ferramenta do horusec ?
+title: Como configurar uma ferramenta do Horusec?
 weight: 9
-description: Você vai encontrar aqui as informações sobre como configurar uma ferramenta do horusec
+description: Nesta seção, você encontra as informações para configurar uma ferramenta do horusec
 ---
 
 ---
 
-# Configurando uma ferramenta
-O Horusec disponibiliza uma opção para você realizar configurações das ferramentas que ele roda ao iniciar uma análise:
+# **Configurando uma ferramenta**
+O Horusec disponibiliza uma única opção para você realizar as configurações das ferramentas que ele roda ao iniciar uma análise, veja: 
 
 ```json
 {
@@ -93,6 +93,14 @@ O Horusec disponibiliza uma opção para você realizar configurações das ferr
 }
 ```
 
-* Como você pode perceber é possivel desabilitar/habilitar uma ferramenta na hora que inicia a análise alterando a chave `istoignore`
-* Outra alteração é caso você queira utilizar a imagem eu seu proprio registro também é possível. Veja a [lista de todos os DockerFiles](https://github.com/ZupIT/horusec/tree/master/deployments/dockerfiles) que você pode utilizar e subir em seu registro privado. Ao alterar basta colocar o link que seria utilizado para realizar download da imagem deste registro na chave `imagepath` da respectiva ferramenta.
-  * Como as ferramentas que utilizam o próprio motor do Horusec rodam de forma nativa, elas não precisam ser alterado em seu registro, pois já está imbutido dentro da Horusec-CLI.
+{{% alert color="warning" %}}
+Com essa configuração:
+
+* É possível desabilitar/habilitar uma ferramenta quando você inicia uma análise alterando a chave **`istoignore`**;
+
+* É possível utilizar a imagem do seu próprio registro. Veja a [**lista de todos os DockerFiles**](https://github.com/ZupIT/horusec/tree/master/deployments/dockerfiles) que você pode utilizar e subir no seu registro privado. 
+Para alterar, coloque o link que seria utilizado para realizar download da imagem deste registro na chave **`imagepath`** da respectiva ferramenta.
+
+* As ferramentas que utilizam o **próprio motor do Horusec** rodam de forma nativa, então não precisam ser alteradas em seu registro, porque já estão dentro da Horusec-CLI.
+
+{{% /alert %}}

@@ -1,13 +1,15 @@
 ---
-title: Como rodar o horusec em multiplos diretórios ?
+title: Como rodar o Horusec em multiplos diretórios?
 weight: 8
-description: Você vai encontrar aqui as informações sobre como rodar o horusec em multiplos diretórios
+description: Nesta seção, você encontra informações de como rodar o horusec em multiplos diretórios
 ---
 
 ---
 
 # Workdir
-O WorkDir é uma representação para executar vários projetos dentro de um diretório, que pode ser configurado através do arquivo horusec-config.json.Vamos supor que seu projeto é um aplicativo C# utilizando .Netcore 3.1 e também está usando angular e tem a seguinte estrutura:
+O WorkDir é uma representação para executar vários projetos dentro de um diretório, e você pode configurar por meio do arquivo **horusec-config.json**. 
+
+Por exemplo, se o seu projeto é um aplicativo C# que utiliza o .Netcore 3.1 e Angular, e possui a seguinte estrutura:
 
 ```text
 |- NetCoreProject/
@@ -20,7 +22,8 @@ O WorkDir é uma representação para executar vários projetos dentro de um dir
 |------ package-lock.json
 ```
 
-Porque seu `.csproj` inicial está dentro de `/NetCoreProject` e seu `package-lock.json` está dentro de `/NetCoreProject/views`. Em seguida, você precisará configurar o diretório de trabalho. Para este exemplo, a configuração seria:
+O seu `.csproj` inicial está dentro de `/NetCoreProject` e seu `package-lock.json` está dentro de `/NetCoreProject/views`. 
+Em seguida, você precisa configurar o diretório de trabalho. Para este exemplo, veja a configuração:
 
 ```json
 {
@@ -35,9 +38,10 @@ Porque seu `.csproj` inicial está dentro de `/NetCoreProject` e seu `package-lo
 }
 ```
 
-Como você pode ver, a estrutura dos projetos será dividida por idiomas e pode suportar muitos em cada um. **Mas na maioria dos casos não é necessário realizar esta configuração**, pois o horusec consegue identificar quais são as linguagens e onde está seus arquivos principais, mas em alguns casos extremos para forçar a ferramenta a realizar em cima de diretório especificos se faz o uso desta funcionalidade.
+A estrutura dos projetos será dividida por idiomas e pode suportar muitos em cada um. **Mas na maioria dos casos não é necessário realizar esta configuração**, pois o Horusec consegue identificar quais são as linguagens e onde está seus arquivos principais. 
+Porém em alguns casos para forçar a ferramenta a realizar em cima de diretório especificos se faz o uso desta funcionalidade.
 
-A interface de idiomas aceita é:
+Veja abaixo a interface de idiomas aceita:
 
 ```go
 type WorkDir struct {
