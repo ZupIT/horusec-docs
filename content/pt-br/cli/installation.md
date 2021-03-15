@@ -138,10 +138,10 @@ jobs:
   * Managed image
   * Operational sytem: `Ubuntu`
   * Execution time: `Standard`
-  * Image: `Any`
+  * Image: `aws/codebuild/standard:3.0`
   * Image Version:  `Latest`
-  * Privileged:  `true`
-  * Allow AWS CodeBuild to modify this service role so it can be used with this build project: `true`
+  * Environment type:  `Linux`
+  * Enable this indicator if you want to create Docker images or want your builds to get elevated privileges:  `true`
 
 * Buildspec:
 
@@ -151,7 +151,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      docker: 19
+      docker: 18
   build:
     commands:
       - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd)
