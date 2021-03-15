@@ -150,7 +150,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      docker: 19
+      docker: 18
   build:
     commands:
       - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd)
