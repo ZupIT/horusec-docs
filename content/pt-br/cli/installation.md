@@ -135,13 +135,13 @@ jobs:
 
 * **Environment:**
 
-  * Managed image
-  * Operational sytem: `Ubuntu`
-  * Execution time: `Standard`
-  * Image: `aws/codebuild/standard:3.0`
-  * Image Version:  `Latest`
-  * Environment type:  `Linux`
-  * Enable this indicator if you want to create Docker images or want your builds to get elevated privileges:  `true`
+  * Imagem de ambiente: `Imagem gerenciada`
+  * Sistema operational: `Ubuntu`
+  * Tempo(s) de execução: `Standard`
+  * Imagem: `aws/codebuild/standard:3.0`
+  * Versão de imagem:  `Latest`
+  * Tipo de ambiente:  `Linux`
+  * Habilite esse indicador se quiser criar imagens do Docker ou quiser que suas compilações obtenham privilégios elevados:  `true`
 
 * Buildspec:
 
