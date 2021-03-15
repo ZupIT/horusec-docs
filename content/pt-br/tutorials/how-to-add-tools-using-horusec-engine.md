@@ -1,34 +1,36 @@
 ---
-title: Como adicionar ferramentas usando Horusec-engine ?
+title: Como adicionar ferramentas usando Horusec-engine?
 weight: 3
-description: Você vai encontrar aqui as informações necessárias para adicionar ferramentas pelo Horusec-engine.
+description: Nesta seção, você encontra o tutorial para adicionar ferramentas pelo Horusec-engine.
 ---
 
 ---
 
-O Horusec também permite que você adicione ferramentas usando um próprio motor \([**Horusec-engine**](https://github.com/ZupIT/horusec-engine)\) à sua stack. Para incluir uma nova ferramentas de análises ao horusec-cli, siga esses passos:
+O Horusec permite que você adicione ferramentas à sua stack usando o próprio motor \([**Horusec-engine**](https://github.com/ZupIT/horusec-engine)\). 
 
-### **1. Clone o projeto**
-Clone o projeto do horusec em sua máquina local para realizar as modificações.
+## **Como fazer?** 
+Para incluir uma nova ferramenta de análise ao horusec-cli, siga os passos abaixo:
+
+#### **Passo 1: Clone o projeto**
+Clone o projeto do Horusec em sua máquina local:
+
 ```bash
 git clone https://github.com/ZupIT/horusec.git
 ```
 
-### **2. Crie um novo CLI**
+#### **Passo 2: Crie um novo CLI**
 
-Para fazer isso, basta copiar um dos CLIs existentes e renomear seguindo o padrão **horusec-{nome-do-cli}** 
-
-Exemplos: 
+Copie um dos CLIs existentes e renomeie-o seguindo o padrão **horusec-{nome-do-cli}**. Como por exemplo: 
 
 * [**horusec-java**](https://github.com/ZupIT/horusec/blob/master/horusec-java)
 * [**horusec-kotlin**](https://github.com/ZupIT/horusec/blob/master/horusec-kotlin)
 * [**horusec-leaks**](https://github.com/ZupIT/horusec/blob/master/horusec-leakse)
 
-### **3. Crie regras** 
+#### **Passo 3: Crie as regras** 
 
-É necessário criar as regras que valerão para o novo CLI antes dele ser, de fato, criado. Veja mais neste [**exemplo**](https://github.com/ZupIT/horusec/tree/master/development-kit/pkg/engines).
+Você precisa criar as regras para o novo CLI antes dele ser, de fato, criado. Veja mais [**nesse exemplo**](https://github.com/ZupIT/horusec/tree/master/development-kit/pkg/engines).
 
-Se for um cliente que estiver usando o motor, você pode simplesmente fazer a importação sem ter a necessidade de uma imagem docker. Você pode encontrar um exemplo seguindo este caminho:
+Se um cliente estiver usando o motor, você pode fazer a importação sem a imagem docker. Veja um exemplo seguindo o caminho abaixo: 
 
 ```
  -horusec
@@ -41,7 +43,7 @@ Se for um cliente que estiver usando o motor, você pode simplesmente fazer a im
  -------fomatter.go
 ```
 
-Depois, você só vai precisar importar as regras e fazer a análise, como no exemplo abaixo:
+Depois disso, você deve importar as regras e fazer a análise, como no exemplo abaixo:
 
 ```go
 type IAnalysis interface {
@@ -75,7 +77,9 @@ func (a *Analysis) getAllRules() []engine.Rule {
 
 ```
 
-Você encontra os exemplos da regra neste caminho:
+
+{{% alert color="info" %}}
+Você você consegue acessar os exemplos das regras nesse caminho:
 
 ```
  -horusec
@@ -83,17 +87,20 @@ Você encontra os exemplos da regra neste caminho:
  ---pkg
  ----engines
 ```
+{{% /alert %}}
 
 
-### **4. Atualize o CLI com as novas regras** 
 
-Depois de criar as regras, atualize o seu CLI para finalizar a configuração. Veja mais no exemplo a seguir. 
+#### **Passo 4: Atualize o CLI com as novas regras** 
 
-{{%/* alert color="info" %}}
+Agora, atualize o seu CLI para finalizar a configuração. 
+Veja o exemplo abaixo: 
 
-Para usar este exemplo no seu projeto, substitua o texto entre chaves com as suas definições novas do seu CLI. 
 
-{{% /alert */%}}
+{{% alert color="warning" %}}
+
+Para usar este exemplo no seu projeto, substitua o texto entre chaves com as novas definições do seu CLI. 
+{{% /alert %}}
 
 ```go
 // horusec-{name-of-the-cli}//app/main.go
@@ -142,14 +149,14 @@ func main() {
 }
 ```
 
-### **5. Atualize o dockerfile** 
+#### **Passo 5: Atualize o dockerfile** 
 
-Ao final das configurações do CLI, você precisa retornar aos arquivos no docker para atualizá-lo com as novas definições. 
-
-Exemplo: 
+Agora, atualize os arquivos no docker com as novas definições.
+Veja o exemplo abaixo: 
 
 * [**horusec-java dockerfile**](https://github.com/ZupIT/horusec/blob/master/horusec-java/deployments/Dockerfile)
 
-### **6. Crie um novo formatter** 
+### **Passo 6: Crie um novo formatter** 
 
-Por fim, adicione a nova ferramenta do Horusec-CLI. Para isso, basta seguir o tutorial  a partir da página [**crie um Formatter e um Config**](/docs/pt-br/tutorials/how-to-add-existing-images-to-horusec/create-a-formatter-and-config) até o quinto passo \(atualize validações\).
+ Crie um **Formatter** e um **Config**  para adicionar a nova ferramenta do Horusec-CLI, para isso siga o [**tutorial**](docs/pt-br/tutorials/how-to-add-existing-images-to-horusec/create-a-formatter-and-config/) e atualize as validações.
+

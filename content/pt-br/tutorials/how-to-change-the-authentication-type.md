@@ -1,38 +1,27 @@
 ---
-title: Como alterar o tipo de autenticação na aplicação web ?
+title: Como alterar o tipo de autenticação na aplicação Web?
 weight: 5
-description: Você vai encontrar aqui os tipos de autenticação disponíveis na aplicação web do Horusec.
+description: Nesta seção, você encontra o tutorial para alterar os tipos de autenticação disponíveis na aplicação Web do Horusec.
 ---
 
 ---
+Para alterar o tipo de autenticação que você utiliza, veja os passos para cada uma delas abaixo: 
 
-O Horusec possui 3 tipos de autenticação:
 
-1. **Nativa Horusec**
-2. **LDAP**
-3. **Keycloak**
+### **1. Nativa Horusec**
 
-Veja abaixo como utilizar cada uma delas:
+Para utilizá-la, siga o passo:
 
-### **Nativa Horusec**
+1. Adicione a variável de ambiente **`HORUSEC_AUTH_TYPE=”horusec”`** no microsserviço “**horusec-auth**” para habilitar a autenticação nativa.
 
-Este é o tipo mais simples de autenticação. Para utilizá-la,  siga os passos:
+{{% alert color="info" %}}
+Essa autenticação será adicionada em todos os microsserviços \(**horusec-auth, horusec-account, horusec-api, horusec-analytic**\) e na variável de ambiente  **`HORUSEC_JWT_SECRET_KEY=”horusec-secret”`**. 
 
-1. Adicione a variável de ambiente **`HORUSEC_AUTH_TYPE=”horusec”`** no microsserviço “**horusec-auth**” para você habilitar a autenticação nativa.
+O valor pode ser qualquer um da sua escolha, mas é necessário ser um hash forte.
 
-2. Essa autenticação será adicionada em todos os microsserviços \(horusec-auth, horusec-account, horusec-api, horusec-analytic\) e na variável de ambiente  **`HORUSEC_JWT_SECRET_KEY=”horusec-secret”`** - lembrando que seu valor pode ser qualquer um e, de preferência, um hash forte. 
+{{% /alert %}}
 
-{{%/* alert color="info" %}}
-
-Lembre que você não poderá mais alterar a configuração depois que ela for feita.
-
-{{% /alert */%}}
-
-### **LDAP**
-
-Este tipo de autenticação utiliza o protocolo de aplicação aberto LDAP \(Lightweight Directory Access Protocol\). Isso permite que o Horusec se integre a uma ferramenta como o [**OpenLDAP**](https://www.openldap.org/)**,** em que estão todos os usuários, grupos de acesso e organizações. 
-
-O Horusec irá consumir os dados da ferramenta e, assim,  as demais funcionalidades serão apenas gerenciadas, como caso de análises, gestão de vulnerabilidade, repositórios e tokens de acesso.
+### **2. LDAP**
 
 Para configurar essa autenticação, siga os passos: 
 
@@ -40,7 +29,7 @@ Para configurar essa autenticação, siga os passos:
 
 2. Adicione algumas variáveis de ambiente no microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) para realizar a conexão com a ferramenta. 
 
-Na tabela abaixo, veja como seguir com a configuração:   
+Veja as váriaveis disponíveis abaixo:   
 
 
 <table>
@@ -116,9 +105,7 @@ Na tabela abaixo, veja como seguir com a configuração:
   </tbody>
 </table>
 
-### **Keycloak**
-
-Este tipo de autenticação utiliza o [**Keycloak**](https://www.keycloak.org/documentation) apenas como o Auth como autenticador. É recomendado para você que deseja uma integração, por exemplo, com Google e Facebook. 
+### **3. Keycloak**
 
 Para configurar essa autenticação, siga os passos:
 
@@ -126,7 +113,7 @@ Para configurar essa autenticação, siga os passos:
 
 2. Adicione as variáveis de conexão com o Keycloak.
 
-Na tabela abaixo, veja como funcionam essas variáveis:
+Veja as váriaveis disponíveis abaixo:   
 
 | **Nome da variável de ambiente** | **Valor padrão** | **Descrição** |
 | :--- | :--- | :--- |
@@ -136,7 +123,7 @@ Na tabela abaixo, veja como funcionam essas variáveis:
 | HORUSEC\_KEYCLOAK\_REALM |  | Qual é o realm utilizado.  Exemplo: master. |
 | HORUSEC\_KEYCLOAK\_OTP | false | Se está utilizando otp\(one-time password\). |
 
-Logo em seguida, para conectar corretamente, o [**horusec-manager**](https://github.com/ZupIT/horusec/tree/master/horusec-manager) também irá precisar de algumas variáveis de ambiente:
+3. Conecte o [**horusec-manager**](https://github.com/ZupIT/horusec/tree/master/horusec-manager) com algumas variáveis de ambiente, veja abaixo: 
 
 | **Nome da variável de ambiente** | **Valor padrão** | **Descrição** |
 | :--- | :--- | :--- |
