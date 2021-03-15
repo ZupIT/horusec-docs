@@ -137,10 +137,10 @@ jobs:
   * Managed image
   * Operational sytem: `Ubuntu`
   * Execution time: `Standard`
-  * Image: `Any`
+  * Image: `aws/codebuild/standard:3.0`
   * Image Version:  `Latest`
-  * Privileged:  `true`
-  * Allow AWS CodeBuild to modify this service role so it can be used with this build project: `true`
+  * Environment type:  `Linux`
+  * Enable this indicator if you want to create Docker images or want your builds to get elevated privileges:  `true`
 
 * Buildspec:
 
