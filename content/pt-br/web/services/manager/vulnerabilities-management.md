@@ -16,9 +16,9 @@ Quando você envia uma análise para o Horusec e ela pode ser classificada dentr
 Ao alterar o status de Vulnerabilidade para outro tipo, como `falso positivo`, `risco aceito` ou `corrigido` , não será obrigatória sua correção na próxima análise enviada para o Horusec.
 
 {{%/* alert color="info" %}}
-Depois que você alterar o status de uma vulnerabilidade, não será mais contabilizado na visão analítica do Horusec.  
-  
-Além disso, você só pode alterar o status de vulnerabilidades que estão utilizando o token de acesso no Horusec-CLI.
+Depois que você alterar o status de uma vulnerabilidade, não será mais contabilizado na visão analítica do Horusec.
+
+Além disso, você só pode alterar a classificação de severidade das vulnerabilidades.
 {{% /alert */%}}
 
-![](/docs/en/references/manager/vulnerabilities-management/1-vulnerability-management.gif)
+![](/docs/ptbr/references/manager/vulnerabilities-management/1-vulnerability-management.gif)
