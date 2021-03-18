@@ -114,7 +114,7 @@ Veja o path para adicionar:
  -----languages
 ```
 
-#### 4 - Calling Formatter
+#### **Passo 4: Calling Formatter**
 
 Depois de terminar a **implementação do formatter**, você deve chamar a função no **analyzer controller**. 
 

@@ -6,12 +6,12 @@ description:  Nesta seção, você encontra as informações sobre os serviços 
 
 ---
 
-## O que é o serviço de mensageria?
+## **O que é o serviço de mensageria?**
 
 O serviço de mensageria garante o envio e o recebimento de mensagens de forma segura. O Horusec utiliza o [RabbitMQ](https://www.rabbitmq.com/), uma opção leve e fácil de implantado no local e na nuvem e que oferece suporte a vários protocolos de mensagens. 
 RabbitMQ pode ser implantado em configurações distribuídas e federadas para atender aos requisitos de alta escala e alta disponibilidade.
 
-## Onde é utilizado?
+## **Onde é utilizado?**
 
 Esse serviço dentro do Horusec possui algumas funcionalidades realizadas de modo assíncrono, como por exemplo: 
 
@@ -20,7 +20,7 @@ Esse serviço dentro do Horusec possui algumas funcionalidades realizadas de mod
 * Envio de e-mail para convidar usuário a fazer parte de seu workspace;
 * Disparo via webhook das análises realizadas pelo Horusec-CLI para um destino HTTP.
 
-## Quais serviços fazem uso desta funcionalidade?
+## **Quais serviços fazem uso desta funcionalidade?**
 
 Os serviços que são usados para realizar o consumo das filas são: 
 
@@ -41,7 +41,7 @@ Quando você desabilita o serviço de mensageria, este serviços ignoram a açã
 {{% /alert %}}
 
 
-# Como alterar?
+## **Como alterar?**
 
 Quando os microsserviços possuem a variável de ambiente `HORUSEC_DISABLED_BROKER` com valor **false**, automaticamente o Horusec já está habilitado para enviar e-mails a outras funcionalidades que utiliza o serviço de mensageria. 
 
