@@ -67,8 +67,8 @@ Para acessar o manager, você pode subir em sua infrapessoal usando os itens Doc
  
 ### **10. Como exportar o output do Horusec em arquivo?** 
 
-Para fazer isso, siga os exemplos "exportando output" para o tipo json ou sonarqube.
+Para fazer isso, siga o **Exemplo 5: Usando para obter uma saída sonarqube** na [**seção Recursos**](/docs/pt-br/cli/resources/#exemplo-5-usando-para-obter-uma-saída-sonarqube).
 
 ### **11. Como importar o output do Horusec dentro do SonarQube?**  
 
-Siga o exemplo **"Como exportar o arquivo do output do sonarqube"** no [**tutorial aqui**](https://docs.sonarqube.org/latest/analysis/generic-issue/). 
+Veja a pergunta 10 [**"Como exportar o output do Horusec no Sonarqube"**](/docs/pt-br/faq/#10-como-exportar-o-output-do-horusec-em-arquivo) e depois importe o arquivo gerado dentro da sua interface do Sonarqube usando [**este tutorial**](https://docs.sonarqube.org/latest/analysis/generic-issue/).
