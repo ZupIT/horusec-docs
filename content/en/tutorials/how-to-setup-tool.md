@@ -1,14 +1,12 @@
 ---
-title: Como configurar uma ferramenta do Horusec?
-weight: 9
-description: Nesta seção, você encontra as informações para configurar uma ferramenta do horusec
+title: How to setup a Horusec tool?
+weight: 17
+description: In this section, you will find how to configure a Horusec tool.
 ---
 
----
+# **Configuring a tool**
 
-# **Configurando uma ferramenta**
-
-O Horusec disponibiliza uma única opção para você realizar as configurações das ferramentas que ele roda ao iniciar uma análise, veja: 
+Horusec provides only one option for you to configure the tools that it runs when the analysis starts, see:
 
 ```json
 {
@@ -95,13 +93,12 @@ O Horusec disponibiliza uma única opção para você realizar as configuraçõe
 ```
 
 {{% alert color="warning" %}}
-Com essa configuração:
+With this configuration:
 
-* É possível desabilitar/habilitar uma ferramenta quando você inicia uma análise alterando a chave **`istoignore`**;
+* It is possible to disable/enable a tool when you start an analysis changing the **`istoignore`** key;
 
-* É possível utilizar a imagem do seu próprio registro. Veja a [**lista de todos os DockerFiles**](https://github.com/ZupIT/horusec/tree/master/deployments/dockerfiles) que você pode utilizar e subir no seu registro privado. 
-Para alterar, coloque o link que seria utilizado para realizar download da imagem deste registro na chave **`imagepath`** da respectiva ferramenta.
+* It is possible to use a image of your own registry. See the [**list of all DockerFiles**](https://github.com/ZupIT/horusec/tree/master/deployments/dockerfiles) that you can use and upload on your private registry. To change it, put the link that would be used to download the registry's image on the **`imagepath`** key of the respective tool.
 
-* As ferramentas que utilizam o **próprio motor do Horusec** rodam de forma nativa, então não precisam ser alteradas em seu registro, porque já estão dentro da Horusec-CLI.
+* The tools that use the **own Horusec's engine** to run natively, so it doesn't need to be changed on your registry, because they already inside of Horusec-CLI.
 
 {{% /alert %}}

@@ -1,7 +1,7 @@
 ---
-title: Adding custom rules
-weight: 31
-description: You will find here how to add custom rules to Horusec.
+title: How to add custom rules on Horusec-CLI?
+weight: 10
+description: In this section, you will find how to add custom rules to Horusec.
 ---
 
 ---
@@ -10,7 +10,7 @@ With Horusec you are able to dynamically add rules that will be executed on our 
 
 ## **1. Create a customized rules JSON file** 
 
-In order to run custom Json rules in Horusec you'll have to create a **.json** with the default code below:
+In order to run custom JSON rules in Horusec, you'll have to create a **.json** with the default code below:
 
 
  ```horusec-custom-rules.json

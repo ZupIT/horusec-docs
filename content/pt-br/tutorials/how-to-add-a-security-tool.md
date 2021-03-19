@@ -54,6 +54,7 @@ const CMD = `
 - Crie o código que irá ler o output do container e transformá-lo no formato padrão Horusec. 
  
 - Todos formatos devem seguir o padrão e implementar a interface `IFormatter` no arquivo `interface.go`.
+
 O exemplo pode ser encontrado no path abaixo: 
  
 ```
@@ -114,7 +115,7 @@ Veja o path para adicionar:
  -----languages
 ```
 
-#### **Passo 4: Calling Formatter**
+#### **Passo 4: Chamando o Formatter**
 
 Depois de terminar a **implementação do formatter**, você deve chamar a função no **analyzer controller**. 
 
@@ -197,8 +198,6 @@ Veja o path:
  -----analysis
  ------analysis.go
 ```
-
-In the analysis.go file look for the "sliceTools" and "sliceLanguages" functions.
 
 No arquivo **`analysis.go`** você deve procurar: 
 

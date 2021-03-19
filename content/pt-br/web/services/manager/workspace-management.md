@@ -18,10 +18,10 @@ Por exemplo, se você criar um workspace com 100 repositórios, basta utilizar a
 
 Apesar de você ter essa opção de criar o token, o mais seguro é você gerar um token único para o repositório e revogá-lo após um tempo. Dessa forma, você garante que a seu workspace estará sempre em segurança.
 
-{{%/* alert color="danger" %}}
+{{% alert color="danger" %}}
 
 Lembre-se de que, ao criar um token de acesso, ele será visto apenas uma vez.
-{{% /alert */%}}
+{{% /alert %}}
 
 Você pode ver como fica o painel de token dentro da plataforma do Horusec:
 

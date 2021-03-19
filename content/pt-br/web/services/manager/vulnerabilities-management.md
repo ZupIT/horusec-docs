@@ -6,7 +6,7 @@ description: Nesta seção, você vai encontrar mais informações sobre a gest�
 
 ---
 
-Quando você envia uma análise para o Horusec e ela pode ser classificada dentro da plataforma com alguns tipos de status:
+Quando você envia uma análise para o Horusec, ela pode ser classificada dentro da plataforma com alguns tipos de status:
 
 * Vulnerabilidade;
 * Falso Positivo;
@@ -15,10 +15,10 @@ Quando você envia uma análise para o Horusec e ela pode ser classificada dentr
 
 Ao alterar o status de Vulnerabilidade para outro tipo, como `falso positivo`, `risco aceito` ou `corrigido` , não será obrigatória sua correção na próxima análise enviada para o Horusec.
 
-{{%/* alert color="info" %}}
+{{% alert color="info" %}}
 Depois que você alterar o status de uma vulnerabilidade, não será mais contabilizado na visão analítica do Horusec.
 
 Além disso, você só pode alterar a classificação de severidade das vulnerabilidades.
-{{% /alert */%}}
+{{% /alert %}}
 
 ![](/docs/ptbr/references/manager/vulnerabilities-management/1-vulnerability-management.gif)
