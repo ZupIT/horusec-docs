@@ -36,7 +36,7 @@ Some examples of these rules can be found on the path separated for language and
 You need to call an engine passing the rules and format the Horusec pattern. To do so, it is necessary to create a **formatter**, see how on the example below: 
 
 
-```
+```go
 type Formatter struct {
 	formatters.IService
 	java.Interface
@@ -117,10 +117,10 @@ On the following path, you find a file with the name `analyser.go`:
 
 Create on this file the function below: 
 
-```
+```go
 func (a *Analyser) detectVulnerabilityDart(projectSubPath string) {
-a.monitor.AddProcess(1)
-go horusecDart.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
+	a.monitor.AddProcess(1)
+	go horusecDart.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
 }
 ```
 

@@ -23,7 +23,7 @@ If the tool you want to add is in a language that Horusec already has an image, 
 
 See how on the example below: 
  
-```
+```dockerfile
 FROM python:alpine
 
 RUN pip install flawfinder
@@ -42,7 +42,7 @@ For each docker image, it is necessary to have a configuration file. The **forma
 See the example below of a config container: 
 
  
-```
+```go
 const CMD = `
 		{{WORK_DIR}}
 		flawfinder --minlevel 0 --columns --singleline --dataonly --context --csv . > /tmp/result-ANALYSISID.csv
@@ -133,23 +133,23 @@ Veja o seguinte path:
 
 Se sim, será necessário criar uma nova função. Veja como no exemplo abaixo: 
 
-```
- func (a *Analyser) detectVulnerabilityHCL(projectSubPath string) {
- 	 a.monitor.AddProcess(1)
- 	 go hcl.NewFormatter(a.formatterService).StartHCLTfSec(projectSubPath)
- }
+```go
+func (a *Analyser) detectVulnerabilityHCL(projectSubPath string) {
+  a.monitor.AddProcess(1)
+  go hcl.NewFormatter(a.formatterService).StartHCLTfSec(projectSubPath)
+}
 ```
 
 
 Você também precisa adicionar uma nova linguagem ao mapa que contém a função  **`mapDetectVulnerabilityByLanguage`**. Veja o exemplo: 
 
-```
- func (a *Analyser) mapDetectVulnerabilityByLanguage() map[languages.Language]func(string) {
-	 return map[languages.Language]func(string){
-          ...
-	 	 languages.HCL:        a.detectVulnerabilityHCL,
-	 }
- }
+```go
+func (a *Analyser) mapDetectVulnerabilityByLanguage() map[languages.Language]func(string) {
+	return map[languages.Language]func(string){
+		...
+		languages.HCL: a.detectVulnerabilityHCL,
+	}
+}
 ```
 #### **Step 4: Calling Formatter**
 
@@ -160,20 +160,20 @@ If it is, just add a call for a new formatter on the **`detectVulnerability`** e
 
 **See how it was before you add it:** 
 
-```
- func (a *Analyser) detectVulnerabilityJavascript(projectSubPath string) {
-	 a.monitor.AddProcess(1)
-	 go yarnaudit.NewFormatter(a.formatterService).StartJavascriptYarnAudit(projectSubPath)
- }
+```go
+func (a *Analyser) detectVulnerabilityJavascript(projectSubPath string) {
+	a.monitor.AddProcess(1)
+	go yarnaudit.NewFormatter(a.formatterService).StartJavascriptYarnAudit(projectSubPath)
+}
 ```
 **See after you've added:**
 
-```
- func (a *Analyser) detectVulnerabilityJavascript(projectSubPath string) {
-	 a.monitor.AddProcess(2)
-	 go yarnaudit.NewFormatter(a.formatterService).StartJavascriptYarnAudit(projectSubPath)
-	 go npmaudit.NewFormatter(a.formatterService).StartJavascriptNpmAudit(projectSubPath)
- }
+```go
+func (a *Analyser) detectVulnerabilityJavascript(projectSubPath string) {
+	a.monitor.AddProcess(2)
+	go yarnaudit.NewFormatter(a.formatterService).StartJavascriptYarnAudit(projectSubPath)
+	go npmaudit.NewFormatter(a.formatterService).StartJavascriptNpmAudit(projectSubPath)
+}
 ```
 
 {{% alert color="warning" %}}

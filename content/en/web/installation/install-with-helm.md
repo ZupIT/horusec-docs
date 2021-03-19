@@ -52,7 +52,7 @@ Check out some recommendations before the configuration:
 
 Install [**PostgreSQL**](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) and [**RabbitMQ**](https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq) using Bitnami's Helm Charts, for a quick start in non-productive environments.
 
-If you already have available connections with `PostgreSQL` and `RabbitMQ`, just follow your [**credentials configuration**](/docs/web/installing/install-with-helm/#sensitive-data-configuration) and inform the addresses of these connections in the variables during [**Horusec's services installation**](/docs/web/installing/install-with-helm/#horusecs-services-installation).
+If you already have available connections with `PostgreSQL` and `RabbitMQ`, just follow your [**credentials configuration**](/docs/web/installation/install-with-helm/#sensitive-data-configuration) and inform the addresses of these connections in the variables during [**Horusec's services installation**](#instalação-dos-serviços-da-horusec).
 {{% /alert %}}
 
 Follow the steps below to configure Horusec Helm Charts: 

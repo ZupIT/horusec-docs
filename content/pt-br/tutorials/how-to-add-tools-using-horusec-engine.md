@@ -38,7 +38,7 @@ Você precisa chamar o motor passando as regras e formatar para o padrão Horuse
 Para isso, é necessário criar o **formatter**, veja como no exemplo abaixo: 
 
 
-```
+```go
 type Formatter struct {
 	formatters.IService
 	java.Interface
@@ -121,10 +121,10 @@ No caminho a seguir, você encontra o arquivo com o nome de
 
 Crie nesse arquivo a função abaixo: 
 
-```
+```go
 func (a *Analyser) detectVulnerabilityDart(projectSubPath string) {
-a.monitor.AddProcess(1)
-go horusecDart.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
+	a.monitor.AddProcess(1)
+	go horusecDart.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
 }
 ```
 
