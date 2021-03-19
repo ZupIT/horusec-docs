@@ -10,83 +10,87 @@ Horusec provides only one option for you to configure the tools that it runs whe
 
 ```json
 {
-    "horusecCliToolsConfig":{
-        "Bandit":{
-            "istoignore":false,
-            "imagepath":""
+    "horusecCliCustomImages": {
+        "c": "",
+        "csharp": "",
+        "dart": "",
+        "elixir": "",
+        "generic": "",
+        "go": "",
+        "hcl": "",
+        "java": "",
+        "javascript": "",
+        "kotlin": "",
+        "leaks": "",
+        "php": "",
+        "python": "",
+        "ruby": "",
+        "shell": "",
+        "yaml": ""
+    },
+    "horusecCliToolsConfig": {
+        "Bandit": {
+            "istoignore": false
         },
-        "Brakeman":{
-            "istoignore":false,
-            "imagepath":""
+        "Brakeman": {
+            "istoignore": false
         },
-        "Eslint":{
-            "istoignore":false,
-            "imagepath":""
+        "Eslint": {
+            "istoignore": false
         },
-        "Flawfinder":{
-            "istoignore":false,
-            "imagepath":""
+        "Flawfinder": {
+            "istoignore": false
         },
-        "GitLeaks":{
-            "istoignore":false,
-            "imagepath":""
+        "GitLeaks": {
+            "istoignore": false
         },
-        "GoSec":{
-            "istoignore":false,
-            "imagepath":""
+        "GoSec": {
+            "istoignore": false
         },
-        "HorusecCsharp":{
-            "istoignore":false
+        "HorusecCsharp": {
+            "istoignore": false
         },
-        "HorusecDart":{
-            "istoignore":false
+        "HorusecDart": {
+            "istoignore": false
         },
-        "HorusecJava":{
-            "istoignore":false
+        "HorusecJava": {
+            "istoignore": false
         },
-        "HorusecKotlin":{
-            "istoignore":false
+        "HorusecKotlin": {
+            "istoignore": false
         },
-        "HorusecKubernetes":{
-            "istoignore":false
+        "HorusecKubernetes": {
+            "istoignore": false
         },
-        "HorusecLeaks":{
-            "istoignore":false
+        "HorusecLeaks": {
+            "istoignore": false
         },
-        "HorusecNodeJS":{
-            "istoignore":false
+        "HorusecNodeJS": {
+            "istoignore": false
         },
-        "NpmAudit":{
-            "istoignore":false,
-            "imagepath":""
+        "NpmAudit": {
+            "istoignore": false
         },
-        "PhpCS":{
-            "istoignore":false,
-            "imagepath":""
+        "PhpCS": {
+            "istoignore": false
         },
-        "Safety":{
-            "istoignore":false,
-            "imagepath":""
+        "Safety": {
+            "istoignore": false
         },
-        "SecurityCodeScan":{
-            "istoignore":false,
-            "imagepath":""
+        "SecurityCodeScan": {
+            "istoignore": false
         },
-        "Semgrep":{
-            "istoignore":false,
-            "imagepath":""
+        "Semgrep": {
+            "istoignore": false
         },
-        "ShellCheck":{
-            "istoignore":false,
-            "imagepath":""
+        "ShellCheck": {
+            "istoignore": false
         },
-        "TfSec":{
-            "istoignore":false,
-            "imagepath":""
+        "TfSec": {
+            "istoignore": false
         },
-        "YarnAudit":{
-            "istoignore":false,
-            "imagepath":""
+        "YarnAudit": {
+            "istoignore": false
         }
     }
 }
@@ -97,8 +101,17 @@ With this configuration:
 
 * It is possible to disable/enable a tool when you start an analysis changing the **`istoignore`** key;
 
-* It is possible to use a image of your own registry. See the [**list of all DockerFiles**](https://github.com/ZupIT/horusec/tree/master/deployments/dockerfiles) that you can use and upload on your private registry. To change it, put the link that would be used to download the registry's image on the **`imagepath`** key of the respective tool.
+* It is possible to use a image of your own registry. See the [**list of all languages and your deployments**](https://github.com/ZupIT/horusec/tree/master/horusec-cli/internal/services/formatters) that you can use and upload on your private registry. To change it, put the link that would be used to download the registry's image on the respective **`language`**.
 
-* The tools that use the **own Horusec's engine** to run natively, so it doesn't need to be changed on your registry, because they already inside of Horusec-CLI.
+* The languages that use only the **own Horusec's engine** to run natively, so it doesn't need to be changed on your registry, because they already inside of Horusec-CLI.
+
+{{% alert color="warning" %}}
+If you are using a private resgration, you need to add the following environment variants so that Horusec can perform authentication and download your respective images.
+```bash
+export HORUSEC_CLI_REGISTRY_USERNAME=""
+export HORUSEC_CLI_REGISTRY_PASSWORD=""
+export HORUSEC_CLI_REGISTRY_ADDRESS=""
+```
+{{% /alert %}}
 
 {{% /alert %}}

@@ -85,135 +85,137 @@ A seguir, um exemplo de um arquivo de configuração:
 
 ```json
 {
-    "horusecCliCertInsecureSkipVerify":false,
-    "horusecCliCertPath":"",
-    "horusecCliContainerBindProjectPath":"",
-    "horusecCliCustomRulesPath":"",
-    "horusecCliDisableDocker":false,
-    "horusecCliEnableCommitAuthor":false,
-    "horusecCliEnableGitHistoryAnalysis":false,
-    "horusecCliEnableInformationSeverity":false,
-    "horusecCliFalsePositiveHashes":[],
-    "horusecCliFilesOrPathsToIgnore":[
+    "horusecCliCertInsecureSkipVerify": false,
+    "horusecCliCertPath": "",
+    "horusecCliContainerBindProjectPath": "",
+    "horusecCliCustomImages": {
+        "c": "",
+        "csharp": "",
+        "dart": "",
+        "elixir": "",
+        "generic": "",
+        "go": "",
+        "hcl": "",
+        "java": "",
+        "javascript": "",
+        "kotlin": "",
+        "leaks": "",
+        "php": "",
+        "python": "",
+        "ruby": "",
+        "shell": "",
+        "yaml": ""
+    },
+    "horusecCliCustomRulesPath": "",
+    "horusecCliDisableDocker": false,
+    "horusecCliEnableCommitAuthor": false,
+    "horusecCliEnableGitHistoryAnalysis": false,
+    "horusecCliEnableInformationSeverity": false,
+    "horusecCliFalsePositiveHashes": [],
+    "horusecCliFilesOrPathsToIgnore": [
         "*tmp*",
         "**/.vscode/**"
     ],
-    "horusecCliFilterPath":"",
-    "horusecCliHeaders":{},
-    "horusecCliHorusecApiUri":"http://0.0.0.0:8000",
-    "horusecCliJsonOutputFilepath":"",
-    "horusecCliMonitorRetryInSeconds":15,
-    "horusecCliPrintOutputType":"text",
-    "horusecCliProjectPath":"/home/wilian/Downloads",
-    "horusecCliRepositoryAuthorization":"00000000-0000-0000-0000-000000000000",
-    "horusecCliRepositoryName":"Downloads",
-    "horusecCliReturnErrorIfFoundVulnerability":false,
-    "horusecCliRiskAcceptHashes":[],
-    "horusecCliSeveritiesToIgnore":[
-        "AUDIT",
+    "horusecCliFilterPath": "",
+    "horusecCliHeaders": {},
+    "horusecCliHorusecApiUri": "http://0.0.0.0:8000",
+    "horusecCliJsonOutputFilepath": "",
+    "horusecCliMonitorRetryInSeconds": 15,
+    "horusecCliPrintOutputType": "text",
+    "horusecCliProjectPath": "./",
+    "horusecCliRepositoryAuthorization": "00000000-0000-0000-0000-000000000000",
+    "horusecCliRepositoryName": "",
+    "horusecCliReturnErrorIfFoundVulnerability": false,
+    "horusecCliRiskAcceptHashes": [],
+    "horusecCliSeveritiesToIgnore": [
         "INFO"
     ],
-    "horusecCliTimeoutInSecondsAnalysis":600,
-    "horusecCliTimeoutInSecondsRequest":300,
-    "horusecCliToolsConfig":{
-        "Bandit":{
-            "istoignore":false,
-            "imagepath":""
+    "horusecCliTimeoutInSecondsAnalysis": 600,
+    "horusecCliTimeoutInSecondsRequest": 300,
+    "horusecCliToolsConfig": {
+        "Bandit": {
+            "istoignore": false
         },
-        "Brakeman":{
-            "istoignore":false,
-            "imagepath":""
+        "Brakeman": {
+            "istoignore": false
         },
-        "Eslint":{
-            "istoignore":false,
-            "imagepath":""
+        "Eslint": {
+            "istoignore": false
         },
-        "Flawfinder":{
-            "istoignore":false,
-            "imagepath":""
+        "Flawfinder": {
+            "istoignore": false
         },
-        "GitLeaks":{
-            "istoignore":false,
-            "imagepath":""
+        "GitLeaks": {
+            "istoignore": false
         },
-        "GoSec":{
-            "istoignore":false,
-            "imagepath":""
+        "GoSec": {
+            "istoignore": false
         },
-        "HorusecCsharp":{
-            "istoignore":false
+        "HorusecCsharp": {
+            "istoignore": false
         },
-        "HorusecDart":{
-            "istoignore":false
+        "HorusecDart": {
+            "istoignore": false
         },
-        "HorusecJava":{
-            "istoignore":false
+        "HorusecJava": {
+            "istoignore": false
         },
-        "HorusecKotlin":{
-            "istoignore":false
+        "HorusecKotlin": {
+            "istoignore": false
         },
-        "HorusecKubernetes":{
-            "istoignore":false
+        "HorusecKubernetes": {
+            "istoignore": false
         },
-        "HorusecLeaks":{
-            "istoignore":false
+        "HorusecLeaks": {
+            "istoignore": false
         },
-        "HorusecNodeJS":{
-            "istoignore":false
+        "HorusecNodeJS": {
+            "istoignore": false
         },
-        "NpmAudit":{
-            "istoignore":false,
-            "imagepath":""
+        "NpmAudit": {
+            "istoignore": false
         },
-        "PhpCS":{
-            "istoignore":false,
-            "imagepath":""
+        "PhpCS": {
+            "istoignore": false
         },
-        "Safety":{
-            "istoignore":false,
-            "imagepath":""
+        "Safety": {
+            "istoignore": false
         },
-        "SecurityCodeScan":{
-            "istoignore":false,
-            "imagepath":""
+        "SecurityCodeScan": {
+            "istoignore": false
         },
-        "Semgrep":{
-            "istoignore":false,
-            "imagepath":""
+        "Semgrep": {
+            "istoignore": false
         },
-        "ShellCheck":{
-            "istoignore":false,
-            "imagepath":""
+        "ShellCheck": {
+            "istoignore": false
         },
-        "TfSec":{
-            "istoignore":false,
-            "imagepath":""
+        "TfSec": {
+            "istoignore": false
         },
-        "YarnAudit":{
-            "istoignore":false,
-            "imagepath":""
+        "YarnAudit": {
+            "istoignore": false
         }
     },
-    "horusecCliToolsToIgnore":[],
-    "horusecCliWorkDir":{
-        "go":[],
-        "netCore":[],
-        "csharp":[],
-        "ruby":[],
-        "python":[],
-        "java":[],
-        "kotlin":[],
-        "javaScript":[],
-        "leaks":[],
-        "hcl":[],
-        "php":[],
-        "c":[],
-        "yaml":[],
-        "generic":[ ]
+    "horusecCliToolsToIgnore": [],
+    "horusecCliWorkDir": {
+        "go": [],
+        "csharp": [],
+        "ruby": [],
+        "python": [],
+        "java": [],
+        "kotlin": [],
+        "javaScript": [],
+        "leaks": [],
+        "hcl": [],
+        "php": [],
+        "c": [],
+        "yaml": [],
+        "generic": []
     }
 }
 ```
-Por definição padrão, o Horusec vai buscar esse arquivo de configuração automática na mesma pasta em que for executado o comando `horusec.start`. 
+Por definição padrão, o Horusec vai buscar esse arquivo de configuração automática na mesma pasta em que for executado o comando `horusec.start`.
 
 Portanto, é recomendado que você esteja na raiz do seu projeto, assim como o comando start.
 
@@ -233,19 +235,20 @@ export HORUSEC_CLI_MONITOR_RETRY_IN_SECONDS="15"
 export HORUSEC_CLI_REPOSITORY_AUTHORIZATION="00000000-0000-0000-0000-000000000000"
 export HORUSEC_CLI_PRINT_OUTPUT_TYPE="text"
 export HORUSEC_CLI_JSON_OUTPUT_FILEPATH=""
-export HORUSEC_CLI_SEVERITIES_TO_IGNORE="AUDIT, INFO"
-export HORUSEC_CLI_FILES_OR_PATHS_TO_IGNORE="*tmp*, **/.vscode/**"
+export HORUSEC_CLI_SEVERITIES_TO_IGNORE="INFO"
+export HORUSEC_CLI_FILES_OR_PATHS_TO_IGNORE="*tmp* **/.vscode/**"
 export HORUSEC_CLI_RETURN_ERROR_IF_FOUND_VULNERABILITY="false"
-export HORUSEC_CLI_PROJECT_PATH=""
+export HORUSEC_CLI_PROJECT_PATH="./"
 export HORUSEC_CLI_FILTER_PATH=""
 export HORUSEC_CLI_ENABLE_GIT_HISTORY_ANALYSIS="false"
 export HORUSEC_CLI_CERT_INSECURE_SKIP_VERIFY="false"
 export HORUSEC_CLI_CERT_PATH=""
 export HORUSEC_CLI_ENABLE_COMMIT_AUTHOR="false"
-export HORUSEC_CLI_REPOSITORY_NAME=""
+export HORUSEC_CLI_REPOSITORY_NAME="config"
 export HORUSEC_CLI_FALSE_POSITIVE_HASHES=""
 export HORUSEC_CLI_RISK_ACCEPT_HASHES=""
 export HORUSEC_CLI_TOOLS_TO_IGNORE=""
+export HORUSEC_CLI_HEADERS=""
 export HORUSEC_CLI_CONTAINER_BIND_PROJECT_PATH=""
 export HORUSEC_CLI_DISABLE_DOCKER="false"
 export HORUSEC_CLI_CUSTOM_RULES_PATH=""
@@ -287,6 +290,14 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left">m</td>
             <td style="text-align:left">15</td>
             <td style="text-align:left">Esta configuração identifica em quantos segundos quero verificar se minha análise está perto do tempo limite. O tempo mínimo é 10s.</td>
+        </tr>
+        <tr>
+            <td style="text-align:left">HORUSEC_CLI_SEVERITIES_TO_IGNORE</td>
+            <td style="text-align:left">horusecCliSeveritiesToIgnore</td>
+            <td style="text-align:left">ignore-severity</td>
+            <td style="text-align:left">s</td>
+            <td style="text-align:left">INFO</td>
+            <td style="text-align:left">Esta configuração identifica quais níveis de severidade você deseja ignorar, pode ser entre: CRITICAL, HIGH, MEDIUM, LOW, UNKNOWN, INFO</td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_PRINT_OUTPUT_TYPE</td>
@@ -459,7 +470,7 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_CONTAINER_BIND_PROJECT_PATH</td>
-            <td style="text-align:left">EnvContainerBindProjectPath</td>
+            <td style="text-align:left">horusecCliContainerBindProjectPath</td>
             <td style="text-align:left">container-bind-project-path</td>
             <td style="text-align:left">P</td>
             <td style="text-align:left"></td>
@@ -470,7 +481,7 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left">horusecCliHeaders</td>
             <td style="text-align:left">headers</td>
             <td style="text-align:left"></td>
-            <td style="text-align:left"></td>
+            <td style="text-align:left">{}</td>
             <td style="text-align:left">Esta configuração é usada para enviar cabeçalhos adicionais em todas as requisições HTTP da horusec-cli e, dessa forma, garantir que o seu servidor tenha acesso aos dados gerados no dashboard do Horusec.</td>
         </tr>
         <tr>
@@ -478,7 +489,7 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left">horusecCliWorkDir</td>
             <td style="text-align:left"></td>
             <td style="text-align:left"></td>
-            <td style="text-align:left"></td>
+            <td style="text-align:left">{"go": [],"csharp": [],"ruby": [],"python": [],"java": [],"kotlin": [],"javaScript": [],"leaks": [],"hcl": [],"php": [],"c": [],"yaml": [],"generic": []}</td>
             <td style="text-align:left">Esta configuração informa ao Horusec o diretório correto para executar uma linguagem específica.</td>
         </tr>
         <tr>
@@ -486,8 +497,40 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left">horusecCliToolsConfig</td>
             <td style="text-align:left"></td>
             <td style="text-align:left"></td>
+            <td style="text-align:left">{"Bandit": {"istoignore": false},"Brakeman": {"istoignore": false},"Eslint": {"istoignore": false},"Flawfinder": {"istoignore": false},"GitLeaks": {"istoignore": false},"GoSec": {"istoignore": false},"HorusecCsharp": {"istoignore": false},"HorusecDart": {"istoignore": false},"HorusecJava": {"istoignore": false},"HorusecKotlin": {"istoignore": false},"HorusecKubernetes": {"istoignore": false},"HorusecLeaks": {"istoignore": false},"HorusecNodeJS": {"istoignore": false},"NpmAudit": {"istoignore": false},"PhpCS": {"istoignore": false},"Safety": {"istoignore": false},"SecurityCodeScan": {"istoignore": false},"Semgrep": {"istoignore": false},"ShellCheck": {"istoignore": false},"TfSec": {"istoignore": false},"YarnAudit": {"istoignore": false}}</td>
+            <td style="text-align:left">Esta configuração informa ao Horusec quais ferramentas estão habilitadas a realizar análise.</td>
+        </tr>
+        <tr>
             <td style="text-align:left"></td>
-            <td style="text-align:left">Esta configuração informa ao Horusec como ele irá rodar o caminho da imagem para download.</td>
+            <td style="text-align:left">horusecCliCustomImages</td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left">{"c": "","csharp": "","dart": "","elixir": "","generic": "","go": "","hcl": "","java": "","javascript": "","kotlin": "","leaks": "","php": "","python": "","ruby": "","shell": "","yaml": ""}</td>
+            <td style="text-align:left">Esta configuração informa ao Horusec onde a imagem docker da linguagem está para rodar a análise.</td>
+        </tr>
+        <tr>
+            <td style="text-align:left">HORUSEC_CLI_REGISTRY_USERNAME</td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left">Esta configuração informa ao Horusec o usuário para realizar download de imagens caso você tenha configurado em um registro privado.</td>
+        </tr>
+        <tr>
+            <td style="text-align:left">HORUSEC_CLI_REGISTRY_PASSWORD</td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left">Esta configuração informa ao Horusec a senha para realizar download de imagens caso você tenha configurado em um registro privado.</td>
+        </tr>
+        <tr>
+            <td style="text-align:left">HORUSEC_CLI_REGISTRY_ADDRESS</td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left">Esta configuração informa ao Horusec o endereço para realizar download de imagens caso você tenha configurado em um registro privado.</td>
         </tr>
     </tbody>
 </table>
@@ -504,7 +547,7 @@ Neste exemplo, estamos utilizando:
 *  A `flag -a` passando o token de autorização a fim de enviar essa análise para nossa interface web.
 
 ```bash
-horusec start -a="REPOSITORY_TOKEN" -p="/home/user/project" 
+horusec start -a="REPOSITORY_TOKEN" -p="/home/user/project"
 ```
 
 ### Exemplo 2: Usando nome de flag completo de diretório
