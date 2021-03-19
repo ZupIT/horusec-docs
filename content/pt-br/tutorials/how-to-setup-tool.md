@@ -6,7 +6,7 @@ description: Nesta seção, você encontra as informações para configurar uma 
 
 ---
 
-# **Configurando uma ferramenta**
+### **Configurando uma ferramenta**
 O Horusec disponibiliza uma única opção para você realizar as configurações das ferramentas que ele roda ao iniciar uma análise, veja: 
 
 ```json

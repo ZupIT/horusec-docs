@@ -52,7 +52,7 @@ Crie um arquivo **.json** contendo o seguinte código:
 
 Veja abaixo a tabela com os atributos que você pode escolher:
 
-| **Campo** | Tipo | **Descrição** |
+| **Campo** | **Tipo** | **Descrição** |
 | :--- | :--- | :--- |
 | ID |  | UUID randômico usado para identificar a vulnerabilidade. Suas regras não devem duplicar esse ID.  |
 | Name | String | Nome da vulnerabilidade. |

@@ -8,7 +8,7 @@ description: Nesta seção, você encontra o tutorial para   habilitar e desabil
 
 A funcionalidade administrador da aplicação permite que o Administrador do Horusec crie workspaces. 
 
-### Valor false
+### **Valor false**
 
 O microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) inicia com:
 
@@ -16,7 +16,7 @@ O microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master
 
 A partir disso, o Horusec possibilita um fluxo normal em que você pode criar sua empresa e gerenciá-la como desejar. 
 
-### Valor true
+### **Valor true**
 
 Quando o valor é **true**, o [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) cria um usuário que está configurado na variável de ambiente:
 
@@ -26,7 +26,11 @@ Quando o valor é **true**, o [**horusec-auth**](https://github.com/ZupIT/horuse
  HORUSEC_APPLICATION_ADMIN_DATA="{\"username\": \"horusec-admin\", \"email\":\"horusec-admin@example.com\", \"password\":\"Devpass0*\"}"
 ```
 
-
+{{% alert color="info" %}}
 Somente esse usuário pode criar workspaces e informar quem será o administrador dele dentro da aplicação web do Horusec.
-Pode ser o próprio usuário ou outro já existente na plataforma. 
+Pode ser o próprio usuário ou outro já existente na plataforma.
+{{% /alert %}}
+
+
+ 
 
