@@ -20,6 +20,7 @@ Essas linguagens e ferramentas são:
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
 * **Ruby**
   * [**Brakeman**](https://github.com/presidentbeef/brakeman)
+  * [**Bundler**](https://github.com/rubysec/bundler-audit)
 * **Javascript/Typescript**
   * [**Npm Audit**](https://docs.npmjs.com/cli/audit)
   * [**Yarn Audit**](https://yarnpkg.com/lang/en/docs/cli/audit/)
