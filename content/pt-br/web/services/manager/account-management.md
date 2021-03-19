@@ -6,7 +6,7 @@ description: 'Nesta seção, você vai encontrar informações sobre gerenciamen
 
 ---
 
-No Horusec você também pode gerenciar os dados da sua conta. Veja abaixo algumas funcionalidades:
+No Horusec, você também pode gerenciar os dados da sua conta. Veja abaixo algumas funcionalidades:
 
 * Deletar sua conta;
 * Alterar seu e-mail e usuário;

@@ -1,43 +1,32 @@
 ---
-title: Authentication types
-weight: 9
-description: You will find here the authentication types available on Horusec.
+title: How to change the authentication type on your web application?
+weight: 13
+description: In this section, you will find how to change the authentication types on Horusec's web application.
 ---
 
 ---
 
-Currently Horusec has 3 types of authentication:
+To change an authentication type you currantly use, see the steps below for each one: 
 
-* **Nativa Horusec**
-* **Ldap**
-* **Keycloak**
+### **Horusec Native**
 
-See below how to use each one of them: 
+To use it, follow the steps: 
 
-### **Nativa Horusec**
+1. Add the environment variable **`HORUSEC_AUTH_TYPE = "horusec"`** in the **horusec-auth** microservice and you will enable the native authentication; 
 
-This is the most simple type of authentication. To use it, follow the next steps: 
+{{% alert color="info" %}}
+This authentication will be added in all microservices - "horusec-auth, horusec-account, horusec-api, horusec- analytic ”the environment variable **`HORUSEC_JWT_SECRET_KEY=”horusec-secret”`** ”- its value can be any and preferably a strong hash.
 
-1. Add the environment variable **`HORUSEC_AUTH_TYPE = "horusec"`**
+The value can be anyone of your choice, but it is necessary to have a strong hash.
+{{% /alert %}}
 
-    in the **horusec-auth** microservice and you will enable the native authentication; 
+### **LDAP**
 
-2. This authentication will be added in all microservices - "horusec-auth, horusec-account, horusec-api, horusec- analytic ”the environment variable **`HORUSEC_JWT_SECRET_KEY=”horusec-secret”`** ”- its value can be any and preferably a strong hash.
-
-{{%/* alert color="info" %}}
-Remember: once set it cannot be changed.
-{{% /alert */%}}
-
-### **Ldap**
-
-This type of authentication uses the open application protocol LDAP \(Lightweight Directory Access Protocol\), with this Horusec integrates with a tool such as [**OpenLDAP**](https://www.openldap.org/) where all users, access groups and organizations are located.
-
-Horusec will consume this data from the tool and, thus, we will only manage the other functionalities such as analysis, vulnerability management, repositories and access tokens.
-
-To configure this, follow the steps: 
+To configure this authentication, follow the steps: 
 
 1. Add the environment variable **`HORUSEC_AUTH_TYPE=”ldap”`** in the [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) microservice   to define the authentication via LDAP;
-2. Add some environment variables in the microservice [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth)  to make the connection with the tool, they are:
+
+2. Add some environment variables in the microservice [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) to make the connection with the tool, they are:
 
 <table>
   <thead>
@@ -114,11 +103,10 @@ To configure this, follow the steps:
 
 ### **Keycloak**
 
-This type of authentication uses Keycloak just like Auth, so if you want an integration, for example, with Google and Facebook.
-
 To configure this authentication, follow the steps: 
 
-1. Add the environment variable **`HORUSEC_AUTH_TYPE=”keycloak”`** in the [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) microservice that you will use in the authentication via Keycloak; 
+1. Add the environment variable **`HORUSEC_AUTH_TYPE=”keycloak”`** in the [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) microservice that you will use in the authentication via Keycloak;
+
 2. In the  [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) microservice, add the connection variables with the keycloak, which are:
 
 |  **Environment variable name**  | **Standard value** | **Description** |

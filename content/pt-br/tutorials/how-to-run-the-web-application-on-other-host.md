@@ -14,7 +14,7 @@ Se você ainda não instalou, cheque todo o processo [**nessa seção**](/docs/p
 #### **Passo 2:** Checar os serviços não iniciados
 Alguns serviços não são iniciados por padrão, como por exemplo [Horusec-Messages](/docs/pt-br/web/services/messages) e o [Horusec-Webhook](/docs/pt-br/web/services/webhook). 
 
-Após instalar você pode perceber que alguns serviços por padrão **não são inciados** como por exemplo o [Horusec-Messages](/docs/pt-br/web/services/messages) e o [Horusec-Webhook](/docs/pt-br/web/services/webhook). Isto é devido ao serviço de mensageria esta configurado para estar desabilitado, caso você necessite realizar o uso destes serviços basta [visualizar mais neste tutorial](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service).
+Após instalar você pode perceber que alguns serviços por padrão **não são inciados**. Isto acontece porque esses serviços, como o de mensageria, já vem configurado para estar desabilitado, caso você necessite realizar o uso destes serviços basta [visualizar mais neste tutorial](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service).
 
 #### **Passo 3:** Configure o Horusec-Manager
 
@@ -31,7 +31,7 @@ Para fazer isso:
 - Reinicie a aplicação;
 
 
-### **Exemplo utilizando docker-compose**
+**Exemplo utilizando docker-compose**
 
 Quando você utiliza o comando `make install` ele executa o [docker-compose.yaml](https://github.com/ZupIT/horusec/blob/master/deployments/docker-compose.yaml) padrão do Horusec. 
 O Horusec-Manager está sendo executado com a seguinte configuração: 
