@@ -43,7 +43,7 @@ Essas linguagens e ferramentas são:
 * **Terraform**
   * [**Tfsec**](https://github.com/liamg/tfsec)
 * **Leaks**
-  * [**HorusecLeaks**](https://github.com/ZupIT/horusec/tree/master/horusec-leaks)
+  * [**HorusecLeaks**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-leaks/)
 * **Leaks \(análise opcional no histórico git\)**
   * [**GitLeaks**](https://github.com/zricethezav/gitleaks)
 * **PHP**

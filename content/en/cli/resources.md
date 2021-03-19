@@ -389,7 +389,7 @@ On the table below, you can see all the available flags. To see it better, just 
       <td style="text-align:left">To run the analysis, you need an authorization token. You can get this
         token, generating a new token in the horusec repository. For more information,
         <a
-        href="https://github.com/ZupIT/horusec/tree/master/horusec-cli#authorization"><b>see here</b>
+        href="/docs/tutorials/how-to-create-an-authorization-token/"><b>see here</b>
           </a>.</td>
     </tr>
     <tr>

@@ -8,7 +8,7 @@ The Application Admin functionality is intended only for the Horusec Administrat
 
 ### False Value
 
-The [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) microservice starts with:
+The [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth) microservice starts with:
 
 -  The environment variable **`HORUSEC_ENABLE_APPLICATION_ADMIN`** and the **false** value. 
 
@@ -17,7 +17,7 @@ This way, there is a normal Horusec flow where you can create your company and m
 
 ### True Value
 
-When the value is **true**, the [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) creates an user that that is configured in the environment:
+When the value is **true**, the [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth) creates an user that that is configured in the environment:
 
 - **`HORUSEC_APPLICATION_ADMIN_DATA`** and the value:
 

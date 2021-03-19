@@ -25,9 +25,9 @@ O valor pode ser qualquer um da sua escolha, mas é necessário ser um hash fort
 
 Para configurar essa autenticação, siga os passos: 
 
-1. Adicione a variável de ambiente `HORUSEC_AUTH_TYPE=”ldap”` no microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth)  para definir a autenticação via LDAP.
+1. Adicione a variável de ambiente `HORUSEC_AUTH_TYPE=”ldap”` no microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth)  para definir a autenticação via LDAP.
 
-2. Adicione algumas variáveis de ambiente no microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) para realizar a conexão com a ferramenta. 
+2. Adicione algumas variáveis de ambiente no microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth) para realizar a conexão com a ferramenta. 
 
 Veja as váriaveis disponíveis abaixo:   
 
@@ -109,7 +109,7 @@ Veja as váriaveis disponíveis abaixo:
 
 Para configurar essa autenticação, siga os passos:
 
-1. Adicione a variável de ambiente `HORUSEC_AUTH_TYPE=”keycloak”` no microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) que você irá utilizar na autenticação via Keycloak.
+1. Adicione a variável de ambiente `HORUSEC_AUTH_TYPE=”keycloak”` no microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth) que você irá utilizar na autenticação via Keycloak.
 
 2. Adicione as variáveis de conexão com o Keycloak.
 

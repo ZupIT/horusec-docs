@@ -42,7 +42,7 @@ Para cada imagem do docker, é necessário ter o arquivo de configuração. O **
 Veja abaixo o exemplo de um container config: 
 
  
-```
+```go
 const CMD = `
 		{{WORK_DIR}}
 		flawfinder --minlevel 0 --columns --singleline --dataonly --context --csv . > /tmp/result-ANALYSISID.csv
@@ -135,23 +135,23 @@ Veja o seguinte path:
 
 Se sim, será necessário criar uma nova função. Veja como no exemplo abaixo: 
 
-```
- func (a *Analyser) detectVulnerabilityHCL(projectSubPath string) {
- 	 a.monitor.AddProcess(1)
- 	 go hcl.NewFormatter(a.formatterService).StartHCLTfSec(projectSubPath)
- }
+```go
+func (a *Analyser) detectVulnerabilityHCL(projectSubPath string) {
+	a.monitor.AddProcess(1)
+	go hcl.NewFormatter(a.formatterService).StartHCLTfSec(projectSubPath)
+}
 ```
 
 
 Você também precisa adicionar uma nova linguagem ao mapa que contém a função  **`mapDetectVulnerabilityByLanguage`**. Veja o exemplo: 
 
-```
- func (a *Analyser) mapDetectVulnerabilityByLanguage() map[languages.Language]func(string) {
-	 return map[languages.Language]func(string){
-          ...
-	 	 languages.HCL:        a.detectVulnerabilityHCL,
-	 }
- }
+```go
+func (a *Analyser) mapDetectVulnerabilityByLanguage() map[languages.Language]func(string) {
+	return map[languages.Language]func(string){
+				...
+		languages.HCL:        a.detectVulnerabilityHCL,
+	}
+}
 ```
 
 
@@ -162,20 +162,20 @@ Se sim, apenas adicione a chamada do novo formatter na função já existente **
 
 **Veja como era antes de você adicionar:** 
 
-```
- func (a *Analyser) detectVulnerabilityJavascript(projectSubPath string) {
-	 a.monitor.AddProcess(1)
-	 go yarnaudit.NewFormatter(a.formatterService).StartJavascriptYarnAudit(projectSubPath)
- }
+```go
+func (a *Analyser) detectVulnerabilityJavascript(projectSubPath string) {
+	a.monitor.AddProcess(1)
+	go yarnaudit.NewFormatter(a.formatterService).StartJavascriptYarnAudit(projectSubPath)
+}
 ```
 **Veja depois que você adicionou:**
 
-```
- func (a *Analyser) detectVulnerabilityJavascript(projectSubPath string) {
-	 a.monitor.AddProcess(2)
-	 go yarnaudit.NewFormatter(a.formatterService).StartJavascriptYarnAudit(projectSubPath)
-	 go npmaudit.NewFormatter(a.formatterService).StartJavascriptNpmAudit(projectSubPath)
- }
+```go
+func (a *Analyser) detectVulnerabilityJavascript(projectSubPath string) {
+	a.monitor.AddProcess(2)
+	go yarnaudit.NewFormatter(a.formatterService).StartJavascriptYarnAudit(projectSubPath)
+	go npmaudit.NewFormatter(a.formatterService).StartJavascriptNpmAudit(projectSubPath)
+}
 ```
 
 {{% alert color="warning" %}}

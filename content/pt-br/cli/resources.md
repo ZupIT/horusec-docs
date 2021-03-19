@@ -362,7 +362,7 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left">authorization</td>
             <td style="text-align:left">a</td>
             <td style="text-align:left">00000000-0000-0000-0000-000000000000</td>
-            <td style="text-align:left">Para executar a análise, você precisa do token de autorização. Este token você pode obter gerando um novo token dentro do seu repositório horusec. Ver mais <a href="https://github.com/ZupIT/horusec/tree/master/horusec-cli#authorization">AQUI</a></td>
+            <td style="text-align:left">Para executar a análise, você precisa do token de autorização. Este token você pode obter gerando um novo token dentro do seu repositório horusec. Ver mais <a href="/docs/pt-br/tutorials/how-to-create-an-authorization-token/">AQUI</a></td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_RETURN_ERROR_IF_FOUND_VULNERABILITY</td>

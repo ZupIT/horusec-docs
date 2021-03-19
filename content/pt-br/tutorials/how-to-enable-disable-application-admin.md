@@ -10,7 +10,7 @@ A funcionalidade administrador da aplicação permite que o Administrador do Hor
 
 ### **Valor false**
 
-O microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) inicia com:
+O microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth) inicia com:
 
 -  A variável de ambiente **`HORUSEC_ENABLE_APPLICATION_ADMIN`** e o valor **false**. 
 
@@ -18,7 +18,7 @@ A partir disso, o Horusec possibilita um fluxo normal em que você pode criar su
 
 ### **Valor true**
 
-Quando o valor é **true**, o [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth#horusec-auth) cria um usuário que está configurado na variável de ambiente:
+Quando o valor é **true**, o [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth) cria um usuário que está configurado na variável de ambiente:
 
 - **`HORUSEC_APPLICATION_ADMIN_DATA`** e o valor:
 
