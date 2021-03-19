@@ -82,9 +82,7 @@ Estas são as possíveis váriaveis de ambiente que você pode configurar neste 
 | HORUSEC_BROKER_USERNAME          | guest                                                            | Obtém o nome de usuário para se conectar no broker RABBITMQ. |
 | HORUSEC_BROKER_PASSWORD          | guest                                                            | Obtém a senha para se conectar no broker RABBITMQ. |
 | HORUSEC_AUTH_TYPE                | horusec                                                          | Obtém o tipo de autenticação, que pode ser entre `horusec`, `ldap`, `keycloak`. |
-| HORUSEC_JWT_SECRET_KEY           | horusec-secret                                                   | Esta variável de ambiente obtém a chave secreta JWT.
-Essa chave será escolhida apenas uma vez e serve de base para criptografia, por isso precisa
-ser um texto forte para garantir a segurança da sua aplicação. (obrigatório apenas se estiver utilizando `HORUSEC_JWT_SECRET_KEY`).| 
+| HORUSEC_JWT_SECRET_KEY           | horusec-secret                                                   | Esta variável de ambiente obtém a chave secreta JWT. Essa chave será escolhida apenas uma vez e serve de base para criptografia, por isso precisa ser um texto forte para garantir a segurança da sua aplicação. (obrigatório apenas se estiver utilizando `HORUSEC_JWT_SECRET_KEY`). |
 | HORUSEC_KEYCLOAK_BASE_PATH       |                                                                  | Obtém o caminho da base do KeyCloak (obrigatório apenas se estiver utilizando `HORUSEC_AUTH_TYPE=keycloak`).|
 | HORUSEC_KEYCLOAK_CLIENT_ID       |                                                                  | Obtém o `client_id` do KeyCloak (obrigatório apenas se estiver utilizando `HORUSEC_AUTH_TYPE=keycloak`).|
 | HORUSEC_KEYCLOAK_CLIENT_SECRET   |                                                                  | Obtém o `client_secret` do KeyCloak (obrigatório apenas se estiver utilizando `HORUSEC_AUTH_TYPE=keycloak`).|

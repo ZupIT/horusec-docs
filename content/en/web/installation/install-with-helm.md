@@ -37,9 +37,9 @@ The commands in this guide use Helm Charts already included in Horusec's release
 2. [**Analytic**](https://github.com/ZupIT/horusec/tree/master/horusec-analytic/deployments/helm/horusec-analytic)
 3. [**Api**](https://github.com/ZupIT/horusec/tree/master/horusec-api/deployments/helm/horusec-api)
 4. [**Auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth/deployments/helm/horusec-auth)
-5. [**Horusec-manager**](https://github.com/ZupIT/horusec/tree/master/horusec-manager/deployments/helm/horusec-manager)
-6. [**Horusec-messages**](https://github.com/ZupIT/horusec/tree/master/horusec-messages/deployments/helm/horusec-messages)
-7. [**Horusec-webhook**](https://github.com/ZupIT/horusec/tree/master/horusec-webhook/deployments/helm/horusec-webhook)
+5. [**Manager**](https://github.com/ZupIT/horusec/tree/master/horusec-manager/deployments/helm/horusec-manager)
+6. [**Messages**](https://github.com/ZupIT/horusec/tree/master/horusec-messages/deployments/helm/horusec-messages)
+7. [**Webhook**](https://github.com/ZupIT/horusec/tree/master/horusec-webhook/deployments/helm/horusec-webhook)
 
 ## **Pre-configuration**
 
