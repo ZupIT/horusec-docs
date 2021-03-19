@@ -88,7 +88,7 @@ Horusec's images are available on [dockerhub](https://hub.docker.com/u/horuszup)
 
 
 2. Horusec always updates the images and performs corrections to know which image to use in specific versions. Check out [**release-notes**](https://github.com/ZupIT/horusec/releases) to see the correct versions for each service
- 
+
 
 3. There is [**a new access policy to download public dockerhub images**](https://docs.docker.com/docker-hub/download-rate-limit/). It is recommended to upload images in the register you want, to avoid any problems. 
 {{% /alert %}}
