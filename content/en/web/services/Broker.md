@@ -5,7 +5,7 @@ description: In this section, you will find information about Broker service.
 ---
 
 ## **What is it?**
-Horusec-broker is a microservice that uses [RabbitMQ](https://www.rabbitmq.com/) to manage asynchronous packages in your application. 
+Horusec-broker is a microservice that uses [**RabbitMQ**](https://www.rabbitmq.com/) to manage asynchronous packages in your application. 
 
 Some example: 
 

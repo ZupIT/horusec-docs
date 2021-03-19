@@ -1,8 +1,8 @@
 ---
 title: Account Management
-weight: 11
+weight: 38
 description: >-
-  On this section you will find information about account and webhook
+  In this section you will find information about account and webhook
   management.
 ---
 

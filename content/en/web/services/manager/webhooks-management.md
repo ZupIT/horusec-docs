@@ -1,7 +1,7 @@
 ---
 title: Webhooks management
 weight: 40
-description: 'On this section, you will find information about webhooks management.'
+description: In this section, you will find information about webhooks management.
 ---
 
 ---
