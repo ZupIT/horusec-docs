@@ -8,7 +8,7 @@ description: >-
 
 ---
 
-![](/docs/ptbr/overview/0-horusec-logo.png)
+<img style="width:100%" src="/docs/ptbr/overview/0-horusec-logo.png">
 
 É uma ferramenta open source que orquestra outras ferramentas de segurança e identifica falhas de segurança ou vulnerabilidades em projetos, centralizando todos os resultados em um banco de dados para análise e geração de métricas.
 
@@ -27,7 +27,7 @@ A IDE em inglês Integrated Development Environment ou Ambiente de Desenvolvimen
 
 ## **Como funciona o Horusec?**
 
-![](/docs/ptbr/overview/1-arquitecture.png)
+<img style="width:100%" src="/docs/ptbr/overview/1-arquitecture.png">
 
 Quando o horusec inícia uma análise ele executa os passos abaixo:
 
@@ -38,22 +38,18 @@ Quando o horusec inícia uma análise ele executa os passos abaixo:
 - **3-** Quando a análise terminar será realizada 3 ações:
 
   - **3.1-** Mostrar no output da análise seja na sua interface ou em arquivo;
-
-  ![](/docs/ptbr/overview/2-output.png)
+    <img style="width:100%" src="/docs/ptbr/overview/2-output.png">
 
   - **3.2-** Se caso você estiver utilizando em sua esteira o processo de CI/CD e desejar que o pipeline aborte as operações será enviado um retorno do tipo `exit 1` para não proceder para o próximo passo até que se corrija todas as vulnerabilidades, caso não encontre nenhum será retornado um status do tipo `exit 0` indo para o proximo passo
-
-  ![](/docs/ptbr/overview/3-pipeline-failed.gif)
-  ![](/docs/ptbr/overview/4-pipeline-success.gif)
+    ![](/docs/ptbr/overview/3-pipeline-failed.gif)
+    ![](/docs/ptbr/overview/4-pipeline-success.gif)
 
   - **3.3-** Enviar para o Horusec-Manager(plataforma web) onde você poderá ver as vulnerabilidades encontradas de forma análitica e poder fazer a gestão do seu projeto;
-
-  ![](/docs/ptbr/overview/5-dashboard-organization.gif)
+    <img style="width:100%" src="/docs/ptbr/overview/5-dashboard-organization.gif">
 
 
 **Veja abaixo um exemplo completo do Horusec:**
-
-<p align="center" margin="20 0"><img src="/docs/ptbr/overview/6-full-usage.gif" alt="usage_horusec" width="99%"/></p>
+<img src="/docs/ptbr/overview/6-full-usage.gif" alt="usage_horusec" width="100%"/>
 
 ## **Por que usar o Horusec?**
 
