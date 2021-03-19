@@ -13,7 +13,7 @@ A CLI (sigla para interface de linha de comando) é o programa responsável por 
 No contexto da ferramenta, o Horusec-CLI é a parte de código que permite você rodar os comandos de análise de segurança e de identificação e/ou classificação de vulnerabilidades.
 
 ## **Como fazer uma análise?**
-Para realizar uma análise em seu projeto, [instale o Horusec](/docs/pt-br/cli/installing) no seu computador e, em seguida, rode o comando abaixo no local onde está seu projeto:
+Para realizar uma análise em seu projeto, [**instale o Horusec**](/docs/pt-br/cli/installing) no seu computador e, em seguida, rode o comando abaixo no local onde está seu projeto:
 
 ```bash
 horusec start
@@ -46,5 +46,5 @@ horusec start -p ./latest-project
 Outra possibilidade é colocar o diretório completo onde está o seu projeto. Nesse caso, o comando ficaria assim: 
 
 ```bash
-horusec start -p ./home/user-name/folder-name/file-name
+horusec start -p /home/user-name/folder-name/file-name
 ```

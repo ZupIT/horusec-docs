@@ -7,10 +7,13 @@ description: >-
   In this section, you will find frequently asked questions about Horusec.
 ---
 
-### **What languages does Horusec support?**
-You can check the documentation [all available languages](/docs/cli/analysis-tools/overview/)
+### **1. What languages does Horusec support?** 
+You can check the documentation [**all available languages*](/docs/cli/analysis-tools/overview/)
 
-### **What is Horusec's 2021 roadmap?**
+### **2. What is Horusec's 2021 roadmap?**
+
+Check out the roadmap's phase: 
+
 - Phase 0: Support for all horusec-cli features into horusec-vscode (Q1)
 - Phase 1: Support for the Theia(VsCode Web) (Q1)
 - Phase 2: Support to Flutter, Dart, Bash, Shell, Elixir, Cloujure e Scala in analysis (Q1)
@@ -19,23 +22,43 @@ You can check the documentation [all available languages](/docs/cli/analysis-too
 - Phase 5: SAST with MVP Semantic Analysis (Q4)
 - Phase 6: DAST with MVP symbolic analysis (Q4)
 
-### **Is it possible to add Horusec as IDE plugin?**
-Yes, we already have a VSCode one.
+### **3. Is it possible to add Horusec as an IDE plugin?**
+Yes, VSCode is already available.
 
-### **O Horusec roda localmente, sem nenhuma dependecia de servidor ou algo assim?**
-Sim, usando nossa CLI
+### **4. Does Horusec run locally without any dependency?**
+Yes, if you use the CLI. 
 
-### **Quando rodo o horusec localmente via CLI como vejo as vulnerabilidades no manager?**
-Sim, Basta seguir nossa documentação para [instalar a aplicação web do horusec](/docs/web/installing/)
+### **5. When I locally run Horusec via CLI, how can I see the Manager's vulnerabilities?**
 
-### **O horusec depende de algo para rodar localmente via CLI ?**
-Não, é opcional o uso do docker e git para aprimorar a análise
+You have to access Manager and you need to:  
 
-### **Qual a diferença entre o Horusec e qualquer ferramenta de análise de qualidade de código?**
-O Horusec é uma ferramenta de análise de segurança buscando possíveis vazamentos e vulnerabilidades expostas em sua aplicação, enquanto uma ferramenta de qualidade de código garante que seu código tenha uma boa qualidade e um bom desempenho, mas não garante a segurança?
+- Create an account and authenticate; 
+- View and analyze the vulnerabilities found by the CLI; 
+- Manage the platform's access. 
 
-### **É possível subir toda a estrutura do horusec na minha infra pessoal?**
-Sim, basta seguir nosso tutorial "instalando o horusec em minha infra"
+When an analysis is sent to Horusec to store by the Manager, you have access to a detailed dashboard with an organizational view or a repository. Check out more about it here. 
 
-### **Como envio exporto o output do horusec em arquivo?**
-Basta seguir nosso exemplo exportando output para o tipo [json](/docs/cli/resources/#example-4-using-to-get-the-json-exit) ou tipo [sonarqube](/docs/cli/resources/#example-5-using-to-get-sonarqube-exit)
+### **6. Horusec depends on something to locally run via CLI?**
+
+No, the docker and git use is optional, suggested for a better analysis. 
+
+### **7. What is the difference between Horusec and any other quality code analysis tool?**
+Horusec is a security analysis tool that searches for possible leakages and exposed vulnerabilities in your application. Meanwhile, the quality code tool is for your code to have good quality and a great performance, but it does not guarantee it is safe from threats. 
+
+### **8. Is it possible to upload all Horusec's structure in my personal one?** 
+
+Yes, check out the  [**"How to run the web application in another host?"**](/docs/pt-br/tutorials/how-to-use-horusec-without-docker/) tutorial.
+ 
+### **9. How can I access Manager?**  
+
+Horusec does not provide an open infrastructure for you to use in your web application. To access the Manager, you have to upload in your personal infra using Docker Compose or Helm, via 8043 port or the route you have created. 
+- Example: **http://SEU-DOMINIO:8043**.
+ 
+### **10. How can I export Horusec's output into a file?** 
+
+To do that, follow the examples ''exporting output' for JSON or Sonarqube types. 
+
+### **11. How can I import Horusec's output inside SonarQube?**  
+
+Follow the example **"How to export a sonarqube output file"** in the [**tutorial here**](https://docs.sonarqube.org/latest/analysis/generic-issue/). 
+

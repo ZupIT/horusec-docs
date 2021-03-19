@@ -8,15 +8,15 @@ description: Nesta seção, você encontra o tutorial para rodar a aplicação w
 
 No Horusec você consegue realizar um teste rápido para entender e como a aplicação trabalha e como adequá-la ao seu ambiente. É possível fazer isso com a marquina virtual ou mudar o host. Para fazer isso, siga os passos abaixo: 
 
-#### **Passo 1:** Instale a aplicação web no seu ambiente
+#### **Passo 1: Instale a aplicação web no seu ambiente**
 Se você ainda não instalou, cheque todo o processo [**nessa seção**](/docs/pt-br/web/installing). 
 
-#### **Passo 2:** Checar os serviços não iniciados
+#### **Passo 2: Checar os serviços não iniciados**
 Alguns serviços não são iniciados por padrão, como por exemplo [Horusec-Messages](/docs/pt-br/web/services/messages) e o [Horusec-Webhook](/docs/pt-br/web/services/webhook). 
 
 Após instalar você pode perceber que alguns serviços por padrão **não são inciados**. Isto acontece porque esses serviços, como o de mensageria, já vem configurado para estar desabilitado, caso você necessite realizar o uso destes serviços basta [visualizar mais neste tutorial](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service).
 
-#### **Passo 3:** Configure o Horusec-Manager
+#### **Passo 3: Configure o Horusec-Manager**
 
 {{% alert color="info" %}}
 Se, por exemplo, você tentar acessar o [Horusec-Manager](/docs/pt-br/web/services/manager) do seu navegador e não aparecer nenhum resultado. É porque quando você sobe a aplicação e tenta acessar por meio de um host desconhecido o Horusec por padrão tenta realizar a comunicação por meio do IP `127.0.0.1`, com isso a comunicação entre os serviços sempre será localmente.
