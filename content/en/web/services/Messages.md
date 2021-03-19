@@ -8,7 +8,7 @@ description: In this section, you will find information about Horusec-Messages s
 
  Horusec-Messages is a microservice responsible for sending transactional e-mails when `horusec-broker` is enabled. 
 
-[Check out here more information about transactional emails.](https:/postmarkapp.com/blog/what-is-transactional-email-and-how-is-it-used)
+Check out more information [**about transactional emails.**](https:/postmarkapp.com/blog/what-is-transactional-email-and-how-is-it-used)
 
 ![](/docs/ptbr/web/services/messages/0-arquitecture.jpg)
 

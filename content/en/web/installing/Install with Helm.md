@@ -52,7 +52,7 @@ Check out some recommendations before the configuration:
 
 Install [**PostgreSQL**](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) and [**RabbitMQ**](https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq) using Bitnami's Helm Charts, for a quick start in non-productive environments.
 
-If you already have available connections with `PostgreSQL` and `RabbitMQ`, just follow your [**credentials configuration**](/docs/web/installing/install-with-helm/#sensitive-data-configuration) and inform the addresses of these connections in the variables during [**Horusec's services installation**](#instalação-dos-serviços-da-horusec).
+If you already have available connections with `PostgreSQL` and `RabbitMQ`, just follow your [**credentials configuration**](/docs/web/installing/install-with-helm/#sensitive-data-configuration) and inform the addresses of these connections in the variables during [**Horusec's services installation**](/docs/web/installing/install-with-helm/#horusecs-services-installation).
 {{% /alert %}}
 
 Follow the steps below to configure Horusec Helm Charts: 
@@ -152,7 +152,7 @@ helm install manager horusec-manager/deployments/helm/horusec-manager -n horusec
 
 {{% alert color="info" %}}
 Only required if you are using the
-  [**messaging service**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service)
+  [**messaging service**](/docs/tutorials/how-to-enable-disable-messaging-service/)
   {{% /alert %}}
 
 ```bash
@@ -163,7 +163,7 @@ helm install messages horusec-messages/deployments/helm/horusec-messages -n horu
 
 {{% alert color="info" %}}
 Only required if you are using the
-  [**messaging service**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service)
+  [**messaging service**](/docs/tutorials/how-to-enable-disable-messaging-service/)
 {{% /alert %}}
 
 ```bash

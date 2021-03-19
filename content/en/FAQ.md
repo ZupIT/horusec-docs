@@ -47,18 +47,18 @@ Horusec is a security analysis tool that searches for possible leakages and expo
 
 ### **8. Is it possible to upload all Horusec's structure in my personal one?** 
 
-Yes, check out the  [**"How to run the web application in another host?"**](/docs/pt-br/tutorials/how-to-use-horusec-without-docker/) tutorial.
+Yes, check out the  [**"How to run the web application in another host?"**](/docs/tutorials/how-to-use-horusec-without-docker/) tutorial.
  
 ### **9. How can I access Manager?**  
 
 Horusec does not provide an open infrastructure for you to use in your web application. To access the Manager, you have to upload in your personal infra using Docker Compose or Helm, via 8043 port or the route you have created. 
 - Example: **http://SEU-DOMINIO:8043**.
  
-### **10. How can I export Horusec's output into a file?** 
+### ### **10. How can I export Horusec's output into a file** 
 
-To do that, follow the examples ''exporting output' for JSON or Sonarqube types. 
+To do that, follow the **Example 5: Using to get sonarqube exit** in the [**Resources section**](/docs/cli/resources/#example-5-using-to-get-sonarqube-exit).
+ 
 
 ### **11. How can I import Horusec's output inside SonarQube?**  
 
-Follow the example **"How to export a sonarqube output file"** in the [**tutorial here**](https://docs.sonarqube.org/latest/analysis/generic-issue/). 
-
+Check out question 10 [**"How can I export Horusec's output into a file?"**](//docs/faq/#10-how-can-i-export-horusecs-output-into-a-file) and after that, import the generated file in you Sonarqube interface using [**this tutorial**](https://docs.sonarqube.org/latest/analysis/generic-issue/).

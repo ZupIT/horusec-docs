@@ -1,7 +1,7 @@
 ---
 title: Repository management
 weight: 34
-description: 'On this section, you will find information about repository management.'
+description: In this section, you will find information about repository management.
 ---
 
 ---
@@ -23,9 +23,11 @@ The token in the repository is unique and it can only be created by a manager in
 
 For example, if you add this token in your pipeline, Horusec will send an analysis and store it, so you can have an analytical view of the vulnerabilities of your repository.
 
-{{%/* alert color="danger" %}}
-Remember. when creating an access token you only see it once.
-{{% /alert */%}}
+
+{{% alert color="warning" %}}
+Remember when you create an access token you only see it once.
+{{% /alert %}}
+
 
 ![](/docs/en/references/manager/repository-management/2-token-repository.gif)
 

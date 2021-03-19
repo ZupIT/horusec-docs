@@ -1,12 +1,12 @@
 ---
 title: Overview
 weight: 30
-description: 'On this section you will find information about Horusec-Manager.'
+description: In this section you will find information about Horusec-Manager.
 ---
 
 ---
 
-## What is it? 
+## What is it?  
 
 Manager is Horusec's  graphical interface, which is possible to: 
 

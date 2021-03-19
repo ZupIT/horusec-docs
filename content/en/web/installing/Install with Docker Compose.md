@@ -62,12 +62,12 @@ password: Devpass0*
 ```
 
 {{% alert color="info" %}}
-All backend services are exposed using **network_mode: "host"**, check if you have [enabled Docker's configurations](https://docs.docker.com/network/host/) to use this functions.
+All backend services are exposed using **network_mode: "host"**, check if you have [**enabled Docker's configurations**](https://docs.docker.com/network/host/) to use this functions.
 {{% /alert %}}
 
 
 ## **Images**
-Horusec's images are available on [dockerhub](https://hub.docker.com/u/horuszup). You can check and use them. 
+Horusec's images are available on [**dockerhub**](https://hub.docker.com/u/horuszup). You can check and use them. 
 
 * [**horuszup/horusec-manager**](https://hub.docker.com/r/horuszup/horusec-manager)
 * [**horuszup/horusec-auth**](https://hub.docker.com/r/horuszup/horusec-auth)
