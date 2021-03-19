@@ -46,5 +46,5 @@ horusec start -p ./latest-project
 Outra possibilidade é colocar o diretório completo onde está o seu projeto. Nesse caso, o comando ficaria assim: 
 
 ```bash
-horusec start -p ./home/user-name/folder-name/file-name
+horusec start -p /home/user-name/folder-name/file-name
 ```
