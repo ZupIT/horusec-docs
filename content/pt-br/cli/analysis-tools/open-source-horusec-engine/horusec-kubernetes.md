@@ -8,7 +8,7 @@ description: Nesta seção, você vai encontrar mais informações sobre vulnera
 
 ## **O que é?**
 
-O  [**Horusec-Kubernetes**](https://github.com/ZupIT/horusec/tree/master/horusec-kubernetes) é uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos que utilizam arquivos _.yaml_ de kubernetes.
+O  [**Horusec-Kubernetes**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-kubernetes/) é uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos que utilizam arquivos _.yaml_ de kubernetes.
 
 ## **Exemplos de vulnerabilidades**
 

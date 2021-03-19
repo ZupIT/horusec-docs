@@ -8,7 +8,7 @@ description: >-
 
 ## **What is it?**
 
-The [**Horusec-Kotlin**](https://github.com/ZupIT/horusec/tree/master/horusec-kotlin#horusec-kotlin-cli) and [**Horusec-Java**](https://github.com/ZupIT/horusec/tree/master/horusec-java#horusec-java-cli) in addition to applying specific rules for their languages, it is also possible to identify some generic rules for mobile applications that use Android or IOS in these respective languages.
+The [**Horusec-Kotlin**](/docs/cli/analysis-tools/open-source-horusec-engine/horusec-kotlin/#horusec-kotlin-cli) and [**Horusec-Java**](/docs/cli/analysis-tools/open-source-horusec-engine/horusec-java/#horusec-java-cli) in addition to applying specific rules for their languages, it is also possible to identify some generic rules for mobile applications that use Android or IOS in these respective languages.
 
 ## **Examples of vulnerabilities**
 

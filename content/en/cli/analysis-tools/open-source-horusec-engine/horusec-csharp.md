@@ -8,7 +8,7 @@ description: Here, you will find informations about vulnerabilities that Horusec
 
 ## **What is it?**
 
-The [**Horusec-Csharp**](https://github.com/ZupIT/horusec/tree/master/horusec-csharp) is a SAST tool created by the Horusec team in order to search vulnerabilities on C\# projects. 
+The [**Horusec-Csharp**](/docs/cli/analysis-tools/open-source-horusec-engine/horusec-csharp) is a SAST tool created by the Horusec team in order to search vulnerabilities on C\# projects. 
 
 ## **Rules**
 

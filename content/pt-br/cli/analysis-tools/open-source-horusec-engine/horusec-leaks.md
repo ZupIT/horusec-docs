@@ -8,7 +8,8 @@ description: Nesta seção, você vai encontrar mais informações sobre vulnera
 
 ## **O que é?**
 
-O  [**Horusec-Leaks**](https://github.com/ZupIT/horusec/tree/master/horusec-leaks#horusec-leaks-cli) é  uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos a partir de pesquisas por segredos codificados, como senhas, chaves de API, tokens, dentre outras possíveis vulnerabilidades.  
+O  [**Horusec-Leaks**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-l
+eaks/) é  uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos a partir de pesquisas por segredos codificados, como senhas, chaves de API, tokens, dentre outras possíveis vulnerabilidades.  
 
 ## **Exemplos de vulnerabilidades** 
 

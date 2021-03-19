@@ -23,22 +23,22 @@ These languages and tools are:
   * [**Npm Audit**](https://docs.npmjs.com/cli/audit)
   * [**Yarn Audit**](https://yarnpkg.com/lang/en/docs/cli/audit/)
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
-  * [**HorusecNodeJS**](https://github.com/ZupIT/horusec/tree/master/horusec-nodejs)
+  * [**HorusecNodeJS**](/docs/cli/analysis-tools/open-source-horusec-engine/horusec-nodejs)
   * [**EsLint**](https://github.com/eslint/eslint)
 * **GoLang**
   * [**Gosec**](https://github.com/securego/gosec)
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
 * **C\#**
   * [**SecuriyCodeScan**](https://security-code-scan.github.io)
-  * [**HorusecCSharp**](https://github.com/ZupIT/horusec/tree/master/horusec-csharp)
+  * [**HorusecCSharp**](/docs/cli/analysis-tools/open-source-horusec-engine/horusec-csharp)
   * [**Flawfinder**](https://github.com/david-a-wheeler/flawfinder)
 * **Java**
-  * [**HorusecJava**](https://github.com/ZupIT/horusec/tree/master/horusec-java)
+  * [**HorusecJava**](/docs/cli/analysis-tools/open-source-horusec-engine/horusec-java/)
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
 * **Kotlin**
-  * [**HorusecKotlin**](https://github.com/ZupIT/horusec/tree/master/horusec-kotlin)
+  * [**HorusecKotlin**](/docs/cli/analysis-tools/open-source-horusec-engine/horusec-kotlin/)
 * **Kubernetes**
-  * [**HorusecKubernetes**](https://github.com/ZupIT/horusec/tree/master/horusec-kubernetes)
+  * [**HorusecKubernetes**](/docs/cli/analysis-tools/open-source-horusec-engine/horusec-kubernetes/)
 * **Terraform**
   * [**Tfsec**](https://github.com/liamg/tfsec)
 * **Leaks**

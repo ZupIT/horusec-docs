@@ -8,7 +8,7 @@ description: Nesta seção, você vai encontrar mais informações sobre vulnera
 
 ## **O que é?**
 
-O  [**Horusec-Dart**](https://github.com/ZupIT/horusec/tree/master/horusec-dart) é uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos Dart.
+O  [**Horusec-Dart**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-dart/) é uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos Dart.
 
 ## Regras
 
