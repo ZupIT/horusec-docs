@@ -6,7 +6,7 @@ description: Nesta seção, você encontrar mais informações sobre o serviço 
 
 ## **O que é?** 
 
-O Horusec-Broker é um microsserviço que utiliza a  [RabbitMQ](https://www.rabbitmq.com/) para gerenciar pacotes assíncronos dentro da sua aplicação. 
+O Horusec-Broker é um microsserviço que utiliza a  [**RabbitMQ**](https://www.rabbitmq.com/) para gerenciar pacotes assíncronos dentro da sua aplicação. 
 
 Alguns exemplos:
 

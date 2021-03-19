@@ -616,7 +616,7 @@ In this example, we used:
 horusec start -p="/home/user/project" -a="REPOSITORY_TOKEN" -i="**/node_modules/**, **/vendor/**, **/*_test.go"
 ```
 
-### Example 4: Using To get the JSON exit 
+### Example 4: To get the JSON exit 
 
 In this example, we are using:
 

@@ -152,7 +152,7 @@ helm install manager horusec-manager/deployments/helm/horusec-manager -n horusec
 
 {{% alert color="info" %}}
 Only required if you are using the
-  [**messaging service**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service)
+  [**messaging service**](/docs/tutorials/how-to-enable-disable-messaging-service/)
   {{% /alert %}}
 
 ```bash
@@ -163,7 +163,7 @@ helm install messages horusec-messages/deployments/helm/horusec-messages -n horu
 
 {{% alert color="info" %}}
 Only required if you are using the
-  [**messaging service**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service)
+  [**messaging service**](/docs/tutorials/how-to-enable-disable-messaging-service/)
 {{% /alert %}}
 
 ```bash

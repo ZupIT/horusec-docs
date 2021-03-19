@@ -153,7 +153,7 @@ helm install manager horusec-manager/deployments/helm/horusec-manager -n horusec
 
  {{% alert color="info" %}}
  Obrigatório apenas se estiver utilizando
-  o [serviço de mensageria](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service)
+  o [**serviço de mensageria**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service)
 {{% /alert %}}
 
 ```bash
