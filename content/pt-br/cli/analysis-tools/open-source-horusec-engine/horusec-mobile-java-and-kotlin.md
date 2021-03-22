@@ -12,9 +12,9 @@ O  [**Horusec-Kotlin**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engin
 
 ## **Exemplos de vulnerabilidades** 
 
-{{%/* alert color="info" %}}
+{{% alert color="info" %}}
 A seguir, você encontra todos os exemplos de vulnerabilidades que o Horusec-Kotlin e o Horusec-Java identificam. O conteúdo está em inglês porque é assim que ele aparece no sistema. 
-{{% /alert */%}}
+{{% /alert %}}
 
 ### Horusec-Kotlin \(Mobile\) \| Horusec-Java \(Mobile\)
 
