@@ -54,7 +54,7 @@ Yes, check out the  [**"How to run the web application in another host?"**](/doc
 Horusec does not provide an open infrastructure for you to use in your web application. To access the Manager, you have to upload in your personal infra using Docker Compose or Helm, via 8043 port or the route you have created. 
 - Example: **http://SEU-DOMINIO:8043**.
  
-### ### **10. How can I export Horusec's output into a file** 
+### **10. How can I export Horusec's output into a file**
 
 To do that, follow the **Example 5: Using to get sonarqube exit** in the [**Resources section**](/docs/cli/resources/#example-5-using-to-get-sonarqube-exit).
  
