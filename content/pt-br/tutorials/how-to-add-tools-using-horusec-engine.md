@@ -1,75 +1,30 @@
 ---
-title: Como adicionar ferramentas usando Horusec-engine?
-weight: 25
-description: Você vai encontrar aqui as informações necessárias para adicionar ferramentas pelo Horusec-engine.
+title: Como adicionar uma nova ferramenta usando Horusec-engine?
+weight: 3
+description: Nesta seção, você encontra o tutorial para adicionar ferramentas pelo Horusec-engine.
 ---
 
 ---
 
-O Horusec também permite que você adicione ferramentas usando um próprio motor \([**Horusec-engine**](https://github.com/ZupIT/horusec-engine)\) à sua stack. Para incluir uma nova ferramentas de análises ao horusec-cli, siga esses passos:
+O Horusec permite que você adicione ferramentas à sua stack usando o próprio motor \([**Horusec-engine**](https://github.com/ZupIT/horusec-engine)\). 
 
-### **1. Crie um novo CLI** 
+## **Como fazer?** 
+Para incluir uma nova ferramenta de análise ao horusec-cli, siga os passos abaixo:
 
-Para fazer isso, basta copiar um dos CLIs existentes e renomear seguindo o padrão **horusec-{nome-do-cli}** 
+#### **Passo 1: Crie as regras do motor**
+Você precisa criar regras para que o motor do Horusec funcione. Elas são regexes que detectam a vulnerabilidades.
 
-Exemplos: 
+Os regexes possuem tipos, veja abaixo quais são:
 
-* [**horusec-java**](https://github.com/ZupIT/horusec/blob/master/horusec-java)
-* [**horusec-kotlin**](https://github.com/ZupIT/horusec/blob/master/horusec-kotlin)
-* [**horusec-leaks**](https://github.com/ZupIT/horusec/blob/master/horusec-leakse)
+| Tipo            | Descrição                                                                                                                                                                                                                                                    |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
+| OrMatch         | Essas são regras mais compreensivas, o que pode ter mais de um padrão a ser manifesto, por isso o nome. O motor irá realizar a lógica OU a operação para cada um dos RegExps registrados.                                                               |
+| Regular         | É bem similar ao OrMatch, mas contém múltiplos caminhos para detectar o mesmo padrão.                                                                                                                                                       |  
+| AndMatch        | Essas regras precisam de um arquivo para manifestar múltiplos padrões para serem considerados como algo a ser reportado. No entanto, o motor realiza a operação lógica em cada RegExps registrado, para garantir que todas as condições foram alcançadas.                 |  
 
-### **2. Crie regras** 
 
-É necessário criar as regras que valerão para o novo CLI antes dele ser, de fato, criado. Veja mais neste [**exemplo**](https://github.com/ZupIT/horusec/tree/master/development-kit/pkg/engines).
+Alguns exemplos dessas regras podem ser encontrados no path separado por linguagem e tipo, veja: 
 
-Se for um cliente que estiver usando o motor, você pode simplesmente fazer a importação sem ter a necessidade de uma imagem docker. Você pode encontrar um exemplo seguindo este caminho:
-
-```
- -horusec
- --horusec-cli
- ---internal
- ----services
- -----fomatters
- -----interface.go
- ------csharp
- -------fomatter.go
-```
-
-Depois, você só vai precisar importar as regras e fazer a análise, como no exemplo abaixo:
-
-```go
-type IAnalysis interface {
-    StartAnalysis() error
-}
-
-type Analysis struct {
-    configs      *config.Config
-    serviceRules csharp.Interface // Change the import to get your respective rules
-}
-
-func NewAnalysis(configs *config.Config) IAnalysis {
-return &Analysis{
-        configs:      configs,
-        serviceRules: csharp.NewRules(), // Change the import to get your respective rules
-    }
-}
-
-func (a *Analysis) StartAnalysis() error {
-    textUnit, err := a.serviceRules.GetTextUnitByRulesExt(a.configs.GetProjectPath())
-    if err != nil {
-        return err
-    }
-    
-    return engine.RunOutputInJSON(textUnit, a.getAllRules(), a.configs.GetOutputFilePath())
-}
-
-func (a *Analysis) getAllRules() []engine.Rule {
-    return a.serviceRules.GetAllRules()
-}
-
-```
-
-Você encontra os exemplos da regra neste caminho:
 
 ```
  -horusec
@@ -77,73 +32,105 @@ Você encontra os exemplos da regra neste caminho:
  ---pkg
  ----engines
 ```
+#### **Passo 2: Crie o formatter**
+
+Você precisa chamar o motor passando as regras e formatar para o padrão Horusec. 
+Para isso, é necessário criar o **formatter**, veja como no exemplo abaixo: 
 
 
-### **3. Atualize o CLI com as novas regras** 
-
-Depois de criar as regras, atualize o seu CLI para finalizar a configuração. Veja mais no exemplo a seguir. 
-
-{{% alert color="info" %}}
-
-Para usar este exemplo no seu projeto, substitua o texto entre chaves com as suas definições novas do seu CLI. 
-
-{{% /alert %}}
-
-```text
-// horusec-{name-of-the-cli}//app/main.go
-package main
-
-import (
-	"os"
-
-	"github.com/ZupIT/horusec/development-kit/pkg/cli_standard/"
-	"github.com/ZupIT/horusec/development-kit/pkg/cli_standard//run"
-	"github.com/ZupIT/horusec/development-kit/pkg/cli_standard//version"
-	"github.com/ZupIT/horusec/development-kit/pkg/cli_standard/config"
-	"github.com/ZupIT/horusec/development-kit/pkg/engines/{THE-NAME-OF-THE-YOUR-ENGINE-RULES}/analysis" 
-	"github.com/ZupIT/horusec/development-kit/pkg/utils/logger"
-	"github.com/spf13/cobra"
-)
-
-var root = &cobra.Command{
-	Use:   "horusec-{THE-NAME-OF-YOUR-CLI}",
-	Short: "Horusec-{THE-NAME-OF-YOUR-CLI} CLI",
-	RunE: func( *cobra.Command, args []string) error {
-		logger.LogPrint("Horusec Java Command Line Interface")
-		return .Help()
-	},
-	Example: `horusec-{THE-NAME-OF-YOUR-CLI} run`,
+```go
+type Formatter struct {
+	formatters.IService
+	java.Interface
 }
 
-var configs *config.Config
-
-// nolint
-func init() {
-	configs = config.NewConfig()
-	.InitFlags(configs, root)
-}
-
-func main() {
-	controller := analysis.NewAnalysis(configs)
-	root.AddCommand(run.NewRunCommand(configs, controller).CreateCobra())
-	root.AddCommand(version.NewVersionCommand().CreateCobra())
-
-	if err := root.Execute(); err != nil {
-		os.Exit(1)
-	} else {
-		os.Exit(0)
+func NewFormatter(service formatters.IService) formatters.IFormatter {
+	return &Formatter{
+		service,
+		java.NewRules(),
 	}
+}
+
+func (f *Formatter) StartAnalysis(projectSubPath string) {
+	if f.ToolIsToIgnore(tools.HorusecJava) {
+		logger.LogDebugWithLevel(messages.MsgDebugToolIgnored + tools.HorusecJava.ToString())
+		return
+	}
+
+	f.SetAnalysisError(f.execEngineAndParseResults(projectSubPath), tools.HorusecJava, projectSubPath)
+	f.LogDebugWithReplace(messages.MsgDebugToolFinishAnalysis, tools.HorusecJava)
+	f.SetToolFinishedAnalysis()
+}
+
+func (f *Formatter) execEngineAndParseResults(projectSubPath string) error {
+	f.LogDebugWithReplace(messages.MsgDebugToolStartAnalysis, tools.HorusecJava)
+
+	findings, err := f.execEngineAnalysis(projectSubPath)
+	if err != nil {
+		return err
+	}
+
+	return f.ParseFindingsToVulnerabilities(findings, tools.HorusecJava, languages.Java)
+}
+
+func (f *Formatter) execEngineAnalysis(projectSubPath string) ([]engine.Finding, error) {
+	textUnit, err := f.GetTextUnitByRulesExt(f.GetProjectPathWithWorkdir(projectSubPath))
+	if err != nil {
+		return nil, err
+	}
+
+	allRules := append(f.GetAllRules(), f.GetCustomRulesByTool(tools.HorusecJava)...)
+	return engine.RunMaxUnitsByAnalysis(textUnit, allRules, engineenums.DefaultMaxUnitsPerAnalysis), nil
 }
 ```
 
-### **4. Atualize o dockerfile** 
+O exemplo pode ser encontrado nesses caminhos: 
 
-Ao final das configurações do CLI, você precisa retornar aos arquivos no docker para atualizá-lo com as novas definições. 
+```
+ -horusec
+ --horusec-cli
+ ---internal
+ ----services
+ -----fomatters
+ ------java
+ -------horusecjava
+ --------fomatter.go
+```
 
-Exemplo: 
+{{% alert color="info" %}}
+É necessário trocar o enum de ferramentas e de linguagem, como também importar as regras criadas e passar um argumento da função `RunMaxUnitsByAnalysis`.
+{{% /alert %}}
 
-* [**horusec-java dockerfile**](https://github.com/ZupIT/horusec/blob/master/horusec-java/deployments/Dockerfile)
 
-### **5. Crie um novo formatter** 
 
-Por fim, adicione a nova ferramenta do Horusec-CLI. Para isso, basta seguir o tutorial  a partir da página [**crie um Formatter e um Config**](/docs/pt-br/tutorials/how-to-add-existing-images-to-horusec/create-a-formatter-and-config) até o quinto passo \(atualize validações\).
+#### **Passo 3: Chame o formatter**
+
+Agora, chame o formatter, que é responsável por realizar a análise. 
+
+No caminho a seguir, você encontra o arquivo com o nome de 
+`analyser.go`:
+
+```
+ -horusec
+ --horusec-cli
+ ---internal
+ ----controllers
+ -----analyser
+ ------analyser.go
+```
+
+Crie nesse arquivo a função abaixo: 
+
+```go
+func (a *Analyser) detectVulnerabilityDart(projectSubPath string) {
+	a.monitor.AddProcess(1)
+	go horusecDart.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
+}
+```
+
+Você está adicionando um novo processo ao contador 
+ `a.monitor.AddProcess(1)`, para que o Horusec possa esperar todos os processos terminarem. 
+
+Todos os formatter criados pela função `NewFormatter(a.formatterService).StartAnalysis(projectSubPath)` serão chamados.
+
+Feito isso, agora rode e teste sua análise.

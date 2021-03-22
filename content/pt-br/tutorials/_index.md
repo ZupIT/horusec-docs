@@ -1,6 +1,8 @@
 ---
-title: Tutoriais
-weight: 11
+title: "Tutoriais"
+linkTitle: "Tutoriais"
+weight: 5
+type: list
 description: >-
-  Nesta seção, você vai encontrar tutoriais para utilizar o Horusec.
+  Nesta seção, você vai encontrar alguns tutoriais de como realizar procedimentos adicionais do horusec.
 ---

@@ -59,13 +59,13 @@ id = "UA-00000000-0"
 [languages]
 [languages.en]
 title = "Horusec"
-description = "A Docsy example site"
+description = "Horusec is an open source tool that performs static code analysis to identify security flaws during the development process."
 languageName ="English"
 # Weight used for sorting.
 weight = 1
 [languages.pt-br]
 title = "Horusec"
-description = "Docsy er operativsystem for skyen"
+description = "O Horusec é uma ferramenta open source que realiza análise estática de códigos para identificar falhas de segurança durante o processo de desenvolvimento."
 languageName ="Português"
 contentDir = "content/pt-br"
 time_format_default = "02.01.2006"

@@ -8,146 +8,75 @@ description: >-
 
 ---
 
-## **O que é o Horusec?**
+![](/docs/ptbr/overview/0-horusec-logo.png)
 
-É uma ferramenta open source que orquestra outras ferramentas de segurança e identifica falhas de segurança ou vulnerabilidades em projetos, centralizando todos os resultados em um banco de dados para análise e geração de métricas. 
-
-Atualmente, o Horusec seleciona as linguagens e ferramentas a serem utilizadas no projeto de acordo com a stack disponível.
-
-Essas linguagens e ferramentas são:
-
-* **Python**
-  * [**Bandit**](https://github.com/PyCQA/bandit)
-  * [**Safety**](https://github.com/pyupio/safety)
-  * [**Semgrep**](https://github.com/returntocorp/semgrep)
-* **Ruby**
-  * [**Brakeman**](https://github.com/presidentbeef/brakeman)
-* **Javascript/Typescript**
-  * [**Npm Audit**](https://docs.npmjs.com/cli/audit)
-  * [**Yarn Audit**](https://yarnpkg.com/lang/en/docs/cli/audit/)
-  * [**Semgrep**](https://github.com/returntocorp/semgrep)
-  * [**HorusecNodeJS**](https://github.com/ZupIT/horusec/tree/master/horusec-nodejs)
-  * [**EsLint**](https://github.com/eslint/eslint)
-* **GoLang**
-  * [**Gosec**](https://github.com/securego/gosec)
-  * [**Semgrep**](https://github.com/returntocorp/semgrep)
-* **C\#**
-  * [**SecuriyCodeScan**](https://security-code-scan.github.io)
-  * [**HorusecCSharp**](https://github.com/ZupIT/horusec/tree/master/horusec-csharp)
-* **Java**
-  * [**HorusecJava**](https://github.com/ZupIT/horusec/tree/master/horusec-java)
-  * [**Semgrep**](https://github.com/returntocorp/semgrep)
-* **Kotlin**
-  * [**HorusecKotlin**](https://github.com/ZupIT/horusec/tree/master/horusec-kotlin)
-* **Kubernetes**
-  * [**HorusecKubernetes**](https://github.com/ZupIT/horusec/tree/master/horusec-kubernetes)
-* **Terraform**
-  * [**Tfsec**](https://github.com/liamg/tfsec)
-* **Leaks**
-  * [**HorusecLeaks**](https://github.com/ZupIT/horusec/tree/master/horusec-leaks)
-* **Leaks\(optional search in git history\)**
-  * [**GitLeaks**](https://github.com/zricethezav/gitleaks)
-* **PHP**
-  * [**Semgrep**](https://github.com/returntocorp/semgrep)
-  * [**PHP Code Scan**](https://github.com/FloeDesignTechnologies/phpcs-security-audit)
-* **C\/C++**
-  * [**Semgrep**](https://github.com/returntocorp/semgrep)
-  * [**Flawfinder**](https://github.com/david-a-wheeler/flawfinder)
-* **HTML**
-  * [**Semgrep**](https://github.com/returntocorp/semgrep)
-* **JSON**
-  * [**Semgrep**](https://github.com/returntocorp/semgrep)
-* **Dart**
-  * [**HorusecDart**](https://github.com/ZupIT/horusec/tree/master/horusec-dart)
-* **Shell Script**
-  * [**Shellcheck**](https://github.com/koalaman/shellcheck)
-* **Elixir**
-  * [**Mix Audit**](https://github.com/mirego/mix_audit)
-  * [**Sobelow**](https://github.com/nccgroup/sobelow)
+É uma ferramenta open source que orquestra outras ferramentas de segurança e identifica falhas de segurança ou vulnerabilidades em projetos, centralizando todos os resultados em um banco de dados para análise e geração de métricas.
 
 
-{{% alert color="info" %}}
+Atualmente, o Horusec seleciona as linguagens e ferramentas a serem utilizadas no projeto de acordo com a stack disponível. **[Veja todas as linguagens suportadas e ferramentas disponíveis na plataforma](/docs/pt-br/cli/analysis-tools/overview/)**
 
-Caso você não queira que o Horusec utilize uma determinada linguagem e/ou ferramenta, basta desabilitar essa configuração na CLI.
+## **Onde usar o Horusec ?**
+### Localmente
+O Horusec conta com uma CLI intuitiva e pensada para desenvolvedores onde é possível realizar uma análise localmente da máquina do desenvolvedor.
 
-{{% /alert %}}
+### Esteira de CI/CD
+Nas esteiras de `Continuos Integration` ou `Continuos Deploy` é possível adicionar o Horusec garantindo mais uma camada de segurança em seu projeto, além de previnir que um código malicioso não entre em produção.
 
+### Extensões para IDE
+A IDE em inglês Integrated Development Environment ou Ambiente de Desenvolvimento Integrado é muito comum o uso de extensões e plugins para auxiliar no seu desenvolvimento. Como o horusec vem com a proposta para ajudar nas entregas com velocidade é possível realizar uma análise através da própria extensão.
 
-### **Arquitetura do Horusec**
+## **Como funciona o Horusec?**
 
-![](https://horusec.io/public/docs/ptbr/overview/1-arquitecture.png)
+<img style="width:100%" src="/docs/ptbr/overview/1-arquitecture.png">
 
+Quando o horusec inícia uma análise ele executa os passos abaixo:
 
+- **1-** Ao iníciar uma análise em seu projeto através da Horusec-CLI ela irá identificar quais são as linguagens que tem atualmente no projeto;
 
-## **Como funciona?**
+- **2-** Agora a ferramenta irá iniciar as ferramentas de análise de acordo com a linguagens identificadas buscando possíveis vulnerabilidades;
 
-Existem duas principais tarefas no Horusec: acessar o Dashboard e gerar as análises.
+- **3-** Quando a análise terminar será realizada 3 ações:
 
-### **1. Acesso ao Dashboard**
+  - **3.1-** Mostrar no output da análise seja na sua interface ou em arquivo;
 
-Para acessar, é necessário criar um login e senha. Feito isso, você pode navegar no Dashboard e realizar ações como:
+    <img style="width:100%" src="/docs/ptbr/overview/2-output.png">
 
-* Definir as permissões para os outros usuários;
-* Criar repositórios;
-* Gerar tokens para realizar a análise de um projeto.
+  - **3.2-** Se caso você estiver utilizando em sua esteira o processo de CI/CD e desejar que o pipeline aborte as operações será enviado um retorno do tipo `exit 1` para não proceder para o próximo passo até que se corrija todas as vulnerabilidades, caso não encontre nenhum será retornado um status do tipo `exit 0` indo para o proximo passo
 
-### **2. Processo de Análises** 
+    ![](/docs/ptbr/overview/3-pipeline-failed.gif)
+    ![](/docs/ptbr/overview/4-pipeline-success.gif)
 
-Para realizar a análise, você deve utilizar o CLI \(Command Line Interface\). Caso queira conferir o resultado, você também pode acessar uma interface web, que garante uma visão mais analítica e detalhada.
+  - **3.3-** Enviar para o Horusec-Manager(plataforma web) onde você poderá ver as vulnerabilidades encontradas de forma análitica e poder fazer a gestão do seu projeto;
 
-Se existir alguma falha de segurança no código, o Horusec aponta o arquivo, o nível de gravidade e, em seguida, informa a melhor maneira de corrigir. Veja no exemplo abaixo:
-
-### **Visão CLI** 
-
-![](https://horusec.io/public/docs/ptbr/overview/2-output.png)
-
-### **Visão interface Web** 
-
-![](https://horusec.io/public/docs/ptbr/overview/3-graph-language.png)
+    <img style="width:100%" src="/docs/ptbr/overview/5-dashboard-organization.gif">
 
 
+**Veja abaixo um exemplo completo do Horusec:**
 
-![](https://horusec.io/public/docs/ptbr/overview/4-graph-repository.png)
-
-Exemplos de vulnerabilidades: 
-
-```text
-Language: Leaks
-Severity: HIGH
-Line: 1
-Column: 27
-SecurityTool: HorusecLeaks
-Confidence: MEDIUM
-File: deployments/certs/server-cert.pem
-Code: -----BEGIN CERTIFICATE-----
-Details: Asymmetric Private Key
-Found SSH and/or x.509 Cerficates among the files of your project, make sure you want this kind of information inside your Git repo, since it can be missused by someone with access to any kind of copy.  For more information checkout the CWE-312 (https://cwe.mitre.org/data/definitions/312.html) advisory.
-Type: Vulnerability
-ReferenceHash: 178bf5090b749f5eb7b081bccb0112eadac3d9ed3229d813e727ede62a3c6f15
-```
+<img src="/docs/ptbr/overview/6-full-usage.gif" alt="usage_horusec" width="100%"/>
 
 ## **Por que usar o Horusec?**
 
-* **Promove a cultura do desenvolvimento seguro aplicando a lógica de “security by design”** 
+* **Promove a cultura do desenvolvimento seguro aplicando a lógica de “security by design”**
 
 Ele traz para você segurança, garantindo que possíveis vulnerabilidades desconhecidas serão encontradas pela análise do Horusec.
 
-* **Melhora a sua experiência** 
+* **Melhora a sua experiência**
 
-Garante a segurança dos projetos no processo de CI e CD e, assim, reduz os custos de correção de uma vulnerabilidade. 
+Garante a segurança dos projetos no processo de CI e CD e, assim, reduz os custos de correção de uma vulnerabilidade.
 
 ## **Tipos de análises do Horusec**
 
-O Horusec realiza 3 tipos de análises de desempenho para identificar se existe alguma falha de segurança: 
+O Horusec realiza 4 tipos de análises de desempenho para identificar se existe alguma falha de segurança:
 
-1. **SAST \(Static Application Security Testing \|Teste Estático de Segurança de Aplicação\)**  
+1. **SAST \(Static Application Security Testing \|Teste Estático de Segurança de Aplicação\)**
 
 O SAST faz a análise estática de vulnerabilidade de código. Elas podem ser feitas em código fonte, byte code ou binário.
 
-2. **Leaks \(Vazamento de chaves\)** 
+2. **Leaks \(Vazamento de chaves\)**
 
 O Leaks procura no código fonte possíveis vazamentos de credenciais, chaves privadas ou senhas Hard coded.
 
-3. **Auditoria de dependência**   
+3. **Auditoria de dependência**
 
 É realizada uma auditoria de dependência  para verificar a possibilidade de vulnerabilidades em bibliotecas de terceiros.

@@ -1,6 +1,6 @@
 ---
 title: Release Notes
-weight: 43
+weight: 8
 description: >-
   Nesta seção, você vai encontrar o Release Notes do Horusec.
 ---
