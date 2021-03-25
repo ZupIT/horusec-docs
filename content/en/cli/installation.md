@@ -14,6 +14,17 @@ There are 4 ways to install Horusec-CLI:
 
 Next, you will understand better each one of them. 
 
+## **Requirements**
+For usage is required some tools installed in your machine:
+* [Docker](https://docs.docker.com/get-docker/)
+  - {{% alert color="warning" %}}
+For disable docker, you can see [this tutorial](/docs/tutorials/how-to-use-horusec-without-docker/), but however you will lose your analysis with [other tools](/docs/cli/analysis-tools/security-tools/).
+    {{% /alert %}}
+* [Git](https://git-scm.com/)
+  - {{% alert color="warning" %}}
+For run analysis with git, you can see [this tutorial](/docs/tutorials/how-to-enable-git-history-analysis-and-enable-commit-authors/), but is not enable by default.
+    {{% /alert %}}
+
 ## **Local Installation**
 The installation directly done in your computer is ideal if you want to use Horusec as soon as possible, either to perform analysis or verify vulnerabilities in your project. 
 
