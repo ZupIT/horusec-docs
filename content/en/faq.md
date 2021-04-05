@@ -25,8 +25,8 @@ Check out the roadmap's phase:
 ### **3. Is it possible to add Horusec as an IDE plugin?**
 Yes, VSCode is already available.
 
-### **4. Does Horusec run locally without any dependency?**
-Yes, if you use the CLI. 
+### **4. Does Horusec run locally without any server dependencies?**
+Yes, it runs locally using CLI. 
 
 ### **5. When I locally run Horusec via CLI, how can I see the Manager's vulnerabilities?**
 
@@ -36,14 +36,14 @@ You have to access Manager and you need to:
 - View and analyze the vulnerabilities found by the CLI; 
 - Manage the platform's access. 
 
-When an analysis is sent to Horusec to store by the Manager, you have access to a detailed dashboard with an organizational view or a repository. Check out more about it here. 
+When an analysis is sent to Horusec to store by the Manager, you have access to a detailed dashboard with your organization's view or a repository. 
 
-### **6. Horusec depends on something to locally run via CLI?**
+### **6. Does Horusec depend on something to locally run via CLI?**
 
-No, the docker and git use is optional, suggested for a better analysis. 
+No, the docker and git use is optional, it is suggested for a better analysis. 
 
 ### **7. What is the difference between Horusec and any other quality code analysis tool?**
-Horusec is a security analysis tool that searches for possible leakages and exposed vulnerabilities in your application. Meanwhile, the quality code tool is for your code to have good quality and a great performance, but it does not guarantee it is safe from threats. 
+Horusec is a security analysis tool that searches for possible leakages and exposed vulnerabilities in your application. Meanwhile, the quality code tool esures that your code has good quality and performance, but does not guarantee that it is safe from cyber threats.
 
 ### **8. Is it possible to upload all Horusec's structure in my personal one?** 
 
@@ -51,8 +51,9 @@ Yes, check out the  [**"How to run the web application in another host?"**](/doc
  
 ### **9. How can I access Manager?**  
 
-Horusec does not provide an open infrastructure for you to use in your web application. To access the Manager, you have to upload in your personal infra using Docker Compose or Helm, via 8043 port or the route you have created. 
-- Example: **http://SEU-DOMINIO:8043**.
+Horusec does not provide an open infrastructure for you to use in your web application. 
+To access the Manager, you have to upload in your personal infra using Docker Compose or Helm, via 8043 port or the route you have created. 
+- Example: **http://YOUR-DOMAIN:8043**.
  
 ### **10. How can I export Horusec's output into a file**
 

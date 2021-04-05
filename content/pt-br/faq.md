@@ -45,7 +45,7 @@ Para verificar as vulnerabilidades encontradas, você precisa ter acesso ao mana
 * Visualizar e analisar vulnerabilidades encontradas pelo CLI
 * Gerenciar acessos à plataforma.
 
-Quando uma análise é enviada para o Horusec armazenar pelo manager, você tem acesso a um dashboard detalhado com a visão da organização ou do repositório em relação àquela análise.
+Quando uma análise é enviada para o Horusec armazenar pelo Manager, você tem acesso a um dashboard detalhado com a visão da organização ou do repositório em relação àquela análise.
 
 ### **6. O Horusec depende de algo para rodar localmente via CLI?** 
 
