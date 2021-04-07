@@ -16,13 +16,13 @@ A seguir, você irá entender melhor cada uma delas.
 
 ## **Requisitos**
 Para usar é obrigatório algumas ferramentas instaladas em sua máquina:
-* [Docker](https://docs.docker.com/get-docker/)
-  - {{% alert color="warning" %}}
-Para disabilitar o docker, você pode verificar [neste tutorial](/docs/pt-br/tutorials/how-to-use-horusec-without-docker/), mas você perderá as análises por [outras ferramentas](/docs/pt-br/cli/analysis-tools/security-tools/).
+* [**Docker**](https://docs.docker.com/get-docker/)
+   {{% alert color="warning" %}}
+Para desabilitar o docker, veja [como usar o Horusec sem o Docker](/docs/pt-br/tutorials/how-to-use-horusec-without-docker/), mas você perderá as análises por [outras ferramentas](/docs/pt-br/cli/analysis-tools/security-tools/).
     {{% /alert %}}
-* [Git](https://git-scm.com/)
-  - {{% alert color="warning" %}}
-Para rodar análise com git, você pode verificar [neste tutorial](/docs/pt-br/tutorials/how-to-enable-git-history-analysis-and-enable-commit-authors/), mas não é habilitado por padrão.
+* [**Git**](https://git-scm.com/)
+   {{% alert color="warning" %}}
+Para rodar análise com git, veja [como habilitar análise no histórico git](/docs/pt-br/tutorials/how-to-enable-git-history-analysis-and-enable-commit-authors/), mas não é habilitado por padrão.
     {{% /alert %}}
 
 ## **Instalação Local**
@@ -78,7 +78,7 @@ Caso queira uma versão específica, basta trocar a palavra `latest` no link pel
 
 - Windows x64:
 
-    📥 https://horusec.io/bin/latest/win_x64/horusec.exe
+    - 📥 https://horusec.io/bin/latest/win_x64/horusec.exe
 
 - Windows x64:
   - 📥 https://horusec.io/bin/latest/win_x64/horusec.exe

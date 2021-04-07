@@ -8,7 +8,7 @@ description: In this section, you will find how to enable and/or disable Horusec
 
 ## What is the messaging service?
 
-The messaging service ensures the sending and receipt of messages safely. Horusec uses [RabbitMQ](https://www.rabbitmq.com/), as an easy option to implement locally or in cloud and that offers support to several message's protocols. RabbitMQ can be implemented in distributed and federated configurations to attend into high-scaled and high-availability requirements.
+The messaging service ensures the sending and receipt of messages safely. Horusec uses [**RabbitMQ**](https://www.rabbitmq.com/), as an easy option to implement locally or in cloud and that offers support to several message's protocols. RabbitMQ can be implemented in distributed and federated configurations to attend into high-scaled and high-availability requirements.
 
 ## Where is used?
 

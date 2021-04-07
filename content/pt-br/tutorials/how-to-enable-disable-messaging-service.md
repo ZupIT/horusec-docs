@@ -8,7 +8,7 @@ description:  Nesta seção, você encontra as informações sobre os serviços 
 
 ## **O que é o serviço de mensageria?**
 
-O serviço de mensageria garante o envio e o recebimento de mensagens de forma segura. O Horusec utiliza o [RabbitMQ](https://www.rabbitmq.com/), uma opção leve e fácil de implantado no local e na nuvem e que oferece suporte a vários protocolos de mensagens. 
+O serviço de mensageria garante o envio e o recebimento de mensagens de forma segura. O Horusec utiliza o [**RabbitMQ**](https://www.rabbitmq.com/), uma opção leve e fácil de implantado no local e na nuvem e que oferece suporte a vários protocolos de mensagens. 
 RabbitMQ pode ser implantado em configurações distribuídas e federadas para atender aos requisitos de alta escala e alta disponibilidade.
 
 ## **Onde é utilizado?**
@@ -33,7 +33,7 @@ Quando você desabilita o serviço de mensageria, é normal ver estes serviços 
 
 E os serviços que recebem ações quando é necessário publicar em suas respectivas filas são:
 * [**Horusec-Auth**](/docs/pt-br/web/services/auth)
-* [**Horusec-Account**](/docs/pt-br/web/services/Account)
+* [**Horusec-Account**](/docs/pt-br/web/services/account/)
 * [**Horusec-Api**](/docs/pt-br/web/services/api)
 
 {{% alert color="info" %}}
@@ -55,5 +55,5 @@ Se o valor do microsserviço `HORUSEC_DISABLED_BROKER` for **true** o serviço d
 Para habilitá-lo é preciso apenas trocar o seu valor para **false**. 
 
 {{% alert color="info" %}}
-Quando você sobe uma aplicação web do Horusec utilizando o [Helm ou Docker-compose](/docs/pt-br/web) padrões, essa variável de ambiente tem o valor **true**.
+Quando você sobe uma aplicação web do Horusec utilizando o [**Helm ou Docker-compose**](/docs/pt-br/web) padrões, essa variável de ambiente tem o valor **true**.
 {{% /alert %}}

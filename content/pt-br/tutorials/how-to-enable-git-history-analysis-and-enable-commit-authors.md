@@ -15,7 +15,7 @@ Rode o comando abaixo:
 horusec start -p . --enable-git-history="true"
 ```
 
-{{% alert color="info" %}}
+{{% alert color="warning" %}}
 Ao habilitar essa função o Horusec irá iniciar a ferramenta [GitLeaks](/docs/pt-br/cli/analysis-tools/security-tools/#gitleaks) e somente ela irá buscar vazamentos em seu histórico.
 {{% /alert %}}
 
