@@ -60,7 +60,7 @@ horusec version
 ``` 
 
 ### Generate 
-Comando usado para gerar um arquivo de configuração no diretório atual e, com isso, ter algumas [opções de customização](/docs/pt-br/cli/resources/#3-flags) na análise realizada no Horusec.
+Comando usado para gerar um arquivo de configuração no diretório atual e, com isso, ter algumas [**opções de customização**](/docs/pt-br/cli/resources/#3-flags) na análise realizada no Horusec.
 
 {{% alert color="info" %}}
 Estas opções de configuração são as flags, que você pode conferir na tabela ao final da página, na terceira opção de uso do comando Start. 

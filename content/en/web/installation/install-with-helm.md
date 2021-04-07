@@ -200,7 +200,7 @@ echo "$INGRESS_HOST        analytic-horus-dev.zup.com.br" | sudo tee -a /etc/hos
 echo "$INGRESS_HOST        auth-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
 ```
 
-After you've done that, access the configured URL to access Horusec's Manager http://horus-dev.zup.com.br/
+After you've done that, access the configured URL to access Horusec's Manager **http://horus-dev.zup.com.br/**
 
 
 {{% alert color="info" %}}

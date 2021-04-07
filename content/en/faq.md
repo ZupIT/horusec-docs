@@ -8,7 +8,7 @@ description: >-
 ---
 
 ### **1. What languages does Horusec support?** 
-You can check the documentation [**all available languages*](/docs/cli/analysis-tools/overview/)
+Check out all Horusec's [**available languages**](/docs/cli/analysis-tools/overview/).
 
 ### **2. What is Horusec's 2021 roadmap?**
 

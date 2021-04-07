@@ -68,7 +68,7 @@ The example can be found on the path below:
  -------fomatter.go
 ```
 
-#### **Step 3: Updating Enums**
+#### **Step 3: Update Enums**
 
 You will also need to add a new item to the tool name in the tool's enum. If it is a language that is not yet supported, it will also be necessary to add it to the enum of languages.
 
@@ -115,10 +115,13 @@ See the path to add:
  -----languages
 ```
 
-Depois de terminar a **implementação do formatter**, você deve chamar a função no **analyzer controller**. 
+
+#### **Step 4: Calling Formatter**
+
+After finishing the **formatter implementation**, you have to call the **analyzer controller** function.
 
 
-Veja o seguinte path:
+See the path:
 
 ```
  -horusec
@@ -128,10 +131,8 @@ Veja o seguinte path:
  -----analyser
  ------analyser.go
 ```
-
-### É uma nova linguagem? 
-
-Se sim, será necessário criar uma nova função. Veja como no exemplo abaixo: 
+### Is it a new language? 
+If yes, it will be necessary to create a new function. See the example below: 
 
 ```go
 func (a *Analyser) detectVulnerabilityHCL(projectSubPath string) {
@@ -141,7 +142,7 @@ func (a *Analyser) detectVulnerabilityHCL(projectSubPath string) {
 ```
 
 
-Você também precisa adicionar uma nova linguagem ao mapa que contém a função  **`mapDetectVulnerabilityByLanguage`**. Veja o exemplo: 
+You can also add a new language to the map containing the **`mapDetectVulnerabilityByLanguage`** function. See the example: 
 
 ```go
 func (a *Analyser) mapDetectVulnerabilityByLanguage() map[languages.Language]func(string) {
@@ -151,7 +152,6 @@ func (a *Analyser) mapDetectVulnerabilityByLanguage() map[languages.Language]fun
 	}
 }
 ```
-#### **Step 4: Calling Formatter**
 
 ### Is it an existing language? 
 

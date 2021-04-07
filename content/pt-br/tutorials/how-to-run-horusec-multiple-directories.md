@@ -6,7 +6,7 @@ description: Nesta seção, você encontra informações de como rodar o horusec
 
 ---
 
-# Workdir
+## **Workdir**
 O WorkDir é uma representação para executar vários projetos dentro de um diretório, e você pode configurar por meio do arquivo **horusec-config.json**. 
 
 Por exemplo, se o seu projeto é um aplicativo C# que utiliza o .Netcore 3.1 e Angular, e possui a seguinte estrutura:

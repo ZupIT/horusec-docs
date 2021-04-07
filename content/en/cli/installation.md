@@ -16,13 +16,13 @@ Next, you will understand better each one of them.
 
 ## **Requirements**
 For usage is required some tools installed in your machine:
-* [Docker](https://docs.docker.com/get-docker/)
+* [**Docker**](https://docs.docker.com/get-docker/)
   - {{% alert color="warning" %}}
-For disable docker, you can see [this tutorial](/docs/tutorials/how-to-use-horusec-without-docker/), but however you will lose your analysis with [other tools](/docs/cli/analysis-tools/security-tools/).
+For disable docker, you can see [how to use Horusec without Docker tutorial](/docs/tutorials/how-to-use-horusec-without-docker/), but you will lose your analysis with [other tools](/docs/cli/analysis-tools/security-tools/).
     {{% /alert %}}
-* [Git](https://git-scm.com/)
+* [**Git**](https://git-scm.com/)
   - {{% alert color="warning" %}}
-For run analysis with git, you can see [this tutorial](/docs/tutorials/how-to-enable-git-history-analysis-and-enable-commit-authors/), but is not enable by default.
+For running analysis with git, you can see [how to enable git history analysis tutorial](/docs/tutorials/how-to-enable-git-history-analysis-and-enable-commit-authors/), but it is not enable by default.
     {{% /alert %}}
 
 ## **Local Installation**
@@ -77,8 +77,7 @@ The manual installation is done according to your operation system and the versi
 The links below are to download the lastest version:
 
 - Windows x64:
-
-    📥 https://horusec.io/bin/latest/win_x64/horusec.exe
+  - 📥 https://horusec.io/bin/latest/win_x64/horusec.exe
 
 - Windows x64:
   - 📥 https://horusec.io/bin/latest/win_x64/horusec.exe
@@ -90,6 +89,7 @@ The links below are to download the lastest version:
   - 📥 https://horusec.io/bin/latest/linux_x86/horusec
 - Mac x64:
   - 📥 https://horusec.io/bin/latest/mac_x64/horusec
+
 
 
 👉[**Lastest available version**](https://horusec.io/bin/version-cli-latest.txt)
