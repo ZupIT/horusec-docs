@@ -1,0 +1,79 @@
+name: S3 UPLOAD
+
+on:
+  push:
+    branches: [release*]
+
+env:
+  AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: sa-east-1
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.78.1"
+          extended: true
+
+      - name: S3 upload (images)
+        run: aws s3 sync --acl public-read --follow-symlinks static/shared s3://$AWS_S3_BUCKET/shared/ --delete
+
+      - name: Remove static images
+        shell: bash
+        working-directory: static
+        run: rm -rf shared
+
+      - name: Cache Dependencies
+        uses: c-hive/gha-yarn-cache@v1
+
+      - name: Installing Dependencies
+        run: yarn
+
+      - name: Get version from branch name
+        id: version
+        run: echo "::set-output name=branch_version::$(echo $GITHUB_REF | sed 's/refs\/heads\/release-//g' )"
+        shell: bash
+
+      - name: Config version path
+        working-directory: config/_default
+        shell: bash
+        run: sed -i -E "s/version_path = .*/version_path = \"\/$VERSION\"/g" config.toml
+        env:
+          VERSION: ${{ steps.version.outputs.branch_version }}
+
+      - name: Config current version
+        working-directory: config/_default
+        shell: bash
+        run: sed -i -E "s/current_version = .*/current_version = \"$VERSION\"/g" config.toml
+        env:
+          VERSION: ${{ steps.version.outputs.branch_version }}
+
+      - name: Build
+        run: yarn build-playground && hugo -D --minify -b $BASE_URL/$VERSION
+        env:
+          BASE_URL: https://docs.usebeagle.io
+          VERSION: ${{ steps.version.outputs.branch_version }}
+
+      - name: remove FAQ
+        shell: bash
+        working-directory: public
+        run: rm -rf faq & rm -rf pt/faq
+
+      - name: S3 upload
+        run: aws s3 sync --acl public-read --follow-symlinks public s3://$AWS_S3_BUCKET/$VERSION/ --delete
+        env:
+          VERSION: ${{ steps.version.outputs.branch_version }}

@@ -1,0 +1,42 @@
+name: BETA UPLOAD
+
+on:
+  push:
+    branches: [main]
+
+env:
+  AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_BETA }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  
+          fetch-depth: 0    
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: sa-east-1
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.78.1'
+          extended: true
+
+      - name: Cache Dependencies
+        uses: c-hive/gha-yarn-cache@v1
+
+      - name: Installing Dependencies
+        run: yarn
+
+      - name: Build
+        run: yarn build-playground && hugo -D --minify
+
+      - name: S3 upload (latest version)
+        run: aws s3 sync --acl public-read --follow-symlinks public s3://$AWS_S3_BUCKET --delete
