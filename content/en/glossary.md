@@ -6,15 +6,16 @@ description: In this section, you will find more about Horusec's main concepts.
 
 ---
 
-## **Vulnerability** 
+## **Vulnerability**
 
-Vulnerability means a security breach in the project and can cause some damage to the system or the organization. Horusec can identify **5 types of security breaches**: 
+Vulnerability means a security breach in the project and can cause some damage to the system or the organization. Horusec can identify **6 types of security breaches**: 
 
-1. **High**
-2. **Medium**
-3. **Low**
-4. **Audit**
+1. **Critical**
+2. **High**
+3. **Medium**
+4. **Low**
 5. **Info**
+6. **Unknown**
 
 ### **False positive**
 
