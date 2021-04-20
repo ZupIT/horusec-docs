@@ -56,7 +56,6 @@ These are the environment variables you can configure in this service:
 | HORUSEC_BROKER_PASSWORD          | guest                                                            | This environment variable gets the password to connect to RABBITMQ broker. |
 | HORUSEC_SMTP_USERNAME            |                         | This environment variable gets o `username` para conectar no serviço de e-mail. Exemplo usando gsuite como host `user@gmail.com` |
 | HORUSEC_SMTP_PASSWORD            |                         | This environment variable gets the `password` to connect to the e-mail service. For example using gsuite as a host `Y0urS!r0ng#P@ssw0rd` |
-| HORUSEC_SMTP_ADDRESS             |                         | This environment variable gets the `address` to connect the e-mail service. For example using gsuite as a host `smtp.gmail.com` |
 | HORUSEC_SMTP_HOST                |                         | This environment variable gets the `host` to connect the e-mail service. For example using gsuite as a host `smtp.gmail.com` |
 | HORUSEC_SMTP_PORT                |                         | This environment variable gets the `port` to connect the e-mail service. For example using gsuite as a host `587` |
 | HORUSEC_EMAIL_FROM               | horusec@zup.com.br      | This environment variable gets the user original e-mail to send the e-mail. If you are using other e-mail, change here. |

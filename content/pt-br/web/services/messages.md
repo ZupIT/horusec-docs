@@ -55,7 +55,6 @@ Estas são as possíveis váriaveis de ambiente que você pode configurar neste 
 | HORUSEC_BROKER_PASSWORD          | guest                                                            | Obtém a senha para se conectar no broker RABBITMQ. |
 | HORUSEC_SMTP_USERNAME            |                         | Obtém o `username` para conectar no serviço de e-mail. Exemplo usando gsuite como host `user@gmail.com`. |
 | HORUSEC_SMTP_PASSWORD            |                         | Obtém o `password` para conectar no serviço de e-mail. Exemplo usando gsuite como host `Y0urS!r0ng#P@ssw0rd`. |
-| HORUSEC_SMTP_ADDRESS             |                         | Obtém o `address` para conectar no serviço de e-mail. Exemplo usando gsuite como host `smtp.gmail.com`. |
 | HORUSEC_SMTP_HOST                |                         | Obtém o `host` para conectar no serviço de e-mail. Exemplo usando gsuite como host `smtp.gmail.com`. |
 | HORUSEC_SMTP_PORT                |                         | Obtém o `port` para conectar no serviço de e-mail. Exemplo usando gsuite como host `587`. |
 | HORUSEC_EMAIL_FROM               | horusec@zup.com.br      | Obtém o e-mail da origem do usuário para enviar e-mail. Se você está usando outro e-mail para enviar, mude aqui. |
