@@ -92,7 +92,7 @@ If you have installed `PostgreSQL` and `RabbitMQ` with Bitnami's Charts, now you
 ```bash
 export POSTGRES_USERNAME="postgres"
 export POSTGRES_PASSWORD=$(kubectl get secret --namespace horusec-system postgresql -o jsonpath="{.data.postgresql-password}" | base64 --decode)
-export RABBITMQ_USERNAME=$(kubectl get secret --namespace horusec-system rabbitmq -o jsonpath="{.data.rabbitmq-password}" | base64 --decode)
+export RABBITMQ_USERNAME="user"
 export RABBITMQ_PASSWORD=$(kubectl get secret --namespace horusec-system rabbitmq -o jsonpath="{.data.rabbitmq-password}" | base64 --decode)
 export JWT_SECRET="4ff42f67-5929-fc52-65f1-3afc77ad86d5"
 ```
@@ -103,7 +103,7 @@ export JWT_SECRET="4ff42f67-5929-fc52-65f1-3afc77ad86d5"
 ```bash
 kubectl create secret generic database-username --from-literal=database-username=$POSTGRES_USERNAME
 kubectl create secret generic database-password --from-literal=database-password=$POSTGRES_PASSWORD
-kubectl create secret generic database-uri --from-literal=database-uri=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@postgresql.horusec:5432/horusec_db?sslmode=disable
+kubectl create secret generic database-uri --from-literal=database-uri=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@postgresql:5432/horusec_db?sslmode=disable
 
 kubectl create secret generic broker-username --from-literal=broker-username=$RABBITMQ_USERNAME
 kubectl create secret generic broker-password --from-literal=broker-password=$RABBITMQ_PASSWORD
