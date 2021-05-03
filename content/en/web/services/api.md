@@ -1,7 +1,7 @@
 ---
 title: API
 weight: 50
-description: In this section, you will find information about Horusec-Api service.
+description: In this section, you will find information about Horusec-API service.
 ---
 
 ## **What is it?**

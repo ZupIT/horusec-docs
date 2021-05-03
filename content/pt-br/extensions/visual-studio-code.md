@@ -66,15 +66,17 @@ As vulnerabilidades são mostradas com um ícone informando qual é o nível de 
 ### Realizar configurações da extensão
 Assim como na CLI que permite realizar configurações adicionais para os comandos, também é possível para a extensão do vscode
 
-* Pressione F1 e digite `horusec settings` ou vá até a aba do horusec e clique nas configurações
-* Escolha qual configuração deseja realizar e pressione ENTER
-* Altere o valor para qual você deseja e pressione ENTER
+1. Pressione F1 e digite `horusec settings` ou vá até a aba do horusec e clique nas configurações;
+2. Escolha qual configuração deseja realizar e pressione ENTER;
+3. Altere o valor para qual você deseja e pressione ENTER.
 
 Logo em seguida a extensão vai criar um arquivo na raiz do seu projeto com as configurações que você realizou.
-![](/docs/ptbr/extensions/vscode/13-setup-options.gif))
+![](/docs/ptbr/extensions/vscode/13-setup-options.gif)
 
 
-Também é possível classificar a vulnerabilidade através da extensão basta clicar com o botão direito na vulnerabilidade e escolher entre falso positivo e risco aceito logo em seguida você poderá visualizar o hash da vulnerabilidade será inserido em seu arquivo de configuração também.
+Também é possível classificar a vulnerabilidade através da extensão, para isso:
+* Clique com o botão direito na vulnerabilidade e escolha entre falso positivo e risco aceito;
+* Depois você poderá visualizar que o hash da vulnerabilidade será inserido também em seu arquivo de configuração, veja abaixo:
 
 ![](/docs/ptbr/extensions/vscode/12-setup-hashes.gif)
 

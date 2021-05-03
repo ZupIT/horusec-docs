@@ -46,7 +46,7 @@ It is the most important component, one unit is part of your code that makes sen
 
 To analyze the component, Horusec's mechanism treats all files and code in one unit and it will only be able to cross references inside one unit. 
 
-Horusec's team is working in a more deeper and complex lexical analysis between units, [you can help us here](https://github.com/ZupIT/horusec-engine/issues)! 
+Horusec's team is working in a more deeper and complex lexical analysis between units, [**you can help us here**](https://github.com/ZupIT/horusec-engine/issues)! 
 
 
 ### 2. Rule
@@ -60,7 +60,7 @@ Horusec's FOSS version has lots of rules that you can use it, but this inteface 
 
 This is the fundamental part of your tool, because it is the Finding component that you really extract useful information from your source code that it has been analyzed. 
 
-The current structure is focused in the simplicity, but Horusec's team is working to implement it following the [SARIF](https://github.com/oasis-tcs/sarif-spec) specification in order to give you full control from where you import your data. 
+The current structure is focused in the simplicity, but Horusec's team is working to implement it following the [**SARIF**](https://github.com/oasis-tcs/sarif-spec) specification in order to give you full control from where you import your data. 
 
 
 ### Examples

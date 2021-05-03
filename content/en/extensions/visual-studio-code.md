@@ -59,7 +59,23 @@ The vulnerabilities are shown with an icon that informs its criticality level. T
 
 ![](/docs/en/references/extensions/vscode/6-problems-to-fix.png)
 
-### **Notification Types** 
+### Extension configuration 
+CLI allows you to perform additional configurations for the commands, it is also possible to do that for VSCode extension.
+
+1. Press F1 and type `horusec settings` or go to horusec tab and click on configurations; 
+2. Choose which configuration you want to perform and press ENTER;
+3. Change to the value you want and press ENTER;
+
+After that, the extension will create a root file in your project with the configuration you have just made.
+![](/docs/ptbr/extensions/vscode/13-setup-options.gif)
+
+It is possible to classify the vulnerabilities through the extension, for that you have to:
+* Click with the right button on the vulnerability and choose between false positive and accepted risk;
+* After that you will be able to see the vulnerability hash inserted in your configuration file as well, see below:
+
+![](/docs/ptbr/extensions/vscode/12-setup-hashes.gif)
+
+### **Notification Types**  
 
 A notification is sent as soon as Horusec performs an action to inform  inform the details of it. The different kinds of alerts are described below:  
 
