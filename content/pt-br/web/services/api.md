@@ -1,7 +1,7 @@
 ---
-title: Api
+title: API
 weight: 50
-description: Nesta seção, você encontra mais informações sobre o serviço Horusec-Api.
+description: Nesta seção, você encontra mais informações sobre o serviço Horusec-API.
 ---
 
 ## **O que é?** 
@@ -11,7 +11,7 @@ O Horusec-API é um microsserviço responsável por receber solicitações [**Ho
 Este serviço possui alguns recursos:
 
 * Receber uma nova análise de código;
-* Adquirir os dados enviados pela [Horusec-CLI](/docs/pt-br/cli/overview/);
+* Adquirir os dados enviados pela [**Horusec-CLI**](/docs/pt-br/cli/overview/);
 * Salvar os dados em um sistema centralizado;
 * Se configurado, publicar a análise na fila do webhook para enviá-la a terceiros.
 

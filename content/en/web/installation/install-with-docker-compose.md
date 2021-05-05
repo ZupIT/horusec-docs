@@ -47,7 +47,7 @@ git clone https://github.com/ZupIT/horusec.git
 
 ## **Access Horusec's services**
 
-After you have done the previous steps, you can access the link to view the web application screens, showed by [Horusec-Manager](/docs/web/services/manager/introduction/) service at [http://localhost:8043](http://localhost:8043).
+After you have done the previous steps, you can access the link to view the web application screens, showed by [**Horusec-Manager**](/docs/web/services/manager/introduction/) service at [**http://localhost:8043**](http://localhost:8043).
 
  
 
