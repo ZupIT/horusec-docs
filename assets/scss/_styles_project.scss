@@ -1,0 +1,46 @@
+/* Release shortcodes */
+
+.release-note-item {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+
+  &--type {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+
+    min-width: 66px;
+    display: table;
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  &--type-feature {
+    background-color: #8dc63f;
+  }
+
+  &--type-fix {
+    background-color: #ef4123;
+  }
+  
+  &--type-chore {
+    background-color: #f7941e;
+  }
+  
+  &--type-docs {
+    background-color: #ccc;
+  }
+
+  &--repository, &--date {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 5px;
+  }
+
+  &--date {
+    color: #969696;
+  }
+}
