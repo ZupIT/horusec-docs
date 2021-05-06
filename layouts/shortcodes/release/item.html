@@ -1,0 +1,11 @@
+<div class="row release-note-item" data-type="{{ .Get "type" }}" data-repository="{{ .Get "repository" }}">
+  <div class="col-auto">
+    <span class="release-note-item--type release-note-item--type-{{ .Get "type" }}">{{ .Get "type" }}</span>
+  </div>
+
+  <div class="col-auto release-note-item--repository">{{ .Get "repository" }}</div>
+
+  <div class="col-auto release-note-item--date">{{ .Get "date" }}</div>
+
+  <div class="col">{{ .Inner }}</div>
+</div>
