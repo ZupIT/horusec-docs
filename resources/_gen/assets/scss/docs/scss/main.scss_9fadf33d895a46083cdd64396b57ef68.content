@@ -1,6 +1,8 @@
 /*
 
-Add styles or override variables from the theme here.
+Nothing defined here. The Hugo project that uses this theme can override theme variables by adding a file to:
+
+assets/scss/_variables_project.scss
 
 */
 /*
@@ -13877,6 +13879,133 @@ footer {
     margin-top: -5rem;
     height: 5rem;
     visibility: hidden; } }
+
+/*
+
+Nothing defined here. The Hugo project that uses this theme can override Bootstrap by adding a file to:
+
+assets/scss/_styles_project.scss
+
+*/
+.privacy-link {
+  color: #fff;
+  text-decoration: underline; }
+  .privacy-link:hover {
+    color: #fff;
+    text-decoration: underline;
+    opacity: 0.8; }
+
+.dr-last-modified-text {
+  font-size: 12px; }
+
+/* Tabed Highlight */
+#body .nav-tabs {
+  position: unset;
+  width: unset; }
+
+.tab-content > .tab-pane {
+  display: none; }
+
+.tab-pane {
+  padding: 3px 0px; }
+
+.tab-pane {
+  padding: 3px 0px; }
+
+.tab-content > .active {
+  display: block; }
+
+.nav-tabs {
+  color: #0f0f0f;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+.nav-tabs > li {
+  color: #0f0f0f;
+  float: left; }
+
+.nav-tabs > li > a {
+  display: block;
+  padding: 5px 10px;
+  font-size: 14px; }
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 10px 0px 10px;
+  line-height: 1; }
+
+.code-tabs {
+  margin: 10px 0px 0px 00px; }
+
+.nav-tabs > li.active > a,
+.nav-tabs > li > a:hover {
+  color: #000 !important;
+  background: transparent; }
+
+.alert-warning {
+  border-color: #f7941e; }
+
+.alert-info {
+  border-color: #0c3455; }
+
+.alert-success {
+  border-color: #8dc63f; }
+
+.td-sidebar-nav__section-title {
+  font-weight: unset; }
+
+.section-index h5 a {
+  color: #ef4123;
+  text-decoration: underline; }
+
+.td-content a {
+  font-style: italic;
+  text-decoration: underline; }
+
+body {
+  font-size: 15px;
+  color: #242a31; }
+
+.td-sidebar-nav a.active {
+  color: #d53b19; }
+
+.td-sidebar-nav .td-sidebar-link__page {
+  color: #3b454e; }
+
+.td-sidebar-nav__section-title a {
+  color: #666f77; }
+
+.td-sidebar-nav .td-sidebar-link__page,
+.td-sidebar-nav__section-title a {
+  font-weight: 600; }
+
+.td-content .lead {
+  color: #74818d; }
+
+.td-content strong {
+  color: #3b454e; }
+
+.td-content a {
+  font-style: normal;
+  color: #d53b19;
+  text-decoration: none; }
+  .td-content a strong {
+    color: inherit; }
+  .td-content a:hover {
+    text-decoration: underline; }
+
+.td-toc #TableOfContents a:hover {
+  color: #d53b19; }
+
+.td-content > blockquote {
+  border-color: rgba(213, 59, 25, 0.8); }
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  font-weight: bold; }
 
 /* Release shortcodes */
 .release-note-item {
