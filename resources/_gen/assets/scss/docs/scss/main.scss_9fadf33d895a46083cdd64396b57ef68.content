@@ -14013,6 +14013,7 @@ body {
   margin-bottom: 20px;
   border-bottom: 1px solid #ccc; }
   .release-note-item--type {
+    width: 66px;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
@@ -14030,10 +14031,12 @@ body {
   .release-note-item--type-docs {
     background-color: #ccc; }
   .release-note-item--repository, .release-note-item--date {
+    width: 165px;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
-    padding-top: 5px; }
+    padding-top: 5px;
+    text-align: center; }
   .release-note-item--date {
     color: #969696; }
 
