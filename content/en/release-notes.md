@@ -6,24 +6,20 @@ description: >-
 ---
 
 {{% release/group %}}
-  {{% release/item type="feature" repository="CLI" date="FEB 2021" %}}
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, non maxime? Quae fugiat earum consectetur non enim voluptate numquam. Vel amet, aspernatur neque dolore atque autem consequatur necessitatibus voluptatum a.
-
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, non maxime? Quae fugiat earum consectetur non enim voluptate numquam. Vel amet, aspernatur neque dolore atque autem consequatur necessitatibus voluptatum a.
-
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, non maxime? Quae fugiat earum consectetur non enim voluptate numquam. Vel amet, aspernatur neque dolore atque autem consequatur necessitatibus voluptatum a.
+  {{% release/item type="feature" repository="CLI" date="May 2021" %}}
+TBD
   {{% /release/item %}}
 
-  {{% release/item type="fix" repository="CLI" date="FEB 2021" %}}
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, non maxime? Quae fugiat earum consectetur non enim voluptate numquam. Vel amet, aspernatur neque dolore atque autem consequatur necessitatibus voluptatum a.
+  {{% release/item type="fix" repository="CLI" date="May 2021" %}}
+ TBD
   {{% /release/item  %}}
 
-  {{% release/item type="chore" repository="CLI" date="FEB 2021" %}}
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, non maxime? Quae fugiat earum consectetur non enim voluptate numquam. Vel amet, aspernatur neque dolore atque autem consequatur necessitatibus voluptatum a.
+  {{% release/item type="chore" repository="CLI" date="May 2021" %}}
+ TBD
   {{% /release/item  %}}
 
-  {{% release/item type="docs" repository="CLI" date="FEB 2021" %}}
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, non maxime? Quae fugiat earum consectetur non enim voluptate numquam. Vel amet, aspernatur neque dolore atque autem consequatur necessitatibus voluptatum a.
+  {{% release/item type="docs" repository="CLI" date="May 2021" %}}
+  TBD
   {{% /release/item  %}}
 {{% /release/group %}}
 
