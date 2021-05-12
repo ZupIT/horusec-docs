@@ -6,7 +6,7 @@ description: Nesta seção, você encontra mais informações sobre o serviço H
 
 ## **O que é?** 
 
-O Horusec-Auth é um microsserviço responsável por gerenciar a autenticação e criação de conta de usuários(as).
+O Horusec-Auth é um microsserviço responsável pela gestão de usuários, autenticação e acessos a plataforma.
 
 ![](/docs/ptbr/web/services/auth/0-arquitecture.jpg)
 
@@ -40,7 +40,7 @@ Este tipo de autenticação utiliza o [**Keycloak**](https://www.keycloak.org/do
 Para rodar este serviço local, basta ter:
 
 * PostgreSQL (com migrações aplicadas);
-* RabbitMQ (apenas se tiver o broker estiver habilitado);
+* RabbitMQ;
 * Serviço de Keycloak (apenas se o tipo de autenticação é keycloak);
 * Serviço de LDAP (apenas se o tipo de autenticação é ldap);
 * Golang.
@@ -56,7 +56,7 @@ go get ./...
 **Passo 2:** Rode o comando abaixo para executar o serviço:
 
 ```bash
-go run ./horusec-analytic/cmd/app/main.go
+go run ./auth/cmd/app/main.go
 ```
 
 Você deve receber este log como retorno:
@@ -72,11 +72,10 @@ Estas são as possíveis váriaveis de ambiente que você pode configurar neste 
 | Nome da Variável de Ambiente                | Valor Default                                                    | Descrição                                                 |
 |----------------------------------|------------------------------------------------------------------|--------------------------------------------------------------|
 | HORUSEC_SWAGGER_HOST             | localhost                                                        | Obtém qual o host que estará disponível no swagger.| 
-| HORUSEC_DATABASE_SQL_DIALECT     | postgres                                                         | Obtém o dialeto para conectar no banco de dados POSTGRES. |
 | HORUSEC_DATABASE_SQL_URI         | postgresql://root:root@localhost:5432/horusec_db?sslmode=disable | Obtém o URI (identificador uniforme de recursos) para conectar no banco de dados POSTGRES. |
 | HORUSEC_DATABASE_SQL_LOG_MODE    | false                                                            | Obtém o valor para habilitar logs no POSTGRES. |
 | HORUSEC_PORT                     | 8006                                                             | Obtém a porta que o serviço irá iniciar. |
-| HORUSEC_DISABLED_BROKER          | false                                                            | Valida se o broker está habilitado ou não. | 
+| HORUSEC_DISABLED_EMAILS          | false                                                            | Valida se o serviço de emails está habilitado ou não. | 
 | HORUSEC_BROKER_HOST              | 127.0.0.1                                                        | Obtém o host para se conectar ao broker RABBITMQ. | 
 | HORUSEC_BROKER_PORT              | 5672                                                             | Obtém porta para conectar no broker RABBITMQ. |
 | HORUSEC_BROKER_USERNAME          | guest                                                            | Obtém o nome de usuário para se conectar no broker RABBITMQ. |
@@ -104,4 +103,7 @@ Estas são as possíveis váriaveis de ambiente que você pode configurar neste 
 | HORUSEC_GRPC_KEY_PATH            |                                                                  | Obtém o caminho da chave do certificado do GRPC.|
 | HORUSEC_ENABLE_APPLICATION_ADMIN | false                                                            | Valida se você precisa de um administrador da aplicação ativo no sistema. Quando essa variável é configurada para `true`, somente os usuários administradores podem criar workspaces no Horusec. |
 | HORUSEC_APPLICATION_ADMIN_DATA   | {\"username\": \"horusec-admin\", \"email\":\"horusec-admin@example.com\", \"password\":\"Devpass0*\"} | Quando o administrador do aplicativo é habilitado, precisamos criar um usuário do tipo `application admin` padrão. Não se esqueça de realizar o **escape do json** no valor da variável de ambiente. |
+| HORUSEC_ENABLE_DEFAULT_USER      | true                                                            |  Válida se o usuário padrão está habilitado ou não na plataforma. Quando a aplicação iniciar irá criar um novo usuário automaticamente. |
+| HORUSEC_DEFAULT_USER_DATA        | {\"username\": \"dev\", \"email\":\"dev@example.com\", \"password\":\"Devpass0*\"} | Quando o usuário padrão está habilitado, precisamos criar um usuário padrão. Não se esqueça de realizar o **escape do json** no valor da variável de ambiente. |
 | HORUSEC_MANAGER_URL              | http://localhost:8043                                            | Valida onde está o link do serviço `horusec-manager` para enviar nos disparos de e-mails |
+| HORUSEC_AUTH_URL                 | http://localhost:8006                                            | Valida onde está o link do serviço `horusec-auth` para enviar nos disparos de e-mails |

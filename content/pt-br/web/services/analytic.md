@@ -6,11 +6,7 @@ description: Nesta seção, você encontra mais informações sobre o serviço H
 
 ## **O que é?**
 
-O Horusec-Analytic é o microsserviço responsável por ler o banco de dados e mostrar os dados gerados pela análise, além de retornar essas informações para o painel de visualização no horusec-manager. 
-
-Este serviço possui integração com GraphQL para retorno de detalhes das vulnerabilidades encontradas e também outras rotas para conteúdo analítico.
-
-
+O Horusec-Analytic é um microsserviço responsável por receber via broker a análise e salvar em seu banco de dados os dados necessários para serem apresentados no dashboard da manager.
 
 ![](/docs/ptbr/web/services/analytic/0-arquitecture.jpg)
 
@@ -19,6 +15,7 @@ Este serviço possui integração com GraphQL para retorno de detalhes das vulne
 Para rodar este serviço local, basta ter:
 
 * PostgreSQL (com migrações aplicadas);
+* RabbitMQ;
 * Horusec-Auth;
 * Golang.
 
@@ -33,7 +30,7 @@ go get ./...
 **Passo 2:** Rode o comando abaixo para executar o serviço: 
 
 ```bash
-go run ./horusec-analytic/cmd/app/main.go
+go run ./analytic/cmd/app/main.go
 ```
 
 Você deve receber este log como retorno:
@@ -50,7 +47,7 @@ Estas são as possíveis váriaveis de ambiente que você pode configurar neste 
 |----------------------------------|------------------------------------------------------------------|--------------------------------------------------------------|
 | HORUSEC_SWAGGER_HOST             | localhost                                                        | Obtém qual o host que estará disponível no swagger.| 
 | HORUSEC_DATABASE_SQL_DIALECT     | postgres                                                         | Obtém o dialeto para conectar ao banco de dados POSTGRES. |
-| HORUSEC_DATABASE_SQL_URI         | postgresql://root:root@localhost:5432/horusec_db?sslmode=disable | Obtém o URI (identificador uniforme de recursos) para conectar ao banco de dados POSTGRES. |
+| HORUSEC_DATABASE_SQL_URI         | postgresql://root:root@localhost:5432/horusec_analytic_db?sslmode=disable | Obtém o URI (identificador uniforme de recursos) para conectar ao banco de dados POSTGRES. |
 | HORUSEC_DATABASE_SQL_LOG_MODE    | false                                                            | Obtém o valor para habilitar logs no POSTGRES. |
 | HORUSEC_PORT                     | 8005                                                             | Obtém a porta que o serviço irá iniciar. |
 | HORUSEC_GRPC_AUTH_URL            | localhost:8007                                                   | Obtém a URL `horusec-auth` de conexão com o GRPC. |

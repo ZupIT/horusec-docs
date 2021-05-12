@@ -6,7 +6,7 @@ description: Nesta seção, você encontra mais informações sobre o serviço H
 
 ## **O que é?**
 
-O Horusec-Messages é um microsserviço responsável pelo envio de e-mails transacionais quando o `horusec-broker` está habilitado.
+O Horusec-Messages é um microsserviço responsável pelo envio de e-mails transacionais.
 
 [**Veja aqui mais sobre e-mails transacionais**](https://postmarkapp.com/blog/what-is-transactional-email-and-how-is-it-used)
 
@@ -29,14 +29,14 @@ go get ./...
 **Passo 2:** Rode o comando abaixo para executar o serviço:
 
 ```bash
-go run ./horusec-messages/cmd/app/main.go
+go run ./messages/cmd/app/main.go
 ```
 
 Você deve receber este log como retorno:
 
 ```bash
-service running on port :8004
-swagger running on url:  http://localhost:8004/swagger/index.html
+service running on port :8002
+swagger running on url:  http://localhost:8002/swagger/index.html
 ```
 
 ## **Variáveis de ambiente**
@@ -48,7 +48,7 @@ Estas são as possíveis váriaveis de ambiente que você pode configurar neste 
 | HORUSEC_DATABASE_SQL_DIALECT     | postgres                                                         | Obtém o dialeto para conectar no banco de dados POSTGRES |
 | HORUSEC_DATABASE_SQL_URI         | postgresql://root:root@localhost:5432/horusec_db?sslmode=disable | Obtém o URI (identificador uniforme de recursos) para conectar no banco de dados POSTGRES. |
 | HORUSEC_DATABASE_SQL_LOG_MODE    | false                                                            | Obtém o valor para habilitar logs no POSTGRES. |
-| HORUSEC_PORT                     | 8004                                                             | Obtém a porta que o serviço irá iniciar. |
+| HORUSEC_PORT                     | 8002                                                             | Obtém a porta que o serviço irá iniciar. |
 | HORUSEC_BROKER_HOST              | 127.0.0.1                                                        | Obtém host para se conectar ao broker RABBITMQ. | 
 | HORUSEC_BROKER_PORT              | 5672                                                             | Obtém porta para conectar no broker RABBITMQ. |
 | HORUSEC_BROKER_USERNAME          | guest                                                            | Obtém nome de usuário para se conectar no broker RABBITMQ. |

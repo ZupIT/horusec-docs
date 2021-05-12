@@ -29,7 +29,7 @@ Esse arquivo deve ser usado para cenário de testes, nunca de produção.
 {{% /alert %}}
 
 
-Você pode obter o [**arquivo de configuração**](https://github.com/ZupIT/horusec/blob/master/deployments/docker-compose.yaml) no repositório do Horusec:
+Você pode obter o [**arquivo de configuração**](https://github.com/ZupIT/horusec-platform/blob/master/deployments/compose/compose.yaml) no repositório do Horusec:
 
 1. Clone o repositório do Horusec em seu ambiente;
 2. Acesse a pasta onde clonou o repositório
@@ -38,9 +38,9 @@ Você pode obter o [**arquivo de configuração**](https://github.com/ZupIT/horu
 A seguir, você encontra todos os comandos que deve executar do passo 1 ao 3:
 
 ```bash
-git clone https://github.com/ZupIT/horusec.git
+git clone https://github.com/ZupIT/horusec-platform.git
 
-cd horusec
+cd horusec-platform
 
 make install
 ```
@@ -71,12 +71,13 @@ Hoje o Horusec disponibiliza todas as suas imagens no [**dockerhub**](https://hu
 
 * [**horuszup/horusec-manager**](https://hub.docker.com/r/horuszup/horusec-manager)
 * [**horuszup/horusec-auth**](https://hub.docker.com/r/horuszup/horusec-auth)
-* [**horuszup/horusec-account**](https://hub.docker.com/r/horuszup/horusec-account)
+* [**horuszup/horusec-core**](https://hub.docker.com/r/horuszup/horusec-core)
 * [**horuszup/horusec-api**](https://hub.docker.com/r/horuszup/horusec-api)
 * [**horuszup/horusec-analytic**](https://hub.docker.com/r/horuszup/horusec-analytic)
 * [**horuszup/horusec-migration**](https://hub.docker.com/r/horuszup/horusec-migration)
-* [**horuszup/horusec-messages**](https://hub.docker.com/r/horuszup/horusec-messages) (obrigatório apenas se estiver utilizando o [**serviço de mensageria**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service))
-* [**horuszup/horusec-webhook**](https://hub.docker.com/r/horuszup/horusec-webhook) (obrigatório apenas se estiver utilizando o [**serviço de mensageria**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service))
+* [**horuszup/horusec-vulnerability**](https://hub.docker.com/r/horuszup/horusec-vulnerability)
+* [**horuszup/horusec-messages**](https://hub.docker.com/r/horuszup/horusec-messages) (obrigatório apenas se estiver utilizando o [**serviço de email**](/docs/pt-br/tutorials/how-to-enable-disable-email-service))
+* [**horuszup/horusec-webhook**](https://hub.docker.com/r/horuszup/horusec-webhook)
 
 ![](/docs/ptbr/web/installing/docker-compose/0-installing.gif)
 

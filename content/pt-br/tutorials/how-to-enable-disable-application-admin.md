@@ -6,31 +6,29 @@ description: Nesta seção, você encontra o tutorial para   habilitar e desabil
 
 ---
 
-A funcionalidade administrador da aplicação permite que o Administrador do Horusec crie workspaces. 
+A funcionalidade do administrador da aplicação permite que após o serviço Horusec-Auth ser iniciado, seja criado um usuário deste tipo automaticamente. A principal funcionalidade desta opção é quando está habilitada, **pois somente este usuário poderá criar workspaces**.
 
-### **Valor false**
+O microsserviço horusec-auth inicia com:
 
-O microsserviço [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth) inicia com:
+-  A variável de ambiente **`HORUSEC_ENABLE_APPLICATION_ADMIN`** e o valor **true**.
 
--  A variável de ambiente **`HORUSEC_ENABLE_APPLICATION_ADMIN`** e o valor **false**. 
-
-A partir disso, o Horusec possibilita um fluxo normal em que você pode criar sua empresa e gerenciá-la como desejar. 
-
-### **Valor true**
-
-Quando o valor é **true**, o [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth) cria um usuário que está configurado na variável de ambiente:
-
-- **`HORUSEC_APPLICATION_ADMIN_DATA`** e o valor:
-
-```bash
- HORUSEC_APPLICATION_ADMIN_DATA="{\"username\": \"horusec-admin\", \"email\":\"horusec-admin@example.com\", \"password\":\"Devpass0*\"}"
+A partir disso, o Horusec possibilita criar o usuário do tipo administrador da aplicação com seu valor padrão.
+O usuário é criado com os seguintes dados:
+```text
+username = horusec-admin
+email = horusec-admin@example.com
+password = Devpass0*
 ```
 
+Também é possível você configurar os dados do usuário padrão no microsserviço horusec-auth com:
+- A variável de ambiente **`HORUSEC_APPLICATION_ADMIN_DATA`** e seu valor sendo alterado da forma que você preferir:
+  `"{\"username\": \"horusec-admin\",\"email\":\"horusec-admin@example.com\",\"password\":\"Devpass0*\"}"`
+
+Quando o microsserviço horusec-auth inicia com:
+- A variável de ambiente **`HORUSEC_ENABLE_APPLICATION_ADMIN`** e o valor **false**.
+  - Não será criado este usuário no sistema quando a aplicação for iniciada.
+
+
 {{% alert color="info" %}}
-Somente esse usuário pode criar workspaces e informar quem será o administrador dele dentro da aplicação web do Horusec.
-Pode ser o próprio usuário ou outro já existente na plataforma.
+Lembrando que após usuário criado ele não poderá ser editado.
 {{% /alert %}}
-
-
- 
-

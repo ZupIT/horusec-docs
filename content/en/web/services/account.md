@@ -7,7 +7,7 @@ description: In this section, you will find more information about Horusec-Accou
 ## **What is it?**
 Horusec-Account is responsible for the management of workspaces, repository, webhooks and access updates.
 
-![](/docs/ptbr/web/services/account/0-arquitecture.jpg)
+![](/docs/ptbr/web/services/core/0-arquitecture.jpg)
 
 ## **Requisites**
 To run this service locally, you need: 

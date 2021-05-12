@@ -85,134 +85,123 @@ A seguir, um exemplo de um arquivo de configuração:
 
 ```json
 {
-    "horusecCliCertInsecureSkipVerify": false,
-    "horusecCliCertPath": "",
-    "horusecCliContainerBindProjectPath": "",
-    "horusecCliCustomImages": {
-        "c": "",
-        "csharp": "",
-        "dart": "",
-        "elixir": "",
-        "generic": "",
-        "go": "",
-        "hcl": "",
-        "java": "",
-        "javascript": "",
-        "kotlin": "",
-        "leaks": "",
-        "php": "",
-        "python": "",
-        "ruby": "",
-        "shell": "",
-        "yaml": ""
+  "horusecCliCertInsecureSkipVerify": false,
+  "horusecCliCertPath": "",
+  "horusecCliContainerBindProjectPath": "",
+  "horusecCliCustomImages": {
+    "c": "",
+    "csharp": "",
+    "elixir": "",
+    "generic": "",
+    "go": "",
+    "hcl": "",
+    "javascript": "",
+    "leaks": "",
+    "php": "",
+    "python": "",
+    "ruby": "",
+    "shell": ""
+  },
+  "horusecCliCustomRulesPath": "",
+  "horusecCliDisableDocker": false,
+  "horusecCliEnableCommitAuthor": false,
+  "horusecCliEnableGitHistoryAnalysis": false,
+  "horusecCliEnableInformationSeverity": false,
+  "horusecCliFalsePositiveHashes": [],
+  "horusecCliFilesOrPathsToIgnore": [
+    "*tmp*",
+    "**/.vscode/**"
+  ],
+  "horusecCliHeaders": {},
+  "horusecCliHorusecApiUri": "http://0.0.0.0:8000",
+  "horusecCliJsonOutputFilepath": "",
+  "horusecCliMonitorRetryInSeconds": 15,
+  "horusecCliPrintOutputType": "text",
+  "horusecCliProjectPath": "/home/wilian/go/src/github.com/ZupIT/docs-horusec/content",
+  "horusecCliRepositoryAuthorization": "00000000-0000-0000-0000-000000000000",
+  "horusecCliRepositoryName": "content",
+  "horusecCliReturnErrorIfFoundVulnerability": false,
+  "horusecCliRiskAcceptHashes": [],
+  "horusecCliSeveritiesToIgnore": [
+    "INFO"
+  ],
+  "horusecCliShowVulnerabilitiesTypes": [
+    "Vulnerability"
+  ],
+  "horusecCliTimeoutInSecondsAnalysis": 600,
+  "horusecCliTimeoutInSecondsRequest": 300,
+  "horusecCliToolsConfig": {
+    "Bandit": {
+      "istoignore": false
     },
-    "horusecCliCustomRulesPath": "",
-    "horusecCliDisableDocker": false,
-    "horusecCliEnableCommitAuthor": false,
-    "horusecCliEnableGitHistoryAnalysis": false,
-    "horusecCliEnableInformationSeverity": false,
-    "horusecCliFalsePositiveHashes": [],
-    "horusecCliFilesOrPathsToIgnore": [
-        "*tmp*",
-        "**/.vscode/**"
-    ],
-    "horusecCliFilterPath": "",
-    "horusecCliHeaders": {},
-    "horusecCliHorusecApiUri": "http://0.0.0.0:8000",
-    "horusecCliJsonOutputFilepath": "",
-    "horusecCliMonitorRetryInSeconds": 15,
-    "horusecCliPrintOutputType": "text",
-    "horusecCliProjectPath": "./",
-    "horusecCliRepositoryAuthorization": "00000000-0000-0000-0000-000000000000",
-    "horusecCliRepositoryName": "",
-    "horusecCliReturnErrorIfFoundVulnerability": false,
-    "horusecCliRiskAcceptHashes": [],
-    "horusecCliSeveritiesToIgnore": [
-        "INFO"
-    ],
-    "horusecCliTimeoutInSecondsAnalysis": 600,
-    "horusecCliTimeoutInSecondsRequest": 300,
-    "horusecCliToolsConfig": {
-        "Bandit": {
-            "istoignore": false
-        },
-        "Brakeman": {
-            "istoignore": false
-        },
-        "Eslint": {
-            "istoignore": false
-        },
-        "Flawfinder": {
-            "istoignore": false
-        },
-        "GitLeaks": {
-            "istoignore": false
-        },
-        "GoSec": {
-            "istoignore": false
-        },
-        "HorusecCsharp": {
-            "istoignore": false
-        },
-        "HorusecDart": {
-            "istoignore": false
-        },
-        "HorusecJava": {
-            "istoignore": false
-        },
-        "HorusecKotlin": {
-            "istoignore": false
-        },
-        "HorusecKubernetes": {
-            "istoignore": false
-        },
-        "HorusecLeaks": {
-            "istoignore": false
-        },
-        "HorusecNodeJS": {
-            "istoignore": false
-        },
-        "NpmAudit": {
-            "istoignore": false
-        },
-        "PhpCS": {
-            "istoignore": false
-        },
-        "Safety": {
-            "istoignore": false
-        },
-        "SecurityCodeScan": {
-            "istoignore": false
-        },
-        "Semgrep": {
-            "istoignore": false
-        },
-        "ShellCheck": {
-            "istoignore": false
-        },
-        "TfSec": {
-            "istoignore": false
-        },
-        "YarnAudit": {
-            "istoignore": false
-        }
+    "Brakeman": {
+      "istoignore": false
     },
-    "horusecCliToolsToIgnore": [],
-    "horusecCliWorkDir": {
-        "go": [],
-        "csharp": [],
-        "ruby": [],
-        "python": [],
-        "java": [],
-        "kotlin": [],
-        "javaScript": [],
-        "leaks": [],
-        "hcl": [],
-        "php": [],
-        "c": [],
-        "yaml": [],
-        "generic": []
+    "BundlerAudit": {
+      "istoignore": false
+    },
+    "Flawfinder": {
+      "istoignore": false
+    },
+    "GitLeaks": {
+      "istoignore": false
+    },
+    "GoSec": {
+      "istoignore": false
+    },
+    "HorusecEngine": {
+      "istoignore": false
+    },
+    "MixAudit": {
+      "istoignore": false
+    },
+    "NpmAudit": {
+      "istoignore": false
+    },
+    "PhpCS": {
+      "istoignore": false
+    },
+    "Safety": {
+      "istoignore": false
+    },
+    "SecurityCodeScan": {
+      "istoignore": false
+    },
+    "Semgrep": {
+      "istoignore": false
+    },
+    "ShellCheck": {
+      "istoignore": false
+    },
+    "Sobelow": {
+      "istoignore": false
+    },
+    "TfSec": {
+      "istoignore": false
+    },
+    "YarnAudit": {
+      "istoignore": false
     }
+  },
+  "horusecCliWorkDir": {
+    "go": [],
+    "csharp": [],
+    "ruby": [],
+    "python": [],
+    "java": [],
+    "kotlin": [],
+    "javaScript": [],
+    "leaks": [],
+    "hcl": [],
+    "php": [],
+    "c": [],
+    "yaml": [],
+    "generic": [],
+    "elixir": [],
+    "shell": [],
+    "dart": [],
+    "nginx": []
+  }
 }
 ```
 Por definição padrão, o Horusec vai buscar esse arquivo de configuração automática na mesma pasta em que for executado o comando `horusec.start`.
@@ -236,7 +225,7 @@ export HORUSEC_CLI_REPOSITORY_AUTHORIZATION="00000000-0000-0000-0000-00000000000
 export HORUSEC_CLI_PRINT_OUTPUT_TYPE="text"
 export HORUSEC_CLI_JSON_OUTPUT_FILEPATH=""
 export HORUSEC_CLI_SEVERITIES_TO_IGNORE="INFO"
-export HORUSEC_CLI_FILES_OR_PATHS_TO_IGNORE="*tmp* **/.vscode/**"
+export HORUSEC_CLI_FILES_OR_PATHS_TO_IGNORE="*tmp*, **/.vscode/**"
 export HORUSEC_CLI_RETURN_ERROR_IF_FOUND_VULNERABILITY="false"
 export HORUSEC_CLI_PROJECT_PATH="./"
 export HORUSEC_CLI_FILTER_PATH=""
@@ -253,6 +242,7 @@ export HORUSEC_CLI_CONTAINER_BIND_PROJECT_PATH=""
 export HORUSEC_CLI_DISABLE_DOCKER="false"
 export HORUSEC_CLI_CUSTOM_RULES_PATH=""
 export HORUSEC_CLI_ENABLE_INFORMATION_SEVERITY="false"
+export HORUSEC_CLI_SHOW_VULNERABILITIES_TYPES="Vulnerability"
 ```
 
 #### **3. Flags**
@@ -306,14 +296,6 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left">o</td>
             <td style="text-align:left">text</td>
             <td style="text-align:left">A saída pode ser alterada entre <code>json</code> ou <code>sonarqube</code> ou <code>text</code></td>
-        </tr>
-        <tr>
-            <td style="text-align:left">HORUSEC_CLI_TYPES_OF_VULNERABILITIES_TO_IGNORE</td>
-            <td style="text-align:left">horusecCliTypesOfVulnerabilitiesToIgnore</td>
-            <td style="text-align:left">ignore-severity</td>
-            <td style="text-align:left">s</td>
-            <td style="text-align:left"></td>
-            <td style="text-align:left">Esta configuração especifica algum tipo de vulnerabilidade para não aplicar com um erro. Os tipos disponíveis são: &quot;LOW, MEDIUM, HIGH&quot;. Ex .: LOW<del>,</del> MEDIUM todas as vulnerabilidades do tipo configurado são ignoradas</td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_JSON_OUTPUT_FILEPATH</td>
@@ -489,7 +471,7 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left">horusecCliWorkDir</td>
             <td style="text-align:left"></td>
             <td style="text-align:left"></td>
-            <td style="text-align:left">{"go": [],"csharp": [],"ruby": [],"python": [],"java": [],"kotlin": [],"javaScript": [],"leaks": [],"hcl": [],"php": [],"c": [],"yaml": [],"generic": []}</td>
+            <td style="text-align:left">{"go": [],"csharp": [],"ruby": [],"python": [],"java": [],"kotlin": [],"javaScript": [],"leaks": [],"hcl": [],"php": [],"c": [],"yaml": [],"generic": [],"elixir": [],"shell": [],"dart": [],"nginx": []}</td>
             <td style="text-align:left">Esta configuração informa ao Horusec o diretório correto para executar uma linguagem específica.</td>
         </tr>
         <tr>
@@ -497,7 +479,7 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left">horusecCliToolsConfig</td>
             <td style="text-align:left"></td>
             <td style="text-align:left"></td>
-            <td style="text-align:left">{"Bandit": {"istoignore": false},"Brakeman": {"istoignore": false},"Eslint": {"istoignore": false},"Flawfinder": {"istoignore": false},"GitLeaks": {"istoignore": false},"GoSec": {"istoignore": false},"HorusecCsharp": {"istoignore": false},"HorusecDart": {"istoignore": false},"HorusecJava": {"istoignore": false},"HorusecKotlin": {"istoignore": false},"HorusecKubernetes": {"istoignore": false},"HorusecLeaks": {"istoignore": false},"HorusecNodeJS": {"istoignore": false},"NpmAudit": {"istoignore": false},"PhpCS": {"istoignore": false},"Safety": {"istoignore": false},"SecurityCodeScan": {"istoignore": false},"Semgrep": {"istoignore": false},"ShellCheck": {"istoignore": false},"TfSec": {"istoignore": false},"YarnAudit": {"istoignore": false}}</td>
+            <td style="text-align:left">{"Bandit": {"istoignore": false},"Brakeman": {"istoignore": false},"BundlerAudit": {"istoignore": false},"Flawfinder": {"istoignore": false},"GitLeaks": {"istoignore": false},"GoSec": {"istoignore": false},"HorusecEngine": {"istoignore": false},"MixAudit": {"istoignore": false},"NpmAudit": {"istoignore": false},"PhpCS": {"istoignore": false},"Safety": {"istoignore": false},"SecurityCodeScan": {"istoignore": false},"Semgrep": {"istoignore": false},"ShellCheck": {"istoignore": false},"Sobelow": {"istoignore": false},"TfSec": {"istoignore": false},"YarnAudit": {"istoignore": false}}</td>
             <td style="text-align:left">Esta configuração informa ao Horusec quais ferramentas estão habilitadas a realizar análise.</td>
         </tr>
         <tr>
@@ -505,7 +487,7 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left">horusecCliCustomImages</td>
             <td style="text-align:left"></td>
             <td style="text-align:left"></td>
-            <td style="text-align:left">{"c": "","csharp": "","dart": "","elixir": "","generic": "","go": "","hcl": "","java": "","javascript": "","kotlin": "","leaks": "","php": "","python": "","ruby": "","shell": "","yaml": ""}</td>
+            <td style="text-align:left">{"c": "","csharp": "","elixir": "","generic": "","go": "","hcl": "","javascript": "","leaks": "","php": "","python": "","ruby": "","shell": ""}</td>
             <td style="text-align:left">Esta configuração informa ao Horusec onde a imagem docker da linguagem está para rodar a análise.</td>
         </tr>
         <tr>
@@ -531,6 +513,14 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left"></td>
             <td style="text-align:left"></td>
             <td style="text-align:left">Esta configuração informa ao Horusec o endereço para realizar download de imagens caso você tenha configurado em um registro privado.</td>
+        </tr>
+        <tr>
+            <td style="text-align:left">HORUSEC_CLI_SHOW_VULNERABILITIES_TYPES</td>
+            <td style="text-align:left">horusecCliShowVulnerabilitiesTypes</td>
+            <td style="text-align:left">show-vulnerabilities-types</td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left">Vulnerability</td>
+            <td style="text-align:left">Esta configuração informa ao Horusec quais são as vulnerabilidades de saída, podem ser do tipo: Vulnerability, Risk Accepted, False Positive, Corrected.</td>
         </tr>
     </tbody>
 </table>

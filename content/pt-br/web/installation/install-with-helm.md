@@ -119,7 +119,7 @@ Os valores informados nas Secrets deste guia são meros exemplos e não se desti
 Depois de realizar todas as configurações necessárias, você pode ir ao diretório raiz do pacote da release do Horusec e seguir as instruções abaixo para instalar os serviços:
 
 
- * Instale o Chart com os componentes do [**serviço de account**](/docs/pt-br/web/services/account):
+ * Instale o Chart com os componentes do [**serviço core**](/docs/pt-br/web/services/core):
 
 ```bash
 helm install account horusec-account/deployments/helm/horusec-account -n horusec-system

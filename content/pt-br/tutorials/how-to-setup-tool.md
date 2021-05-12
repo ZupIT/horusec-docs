@@ -1,6 +1,6 @@
 ---
 title: Como configurar uma ferramenta do Horusec?
-weight: 9
+weight: 10
 description: Nesta seção, você encontra as informações para configurar uma ferramenta do horusec
 ---
 
@@ -15,86 +15,70 @@ O Horusec disponibiliza uma única opção para você realizar as configuraçõe
     "horusecCliCustomImages": {
         "c": "",
         "csharp": "",
-        "dart": "",
         "elixir": "",
         "generic": "",
         "go": "",
         "hcl": "",
-        "java": "",
         "javascript": "",
-        "kotlin": "",
         "leaks": "",
         "php": "",
         "python": "",
         "ruby": "",
-        "shell": "",
-        "yaml": ""
+        "shell": ""
     },
     "horusecCliToolsConfig": {
-        "Bandit": {
-            "istoignore": false
-        },
-        "Brakeman": {
-            "istoignore": false
-        },
-        "Eslint": {
-            "istoignore": false
-        },
-        "Flawfinder": {
-            "istoignore": false
-        },
-        "GitLeaks": {
-            "istoignore": false
-        },
-        "GoSec": {
-            "istoignore": false
-        },
-        "HorusecCsharp": {
-            "istoignore": false
-        },
-        "HorusecDart": {
-            "istoignore": false
-        },
-        "HorusecJava": {
-            "istoignore": false
-        },
-        "HorusecKotlin": {
-            "istoignore": false
-        },
-        "HorusecKubernetes": {
-            "istoignore": false
-        },
-        "HorusecLeaks": {
-            "istoignore": false
-        },
-        "HorusecNodeJS": {
-            "istoignore": false
-        },
-        "NpmAudit": {
-            "istoignore": false
-        },
-        "PhpCS": {
-            "istoignore": false
-        },
-        "Safety": {
-            "istoignore": false
-        },
-        "SecurityCodeScan": {
-            "istoignore": false
-        },
-        "Semgrep": {
-            "istoignore": false
-        },
-        "ShellCheck": {
-            "istoignore": false
-        },
-        "TfSec": {
-            "istoignore": false
-        },
-        "YarnAudit": {
-            "istoignore": false
-        }
+    "Bandit": {
+        "istoignore": false
+    },
+    "Brakeman": {
+        "istoignore": false
+    },
+    "BundlerAudit": {
+        "istoignore": false
+    },
+    "Flawfinder": {
+        "istoignore": false
+    },
+    "GitLeaks": {
+        "istoignore": false
+    },
+    "GoSec": {
+        "istoignore": false
+    },
+    "HorusecEngine": {
+        "istoignore": false
+    },
+    "MixAudit": {
+        "istoignore": false
+    },
+    "NpmAudit": {
+        "istoignore": false
+    },
+    "PhpCS": {
+        "istoignore": false
+    },
+    "Safety": {
+        "istoignore": false
+    },
+    "SecurityCodeScan": {
+        "istoignore": false
+    },
+    "Semgrep": {
+        "istoignore": false
+    },
+    "ShellCheck": {
+        "istoignore": false
+    },
+    "Sobelow": {
+        "istoignore": false
+    },
+    "TfSec": {
+        "istoignore": false
+    },
+    "YarnAudit": {
+        "istoignore": false
     }
+  }
 }
 ```
 
