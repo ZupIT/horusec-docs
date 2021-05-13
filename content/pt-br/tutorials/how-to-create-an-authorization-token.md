@@ -40,4 +40,4 @@ Você consegue fazer isso usando a plataforma web [**Horusec Manager**](/docs/pt
 
 Veja abaixo um exemplo completo:
 
-  <img style="width:100%" src="/docs/en/tutorials/how-to-create-authorization-token/generate-token.gif">
+<img style="width:100%" src="/docs/en/tutorials/how-to-create-authorization-token/generate-token.gif">
