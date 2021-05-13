@@ -14,7 +14,7 @@ This service resources are:
 * Saves in a centered system;
 * If it is configured, publish in the webhook line, to send this analysis to someone else.
 
-![](/docs/ptbr/web/services/api/0-arquitecture.jpg)
+![](/docs/ptbr/web/services/api/0-arquitecture.png)
 
 ## **Requisites**
 

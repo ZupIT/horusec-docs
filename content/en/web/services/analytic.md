@@ -9,7 +9,7 @@ Horusec-Analytic reads the database and shows the analysis' generated data and i
 
 This service is integrated with GraphQL to return details of the vulnerabilities found and also the analytical content found. 
 
-![](/docs/ptbr/web/services/analytic/0-arquitecture.jpg)
+![](/docs/ptbr/web/services/analytic/0-arquitecture.png)
 
 ## **Requisites**
 To locally run this service, you will need:

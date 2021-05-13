@@ -8,7 +8,7 @@ description: Nesta seção, você encontra mais informações sobre o serviço H
 
 O Horusec-Auth é um microsserviço responsável pela gestão de usuários, autenticação e acessos a plataforma.
 
-![](/docs/ptbr/web/services/auth/0-arquitecture.jpg)
+![](/docs/ptbr/web/services/auth/0-arquitecture.png)
 
 ## **Tipos de autenticação**
 O Horusec possui 3 tipos de autenticação: 

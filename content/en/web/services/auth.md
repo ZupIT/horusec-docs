@@ -7,7 +7,7 @@ description:  In this section, you will find information about Horusec-Auth serv
 ## **What is it?**
 Horusec-Auth is responsible for the authentication management and the users account creation. 
 
-![](/docs/ptbr/web/services/auth/0-arquitecture.jpg)
+![](/docs/ptbr/web/services/auth/0-arquitecture.png)
 
 ## **Requisites**
 

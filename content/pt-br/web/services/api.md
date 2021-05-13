@@ -15,7 +15,7 @@ Este serviço possui alguns recursos:
 * Salvar os dados em um sistema centralizado;
 * Se configurado, publicar a análise na fila do webhook para enviá-la a terceiros.
 
-![](/docs/ptbr/web/services/api/0-arquitecture.jpg)
+![](/docs/ptbr/web/services/api/0-arquitecture.png)
 
 ## **Requisitos**
 

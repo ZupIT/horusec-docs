@@ -7,7 +7,7 @@ description: In this section, you will find information about Horusec-Webhook se
 ## **What is it?**
 Horusec-webhook is a microservice that triggers the data to third party services when the broker is enabled.
 
-![](/docs/ptbr/web/services/webhook/0-arquitecture.jpg)
+![](/docs/ptbr/web/services/webhook/0-arquitecture.png)
 
 ## **Requisites**
 To locally run this service, you will need: 
