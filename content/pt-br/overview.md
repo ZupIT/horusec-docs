@@ -53,7 +53,9 @@ Quando o horusec inícia uma análise ele executa os passos abaixo:
 
 **Veja abaixo um exemplo completo do Horusec:**
 
-<img src="/docs/ptbr/overview/6-full-usage.gif" alt="usage_horusec" width="100%"/>
+<video alt="usage_horusec" width="100%" controls>
+  <source src="/docs/ptbr/overview/6-full-usage.mp4" type="video/mp4">
+</video>
 
 ## **Por que usar o Horusec?**
 
