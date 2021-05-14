@@ -23,7 +23,7 @@ A seguir, você verá em detalhes como realizar cada uma dessas atividades.
 
 O Manager conta com uma funcionalidade para você criar sua conta dentro do próprio Horusec. Depois que seu usuário é criado, basta confirmar a conta direto no seu e-mail. 
 
-![](/docs/ptbr/web/services/manager/introduction/1-login.png)
+![](/docs/ptbr/web/services/manager/introduction/1-create-account.gif)
 
 ### Autenticação
 
@@ -50,7 +50,7 @@ Veja mais sobre quais são esses dados na tabela a seguir:
 | **Detalhes das vulnerabilidades ativas**  | Visão detalhada das vulnerabilidades que estão ativas, na visão da organização ou do repositório.  |
 
 {{< tabs id="Dash" >}}
-{{% tab name="Dash com visão por organização" %}}
+{{% tab name="Dash com visão por workspace" %}}
 ![](/docs/ptbr/web/services/manager/introduction/3-dashboard-organization.gif)
 {{% /tab %}}
 
