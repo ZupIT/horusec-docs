@@ -5,7 +5,7 @@ description: In this section, you will find information about migration service 
 ---
 
 ## **What is it?**
-Horusec-Migration is a microservice resposible for the migration on Horusec's database. It is based on [golang-migrate](https://github.com/golang-migrate/migrate)
+Horusec-Migration is a microservice resposible for the migration on Horusec's database. It is based on [**golang-migrate**](https://github.com/golang-migrate/migrate)
 
 
 ## **Requisites**

@@ -7,17 +7,17 @@ description: In this section, you will find a tutorial to run Horusec's web appl
 On Horusec, you can make a quick test to understand how the application works and how to adjust it to your environment. It is possible to do it with a virtual machine ou changing the host. To do so, follow the steps below: 
 
 #### **Step 1:** Install the web application on your environment
-If you haven't installed yet, check the process [**in this section**](/docs/en/web/installation). 
+If you haven't installed yet, [**check out how to install**](/docs/web/installation). 
 
 #### **Step 2:** Check the uninitiated services
-Some services are not initiated by default, for example [Horusec-Messages](/docs/en/web/services/Messages) and [Horusec-Webhook](/docs/en/web/services/Webhook). 
+Some services are not initiated by default, for example [**Horusec-Messages**](/docs/web/services/Messages) and [**Horusec-Webhook**](/docs/web/services/Webhook). 
 
-After installation, you may notice that some services, by dault, are not initiated. It happens because the services, such as messaging, is configured to be disabled, in case you need to use it, just check out this tutorial.
+After installation, you may notice that some services, by dault, are not initiated. It happens because the services, such as messaging, is configured to be disabled, in case you need to use it, just check out [**how to enable and disable the messaging service in this tutorial**](/docs/tutorials/how-to-enable-disable-messaging-service/).
 
 #### **Step 3:** Configure Horusec-Manager
 
 {{% alert color="info" %}}
-If, for exaple, you try to access [Horusec-Manager](/docs/pt-br/web/services/manager) from your navigator and doesn't show any result, it happens because when you upload an application and try to access it through an unknown host, Horusec by default tries to stablish a communication through `127.0.0.1` IP, which means that the communication between services will always happen locally.
+If, for exaple, you try to access [**Horusec-Manager**](/docs/web/services/manager/introduction/) from your navigator and doesn't show any result, it happens because when you upload an application and try to access it through an unknown host, Horusec by default tries to stablish a communication through `127.0.0.1` IP, which means that the communication between services will always happen locally.
 {{% /alert %}}
 
 
@@ -31,7 +31,7 @@ To do so:
 
 **Example using docker-compose**
 
-When you use the `make install` command, it runs the [docker-compose.yaml](https://github.com/ZupIT/horusec/blob/master/deployments/docker-compose.yaml) Horusec's default. 
+When you use the `make install` command, it runs the [**docker-compose.yaml**](https://github.com/ZupIT/horusec/blob/master/deployments/docker-compose.yaml) Horusec's default. 
 The Horusec-Manager is being executed with the following configuration: 
 
 ```yaml

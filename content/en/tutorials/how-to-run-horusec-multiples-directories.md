@@ -36,7 +36,7 @@ Then, you have to configure your working directory. For this example, see the co
 }
 ```
 
-The projects structure is divided by languages and can support many on each one. **But in mostly cases it is not necessary to make this configuration**, because Horusec can identify which languages and where are they in the main files. However, in some cases the functionality is used to force the tool to realize it above specific directories.
+The project's structure is divided by languages and can support many on each one. **But in mostly cases it is not necessary to make this configuration**, because Horusec can identify which languages and where are they in the main files. However, in some cases the functionality is used to force the tool to realize it above specific directories.
 
 See below the accepted languages interface:
 

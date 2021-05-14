@@ -8,7 +8,7 @@ description: In this section, you will find how to enable and/or disable Horusec
 
 ## What is the messaging service?
 
-The messaging service ensures the sending and receipt of messages safely. Horusec uses [RabbitMQ](https://www.rabbitmq.com/), as an easy option to implement locally or in cloud and that offers support to several message's protocols. RabbitMQ can be implemented in distributed and federated configurations to attend into high-scaled and high-availability requirements.
+The messaging service ensures the sending and receipt of messages safely. Horusec uses [**RabbitMQ**](https://www.rabbitmq.com/), as an easy option to implement locally or in cloud and that offers support to several message's protocols. RabbitMQ can be implemented in distributed and federated configurations to attend into high-scaled and high-availability requirements.
 
 ## Where is used?
 
@@ -23,8 +23,8 @@ This service inside Horusec has some functionalities in asynchronous mode, such 
 
 The services used to realize the queues consume are: 
 
-* [**Horusec-Messages**](/docs/en/web/services/messages)
-* [**Horusec-Webhook**](/docs/en/web/services/webhook)
+* [**Horusec-Messages**](/docs/web/services/messages)
+* [**Horusec-Webhook**](/docs/web/services/webhook)
 
 {{% alert color="info" %}}
 When you disable the messaging service, it is normal to see these services "stopped" because they are not been in use.
@@ -32,9 +32,9 @@ When you disable the messaging service, it is normal to see these services "stop
 
 And the services that receive actions when it is necessary in it respective queues are:
 
-* [**Horusec-Auth**](/docs/en/web/services/Auth)
-* [**Horusec-Account**](/docs/en/web/services/Account)
-* [**Horusec-Api**](/docs/en/web/services/API)
+* [**Horusec-Auth**](/docs/web/services/Auth)
+* [**Horusec-Account**](/docs/web/services/Account)
+* [**Horusec-Api**](/docs/web/services/API)
 
 {{% alert color="info" %}}
 When you disable the messaging service, these services ignore the action of publishing in a queue and follow to the next functionality.
@@ -55,5 +55,5 @@ If the `HORUSEC_DISABLED_BROKER` microservice value is **true**, the messaging s
 To enable it, it's only necessary to change the value to **false**. 
 
 {{% alert color="info" %}}
-When you upload Horusec's web application using [Helm ou Docker-compose](/docs/en/web) patterns, this environment variable has a **true** value.
+When you upload Horusec's web application using [Helm ou Docker-compose](/docs/web) patterns, this environment variable has a **true** value.
 {{% /alert %}}

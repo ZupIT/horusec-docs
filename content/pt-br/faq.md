@@ -45,7 +45,7 @@ Para verificar as vulnerabilidades encontradas, você precisa ter acesso ao mana
 * Visualizar e analisar vulnerabilidades encontradas pelo CLI
 * Gerenciar acessos à plataforma.
 
-Quando uma análise é enviada para o Horusec armazenar pelo manager, você tem acesso a um dashboard detalhado com a visão da organização ou do repositório em relação àquela análise.
+Quando uma análise é enviada para o Horusec armazenar pelo Manager, você tem acesso a um dashboard detalhado com a visão da organização ou do repositório em relação àquela análise.
 
 ### **6. O Horusec depende de algo para rodar localmente via CLI?** 
 
@@ -67,8 +67,8 @@ Para acessar o manager, você pode subir em sua infrapessoal usando os itens Doc
  
 ### **10. Como exportar o output do Horusec em arquivo?** 
 
-Para fazer isso, siga o **Exemplo 5: Usando para obter uma saída sonarqube** na [**seção Recursos**](/docs/pt-br/cli/resources/#exemplo-5-usando-para-obter-uma-saída-sonarqube).
+Para fazer isso, siga o [**Exemplo 5: Usando para obter uma saída sonarqube na seção Recursos**](/docs/pt-br/cli/resources/#exemplo-5-usando-para-obter-uma-saída-sonarqube).
 
 ### **11. Como importar o output do Horusec dentro do SonarQube?**  
 
-Veja a pergunta 10 [**"Como exportar o output do Horusec no Sonarqube"**](/docs/pt-br/faq/#10-como-exportar-o-output-do-horusec-em-arquivo) e depois importe o arquivo gerado dentro da sua interface do Sonarqube usando [**este tutorial**](https://docs.sonarqube.org/latest/analysis/generic-issue/).
+Veja a pergunta 10 [**"Como exportar o output do Horusec no Sonarqube"**](/docs/pt-br/faq/#10-como-exportar-o-output-do-horusec-em-arquivo) e depois [**importe o arquivo gerado dentro da sua interface do Sonarqube usando este tutorial**](https://docs.sonarqube.org/latest/analysis/generic-issue/).

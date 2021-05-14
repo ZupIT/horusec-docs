@@ -17,7 +17,7 @@ Horusec chooses the languages and tools to be used in the project according to t
 
 ## **Where can you use Horusec?**
 ### **Locally**
-O Horusec conta com uma CLI intuitiva e pensada para desenvolvedores onde é possível realizar uma análise localmente da máquina do desenvolvedor.
+Horusec has an intuitive CLI, made for developers where is possible to perform local analysis. 
 
 ### **CI/CD pipeline**
 It is possible to add Horusec to the `Continuous Integration` or `Continuous Deploy` pipeline, ensuring one more security layer in your project, besides preventing a malicious code to enter in production. 

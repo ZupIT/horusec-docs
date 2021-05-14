@@ -9,13 +9,14 @@ description: >-
 
 ### **Vulnerabilidade**
 
-É uma falha de segurança no projeto que pode ocasionar algum dano ao sistema ou à organização. No total, o Horusec consegue identificar **5 diferentes tipos de falha de segurança**: 
+É uma falha de segurança no projeto que pode ocasionar algum dano ao sistema ou à organização. No total, o Horusec consegue identificar **6 diferentes tipos de falha de segurança**: 
 
-1. **High**
-2. **Medium**
-3. **Low**
-4. **Audit**
+1. **Critical**
+2. **High**
+3. **Medium**
+4. **Low**
 5. **Info**
+6. **Unknown**
 
 ### **Falso Positivo**
 

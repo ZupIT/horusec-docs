@@ -14,6 +14,17 @@ There are 4 ways to install Horusec-CLI:
 
 Next, you will understand better each one of them. 
 
+## **Requirements**
+For usage is required some tools installed in your machine:
+* [**Docker**](https://docs.docker.com/get-docker/)
+  - {{% alert color="warning" %}}
+For disable docker, you can see [how to use Horusec without Docker tutorial](/docs/tutorials/how-to-use-horusec-without-docker/), but you will lose your analysis with [other tools](/docs/cli/analysis-tools/security-tools/).
+    {{% /alert %}}
+* [**Git**](https://git-scm.com/)
+  - {{% alert color="warning" %}}
+For running analysis with git, you can see [how to enable git history analysis tutorial](/docs/tutorials/how-to-enable-git-history-analysis-and-enable-commit-authors/), but it is not enable by default.
+    {{% /alert %}}
+
 ## **Local Installation**
 The installation directly done in your computer is ideal if you want to use Horusec as soon as possible, either to perform analysis or verify vulnerabilities in your project. 
 
@@ -66,8 +77,7 @@ The manual installation is done according to your operation system and the versi
 The links below are to download the lastest version:
 
 - Windows x64:
-
-    📥 https://horusec.io/bin/latest/win_x64/horusec.exe
+  - 📥 https://horusec.io/bin/latest/win_x64/horusec.exe
 
 - Windows x64:
   - 📥 https://horusec.io/bin/latest/win_x64/horusec.exe
@@ -79,6 +89,7 @@ The links below are to download the lastest version:
   - 📥 https://horusec.io/bin/latest/linux_x86/horusec
 - Mac x64:
   - 📥 https://horusec.io/bin/latest/mac_x64/horusec
+
 
 
 👉[**Lastest available version**](https://horusec.io/bin/version-cli-latest.txt)

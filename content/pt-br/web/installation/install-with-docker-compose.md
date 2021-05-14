@@ -48,7 +48,7 @@ make install
 
 ## **Acesso aos serviços do Horusec**
 
-Caso você tenha realizado os passos anteriores, basta acessar o link para visualizar as telas da aplicação web que está sendo oferecida pelo serviço [**Horusec-Manager**](/docs/pt-br/web/services/manager) em [http://localhost:8043](http://localhost:8043). 
+Caso você tenha realizado os passos anteriores, basta acessar o link para visualizar as telas da aplicação web que está sendo oferecida pelo serviço [**Horusec-Manager**](/docs/pt-br/web/services/manager) em [**http://localhost:8043**](http://localhost:8043). 
 
 
 {{% alert color="info" %}}
