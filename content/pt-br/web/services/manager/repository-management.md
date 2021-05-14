@@ -27,6 +27,8 @@ Por exemplo, se você adicionar este token em sua pipeline, o Horusec irá envia
 Lembre-se de que, ao criar um token de acesso, ele será visto apenas uma vez.
 {{% /alert %}}
 
+O token também pode ser configurado para ser expirável a fim de garantir a segurança da sua organização onde após a data de sua expiração o token não será mais válido para novas análises, caso a caixa de selação "É expirável" esteja **desmarcado** então este token não terá tempo de expiração.
+
 ![](/docs/ptbr/web/services/manager/repository-management/2-token-repository.gif)
 
 ### Usuários do repositório
@@ -38,7 +40,12 @@ Você pode convidar novos usuários para fazer parte do repositório. Ao fazer e
   * Gerenciar repositório \(editar, visualizar, remover\);
   * Gerenciar usuários do repositório\(convidar, visualizar, atualizar, remover\);
   * Gerenciar tokens de acesso do repositório\(criar, visualizar, revogar\);
-  * Visualizar o dashboard dos repositórios que o usuário tem acesso. 
+  * Gerenciar as vulnerabilidades do repositório que o usuário tem acesso;
+  * Visualizar o dashboard dos repositórios que o usuário tem acesso.
+
+* **Supervisor do repositório**
+  * Gerenciar as vulnerabilidades do repositório que o usuário tem acesso;
+  * Visualizar o dashboard dos repositórios que o usuário tem acesso.
 
 * **Usuário do repositório**
   * Visualizar o dashboard dos repositórios que o usuário tem acesso.

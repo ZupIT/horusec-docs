@@ -8,7 +8,7 @@ description: In this section, you will find information about workspace manageme
 
 This feature allows you to view, on the platform, all workspaces that you have created or are part of. In addition, you can manage your workspace token or manage your users' permission.
 
-![](/docs/en/web/services/manager/workspace-management/0-workspace.gif)
+![](/docs/ptbr/web/services/manager/workspace-management/0-workspace.gif)
 
 ###  Workspace token
 
@@ -23,9 +23,11 @@ You have the option to create the token, but it is safer to generate only one to
 Remember: when you create an access token, it can only be seen once.
 {{% /alert %}}
 
+The token can also be configured to be expensive in order to ensure the security of your organization where after the date of your expiration the token will no longer be valid for new analyzes, if the sealing box "is expirable" is **unchecked** Then this token will not have expiration time.
+
 Check below how the token dashboard is in Horusec:
 
-![](/docs/en/web/services/manager/workspace-management/1-token.gif)
+![](/docs/ptbr/web/services/manager/workspace-management/1-token.gif)
 
 ### Workspace users
 
@@ -39,6 +41,7 @@ When you invite, you have to choose the user's function inside the workspace. Th
    * Manage workspace's tokens \(create, view, update, remove\);
    * Manage workspace's users \(invite, view, update, remove;
    * Add new repositories;
+   * Manage vulnerabilities of the repositories;
    * View all the repositories in the workspace;
    * View the workspace's dashboard;
    * View repositories' dashboard the user has access to.
@@ -47,4 +50,4 @@ When you invite, you have to choose the user's function inside the workspace. Th
 
    * View repositories' dashboard the user has access to.
 
-![](/docs/en/web/services/manager/workspace-management/2-invite.gif)
+![](/docs/ptbr/web/services/manager/workspace-management/2-invite.gif)

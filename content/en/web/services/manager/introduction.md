@@ -26,7 +26,7 @@ Manager creates an account inside Horusec. After your user is created, you just 
 
 Horusec offers a simple authentication managed by its own system. 
 
-![](/docs/en/references/manager/introduction/2-login-empty.png)
+![](/docs/ptbr/web/services/manager/introduction/2-login-empty.png)
 
 ## Analytics dashboard
 

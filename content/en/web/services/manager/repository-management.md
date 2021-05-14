@@ -13,7 +13,7 @@ When you create a repository, you have some functionalities such as:
 * Manage which users have access; 
 * Manage the access tokens of the repository. 
 
-![](/docs/en/references/manager/repository-management/1-repository-organization.gif)
+![](/docs/ptbr/web/services/manager/repository-management/1-repository-organization.gif)
 
 ### Repository's token
 
@@ -28,8 +28,10 @@ For example, if you add this token in your pipeline, Horusec will send an analys
 Remember when you create an access token you only see it once.
 {{% /alert %}}
 
+The token can also be configured to be expensive in order to ensure the security of your organization where after the date of your expiration the token will no longer be valid for new analyzes, if the sealing box "is expirable" is **unchecked** Then this token will not have expiration time.
 
-![](/docs/en/references/manager/repository-management/2-token-repository.gif)
+
+![](/docs/ptbr/web/services/manager/repository-management/2-token-repository.gif)
 
 ### Repository's users
 
@@ -39,10 +41,16 @@ You can invite new users to join the repository. When you invite, it is possible
   * Manage the repository \(edit, view, remove\);
   * Manage the repository's users \(invite, view, update and remove\);
   * Manage repository's access token \(create, view, revoke\);
-  * View the repository's dashboard users have access to.  
+  * Manage vulnerabilities of repository's users have access to;
+  * View the repository's dashboard users have access to.
+
+* **Repository supervisor**
+  * Manage vulnerabilities of repository's users have access to;
+  * View the repository's dashboard users have access to.
+
 * **Repository user**
-  * View the repository's dashboard users have access to. 
+  * View the repository's dashboard users have access to.
 
-See an example below with the repository invitation to new users: 
+See an example below with the repository invitation to new users:
 
-![](/docs/en/references/manager/repository-management/3-invite-user.gif)
+![](/docs/ptbr/web/services/manager/repository-management/3-invite-user.gif)
