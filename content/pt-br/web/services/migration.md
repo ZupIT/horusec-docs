@@ -17,19 +17,20 @@ Para rodar este serviço local, basta ter:
 * Docker.
 
 ## **Execução**
-Para executar este serviço pode ser feito de duas formas veja abaixo:
+Você pode executar esse serviço de duas formas, veja abaixo: 
 
-* Manualmente, clone o projeto do [Horusec-Platform](https://github.com/ZupIT/horusec-platform) em sua máquina e rode o comando abaixo:
+1.  Manualmente: Clone o projeto do [Horusec-Platform](https://github.com/ZupIT/horusec-platform) em sua máquina e rode o comando abaixo:
 ```bash
 make migrate
 ```
 
-* Execução docker, clone o projeto do [Horusec-Platform](https://github.com/ZupIT/horusec-platform) em sua máquina e rode a imagem docker:
+2. Execução docker: Clone o projeto do [Horusec-Platform](https://github.com/ZupIT/horusec-platform) em sua máquina e rode a imagem docker:
+
   * Crie um volume com todos arquivos de migração;
-  * Crie uma variável de ambiente para saber qual é o banco de dados que deverá ser executado, atualmente pode ser entre `platform` ou `analytic`;
+  * Crie uma variável de ambiente para saber qual o banco de dados deverá ser executado, pode ser o `platform` ou o `analytic`;
   * Crie uma variável de ambiente para saber a URI de conexão com o banco de dados.
 
-Veja abaixo um exemplo completo realizando a migração em ambos bancos de dados.
+Veja abaixo um exemplo onde a migração ocorre nos dois bancos de dados:
 
 
 ```bash
@@ -56,5 +57,5 @@ docker run --name migrate --rm \
 
 
 {{% alert color="info" %}}
-Neste útimo exemplo você pode verificar que as váriaveis: POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_HOST, POSTGRES_PORT, POSTGRES_SSL_MODE devem ser informadas para que a conexão seja realizada com sucesso.
+ As váriaveis: **POSTGRES_USER**, **POSTGRES_PASSWORD**, **POSTGRES_HOST**, **POSTGRES_PORT**, **POSTGRES_SSL_MODE** devem ser informadas para que a conexão seja realizada com sucesso.
 {{% /alert %}}

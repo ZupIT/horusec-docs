@@ -204,7 +204,7 @@ A seguir, um exemplo de um arquivo de configuração:
   }
 }
 ```
-Por definição padrão, o Horusec vai buscar esse arquivo de configuração automática na mesma pasta em que for executado o comando `horusec.start`.
+Por definição padrão, o Horusec vai buscar esse arquivo de configuração automática na mesma pasta em que for executado o comando `horusec.start`. 
 
 Portanto, é recomendado que você esteja na raiz do seu projeto, assim como o comando start.
 
@@ -479,7 +479,7 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left">horusecCliToolsConfig</td>
             <td style="text-align:left"></td>
             <td style="text-align:left"></td>
-            <td style="text-align:left">{"Bandit": {"istoignore": false},"Brakeman": {"istoignore": false},"BundlerAudit": {"istoignore": false},"Flawfinder": {"istoignore": false},"GitLeaks": {"istoignore": false},"GoSec": {"istoignore": false},"HorusecEngine": {"istoignore": false},"MixAudit": {"istoignore": false},"NpmAudit": {"istoignore": false},"PhpCS": {"istoignore": false},"Safety": {"istoignore": false},"SecurityCodeScan": {"istoignore": false},"Semgrep": {"istoignore": false},"ShellCheck": {"istoignore": false},"Sobelow": {"istoignore": false},"TfSec": {"istoignore": false},"YarnAudit": {"istoignore": false}}</td>
+            <td style="text-align:left">{"Bandit": {"istoignore": false},"Brakeman": {"istoignore": false},"BundlerAudit": {"istoignore": false},"Flawfinder": {"istoignore": false},"GitLeaks": {"istoignore": false},"GoSec": {"istoignore": false},"HorusecEngine": {"istoignore": false},"MixAudit": {"istoignore": false},"NpmAudit": {"istoignore": false},"PhpCS": {"istoignore": false},"Safety": {"istoignore": false},"SecurityCodeScan": {"istoignore": false},"Semgrep": {"istoignore": false},"ShellCheck": {"istoignore": false},"Sobelow": {"istoignore": false},"TfSec": {"istoignore": false}</td>
             <td style="text-align:left">Esta configuração informa ao Horusec quais ferramentas estão habilitadas a realizar análise.</td>
         </tr>
         <tr>

@@ -5,7 +5,7 @@ description: Nesta seção, você encontra o tutorial para rodar a aplicação w
 ---
 
 ---
-
+ 
 No Horusec você consegue realizar um teste rápido para entender e como a aplicação trabalha e como adequá-la ao seu ambiente. É possível fazer isso com a marquina virtual ou mudar o host. Para fazer isso, siga os passos abaixo:
 
 #### **Passo 1: Instale a aplicação web no seu ambiente**

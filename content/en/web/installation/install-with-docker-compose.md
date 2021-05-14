@@ -24,24 +24,24 @@ There is a **configuration file** on Horusec with all the default option for you
 This file can only be used for a testing scenario, never the production one.
 {{% /alert %}}
 
-- You can get the [**configuration file**](https://github.com/ZupIT/horusec/blob/master/deployments/docker-compose.yaml) on Horusec's repository.
+- You can get the [**configuration file**](https://github.com/ZupIT/horusec-platform/blob/master/deployments/compose/compose.yaml) on Horusec's repository.
 
 Follow the next steps to configure:
 1. Clone the repository;
 ```bash
-git clone https://github.com/ZupIT/horusec.git
+git clone https://github.com/ZupIT/horusec-platform.git
 
 ```
 
 2. Enter the folder you have cloned
 
 ```bash
-cd horusec
+cd horusec-platform
 ```
 3. Run the command `make install` in order to have all web applications.
 
 ```bash
-git clone https://github.com/ZupIT/horusec.git
+make install
 ```
 
 

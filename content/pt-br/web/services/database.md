@@ -6,14 +6,14 @@ description: Nesta seção, você encontra mais informações sobre o serviço d
 
 ## **O que é?** 
 
-O Banco de dados do horusec é responsável por armazenar todos os seus dados utilizando como base a ferramenta [**PostgreSQL**](https://www.postgresql.org/). na versão 12.
+O Banco de dados do Horusec é responsável por armazenar todos os seus dados utilizando a ferramenta [**PostgreSQL**](https://www.postgresql.org/). na versão 12.
 
-Atualmente contamos com 2 bancos de dados.
+O Horusec utiliza 2 bancos de dados, veja abaixo: 
 
-A arquitetura do banco de dados do platform é baseada na seguinte estrutura:
+- A arquitetura do banco de dados do **platform** é baseada na seguinte estrutura:
 
 ![](/docs/ptbr/web/services/database/0-arquitecture.png)
 
-A arquitetura do banco de dados do analytic é baseada na seguinte estrutura:
+- A arquitetura do banco de dados do **analytic** é baseada na seguinte estrutura:
 
 ![](/docs/ptbr/web/services/database/1-arquitecture.png)

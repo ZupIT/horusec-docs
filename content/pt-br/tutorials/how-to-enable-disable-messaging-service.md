@@ -6,7 +6,7 @@ description:  Nesta seção, você encontra as informações sobre os serviços 
 
 ---
 
-## **Onde é utilizado?**
+## **Onde é utilizado?** 
 
 Esse serviço dentro do Horusec possui algumas funcionalidades realizadas de modo assíncrono, como por exemplo:
 

@@ -4,7 +4,7 @@ weight: 50
 description: Nesta seção, você encontra mais informações sobre o serviço Horusec-API.
 ---
 
-## **O que é?** 
+## **O que é?**  
 
 O Horusec-API é um microsserviço responsável por receber solicitações [**Horusec-CLI**](/docs/pt-br/cli/overview/) via solicitação HTTP para iniciar uma nova análise. Ele também adquire e devolve as análises salvas no sistema.
 
