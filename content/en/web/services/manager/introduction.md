@@ -91,6 +91,9 @@ See more about these data in the table below:
   </tbody>
 </table>
 
+## Managements
+
+On Horusec, you have a variety of management types. Check below more information about each one of them:
 
 {{< tabs name="T0" >}}
 {{% tab name= "Dashboard with workspace view" %}}
@@ -101,8 +104,3 @@ See more about these data in the table below:
 ![](/docs/ptbr/web/services/manager/introduction/4-dashboard-repository.gif)
 {{% /tab %}}
 {{< /tabs >}}
-
-## Managements
-
-On Horusec, you have a variety of management types. Check below more information about each one of them:
-

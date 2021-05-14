@@ -49,6 +49,10 @@ Veja mais sobre quais são esses dados na tabela a seguir:
 | **Linha do tempo de vulnerabilidades** | Linha do tempo com detalhes das vulnerabilidades classificadas de acordo com severidade e data, na visão da organização ou do repositório. |
 | **Detalhes das vulnerabilidades ativas**  | Visão detalhada das vulnerabilidades que estão ativas, na visão da organização ou do repositório.  |
 
+### Gerenciamentos
+
+No Horusec, você pode fazer diversos tipos de gerenciamento. Veja abaixo mais detalhes sobre cada um deles:
+
 {{< tabs id="Dash" >}}
 {{% tab name="Dash com visão por workspace" %}}
 ![](/docs/ptbr/web/services/manager/introduction/3-dashboard-organization.gif)
@@ -58,7 +62,3 @@ Veja mais sobre quais são esses dados na tabela a seguir:
 ![](/docs/ptbr/web/services/manager/introduction/4-dashboard-repository.gif)
 {{% /tab %}}
 {{< /tabs >}}
-
-### Gerenciamentos
-
-No Horusec, você pode fazer diversos tipos de gerenciamento. Veja abaixo mais detalhes sobre cada um deles:
