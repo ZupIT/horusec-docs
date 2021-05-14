@@ -10,6 +10,8 @@ This feature allows you to view, on the platform, all workspaces that you have c
 
 ![](/docs/ptbr/web/services/manager/workspace-management/0-workspace.gif)
 
+You can also select a workspace as a favorite, this function allows you to enter the favorite workspace platform to be selected by default.
+
 ###  Workspace token
 
 The token is a resource you can create to use in your analysis. The main goal is to help Horusec identify the workspace and the repository when the [**CLI** ](../../cli)sends a new analysis to the platform.

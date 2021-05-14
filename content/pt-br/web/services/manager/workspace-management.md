@@ -10,6 +10,8 @@ Este recurso permite que você visualize, na plataforma, todas os espaços de tr
 
 ![](/docs/ptbr/web/services/manager/workspace-management/0-workspace.gif)
 
+Também é possível selecionar um workspace como favorito, essa função permite que ao entrar na plataforma o workspace favorito seja selecionado por padrão.
+
 ###  Token do workspace
 
 O token é um recurso que você pode criar para utilizar em todas as suas análises. O principal objetivo dele é ajudar o Horusec a identificar o workspace e o repositório quando a [**CLI**](/docs/pt-br/references/cli/) envia uma nova análise para plataforma.
