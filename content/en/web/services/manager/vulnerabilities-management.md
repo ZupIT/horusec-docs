@@ -21,5 +21,5 @@ After you alter the vulnerability status, it won't be counted as a analytical vi
 You can only change the vulnerability severity rating.
 {{% /alert %}}
 
-![](/docs/ptbr/references/manager/vulnerabilities-management/1-vulnerability-management.gif)
+![](/docs/ptbr/web/services/manager/vulnerabilities-management/1-vulnerability-management.gif)
 

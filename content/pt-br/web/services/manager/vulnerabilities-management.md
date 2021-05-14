@@ -20,5 +20,4 @@ Depois que você alterar o status de uma vulnerabilidade, não será mais contab
 
 Além disso, você só pode alterar a classificação de severidade das vulnerabilidades.
 {{% /alert %}}
-
-![](/docs/ptbr/references/manager/vulnerabilities-management/1-vulnerability-management.gif)
+![](/docs/ptbr/web/services/manager/vulnerabilities-management/1-vulnerability-management.gif)

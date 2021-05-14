@@ -8,10 +8,11 @@ description: 'Nesta seção, você vai encontrar informações sobre gerenciamen
 
 No Horusec, você também pode gerenciar os dados da sua conta. Veja abaixo algumas funcionalidades:
 
-* Deletar sua conta;
 * Alterar seu e-mail e usuário;
-* Alterar sua senha.
+* Alterar sua senha;
+* Alterar linguagem;
+* Deletar sua conta.
 
-Veja no gif abaixo: 
+Veja na imagem abaixo: 
 
-![](/docs/ptbr/web/services/manager/account-management/1-manager-account.gif)
+![](/docs/ptbr/web/services/manager/account-management/1-manager-account.png)
