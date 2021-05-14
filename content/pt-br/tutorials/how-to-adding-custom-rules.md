@@ -1,7 +1,7 @@
 ---
 title: Como adicionar regras personalizadas na Horusec-CLI?
 weight: 2
-description: Nesta seção, você encontra o tutorial para adicionar regras personalizadas ao Horusec-CLI.
+description: Nesta seção, você encontra o tutorial para adicionar regras personalizadas ao Horusec-CLI. 
 ---
 
 ---

@@ -4,9 +4,9 @@ weight: 40
 description: Nesta seção, você encontra mais informações sobre o serviço Horusec-Analytic.
 ---
 
-## **O que é?**
+## **O que é?** 
 
-O Horusec-Analytic é um microsserviço responsável por receber via broker a análise e salvar em seu banco de dados os dados necessários para serem apresentados no dashboard da manager.
+O Horusec-Analytic é um microsserviço recebe via broker a análise e salva no seu banco de dados os dados necessários que serão apresentados no dashboard do horusec-manager.
 
 ![](/docs/ptbr/web/services/analytic/0-arquitecture.jpg)
 
@@ -45,11 +45,14 @@ Estas são as possíveis váriaveis de ambiente que você pode configurar neste 
 
 | Nome da Variável de Ambiente                 | Valor Default                                                     | Descrição                                                  |
 |----------------------------------|------------------------------------------------------------------|--------------------------------------------------------------|
-| HORUSEC_SWAGGER_HOST             | localhost                                                        | Obtém qual o host que estará disponível no swagger.| 
-| HORUSEC_DATABASE_SQL_DIALECT     | postgres                                                         | Obtém o dialeto para conectar ao banco de dados POSTGRES. |
+| HORUSEC_SWAGGER_HOST             | localhost                                                        | Obtém qual o host que estará disponível no swagger.|
 | HORUSEC_DATABASE_SQL_URI         | postgresql://root:root@localhost:5432/horusec_analytic_db?sslmode=disable | Obtém o URI (identificador uniforme de recursos) para conectar ao banco de dados POSTGRES. |
 | HORUSEC_DATABASE_SQL_LOG_MODE    | false                                                            | Obtém o valor para habilitar logs no POSTGRES. |
-| HORUSEC_PORT                     | 8005                                                             | Obtém a porta que o serviço irá iniciar. |
-| HORUSEC_GRPC_AUTH_URL            | localhost:8007                                                   | Obtém a URL `horusec-auth` de conexão com o GRPC. |
+| HORUSEC_PORT                     | 8005                                                             | Obtém a porta que o serviço irá iniciar. | 
+HORUSEC_BROKER_HOST                     | 127.0.0.1                                                             |Obtém host para se conectar ao broker RABBITMQ. | 
+HORUSEC_BROKER_PORT                     | 5672                                                             |Obtém porta para conectar no broker RABBITMQ. |
+HORUSEC_BROKER_USERNAME                     | guest                                                            |Obtém o nome de usuário para se conectar no broker RABBITMQ. | 
+HORUSEC_BROKER_PASSWORD                   | 127.0.0.1                                                             |Obtém host para se conectar ao broker RABBITMQ. |
+| HORUSEC_GRPC_AUTH_URL            | guest                                                  | Obtém a senha para se conectar no broker RABBITMQ.| 
 | HORUSEC_GRPC_USE_CERTS           | false                                                            | Valida se o uso de certificados no GRPC está ativo ou não. |
 | HORUSEC_GRPC_CERT_PATH           |                                                                  | Obtém o caminho do certificado GRPC. | 

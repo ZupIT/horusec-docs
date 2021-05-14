@@ -4,7 +4,7 @@ weight: 60
 description: Nesta seção, você encontra mais informações sobre o serviço Horusec-Messages.
 ---
 
-## **O que é?**
+## **O que é?** 
 
 O Horusec-Messages é um microsserviço responsável pelo envio de e-mails transacionais.
 
@@ -63,6 +63,6 @@ Estas são as possíveis váriaveis de ambiente que você pode configurar neste 
 
 | Trigger                   | Descrição                                                                   |
 |---------------------------|-------------------------------------------------------------------------------|
-| Confirmação de e-mail     | E-mail usado para confirmação por e-mail do usuário.                        |
+| Confirmação de e-mail     | E-mail usado para confirmação pelo e-mail do usuário.                        |
 | Resetar a senha           | Um e-mail que permite ao usuário redefinir sua própria senha.                  |
-| Convidar para o workspace | Um e-mail para informar um usuário que ele foi convidado para uma organização. |
+| Convidar para o workspace | Um e-mail para informar o usuário que ele foi convidado para uma organização. |

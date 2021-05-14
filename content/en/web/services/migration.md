@@ -7,7 +7,7 @@ description: In this section, you will find information about migration service 
 ## **What is it?**
 Horusec-Migration is a microservice resposible for the migration on Horusec's database. It is based on [**golang-migrate**](https://github.com/golang-migrate/migrate)
 
-
+ 
 ## **Requisites**
 To run locally run this service, you will need: 
 * PostgreSQL
@@ -15,22 +15,47 @@ To run locally run this service, you will need:
 
 ## **Execute**
 
-Clone Horusec project and run the command below:
+There are two ways you can execute this service, see them below: 
+
+1.  Manually: Clone the [Horusec-Platform](https://github.com/ZupIT/horusec-platform)project in your machine and run the command below:
 
 ```bash
-MIGRATION_PATH="./development-kit/pkg/databases/relational/migration" \
-POSTGRES_USER="root" \
-POSTGRES_PASSWORD="root" \
-POSTGRES_HOST="localhost" \
-POSTGRES_PORT="5432" \
-POSTGRES_DB_NAME="horusec_db" \
-POSTGRES_SSL_MODE="disable" \
-docker run --name migrate \
-        --rm -v "$(pwd)/$MIGRATION_PATH:/migrations" \
-        --network=container:postgresql migrate/migrate:v4.13.0 \
-        -path=/migrations/ \
-        -database postgres://$POSTGRES_USER:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DB_NAME?sslmode=$POSTGRES_SSL_MODE \
-        up
+make migrate
 ```
 
-- You can also run through docker image created by Horusec: `horuszup/horusec-migration:latest`
+2. Docker: Clone the [Horusec-Platform](https://github.com/ZupIT/horusec-platform) project in your machine and run the docker image:
+
+  * Create a volume with all the migration files;
+  * Create an environment variable to know which database it should be executed, it can be `platform` or `analytic`;
+  * Create a an environment variable to know the URI connection with the database. 
+
+
+Check out below the example where the migration happens in both database:
+
+
+```bash
+HORUSEC_DEFAULT_DATABASE_SQL_URI="postgres://$POSTGRES_USER:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/horusec_db?sslmode=$POSTGRES_SSL_MODE"
+
+HORUSEC_ANALYTIC_DATABASE_SQL_URI="postgres://$POSTGRES_USER:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/horusec_analytic_db?sslmode=$POSTGRES_SSL_MODE"
+
+docker run --name migrate --rm \
+   -v "$(pwd)/migrations/source:/horusec-migrations" \
+   -e HORUSEC_DATABASE_SQL_URI=$HORUSEC_DEFAULT_DATABASE_SQL_URI \
+   -e MIGRATION_NAME=platform \
+   --network=container:horusec_postgresql \
+   horuszup/horusec-migrations:latest \
+   up
+
+docker run --name migrate --rm \
+   -v "$(pwd)/migrations/source:/horusec-migrations" \
+   -e HORUSEC_DATABASE_SQL_URI=$HORUSEC_ANALYTIC_DATABASE_SQL_URI \
+   -e MIGRATION_NAME=analytic \
+   --network=container:horusec_postgresql \
+   horuszup/horusec-migrations:latest \
+   up
+```
+
+
+{{% alert color="info" %}}
+ The variables: **POSTGRES_USER**, **POSTGRES_PASSWORD**, **POSTGRES_HOST**, **POSTGRES_PORT**, **POSTGRES_SSL_MODE** must be informed, this way the connection will happen successfully.
+{{% /alert %}}

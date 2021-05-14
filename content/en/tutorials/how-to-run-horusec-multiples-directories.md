@@ -43,7 +43,6 @@ See below the accepted languages interface:
 ```go
 type WorkDir struct {
 	Go         []string `json:"go"`
-	NetCore    []string `json:"netCore"`
 	CSharp     []string `json:"csharp"`
 	Ruby       []string `json:"ruby"`
 	Python     []string `json:"python"`
@@ -56,5 +55,9 @@ type WorkDir struct {
 	C          []string `json:"c"`
 	Yaml       []string `json:"yaml"`
 	Generic    []string `json:"generic"`
+	Elixir     []string `json:"elixir"`
+	Shell      []string `json:"shell"`
+	Dart       []string `json:"dart"`
+	Nginx      []string `json:"nginx"`
 }
 ```

@@ -60,4 +60,6 @@ These languages and tools are:
 * **Elixir**
   * [**Mix Audit**](https://github.com/mirego/mix_audit)
   * [**Sobelow**](https://github.com/nccgroup/sobelow)
+* **Nginx**
+  * [**HorusecNginx**](/docs/cli/analysis-tools/open-source-horusec-engine/horusec-nginx/)
 
