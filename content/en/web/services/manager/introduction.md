@@ -20,13 +20,13 @@ You will see below more details on how to make each one of these activities.
 
 Manager creates an account inside Horusec. After your user is created, you just need to confirm the account on your email. 
 
-![](/docs/en/references/manager/introduction/1-login.png)
+![](/docs/ptbr/web/services/manager/introduction/1-create-account.gif)
 
 ## Authentication
 
 Horusec offers a simple authentication managed by its own system. 
 
-![](/docs/en/references/manager/introduction/2-login-empty.png)
+![](/docs/ptbr/web/services/manager/introduction/2-login-empty.png)
 
 ## Analytics dashboard
 
@@ -91,18 +91,16 @@ See more about these data in the table below:
   </tbody>
 </table>
 
-
-{{< tabs name="T0" >}}
-{{% tab name= "Dashboard with organization view" %}}
-![](/docs/en/references/manager/introduction/3-dashboard-organization.gif)
-{{% /tab %}}
-
-{{% tab name="Dashboard with repository view" %}}
-![](/docs/en/references/manager/introduction/4-dashboard-repository.gif)
-{{% /tab %}}
-{{< /tabs >}}
-
 ## Managements
 
 On Horusec, you have a variety of management types. Check below more information about each one of them:
 
+{{< tabs name="T0" >}}
+{{% tab name= "Dashboard with workspace view" %}}
+![](/docs/ptbr/web/services/manager/introduction/3-dashboard-organization.gif)
+{{% /tab %}}
+
+{{% tab name="Dashboard with repository view" %}}
+![](/docs/ptbr/web/services/manager/introduction/4-dashboard-repository.gif)
+{{% /tab %}}
+{{< /tabs >}}

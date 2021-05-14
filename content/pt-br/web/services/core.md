@@ -8,7 +8,7 @@ description: Nesta seção, você encontra mais informações sobre o serviço H
 
 O Horusec-Core é um microsserviço responsável pela gestão de workspaces, repositórios e atualização de acessos. 
 
-![](/docs/ptbr/web/services/core/0-arquitecture.jpg)
+![](/docs/ptbr/web/services/core/0-arquitecture.png)
 
 ## **Requisitos**
 

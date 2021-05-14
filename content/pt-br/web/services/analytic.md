@@ -8,7 +8,7 @@ description: Nesta seção, você encontra mais informações sobre o serviço H
 
 O Horusec-Analytic é um microsserviço recebe via broker a análise e salva no seu banco de dados os dados necessários que serão apresentados no dashboard do horusec-manager.
 
-![](/docs/ptbr/web/services/analytic/0-arquitecture.jpg)
+![](/docs/ptbr/web/services/analytic/0-arquitecture.png)
 
 ## **Requisitos**
 

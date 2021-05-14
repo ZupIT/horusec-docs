@@ -10,7 +10,7 @@ description: In this section, you will find information about Horusec-Messages s
 
 Check out more information [**about transactional emails.**](https:/postmarkapp.com/blog/what-is-transactional-email-and-how-is-it-used)
 
-![](/docs/ptbr/web/services/messages/0-arquitecture.jpg)
+![](/docs/ptbr/web/services/messages/0-arquitecture.png)
 
 ## **Requisites**
 To locally run this service, you will need: 

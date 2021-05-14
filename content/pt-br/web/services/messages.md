@@ -10,7 +10,7 @@ O Horusec-Messages é um microsserviço responsável pelo envio de e-mails trans
 
 [**Veja aqui mais sobre e-mails transacionais**](https://postmarkapp.com/blog/what-is-transactional-email-and-how-is-it-used)
 
-![](/docs/ptbr/web/services/messages/0-arquitecture.jpg)
+![](/docs/ptbr/web/services/messages/0-arquitecture.png)
 
 ## **Requisitos**
 

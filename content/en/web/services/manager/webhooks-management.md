@@ -17,8 +17,7 @@ On the webhook configuration, you have to choose:
 * Repository.
 
 See the a configuration example below: 
-
-![](/docs/en/references/manager/webhooks-management/1-webhook-management.gif)
+![](/docs/ptbr/web/services/manager/webhooks-management/1-webhook-management.gif)
 
 After configuring the webhook, your API you receive a JSON with the format below: 
 

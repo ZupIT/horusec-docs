@@ -7,7 +7,7 @@ description:  In this section, you will find information about Horusec-Auth serv
 ## **What is it?**
 Horusec-Auth is responsible for the user's management, authentication and access to the platform.
 
-![](/docs/ptbr/web/services/auth/0-arquitecture.jpg)
+![](/docs/ptbr/web/services/auth/0-arquitecture.png)
 
 ## **Types of authentication**
 Horusec has 3 types of authentication: 

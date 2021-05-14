@@ -8,7 +8,7 @@ description: In this section, you will find information about Horusec-Analytic s
 Horusec-Analytic receives via broker the analysis and it saves in your database the necessary data that it will be showed in the horusec-manager's dashboard.
 
 
-![](/docs/ptbr/web/services/analytic/0-arquitecture.jpg)
+![](/docs/ptbr/web/services/analytic/0-arquitecture.png)
 
 ## **Requisites**
 To locally run this service, you will need: 

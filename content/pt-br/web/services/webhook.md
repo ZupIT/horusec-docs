@@ -9,7 +9,7 @@ description: Nesta seção, você encontra mais informações sobre o serviço H
 O Horusec-Webhook é um microsserviço responsável por configurar destinos HTTP e realizar o disparo de análises realizadas para serviços de terceiros.
 
 
-![](/docs/ptbr/web/services/webhook/0-arquitecture.jpg)
+![](/docs/ptbr/web/services/webhook/0-arquitecture.png)
 
 ## **Requisitos**
 
