@@ -41,7 +41,7 @@ cd horusec
 3. Run the command `make install` in order to have all web applications.
 
 ```bash
-git clone https://github.com/ZupIT/horusec.git
+make install
 ```
 
 
