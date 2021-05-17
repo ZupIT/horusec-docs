@@ -61,6 +61,8 @@ email: dev@example.com
 password: Devpass0*
 ```
 
+To change or disable the default user of the system just follow [our tutorial](/docs/tutorials/how-to-enable-disable-default-user)
+
 {{% alert color="info" %}}
 All backend services are exposed using **network_mode: "host"**, check if you have [**enabled Docker's configurations**](https://docs.docker.com/network/host/) to use this functions.
 {{% /alert %}}
@@ -71,19 +73,20 @@ Horusec's images are available on [**dockerhub**](https://hub.docker.com/u/horus
 
 * [**horuszup/horusec-manager**](https://hub.docker.com/r/horuszup/horusec-manager)
 * [**horuszup/horusec-auth**](https://hub.docker.com/r/horuszup/horusec-auth)
-* [**horuszup/horusec-account**](https://hub.docker.com/r/horuszup/horusec-account)
+* [**horuszup/horusec-core**](https://hub.docker.com/r/horuszup/horusec-core)
 * [**horuszup/horusec-api**](https://hub.docker.com/r/horuszup/horusec-api)
 * [**horuszup/horusec-analytic**](https://hub.docker.com/r/horuszup/horusec-analytic)
 * [**horuszup/horusec-migration**](https://hub.docker.com/r/horuszup/horusec-migration)
-* [**horuszup/horusec-messages**](https://hub.docker.com/r/horuszup/horusec-messages) (required if you are using the [**message service**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service))
-* [**horuszup/horusec-webhook**](https://hub.docker.com/r/horuszup/horusec-webhook) (required if you are using the [**message service**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service))
+* [**horuszup/horusec-vulnerability**](https://hub.docker.com/r/horuszup/horusec-vulnerability)
+* [**horuszup/horusec-messages**](https://hub.docker.com/r/horuszup/horusec-messages) (obrigatório apenas se estiver utilizando o [**serviço de email**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service))
+* [**horuszup/horusec-webhook**](https://hub.docker.com/r/horuszup/horusec-webhook)
 
 ![](/docs/ptbr/web/installing/docker-compose/0-installing.gif)
 
 ## **Reminders**
 
 {{% alert color="warning" %}}
-1. All these configurations available on Horusec's [**docker-compose.yaml**](https://github.com/ZupIT/horusec/blob/master/deployments/docker-compose.yaml) are default. It's recommended to change some information (like the user and database password) when using this service in a production environment.
+1. All these configurations available on Horusec's [**docker-compose.yaml**](https://github.com/ZupIT/horusec-platform/blob/master/deployments/compose/compose.yaml) are default. It's recommended to change some information (like the user and database password) when using this service in a production environment.
 
 
 
