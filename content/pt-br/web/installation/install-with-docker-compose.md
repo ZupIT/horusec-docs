@@ -92,4 +92,11 @@ Hoje o Horusec disponibiliza todas as suas imagens no [**dockerhub**](https://hu
 2. O Horusec está sempre em atualização e correção de imagens. Para saber qual imagem utilizar em cada versão específica, acesse nossas [**release-notes**](https://github.com/ZupIT/horusec-platform/releases) as versões corretas de cada serviço
 
 3. Em virtude da [**nova política de acesso para realizar download de imagens publicas do dockerhub**](https://docs.docker.com/docker-hub/download-rate-limit/), é recomendado que você suba as imagens em um registro de sua preferência para não ter imprevistos no futuro.
+
+4. Quando você habilita o serviço de mensageria, é necessário que ele conecte ao seu serviço de e-mail. Para isso, adicione no serviço **"horusec-messages"** as seguintes variáveis de ambiente: 
+- HORUSEC_SMTP_USERNAME="username do serviço de e-mail";
+- HORUSEC_SMTP_PASSWORD="senha do serviço de e-mail";
+- HORUSEC_SMTP_ADDRESS: "endereço do serviço de e-mail";
+- HORUSEC_SMTP_HOST: "host do serviço de e-mail";
+- HORUSEC_SMTP_PORT: "porta do serviço de e-mail".
 {{% /alert %}}

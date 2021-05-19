@@ -24,6 +24,13 @@ Os serviços que são usados para realizar o consumo das filas são:
 Quando você desabilita o serviço de emails, é normal ver estes serviços "parados", porque eles não serão utilizados.
 {{% /alert %}}
 
+Quando você habilita o serviço de mensageria, é necessário que ele conecte ao seu serviço de e-mail. Para isso, adicione no serviço **"horusec-messages"** as seguintes variáveis de ambiente: 
+HORUSEC_SMTP_USERNAME="username do serviço de email";
+HORUSEC_SMTP_PASSWORD="senha do serviço de email";
+HORUSEC_SMTP_ADDRESS: "endereço do serviço de email";
+HORUSEC_SMTP_HOST: "host do serviço de email";
+HORUSEC_SMTP_PORT: "porta do serviço de email".
+
 E os serviços que recebem ações quando é necessário publicar em suas respectivas filas são:
 * [**Horusec-Auth**](/docs/pt-br/web/services/auth)
 * [**Horusec-Core**](/docs/pt-br/web/services/core/)

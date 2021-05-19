@@ -17,11 +17,11 @@ Ao criar um repositório, você tem algumas funcionalidades como:
 
 ### Token de repositório
 
-Assim como na organização, o token no repositório pode ser usado para todas as análises que você fizer e tem como principal objetivo ajudar o Horusec a identificar a organização e o repositório das análises enviadas pela [**CLI**](/docs/pt-br/references/cli/). 
+Assim como na organização, o token no repositório pode ser usado para todas as análises que você fizer e tem como principal objetivo ajudar o Horusec a identificar a organização e o repositório das análises enviadas pela [**CLI**](/docs/pt-br/cli/overview/). 
 
 O token de repositório é único e só pode ser criado por quem tem acesso de administrador dentro do repositório ou da organização. 
 
-Por exemplo, se você adicionar este token em sua pipeline, o Horusec irá enviar a análise e armazená-la para ter uma visão analítica das [**vulnerabilidades**](/docs/pt-br/references/vulnerabilities/introduction/) do seu repositório.
+Por exemplo, se você adicionar este token em sua pipeline, o Horusec irá enviar a análise e armazená-la para ter uma visão analítica das [**vulnerabilidades**](/docs/pt-br/web/services/vulnerability/) do seu repositório.
 
 {{% alert color="warning" %}}
 Lembre-se de que, ao criar um token de acesso, ele será visto apenas uma vez.

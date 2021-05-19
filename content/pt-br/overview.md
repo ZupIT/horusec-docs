@@ -13,7 +13,7 @@ description: >-
 É uma ferramenta open source que orquestra outras ferramentas de segurança e identifica falhas de segurança ou vulnerabilidades em projetos, centralizando todos os resultados em um banco de dados para análise e geração de métricas.
 
 
-Atualmente, o Horusec seleciona as linguagens e ferramentas a serem utilizadas no projeto de acordo com a stack disponível. **[Veja todas as linguagens suportadas e ferramentas disponíveis na plataforma](/docs/pt-br/cli/analysis-tools/overview/)**
+Atualmente, o Horusec seleciona as linguagens e ferramentas a serem utilizadas no projeto de acordo com a stack disponível. **[Veja todas as linguagens suportadas e ferramentas disponíveis na plataforma](/docs/pt-br/cli/analysis-tools/overview/)**.
 
 ## **Onde usar o Horusec ?**
 ### Localmente

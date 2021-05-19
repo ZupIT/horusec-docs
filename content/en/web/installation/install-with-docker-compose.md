@@ -94,4 +94,11 @@ Horusec's images are available on [**dockerhub**](https://hub.docker.com/u/horus
 
 
 3. There is [**a new access policy to download public dockerhub images**](https://docs.docker.com/docker-hub/download-rate-limit/). It is recommended to upload images in the register you want, to avoid any problems. 
+
+4. When you enable the messaging service, it is necessary to connect to your e-mail service. For that, add to **"horusec-messages"** the following environment variables:   
+- HORUSEC_SMTP_USERNAME="e-mail service username";
+- HORUSEC_SMTP_PASSWORD="e-mail password service";
+- HORUSEC_SMTP_ADDRESS: "e-mail address service";
+- HORUSEC_SMTP_HOST: "e-mail host service";
+- HORUSEC_SMTP_PORT: "e-mail service port".
 {{% /alert %}}
