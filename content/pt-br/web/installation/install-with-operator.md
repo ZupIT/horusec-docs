@@ -7,22 +7,25 @@ description: >-
 
 ## **O que é?**
 
-O Horusec Operator é uma implementação de [Kubernetes Operator](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/). Ele automatiza a configuração, criação, scaling e recovery do cluster Horusec. Ao reduzir essa complexidade, ele permite que você se concentre na identificação das possíveis vulnerabilidades dos seus projetos e não se preocupe com os detalhes de uma implantação manual.
+O Horusec Operator é uma implementação de [**Kubernetes Operator**](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/). Ele automatiza a configuração, criação, scaling e recovery do cluster Horusec. Ao reduzir essa complexidade, ele permite que você se concentre na identificação das possíveis vulnerabilidades dos seus projetos e você não precisa se preocupar com os detalhes de uma implementação manual.
 
 ## **Requisitos**
 
-Antes de começar, você precisará de:
+Para realizar esta configuração, você precisará ter:
 
-* Um cluster Kubernetes e o [kubectl](https://kubectl.docs.kubernetes.io/installation/kubectl/binaries/) configurado para se comunicar com esse cluster.
+* Um cluster Kubernetes e o [**kubectl**](https://kubectl.docs.kubernetes.io/installation/kubectl/binaries/) configurado
+  para se comunicar com esse cluster.
 
 ## **Instalação**
 
 Para instalar o Operator, execute o seguinte comando:
+
 ```shell
 kubectl apply -f "https://github.com/ZupIT/horusec-operator/releases/download/v1.0.0/operator.yaml"
 ```
 
 Em seguida, aplique a definição do seu cluster Horusec executando:
+
 ```shell
 cat <<EOF | kubectl apply -f -
 apiVersion: install.horusec.io/v1alpha1
