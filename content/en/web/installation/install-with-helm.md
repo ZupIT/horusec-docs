@@ -24,6 +24,8 @@ For this configuration, you will need:
 
 * **RabbitMQ** connection as a message-broker (**optional**).
 
+* **Linux**.
+
 
 
 ## **Horusec Helm Charts**
