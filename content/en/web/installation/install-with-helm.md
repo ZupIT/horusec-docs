@@ -1,6 +1,6 @@
 ---
 title: Install with Helm
-weight: 7
+weight: 20
 description: In this section, you will find how to install Horusec web application in your Kubernetes cluster using Helm. 
 ---
 
