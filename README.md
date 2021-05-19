@@ -14,7 +14,9 @@ For install all dependences this project run the command
 ```bash
 npm run dependencies
 ```
+
 or
+
 ```bash
 npm i && git submodule init && git submodule update
 ```
