@@ -1,0 +1,25 @@
+<div id="978"></div>
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	{{ .Site.Params.version_menu }}
+</a>
+<script>
+	const url = "https://api.github.com/repos/ZupIT/docs-horusec/releases";
+
+	const xhttp = new XMLHttpRequest();
+	xhttp.open("GET", url, false);
+	xhttp.send();
+
+	const versions = JSON.parse(xhttp.responseText).map(e => { return e.tag_name.split(".", 2).join(".") });
+
+	const removeDuplicatedVersions = [...new Set(versions)]
+
+	const div = `<div class="dropdown-menu" aria-labelledby="navbarDropdown">`
+
+	const versionsList = removeDuplicatedVersions.map((version) => {
+		return `<a class="dropdown-item" href="https://horusec.io/docs/${version}/">${version}</a>`
+	})
+
+	const dropdownMenu = div + versionsList.join("") + "</div>"
+
+	document.getElementById("978").innerHTML = dropdownMenu
+</script>
