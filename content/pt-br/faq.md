@@ -55,13 +55,13 @@ Não, é opcional o uso de Docker e Git para aprimorar a análise.
 
 O Horusec é uma ferramenta de análise de segurança que atua buscando possíveis vazamentos e vulnerabilidades expostas em sua aplicação, enquanto uma ferramenta de qualidade de código garante que seu código tenha uma boa qualidade e um bom desempenho, mas não garante que ele esteja seguro de ameaças.
 
-### **8. É possível subir toda a estrutura do Horusec na minha infra pessoal?** 
+### **8. É possível subir toda a estrutura do Horusec na minha infra pessoal?**
 
 Sim, acesse o tutorial [**"Como rodar a aplicação web em outro host?"**]({{< ref path="/tutorials/how-to-use-horusec-without-docker.md" lang="pt-br">}}) para saber mais.
- 
-### **9. Como acessar o Manager?**  
 
-O Horus não disponibiliza infraestrutura aberta para comunidade usar a sua aplicação web. 
+### **9. Como acessar o Manager?**
+
+O Horus não disponibiliza infraestrutura aberta para comunidade usar a sua aplicação web.
 Para acessar o manager, você pode subir em sua infrapessoal usando os itens Docker Compose ou Helm, por meio da porta 8043 ou do roteamento que você criou. 
 - Exemplo: **http://SEU-DOMINIO:8043**.
  
