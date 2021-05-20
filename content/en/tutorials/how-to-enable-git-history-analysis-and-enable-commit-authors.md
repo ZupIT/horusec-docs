@@ -14,7 +14,7 @@ horusec start -p . --enable-git-history="true"
 ```
 
 {{% alert color="warning" %}}
-When you enable this function, Horusec will start the [GitLeaks](/docs/pt-br/cli/analysis-tools/security-tools/#gitleaks) tool and it will search for leaks in your history. 
+When you enable this function, Horusec will start the [GitLeaks]({{< ref path="/cli/analysis-tools/security-tools.#gitleaks" lang="pt-br">}}) tool and it will search for leaks in your history. 
 {{% /alert %}}
 
 

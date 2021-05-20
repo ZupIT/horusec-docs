@@ -9,7 +9,7 @@ description: >-
 
 ## **O que é?**
 
-O  [**Horusec-Kotlin**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-kotlin/#horusec-kotlin-cli) é uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos Kotlin.
+O  [**Horusec-Kotlin**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-kotlin.md#horusec-kotlin-cli" lang="pt-br">}}) é uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos Kotlin.
 
 ## **Exemplos de vulnerabilidades**
 

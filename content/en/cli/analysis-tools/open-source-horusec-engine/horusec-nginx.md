@@ -8,7 +8,7 @@ description: In this section, you will find vulnerabilities Horusec finds in ngi
 
 ## **What is it?**
 
-[**Horusec-Nginx**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-nginx) is a SAST tool created by Horusec's team to search for vulnerabilities in Nginx projects. 
+[**Horusec-Nginx**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-nginx" lang="pt-br">}}) is a SAST tool created by Horusec's team to search for vulnerabilities in Nginx projects. 
 
 ## Rules
 

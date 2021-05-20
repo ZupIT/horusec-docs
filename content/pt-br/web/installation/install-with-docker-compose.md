@@ -48,7 +48,7 @@ make install
 
 ## **Acesso aos serviços do Horusec**
 
-Caso você tenha realizado os passos anteriores, basta acessar o link para visualizar as telas da aplicação web que está sendo oferecida pelo serviço [**Horusec-Manager**](/docs/pt-br/web/services/manager) em [**http://localhost:8043**](http://localhost:8043). 
+Caso você tenha realizado os passos anteriores, basta acessar o link para visualizar as telas da aplicação web que está sendo oferecida pelo serviço [**Horusec-Manager**]({{< ref path="/web/services/manager" lang="pt-br">}}) em [**http://localhost:8043**]({{< ref path="http://localhost:8043" lang="pt-br">}}). 
 
 
 {{% alert color="info" %}}
@@ -62,7 +62,7 @@ email: dev@example.com
 password: Devpass0*
 ```
 
-Para alterar ou desabilitar o usuário padrão do sistema basta seguir [nosso tutorial](/docs/pt-br/tutorials/how-to-enable-disable-default-user)
+Para alterar ou desabilitar o usuário padrão do sistema basta seguir [**nosso tutorial**]({{< ref path="/tutorials/how-to-enable-disable-default-user" lang="pt-br">}})
 
 {{% alert color="info" %}}
 Todos os serviços backend são expostos utilizando **network_mode: "host"** verifique se as [**configurações do Docker estão habilitadas**](https://docs.docker.com/network/host/) para fazer uso desta funcionalidade.
@@ -78,7 +78,7 @@ Hoje o Horusec disponibiliza todas as suas imagens no [**dockerhub**](https://hu
 * [**horuszup/horusec-analytic**](https://hub.docker.com/r/horuszup/horusec-analytic)
 * [**horuszup/horusec-migration**](https://hub.docker.com/r/horuszup/horusec-migration)
 * [**horuszup/horusec-vulnerability**](https://hub.docker.com/r/horuszup/horusec-vulnerability)
-* [**horuszup/horusec-messages**](https://hub.docker.com/r/horuszup/horusec-messages) (obrigatório apenas se estiver utilizando o [**serviço de email**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service))
+* [**horuszup/horusec-messages**](https://hub.docker.com/r/horuszup/horusec-messages) (obrigatório apenas se estiver utilizando o [**serviço de email**]({{< ref path="/tutorials/how-to-enable-disable-messaging-service" lang="pt-br">}})
 * [**horuszup/horusec-webhook**](https://hub.docker.com/r/horuszup/horusec-webhook)
 
 ![](/docs/ptbr/web/installing/docker-compose/0-installing.gif)

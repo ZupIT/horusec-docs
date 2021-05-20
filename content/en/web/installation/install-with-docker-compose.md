@@ -78,7 +78,7 @@ Horusec's images are available on [**dockerhub**](https://hub.docker.com/u/horus
 * [**horuszup/horusec-analytic**](https://hub.docker.com/r/horuszup/horusec-analytic)
 * [**horuszup/horusec-migration**](https://hub.docker.com/r/horuszup/horusec-migration)
 * [**horuszup/horusec-vulnerability**](https://hub.docker.com/r/horuszup/horusec-vulnerability)
-* [**horuszup/horusec-messages**](https://hub.docker.com/r/horuszup/horusec-messages) (obrigatório apenas se estiver utilizando o [**serviço de email**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service))
+* [**horuszup/horusec-messages**](https://hub.docker.com/r/horuszup/horusec-messages) (obrigatório apenas se estiver utilizando o [**serviço de email**]({{< ref path="/tutorials/how-to-enable-disable-messaging-service" lang="pt-br">}})
 * [**horuszup/horusec-webhook**](https://hub.docker.com/r/horuszup/horusec-webhook)
 
 ![](/docs/ptbr/web/installing/docker-compose/0-installing.gif)

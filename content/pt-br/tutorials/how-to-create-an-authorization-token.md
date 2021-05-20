@@ -7,7 +7,7 @@ description: Nesta seção, você encontra o tutorial para  criar um token de au
 ---
 
 Para executar uma análise e visualizá-la na aplicação web do Horusec, é necessário obter um token de repositório. 
-Você consegue fazer isso usando a plataforma web [**Horusec Manager**](/docs/pt-br/web/services/manager/). Se quiser gerar um token, veja os passos abaixo:
+Você consegue fazer isso usando a plataforma web [**Horusec Manager**]({{< ref path="/web/services/manager" lang="pt-br">}}). Se quiser gerar um token, veja os passos abaixo:
 
 - **Passo 1:**  Acesse a plataforma web com seu usuário;
 - **Passo 2:** Clique no botão para ir para a página de workspace e clique para adicionar workspace;

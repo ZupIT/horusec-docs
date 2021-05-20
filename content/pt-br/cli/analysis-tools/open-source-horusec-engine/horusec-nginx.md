@@ -8,7 +8,7 @@ description: Nesta seção, você vai encontrar mais informações sobre vulnera
 
 ## **O que é?**
 
-O  [**Horusec-Nginx**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-nginx) é uma ferramenta SAST criada pela equipe do Horusec e faz a busca de vulnerabilidades em projetos Nginx.
+O  [**Horusec-Nginx**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-nginx" lang="pt-br">}}) é uma ferramenta SAST criada pela equipe do Horusec e faz a busca de vulnerabilidades em projetos Nginx.
 
 ## Regras 
 

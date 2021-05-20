@@ -6,7 +6,7 @@ description: Nesta seção, você encontra o tutorial para habilitar e desabilit
 
 ---
 
-A funcionalidade do usuário padrão permite que quando o [**Horusec-Auth**](/docs/pt-br/web/services/auth) é iniciado, um usuário seja automaticamente criado.
+A funcionalidade do usuário padrão permite que quando o [**Horusec-Auth**]({{< ref path="/web/services/auth" lang="pt-br">}}) é iniciado, um usuário seja automaticamente criado.
 
 O microsserviço horusec-auth inicia com:
 
