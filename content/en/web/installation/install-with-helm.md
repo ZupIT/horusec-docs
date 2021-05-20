@@ -1,6 +1,6 @@
 ---
 title: Install with Helm
-weight: 7
+weight: 20
 description: In this section, you will find how to install Horusec web application in your Kubernetes cluster using Helm. 
 ---
 
@@ -23,6 +23,8 @@ For this configuration, you will need:
 * **PostgreSQL** connection to store data.
 
 * **RabbitMQ** connection as a message-broker.
+
+* **Linux**.
 
 
 

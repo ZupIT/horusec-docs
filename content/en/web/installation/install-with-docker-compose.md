@@ -1,6 +1,6 @@
 ---
 title: Install with Docker Compose
-weight: 6
+weight: 10
 description: In this section, you will find how to install Horusec web application in your environment using docker-compose.
 ---
 

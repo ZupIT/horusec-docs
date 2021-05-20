@@ -25,6 +25,8 @@ Para realizar esta configuração, você precisará ter:
 
 * Conexão com um **RabbitMQ** como message-broker.
 
+* **Linux**.
+
 
 ## **Horusec Helm Charts**
 

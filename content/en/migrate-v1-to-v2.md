@@ -1,6 +1,6 @@
 ---
 title: Migrating from 1.0 version to 2.0
-weight: 1
+weight: 0
 description: >-
   In this section, you will find how to migrate from Horusec's 1.0 version to the 2.0 one.
 ---
