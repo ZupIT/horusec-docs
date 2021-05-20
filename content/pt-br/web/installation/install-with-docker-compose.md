@@ -48,7 +48,7 @@ make install
 
 ## **Acesso aos serviços do Horusec**
 
-Caso você tenha realizado os passos anteriores, basta acessar o link para visualizar as telas da aplicação web que está sendo oferecida pelo serviço [**Horusec-Manager**](/docs/pt-br/web/services/manager) em [**http://localhost:8043**](http://localhost:8043). 
+Caso você tenha realizado os passos anteriores, basta acessar o link para visualizar as telas da aplicação web que está sendo oferecida pelo serviço [**Horusec-Manager**]({{< ref path="/web/services/manager" lang="pt-br">}}) em [**http://localhost:8043**](http://localhost:8043.md").
 
 
 {{% alert color="info" %}}
@@ -75,8 +75,8 @@ Hoje o Horusec disponibiliza todas as suas imagens no [**dockerhub**](https://hu
 * [**horuszup/horusec-api**](https://hub.docker.com/r/horuszup/horusec-api)
 * [**horuszup/horusec-analytic**](https://hub.docker.com/r/horuszup/horusec-analytic)
 * [**horuszup/horusec-migration**](https://hub.docker.com/r/horuszup/horusec-migration)
-* [**horuszup/horusec-messages**](https://hub.docker.com/r/horuszup/horusec-messages) (obrigatório apenas se estiver utilizando o [**serviço de mensageria**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service))
-* [**horuszup/horusec-webhook**](https://hub.docker.com/r/horuszup/horusec-webhook) (obrigatório apenas se estiver utilizando o [**serviço de mensageria**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service))
+* [**horuszup/horusec-messages**](https://hub.docker.com/r/horuszup/horusec-messages) (obrigatório apenas se estiver utilizando o [**serviço de mensageria**]({{< ref path="/tutorials/how-to-enable-disable-messaging-service.md" lang="pt-br">}})
+* [**horuszup/horusec-webhook**](https://hub.docker.com/r/horuszup/horusec-webhook) (obrigatório apenas se estiver utilizando o [**serviço de mensageria**]({{< ref path="/tutorials/how-to-enable-disable-messaging-service.md" lang="pt-br">}})
 
 ![](/docs/ptbr/web/installing/docker-compose/0-installing.gif)
 

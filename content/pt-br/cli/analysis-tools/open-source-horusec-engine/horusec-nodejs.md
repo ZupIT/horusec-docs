@@ -8,7 +8,7 @@ description: Nesta seção, você vai encontrar mais informações sobre vulnera
 
 ## **O que é?**
 
-O  [**Horusec-NodeJS**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-nodejs) é uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos NodeJS.
+O  [**Horusec-NodeJS**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-nodejs.md" lang="pt-br">}}) é uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos NodeJS.
 
 ## Regras
 

@@ -279,7 +279,7 @@ Requisição de validação desabilitada \(Configuração de arquivo\).
 
 Injeção de SQL MsSQL provedor de dados. 
 
-> Malicious user might get direct read and/or write access to the database. If the database is poorly configured the attacker might even get Remote Code Execution \(RCE\) on the machine running the database. For more information access: \([https://security-code-scan.github.io/\#SCS0026](https://security-code-scan.github.io/#SCS0026)\).
+> Malicious user might get direct read and/or write access to the database. If the database is poorly configured the attacker might even get Remote Code Execution \(RCE\) on the machine running the database. For more information access: \([https://security-code-scan.github.io/\#SCS0026](https://security-code-scan.github.io#SCS0026)\).
 
 ### Request validation is enabled only for pages
 

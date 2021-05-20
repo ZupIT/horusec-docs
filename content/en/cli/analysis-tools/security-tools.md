@@ -59,7 +59,7 @@ There are two ways to use it, both applied on Horusec analysis:
 1. To developers;
 2. To auditors.
 
-If you want to know more about the Security Code Scan, access the [**rules list**](https://security-code-scan.github.io/#rules) the tool applies in its analysis. 
+If you want to know more about the Security Code Scan, access the [**rules list**](https://security-code-scan.github.io#rules) the tool applies in its analysis. 
 
 ### Semgrep
 

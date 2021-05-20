@@ -7,7 +7,7 @@ description: >-
 
 O Horusec também é de fácil integração com outras ferramentas. Atualmente, temos uma ferramenta disponível
 
-### [**Visual Studio Code**](/docs/pt-br/extensions/visual-studio-code/)
+### [**Visual Studio Code**]({{< ref path="/extensions/visual-studio-code.md" lang="pt-br">}})
 
 {{% alert color="info" %}}
 Em breve, outras ferramentas estarão disponíveis, como Atom, IntelliJ e Sublime.

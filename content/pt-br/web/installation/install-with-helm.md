@@ -121,52 +121,52 @@ Os valores informados nas Secrets deste guia são meros exemplos e não se desti
 Depois de realizar todas as configurações necessárias, você pode ir ao diretório raiz do pacote da release do Horusec e seguir as instruções abaixo para instalar os serviços:
 
 
- * Instale o Chart com os componentes do [**serviço de account**](/docs/pt-br/web/services/account):
+ * Instale o Chart com os componentes do [**serviço de account**]({{< ref path="/web/services/account.md" lang="pt-br">}}):
 
 ```bash
 helm install account horusec-account/deployments/helm/horusec-account -n horusec-system
 ```
 
-* Instale o Chart com os componentes do [**serviço de analytic**](/docs/pt-br/web/services/analytic):
+* Instale o Chart com os componentes do [**serviço de analytic**]({{< ref path="/web/services/analytic.md" lang="pt-br">}}):
 
 ```bash
 helm install analytic horusec-analytic/deployments/helm/horusec-analytic -n horusec-system
 ```
 
-* Instale o Chart com os componentes do [**serviço de api**](/docs/pt-br/web/services/api):
+* Instale o Chart com os componentes do [**serviço de api**]({{< ref path="/web/services/api.md" lang="pt-br">}}):
 
 ```bash
 helm install api horusec-api/deployments/helm/horusec-api -n horusec-system
 ```
 
-* Instale o Chart que com os componentes do [**serviço de auth**](/docs/pt-br/web/services/auth):
+* Instale o Chart que com os componentes do [**serviço de auth**]({{< ref path="/web/services/auth.md" lang="pt-br">}}):
 
 ```bash
 helm install auth horusec-auth/deployments/helm/horusec-auth -n horusec-system
 ```
 
-* Instale o Chart com os componentes do [**serviço de manager**](/docs/pt-br/web/services/manager):
+* Instale o Chart com os componentes do [**serviço de manager**]({{< ref path="/web/services/manager/" lang="pt-br">}}):
 
 ```bash
 helm install manager horusec-manager/deployments/helm/horusec-manager -n horusec-system
 ```
 
-* Instale o Chart com os componentes do [**serviço de messages**](/docs/pt-br/web/services/messages):
+* Instale o Chart com os componentes do [**serviço de messages**]({{< ref path="/web/services/messages.md" lang="pt-br">}}):
 
  {{% alert color="info" %}}
  Obrigatório apenas se estiver utilizando
-  o [**serviço de mensageria**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service)
+  o [**serviço de mensageria**]({{< ref path="/tutorials/how-to-enable-disable-messaging-service.md" lang="pt-br">}})
 {{% /alert %}}
 
 ```bash
 helm install messages horusec-messages/deployments/helm/horusec-messages -n horusec-system
 ```
 
-* Instale o Chart com os componentes do [**serviço de webhook**](/docs/pt-br/web/services/webhook):
+* Instale o Chart com os componentes do [**serviço de webhook**]({{< ref path="/web/services/webhook.md" lang="pt-br">}}):
 
 {{% alert color="info" %}}
 Obrigatório apenas se estiver utilizando
-  o [serviço de mensageria](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service)
+  o [serviço de mensageria]({{< ref path="/tutorials/how-to-enable-disable-messaging-service.md" lang="pt-br">}})
 {{% /alert %}}
 
 
@@ -176,7 +176,7 @@ helm install webhook horusec-webhook/deployments/helm/horusec-webhook -n horusec
 
 ## **Acesso ao Horusec Helm Charts**
 
-Depois de rodar todos os serviços em seu ambiente, basta acessar a interface gráfica pelo link que aparece em sua aplicação web e que é oferecida pelo [**serviço Horusec-Manager**](/docs/pt-br/web/services/manager).
+Depois de rodar todos os serviços em seu ambiente, basta acessar a interface gráfica pelo link que aparece em sua aplicação web e que é oferecida pelo [**serviço Horusec-Manager**]({{< ref path="/web/services/manager/" lang="pt-br">}}).
 
 O comportamento padrão dos Charts é criar um Ingress com uma regra de entrada roteando o tráfego HTTP para seu serviço baseado em um host específico. Por isso, é recomendado usar um **Ingress Controller** para gerenciar o acesso externo aos serviços do seu cluster do Kubernetes.
 

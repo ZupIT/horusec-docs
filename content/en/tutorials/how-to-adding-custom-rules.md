@@ -30,7 +30,7 @@ In order to run custom JSON rules in Horusec, you'll have to create a **.json** 
    {
       "ID": "837c504d-38b4-4ea6-987b-d91e92ac86a2",
       "Name": "Cookie Without HttpOnly Flag",
-      "Description": "It is recommended to specify the HttpOnly flag to new cookie. For more information access: (https://security-code-scan.github.io/#SCS0009) or (https://cwe.mitre.org/data/definitions/1004.html).",
+      "Description": "It is recommended to specify the HttpOnly flag to new cookie. For more information access: (https://security-code-scan.github.io#SCS0009) or (https://cwe.mitre.org/data/definitions/1004.html).",
       "Severity": "LOW",
       "Confidence": "LOW",
       "Type": "OrMatch",

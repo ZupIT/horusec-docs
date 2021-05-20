@@ -12,7 +12,7 @@ Este recurso permite que você visualize, na plataforma, todas os espaços de tr
 
 ###  Token do workspace
 
-O token é um recurso que você pode criar para utilizar em todas as suas análises. O principal objetivo dele é ajudar o Horusec a identificar o workspace e o repositório quando a [**CLI**](/docs/pt-br/references/cli/) envia uma nova análise para plataforma.
+O token é um recurso que você pode criar para utilizar em todas as suas análises. O principal objetivo dele é ajudar o Horusec a identificar o workspace e o repositório quando a [**CLI**]({{< ref path="/cli/" lang="pt-br">}}) envia uma nova análise para plataforma.
 
 Por exemplo, se você criar um workspace com 100 repositórios, basta utilizar apenas 1 token de acesso. No momento em que for enviar a análise para este repositório, você só terá de passar o nome do repositório que deseja criar ou o que já existe para a CLI.
 

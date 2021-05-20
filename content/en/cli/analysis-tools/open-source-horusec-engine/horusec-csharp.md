@@ -8,7 +8,7 @@ description: Here, you will find informations about vulnerabilities that Horusec
 
 ## **What is it?**
 
-The [**Horusec-Csharp**](/docs/cli/analysis-tools/open-source-horusec-engine/horusec-csharp) is a SAST tool created by the Horusec team in order to search vulnerabilities on C\# projects. 
+The [**Horusec-Csharp**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-csharp.md" lang="en" >}}) is a SAST tool created by the Horusec team in order to search vulnerabilities on C\# projects. 
 
 ## **Rules**
 
@@ -186,7 +186,7 @@ The [**Horusec-Csharp**](/docs/cli/analysis-tools/open-source-horusec-engine/hor
 
 ### SQL Injection MsSQL Data Provider
 
-> Malicious user might get direct read and/or write access to the database. If the database is poorly configured the attacker might even get Remote Code Execution \(RCE\) on the machine running the database. For more information access: \([https://security-code-scan.github.io/\#SCS0026](https://security-code-scan.github.io/#SCS0026)\).
+> Malicious user might get direct read and/or write access to the database. If the database is poorly configured the attacker might even get Remote Code Execution \(RCE\) on the machine running the database. For more information access: \([https://security-code-scan.github.io/\#SCS0026](https://security-code-scan.github.io#SCS0026)\).
 
 ### Request validation is enabled only for pages
 

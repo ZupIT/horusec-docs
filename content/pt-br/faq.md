@@ -9,7 +9,7 @@ description: >-
 
 ### **1. Quais são as linguagens e ferramentas de programação disponíveis no Horusec?**
 
-Confira as [**linguagens e ferramentas**](/docs/pt-br/cli/analysis-tools/overview/) do Horusec
+Confira as [**linguagens e ferramentas**]({{< ref path="/cli/analysis-tools/overview.md" lang="pt-br">}}) do Horusec
 
 ### **2. Qual é o roadmap para o Horusec em 2021?**
 
@@ -57,7 +57,7 @@ O Horusec é uma ferramenta de análise de segurança que atua buscando possíve
 
 ### **8. É possível subir toda a estrutura do Horusec na minha infra pessoal?** 
 
-Sim, acesse o tutorial [**"Como rodar a aplicação web em outro host?"**](/docs/pt-br/tutorials/how-to-use-horusec-without-docker/) para saber mais.
+Sim, acesse o tutorial [**"Como rodar a aplicação web em outro host?"**]({{< ref path="/tutorials/how-to-use-horusec-without-docker.md" lang="pt-br">}}) para saber mais.
  
 ### **9. Como acessar o Manager?**  
 
@@ -67,8 +67,8 @@ Para acessar o manager, você pode subir em sua infrapessoal usando os itens Doc
  
 ### **10. Como exportar o output do Horusec em arquivo?** 
 
-Para fazer isso, siga o [**Exemplo 5: Usando para obter uma saída sonarqube na seção Recursos**](/docs/pt-br/cli/resources/#exemplo-5-usando-para-obter-uma-saída-sonarqube).
+Para fazer isso, siga o [**Exemplo 5: Usando para obter uma saída sonarqube na seção Recursos**]({{< ref path="/cli/resources.md#exemplo-5-usando-para-obter-uma-saída-sonarqube" lang="pt-br">}}).
 
 ### **11. Como importar o output do Horusec dentro do SonarQube?**  
 
-Veja a pergunta 10 [**"Como exportar o output do Horusec no Sonarqube"**](/docs/pt-br/faq/#10-como-exportar-o-output-do-horusec-em-arquivo) e depois [**importe o arquivo gerado dentro da sua interface do Sonarqube usando este tutorial**](https://docs.sonarqube.org/latest/analysis/generic-issue/).
+Veja a pergunta 10 [**"Como exportar o output do Horusec no Sonarqube"**]({{< ref path="/faq.md#10-como-exportar-o-output-do-horusec-em-arquivo) e depois [**importe o arquivo gerado dentro da sua interface do Sonarqube usando este tutorial**](https://docs.sonarqube.org/latest/analysis/generic-issue" lang="pt-br">}}).

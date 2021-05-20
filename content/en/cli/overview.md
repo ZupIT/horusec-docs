@@ -12,7 +12,7 @@ On the tool context, Horusec-CLI is the part of the code that allows you to run 
 
 
 ## **How do you perform an analysis?**
-To perform an analysis in your project, [**install Horusec**](/docs/web/installation/) in your computer and then run the command below where your project is:
+To perform an analysis in your project, [**install Horusec**]({{< ref path="/web/installation/" lang="en" >}}) in your computer and then run the command below where your project is:
 
 ```bash
 horusec start

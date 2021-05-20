@@ -23,8 +23,8 @@ This service inside Horusec has some functionalities in asynchronous mode, such 
 
 The services used to realize the queues consume are: 
 
-* [**Horusec-Messages**](/docs/web/services/messages)
-* [**Horusec-Webhook**](/docs/web/services/webhook)
+* [**Horusec-Messages**]({{< ref path="/web/services/messages.md" lang="en" >}})
+* [**Horusec-Webhook**]({{< ref path="/web/services/webhook.md" lang="en" >}})
 
 {{% alert color="info" %}}
 When you disable the messaging service, it is normal to see these services "stopped" because they are not been in use.
@@ -32,9 +32,9 @@ When you disable the messaging service, it is normal to see these services "stop
 
 And the services that receive actions when it is necessary in it respective queues are:
 
-* [**Horusec-Auth**](/docs/web/services/Auth)
-* [**Horusec-Account**](/docs/web/services/Account)
-* [**Horusec-Api**](/docs/web/services/API)
+* [**Horusec-Auth**]({{< ref path="/web/services/auth.md" lang="en" >}})
+* [**Horusec-Account**]({{< ref path="/web/services/account.md" lang="en" >}})
+* [**Horusec-Api**]({{< ref path="/web/services/api.md" lang="en" >}})
 
 {{% alert color="info" %}}
 When you disable the messaging service, these services ignore the action of publishing in a queue and follow to the next functionality.
@@ -55,5 +55,5 @@ If the `HORUSEC_DISABLED_BROKER` microservice value is **true**, the messaging s
 To enable it, it's only necessary to change the value to **false**. 
 
 {{% alert color="info" %}}
-When you upload Horusec's web application using [Helm ou Docker-compose](/docs/web) patterns, this environment variable has a **true** value.
+When you upload Horusec's web application using [Helm ou Docker-compose]({{< ref path="/web/" lang="en" >}}) patterns, this environment variable has a **true** value.
 {{% /alert %}}

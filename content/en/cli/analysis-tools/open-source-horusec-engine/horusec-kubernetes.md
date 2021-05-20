@@ -10,7 +10,7 @@ description: >-
 
 ## **What is it?**
 
-The  [**Horusec-Kubernetes**](/docs/cli/analysis-tools/open-source-horusec-engine/horusec-kubernetes/) is a SAST tool created by the Horusec team in order to search vulnerabilities in projects that use kubernetes _.yaml_ files.
+The  [**Horusec-Kubernetes**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-kubernetes.md" lang="en" >}}) is a SAST tool created by the Horusec team in order to search vulnerabilities in projects that use kubernetes _.yaml_ files.
 
 ## **Rules**
 

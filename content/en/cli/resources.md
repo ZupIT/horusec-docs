@@ -60,7 +60,7 @@ horusec version
 ``` 
 
 ### Generate 
-Command used to generate a configuration file in the current directory and it has some [**customization options**](/docs/cli/resources/#global-flags) in the analysis made by Horusec. 
+Command used to generate a configuration file in the current directory and it has some [**customization options**]({{< ref path="/cli/resources.md#global-flags" lang="en" >}}) in the analysis made by Horusec. 
 
 
 {{% alert color="info" %}}
@@ -389,7 +389,7 @@ On the table below, you can see all the available flags. To see it better, just 
       <td style="text-align:left">To run the analysis, you need an authorization token. You can get this
         token, generating a new token in the horusec repository. For more information,
         <a
-        href="/docs/tutorials/how-to-create-an-authorization-token/"><b>see here</b>
+        href="../tutorials/how-to-create-an-authorization-token/"><b>see here</b>
           </a>.</td>
     </tr>
     <tr>

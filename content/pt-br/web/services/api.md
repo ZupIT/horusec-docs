@@ -6,12 +6,12 @@ description: Nesta seção, você encontra mais informações sobre o serviço H
 
 ## **O que é?** 
 
-O Horusec-API é um microsserviço responsável por receber solicitações [**Horusec-CLI**](/docs/pt-br/cli/overview/) via solicitação HTTP para iniciar uma nova análise. Ele também adquire e devolve as análises salvas no sistema.
+O Horusec-API é um microsserviço responsável por receber solicitações [**Horusec-CLI**]({{< ref path="/cli/overview.md" lang="pt-br">}}) via solicitação HTTP para iniciar uma nova análise. Ele também adquire e devolve as análises salvas no sistema.
 
 Este serviço possui alguns recursos:
 
 * Receber uma nova análise de código;
-* Adquirir os dados enviados pela [**Horusec-CLI**](/docs/pt-br/cli/overview/);
+* Adquirir os dados enviados pela [**Horusec-CLI**]({{< ref path="/cli/overview.md" lang="pt-br">}});
 * Salvar os dados em um sistema centralizado;
 * Se configurado, publicar a análise na fila do webhook para enviá-la a terceiros.
 

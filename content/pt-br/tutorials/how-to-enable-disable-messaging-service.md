@@ -24,17 +24,17 @@ Esse serviço dentro do Horusec possui algumas funcionalidades realizadas de mod
 
 Os serviços que são usados para realizar o consumo das filas são: 
 
-* [**Horusec-Messages**](/docs/pt-br/web/services/messages)
-* [**Horusec-Webhook**](/docs/pt-br/web/services/webhook)
+* [**Horusec-Messages**]({{< ref path="/web/services/messages.md" lang="pt-br">}})
+* [**Horusec-Webhook**]({{< ref path="/web/services/webhook.md" lang="pt-br">}})
 
 {{% alert color="info" %}}
 Quando você desabilita o serviço de mensageria, é normal ver estes serviços "parados", porque eles não serão utilizados.
 {{% /alert %}}
 
 E os serviços que recebem ações quando é necessário publicar em suas respectivas filas são:
-* [**Horusec-Auth**](/docs/pt-br/web/services/auth)
-* [**Horusec-Account**](/docs/pt-br/web/services/account/)
-* [**Horusec-Api**](/docs/pt-br/web/services/api)
+* [**Horusec-Auth**]({{< ref path="/web/services/auth.md" lang="pt-br">}})
+* [**Horusec-Account**]({{< ref path="/web/services/account.md" lang="pt-br">}})
+* [**Horusec-Api**]({{< ref path="/web/services/api.md" lang="pt-br">}})
 
 {{% alert color="info" %}}
 Quando você desabilita o serviço de mensageria, este serviços ignoram a ação de publicar na fila e seguem para a próxima funcionalidade.
@@ -55,5 +55,5 @@ Se o valor do microsserviço `HORUSEC_DISABLED_BROKER` for **true** o serviço d
 Para habilitá-lo é preciso apenas trocar o seu valor para **false**. 
 
 {{% alert color="info" %}}
-Quando você sobe uma aplicação web do Horusec utilizando o [**Helm ou Docker-compose**](/docs/pt-br/web) padrões, essa variável de ambiente tem o valor **true**.
+Quando você sobe uma aplicação web do Horusec utilizando o [**Helm ou Docker-compose**]({{< ref path="/web.md" lang="pt-br">}}) padrões, essa variável de ambiente tem o valor **true**.
 {{% /alert %}}
