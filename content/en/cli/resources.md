@@ -199,21 +199,24 @@ See next, an example of a configuration file:
             "istoignore": false
         }
     },
-    "horusecCliToolsToIgnore": [],
     "horusecCliWorkDir": {
-        "go": [],
-        "csharp": [],
-        "ruby": [],
-        "python": [],
-        "java": [],
-        "kotlin": [],
-        "javaScript": [],
-        "leaks": [],
-        "hcl": [],
-        "php": [],
-        "c": [],
-        "yaml": [],
-        "generic": []
+    "go": [],
+    "csharp": [],
+    "ruby": [],
+    "python": [],
+    "java": [],
+    "kotlin": [],
+    "javaScript": [],
+    "leaks": [],
+    "hcl": [],
+    "php": [],
+    "c": [],
+    "yaml": [],
+    "generic": [],
+    "elixir": [],
+    "shell": [],
+    "dart": [],
+    "nginx": []
     }
 }
 ```
@@ -238,7 +241,7 @@ export HORUSEC_CLI_REPOSITORY_AUTHORIZATION="00000000-0000-0000-0000-00000000000
 export HORUSEC_CLI_PRINT_OUTPUT_TYPE="text"
 export HORUSEC_CLI_JSON_OUTPUT_FILEPATH=""
 export HORUSEC_CLI_SEVERITIES_TO_IGNORE="INFO"
-export HORUSEC_CLI_FILES_OR_PATHS_TO_IGNORE="*tmp* **/.vscode/**"
+export HORUSEC_CLI_FILES_OR_PATHS_TO_IGNORE="*tmp*, **/.vscode/**"
 export HORUSEC_CLI_RETURN_ERROR_IF_FOUND_VULNERABILITY="false"
 export HORUSEC_CLI_PROJECT_PATH="./"
 export HORUSEC_CLI_FILTER_PATH=""
@@ -312,15 +315,13 @@ On the table below, you can see all the available flags. To see it better, just 
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">HORUSEC_CLI_TYPES_OF_VULNERABILITIES_TO_IGNORE</td>
-      <td style="text-align:left">horusecCliTypesOfVulnerabilitiesToIgnore</td>
-      <td style="text-align:left">ignore-severity</td>
-      <td style="text-align:left">s</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <p>You can specify some type of vulnerability to not apply with an error.
-          The available types are: &quot;LOW, MEDIUM, HIGH&quot;. Example: LOW <del>,</del> MEDIUM
-          all the vulnerabilities of the configured type are ignored.</p>
+        <p><del></del></p>
         <p></p>
       </td>
     </tr>
@@ -531,7 +532,7 @@ On the table below, you can see all the available flags. To see it better, just 
       <td style="text-align:left">horusecCliWorkDir</td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">{"go": [],"csharp": [],"ruby": [],"python": [],"java": [],"kotlin": [],"javaScript": [],"leaks": [],"hcl": [],"php": [],"c": [],"yaml": [],"generic": []}</td>
+      <td style="text-align:left">{"go": [],"csharp": [],"ruby": [],"python": [],"java": [],"kotlin": [],"javaScript": [],"leaks": [],"hcl": [],"php": [],"c": [],"yaml": [],"generic": [],"elixir": [],"shell": [],"dart": [],"nginx": []}</td>
       <td style="text-align:left">This configuration informs horusec the corrected directory to run a specific
         language.</td>
     </tr>
@@ -540,7 +541,7 @@ On the table below, you can see all the available flags. To see it better, just 
       <td style="text-align:left">horusecCliToolsConfig</td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">{"Bandit": {"istoignore": false},"Brakeman": {"istoignore": false},"Eslint": {"istoignore": false},"Flawfinder": {"istoignore": false},"GitLeaks": {"istoignore": false},"GoSec": {"istoignore": false},"HorusecCsharp": {"istoignore": false},"HorusecDart": {"istoignore": false},"HorusecJava": {"istoignore": false},"HorusecKotlin": {"istoignore": false},"HorusecKubernetes": {"istoignore": false},"HorusecLeaks": {"istoignore": false},"HorusecNodeJS": {"istoignore": false},"NpmAudit": {"istoignore": false},"PhpCS": {"istoignore": false},"Safety": {"istoignore": false},"SecurityCodeScan": {"istoignore": false},"Semgrep": {"istoignore": false},"ShellCheck": {"istoignore": false},"TfSec": {"istoignore": false},"YarnAudit": {"istoignore": false}}</td>
+      <td style="text-align:left">{"Bandit": {"istoignore": false},"Brakeman": {"istoignore": false},"BundlerAudit": {"istoignore": false},"Flawfinder": {"istoignore": false},"GitLeaks": {"istoignore": false},"GoSec": {"istoignore": false},"HorusecEngine": {"istoignore": false},"MixAudit": {"istoignore": false},"NpmAudit": {"istoignore": false},"PhpCS": {"istoignore": false},"Safety": {"istoignore": false},"SecurityCodeScan": {"istoignore": false},"Semgrep": {"istoignore": false},"ShellCheck": {"istoignore": false},"Sobelow": {"istoignore": false},"TfSec": {"istoignore": false}</td>
       <td style="text-align:left">This configuration informs Horusec which tools are enabled to perform.</td>
     </tr>
     <tr>
@@ -548,7 +549,7 @@ On the table below, you can see all the available flags. To see it better, just 
         <td style="text-align:left">horusecCliCustomImages</td>
         <td style="text-align:left"></td>
         <td style="text-align:left"></td>
-        <td style="text-align:left">{"c": "","csharp": "","dart": "","elixir": "","generic": "","go": "","hcl": "","java": "","javascript": "","kotlin": "","leaks": "","php": "","python": "","ruby": "","shell": "","yaml": ""}</td>
+        <td style="text-align:left">{"c": "","csharp": "","elixir": "","generic": "","go": "","hcl": "","javascript": "","leaks": "","php": "","python": "","ruby": "","shell": ""}</td>
         <td style="text-align:left">This configuration informs Horusec where the language docker image is to rotate the analysis.</td>
     </tr>
     <tr>

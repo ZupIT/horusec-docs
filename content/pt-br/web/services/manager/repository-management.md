@@ -17,15 +17,17 @@ Ao criar um repositório, você tem algumas funcionalidades como:
 
 ### Token de repositório
 
-Assim como na organização, o token no repositório pode ser usado para todas as análises que você fizer e tem como principal objetivo ajudar o Horusec a identificar a organização e o repositório das análises enviadas pela [**CLI**](/docs/pt-br/references/cli/). 
+Assim como na organização, o token no repositório pode ser usado para todas as análises que você fizer e tem como principal objetivo ajudar o Horusec a identificar a organização e o repositório das análises enviadas pela [**CLI**](/docs/pt-br/cli/overview/). 
 
 O token de repositório é único e só pode ser criado por quem tem acesso de administrador dentro do repositório ou da organização. 
 
-Por exemplo, se você adicionar este token em sua pipeline, o Horusec irá enviar a análise e armazená-la para ter uma visão analítica das [**vulnerabilidades**](/docs/pt-br/references/vulnerabilities/introduction/) do seu repositório.
+Por exemplo, se você adicionar este token em sua pipeline, o Horusec irá enviar a análise e armazená-la para ter uma visão analítica das [**vulnerabilidades**](/docs/pt-br/web/services/vulnerability/) do seu repositório.
 
 {{% alert color="warning" %}}
 Lembre-se de que, ao criar um token de acesso, ele será visto apenas uma vez.
 {{% /alert %}}
+
+O token também pode ser configurado para ser expirável a fim de garantir a segurança da sua organização onde após a data de sua expiração o token não será mais válido para novas análises, caso a caixa de selação "É expirável" esteja **desmarcado** então este token não terá tempo de expiração.
 
 ![](/docs/ptbr/web/services/manager/repository-management/2-token-repository.gif)
 
@@ -38,7 +40,12 @@ Você pode convidar novos usuários para fazer parte do repositório. Ao fazer e
   * Gerenciar repositório \(editar, visualizar, remover\);
   * Gerenciar usuários do repositório\(convidar, visualizar, atualizar, remover\);
   * Gerenciar tokens de acesso do repositório\(criar, visualizar, revogar\);
-  * Visualizar o dashboard dos repositórios que o usuário tem acesso. 
+  * Gerenciar as vulnerabilidades do repositório que o usuário tem acesso;
+  * Visualizar o dashboard dos repositórios que o usuário tem acesso.
+
+* **Supervisor do repositório**
+  * Gerenciar as vulnerabilidades do repositório que o usuário tem acesso;
+  * Visualizar o dashboard dos repositórios que o usuário tem acesso.
 
 * **Usuário do repositório**
   * Visualizar o dashboard dos repositórios que o usuário tem acesso.

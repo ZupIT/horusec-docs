@@ -5,9 +5,9 @@ description: >-
   Nesta seção, você encontra informações de instalar a aplicação web do Horusec utilizando Docker-Compose.
 ---
 
-## **O que é?**
+## **O que é?** 
 
-O [**Docker-Compose**](https://docs.docker.com/compose/) é uma ferramenta para configurar os serviços de seu aplicativo, além de definir e executar aplicativos Docker de vários contêineres.Com um único, você cria e inicia todos os serviços de sua configuração.
+O [**Docker-Compose**](https://docs.docker.com/compose/) é uma ferramenta para configurar os serviços de seu aplicativo, além de definir e executar aplicativos Docker de vários contêineres. Com um único, você cria e inicia todos os serviços de sua configuração.
 
 No caso desta instalação, o objetivo é que você utilize a aplicação web do Horusec vinculado ao seu ambiente usando Docker-Compose.
 
@@ -29,7 +29,7 @@ Esse arquivo deve ser usado para cenário de testes, nunca de produção.
 {{% /alert %}}
 
 
-Você pode obter o [**arquivo de configuração**](https://github.com/ZupIT/horusec/blob/master/deployments/docker-compose.yaml) no repositório do Horusec:
+Você pode obter o [**arquivo de configuração**](https://github.com/ZupIT/horusec-platform/blob/master/deployments/compose/compose.yaml) no repositório do Horusec:
 
 1. Clone o repositório do Horusec em seu ambiente;
 2. Acesse a pasta onde clonou o repositório
@@ -38,9 +38,9 @@ Você pode obter o [**arquivo de configuração**](https://github.com/ZupIT/horu
 A seguir, você encontra todos os comandos que deve executar do passo 1 ao 3:
 
 ```bash
-git clone https://github.com/ZupIT/horusec.git
+git clone https://github.com/ZupIT/horusec-platform.git
 
-cd horusec
+cd horusec-platform
 
 make install
 ```
@@ -62,6 +62,8 @@ email: dev@example.com
 password: Devpass0*
 ```
 
+Para alterar ou desabilitar o usuário padrão do sistema basta seguir [nosso tutorial](/docs/pt-br/tutorials/how-to-enable-disable-default-user)
+
 {{% alert color="info" %}}
 Todos os serviços backend são expostos utilizando **network_mode: "host"** verifique se as [**configurações do Docker estão habilitadas**](https://docs.docker.com/network/host/) para fazer uso desta funcionalidade.
 {{% /alert %}}
@@ -71,22 +73,30 @@ Hoje o Horusec disponibiliza todas as suas imagens no [**dockerhub**](https://hu
 
 * [**horuszup/horusec-manager**](https://hub.docker.com/r/horuszup/horusec-manager)
 * [**horuszup/horusec-auth**](https://hub.docker.com/r/horuszup/horusec-auth)
-* [**horuszup/horusec-account**](https://hub.docker.com/r/horuszup/horusec-account)
+* [**horuszup/horusec-core**](https://hub.docker.com/r/horuszup/horusec-core)
 * [**horuszup/horusec-api**](https://hub.docker.com/r/horuszup/horusec-api)
 * [**horuszup/horusec-analytic**](https://hub.docker.com/r/horuszup/horusec-analytic)
 * [**horuszup/horusec-migration**](https://hub.docker.com/r/horuszup/horusec-migration)
-* [**horuszup/horusec-messages**](https://hub.docker.com/r/horuszup/horusec-messages) (obrigatório apenas se estiver utilizando o [**serviço de mensageria**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service))
-* [**horuszup/horusec-webhook**](https://hub.docker.com/r/horuszup/horusec-webhook) (obrigatório apenas se estiver utilizando o [**serviço de mensageria**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service))
+* [**horuszup/horusec-vulnerability**](https://hub.docker.com/r/horuszup/horusec-vulnerability)
+* [**horuszup/horusec-messages**](https://hub.docker.com/r/horuszup/horusec-messages) (obrigatório apenas se estiver utilizando o [**serviço de email**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service))
+* [**horuszup/horusec-webhook**](https://hub.docker.com/r/horuszup/horusec-webhook)
 
 ![](/docs/ptbr/web/installing/docker-compose/0-installing.gif)
 
 ## **Avisos importantes**
 
 {{% alert color="warning" %}}
-1. Todas as configurações que o Horusec disponibiliza em seu [**docker-compose.yaml**](https://github.com/ZupIT/horusec/blob/master/deployments/docker-compose.yaml) são padrões, assim como seus dados. Por isso, é recomendado que você altere algumas informações (como usuário e senha de banco de dados) ao utilizar esse serviço em um ambiente de produção.
+1. Todas as configurações que o Horusec disponibiliza em seu [**docker-compose.yaml**](https://github.com/ZupIT/horusec-platform/blob/master/deployments/compose/compose.yaml) são padrões, assim como seus dados. Por isso, é recomendado que você altere algumas informações (como usuário e senha de banco de dados) ao utilizar esse serviço em um ambiente de produção.
 
 
-2. O Horusec está sempre em atualização e correção de imagens. Para saber qual imagem utilizar em cada versão específica, acesse nossas [**release-notes**](https://github.com/ZupIT/horusec/releases) as versões corretas de cada serviço
+2. O Horusec está sempre em atualização e correção de imagens. Para saber qual imagem utilizar em cada versão específica, acesse nossas [**release-notes**](https://github.com/ZupIT/horusec-platform/releases) as versões corretas de cada serviço
 
 3. Em virtude da [**nova política de acesso para realizar download de imagens publicas do dockerhub**](https://docs.docker.com/docker-hub/download-rate-limit/), é recomendado que você suba as imagens em um registro de sua preferência para não ter imprevistos no futuro.
+
+4. Quando você habilita o serviço de mensageria, é necessário que ele conecte ao seu serviço de e-mail. Para isso, adicione no serviço **"horusec-messages"** as seguintes variáveis de ambiente: 
+- HORUSEC_SMTP_USERNAME="username do serviço de e-mail";
+- HORUSEC_SMTP_PASSWORD="senha do serviço de e-mail";
+- HORUSEC_SMTP_ADDRESS: "endereço do serviço de e-mail";
+- HORUSEC_SMTP_HOST: "host do serviço de e-mail";
+- HORUSEC_SMTP_PORT: "porta do serviço de e-mail".
 {{% /alert %}}

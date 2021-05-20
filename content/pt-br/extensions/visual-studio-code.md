@@ -53,10 +53,11 @@ Quando uma vulnerabilidade é encontrada, você pode verificá-la na aba do Horu
 As vulnerabilidades são mostradas com um ícone informando qual é o nível de criticidade:
 
 * ![](/docs/ptbr/extensions/vscode/7-info.svg) **INFO**
-* ![](/docs/ptbr/extensions/vscode/8-audit.svg) **AUDIT**
+* ![](/docs/ptbr/extensions/vscode/14-unknown.svg) **Unknown**
 * ![](/docs/ptbr/extensions/vscode/9-low.svg) **LOW**
 * ![](/docs/ptbr/extensions/vscode/10-medium.svg) **MEDIUM**
 * ![](/docs/ptbr/extensions/vscode/11-high.svg) **HIGH**
+* ![](/docs/ptbr/extensions/vscode/8-critical.svg) **CRITICAL**
 
 ### **Apresentar diagnósticos**
 

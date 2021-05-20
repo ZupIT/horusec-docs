@@ -10,6 +10,8 @@ Este recurso permite que você visualize, na plataforma, todas os espaços de tr
 
 ![](/docs/ptbr/web/services/manager/workspace-management/0-workspace.gif)
 
+Também é possível selecionar um workspace como favorito, essa função permite que ao entrar na plataforma o workspace favorito seja selecionado por padrão.
+
 ###  Token do workspace
 
 O token é um recurso que você pode criar para utilizar em todas as suas análises. O principal objetivo dele é ajudar o Horusec a identificar o workspace e o repositório quando a [**CLI**](/docs/pt-br/references/cli/) envia uma nova análise para plataforma.
@@ -27,6 +29,8 @@ Você pode ver como fica o painel de token dentro da plataforma do Horusec:
 
 ![](/docs/ptbr/web/services/manager/workspace-management/1-token.gif)
 
+O token também pode ser configurado para ser expirável a fim de garantir a segurança da sua organização onde após a data de sua expiração o token não será mais válido para novas análises, caso a caixa de selação "É expirável" esteja **desmarcado** então este token não terá tempo de expiração.
+
 ### Usuários do Workspace
 
 Você pode convidar novos usuários para entrar no seu workspace. Para fazer isso, basta cadastrar essas pessoas na base de dados do Horusec e, ao final do processo, é disparado um e-mail de convite para os usuários integrarem aquele workspace.
@@ -39,6 +43,7 @@ Ao fazer o convite,  você tem que escolher a **função deste usuário** dentro
    * Gerenciar tokens do workspace \(criar, visualizar, atualizar, remover\);
    * Gerenciar usuários do workspace \(convidar, visualizar, atualizar, remover\);
    * Adicionar novos repositórios;
+   * Gerenciar as vulnerabilidades dos repositórios;
    * Visualizar todos os repositórios do workspace;
    * Visualizar o dashboard do workspace;
    * Visualizar o dashboard dos repositórios que o usuário tem acesso.

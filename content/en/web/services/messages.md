@@ -6,11 +6,11 @@ description: In this section, you will find information about Horusec-Messages s
 
 ## **What is it?**
 
- Horusec-Messages is a microservice responsible for sending transactional e-mails when `horusec-broker` is enabled. 
+ Horusec-Messages is a microservice responsible for sending transactional e-mails.
 
 Check out more information [**about transactional emails.**](https:/postmarkapp.com/blog/what-is-transactional-email-and-how-is-it-used)
 
-![](/docs/ptbr/web/services/messages/0-arquitecture.jpg)
+![](/docs/ptbr/web/services/messages/0-arquitecture.png)
 
 ## **Requisites**
 To locally run this service, you will need: 
@@ -30,14 +30,14 @@ go get ./...
 
 
 ```bash
-go run ./horusec-messages/cmd/app/main.go
+go run ./messages/cmd/app/main.go
 ```
 
 It will return this log:
 
 ```bash
-service running on port :8004
-swagger running on url:  http://localhost:8004/swagger/index.html
+service running on port :8002
+swagger running on url:  http://localhost:8002/swagger/index.html
 ```
 
 ## **Environment variables**
@@ -65,5 +65,5 @@ These are the environment variables you can configure in this service:
 | Trigger                   | Description                                                                   |
 |---------------------------|-------------------------------------------------------------------------------|
 |  E-mail confirmation   | User confirmation e-mail.                     |
-| Reset password           | An e-mail that allows you to redefine your password.                   |
-| Invite for the workspace | An e-mail to inform the user the invitation for the organization. |
+| Reset password           | An e-mail that allows the user to redefine the password.                   |
+| Invite for the workspace | An e-mail to inform the user the invitation for an organization. |

@@ -28,11 +28,15 @@ Permite que você controle o acesso de usuários da forma que o adminsitrador de
 
 Permite que você faça a gestão do seu projeto a partir de um dashboard que fornece dados como, por exemplo:
 
-* Qual repositório com mais vulnerabilidades;
-* Quais linguagens registram mais vazamentos;
-* Quais funcinários que estão subindo essas possíveis vulnerabilidades gerando uma falha em seu projeto.
+* Qual repositório com mais vulnerabilidades e quais são suas classificações;
+* Quais linguagens registram mais vazamentos e quais são suas classificações;
+* Quais funcinários que estão subindo essas possíveis vulnerabilidades gerando uma falha em seu projeto e quais são suas classificações.
 
-![](/docs/ptbr/web/overview/1-analytic.png)
+![](/docs/ptbr/web/overview/1-1-analytic.png)
+
+![](/docs/ptbr/web/overview/1-2-analytic.png)
+
+![](/docs/ptbr/web/overview/1-3-analytic.png)
 
 #### **4. Classificação de vulnerabilidade**
 

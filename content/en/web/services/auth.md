@@ -5,9 +5,33 @@ description:  In this section, you will find information about Horusec-Auth serv
 ---
 
 ## **What is it?**
-Horusec-Auth is responsible for the authentication management and the users account creation. 
+Horusec-Auth is responsible for the user's management, authentication and access to the platform.
 
-![](/docs/ptbr/web/services/auth/0-arquitecture.jpg)
+![](/docs/ptbr/web/services/auth/0-arquitecture.png)
+
+## **Types of authentication**
+Horusec has 3 types of authentication: 
+
+1. **Nativa Horusec**
+2. **LDAP**
+3. **Keycloak**
+
+### **1. Nativa Horusec**
+This is the simplest authentication, because it is Horusec's default. 
+
+{{% alert color="info" %}}
+As Nativa Horusec already is the installation's default, if you want to change to other types, check out the [**tutorial on how to change it**](/docs/tutorials/how-to-change-authentication-types/). 
+{{% /alert %}}
+
+### **2. LDAP**
+
+This authentication uses the open application's protocol LDAP \(Lightweight Directory Access Protocol\). It allows Horusec to integrate a tool like [**OpenLDAP**](https://www.openldap.org/) where all the users, access groups and organizations are.
+
+Horusec will consume the tool's data and then the other functionalities will be managed, like analysis cases, vulnerabilities management, repository and access token. 
+
+### **3. Keycloak**
+
+This one uses [**Keycloak**](https://www.keycloak.org/documentation) only as an Auth(authenticator). If you want to integrate with Google and Facebook, it is the best option. 
 
 ## **Requisites**
 
@@ -29,7 +53,7 @@ go get ./...
 **Step 2:** Run the service with the command below:
 
 ```bash
-go run ./horusec-analytic/cmd/app/main.go
+go run ./auth/cmd/app/main.go
 ```
 
 It will return this log:
@@ -45,11 +69,10 @@ These are the environment variables you can configure in this service:
 | Environment Name                 | Default Value                                                    | Description                                                  |
 |----------------------------------|------------------------------------------------------------------|--------------------------------------------------------------|
 | HORUSEC_SWAGGER_HOST             | localhost                                                        | This environment variable gets which swagger host will be available.| 
-| HORUSEC_DATABASE_SQL_DIALECT     | postgres                                                         | This environment variable gets the dialect to connet POSTGRES database. |
 | HORUSEC_DATABASE_SQL_URI         | postgresql://root:root@localhost:5432/horusec_db?sslmode=disable | This environment variable gets the URI to connect to POSTGRES database.  |
 | HORUSEC_DATABASE_SQL_LOG_MODE    | false                                                            | This environment variable gets the value to enable POSTGREs logs. |
 | HORUSEC_PORT                     | 8006                                                             | This environment variable gets the port the service will start. |
-| HORUSEC_DISABLED_BROKER          | false                                                            | This environment variable gets if the broker is enabled or not. | 
+| HORUSEC_DISABLED_EMAILS          | false                                                            | This environment variable validates if the email service is enabled or not. | 
 | HORUSEC_BROKER_HOST              | 127.0.0.1                                                        | This environment variable gets a host to connect to RABBITMQ broker. | 
 | HORUSEC_BROKER_PORT              | 5672                                                             | This environment variable gets the port to connect to  RABBITMQ broker. |
 | HORUSEC_BROKER_USERNAME          | guest                                                            | This environment variable gets the user name to connect to RABBITMQ broker. |
@@ -74,7 +97,10 @@ These are the environment variables you can configure in this service:
 | HORUSEC_GRPC_PORT                | 8007                                                             | This environment variable gets GRPC's port |
 | HORUSEC_GRPC_USE_CERTS           | false                                                            | This environment variable gets if the certificate use is enabled or not on GRPC|
 | HORUSEC_GRPC_CERT_PATH           |                                                                  | This environment variable gets the GRPC certificate path |
-| HORUSEC_GRPC_KEY_PATH            |                                                                  | This environment variable gets GRPC certificate key path|
+| HORUSEC_GRPC_KEY_PATH            |                                                                  | This environment variable gets GRPC certificate key path|  
+ HORUSEC_DEFAULT_USER_DATA             | {\"username\": \"dev\", \"email\":\"dev@example.com\", \"password\":\"Devpass0*\"}                                        | When the default user is enabled, you need to create a default user. Don't forget to perform the JSON escape in the enviroment variable value. 
+ HORUSEC_ENABLE_DEFAULT_USER              | true                                | Validates if the default user is enabled or not in the platform. When the application starts, it will automatically create a new user.
 | HORUSEC_ENABLE_APPLICATION_ADMIN | false                                                            | This environment variable gets if you need an active application admins on the system. When this variable is configured  `true` only admin users can create Horusec workspace. |
 | HORUSEC_APPLICATION_ADMIN_DATA   | {\"username\": \"horusec-admin\", \"email\":\"horusec-admin@example.com\", \"password\":\"Devpass0*\"} | When the application admin is enabled, you need to create a default `application admin` user. Don't forget to perform the **json leakage** on the environment variable value.|
 | HORUSEC_MANAGER_URL              | http://localhost:8043                                            | This environment variable gets where horusec-manager service link is to send on the e-mail triggers. |
+ HORUSEC_AUTH_URL              | http://localhost:8006                                         | This environment variable gets the service's URL Horusec-Auth. It is used when is necessary to confirm the user's email, recently created in the platform. 

@@ -7,7 +7,7 @@ description: In this section, you will find information about Horusec-Webhook se
 ## **What is it?**
 Horusec-webhook is a microservice that triggers the data to third party services when the broker is enabled.
 
-![](/docs/ptbr/web/services/webhook/0-arquitecture.jpg)
+![](/docs/ptbr/web/services/webhook/0-arquitecture.png)
 
 ## **Requisites**
 To locally run this service, you will need: 
@@ -25,14 +25,14 @@ go get ./...
 **Step 2:** Run the service with the command below:
 
 ```bash
-go run ./horusec-webhook/cmd/app/main.go
+go run ./webhook/cmd/app/main.go
 ```
 
 It will return this log:
 
 ```bash
-service running on port :8008
-swagger running on url:  http://localhost:8008/swagger/index.html
+service running on port :8004
+swagger running on url:  http://localhost:8004/swagger/index.html
 ```
 
 ## **Environment variables**
@@ -51,3 +51,6 @@ These are the environment variables you can configure in this service:
 | HORUSEC_BROKER_USERNAME          | guest                                                            | This environment variable gets the user name to connect to RABBITMQ broker. |
 | HORUSEC_BROKER_PASSWORD          | guest                                                            | This environment variable gets the password to connect to RABBITMQ broker. |
 | HORUSEC_HTTP_TIMEOUT             | 60                                                               | This environment variable gets time in seconds to wait for a response after a HTTP request. |
+ HORUSEC_GRPC_AUTH_URL            | localhost:8007                                                   | It gets the  `horusec-auth` URL from the GRPC connection.  |
+| HORUSEC_GRPC_USE_CERTS           | false                                                            | It validates the usage of GRCP certificate is enabled or not. |
+| HORUSEC_GRPC_CERT_PATH           |                                                                  | It gets the path of GRPC certificate. | 
