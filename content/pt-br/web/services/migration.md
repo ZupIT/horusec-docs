@@ -19,12 +19,12 @@ Para rodar este serviço local, basta ter:
 ## **Execução**
 Você pode executar esse serviço de duas formas, veja abaixo: 
 
-1.  Manualmente: Clone o projeto do [Horusec-Platform](https://github.com/ZupIT/horusec-platform) em sua máquina e rode o comando abaixo:
+1.  Manualmente: Clone o projeto do [**Horusec-Platform**](https://github.com/ZupIT/horusec-platform) em sua máquina e rode o comando abaixo:
 ```bash
 make migrate
 ```
 
-2. Execução docker: Clone o projeto do [Horusec-Platform](https://github.com/ZupIT/horusec-platform) em sua máquina e rode a imagem docker:
+2. Execução docker: Clone o projeto do [**Horusec-Platform**](https://github.com/ZupIT/horusec-platform) em sua máquina e rode a imagem docker:
 
   * Crie um volume com todos arquivos de migração;
   * Crie uma variável de ambiente para saber qual o banco de dados deverá ser executado, pode ser o `platform` ou o `analytic`;

@@ -160,6 +160,13 @@ helm install manager deployments/helm/manager -n horusec-system
 {{% alert color="info" %}}
 Only required if you are using the
   [**messaging service**](/docs/tutorials/how-to-enable-disable-messaging-service/)
+  
+When you enable the messaging service, it is necessary to connect to your e-mail service. For that, add to **"horusec-messages"** the following environment variables:   
+- HORUSEC_SMTP_USERNAME="e-mail service username";
+- HORUSEC_SMTP_PASSWORD="e-mail password service";
+- HORUSEC_SMTP_ADDRESS: "e-mail address service";
+- HORUSEC_SMTP_HOST: "e-mail host service";
+- HORUSEC_SMTP_PORT: "e-mail service port".
   {{% /alert %}}
 
 ```bash

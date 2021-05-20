@@ -161,7 +161,14 @@ helm install manager deployments/helm/manager -n horusec-system
  {{% alert color="info" %}}
  Obrigatório apenas se estiver utilizando
   o [**serviço de emails**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service)
-{{% /alert %}}
+
+Quando você habilita o serviço de mensageria, é necessário que ele conecte ao seu serviço de e-mail. Para isso, adicione no serviço **"horusec-messages"** as seguintes variáveis de ambiente: 
+- HORUSEC_SMTP_USERNAME="username do serviço de e-mail";
+- HORUSEC_SMTP_PASSWORD="senha do serviço de e-mail";
+- HORUSEC_SMTP_ADDRESS: "endereço do serviço de e-mail";
+- HORUSEC_SMTP_HOST: "host do serviço de e-mail";
+- HORUSEC_SMTP_PORT: "porta do serviço de e-mail".
+{{% /alert %}} 
 
 ```bash
 helm install messages deployments/helm/messages -n horusec-system

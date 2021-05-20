@@ -17,13 +17,13 @@ To run locally run this service, you will need:
 
 There are two ways you can execute this service, see them below: 
 
-1.  Manually: Clone the [Horusec-Platform](https://github.com/ZupIT/horusec-platform)project in your machine and run the command below:
+1.  Manually: Clone the [**Horusec-Platform**](https://github.com/ZupIT/horusec-platform) project in your machine and run the command below:
 
 ```bash
 make migrate
 ```
 
-2. Docker: Clone the [Horusec-Platform](https://github.com/ZupIT/horusec-platform) project in your machine and run the docker image:
+2. Docker: Clone the [**Horusec-Platform**](https://github.com/ZupIT/horusec-platform) project in your machine and run the docker image:
 
   * Create a volume with all the migration files;
   * Create an environment variable to know which database it should be executed, it can be `platform` or `analytic`;
