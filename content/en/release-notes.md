@@ -7,7 +7,7 @@ description: >-
 
 {{% release/group %}}
 {{% release/item type="feature" repository="admin" date="May 2021" %}}
-New Horusec-Admin resource in 1.0 and 2.0 versions. It was created to simplify the web application installation, now you only have to run the command, access [**the installation link**](https://chat.google.com/api/get_attachment_url?url_type=DOWNLOAD_URL&attachment_token=AAUuIGum9gLs6X9bSBzOXVw797wGxvaqB3PLuJWg1ZCRGMvLJKn8ftM9BgFEJzpFgk6enqOzA%2FT7BDS4qJff5RdSbDVhIUKziJX4cTr5F0%2FbVFar0ctKwVrvdRByoXxV9EZM6pkOG1mUrFbcfvr4WMmVEYzOmDKcLWzovaFmWwra1RWG%2FAwduMWDJMFFALOuk7GSanU8q1CrG31JzfgzE%2FNg7o5Qn1N0u4qaTawyFmXCeQIpjG2aFtxfLpie470hiByDtJmaixImsmVhhRyNgEE3jkfPSdOfj9AibN5YYYi4VP1bIucQ59B2xgCVL6PHf4wtGHzBKif5b%2BdyNp719p2Fo6t4j8l85bs7OcNkjyjbXw7IYoorRket%2F3OstjFQ5LBvsvn%2BPXbxP2hMhKfCQJTRKgE4zbdvFE%2BFwcXs0gFcij7ql%2FSbRmiIXwAJNzm%2BNjKcImEmwnJSJ%2FeWYkbt5mDubshYH2LniqVt1LpC&content_type=text%2Fmarkdown&auto=true).
+New Horusec-Admin resource in 1.0 and 2.0 versions. It was created to simplify the web application installation, now you only have to run the command, access [**the installation link**]({{< ref path="/migrate-v1-to-v2" lang="en" >}}).
 {{% /release/item %}}
 
 {{% release/item repository="core" date="May 2021" %}}
@@ -19,7 +19,7 @@ Accessibility resources implementation: fontsize, color contrast and improvement
 
 A more detailed dashboard, now it shows information like the amount of severities and what types were found. 
 
-  
+
 Pages navigation improvement, now you can view detailed vulnerabilities in an analytical way.
 {{% /release/item %}}
 
