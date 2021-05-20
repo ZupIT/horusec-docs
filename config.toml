@@ -63,6 +63,7 @@ id = "UA-00000000-0"
 title = "Horusec"
 description = "Horusec is an open source tool that performs static code analysis to identify security flaws during the development process."
 languageName ="English"
+version_menu = "Versions"
 # Weight used for sorting.
 weight = 1
 [languages.pt-br]
@@ -72,6 +73,7 @@ languageName ="Português"
 contentDir = "content/pt-br"
 time_format_default = "02.01.2006"
 time_format_blog = "02.01.2006"
+version_menu = "Versões"
 
 [markup]
   [markup.goldmark]
@@ -131,6 +133,8 @@ offlineSearch = true
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
+
+[[params.versions]]
 
 # User interface configuration
 [params.ui]
