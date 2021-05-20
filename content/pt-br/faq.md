@@ -28,8 +28,8 @@ Veja as fases do roadmap:
 * Fase 5: Sast com análise semântica MVP (Q4)
 
 * Fase 6: DAST com análise simbólica MVP (Q4)
- 
-### **3. Existe a possibilidade de adicionar o Horusec como plugin para IDE?** 
+
+### **3. Existe a possibilidade de adicionar o Horusec como plugin para IDE?**
 
 Sim, já está disponível para VScode.
 
