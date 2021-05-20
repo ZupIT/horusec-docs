@@ -34,7 +34,7 @@ Confira, a seguir, o comando necessário para instalar o Horusec localmente de a
 Para instalar o Horusec nos sistemas MacOS ou Linux, basta rodar o comando abaixo no seu terminal:
 
 ```bash
-curl -fsSL https://horusec.io/bin/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/scripts/install.sh | bash -s latest
 ```
 
 ### Windows
@@ -47,7 +47,7 @@ No caso do windows, você terá que executar o comando sempre no local onde foi 
 {{% /alert %}}
 
 ```bash
-curl "https://horusec.io/bin/latest/win_x64/horusec.exe" -o "./horusec.exe" && ./horusec.exe version
+curl "https://github.com/ZupIT/horusec/releases/latest/download/horusec_win_x64.exe" -o "./horusec.exe" && ./horusec.exe version
 ```
 
 

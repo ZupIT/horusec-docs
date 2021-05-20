@@ -35,7 +35,7 @@ Check out next, the command you need to install Horusec locally according to you
 To install Horusec-CLI on MacOS or Linux, you have to run the command below in your terminal: 
 
 ```bash
-curl -fsSL https://horusec.io/bin/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/scripts/install.sh | bash -s latest
 ```
 
 ### **Windows**
@@ -49,7 +49,7 @@ Here, you have to run the command where you have downloaded the executable.
 {{% /alert %}}
 
 ```bash
-curl "https://horusec.io/bin/latest/win_x64/horusec.exe" -o "./horusec.exe" && ./horusec.exe version
+curl "https://github.com/ZupIT/horusec/releases/latest/download/horusec_win_x64.exe" -o "./horusec.exe" && ./horusec.exe version
 ```
 
 {{% alert color="info" %}}
