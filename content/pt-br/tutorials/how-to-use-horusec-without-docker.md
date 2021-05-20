@@ -1,6 +1,6 @@
 ---
 title: Como utilizar Horusec-CLI sem docker?
-weight: 12
+weight: 13
 description: Nesta seção, você encontra as informações para utilizar a Horusec-CLI sem o docker.
 ---
 

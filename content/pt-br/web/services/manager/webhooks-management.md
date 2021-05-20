@@ -19,8 +19,7 @@ Você deve escolher na configuração do webhook:
 * Repositório.
 
 Veja abaixo o exemplo de como é a configuração: 
-
-![](/docs/en/references/manager/webhooks-management/1-webhook-management.gif)
+![](/docs/ptbr/web/services/manager/webhooks-management/1-webhook-management.gif)
 
 Depois de configurar o webhook, sua API receberá um JSON no seguinte formato:
 

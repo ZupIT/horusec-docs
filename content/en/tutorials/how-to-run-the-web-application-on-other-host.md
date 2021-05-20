@@ -38,15 +38,17 @@ The Horusec-Manager is being executed with the following configuration:
 ...
   horusec-manager:
     image: horuszup/horusec-manager:latest
-    restart: always
-    container_name: horusec-manager
     ports:
       - "8043:8080"
+    restart: always
+    container_name: horusec-manager
     environment:
       REACT_APP_HORUSEC_ENDPOINT_API: ${REACT_APP_HORUSEC_ENDPOINT_API}
       REACT_APP_HORUSEC_ENDPOINT_ANALYTIC: ${REACT_APP_HORUSEC_ENDPOINT_ANALYTIC}
-      REACT_APP_HORUSEC_ENDPOINT_ACCOUNT: ${REACT_APP_HORUSEC_ENDPOINT_ACCOUNT}
+      REACT_APP_HORUSEC_ENDPOINT_CORE: ${REACT_APP_HORUSEC_ENDPOINT_CORE}
+      REACT_APP_HORUSEC_ENDPOINT_WEBHOOK: ${REACT_APP_HORUSEC_ENDPOINT_WEBHOOK}
       REACT_APP_HORUSEC_ENDPOINT_AUTH: ${REACT_APP_HORUSEC_ENDPOINT_AUTH}
+      REACT_APP_HORUSEC_ENDPOINT_VULNERABILITY: ${REACT_APP_HORUSEC_ENDPOINT_VULNERABILITY}
 ...
 ```
 
@@ -55,7 +57,10 @@ Then, you just export the variables related to the services where they are hoste
 ```bash
 export REACT_APP_HORUSEC_ENDPOINT_API="http:\/\/YOUR_HOST:8000" && \
 export REACT_APP_HORUSEC_ENDPOINT_ANALYTIC="http:\/\/YOUR_HOST:8005" && \
-export REACT_APP_HORUSEC_ENDPOINT_ACCOUNT="http:\/\/YOUR_HOST:8003" && \
+export REACT_APP_HORUSEC_ENDPOINT_CORE="http:\/\/YOUR_HOST:8003" && \
+export REACT_APP_HORUSEC_ENDPOINT_WEBHOOK="http:\/\/YOUR_HOST:8004" && \
 export REACT_APP_HORUSEC_ENDPOINT_AUTH="http:\/\/YOUR_HOST:8006" && \
+export REACT_APP_HORUSEC_ENDPOINT_VULNERABILITY="http:\/\/YOUR_HOST:8001" && \
 make install
 ```
+

@@ -18,7 +18,7 @@ There are several functionalities in these applications, see examples below:
 
 You can have several workspaces to control each environment or organize the way it works better for you.
 
-![](/docs/en/web/overview/0-multitenant.png)
+![](/docs/ptbr/web/overview/0-multitenant.png)
 
 ### **2. Access control**
 
@@ -30,11 +30,15 @@ It allows you to manage your project through a dashboard that gives you data lik
 
 Permite que você faça a gestão do seu projeto a partir de um dashboard que fornece dados como, por exemplo:
 
-* Which repository has more vulnerabilities;
-* Which languages has more leaks;
-* Who is responsible for merging some vulnerabilities causing a failure in your project.
+* Which repository has more vulnerabilities and what are your classifications;
+* Which languages has more leaks and what are your classifications;
+* Who is responsible for merging some vulnerabilities causing a failure in your project and what are your classifications.
 
-![](/docs/en/web/overview/1-analytic.png)
+![](/docs/ptbr/web/overview/1-1-analytic.png)
+
+![](/docs/ptbr/web/overview/1-2-analytic.png)
+
+![](/docs/ptbr/web/overview/1-3-analytic.png)
 
 ### **4. Vulnerabilities classification**
 

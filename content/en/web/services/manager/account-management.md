@@ -10,10 +10,10 @@ description: >-
 
 You can also manage the data of your account on Horusec. See below some functionalities: 
 
-* Delete your account;
 * Change your e-mail and user;
-* Change your password.
+* Change your password;
+* Change your language;
+* Delete your account;
 
-See the gif below: 
-
-![](/docs/en/references/manager/account-management/1-manager-account.gif)
+See the image below: 
+![](/docs/ptbr/web/services/manager/account-management/1-manager-account.png)

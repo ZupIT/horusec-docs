@@ -17,3 +17,5 @@ Alguns exemplos:
 * Ao pedir para apagar sua senha no serviço Horusec-Auth, o Broker irá publicar na fila onde o serviço Horusec-messages, que vai enviar um e-mail com um código unico de autenticação para fazer o reset da sua senha.
 
 * Ao convidar outro usuário a fazer parte do seu workspace no serviço Horusec-Auth, o Broker irá publicar na fila onde o serviço Horusec-messages, que vai enviar um e-mail para que ele possa visualizar o convite realizado.
+
+* Ao receber uma análise no serviço Horusec-API, o Broker irá publicar na fila onde o serviço Horusec-Analytic irá consumir e salvar os dados necessários para o dashboard.

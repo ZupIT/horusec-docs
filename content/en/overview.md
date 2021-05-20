@@ -13,7 +13,7 @@ description: >-
 
 Horusec is an open source tool that orchestrates other security tools and identifies security flaws or vulnerabilities in projects and put all results in a database for analysis and generation of metrics.
 
-Horusec chooses the languages and tools to be used in the project according to the available stack. **[Check out all the supported languages and available tools](/docs/cli/analysis-tools/overview/)**
+Horusec chooses the languages and tools to be used in the project according to the available stack. **[Check out all the supported languages and available tools](/docs/cli/analysis-tools/overview/)**.
 
 ## **Where can you use Horusec?**
 ### **Locally**
@@ -53,7 +53,9 @@ When Horusec starts an analysis, it follows the steps below:
 
 **See below a Horusec example:**
 
-<img src="/docs/ptbr/overview/6-full-usage.gif" alt="usage_horusec" width="100%"/>
+<video alt="usage_horusec" width="100%" controls>
+  <source src="/docs/ptbr/overview/6-full-usage.mp4" type="video/mp4">
+</video>
 
 
 ## **Why should you use Horusec?**

@@ -22,7 +22,7 @@ For this configuration, you will need:
 
 * **PostgreSQL** connection to store data.
 
-* **RabbitMQ** connection as a message-broker (**optional**).
+* **RabbitMQ** connection as a message-broker.
 
 * **Linux**.
 
@@ -30,18 +30,19 @@ For this configuration, you will need:
 
 ## **Horusec Helm Charts**
 
-Horusec's web application solution has **7 different services** and each one of them has a specific chart. 
+Horusec's web application solution has **8 different services** and each one of them has a specific chart. 
 
 The commands in this guide use Helm Charts already included in Horusec's release package according to each service:
 
 
-1. [**Account**](https://github.com/ZupIT/horusec/tree/master/horusec-account/deployments/helm/horusec-account)
-2. [**Analytic**](https://github.com/ZupIT/horusec/tree/master/horusec-analytic/deployments/helm/horusec-analytic)
-3. [**Api**](https://github.com/ZupIT/horusec/tree/master/horusec-api/deployments/helm/horusec-api)
-4. [**Auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth/deployments/helm/horusec-auth)
-5. [**Manager**](https://github.com/ZupIT/horusec/tree/master/horusec-manager/deployments/helm/horusec-manager)
-6. [**Messages**](https://github.com/ZupIT/horusec/tree/master/horusec-messages/deployments/helm/horusec-messages)
-7. [**Webhook**](https://github.com/ZupIT/horusec/tree/master/horusec-webhook/deployments/helm/horusec-webhook)
+1. [**Core**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/core)
+2. [**Analytic**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/analytic)
+3. [**Api**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/api)
+4. [**Auth**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/auth)
+5. [**Manager**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/manager)
+6. [**Messages**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/messages)
+7. [**Webhook**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/webhook)
+8. [**Vulnerability**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/vulnerability)
 
 ## **Pre-configuration**
 
@@ -120,34 +121,40 @@ The Secrets values informed here are only examples and they are not intended to 
 
 After finishing all configuration, you can go to Horusec's release package's root directory and follow the next instructions to install the services:  
 
-* Install the Chart with [**account service**](/docs/web/services/account/) components: 
+* Install the Chart with [**core service**](/docs/web/services/core/) components: 
 
 ```bash
-helm install account horusec-account/deployments/helm/horusec-account -n horusec-system
+helm install core deployments/helm/core -n horusec-system
+```
+
+* Install the Chart with [**vulnerability service**](/docs/web/services/vulnerability/) components: 
+
+```bash
+helm install vulnerability deployments/helm/vulnerability -n horusec-system
 ```
 
 * Install the Chart with [**analytic service**](/docs/web/services/analytic/) components: 
 
 ```bash
-helm install analytic horusec-analytic/deployments/helm/horusec-analytic -n horusec-system
+helm install analytic deployments/helm/analytic -n horusec-system
 ```
 
 * Install the Chart with [**API service**](/docs/web/services/api/) components:
 
 ```bash
-helm install api horusec-api/deployments/helm/horusec-api -n horusec-system
+helm install api deployments/helm/api -n horusec-system
 ```
 
 * Install the Chart with [**auth service**](/docs/web/services/auth/) components:
 
 ```bash
-helm install auth horusec-auth/deployments/helm/horusec-auth -n horusec-system
+helm install auth deployments/helm/auth -n horusec-system
 ```
 
 * Install the Chart with [**manager service**](/docs/web/services/manager/) components:
 
 ```bash
-helm install manager horusec-manager/deployments/helm/horusec-manager -n horusec-system
+helm install manager deployments/helm/manager -n horusec-system
 ```
 
 * Install the Chart with [**messages service**](/docs/web/services/messages/) components:
@@ -155,21 +162,23 @@ helm install manager horusec-manager/deployments/helm/horusec-manager -n horusec
 {{% alert color="info" %}}
 Only required if you are using the
   [**messaging service**](/docs/tutorials/how-to-enable-disable-messaging-service/)
+  
+When you enable the messaging service, it is necessary to connect to your e-mail service. For that, add to **"horusec-messages"** the following environment variables:   
+- HORUSEC_SMTP_USERNAME="e-mail service username";
+- HORUSEC_SMTP_PASSWORD="e-mail password service";
+- HORUSEC_SMTP_ADDRESS: "e-mail address service";
+- HORUSEC_SMTP_HOST: "e-mail host service";
+- HORUSEC_SMTP_PORT: "e-mail service port".
   {{% /alert %}}
 
 ```bash
-helm install messages horusec-messages/deployments/helm/horusec-messages -n horusec-system
+helm install messages deployments/helm/messages -n horusec-system
 ```
 
 * Install the Chart with [**webhook service**](/docs/web/services/webhook/) components:
 
-{{% alert color="info" %}}
-Only required if you are using the
-  [**messaging service**](/docs/tutorials/how-to-enable-disable-messaging-service/)
-{{% /alert %}}
-
 ```bash
-helm install webhook horusec-webhook/deployments/helm/horusec-webhook -n horusec-system
+helm install webhook deployments/helm/webhook -n horusec-system
 ```
 
 ## **Access to Horusec Helm Charts**
@@ -197,9 +206,11 @@ export INGRESS_HOST=$(kubectl -n horusec-system get ingresses manager-horusec-ma
 
 echo "$INGRESS_HOST        api-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
 echo "$INGRESS_HOST        horus-dev.zup.com.br" | sudo tee -a /etc/hosts
-echo "$INGRESS_HOST        account-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
+echo "$INGRESS_HOST        core-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
 echo "$INGRESS_HOST        analytic-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
 echo "$INGRESS_HOST        auth-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
+echo "$INGRESS_HOST        webhook-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
+echo "$INGRESS_HOST        vulnerability-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
 ```
 
 After you've done that, access the configured URL to access Horusec's Manager **http://horus-dev.zup.com.br/**

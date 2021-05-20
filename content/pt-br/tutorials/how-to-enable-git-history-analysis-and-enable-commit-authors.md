@@ -1,6 +1,6 @@
 ---
 title: Como habilitar análise no histórico git e habilitar autores dos commit?
-weight: 11
+weight: 12
 description: Nesta seção, você encontra o tutorial para realizar uma análise com o histórico git ativado e mostrar quem são os autores das vulnerabilidades encontradas.
 ---
 

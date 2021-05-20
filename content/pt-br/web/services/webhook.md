@@ -4,17 +4,19 @@ weight: 70
 description: Nesta seção, você encontra mais informações sobre o serviço Horusec-Webhook.
 ---
 
-## **O que é?**
+## **O que é?** 
 
-O Horusec-Webhook é um microsserviço responsável pelo disparo de dados para serviços de terceiros quando o broker está habilitado.
+O Horusec-Webhook é um microsserviço responsável por configurar destinos HTTP e realizar o disparo de análises realizadas para serviços de terceiros.
 
-![](/docs/ptbr/web/services/webhook/0-arquitecture.jpg)
+
+![](/docs/ptbr/web/services/webhook/0-arquitecture.png)
 
 ## **Requisitos**
 
 Para rodar este serviço local, basta ter:
 
 * PostgreSQL (com migrações aplicadas);
+* RabbitMQ;
 * Horusec-Auth;
 * Golang.
 
@@ -29,14 +31,14 @@ go get ./...
 **Passo 2:** Rode o comando abaixo para executar o serviço:
 
 ```bash
-go run ./horusec-webhook/cmd/app/main.go
+go run ./webhook/cmd/app/main.go
 ```
 
 Você deve receber este log como retorno:
 
 ```bash
-service running on port :8008
-swagger running on url:  http://localhost:8008/swagger/index.html
+service running on port :8004
+swagger running on url:  http://localhost:8004/swagger/index.html
 ```
 
 ## **Variáveis de ambiente**
@@ -55,3 +57,6 @@ Estas são as possíveis váriaveis de ambiente que você pode configurar neste 
 | HORUSEC_BROKER_USERNAME          | guest                                                            | Obtém o nome de usuário para se conectar no broker RABBITMQ. |
 | HORUSEC_BROKER_PASSWORD          | guest                                                            | Obtém a senha para se conectar no broker RABBITMQ. |
 | HORUSEC_HTTP_TIMEOUT             | 60                                                               | Valida o tempo, em segundos, a esperar por uma resposta na requisição HTTP. |
+| HORUSEC_GRPC_AUTH_URL            | localhost:8007                                                   | Obtém a URL `horusec-auth` de conexão com o GRPC. |
+| HORUSEC_GRPC_USE_CERTS           | false                                                            | Valida se o uso de certificados no GRPC está ativo ou não. |
+| HORUSEC_GRPC_CERT_PATH           |                                                                  | Obtém o caminho do certificado GRPC. | 
