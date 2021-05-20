@@ -59,10 +59,10 @@ jobs:
           VERSION: ${{ steps.version.outputs.release_tag }}
 
       - name: Upload FAQ
-        run: aws s3 sync --acl public-read --follow-symlinks public/faq s3://$AWS_S3_BUCKET/docs/faq/ --delete
+        run: aws s3 sync --acl public-read --follow-symlinks dist/faq s3://$AWS_S3_BUCKET/docs/faq/ --delete
 
       - name: Upload Portuguese FAQ
-        run: aws s3 sync --acl public-read --follow-symlinks public/pt/faq s3://$AWS_S3_BUCKET/docs/pt/faq/ --delete
+        run: aws s3 sync --acl public-read --follow-symlinks dist/pt/faq s3://$AWS_S3_BUCKET/docs/pt/faq/ --delete
 
       - name: S3 upload (redirect to latest version)
         run: aws s3 sync --acl public-read --follow-symlinks .github/workflows/proxy s3://docs/$AWS_S3_BUCKET
