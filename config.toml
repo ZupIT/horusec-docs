@@ -1,5 +1,7 @@
 baseURL = "https://horusec.io/docs/"
 
+current_version = ""
+
 title = "Horusec"
 
 publishDir = "./dist"
