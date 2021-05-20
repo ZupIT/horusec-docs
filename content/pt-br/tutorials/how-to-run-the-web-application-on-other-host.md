@@ -9,17 +9,17 @@ description: Nesta seção, você encontra o tutorial para rodar a aplicação w
 No Horusec você consegue realizar um teste rápido para entender e como a aplicação trabalha e como adequá-la ao seu ambiente. É possível fazer isso com a marquina virtual ou mudar o host. Para fazer isso, siga os passos abaixo:
 
 #### **Passo 1: Instale a aplicação web no seu ambiente**
-Se você ainda não instalou, [**veja a seção de como instalar**](/docs/pt-br/web/installation). 
+Se você ainda não instalou, [**veja a seção de como instalar**]({{< ref path="/web/installation" lang="pt-br">}}). 
 
 #### **Passo 2: Checar os serviços não iniciados**
-Alguns serviços não são iniciados por padrão, como por exemplo [**Horusec-Messages**](/docs/pt-br/web/services/messages).
+Alguns serviços não são iniciados por padrão, como por exemplo [**Horusec-Messages**]({{< ref path="/web/services/messages" lang="pt-br">}}).
 
-Após instalar você pode perceber que alguns serviços por padrão **não são iniciados**. Isto acontece porque esses serviços, como o de mensageria, já vem configurado para estar desabilitado, caso você necessite realizar o uso destes serviços basta [**seguir o tutorial de como habilitar e desabilitar o serviço de emails**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service).
+Após instalar você pode perceber que alguns serviços por padrão **não são iniciados**. Isto acontece porque esses serviços, como o de mensageria, já vem configurado para estar desabilitado, caso você necessite realizar o uso destes serviços basta [**seguir o tutorial de como habilitar e desabilitar o serviço de emails**]({{< ref path="/tutorials/how-to-enable-disable-messaging-service" lang="pt-br">}}).
 
 #### **Passo 3: Configure o Horusec-Manager**
 
 {{% alert color="info" %}}
-Se, por exemplo, você tentar acessar o [**Horusec-Manager**](/docs/pt-br/web/services/manager) do seu navegador e não aparecer nenhum resultado. É porque quando você sobe a aplicação e tenta acessar por meio de um host desconhecido o Horusec por padrão tenta realizar a comunicação por meio do IP `127.0.0.1`, com isso a comunicação entre os serviços sempre será localmente.
+Se, por exemplo, você tentar acessar o [**Horusec-Manager**]({{< ref path="/web/services/manager" lang="pt-br">}}) do seu navegador e não aparecer nenhum resultado. É porque quando você sobe a aplicação e tenta acessar por meio de um host desconhecido o Horusec por padrão tenta realizar a comunicação por meio do IP `127.0.0.1`, com isso a comunicação entre os serviços sempre será localmente.
 {{% /alert %}}
 
 Ao entrar em seu navegador e abrir a Horusec-Manager você pode percerber que irá receber uma menssagem dizendo que alguns serviços não foram configurados corretamente, veja abaixo:

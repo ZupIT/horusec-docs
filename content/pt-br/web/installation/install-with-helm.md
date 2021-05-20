@@ -122,47 +122,47 @@ Os valores informados nas Secrets deste guia são meros exemplos e não se desti
 Depois de realizar todas as configurações necessárias, você pode ir ao diretório raiz do pacote da release do Horusec e seguir as instruções abaixo para instalar os serviços:
 
 
- * Instale o Chart com os componentes do [**serviço core**](/docs/pt-br/web/services/core):
+ * Instale o Chart com os componentes do [**serviço core**]({{< ref path="/web/services/core" lang="pt-br">}}):
 
 ```bash
 helm install core deployments/helm/core -n horusec-system
 ```
 
-* Instale o Chart com os componentes do [**serviço de vulnerability**](/docs/pt-br/web/services/vulnerability):
+* Instale o Chart com os componentes do [**serviço de vulnerability**]({{< ref path="/web/services/vulnerability.md" lang="pt-br">}}):
 
 ```bash
 helm install vulnerability deployments/helm/vulnerability -n horusec-system
 ```
 
-* Instale o Chart com os componentes do [**serviço de analytic**](/docs/pt-br/web/services/analytic):
+* Instale o Chart com os componentes do [**serviço de analytic**]({{< ref path="/web/services/analytic" lang="pt-br">}}):
 
 ```bash
 helm install analytic deployments/helm/analytic -n horusec-system
 ```
 
-* Instale o Chart com os componentes do [**serviço de api**](/docs/pt-br/web/services/api):
+* Instale o Chart com os componentes do [**serviço de api**]({{< ref path="/web/services/api" lang="pt-br">}}):
 
 ```bash
 helm install api deployments/helm/api -n horusec-system
 ```
 
-* Instale o Chart que com os componentes do [**serviço de auth**](/docs/pt-br/web/services/auth):
+* Instale o Chart que com os componentes do [**serviço de auth**]({{< ref path="/web/services/auth" lang="pt-br">}}):
 
 ```bash
 helm install auth deployments/helm/auth -n horusec-system
 ```
 
-* Instale o Chart com os componentes do [**serviço de manager**](/docs/pt-br/web/services/manager):
+* Instale o Chart com os componentes do [**serviço de manager**]({{< ref path="/web/services/manager" lang="pt-br">}}):
 
 ```bash
 helm install manager deployments/helm/manager -n horusec-system
 ```
 
-* Instale o Chart com os componentes do [**serviço de messages**](/docs/pt-br/web/services/messages):
+* Instale o Chart com os componentes do [**serviço de messages**]({{< ref path="/web/services/messages" lang="pt-br">}}):
 
  {{% alert color="info" %}}
  Obrigatório apenas se estiver utilizando
-  o [**serviço de emails**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service)
+  o [**serviço de emails**]({{< ref path="/tutorials/how-to-enable-disable-messaging-service" lang="pt-br">}})
 
 Quando você habilita o serviço de mensageria, é necessário que ele conecte ao seu serviço de e-mail. Para isso, adicione no serviço **"horusec-messages"** as seguintes variáveis de ambiente: 
 - HORUSEC_SMTP_USERNAME="username do serviço de e-mail";
@@ -176,7 +176,7 @@ Quando você habilita o serviço de mensageria, é necessário que ele conecte a
 helm install messages deployments/helm/messages -n horusec-system
 ```
 
-* Instale o Chart com os componentes do [**serviço de webhook**](/docs/pt-br/web/services/webhook):
+* Instale o Chart com os componentes do [**serviço de webhook**]({{< ref path="/web/services/webhook" lang="pt-br">}}):
 
 
 ```bash
@@ -185,7 +185,7 @@ helm install webhook deployments/helm/webhook -n horusec-system
 
 ## **Acesso ao Horusec Helm Charts**
 
-Depois de rodar todos os serviços em seu ambiente, basta acessar a interface gráfica pelo link que aparece em sua aplicação web e que é oferecida pelo [**serviço Horusec-Manager**](/docs/pt-br/web/services/manager).
+Depois de rodar todos os serviços em seu ambiente, basta acessar a interface gráfica pelo link que aparece em sua aplicação web e que é oferecida pelo [**serviço Horusec-Manager**]({{< ref path="/web/services/manager" lang="pt-br">}}).
 
 O comportamento padrão dos Charts é criar um Ingress com uma regra de entrada roteando o tráfego HTTP para seu serviço baseado em um host específico. Por isso, é recomendado usar um **Ingress Controller** para gerenciar o acesso externo aos serviços do seu cluster do Kubernetes.
 

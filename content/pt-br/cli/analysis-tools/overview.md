@@ -25,25 +25,25 @@ Essas linguagens e ferramentas são:
   * [**Npm Audit**](https://docs.npmjs.com/cli/audit)
   * [**Yarn Audit**](https://yarnpkg.com/lang/en/docs/cli/audit/)
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
-  * [**HorusecNodeJS**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-nodejs)
+  * [**HorusecNodeJS**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-nodejs" lang="pt-br">}})
   * [**EsLint**](https://github.com/eslint/eslint)
 * **GoLang**
   * [**Gosec**](https://github.com/securego/gosec)
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
 * **C\#**
   * [**SecuriyCodeScan**](https://security-code-scan.github.io)
-  * [**HorusecCSharp**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-csharp)
+  * [**HorusecCSharp**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-csharp" lang="pt-br">}})
 * **Java**
-  * [**HorusecJava**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-java/)
+  * [**HorusecJava**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-java.md" lang="pt-br">}})
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
 * **Kotlin**
-  * [**HorusecKotlin**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-kotlin/)
+  * [**HorusecKotlin**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-kotlin.md" lang="pt-br">}})
 * **Kubernetes**
-  * [**HorusecKubernetes**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-kubernetes/)
+  * [**HorusecKubernetes**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-kubernetes.md" lang="pt-br">}})
 * **Terraform**
   * [**Tfsec**](https://github.com/liamg/tfsec)
 * **Leaks**
-  * [**HorusecLeaks**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-leaks/)
+  * [**HorusecLeaks**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-leaks.md" lang="pt-br">}})
 * **Leaks \(análise opcional no histórico git\)**
   * [**GitLeaks**](https://github.com/zricethezav/gitleaks)
 * **PHP**
@@ -57,11 +57,11 @@ Essas linguagens e ferramentas são:
 * **JSON**
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
 * **Dart**
-  * [**HorusecDart**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-dart/)
+  * [**HorusecDart**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-dart.md" lang="pt-br">}})
 * **Shell Script**
   * [**Shellcheck**](https://github.com/koalaman/shellcheck)
 * **Elixir**
   * [**Mix Audit**](https://github.com/mirego/mix_audit)
   * [**Sobelow**](https://github.com/nccgroup/sobelow)
 * **Nginx**
-  * [**HorusecNginx**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-nginx/)
+  * [**HorusecNginx**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-nginx.md" lang="pt-br">}})

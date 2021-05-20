@@ -7,20 +7,20 @@ description: >-
 
 No dia 20 de Maio de 2021, o Horusec fez uma mudança em seus repositórios no Github: 
 
-- Agora o repositório principal **https://github.com/ZupIT/horusec** passa a ser apenas de propriedade da [**Horusec-CLI**](/docs/pt-br/cli).
+- Agora o repositório principal **https://github.com/ZupIT/horusec** passa a ser apenas de propriedade da [**Horusec-CLI**]({{< ref path="/cli" lang="pt-br">}}).
 
 - E toda a aplicação Web foi migrada para o repositório **https://github.com/ZupIT/horusec-platform**.
 
 Com isso os seguintes serviços passam a ter um novo repositório:
-  * [**Horusec-API**](/docs/pt-br/web/services/api)
-  * [**Horusec-Analytic**](/docs/pt-br/web/services/analytic)
-  * [**Horusec-Auth**](/docs/pt-br/web/services/auth)
-  * [**Horusec-Webhook**](/docs/pt-br/web/services/webhook)
-  * [**Horusec-Messages**](/docs/pt-br/web/services/messages).
+  * [**Horusec-API**]({{< ref path="/web/services/api" lang="pt-br">}})
+  * [**Horusec-Analytic**]({{< ref path="/web/services/analytic" lang="pt-br">}})
+  * [**Horusec-Auth**]({{< ref path="/web/services/auth" lang="pt-br">}})
+  * [**Horusec-Webhook**]({{< ref path="/web/services/webhook" lang="pt-br">}})
+  * [**Horusec-Messages**]({{< ref path="/web/services/messages" lang="pt-br">}}).
 
 Outras mudanças também ocorreram:
-  * Foi criado um novo serviço [**Horusec-Vulnerability**](/docs/pt-br/web/services/vulnerability), responsável pela gestão de todas as vulnerabilidades encontradas pela Horusec-CLI.
-  * O serviço Horusec-Account foi renomeado para [**Horusec-Core**](/docs/pt-br/web/services/core) para representar melhor sua função dentro da plataforma.
+  * Foi criado um novo serviço [**Horusec-Vulnerability**]({{< ref path="/web/services/vulnerability.md" lang="pt-br">}}), responsável pela gestão de todas as vulnerabilidades encontradas pela Horusec-CLI.
+  * O serviço Horusec-Account foi renomeado para [**Horusec-Core**]({{< ref path="/web/services/core" lang="pt-br">}}) para representar melhor sua função dentro da plataforma.
 
 ### Requisitos:
 Veja abaixo os requisitos obrigatórios na versão 2.0:
@@ -40,7 +40,7 @@ Foi necessário separar os banco de dados porque o serviço Horusec-API é carre
 ### Opcionais:
 Não houve alteração no requisito opcional, ele continua sendo:
 
-- A conexão com um servidor [**SMTP**](/docs/pt-br/tutorials/how-to-enable-disable-messaging-service) para disparos de e-mails.
+- A conexão com um servidor [**SMTP**]({{< ref path="/tutorials/how-to-enable-disable-messaging-service" lang="pt-br">}}) para disparos de e-mails.
 
 ### Migração:
 Para prosseguir com a migração, siga os passos abaixo:
@@ -95,4 +95,4 @@ docker exec \
 -i horusec-api /api/horusec-api-v1-to-v2-migrate
 ```
 
-**Passo 3:** [**Atualize a CLI**](/docs/pt-br/cli/installation) para a última versão.
+**Passo 3:** [**Atualize a CLI**]({{< ref path="/cli/installation" lang="pt-br">}}) para a última versão.

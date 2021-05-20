@@ -9,7 +9,7 @@ description: >-
 
 ## **O que é?**
 
-O [**Horusec-Java**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-java/#horusec-java-cli) é uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos java.
+O [**Horusec-Java**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-java.md#horusec-java-cli" lang="pt-br">}}) é uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos java.
 
 ## **Exemplos de vulnerabilidades**
 
