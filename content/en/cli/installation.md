@@ -62,9 +62,9 @@ If you need to download for a specific version / operating system. In this case,
 * win\_x64
 
 
-👉[**Latest version available**](https://horusec.io/bin/version-cli-latest.txt)
+👉[**Lastest available version**](https://github.com/ZupIT/horusec/releases/tag/v2.0.0)
 
-👉[**All versions available** ](https://horusec.io/bin/all-version-cli.txt)
+👉[**All available versions**](https://github.com/ZupIT/horusec/releases)
 
 {{% /alert %}}
 
@@ -77,24 +77,21 @@ The manual installation is done according to your operation system and the versi
 The links below are to download the lastest version:
 
 - Windows x64:
-  - 📥 https://horusec.io/bin/latest/win_x64/horusec.exe
-
-- Windows x64:
-  - 📥 https://horusec.io/bin/latest/win_x64/horusec.exe
+  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.0.0/horusec_win_x64.exe
 - Windows x86:
-  - 📥 https://horusec.io/bin/latest/win_x86/horusec.exe
+  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.0.0/horusec_win_x86.exe
 - Linux x64:
-  - 📥 https://horusec.io/bin/latest/linux_x64/horusec
+  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.0.0/horusec_linux_x64
 - Linux x86:
-  - 📥 https://horusec.io/bin/latest/linux_x86/horusec
+  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.0.0/horusec_linux_x86
 - Mac x64:
-  - 📥 https://horusec.io/bin/latest/mac_x64/horusec
+  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.0.0/horusec_mac_x64
 
 
 
-👉[**Lastest available version**](https://horusec.io/bin/version-cli-latest.txt)
+👉[**Lastest available version**](https://github.com/ZupIT/horusec/releases/tag/v2.0.0)
 
-👉[**All available versions** ](https://horusec.io/bin/all-version-cli.txt)
+👉[**All available versions**](https://github.com/ZupIT/horusec/releases)
 
 
 ## **Installation via image docker**
@@ -137,7 +134,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Running Horusec Security
       run: |
-        curl -fsSL https://horusec.io/bin/install.sh | bash
+        curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/scripts/install.sh | bash -s latest
         horusec start -p="./" -e="true"
 ```
 
@@ -185,7 +182,7 @@ jobs:
       - run:
           name: Horusec Security Test
           command: |
-            curl -fsSL https://horusec.io/bin/install.sh | bash
+            curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/scripts/install.sh | bash -s latest
             horusec start -p="./" -e="true"
 workflows:
   pipeline:
@@ -202,7 +199,7 @@ stages {
                 docker { image 'docker:dind' }
             }
             steps {
-                sh 'curl -fsSL https://horusec.io/bin/install.sh | bash'
+                sh 'curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/scripts/install.sh | bash -s latest'
                 sh 'horusec start -p="./" -e="true"'
             }
         }
@@ -216,7 +213,7 @@ pool:
   vmImage: 'ubuntu-18.04'
 
 steps:
-- script: curl -fsSL https://horusec.io/bin/install.sh | bash && horusec start -p ./
+- script: curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/scripts/install.sh | bash -s latest && horusec start -p ./
 ```
 
 ### GitLab CI/CD
