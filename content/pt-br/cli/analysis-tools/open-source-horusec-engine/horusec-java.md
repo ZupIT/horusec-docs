@@ -1,6 +1,6 @@
 ---
 title: Horusec Java
-weight: 12
+weight: 3
 description: >-
   Nesta seção, você vai encontrar mais informações sobre vulnerabilidades que o Horusec encontra em projetos Java.
 ---

@@ -1,6 +1,6 @@
 ---
 title: Visão Geral
-weight: 10
+weight: 1
 description: >-
   Nesta seção, você vai encontrar mais informações sobre as ferramentas de código aberto que utilizam o motor de análise criado pelo time do Horusec.
 

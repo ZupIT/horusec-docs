@@ -1,6 +1,6 @@
 ---
 title: Horusec CSharp
-weight: 17
+weight: 8
 description: Nesta seção, você vai encontrar mais informações sobre vulnerabilidades que o Horusec encontra em projetos csharp.
 ---
 

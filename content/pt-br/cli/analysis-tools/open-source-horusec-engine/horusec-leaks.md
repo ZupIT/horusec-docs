@@ -1,6 +1,6 @@
 ---
 title: Horusec Leaks
-weight: 11
+weight: 2
 description: Nesta seção, você vai encontrar mais informações sobre vulnerabilidades que o Horusec encontra em projetos Leaks.
 ---
 
