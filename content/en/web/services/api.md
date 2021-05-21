@@ -5,12 +5,12 @@ description: In this section, you will find information about Horusec-API servic
 ---
 
 ## **What is it?**
-Horusec-API is microservice responsible for [**HORUSEC-CLI**](/docs/cli/overview.md) requests via  HTTP to start a new analysis. It also acquires and returns the saved analysis in the system. 
+Horusec-API is microservice responsible for [**HORUSEC-CLI**]({{< ref path="/cli/overview.md" lang="en">}}) requests via  HTTP to start a new analysis. It also acquires and returns the saved analysis in the system. 
 
 This service resources:
 
 * Receive a new code analysis:
-* Gets the sent data to [**HORUSEC-CLI**](/docs/cli/overview.md);
+* Gets the sent data to [**HORUSEC-CLI**]({{< ref path="/cli/overview.md" lang="en">}});
 * Saves in a centered system;
 * If it is configured, publishes the analysis in the webhook like to send it to someone else.
 

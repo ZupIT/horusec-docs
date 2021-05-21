@@ -55,7 +55,7 @@ Check out some recommendations before the configuration:
 
 Install [**PostgreSQL**](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) and [**RabbitMQ**](https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq) using Bitnami's Helm Charts, for a quick start in non-productive environments.
 
-If you already have available connections with `PostgreSQL` and `RabbitMQ`, just follow your [**credentials configuration**](/docs/web/installation/install-with-helm/#sensitive-data-configuration) and inform the addresses of these connections in the variables during [**Horusec's services installation**](#instalação-dos-serviços-da-horusec).
+If you already have available connections with `PostgreSQL` and `RabbitMQ`, just follow your [**credentials configuration**]({{< ref path="/web/installation/install-with-helm.md#sensitive-data-configuration" lang="en">}}) and inform the addresses of these connections in the variables during [**Horusec's services installation**](#instalação-dos-serviços-da-horusec).
 {{% /alert %}}
 
 Follow the steps below to configure Horusec Helm Charts: 
@@ -121,48 +121,46 @@ The Secrets values informed here are only examples and they are not intended to 
 
 After finishing all configuration, you can go to Horusec's release package's root directory and follow the next instructions to install the services:  
 
-* Install the Chart with [**core service**](/docs/web/services/core/) components: 
+* Install the Chart with [**core service**]({{< ref path="/web/services/core.md" lang="en">}}/) components: 
 
 ```bash
 helm install core deployments/helm/core -n horusec-system
 ```
 
-* Install the Chart with [**vulnerability service**](/docs/web/services/vulnerability/) components: 
+* Install the Chart with [**vulnerability service**]({{< ref path="/web/services/vulnerability.md" lang="en">}}/) components: 
 
 ```bash
 helm install vulnerability deployments/helm/vulnerability -n horusec-system
 ```
 
-* Install the Chart with [**analytic service**](/docs/web/services/analytic/) components: 
+* Install the Chart with [**analytic service**]({{< ref path="/web/services/analytic.md" lang="en">}}/) components: 
 
 ```bash
 helm install analytic deployments/helm/analytic -n horusec-system
 ```
 
-* Install the Chart with [**API service**](/docs/web/services/api/) components:
+* Install the Chart with [**API service**]({{< ref path="/web/services/api.md" lang="en">}}/) components:
 
 ```bash
 helm install api deployments/helm/api -n horusec-system
 ```
 
-* Install the Chart with [**auth service**](/docs/web/services/auth/) components:
+* Install the Chart with [**auth service**]({{< ref path="/web/services/auth.md" lang="en">}}/) components:
 
 ```bash
 helm install auth deployments/helm/auth -n horusec-system
 ```
 
-* Install the Chart with [**manager service**](/docs/web/services/manager/) components:
+* Install the Chart with [**manager service**]({{< ref path="/web/services/manager/" lang="en">}}/) components:
 
 ```bash
 helm install manager deployments/helm/manager -n horusec-system
 ```
 
-* Install the Chart with [**messages service**](/docs/web/services/messages/) components:
+* Install the Chart with [**messages service**]({{< ref path="/web/services/messages.md" lang="en">}}/) components:
 
 {{% alert color="info" %}}
-Only required if you are using the
-  [**messaging service**](/docs/tutorials/how-to-enable-disable-messaging-service/)
-  
+Only required if you are using the [**messaging service**]({{< ref path="/tutorials/how-to-enable-disable-messaging-service.md" lang="en">}})
 When you enable the messaging service, it is necessary to connect to your e-mail service. For that, add to **"horusec-messages"** the following environment variables:   
 - HORUSEC_SMTP_USERNAME="e-mail service username";
 - HORUSEC_SMTP_PASSWORD="e-mail password service";
@@ -175,7 +173,7 @@ When you enable the messaging service, it is necessary to connect to your e-mail
 helm install messages deployments/helm/messages -n horusec-system
 ```
 
-* Install the Chart with [**webhook service**](/docs/web/services/webhook/) components:
+* Install the Chart with [**webhook service**]({{< ref path="/web/services/webhook.md" lang="en">}}/) components:
 
 ```bash
 helm install webhook deployments/helm/webhook -n horusec-system
@@ -183,7 +181,7 @@ helm install webhook deployments/helm/webhook -n horusec-system
 
 ## **Access to Horusec Helm Charts**
 
-After all the services are installed and running in your enviroment, you can access the graphic interface through a link offered by [**Horusec-Manager**](/docs/web/services/manager) service.
+After all the services are installed and running in your enviroment, you can access the graphic interface through a link offered by [**Horusec-Manager**]({{< ref path="/web/services/manager" lang="en">}}) service.
 
 The Charts default behaviour is to create an Ingress with an input rule routing the HTTP traffic to your service based on a specific host. Because of that, it's recommended to use
 **Ingress Controller** to manage the external access to your Kubernetes' cluster services. 

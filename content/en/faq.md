@@ -8,7 +8,7 @@ description: >-
 ---
 
 ### **1. What languages does Horusec support?** 
-Check out all Horusec's [**available languages**](/docs/cli/analysis-tools/overview.md).
+Check out all Horusec's [**available languages**]({{< ref path="/cli/analysis-tools/overview.md" lang="en">}}).
 
 ### **2. What is Horusec's 2021 roadmap?**
 
@@ -47,7 +47,7 @@ Horusec is a security analysis tool that searches for possible leakages and expo
 
 ### **8. Is it possible to upload all Horusec's structure in my personal one?** 
 
-Yes, check out the  [**"How to run the web application in another host?"**](/docs/tutorials/how-to-use-horusec-without-docker.md) tutorial.
+Yes, check out the  [**"How to run the web application in another host?"**]({{< ref path="/tutorials/how-to-use-horusec-without-docker.md" lang="en" >}}) tutorial.
  
 ### **9. How can I access Manager?**  
 
@@ -57,9 +57,9 @@ To access the Manager, you have to upload in your personal infra using Docker Co
  
 ### **10. How can I export Horusec's output into a file**
 
-To do that, follow the **Example 5: Using to get sonarqube exit** in the [**Resources section**](/docs/cli/resources.md#example-5-using-to-get-sonarqube-exit).
+To do that, follow the **Example 5: Using to get sonarqube exit** in the [**Resources section**]({{< ref path="/cli/resources.md#example-5-using-to-get-sonarqube-exit" lang="en" >}}).
  
 
 ### **11. How can I import Horusec's output inside SonarQube?**  
 
-Check out question 10 [**"How can I export Horusec's output into a file?"**](//docs/faq/#10-how-can-i-export-horusecs-output-into-a-file) and after that, import the generated file in you Sonarqube interface using [**this tutorial**](https://docs.sonarqube.org/latest/analysis/generic-issue/).
+Check out question 10 [**"How can I export Horusec's output into a file?"**]({{< ref path="faq.md#10-how-can-i-export-horusecs-output-into-a-file" lang="en" >}}) and after that, import the generated file in you Sonarqube interface using [**this tutorial**](https://docs.sonarqube.org/latest/analysis/generic-issue/).

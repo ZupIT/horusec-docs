@@ -47,7 +47,7 @@ make install
 
 ## **Access Horusec's services**
 
-After you have done the previous steps, you can access the link to view the web application screens, showed by [**Horusec-Manager**](/docs/web/services/manager/introduction/) service at [**http://localhost:8043**](http://localhost:8043).
+After you have done the previous steps, you can access the link to view the web application screens, showed by [**Horusec-Manager**]({{< ref path="/web/services/manager/introduction.md" lang="en">}}) service at [**http://localhost:8043**](http://localhost:8043).
 
  
 

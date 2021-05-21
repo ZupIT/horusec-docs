@@ -60,7 +60,7 @@ horusec version
 ``` 
 
 ### Generate 
-Command used to generate a configuration file in the current directory and it has some [**customization options**](/docs/cli/resources.md#global-flags) in the analysis made by Horusec. 
+Command used to generate a configuration file in the current directory and it has some [**customization options**]({{< ref path="/cli/resources.md#global-flags" lang="en">}}) in the analysis made by Horusec. 
 
 
 {{% alert color="info" %}}
