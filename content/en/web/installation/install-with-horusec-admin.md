@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "Install Using Horusec-Admin"
 weight: 30
 description: >-
@@ -134,4 +134,4 @@ And wait for all services to be in the `status` of **RUNNING**
 By default the Horusec-Messages Service It will not start, because as the SMTP service is disabled by default then it will not start
 {{% /alert %}}
 
-Go to the destination [**http://manager.localhost/**](http://manager.localhost/) on your machine and see the prompt graphical interface
+Go to the destination [**http://manager.localhost/**](http://manager.localhost/) on your machine and see the prompt graphical interface -->
