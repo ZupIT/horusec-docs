@@ -71,4 +71,4 @@ Para fazer isso, siga o [**Exemplo 5: Usando para obter uma saída sonarqube na 
 
 ### **11. Como importar o output do Horusec dentro do SonarQube?**  
 
-Veja a pergunta 10 [**"Como exportar o output do Horusec no Sonarqube"**]({{< ref path="/faq.md#10-como-exportar-o-output-do-horusec-em-arquivo"lang="pt-br">}}) e depois [**importe o arquivo gerado dentro da sua interface do Sonarqube usando este tutorial**](https://docs.sonarqube.org/latest/analysis/generic-issue/).
+Veja a pergunta 10 [**"Como exportar o output do Horusec no Sonarqube"**]({{< ref path="/faq.md#10-como-exportar-o-output-do-horusec-em-arquivo" lang="pt-br">}}) e depois [**importe o arquivo gerado dentro da sua interface do Sonarqube usando este tutorial**](https://docs.sonarqube.org/latest/analysis/generic-issue/).
