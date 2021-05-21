@@ -18,7 +18,7 @@ Esse serviço dentro do Horusec possui algumas funcionalidades realizadas de mod
 
 Os serviços que são usados para realizar o consumo das filas são:
 
-* [**Horusec-Messages**](/docs/pt-br/web/services/messages)
+* [**Horusec-Messages**]({{< ref path="/web/services/messages" lang="pt-br">}})
 
 {{% alert color="info" %}}
 Quando você desabilita o serviço de emails, é normal ver estes serviços "parados", porque eles não serão utilizados.
@@ -32,8 +32,8 @@ HORUSEC_SMTP_HOST: "host do serviço de email";
 HORUSEC_SMTP_PORT: "porta do serviço de email".
 
 E os serviços que recebem ações quando é necessário publicar em suas respectivas filas são:
-* [**Horusec-Auth**](/docs/pt-br/web/services/auth)
-* [**Horusec-Core**](/docs/pt-br/web/services/core/)
+* [**Horusec-Auth**]({{< ref path="/web/services/auth" lang="pt-br">}})
+* [**Horusec-Core**]({{< ref path="/web/services/core" lang="pt-br">}})
 
 {{% alert color="info" %}}
 Quando você desabilita o serviço de emails, este serviços ignoram a ação de publicar na fila e seguem para a próxima funcionalidade.
@@ -45,11 +45,11 @@ Quando você desabilita o serviço de emails, este serviços ignoram a ação de
 Quando os microsserviços possuem a variável de ambiente `HORUSEC_DISABLED_EMAILS` com valor **false**, automaticamente o Horusec já está habilitado para enviar e-mails a outras funcionalidades que utiliza o serviço de emails.
 
 Por default os microsserviços abaixo já iniciam com a valor **false**:
-* [**Horusec-Auth**](/docs/pt-br/web/services/auth)
+* [**Horusec-Auth**]({{< ref path="/web/services/auth" lang="pt-br">}})
 
 Se o valor do microsserviço `HORUSEC_DISABLED_EMAILS` for **true** o serviço de emails estará desabilitado.
 Para habilitá-lo é preciso apenas trocar o seu valor para **false**.
 
 {{% alert color="info" %}}
-Quando você sobe uma aplicação web do Horusec utilizando o [**Helm ou Docker-compose**](/docs/pt-br/web) padrões, essa variável de ambiente tem o valor **true**.
+Quando você sobe uma aplicação web do Horusec utilizando o [**Helm ou Docker-compose**]({{< ref path="/web" lang="pt-br">}}) padrões, essa variável de ambiente tem o valor **true**.
 {{% /alert %}}

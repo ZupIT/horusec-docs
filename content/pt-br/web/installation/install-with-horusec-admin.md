@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "Instale utilizando Horusec-Admin"
 weight: 30
 description: >-
@@ -134,4 +134,4 @@ E aguarde todos os serviços estarem no `status` de **RUNNING**
 Por padrão o serviço horusec-messages ele não será iniciado, pois como o serviço de SMTP está desabilitado por padrão então ele não será iniciado
 {{% /alert %}}
 
-Vá até o destino [**http://manager.localhost/**](http://manager.localhost/) em sua máquina e veja a interface gráfica pronta
+Vá até o destino [**http://manager.localhost/**](http://manager.localhost/) em sua máquina e veja a interface gráfica pronta -->

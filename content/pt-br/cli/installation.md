@@ -18,11 +18,11 @@ A seguir, você irá entender melhor cada uma delas.
 Para usar é obrigatório algumas ferramentas instaladas em sua máquina:
 * [**Docker**](https://docs.docker.com/get-docker/)
    {{% alert color="warning" %}}
-Para desabilitar o docker, veja [como usar o Horusec sem o Docker](/docs/pt-br/tutorials/how-to-use-horusec-without-docker/), mas você perderá as análises por [outras ferramentas](/docs/pt-br/cli/analysis-tools/security-tools/).
+Para desabilitar o docker, veja [como usar o Horusec sem o Docker]({{< ref path="/tutorials/how-to-use-horusec-without-docker.md" lang="pt-br">}}), mas você perderá as análises por [outras ferramentas]({{< ref path="/cli/analysis-tools/security-tools" lang="pt-br">}}).
     {{% /alert %}}
 * [**Git**](https://git-scm.com/)
    {{% alert color="warning" %}}
-Para rodar análise com git, veja [como habilitar análise no histórico git](/docs/pt-br/tutorials/how-to-enable-git-history-analysis-and-enable-commit-authors/), mas não é habilitado por padrão.
+Para rodar análise com git, veja [como habilitar análise no histórico git]({{< ref path="/tutorials/how-to-enable-git-history-analysis-and-enable-commit-authors.md" lang="pt-br">}}), mas não é habilitado por padrão.
     {{% /alert %}}
 
 ## **Instalação Local**

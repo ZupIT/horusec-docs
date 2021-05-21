@@ -21,7 +21,7 @@ O Horusec possui 3 tipos de autenticação:
 Este é o tipo mais simples de autenticação, pois é a default do Horusec. 
 
 {{% alert color="info" %}}
-Como a Nativa Horusec já é a autenticação default de instalação, se você deseja trocar para os outros tipos, veja o [**tutorial para alterar**](/docs/pt-br/tutorials/how-to-change-the-authentication-type/). 
+Como a Nativa Horusec já é a autenticação default de instalação, se você deseja trocar para os outros tipos, veja o [**tutorial para alterar**]({{< ref path="/tutorials/how-to-change-the-authentication-type" lang="pt-br">}}). 
 {{% /alert %}}
 
 ### **2. LDAP**

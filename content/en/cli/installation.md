@@ -18,7 +18,7 @@ Next, you will understand better each one of them.
 For usage is required some tools installed in your machine:
 * [**Docker**](https://docs.docker.com/get-docker/)
   - {{% alert color="warning" %}}
-For disable docker, you can see [**how to use Horusec without Docker tutorial**](/docs/tutorials/how-to-use-horusec-without-docker/), but you will lose your analysis with [**other tools**](/docs/cli/analysis-tools/security-tools/).
+For disable docker, you can see [**how to use Horusec without Docker tutorial**](/docs/tutorials/how-to-use-horusec-without-docker.md), but you will lose your analysis with [**other tools**](/docs/cli/analysis-tools/security-tools/).
     {{% /alert %}}
 * [**Git**](https://git-scm.com/)
   - {{% alert color="warning" %}}
