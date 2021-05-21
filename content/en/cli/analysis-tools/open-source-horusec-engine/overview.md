@@ -1,6 +1,6 @@
 ---
 title: Overview
-weight: 47
+weight: 1
 description: In this section, you will find more information about open source tools that uses Horusec engine created by Horusec's team.
 ---
 

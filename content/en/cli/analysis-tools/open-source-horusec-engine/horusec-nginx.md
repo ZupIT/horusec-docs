@@ -1,6 +1,6 @@
 ---
 title: Horusec Nginx
-weight: 16
+weight: 10
 description: In this section, you will find vulnerabilities Horusec finds in nginx projects.
 ---
 

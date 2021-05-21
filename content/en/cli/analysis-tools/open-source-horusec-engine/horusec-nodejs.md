@@ -1,6 +1,6 @@
 ---
 title: Horusec-NodeJS
-weight: 64
+weight: 7
 description: >-
   Here, you will find informations about vulnerabilities that Horusec can find
   on Nodejs projects.

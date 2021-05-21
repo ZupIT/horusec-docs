@@ -1,6 +1,6 @@
 ---
 title: Horusec-Kotlin
-weight: 60
+weight: 5
 description: >-
   Here, you will find informations about vulnerabilities that Horusec can find
   on Kotlin projects.

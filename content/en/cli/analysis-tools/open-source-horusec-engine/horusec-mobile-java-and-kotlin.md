@@ -1,6 +1,6 @@
 ---
 title: Horusec Mobile (Java and Kotlin)
-weight: 58
+weight: 4
 description: >-
   In this section, you will find vulnerabilities for mobile applications written
    in Java or Kotlin.

@@ -1,6 +1,6 @@
 ---
 title: Horusec-Kubernetes
-weight: 62
+weight: 6
 description: >-
   Here, you will find informations about vulnerabilities that Horusec can find
   on Kurbenetes projects.
