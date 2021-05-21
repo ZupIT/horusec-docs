@@ -62,9 +62,9 @@ If you need to download for a specific version / operating system. In this case,
 * win\_x64
 
 
-👉[**Lastest available version**](https://github.com/ZupIT/horusec/releases/tag/v2.0.0)
+👉[**Lastest available version**](https://github.com/ZupIT/horusec/releases/latest)
 
-👉[**All available versions**](https://github.com/ZupIT/horusec/releases)
+👉[**All available versions**](https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/all-version-cli.txt)
 
 {{% /alert %}}
 
@@ -89,9 +89,9 @@ The links below are to download the lastest version:
 
 
 
-👉[**Lastest available version**](https://github.com/ZupIT/horusec/releases/tag/v2.0.0)
+👉[**Lastest available version**](https://github.com/ZupIT/horusec/releases/latest)
 
-👉[**All available versions**](https://github.com/ZupIT/horusec/releases)
+👉[**All available versions**](https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/all-version-cli.txt)
 
 
 ## **Installation via image docker**

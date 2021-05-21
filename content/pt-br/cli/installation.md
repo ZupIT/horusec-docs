@@ -60,9 +60,9 @@ Caso você precise fazer o download para uma versão e/ou sistema operacional es
 - win_x86
 - win_x64
 
-👉[**A última versão disponível**](https://github.com/ZupIT/horusec/releases/tag/v2.0.0)
+👉[**A última versão disponível**](https://github.com/ZupIT/horusec/releases/latest)
 
-👉[**Todas as versões disponíveis** ](https://github.com/ZupIT/horusec/releases)
+👉[**Todas as versões disponíveis** ](https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/all-version-cli.txt)
 
 {{% /alert %}}
 
@@ -88,9 +88,9 @@ Caso queira uma versão específica, basta trocar a palavra `latest` no link pel
   - 📥 https://github.com/ZupIT/horusec/releases/download/v2.0.0/horusec_mac_x64
 
 
-👉[**A última versão disponível**](https://github.com/ZupIT/horusec/releases/tag/v2.0.0)
+👉[**A última versão disponível**](https://github.com/ZupIT/horusec/releases/latest)
 
-👉[**Todas as versões disponíveis** ](https://github.com/ZupIT/horusec/releases)
+👉[**Todas as versões disponíveis** ](https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/all-version-cli.txt)
 
 
 ## **Instalação via Imagem Docker**
