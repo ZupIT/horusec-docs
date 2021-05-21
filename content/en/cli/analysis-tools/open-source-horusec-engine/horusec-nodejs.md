@@ -10,7 +10,7 @@ description: >-
 
 ## **What is it?**
 
-The [**Horusec-NodeJS**](/docs/cli/analysis-tools/open-source-horusec-engine/horusec-nodejs) is a SAST tool created by the Horusec team in order to search vulnerabilities on NodeJS projects. 
+The [**Horusec-NodeJS**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-nodejs.md" lang="en">}}) is a SAST tool created by the Horusec team in order to search vulnerabilities on NodeJS projects. 
 
 ## **Rules**
 

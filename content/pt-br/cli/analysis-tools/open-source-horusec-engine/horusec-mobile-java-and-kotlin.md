@@ -18,7 +18,7 @@ A seguir, você encontra todos os exemplos de vulnerabilidades que o Horusec-Kot
 
 ### Horusec-Kotlin \(Mobile\) \| Horusec-Java \(Mobile\)
 
-As ferramentas  [**Horusec-Kotlin**](/docs/pt-br/cli/analysis-tools/open-source-horusec-engine/horusec-kotlin/#horusec-kotlin-cli) e  [**Horusec-Java**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-java.md#horusec-java-cli" lang="pt-br">}}) além de aplicar regras especificas para suas linguagens, também é possível identificar algumas regras genéricas para aplicações mobile que utilizam Android ou IOS nestas respectivas linguagens.
+As ferramentas  [**Horusec-Kotlin**]({{< ref path="cli/analysis-tools/open-source-horusec-engine/horusec-kotlin.md#horusec-kotlin-cli" lang="pt-br">}}) e  [**Horusec-Java**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-java.md#horusec-java-cli" lang="pt-br">}}) além de aplicar regras especificas para suas linguagens, também é possível identificar algumas regras genéricas para aplicações mobile que utilizam Android ou IOS nestas respectivas linguagens.
 
 ### No Log Sensitive Information
 

@@ -10,8 +10,7 @@ description: >-
 
 ## **What is it?** 
 
-[**Horusec-Leaks**](/docs/cli/analysis-tools/open-source-horusec-engine/horusec-l
-eaks/) is a SAST tool created by Horusec team in order to search for vulnerabilities in projects, searching for coded secrets such as passwords, API keys, tokens and others possible vulnerabilities.
+[**Horusec-Leaks**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-leaks.md" lang="en">}}) is a SAST tool created by Horusec team in order to search for vulnerabilities in projects, searching for coded secrets such as passwords, API keys, tokens and others possible vulnerabilities.
 
 ## **Examples of vulnerabilities**
 

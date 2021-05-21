@@ -19,8 +19,8 @@ With that, all the following services have a new repository:
   * [**Horusec-Messages**]({{< ref path="/web/services/messages" lang="pt-br">}}).
 
 Other changes also happened: 
-  * [**Horusec-Vulnerability**](/docs/web/services/vulnerability.md) was created, a new service responsible to manage all the vulnerabilities found on Horusec-CLI.
-  * Horusec-Account service was renamed to [**Horusec-Core**](/docs/web/services/core/), it will represent better its function in the platform. 
+  * [**Horusec-Vulnerability**]({{< ref path="/web/services/vulnerability.md" lang="en" >}}) was created, a new service responsible to manage all the vulnerabilities found on Horusec-CLI.
+  * Horusec-Account service was renamed to [**Horusec-Core**]({{< ref path="/web/services/vulnerability.md" lang="en">}}), it will represent better its function in the platform. 
 
 ### Requisites:
 Check out below the requirements in the 2.0 version: 
@@ -41,7 +41,7 @@ It was necessary to separate the database because the Horusec-API service is loa
 ### Optional:
 There wasn't a new change on the optional requirement, it continues:
 
-- A connection with a server [**SMTP**](/docs/tutorials/how-to-enable-disable-messaging-service/) for triggering e-mails. 
+- A connection with a server [**SMTP**]({{< ref path="/tutorials/how-to-enable-disable-messaging-service.md" lang="en">}}) for triggering e-mails. 
 
 ### Migração:
 To continue the migration, follow the next steps: 
@@ -96,4 +96,4 @@ docker exec \
 -i horusec-api /api/horusec-api-v1-to-v2-migrate
 ```
 
-**Step 3:** [**Update the CLI**](/docs/cli/installation/) to the lastest version.
+**Step 3:** [**Update the CLI**]({{< ref path="/cli/installation" lang="en">}}) to the lastest version.

@@ -19,7 +19,7 @@ This service inside Horusec has some functionalities used in an asynchronous mod
 
 The services used to perform the queues consume are: 
 
-* [**Horusec-Messages**](/docs/web/services/messages)
+* [**Horusec-Messages**]({{< ref path="/web/services/messages.md" lang="en">}})
 
 
 {{% alert color="info" %}}
@@ -35,8 +35,8 @@ When you enable the messaging service, it is necessary to connect to your e-mail
 
 And the services that receive actions when it is necessary in it respective queues are:
 
-* [**Horusec-Auth**](/docs/web/services/Auth)
-* [**Horusec-Core**](/docs/web/services/core/)
+* [**Horusec-Auth**]({{< ref path="/web/services/auth.md" lang="en">}})
+* [**Horusec-Core**]({{< ref path="/web/services/core.md" lang="en">}})
 
 {{% alert color="info" %}}
 When you disable the messaging service, these services ignore the action of publishing in a queue and follow to the next functionality.
@@ -55,5 +55,5 @@ If the `HORUSEC_DISABLED_EMAILS` microservice value is **true**, the messaging s
 To enable it, it's only necessary to change the value to **false**. 
 
 {{% alert color="info" %}}
-When you upload Horusec's web application using [**Helm ou Docker-compose**](/docs/web) patterns, this environment variable has a **true** value.
+When you upload Horusec's web application using [**Helm ou Docker-compose**]({{< ref path="/web/installation" lang="en">}}) patterns, this environment variable has a **true** value.
 {{% /alert %}}
