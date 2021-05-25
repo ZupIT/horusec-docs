@@ -1,29 +1,28 @@
 ---
 title: Como adicionar uma nova ferramenta de segurança ao Horusec?
 weight: 4
-description: Nesta seção, você encontra as orientações para adicionar ferramentas de segurança ao Horusec.
+description: Nesta seção, você encontra o tutorial para adicionar ferramentas de segurança ao Horusec.
 ---
 
-## **Adicionando uma ferramenta de segurança**
+## **Como adicionar uma ferramenta de segurança?**
 
-Horusec trabalha como uma ferramenta de análise centralizada usando diferentes scans de vulnerabilidade. Você também pode adicionar algum, se preferir contribuindo para o projeto open source ou até mesmo em seu fork.
+Horusec trabalha como uma ferramenta de análise centralizada usando diferentes scans de vulnerabilidades. Você também pode adicionar algum, se preferir contribuindo para o projeto open source ou até mesmo em seu fork.
 
-Você deve seguir estes passos caso queira adicionar:
+Para adicionar siga os passos abaixo:
 
-#### **Passo 1: Crie uma imagem Docker**
+### **Passo 1: Crie uma imagem Docker**
 
 O Horusec usa o docker para executar as ferramentas de análise, o que evita problemas de configuração e de ambiente. Todas as ferramentas usadas tem suas respectivas imagens docker.
 
 Essa imagem deve ter a ferramenta desejada instalada. O resultado desse container deve ser o mais limpo possível ou um JSON com as vulnerabilidades encontradas.
 
 Elas são separadas por linguagem, por exemplo:
+
 * `horuszup/horusec-go`;
 * `horuszup/horusec-python`;
 * `horuszup/horusec-elixir`.
 
-Se a ferramenta que você deseja adicionar é de uma linguagem que o Horusec já possue a imagem, você precisa apenas adicioná-la ao dockerfile já existente.
-
-Veja o exemplo abaixo:
+Se a ferramenta que você deseja adicionar já é de uma linguagem que o Horusec possui a imagem, você precisa apenas adicioná-la ao dockerfile já existente.Veja o exemplo abaixo:
 
 ```
 FROM python:alpine
@@ -35,7 +34,7 @@ RUN pip install bandit
 A imagem deve conter apenas o necessário para não ficar muito grande.
 {{% /alert %}}
 
-#### **Passo 2: Crie um Formatter e um Config**
+### **Passo 2: Crie um Formatter e um Config**
 
 Para cada imagem do docker, é necessário ter o arquivo de configuração. O **formatter** é o código responsável por obter o output do container e transformá-lo em um objeto padrão do Horusec. Ele também adiciona a configuração workdir, obtém o autor do commit, dentre outras funcionalidades.
 
@@ -53,19 +52,19 @@ const CMD = `
   `
 ```
 
-- É necessário que o código que será executado no container tenha o `{{WORK_DIR}}` no ínicio. Essa seção será substituída por um caminho específico no projeto que será analisado se o usuário desejar.
+- É necessário que o código que será executado no container tenha o `{{WORK_DIR}}` no ínicio. Essa seção será substituída por um caminho específico no projeto que será analisado, se você quiser.
 
 - Crie o código que irá ler o output do container e transformá-lo no formato padrão Horusec.
 
 - Todos formatos devem seguir o padrão e implementar a interface `IFormatter` no arquivo `internal/services/formatters/interface.go`.
 
-#### **Passo 3: Atualize os Enums**
+### **Passo 3: Atualize os Enums**
 
 Você também precisa adicionar a nova ferramenta nos enums de ferramentas aceitas. Se for uma linguagem que ainda não é suportada pelo Horusec, será necessário adicioná-la ao enum de linguagens.
 
 Veja os passos para a atualização abaixo:
 
-1. Adicione no enum de ferramentas se encontra no projeto [Horusec-DevKit](https://github.com/ZupIT/horusec-devkit) no diretório:
+**Passo 1.** Adicione no enum de ferramentas se encontra no projeto [**Horusec-DevKit**](https://github.com/ZupIT/horusec-devkit) no diretório:
 ```
  -pkg/
  ---enums/
@@ -82,20 +81,21 @@ const (
 ```
 E altere o método `func Values() []Tool` com a ferramenta nova nova
 
-2. **Se for uma linguagem que o Horusec ainda não tem suporte,** adicione a nova linguagem no projeto [Horusec-DevKit](https://github.com/ZupIT/horusec-devkit) no diretório:
+**Passo 2.** **Se for uma linguagem que o Horusec ainda não tem suporte**: adicione a nova linguagem no projeto [**Horusec-DevKit**](https://github.com/ZupIT/horusec-devkit) no diretório:
 ```
  -pkg/
  ---enums/
  -----languages/
  -------language.go
 ```
-Além de adicionar o enum, você precisa atualizar os metodos no mesmo arquivo com a nova linguagem:
+Além de adicionar o enum, você precisa atualizar os métodos no mesmo arquivo com a nova linguagem:
+
 * `func Values() []Language`
 * `func mapEnableLanguages() map[string]Language`
 * `func MapLanguagesEnableInCLI() map[Language]string`
 
 
-3. **Se for uma linguagem que o Horusec ainda não tem suporte,** adicione a nova imagem que o horusec irá executar em suas análises no projeto [Horusec-CLI](https://github.com/ZupIT/horusec) no diretório:
+**Passo 3.** Adicione a nova imagem que o Horusec irá executar em suas análises no projeto [**Horusec-CLI**](https://github.com/ZupIT/horusec) no diretório:
 
 ```
  -internal/
@@ -103,7 +103,8 @@ Além de adicionar o enum, você precisa atualizar os metodos no mesmo arquivo c
  -----images/
  -------images.go
 ```
-Como por exemplo:
+
+Veja um exemplo: 
 
 ```go
 const (
@@ -112,9 +113,9 @@ const (
   ...
 )
 ```
-E altere o método `MapValues() map[languages.Language]string` com a linguagem e imagem nova
+Agora, altere o método `MapValues() map[languages.Language]string` com a linguagem e a nova imagem. 
 
-4. **Se for uma linguagem que o Horusec ainda não tem suporte,** Adicione a nova linguagem na funcionalidade workdir no projeto [Horusec-CLI](https://github.com/ZupIT/horusec) no diretório:
+- Depois disso, adicione a nova linguagem na funcionalidade workdir no projeto [**Horusec-CLI**](https://github.com/ZupIT/horusec) no diretório:
 
 ```
  -internal/
@@ -122,7 +123,7 @@ E altere o método `MapValues() map[languages.Language]string` com a linguagem e
  -----workdir/
  -------workdir.go
 ```
-Como por exemplo:
+Veja o exemplo: 
 
 ```go
 type WorkDir struct {
@@ -131,12 +132,12 @@ type WorkDir struct {
   ...
 }
 ```
-E altere os métodos com as linguagens:
+Para finalizar, altere os métodos com as linguagens:
 * `func NewWorkDir() *WorkDir`
 * `func (w *WorkDir) Map() map[languages.Language][]string`
 * `func (w *WorkDir) setEmptyOrSliceEmptyInNilContent() *WorkDir`
 
-5. Adicione a nova ferramenta nas configurações de ferramentas no projeto [Horusec-CLI](https://github.com/ZupIT/horusec) no diretório:
+**Passo 4.** Adicione a nova ferramenta nas configurações de ferramentas no projeto [**Horusec-CLI**](https://github.com/ZupIT/horusec) no diretório:
 
 ```
  -internal/
@@ -144,7 +145,8 @@ E altere os métodos com as linguagens:
  -----toolsconfig/
  -------tools_config.go
 ```
-Como por exemplo:
+
+Veja o exemplo:
 
 ```go
 type ToolsConfigsStruct struct {
@@ -157,10 +159,10 @@ E altere os métodos com as linguagens:
 * `func (t *ToolsConfigsStruct) ToMap() MapToolConfig`
 
 
-#### **Passo 4: Chamando o Formatter**
-Antes de começar atualize a versão do [Horusec-DevKit](https://github.com/ZupIT/horusec-devkit) nos pacotes da Horusec-CLI, para que o projeto consiga extrair e utilizar a nova ferramenta e linguagem que você adicionou.
+### **Passo 4: Chame o Formatter**
+Atualize a versão do [**Horusec-DevKit**](https://github.com/ZupIT/horusec-devkit) nos pacotes da Horusec-CLI, para que o projeto consiga extrair e utilizar a nova ferramenta e linguagem que você adicionou.
 
-Depois de terminar a **implementação do formatter**, você deve chamar a função no **analyzer controller**. 
+Depois de finalizar a **implementação do formatter**, você deve chamar a função no **analyzer controller**. 
 
 
 Veja o seguinte path:
@@ -173,11 +175,11 @@ Veja o seguinte path:
 ```
 
 Quando o Horusec inicia sua análise ele identifica as linguagens do projeto e faz um comparativo se tem alguma linguagem que está halitada a realizar uma análise. Caso tenha, ele irá enviar para o **analyzer controller** quais são as linguagens que devem ser acionadas na análise.
-Com isso o **analyzer controller** faz um controle de processos para saber se todas as ferramentas finalizaram suas análises, então dentro de cada `detectVulnerability[LANGUAGE]` tem seu total de processos que representa a quantidade totais de ferramentas para cada linguagem.
+Com isso o **analyzer controller** faz um controle de processos para saber se todas as ferramentas que finalizaram suas análises. Então, dentro de cada `detectVulnerability[LANGUAGE]` tem o total de processos que representa a quantidade de ferramentas para cada linguagem.
 
-Então veja abaixo como chamo a implementação do formatter no **analyzer controller**.
+Veja abaixo como chamar a implementação do formatter no **analyzer controller**.
 
-### É uma nova linguagem?
+### **É uma nova linguagem?**
 
 Se sim, será necessário criar uma nova função para detectar as vulnerabilidades daquela linguagem. Veja como no exemplo abaixo:
 
@@ -208,7 +210,7 @@ func (a *Analyser) mapDetectVulnerabilityByLanguage() map[languages.Language]fun
 ```
 
 
-### É uma linguagem existente?
+### **É uma linguagem existente?**
 
 Se sim, apenas adicione a chamada do novo formatter na função já existente **`detectVulnerability[LANGUAGE]`**.
 
@@ -250,13 +252,14 @@ Se você esquecer esse passo, o Horusec irá finalizar antes da ferramenta termi
 
 {{% /alert %}}
 
-#### **Passo 5: Atualizando validações**
+### **Passo 5: Atualize as validações**
 
 Agora, para finalizar, é necessário atualizar as validações do Horusec.
 
 Quando a **Horusec-CLI** envia uma análise para a sua aplicação web, alguns projetos realizam validações para conferir se os dados estão de acordo com o esperado.
 
-Para isso vá até o projeto [Horusec-Platform](https://github.com/ZupIT/horusec-platform) e atualize no serivço **API** o caso de uso para aceitar a nova ferramenta e linguagem no diretório:
+Para isso vá até o projeto [**Horusec-Platform**](https://github.com/ZupIT/horusec-platform) e atualize no serviço **API** o caso de uso para aceitar a nova ferramenta e linguagem no diretório:
+
 ```
  -api/
  ---internal/
@@ -265,7 +268,7 @@ Para isso vá até o projeto [Horusec-Platform](https://github.com/ZupIT/horusec
  ---------analysis.go
 ```
 
-- Adicione a nova ferramenta no metodo `func (au *UseCases) sliceTools() []interface{}` como por exemplo:
+- Adicione a nova ferramenta no método `func (au *UseCases) sliceTools() []interface{}` como por exemplo:
 ```go
 func (au *UseCases) sliceTools() []interface{} {
 	return []interface{}{
@@ -275,7 +278,7 @@ func (au *UseCases) sliceTools() []interface{} {
 }
 ```
 
-- **Se você adicionou uma linguagem nova,** adicione no metodo `func (au *UseCases) sliceLanguages() []interface{}` como por exemplo:
+- **Se você adicionou uma linguagem nova,** adicione no método `func (au *UseCases) sliceLanguages() []interface{}` como por exemplo:
 ```go
 func (au *UseCases) sliceLanguages() []interface{} {
 	return []interface{}{

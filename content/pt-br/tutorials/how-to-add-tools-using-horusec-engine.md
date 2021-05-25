@@ -9,12 +9,12 @@ description: Nesta seção, você encontra o tutorial para adicionar ferramentas
 O Horusec permite que você adicione ferramentas à sua stack usando o próprio motor \([**Horusec-engine**](https://github.com/ZupIT/horusec-engine)\). 
 
 ## **Como fazer?**
-Para incluir uma nova ferramenta de análise ao [Horusec-CLI](https://github.com/ZupIT/horusec), siga os passos abaixo:
+Para incluir uma nova ferramenta de análise ao [**Horusec-CLI**](https://github.com/ZupIT/horusec), siga os passos abaixo:
 
-#### **Passo 1: Crie as regras do motor**
+### **Passo 1: Crie as regras do motor**
 Você precisa criar regras para que o motor do Horusec funcione. Elas são regexes que detectam a vulnerabilidades.
 
-Os regexes possuem tipos, veja abaixo quais são:
+Os regexes possuem tipos, veja abaixo quais:
 
 | Tipo            | Descrição                                                                                                                                                                                                                                                    |
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
@@ -32,7 +32,7 @@ internal/services/engines
  -----engines/
 ```
 
-#### **Passo 2: Crie o formatter**
+### **Passo 2: Crie o formatter**
 
 Você precisa chamar o motor passando as regras e formatar para o padrão Horusec. Para isso, é necessário criar o **formatter**, veja como no exemplo abaixo:
 
@@ -106,36 +106,41 @@ O exemplo pode ser encontrado nesses caminhos:
  -----------fomatter.go
 ```
 
-Explicando um pouco como o arquivo funciona.
-- Primeiro ele realiza a construção da ferramenta no método `NewFormatter` com a base dos formatters e a implementação das regras que você criou;
-- Logo em seguida é iniciada a análise com o método `StartAnalysis`;
-- Ele verifica se a ferramenta deve ser ignorada naquela análise, se for a análise ja termina aqui mesmo;
-- Logo em seguida começa a busca por vulnerabilidades de acordo com as regras que você criou;
-- Após ele realizar a busca irá retornar uma lista com todas as vulnerabilidades encontradas;
-- Essa lista será convertida para o objeto de vulnerabilidades centralizadas do horusec e adicionada na análise para ser mostrada no final;
-- Por fim ele verifica se houve algum erro desconhecido para mostrar no output do usuário e finaliza a análise dessa ferramenta removendo seu processo do monitor.
+#### Como o arquivo funciona? 
+Veja os passos para entender melhor como formatter funciona: 
+
+1. Ele realiza a construção da ferramenta no método `NewFormatter` com a base dos formatters e a implementação das regras que você criou;
+2. Logo em seguida é iniciada a análise com o método `StartAnalysis`;
+3. Ele verifica se a ferramenta deve ser ignorada naquela análise, se for a análise ja termina aqui mesmo;
+4. Logo em seguida começa a busca por vulnerabilidades de acordo com as regras que você criou;
+5. Após a busca, ele irá retornar uma lista com todas as vulnerabilidades encontradas;
+6. Essa lista será convertida para o objeto de vulnerabilidades centralizadas do Horusec e adicionada na análise para ser mostrada no final;
+7. Por fim, ele verifica se houve algum erro desconhecido e mostra no output do usuário. Depois finaliza a análise dessa ferramenta removendo seu processo do monitor.
 
 
-#### **Passo 3: Atualize os Enums se for uma nova linguagem**
+### **Passo 3: Atualize os Enums se for uma nova linguagem**
 
-Você também precisa adicionar a linguagem que ainda não é suportada pelo Horusec ao enum de linguagens.
+Você também precisa adicionar a linguagem que ainda não é suportada pelo Horusec ao Enum de linguagens.
 
 Veja os passos para a atualização abaixo:
 
-1. **Se for uma linguagem que o Horusec ainda não tem suporte,** adicione a nova linguagem no projeto [Horusec-DevKit](https://github.com/ZupIT/horusec-devkit) no diretório:
+**Se for uma linguagem que o Horusec ainda não tem suporte**: 
+
+1. Adicione a nova linguagem no projeto [**Horusec-DevKit**](https://github.com/ZupIT/horusec-devkit) no diretório:
 ```
  -pkg/
  ---enums/
  -----languages/
  -------language.go
 ```
-Além de adicionar o enum, você precisa atualizar os metodos no mesmo arquivo com a nova linguagem:
+2. Além de adicionar o enum, você precisa **atualizar os métodos** no mesmo arquivo com a nova linguagem:
+
 * `func Values() []Language`
 * `func mapEnableLanguages() map[string]Language`
 * `func MapLanguagesEnableInCLI() map[Language]string`
 
 
-2. **Se for uma linguagem que o Horusec ainda não tem suporte,** Adicione a nova linguagem na funcionalidade workdir no projeto [Horusec-CLI](https://github.com/ZupIT/horusec) no diretório:
+3. Depois, adicione a nova linguagem na funcionalidade **workdir** no projeto [Horusec-CLI](https://github.com/ZupIT/horusec) no diretório:
 
 ```
  -internal/
@@ -152,13 +157,14 @@ type WorkDir struct {
   ...
 }
 ```
-E altere os métodos com as linguagens:
+4. E para finalizar, altere os métodos com as linguagens:
+
 * `func NewWorkDir() *WorkDir`
 * `func (w *WorkDir) Map() map[languages.Language][]string`
 * `func (w *WorkDir) setEmptyOrSliceEmptyInNilContent() *WorkDir`
 
-#### **Passo 4: Chamando o Formatter**
-Caso você adicionou uma nova linguagem, atualize a versão do [Horusec-DevKit](https://github.com/ZupIT/horusec-devkit) nos pacotes da Horusec-CLI, para que o projeto consiga extrair e utilizar a nova linguagem.
+### **Passo 4: Chamando o Formatter**
+Se você adicionou uma nova linguagem, atualize a versão do [**Horusec-DevKit**](https://github.com/ZupIT/horusec-devkit) nos pacotes da Horusec-CLI, para que o projeto consiga extrair e utilizar a nova linguagem.
 
 Logo em seguida, você deve chamar a função no **analyzer controller**.
 
@@ -171,14 +177,14 @@ Veja o seguinte path:
  -------analyser.go
 ```
 
-Quando o Horusec inicia sua análise ele identifica as linguagens do projeto e faz um comparativo se tem alguma linguagem que está halitada a realizar uma análise. Caso tenha, ele irá enviar para o **analyzer controller** quais são as linguagens que devem ser acionadas na análise.
-Com isso o **analyzer controller** faz um controle de processos para saber se todas as ferramentas finalizaram suas análises, então dentro de cada `detectVulnerability[LANGUAGE]` tem seu total de processos que representa a quantidade totais de ferramentas para cada linguagem.
+Quando o Horusec inicia sua análise, ele identifica as linguagens do projeto e faz um comparativo se tem alguma linguagem que está halitada a realizar uma análise. Caso tenha, ele irá enviar para o **analyzer controller** quais são as linguagens que devem ser acionadas na análise.
+Depois disso o **analyzer controller** faz um controle de processos para saber se todas as ferramentas finalizaram suas análises. Então, dentro de cada `detectVulnerability[LANGUAGE]` tem o total de processos que representa a quantidade de ferramentas para cada linguagem.
 
-Então veja abaixo como chamo a implementação do formatter no **analyzer controller**.
+Veja abaixo como chamar a implementação do formatter no **analyzer controller**.
 
 ### É uma nova linguagem?
 
-Se sim, será necessário criar uma nova função para detectar as vulnerabilidades daquela linguagem. Veja como no exemplo abaixo:
+Se sim, será necessário criar uma nova função para detectar as vulnerabilidades daquela linguagem. Veja o exemplo abaixo:
 
 ```go
 func (a *Analyser) detectVulnerabilityCsharp(projectSubPath string) {
@@ -238,18 +244,20 @@ func (a *Analyser) detectVulnerabilityCsharp(projectSubPath string) {
 ```
 
 {{% alert color="warning" %}}
-Essas funções devem ser realizadas em **go routines** e para cada nova go routine, é necessário atualizar o monitor, como no exemplo anterior, passando o número total de chamadas.
+Essas funções devem ser realizadas em **go routines** e para cada nova go routine é necessário atualizar o monitor, como no exemplo anterior, passando o número total de chamadas.
+
 Se você esquecer esse passo, o Horusec irá finalizar antes da ferramenta terminar a análise.
-E você pode perceber que nesse cenário como o motor do horusec não tem nenhum dependencia com o docker, não é necessário aguardar fazer download da imagem, pode ser executada antes mesmo do download iniciar assim quando o download finalizar as demais ferramentas que tem a dependencia com o docker serão executadas.
+
+Nesse cenário o motor do Horusec não tem nenhum dependência com o docker. Não é necessário aguardar fazer download da imagem, ela pode ser executada antes mesmo de iniciar, assim quando o download finalizar as demais ferramentas que tem a dependência com o docker serão executadas.
 {{% /alert %}}
 
-#### **Passo 5: Atualizando validações**
+### **Passo 5: Atualize as validações**
 
 Agora, para finalizar, é necessário atualizar as validações do Horusec.
 
 Quando a **Horusec-CLI** envia uma análise para a sua aplicação web, alguns projetos realizam validações para conferir se os dados estão de acordo com o esperado.
 
-Para isso vá até o projeto [Horusec-Platform](https://github.com/ZupIT/horusec-platform) e atualize no serivço **API** o caso de uso para aceitar a nova ferramenta e linguagem no diretório:
+Para isso vá até o projeto [**Horusec-Platform**](https://github.com/ZupIT/horusec-platform) e atualize no serviço **API** o caso de uso para aceitar a nova ferramenta e a linguagem no diretório:
 ```
  -api/
  ---internal/
