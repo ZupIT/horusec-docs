@@ -12,15 +12,15 @@ Horusec-Auth is responsible for the user's management, authentication and access
 ## **Types of authentication**
 Horusec has 3 types of authentication: 
 
-1. **Nativa Horusec**
+1. **Native Horusec**
 2. **LDAP**
 3. **Keycloak**
 
-### **1. Nativa Horusec**
+### **1. Native Horusec**
 This is the simplest authentication, because it is Horusec's default. 
 
 {{% alert color="info" %}}
-As Nativa Horusec already is the installation's default, if you want to change to other types, check out the [**tutorial on how to change it**]({{< ref path="/tutorials/how-to-change-authentication-types.md" lang="en">}}). 
+As Native Horusec already is the installation's default, if you want to change to other types, check out the [**tutorial on how to change it**]({{< ref path="/tutorials/how-to-change-authentication-types.md" lang="en">}}). 
 {{% /alert %}}
 
 ### **2. LDAP**
