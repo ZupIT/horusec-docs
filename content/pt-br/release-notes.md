@@ -6,7 +6,7 @@ description: >-
 ---
 {{% release/group %}}
 {{% release/item type="feature" repository="admin" date="Maio 2021" %}}
-Criação do recurso Horusec-Admin nas versões 1.0 e e iniciando a implementação para a v2 para simplificar a instalação da aplicação web, bastando apenas rodar um comando.
+Criação do recurso Horusec-Admin <a href="/docs-v1/pt-br/web/installation/install-with-admin/">na versão v1.0</a> e iniciando a implementação para a v2 para simplificar a instalação da aplicação web, bastando apenas rodar um comando.
 {{% /release/item %}}
  
 {{% release/item repository="core" date="Maio 2021" %}}

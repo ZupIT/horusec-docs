@@ -7,7 +7,7 @@ description: >-
 
 {{% release/group %}}
 {{% release/item type="feature" repository="admin" date="May 2021" %}}
-New Horusec-Admin resource in 1.0 and starting the implementation for 2.0 version. It was created to simplify the web application installation, now you only have to run a command.
+New Horusec-Admin resource <a href="/docs-v1/web/installation/install-with-admin/">in version v1.0</a> and starting the implementation for 2.0 version. It was created to simplify the web application installation, now you only have to run a command.
 {{% /release/item %}}
 
 {{% release/item repository="core" date="May 2021" %}}
