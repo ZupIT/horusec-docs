@@ -43,7 +43,7 @@ There wasn't a new change on the optional requirement, it continues:
 
 - A connection with a server [**SMTP**]({{< ref path="/tutorials/how-to-enable-disable-messaging-service.md" lang="en">}}) for triggering e-mails. 
 
-### Migração:
+### Migration:
 To continue the migration, follow the next steps: 
 
 **Step 1:** Update the services with the lastest version available **v2.12.0**:
@@ -56,12 +56,12 @@ To continue the migration, follow the next steps:
  - [**Horusec-Core**](https://hub.docker.com/r/horuszup/horusec-core)
 
 **Step 2:** Perform the data synchronization to a new version: 
-  * Add the environment variables and its values in the as váriaveis de ambiente **Horusec-Analytic** service: 
+  * Add the environment variables and its values in the **Horusec-Analytic** service: 
 <table>
     <thead>
         <tr>
-            <th style="text-align:left">Variável de ambiente</th>
-            <th style="text-align:left">Valor</th>
+            <th style="text-align:left">Environment variables</th>
+            <th style="text-align:left">Values</th>
         </tr>
     </thead>
     <tbody>
@@ -71,7 +71,7 @@ To continue the migration, follow the next steps:
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_DATABASE_HORUSEC_SQL_URI</td>
-            <td style="text-align:left">{{CONEXÃO COM O BANCO DE DADOS EXISTENTE}}</td>
+            <td style="text-align:left">{{CONNECTION WITH THE EXISTING DATABASE}}</td>
         </tr>
     </tbody>
 </table>

@@ -6,12 +6,12 @@ description: >-
 ---
 {{% release/group %}}
 {{% release/item type="feature" repository="admin" date="Maio 2021" %}}
-Criação do recurso Horusec-Admin nas versões 1.0 e 2.0 para simplificar a instalação da aplicação web, bastando apenas rodar um comando, acesse [**o link de instalação**](https://chat.google.com/api/get_attachment_url?url_type=DOWNLOAD_URL&attachment_token=AAUuIGum9gLs6X9bSBzOXVw797wGxvaqB3PLuJWg1ZCRGMvLJKn8ftM9BgFEJzpFgk6enqOzA%2FT7BDS4qJff5RdSbDVhIUKziJX4cTr5F0%2FbVFar0ctKwVrvdRByoXxV9EZM6pkOG1mUrFbcfvr4WMmVEYzOmDKcLWzovaFmWwra1RWG%2FAwduMWDJMFFALOuk7GSanU8q1CrG31JzfgzE%2FNg7o5Qn1N0u4qaTawyFmXCeQIpjG2aFtxfLpie470hiByDtJmaixImsmVhhRyNgEE3jkfPSdOfj9AibN5YYYi4VP1bIucQ59B2xgCVL6PHf4wtGHzBKif5b%2BdyNp719p2Fo6t4j8l85bs7OcNkjyjbXw7IYoorRket%2F3OstjFQ5LBvsvn%2BPXbxP2hMhKfCQJTRKgE4zbdvFE%2BFwcXs0gFcij7ql%2FSbRmiIXwAJNzm%2BNjKcImEmwnJSJ%2FeWYkbt5mDubshYH2LniqVt1LpC&content_type=text%2Fmarkdown&auto=true).
+Criação do recurso Horusec-Admin <a href="/docs-v1/pt-br/web/installation/install-with-admin/">na versão v1.0</a> e iniciando a implementação para a v2 para simplificar a instalação da aplicação web, bastando apenas rodar um comando.
 {{% /release/item %}}
-
+ 
 {{% release/item repository="core" date="Maio 2021" %}}
 O microsserviço Account passa a se chamar Core e, com eles, teremos as operações de gerenciamento de workspace, repositórios, permissões e tokens.
-{{% /release/item %}}
+{{% /release/item %}} 
 
 {{% release/item repository="manager" date="Maio 2021" %}}
 Implementação de recursos de acessibilidade: tamanho de fontes, contraste de cores e recursos para melhor navegação por teclado e leitores de tela. 
@@ -38,7 +38,13 @@ Novo serviço para gestão de dados.
 
 
 {{% release/item type="fix" repository="CLI" date="MAIO 2021" %}}
-Reestruturação da base do código 
+Reestruturação da base do código.
+
+Correção da análise no histórico do Git, ignorando arquivos dentro do `git folder`.
+{{% /release/item  %}}
+
+{{% release/item repository="VSCODE" date="May 2021" %}}
+ Correção do erro para remover o container do Horusec CLI no Windows.
 {{% /release/item  %}}
 
 {{% release/item type="chore" repository="Analytic" date="Maio 2021" %}}
@@ -59,6 +65,8 @@ O Message Broker agora é obrigatório para o uso do Horusec Web Application. Vo
 
 {{% release/item repository="CLI" date="Maio 2021" %}}
 Suporte para arquivos NGINX.
+
+Atualização do [**Gitleaks**](https://github.com/zricethezav/gitleaks) para sua última versão na ferramenta de análise.
 {{% /release/item  %}}
 
 {{% release/item repository="migration" date="Maio 2021" %}}
@@ -67,6 +75,8 @@ Mudança no serviço de migração para torná-lo mais dinâmico, permitindo que
 
 {{% release/item repository="plugin VSCode" date="Maio 2021" %}}
 Atualização da versão do plugin do Horusec para VSCode. [**Saiba mais no projeto no Github**](https://github.com/ZupIT/horusec-vscode-plugin).
+
+Atualização do container do Horusec CLI container para a v2.
 {{% /release/item  %}}
 
 {{% release/item repository="web" date="Maio 2021" %}}

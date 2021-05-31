@@ -7,7 +7,7 @@ description: >-
 
 {{% release/group %}}
 {{% release/item type="feature" repository="admin" date="May 2021" %}}
-New Horusec-Admin resource in 1.0 and 2.0 versions. It was created to simplify the web application installation, now you only have to run the command, access [**the installation link**]({{< ref path="/migrate-v1-to-v2" lang="en" >}}).
+New Horusec-Admin resource <a href="/docs-v1/web/installation/install-with-admin/">in version v1.0</a> and starting the implementation for 2.0 version. It was created to simplify the web application installation, now you only have to run a command.
 {{% /release/item %}}
 
 {{% release/item repository="core" date="May 2021" %}}
@@ -41,6 +41,12 @@ New data management service.
 
 {{% release/item type="fix" repository="CLI" date="May 2021" %}}
 Code base restructure.
+
+Analysis correction in the Git history ignoring files inside the `git folder`.
+{{% /release/item  %}}
+
+{{% release/item repository="VSCODE" date="May 2021" %}}
+ Fix error to remove Horusec CLI container on Windows.
 {{% /release/item  %}}
 
 {{% release/item type="chore" repository="Analytic" date="May 2021" %}}
@@ -61,6 +67,8 @@ Message Broker is now required to use Horusec Web Application. You can also conf
 
 {{% release/item repository="CLI" date="May 2021" %}}
 NGINX file support.
+
+Update [**Gitleaks**](https://github.com/zricethezav/gitleaks) on the analysis tool to the latest version available.
 {{% /release/item  %}}
 
 {{% release/item repository="migration" date="May 2021" %}}
@@ -69,6 +77,8 @@ Migration service was changed to be more dynamic, it will allow Horusec to run a
 
 {{% release/item repository="plugin VSCode" date="May 2021" %}}
 Horusec’s VScode plugin version update. [**Check out more on Github's project**](https://github.com/ZupIT/horusec-vscode-plugin).
+
+Update Horusec CLI container to v2.
 {{% /release/item  %}}
 
 {{% release/item repository="web" date="May 2021" %}}
