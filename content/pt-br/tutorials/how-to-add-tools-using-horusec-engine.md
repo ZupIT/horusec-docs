@@ -38,62 +38,10 @@ Você precisa chamar o motor passando as regras e formatar para o padrão Horuse
 
 ```go
 
-package horuseccsharp
-
-import (
-	"github.com/ZupIT/horusec-devkit/pkg/enums/languages"
-	"github.com/ZupIT/horusec-devkit/pkg/enums/tools"
-	"github.com/ZupIT/horusec-devkit/pkg/utils/logger"
-	engine "github.com/ZupIT/horusec-engine"
-	"github.com/ZupIT/horusec/internal/enums/engines"
-	"github.com/ZupIT/horusec/internal/helpers/messages"
-	"github.com/ZupIT/horusec/internal/services/engines/csharp"
-	"github.com/ZupIT/horusec/internal/services/formatters"
-)
-
-type Formatter struct {
-	formatters.IService
-	csharp.Interface
-}
-
 func NewFormatter(service formatters.IService) formatters.IFormatter {
-	return &Formatter{
-		service,
-		csharp.NewRules(),
-	}
+	return formatters.NewDefaultFormatter(service, csharp.NewRules(), languages.CSharp)
 }
 
-func (f *Formatter) StartAnalysis(projectSubPath string) {
-	if f.ToolIsToIgnore(tools.HorusecEngine) {
-		logger.LogDebugWithLevel(messages.MsgDebugToolIgnored + tools.HorusecEngine.ToString())
-		return
-	}
-
-	f.SetAnalysisError(f.execEngineAndParseResults(projectSubPath), tools.HorusecEngine, projectSubPath)
-	f.LogDebugWithReplace(messages.MsgDebugToolFinishAnalysis, tools.HorusecEngine, languages.CSharp)
-	f.SetToolFinishedAnalysis()
-}
-
-func (f *Formatter) execEngineAndParseResults(projectSubPath string) error {
-	f.LogDebugWithReplace(messages.MsgDebugToolStartAnalysis, tools.HorusecEngine, languages.CSharp)
-
-	findings, err := f.execEngineAnalysis(projectSubPath)
-	if err != nil {
-		return err
-	}
-
-	return f.ParseFindingsToVulnerabilities(findings, tools.HorusecEngine, languages.CSharp)
-}
-
-func (f *Formatter) execEngineAnalysis(projectSubPath string) ([]engine.Finding, error) {
-	textUnit, err := f.GetTextUnitByRulesExt(f.GetProjectPathWithWorkdir(projectSubPath))
-	if err != nil {
-		return nil, err
-	}
-
-	allRules := append(f.GetAllRules(), f.GetCustomRulesByLanguage(languages.CSharp)...)
-	return engine.RunMaxUnitsByAnalysis(textUnit, allRules, engines.DefaultMaxUnitsPerAnalysis), nil
-}
 ```
 
 O exemplo pode ser encontrado nesses caminhos:
@@ -101,22 +49,14 @@ O exemplo pode ser encontrado nesses caminhos:
  -internal/
  ---services/
  -----fomatters/
- -------leaks/
- ---------horusecleaks/
+ -------chsarp/
+ ---------horuseccsharp/
  -----------fomatter.go
 ```
 
 #### Como o arquivo funciona? 
-Veja os passos para entender melhor como formatter funciona: 
 
-1. Ele realiza a construção da ferramenta no método `NewFormatter` com a base dos formatters e a implementação das regras que você criou;
-2. Logo em seguida é iniciada a análise com o método `StartAnalysis`;
-3. Ele verifica se a ferramenta deve ser ignorada naquela análise, se for a análise ja termina aqui mesmo;
-4. Logo em seguida começa a busca por vulnerabilidades de acordo com as regras que você criou;
-5. Após a busca, ele irá retornar uma lista com todas as vulnerabilidades encontradas;
-6. Essa lista será convertida para o objeto de vulnerabilidades centralizadas do Horusec e adicionada na análise para ser mostrada no final;
-7. Por fim, ele verifica se houve algum erro desconhecido e mostra no output do usuário. Depois finaliza a análise dessa ferramenta removendo seu processo do monitor.
-
+Nesse arquivo nós apenas criamos um formatter default e passamos as nossas regras e linguagem que esse formatter suporta. Esse formatter default é utilizado em todas as engines do Horusec.
 
 ### **Passo 3: Atualize os Enums se for uma nova linguagem**
 
