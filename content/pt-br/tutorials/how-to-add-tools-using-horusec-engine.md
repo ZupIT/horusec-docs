@@ -173,8 +173,8 @@ Veja o seguinte path:
 ```
  -internal
  ---controller
- -----analyser
- -------analyser.go
+ -----analyzer
+ -------analyzer.go
 ```
 
 Quando o Horusec inicia sua análise, ele identifica as linguagens do projeto e faz um comparativo se tem alguma linguagem que está halitada a realizar uma análise. Caso tenha, ele irá enviar para o **analyzer controller** quais são as linguagens que devem ser acionadas na análise.
@@ -187,7 +187,7 @@ Veja abaixo como chamar a implementação do formatter no **analyzer controller*
 Se sim, será necessário criar uma nova função para detectar as vulnerabilidades daquela linguagem. Veja o exemplo abaixo:
 
 ```go
-func (a *Analyser) detectVulnerabilityCsharp(projectSubPath string) {
+func (a *Analyzer) detectVulnerabilityCsharp(projectSubPath string) {
 	const TotalProcess = 1
 	a.monitor.AddProcess(TotalProcess)
 	go horuseccsharp.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
@@ -198,7 +198,7 @@ func (a *Analyser) detectVulnerabilityCsharp(projectSubPath string) {
 Você também precisa adicionar uma nova linguagem ao mapa que contém a função  **`mapDetectVulnerabilityByLanguage`**. Veja o exemplo: 
 
 ```go
-func (a *Analyser) mapDetectVulnerabilityByLanguage() map[languages.Language]func(string) {
+func (a *Analyzer) mapDetectVulnerabilityByLanguage() map[languages.Language]func(string) {
 	return map[languages.Language]func(string){
 				...
 		languages.Csharp: a.detectVulnerabilityCsharp,
@@ -214,7 +214,7 @@ Se sim, apenas adicione a chamada do novo formatter na função já existente **
 **Veja como era antes de você adicionar:**
 
 ```go
-func (a *Analyser) detectVulnerabilityCsharp(projectSubPath string) {
+func (a *Analyzer) detectVulnerabilityCsharp(projectSubPath string) {
 	const TotalProcess = 1
 	a.monitor.AddProcess(TotalProcess)
 
@@ -229,7 +229,7 @@ func (a *Analyser) detectVulnerabilityCsharp(projectSubPath string) {
 **Veja depois que você adicionou:**
 
 ```go
-func (a *Analyser) detectVulnerabilityCsharp(projectSubPath string) {
+func (a *Analyzer) detectVulnerabilityCsharp(projectSubPath string) {
 	const TotalProcess = 2
 	a.monitor.AddProcess(TotalProcess)
 	go horuseccsharp.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
