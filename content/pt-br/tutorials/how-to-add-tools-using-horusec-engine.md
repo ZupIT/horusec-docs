@@ -56,7 +56,7 @@ O exemplo pode ser encontrado nesses caminhos:
 
 #### Como o arquivo funciona? 
 
-Nesse arquivo nós apenas criamos um formatter default e passamos as nossas regras e linguagem que esse formatter suporta. Esse formatter default é utilizado em todas as engines do Horusec.
+Nesse arquivo foi criado um formatter default, utilizado em todas as engines do Horusec. As regras e a linguagem foram alteradas para ajustar as que o formatter suporta. 
 
 ### **Passo 3: Atualize os Enums se for uma nova linguagem**
 
