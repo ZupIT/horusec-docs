@@ -91,6 +91,12 @@ See more about these data in the table below:
   </tbody>
 </table>
 
+### Export your data from the dashboard
+You can export your dashboard data in the following formats: 
+JPG, PDF, JSON, XML, XLS, and CSV.
+
+![](/docs/ptbr/web/services/manager/introduction/export-dashboard.gif)
+
 ## Managements
 
 On Horusec, you have a variety of management types. Check below more information about each one of them:

@@ -1,7 +1,7 @@
 ---
 title: Como adicionar uma nova ferramenta usando Horusec-engine?
 weight: 3
-description: Nesta seção, você encontra o tutorial para adicionar ferramentas pelo Horusec-engine.
+description: Nesta seção, você encontra o tutorial para adicionar ferramentas pelo Horusec-engine. 
 ---
 
 ---
@@ -24,7 +24,7 @@ Os regexes possuem tipos, veja abaixo quais:
 | NotMatch        | São regras que precisam que o arquivo manifeste nenhum padrão e com isso ser considerado como algo a ser reportado. Portanto, a engine realiza a operação lógica em cada uma das RegExps cadastradas para garantir que todas as condições não foram encontradas.    |  
 
 
-Alguns exemplos dessas regras podem ser encontrados no projeto [Horusec-CLI](https://github.com/ZupIT/horusec), no diretório:
+Alguns exemplos dessas regras podem ser encontrados no projeto [**Horusec-CLI**](https://github.com/ZupIT/horusec), no diretório:
 internal/services/engines
 ```
  -internal/

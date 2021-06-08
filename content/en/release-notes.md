@@ -7,7 +7,7 @@ description: >-
 
 {{% release/group %}}
 {{% release/item type="feature" repository="admin" date="May 2021" %}}
-New Horusec-Admin resource <a href="/docs-v1/web/installation/install-with-admin/">in version v1.0</a> and starting the implementation for 2.0 version. It was created to simplify the web application installation, now you only have to run a command.
+New Horusec-Admin resource <a href="/docs-v1/web/installation/install-with-admin/">in the v1.0 version</a> and starting the implementation for 2.0 version. It was created to simplify the web application installation, now you only have to run a command.
 {{% /release/item %}}
 
 {{% release/item repository="core" date="May 2021" %}}
@@ -38,6 +38,13 @@ New data management service.
  A new service was created specifically for vulnerabilities management that allows you to update and filter the vulnerabilities found in your application. 
 {{% /release/item %}}
 
+{{% release/item repository="CLI" date="June 2021" %}}
+Supports a new language: Swift. 
+{{% /release/item %}}
+
+{{% release/item repository="Horusec Platform" date="June 2021" %}}
+Data download of the dashboard in: PDF, XLS, XML, CSV, PNG, JSON.
+{{% /release/item %}}
 
 {{% release/item type="fix" repository="CLI" date="May 2021" %}}
 Code base restructure.
@@ -45,8 +52,13 @@ Code base restructure.
 Analysis correction in the Git history ignoring files inside the `git folder`.
 {{% /release/item  %}}
 
+
 {{% release/item repository="VSCODE" date="May 2021" %}}
  Fix error to remove Horusec CLI container on Windows.
+{{% /release/item  %}}
+
+{{% release/item repository="Horusec-Platform" date="June 2021" %}}
+Fix error on Horusec-Manager path manipulation. 
 {{% /release/item  %}}
 
 {{% release/item type="chore" repository="Analytic" date="May 2021" %}}
@@ -71,6 +83,7 @@ NGINX file support.
 Update [**Gitleaks**](https://github.com/zricethezav/gitleaks) on the analysis tool to the latest version available.
 {{% /release/item  %}}
 
+
 {{% release/item repository="migration" date="May 2021" %}}
 Migration service was changed to be more dynamic, it will allow Horusec to run a folder with all migrations from a specific database.
 {{% /release/item  %}}
@@ -87,6 +100,20 @@ Project’s migration to the Horusec Platform: **https://github.com/ZupIT/horuse
 
 {{% release/item repository="webhook" date="May 2021" %}}
 New resource to manage the registered webhooks in your application. 
+{{% /release/item  %}}
+
+{{% release/item repository="CLI" date="June 2021" %}}
+Improvement of the tools that use Horusec-Engine.
+{{% /release/item  %}}
+
+{{% release/item repository="plugin VSCode" date="June 2021" %}}
+Support for Horusec-CLI's [**lastest available version**](https://github.com/ZupIT/horusec-vscode-plugin ). 
+{{% /release/item  %}}
+
+{{% release/item repository="Horusec-Platform" date="June 2021" %}}
+Improvement on Horusec-Manager's responsiveness.
+
+Improvement when updating a vulnerability.
 {{% /release/item  %}}
 
   {{% release/item type="docs" repository="CLI" date="May 2021" %}}

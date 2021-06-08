@@ -39,62 +39,10 @@ You need to call an engine passing the rules and format the Horusec pattern. To 
 
 ```go
 
-package horuseccsharp
-
-import (
-	"github.com/ZupIT/horusec-devkit/pkg/enums/languages"
-	"github.com/ZupIT/horusec-devkit/pkg/enums/tools"
-	"github.com/ZupIT/horusec-devkit/pkg/utils/logger"
-	engine "github.com/ZupIT/horusec-engine"
-	"github.com/ZupIT/horusec/internal/enums/engines"
-	"github.com/ZupIT/horusec/internal/helpers/messages"
-	"github.com/ZupIT/horusec/internal/services/engines/csharp"
-	"github.com/ZupIT/horusec/internal/services/formatters"
-)
-
-type Formatter struct {
-	formatters.IService
-	csharp.Interface
-}
-
 func NewFormatter(service formatters.IService) formatters.IFormatter {
-	return &Formatter{
-		service,
-		csharp.NewRules(),
-	}
+	return formatters.NewDefaultFormatter(service, csharp.NewRules(), languages.CSharp)
 }
 
-func (f *Formatter) StartAnalysis(projectSubPath string) {
-	if f.ToolIsToIgnore(tools.HorusecEngine) {
-		logger.LogDebugWithLevel(messages.MsgDebugToolIgnored + tools.HorusecEngine.ToString())
-		return
-	}
-
-	f.SetAnalysisError(f.execEngineAndParseResults(projectSubPath), tools.HorusecEngine, projectSubPath)
-	f.LogDebugWithReplace(messages.MsgDebugToolFinishAnalysis, tools.HorusecEngine, languages.CSharp)
-	f.SetToolFinishedAnalysis()
-}
-
-func (f *Formatter) execEngineAndParseResults(projectSubPath string) error {
-	f.LogDebugWithReplace(messages.MsgDebugToolStartAnalysis, tools.HorusecEngine, languages.CSharp)
-
-	findings, err := f.execEngineAnalysis(projectSubPath)
-	if err != nil {
-		return err
-	}
-
-	return f.ParseFindingsToVulnerabilities(findings, tools.HorusecEngine, languages.CSharp)
-}
-
-func (f *Formatter) execEngineAnalysis(projectSubPath string) ([]engine.Finding, error) {
-	textUnit, err := f.GetTextUnitByRulesExt(f.GetProjectPathWithWorkdir(projectSubPath))
-	if err != nil {
-		return nil, err
-	}
-
-	allRules := append(f.GetAllRules(), f.GetCustomRulesByLanguage(languages.CSharp)...)
-	return engine.RunMaxUnitsByAnalysis(textUnit, allRules, engines.DefaultMaxUnitsPerAnalysis), nil
-}
 ```
 
 The example can be found in these paths:
@@ -109,15 +57,8 @@ The example can be found in these paths:
 ```
 
 ### **How does the file work?** 
-See the steps below to understand how the formatter works:
 
-1. It performs the tool construction in the `NewFormatter` method based on the formatters and the rules implementation you have created; 
-2. After that, it starts an analysis with the `StartAnalysis` method;
-3. It verifies if the tool must be ignored in that analysis, if it is, the analysis finishes here. 
-4. Then it starts a vulnerability search, according to the rules you've created;
-5. After this search, it will return a list with all the found vulnerabilities; 
-6. This list will be converted to Horusec's centered vulnerabilities object and added in the analysis to be showed in the end; 
-7. To finish, it verifies if there is an unknown error and it shows to the user. After that, ends the tool's analysis removing the monitor's process. 
+In this file a default formatter was created, it will be used in all Horusec engines. The rules and language were changed to adjust what the formatter supports.
 
 
 ### **Step 3: Update the Enums if it is a new language**
