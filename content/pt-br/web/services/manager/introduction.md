@@ -49,6 +49,20 @@ Veja mais sobre quais são esses dados na tabela a seguir:
 | **Linha do tempo de vulnerabilidades** | Linha do tempo com detalhes das vulnerabilidades classificadas de acordo com severidade e data, na visão da organização ou do repositório. |
 | **Detalhes das vulnerabilidades ativas**  | Visão detalhada das vulnerabilidades que estão ativas, na visão da organização ou do repositório.  |
 
+#### Donwload de dados do painel
+
+O Manager do Horusec permite que você faça o download dos dados do seu dashboard. Atualmente, é possível exportar dados para arquivos nos formatos JPG, PDF, JSON, XML, XLS e CSV.  
+
+Para exportar os dados, basta seguir os passos: 
+- Clique no botão "Exportar" no canto superior direito da tela de Dashboard;
+- Selecione o formato de arquivo que você deseja fazer download;
+- O arquivo será gerado automaticamente. 
+
+No GIF abaixo, você confere o procedimento para exportar os dados em todos os formatos disponíveis:
+
+![](/docs/ptbr/web/services/manager/introduction//5-export-dashboardpt.gif)
+
+
 ### Gerenciamentos
 
 No Horusec, você pode fazer diversos tipos de gerenciamento. Veja abaixo mais detalhes sobre cada um deles:

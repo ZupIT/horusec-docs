@@ -36,6 +36,13 @@ Novo serviço para gestão de dados.
  Criação de um serviço específico para gestão de vulnerabilidades que permite atualizar e filtrar as vulnerabilidades encontradas dentro da aplicação. 
 {{% /release/item %}}
 
+{{% release/item repository="CLI" date="Junho 2021" %}}
+Suporte do Horusec para linguagem de programação Swift.
+{{% /release/item %}}
+
+{{% release/item repository="platform" date="Junho 2021" %}}
+Possibilidade de fazer download dos dados do dashboard para arquivos nos formatos PDF, XLS, XML, CSV, PNG, JSON
+{{% /release/item %}}
 
 {{% release/item type="fix" repository="CLI" date="MAIO 2021" %}}
 Reestruturação da base do código.
@@ -43,8 +50,12 @@ Reestruturação da base do código.
 Correção da análise no histórico do Git, ignorando arquivos dentro do `git folder`.
 {{% /release/item  %}}
 
-{{% release/item repository="VSCODE" date="May 2021" %}}
+{{% release/item repository="VSCODE" date="Maio 2021" %}}
  Correção do erro para remover o container do Horusec CLI no Windows.
+{{% /release/item  %}}
+
+{{% release/item repository="Platform" date="Junho 2021" %}}
+Correção na manipulação de paths do Horusec-Manager.
 {{% /release/item  %}}
 
 {{% release/item type="chore" repository="Analytic" date="Maio 2021" %}}
@@ -85,6 +96,21 @@ Migração do projeto para o Horusec Platform: **https://github.com/ZupIT/horuse
 
 {{% release/item repository="webhook" date="Maio 2021" %}}
 Inclusão de novo recurso para gerenciar webhooks cadastrados na aplicação.
+{{% /release/item  %}}
+
+{{% release/item repository="CLI" date="Junho 2021" %}}
+Melhoria na implementação das ferramentas que utilizam Horusec-Engine.
+{{% /release/item  %}}
+
+{{% release/item repository="Platform" date="Junho 2021" %}}
+
+Melhoria na responsividade do Horusec-Manager.
+
+Melhoria na performance ao atualizar uma vulnerabilidade.
+{{% /release/item  %}}
+
+{{% release/item repository="VSCode" date="Junho 2021" %}}
+Suporte para última versão disponível da Horusec-CLI.
 {{% /release/item  %}}
 
   {{% release/item type="docs" repository="CLI" date="Maio 2021" %}}
