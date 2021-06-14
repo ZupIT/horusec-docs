@@ -65,3 +65,5 @@ Essas linguagens e ferramentas são:
   * [**Sobelow**](https://github.com/nccgroup/sobelow)
 * **Nginx**
   * [**HorusecNginx**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-nginx.md" lang="pt-br">}})
+* **Swift**
+  * [**HorusecSwift**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-swift.md" lang="pt-br">}})
