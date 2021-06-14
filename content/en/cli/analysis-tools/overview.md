@@ -63,4 +63,4 @@ These languages and tools are:
 * **Nginx**
   * [**HorusecNginx**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-nginx.md" lang="en">}})
 * **Swift**
-  * [**HorusecSwift**]
+  * [**HorusecSwift**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-swift.md" lang="en">}})
