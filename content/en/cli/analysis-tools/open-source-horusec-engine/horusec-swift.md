@@ -1,6 +1,6 @@
 ---
 title: Horusec Swift
-weight: 2
+weight: 11
 description: Here, you will find information about vulnerabilities that Horusec can find on Swift projects.
 ---
 
