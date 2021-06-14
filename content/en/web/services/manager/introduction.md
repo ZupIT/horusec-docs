@@ -91,6 +91,18 @@ See more about these data in the table below:
   </tbody>
 </table>
 
+### Download the data from the dashboard
+Horusec Manager allows you to download the data from your dashboard. You can export the data in the following formats: JPG, PDF, JSON, XML, XLS, and CSV.
+
+To export the data, follow the steps:
+- Click on the 'Export button' in the right corner of the dashboard screen;
+- Select the file format you want;
+- The file will be automatically generated. 
+
+See the whole process in the gif below: 
+
+![](/docs/ptbr/web/services/manager/introduction/export-dashboard.gif)
+
 ## Managements
 
 On Horusec, you have a variety of management types. Check below more information about each one of them:
