@@ -107,6 +107,7 @@ A seguir, um exemplo de um arquivo de configuração:
   "horusecCliEnableCommitAuthor": false,
   "horusecCliEnableGitHistoryAnalysis": false,
   "horusecCliEnableInformationSeverity": false,
+  "horusecCliEnableOwaspDependencyCheck": false,
   "horusecCliFalsePositiveHashes": [],
   "horusecCliFilesOrPathsToIgnore": [
     "*tmp*",
@@ -243,6 +244,7 @@ export HORUSEC_CLI_DISABLE_DOCKER="false"
 export HORUSEC_CLI_CUSTOM_RULES_PATH=""
 export HORUSEC_CLI_ENABLE_INFORMATION_SEVERITY="false"
 export HORUSEC_CLI_SHOW_VULNERABILITIES_TYPES="Vulnerability"
+export HORUSEC_CLI_ENABLE_OWASP_DEPENDENCY_CHECK="false"
 ```
 
 #### **3. Flags**
@@ -521,6 +523,15 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left"></td>
             <td style="text-align:left">Vulnerability</td>
             <td style="text-align:left">Esta configuração informa ao Horusec quais são as vulnerabilidades de saída, podem ser do tipo: Vulnerability, Risk Accepted, False Positive, Corrected.</td>
+        </tr>
+        <tr>
+            <td style="text-align:left">HORUSEC_CLI_ENABLE_OWASP_DEPENDENCY_CHECK</td>
+            <td style="text-align:left">horusecCliEnableOwaspDependencyCheck</td>
+            <td style="text-align:left">enable-owasp-dependency-check</td>
+            <td style="text-align:left"> -w</td>
+            <td style="text-align:left">false</td>
+            <td style="text-align:left">Habilita a ferramenta owasp dependency check, que realiza a análise de dependências. `Ex: -w`
+</td>
         </tr>
     </tbody>
 </table>

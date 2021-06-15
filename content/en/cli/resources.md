@@ -45,6 +45,7 @@ The current global flags on CLI are:
       <td style="text-align:left">Actual work directory /horusec-config.json</td>
       <td style="text-align:left">Directory where the configuration file is. You can perform some configurations with this file, for example, using the configuration file.</td>
     </tr>
+    
   </tbody>
 </table>
 
@@ -113,6 +114,7 @@ See next, an example of a configuration file:
     "horusecCliEnableCommitAuthor": false,
     "horusecCliEnableGitHistoryAnalysis": false,
     "horusecCliEnableInformationSeverity": false,
+    "horusecCliEnableOwaspDependencyCheck": false,
     "horusecCliFalsePositiveHashes": [],
     "horusecCliFilesOrPathsToIgnore": [
         "*tmp*",
@@ -258,6 +260,7 @@ export HORUSEC_CLI_CONTAINER_BIND_PROJECT_PATH=""
 export HORUSEC_CLI_DISABLE_DOCKER="false"
 export HORUSEC_CLI_CUSTOM_RULES_PATH=""
 export HORUSEC_CLI_ENABLE_INFORMATION_SEVERITY="false"
+export HORUSEC_CLI_ENABLE_OWASP_DEPENDENCY_CHECK="false"
 ```
 
 #### **3. Flags**
@@ -575,6 +578,14 @@ On the table below, you can see all the available flags. To see it better, just 
         <td style="text-align:left"></td>
         <td style="text-align:left"></td>
         <td style="text-align:left">This configuration informs Horusec the address to download images if you have configured on a private registry.</td>
+          <tr>
+            <td style="text-align:left">HORUSEC_CLI_ENABLE_OWASP_DEPENDENCY_CHECK</td>
+            <td style="text-align:left">horusecCliEnableOwaspDependencyCheck</td>
+            <td style="text-align:left">enable-owasp-dependency-check</td>
+            <td style="text-align:left"> -w</td>
+            <td style="text-align:left">false</td>
+            <td style="text-align:left">Enables the owasp dependency check tool, it performs the dependencies analysis. `Ex: -w`
+</td>
     </tr>
   </tbody>
 </table>

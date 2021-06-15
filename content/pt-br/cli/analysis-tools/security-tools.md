@@ -117,6 +117,12 @@ O **Sobelow** detecta alguns tipos de problemas de segurança, como:
 - Diretório transversal;
 - Serialização insegura.
 
-### **Bundler**
+### **Bundler Audit**
 
-O [**Bundler**](https://github.com/rubysec/bundler-audit) é uma ferramenta de segurança para auditoria de dependencias de Ruby a fim de garantir que os aplicativos executem o mesmo código em todas as máquinas. Ele faz isso gerenciando as gemas que o aplicativo depende. Dada uma lista de gemas, ele pode baixar e instalar automaticamente essas gemas, bem como quaisquer outras gemas necessárias pelas gemas listadas. Antes de instalar as gemas, ele verifica as versões de todas as jóias para se certificar de que elas são compatíveis e podem ser carregadas ao mesmo tempo. Depois que as gemas foram instaladas, Bundler pode ajudá-lo a atualizar alguns ou todos eles quando novas versões estiverem disponíveis. Por fim, registra as versões exatas que foram instaladas, para que outras possam instalar exatamente as mesmas gemas.
+O [**Bundler Audit**](https://github.com/rubysec/bundler-audit) é uma ferramenta de segurança para auditoria de dependencias de Ruby a fim de garantir que os aplicativos executem o mesmo código em todas as máquinas. Ele faz isso gerenciando as gemas que o aplicativo depende. Dada uma lista de gemas, ele pode baixar e instalar automaticamente essas gemas, bem como quaisquer outras gemas necessárias pelas gemas listadas. Antes de instalar as gemas, ele verifica as versões de todas as jóias para se certificar de que elas são compatíveis e podem ser carregadas ao mesmo tempo. Depois que as gemas foram instaladas, Bundler pode ajudá-lo a atualizar alguns ou todos eles quando novas versões estiverem disponíveis. Por fim, registra as versões exatas que foram instaladas, para que outras possam instalar exatamente as mesmas gemas.
+
+### **Owasp Dependency Check**
+
+O [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck) é uma ferramenta que detecta vulnerabilidades divulgadas publicamente e que estão contidas nas dependências de um projeto. Ele faz isso determinando se há um identificador para alguma dependência, se encontrado, ele irá gerar um relatório incluindo as [**CVE**](https://cve.mitre.org/) associadas.
+
+Essa ferramenta é desabilitada por padrão no Horusec, porque aumenta consideravelmente o tempo de análise. Se você quiser habilitá-la, é só passar a flag `-w true` ou apenas `-w`.

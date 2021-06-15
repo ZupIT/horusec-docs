@@ -17,13 +17,16 @@ These languages and tools are:
   * [**Bandit**](https://github.com/PyCQA/bandit)
   * [**Safety**](https://github.com/pyupio/safety)
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
+  * [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck)
 * **Ruby**
   * [**Brakeman**](https://github.com/presidentbeef/brakeman)
+  * [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck)
 * **Javascript/Typescript**
   * [**Npm Audit**](https://docs.npmjs.com/cli/audit)
   * [**Yarn Audit**](https://yarnpkg.com/lang/en/docs/cli/audit/)
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
   * [**HorusecNodeJS**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-nodejs.md" lang="en">}})
+  * [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck)
   * [**EsLint**](https://github.com/eslint/eslint)
 * **GoLang**
   * [**Gosec**](https://github.com/securego/gosec)
@@ -34,6 +37,7 @@ These languages and tools are:
   * [**Flawfinder**](https://github.com/david-a-wheeler/flawfinder)
 * **Java**
   * [**HorusecJava**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-java.md" lang="en">}})
+  * [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck)
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
 * **Kotlin**
   * [**HorusecKotlin**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-kotlin.md" lang="en">}})
@@ -64,3 +68,5 @@ These languages and tools are:
   * [**HorusecNginx**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-nginx.md" lang="en">}})
 * **Swift**
   * [**HorusecSwift**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-swift.md" lang="en">}})
+* **.NET**
+  * [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck)
