@@ -18,14 +18,17 @@ Essas linguagens e ferramentas são:
   * [**Bandit**](https://github.com/PyCQA/bandit)
   * [**Safety**](https://github.com/pyupio/safety)
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
+  * [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck)
 * **Ruby**
   * [**Brakeman**](https://github.com/presidentbeef/brakeman)
   * [**Bundler**](https://github.com/rubysec/bundler-audit)
+  * [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck)
 * **Javascript/Typescript**
   * [**Npm Audit**](https://docs.npmjs.com/cli/audit)
   * [**Yarn Audit**](https://yarnpkg.com/lang/en/docs/cli/audit/)
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
   * [**HorusecNodeJS**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-nodejs" lang="pt-br">}})
+  * [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck)
   * [**EsLint**](https://github.com/eslint/eslint)
 * **GoLang**
   * [**Gosec**](https://github.com/securego/gosec)
@@ -36,6 +39,7 @@ Essas linguagens e ferramentas são:
 * **Java**
   * [**HorusecJava**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-java.md" lang="pt-br">}})
   * [**Semgrep**](https://github.com/returntocorp/semgrep)
+  * [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck)
 * **Kotlin**
   * [**HorusecKotlin**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-kotlin.md" lang="pt-br">}})
 * **Kubernetes**
@@ -67,3 +71,5 @@ Essas linguagens e ferramentas são:
   * [**HorusecNginx**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-nginx.md" lang="pt-br">}})
 * **Swift**
   * [**HorusecSwift**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-swift.md" lang="pt-br">}})
+* **.NET**
+  * [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck)

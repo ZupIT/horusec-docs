@@ -123,6 +123,12 @@ After that, it loops through each project dependency and tries to find security 
 - Transversal directory ;
 - Unsafe serialization.
 
-### **Bundler**
+### **Bundler Audit**
 
-The [**Bundler**](https://github.com/rubysec/bundler-audit) It is a security tool for Ruby's dependence audit in order to ensure that applications run the same code on all machines. It does this by managing the gems that the application depends on. Given a list of gems, it can automatically download and install those gems, as well as any other gems needed by the gems that are listed. Before installing gems, it checks the versions of every gem to make sure that they are compatible, and can all be loaded at the same time. After the gems have been installed, Bundler can help you update some or all of them when new versions become available. Finally, it records the exact versions that have been installed, so that others can install the exact same gems.
+The [**Bundler Audit**](https://github.com/rubysec/bundler-audit) It is a security tool for Ruby's dependence audit in order to ensure that applications run the same code on all machines. It does this by managing the gems that the application depends on. Given a list of gems, it can automatically download and install those gems, as well as any other gems needed by the gems that are listed. Before installing gems, it checks the versions of every gem to make sure that they are compatible, and can all be loaded at the same time. After the gems have been installed, Bundler can help you update some or all of them when new versions become available. Finally, it records the exact versions that have been installed, so that others can install the exact same gems.
+
+### **Owasp Dependency Check**
+
+[**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck) is a tool that detects publicly vulnerabilities contained in a project's dependencies. It determines if there is an identifier for any dependency, when found, it will generate a report including the associated [**CVE**](https://cve.mitre.org/).
+
+This tool is disabled by default on Horusec, because it increases the analysis time. If you want to enable it, just use the flag `-w true` or `-w`.
