@@ -199,7 +199,11 @@ See next, an example of a configuration file:
         },
         "YarnAudit": {
             "istoignore": false
+        },
+        "DotnetCli": {
+            "istoignore": false
         }
+
     },
     "horusecCliWorkDir": {
     "go": [],

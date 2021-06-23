@@ -40,10 +40,20 @@ New data management service.
 
 {{% release/item repository="CLI" date="June 2021" %}}
 Supports a new language: Swift. 
+
+Add new tool Owasp Dependency Check for languages: Python, Ruby, Javascript/Typescript, Java, C#.
+
+Add new tool dotnet-cli for C#.
 {{% /release/item %}}
 
 {{% release/item repository="Horusec Platform" date="June 2021" %}}
 Data download of the dashboard in: PDF, XLS, XML, CSV, PNG, JSON.
+
+Add accessibility in Horusec-manager.
+
+Add new analysis tools in Horusec-api: **dependency check** and **dotnet-cli**.
+
+
 {{% /release/item %}}
 
 {{% release/item type="fix" repository="CLI" date="May 2021" %}}
@@ -52,6 +62,9 @@ Code base restructure.
 Analysis correction in the Git history ignoring files inside the `git folder`.
 {{% /release/item  %}}
 
+{{% release/item repository="CLI" date="June 2021" %}}
+ Corrections to run tests with data-races.
+{{% /release/item  %}}
 
 {{% release/item repository="VSCODE" date="May 2021" %}}
  Fix error to remove Horusec CLI container on Windows.
@@ -59,6 +72,15 @@ Analysis correction in the Git history ignoring files inside the `git folder`.
 
 {{% release/item repository="Horusec-Platform" date="June 2021" %}}
 Fix error on Horusec-Manager path manipulation. 
+
+Fix wrong values in Helm Charts.
+
+Fix some text when export in multiples languages.
+
+Fix URI on Helm Charts' schema.
+
+Fix URLs in Helm Charts.
+
 {{% /release/item  %}}
 
 {{% release/item type="chore" repository="Analytic" date="May 2021" %}}
@@ -83,6 +105,9 @@ NGINX file support.
 Update [**Gitleaks**](https://github.com/zricethezav/gitleaks) on the analysis tool to the latest version available.
 {{% /release/item  %}}
 
+{{% release/item repository="CLI" date="June 2021" %}}
+Add CWE links in all descriptions of Swift rules.
+{{% /release/item  %}}
 
 {{% release/item repository="migration" date="May 2021" %}}
 Migration service was changed to be more dynamic, it will allow Horusec to run a folder with all migrations from a specific database.
@@ -104,6 +129,9 @@ New resource to manage the registered webhooks in your application.
 
 {{% release/item repository="CLI" date="June 2021" %}}
 Improvement of the tools that use Horusec-Engine.
+
+Add CWE links in all descriptions of Swift rules.
+
 {{% /release/item  %}}
 
 {{% release/item repository="plugin VSCode" date="June 2021" %}}
@@ -112,6 +140,16 @@ Support for Horusec-CLI's [**lastest available version**](https://github.com/Zup
 
 {{% release/item repository="Horusec-Platform" date="June 2021" %}}
 Improvement on Horusec-Manager's responsiveness.
+
+Add new 'not configured' values.
+
+Update migrations to save to database table and check if the script has already been run.
+
+Standardize environment variables' names in Horusec-Manager.
+
+Improve all Horusec-Manager tables.
+
+Change to use the enums from devkit to setup use cases of min. and max. length.
 
 Improvement when updating a vulnerability.
 {{% /release/item  %}}
