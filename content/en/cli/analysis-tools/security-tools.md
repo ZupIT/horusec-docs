@@ -132,3 +132,7 @@ The [**Bundler Audit**](https://github.com/rubysec/bundler-audit) It is a securi
 [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck) is a tool that detects publicly vulnerabilities contained in a project's dependencies. It determines if there is an identifier for any dependency, when found, it will generate a report including the associated [**CVE**](https://cve.mitre.org/).
 
 This tool is disabled by default on Horusec, because it increases the analysis time. If you want to enable it, just use the flag `-w true` or `-w`.
+
+### **DotNet CLI**
+
+The `dotnet list package` command is an option to list all the NuGet's packages references for a project or a solution. You can also list all the vulnerabilities dependencies of your project.  

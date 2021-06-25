@@ -38,10 +38,20 @@ Novo serviço para gestão de dados.
 
 {{% release/item repository="CLI" date="Junho 2021" %}}
 Suporte do Horusec para linguagem de programação Swift.
+
+Adição da nova ferramenta Owasp Dependency Check para linguagens: Python, Ruby, Javascript/Typescript, Java, C#.
+
+Adição da nova ferramenta dotnet-cli para C\#. 
+
 {{% /release/item %}}
 
 {{% release/item repository="platform" date="Junho 2021" %}}
 Possibilidade de fazer download dos dados do dashboard para arquivos nos formatos PDF, XLS, XML, CSV, PNG, JSON
+
+Inclusão de acessibilidade no Horusec-manager.
+
+Adição de novas ferramentas de análise no Horusec-api: : **dependency check** e **dotnet-cli**.
+
 {{% /release/item %}}
 
 {{% release/item type="fix" repository="CLI" date="MAIO 2021" %}}
@@ -50,12 +60,25 @@ Reestruturação da base do código.
 Correção da análise no histórico do Git, ignorando arquivos dentro do `git folder`.
 {{% /release/item  %}}
 
+{{% release/item repository="CLI" date="Junho 2021" %}}
+Correções para rodar testes com data-races.
+{{% /release/item  %}}
+
 {{% release/item repository="VSCODE" date="Maio 2021" %}}
  Correção do erro para remover o container do Horusec CLI no Windows.
 {{% /release/item  %}}
 
 {{% release/item repository="Platform" date="Junho 2021" %}}
 Correção na manipulação de paths do Horusec-Manager.
+
+Correção de valores errados no Helm Charts.
+
+Correção de alguns textos na exportação para múltiplas linguagens.
+
+Correção URI no schema do Helm Charts.
+
+Correção do URLs do Helm Charts.
+
 {{% /release/item  %}}
 
 {{% release/item type="chore" repository="Analytic" date="Maio 2021" %}}
@@ -100,11 +123,23 @@ Inclusão de novo recurso para gerenciar webhooks cadastrados na aplicação.
 
 {{% release/item repository="CLI" date="Junho 2021" %}}
 Melhoria na implementação das ferramentas que utilizam Horusec-Engine.
+
+Adição de links CWE em todas as descrições das regras de Swift. 
+
 {{% /release/item  %}}
 
 {{% release/item repository="Platform" date="Junho 2021" %}}
 
 Melhoria na responsividade do Horusec-Manager.
+
+Adição de novos valores 'not configured'.
+
+Atualização de migração para salvar a tabela na base de dados e checar se o script foi rodado.
+
+Melhoria em todas as tabelas do Horusec-Manager.
+
+Padronização dos nomes das variavéis de ambiente no Horusec-Manager.
+Mudança do uso de enums para devkit para configurar os casos de uso de tamanho min. e max. 
 
 Melhoria na performance ao atualizar uma vulnerabilidade.
 {{% /release/item  %}}

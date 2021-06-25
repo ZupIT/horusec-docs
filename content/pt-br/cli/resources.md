@@ -182,7 +182,9 @@ A seguir, um exemplo de um arquivo de configuração:
     },
     "YarnAudit": {
       "istoignore": false
-    }
+    },
+      "DotnetCli": {
+        "istoignore": false
   },
   "horusecCliWorkDir": {
     "go": [],
