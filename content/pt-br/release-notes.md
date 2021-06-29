@@ -62,6 +62,9 @@ Correção da análise no histórico do Git, ignorando arquivos dentro do `git f
 
 {{% release/item repository="CLI" date="Junho 2021" %}}
 Correções para rodar testes com data-races.
+
+Correção do erro: CLI e o pull nas imagens mesmo com a flag de desabilitar Docker ativada.
+
 {{% /release/item  %}}
 
 {{% release/item repository="VSCODE" date="Maio 2021" %}}

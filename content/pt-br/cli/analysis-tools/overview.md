@@ -19,7 +19,7 @@ Veja abaixo quais são as linguagens, as ferramentas de análise e qual a versã
 | Python |[**Bandit**](https://github.com/PyCQA/bandit), [**Safety**](https://github.com/pyupio/safety), [**Semgrep**](https://github.com/returntocorp/semgrep) e [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck) (v2.2). | Versão 2.0
 | Ruby |[**Brakeman**](https://github.com/presidentbeef/brakeman), [**Bundler Audit**](https://github.com/rubysec/bundler-audit) e [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck) (v2.2).| v2.0
 | Javascript/Typescript |[**Npm Audit**](https://docs.npmjs.com/cli/audit), [**Yarn Audit**](https://yarnpkg.com/lang/en/docs/cli/audit/), [**Semgrep**](https://github.com/returntocorp/semgrep), [**HorusecNodeJS**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-nodejs.md" lang="pt-br">}}), [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck) (v2.2) e [**EsLint**](https://github.com/eslint/eslint) | v2.0
-| GoLang |[**Gosec**](https://github.com/securego/gosec) e [**Semgrep**](https://github.com/returntocorp/semgrep) | v2.0
+| GoLang |[**Gosec**](https://github.com/securego/gosec), [**Semgrep**](https://github.com/returntocorp/semgrep) e [**Nancy**](https://github.com/sonatype-nexus-community/nancy) (v.2.2.1) | v2.0
 | C\#|[**SecuriyCodeScan**](https://security-code-scan.github.io), [**HorusecCSharp**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-csharp.md" lang="pt-br">}}), [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck) (v2.2) e [**DotNet CLI**](https://docs.microsoft.com/pt-br/dotnet/core/tools/dotnet-list-package) (v2.2).| v2.0
 | Java |[**HorusecJava**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-java.md" lang="pt-br">}}), [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck) (v2.2) e [**Semgrep**](https://github.com/returntocorp/semgrep)|   v2.0
 | Kotlin | [**HorusecKotlin**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-kotlin.md" lang="pt-br">}}) | v2.0
@@ -36,4 +36,4 @@ Veja abaixo quais são as linguagens, as ferramentas de análise e qual a versã
 | Elixir |[**Mix Audit**](https://github.com/mirego/mix_audit) e [**Sobelow**](https://github.com/nccgroup/sobelow) | v2.0
 | Nginx |[**HorusecNginx**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-nginx.md" lang="pt-br">}})| v2.0
 | Swift |[**HorusecSwift**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-swift.md" lang="pt-br">}}) | v2.1
-| 
+|   

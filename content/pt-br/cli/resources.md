@@ -185,7 +185,11 @@ A seguir, um exemplo de um arquivo de configuração:
     },
       "DotnetCli": {
         "istoignore": false
-  },
+   }, 
+      "Nancy": {
+        "istoignore": false
+   },
+
   "horusecCliWorkDir": {
     "go": [],
     "csharp": [],

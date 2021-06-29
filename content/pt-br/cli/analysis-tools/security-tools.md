@@ -130,3 +130,8 @@ Essa ferramenta é desabilitada por padrão no Horusec, porque aumenta considera
 ### **DotNet CLI**
 
 O comando `dotnet list package` é uma opção para listar todas as referências de pacotes do NuGet para um projeto ou uma solução. Você pode listar também todas as dependências vulneráveis do seu projeto. 
+
+### **Nancy**
+
+[**Nancy**](https://github.com/sonatype-nexus-community/nancy) é uma ferramenta para verificar vulnerabilidades em suas dependências Golang. 
+
