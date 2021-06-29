@@ -202,7 +202,11 @@ See next, an example of a configuration file:
         },
         "DotnetCli": {
             "istoignore": false
-        }
+        },
+         "Nancy": {
+            "istoignore": false
+   },
+
 
     },
     "horusecCliWorkDir": {
