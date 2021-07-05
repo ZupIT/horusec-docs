@@ -61,8 +61,6 @@ horusec-admin-74594694f-sdmr8                           1/1     Running     0   
 
 ## **Uso**
 
-Se você já instalou o Horusec-Operator com um arquivo YAML, você não poderá usar o Horusec-admin. Não é possível usar ambos, você deve escolher um para configurar e usar. 
-
 Horusec-admin é executado no seu cluster por default em uma **port http 3000** interna. É necessário expor na sua máquina local para acessar a interface do projeto.  
 
 {{% alert color="warning" %}}
