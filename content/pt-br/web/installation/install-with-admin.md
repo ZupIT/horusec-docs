@@ -1,57 +1,56 @@
 ---
-title: Install with Horusec-Admin
+title: Instale com Horusec-Admin
 weight: 40
-description: In this section, you will find how to install Horusec web application in Kubernetes cluster using Horusec-Admin.
+description:  Nesta seção, você encontra como instalar a aplicação web do Horusec no cluster Kubernetes utilizando o Horusec-Admin.
 ---
 
-## **What is it?**
+## **O que é?**
 
-**Horusec-admin** carries out basic modifications to your Kubernetes cluster through a user-friendly interface. It was created based on the conjunction with Horusec-Operator, it can have a simpler way to install the services in an environment using Kubernetes. 
+**Horusec-admin** realiza modificações básicas no seu cluster Kubernetes por meio de uma interface amigável. Foi criado em conjunção com o Horusec-Operator para ser uma forma mais simples de instalar os serviços web em um ambiente usando Kubernetes. 
 
 
-### **Requirements**
-To use Horusec-Admin you will need some secrets and dependencies, check out: 
+### **Requisitos**
+Para realizar esta configuração, você precisará ter alguns secrets e dependências, veja abaixo:   
 * [**Kubectl**](https://kubernetes.io/docs/tasks/tools/#kubectl)
 * [**Horusec-Operator installed**](https://github.com/ZupIT/horusec-operator)
 
 
-## **Installing**
-To install it, follow the next steps:  
+## **Instalação**
+Para instalar, siga os passo abaixo: 
  
-**Step 1.** Connect your database to your broker and create the secrets you need to install Horusec-Operator on your cluster.
-
-See the example below:
+**Passo 1.** Conecte sua base de dados com seu broker e crie os secrets necessários para instalar o Horusec-Operator, see the example below: 
 
 ```
 kubectl apply -f "https://github.com/ZupIT/horusec-operator/releases/download/v2.0.0/horusec-operator.yaml"
 ```
 
-Now, see if the resource was installed: 
+Agora, veja se o recurso foi instalado: 
+
 
 ```
 kubectl api-resources | grep horus
 ```
 
-The output will be similar to this:
+O output precisa ser similar ao exemplo abaixo:
 
 ```
 $ kubectl api-resources | grep horus                                                           
 horusecplatforms                  horus        install.horusec.io             true         HorusecPlatform
 ```
 
-**Step 2.** Install Horusec-admin in your cluster:
+**Passo 2.** Instale o Horusec-admin no seu cluster:
 
 ```
 kubectl apply -f "https://github.com/ZupIT/horusec-admin/releases/download/v2.0.0/horusec-admin.yaml"
 ```
 
-See the pod running:
+Veja a pod sendo executada:
 
 ```
 kubectl get pods
 ```
 
-The output will be: 
+O output será: 
 
 ```
 $ kubectl get pods                                                           
@@ -60,34 +59,32 @@ horusec-admin-74594694f-sdmr8                           1/1     Running     0   
 ```
 
 
-## **Usage**
+## **Uso**
 
-If you already installed and used Horusec-Operator with an YAML file, you are not able to use Horusec-admin. It is not possible to use both, you have to choose one to configure and to use. 
-
-Horusec-admin is running in your cluster by default in an internal **port http 3000**. It is necessary to expose in your local machine, so you can access the interface of this project. 
+Horusec-admin é executado no seu cluster por default em uma **port http 3000** interna. É necessário expor na sua máquina local para acessar a interface do projeto.  
 
 {{% alert color="warning" %}}
-DON'T EXPOSE THIS SERVICE TO EXTERNAL INTERNET BECAUSE IT CONTAINS SENSITIVE DATA. 
+Não mostre esse serviço para a internet externa, ele contém dados sensíveis. 
 {{% /alert %}}
 
-### **Token Configuration**
+### **Configuração de token**
 
-Now, in your terminal, start in the port-forward of this service: 
+No seu terminal, começe a port-forward desse serviço: 
 ```
 kubectl port-forward horusec-admin-74594694f-sdmr8 3000:3000
 ```
 
-If you access **http://localhost:3000**, you will see the admin page: 
+Se você acessar o **http://localhost:3000**, você verá a página inicial do admin: 
 
 ![](/docs/en/web/exemplo-token.png)
 
-To get the access token it is necessary to see the logs of the service, because the token was already showed only in the internal pod and renewed every 10 minutes. See the example below:
+Para você conseguir o token de acesso, é preciso ver os logs de serviço. O token já foi mostrado apenas na pod interna e renovado a cada 10 minutos. Veja o exemplo abaixo: 
 
 ```
 kubectl logs pod/horusec-admin-74594694f-sdmr8
 ```
 
-The output will be: 
+O output será: 
 
 ```
 time="2021-06-25 11:29:12 +0000" level=info msg="Token:04cd71a59715bc535cdc3ef6050c4f0ad49f12f0" prefix=authz
@@ -95,66 +92,63 @@ time="2021-06-25 11:29:12 +0000" level=info msg="Valid until:2021-06-25 13:29:12
 time="2021-06-25 11:29:12 +0000" level=info msg=listening addr=":3000" prefix=server
 
 ```
-The token in this example is: **`04cd71a59715bc535cdc3ef6050c4f0ad49f12f0`**
+O token desse exemplo é: **`04cd71a59715bc535cdc3ef6050c4f0ad49f12f0`**
 
 
-## **Horusec-Admin internal pages**
+## **Páginas do Horusec-Admin**
 
-When you access Horusec-Admin you will see the following pages: 
+Quando você acessa o Horusec-Admin, você irá ver as seguintes páginas: 
 
-**1. Homepage:** You can select which configuration you want to perform in the platform:
-
+**1. Homepage:** Selecione quais configurações você deseja fazer na plataforma: 
 ![](/docs/en/web/adminhome-page.png)
 
 
-**2. Status page:** Check the status of the services and which one it is available: 
+**2. Página de Status:** Confira os status dos serviços e veja se estão disponíveis: 
 
 ![](/docs/en/web/adminstatus-page.png)
 
-**3. General page:** Perform general application settings, such as data for users of the application and others: 
+**3. Página Geral:** Faça configurações gerais na aplicação, como dados para os usuários e outros:  
 
 ![](/docs/en/web/admingeneral-page.png)
 
-**4. Resources page:**  You can perform connection settings with services as required databases, Message Broker and SMTP. Remember that Horusec does not create these features only accomplishes the connection:
+**4. Página de recursos:** Você pode configurar conexões com serviços como banco de dados, Message Broker e SMTP. Lembre-se que o Horusec não cria essas features, apenas faz a conexão entre elas:
 
 ![](/docs/en/web/adminresources-page.png)
 
-**5. Authentication page:** Change the type of authentication you want to use in your environment:
+**5. Página de autenticação:** Você pode mudar o tipo de autenticação que você deseja usar no seu ambiente: 
 
 ![](/docs/en/web/adminauthentication-page.png)
 
 
-**6. Hosts page:** Update quickly the host of your application that will be exposed in the ingress of your Kubernetes cluster:
+**6. Página dos Hosts:** Atualize de forma rápida e simples o host da sua aplicação que será exposta na sua ingress do seu cluster Kubernetes:
 
 ![](/docs/en/web/adminhosts-page.png)
 
 
 
-## **Development Environment**
+## **Ambiente de desenvolvimento**
 
-This development enviroment was created for you to test Horusec-admin in your machine. You also have to configure Horusec-Operator all the connections and secrets.
+Este ambiente de desenvolvimento foi criado para você conseguir testar o Horusec-admin na sua máquina. Antes de configurá-lo, você também precisa ter o Horusec-Operator configurado com todas as conexões e secrets.
 
-
-### **Requirements** 
-You need to have installed:
+### **Requisitos** 
+Você precisa ter instalado na sua máquina:
 - [**Helm**](https://helm.sh/docs/intro/install/#from-script).
 - [**Kind**](https://kind.sigs.k8s.io/docs/user/quick-start/#installation).  
 
 
-Now, follow the steps to configure: 
+Agora, siga os passos para a configuração: 
 
-
-##### **Step 1. Clone horusec-Operator project:**
+##### **Passo 1. Clone o projeto Horusec-Operator:**
 
 ```
 git clone https://github.com/ZupIT/horusec-operator.git && cd horusec-operator
 ```
 
-Update Kubernetes cluster with all dependencies and wait to finish:
+Suba o cluster Kubernetes com todas as dependências e espere finalizar:
 ```
 make up-sample
 ```
-If you see this message:
+Se você ver essa mensagem: 
 ```
 Creating horusec_analytic_db...
 If you don't see a command prompt, try pressing enter.
@@ -164,21 +158,21 @@ psql: could not connect to server: Connection refused
 pod "postgresql-client" deleted
 pod default/postgresql-client terminated (Error)
 ```
-Don't worry, this is normal. The script is trying to create a new database, but the pod of the postgresql is not ready, it will run again until create a new database.
+Não se preocupe, é normal. O script está tentando criar um novo banco de dados, mas a pod do postgresql não está pronta, ele irá rodar novamente até criar essa base de dados. 
 
-##### **Step 2. Install Horusec-Operator:**
+##### **Passo 2. Instale o Horusec-Operator**
 
-After the script finishes, install: 
+Após a finalização do script, instale: 
 
 ```
 kubectl apply -f "https://github.com/ZupIT/horusec-operator/releases/download/v2.0.0/horusec-operator.yaml"
 ```
-Check out if it was successfully installed: 
+Confirme se foi instalado com sucesso: 
 ```
 kubectl api-resources | grep horus
 
 ```
-The output will be: 
+O output será: 
 
 ```
 $ kubectl api-resources | grep horus                                                           
@@ -186,7 +180,7 @@ horusecplatforms                  horus        install.horusec.io             tr
 
 ```
 
-And you can see the pod manager: 
+E agora você pode ver o pod manager:  
 ```
 $ kubectl get pods -n horusec-operator-system
 NAME                                                   READY   STATUS              RESTARTS   AGE
@@ -194,20 +188,20 @@ horusec-operator-controller-manager-7b9696d4c4-t7w2q   2/2     Running          
 
 ```
 
-##### **Step 3. Install Horusec-Admin in your cluster:** 
+##### **Passo 3. Instale o Horusec-Admin no seu cluster:** 
 
 ```
 kubectl apply -f "https://github.com/ZupIT/horusec-admin/releases/download/v2.0.0/horusec-admin.yaml"
 
 ```
 
-See the pod running:
+Veja a pod ser executada:
 
 ```
 kubectl get pods
 
 ```
-The output will be:
+O output será: 
 
 ```
 $ kubectl get pods                                                           
@@ -215,25 +209,24 @@ NAME                                                    READY   STATUS      REST
 horusec-admin-74594694f-sdmr8                           1/1     Running     0          1m
 ```
 
-##### **Step 4. In your terminal start in port-forward of this service** 
+##### **Passo 4. No seu terminal, comece um port-forward desse serviço** 
 
 
 ```
 kubectl port-forward horusec-admin-74594694f-sdmr8 3000:3000
 
 ```
-If you access **http://localhost:3000**, you see Horusec-admin page.
-Now, configure the access token, like explained in the section before. 
+Se você acessar o **http://localhost:3000**, você verá a página do Horusec-admin. Agora, acesse o token. Você pode configurar como foi mencionado na seção de Uso.  
 
-##### **Step 5. Setup the authentication.** 
+##### **Passo 5. Configure a autenticação.** 
 
-Go to the General page and click on  "Save" button, and all Horusec services will be uploaded with default configuration. Use the following command:
+Vá até a página geral e clique em "Save" e todos os serviços do Horusec serão configurados como default. Use o comando abaixo: 
 
 ```
 kubectl get pods
 
 ```
-The output will be: 
+O output será: 
 
 ```
 $ kubectl get pods
