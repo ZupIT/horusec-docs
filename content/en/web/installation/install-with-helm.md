@@ -15,17 +15,14 @@ In this installation case here, the goal is for you to use Horusec's web applica
 For this configuration, you will need: 
 
 * Access to the cluster where you want to install Horusec Manager (If tou are using multiple clusters
-  clusters, [**check out here**](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/)
+  clusters, [**check out to see how to configure**](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/)
   how to configure their access).
 
 * [**Helm**](https://helm.sh/docs/intro/install/) client with a version > 3.1.1.
 
 * **PostgreSQL** connection to store data.
 
-* **RabbitMQ** connection as a message-broker (**optional**).
-
-* **Linux**.
-
+* **RabbitMQ** connection as a message-broker (**Optional**).
 
 
 ## **Horusec Helm Charts**
