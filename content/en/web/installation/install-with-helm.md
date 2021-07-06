@@ -24,25 +24,21 @@ For this configuration, you will need:
 
 * **RabbitMQ** connection as a message-broker.
 
-* **Linux**.
-
-
-
 ## **Horusec Helm Charts**
 
-Horusec's web application solution has **8 different services** and each one of them has a specific chart. 
+Horusec's web application solution has **8 different services**. They are:
 
-The commands in this guide use Helm Charts already included in Horusec's release package according to each service:
+1. [**Core**]({{< ref path="/web/services/core.md" lang="en">}})
+2. [**Analytic**]({{< ref path="/web/services/analytic.md" lang="en">}})
+3. [**API**]({{< ref path="/web/services/api.md" lang="en">}})
+4. [**Auth**]({{< ref path="/web/services/auth.md" lang="en">}})
+5. [**Manager**]({{< ref path="/web/services/manager" lang="en">}})
+6. [**Messages**]({{< ref path="/web/services/messages.md" lang="en">}})
+7. [**Webhook**]({{< ref path="/web/services/webhook.md" lang="en">}})
+8. [**Vulnerability**]({{< ref path="/web/services/vulnerability.md" lang="en">}})
 
-
-1. [**Core**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/core)
-2. [**Analytic**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/analytic)
-3. [**Api**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/api)
-4. [**Auth**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/auth)
-5. [**Manager**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/manager)
-6. [**Messages**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/messages)
-7. [**Webhook**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/webhook)
-8. [**Vulnerability**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/vulnerability)
+Since version 2.0, you can manage them all with a single Helm Chart included
+in [Horusec's release](https://github.com/ZupIT/horusec-platform/tree/main/deployments/helm/horusec-platform).
 
 ## **Pre-configuration**
 
@@ -119,7 +115,16 @@ The Secrets values informed here are only examples and they are not intended to 
 
 ## **Horusec's services installation**
 
-After finishing all configuration, you can go to Horusec's release package's root directory and follow the next instructions to install the services:  
+After finishing all configuration, you can go to the Horusec release page to download the Helm chart, or download and
+extract the release automatically (Linux or macOS):
+
+```bash
+export HORUSEC_VERSION=2.15.0
+
+curl -fsLo horusec-platform-${HORUSEC_VERSION}.zip https://github.com/ZupIT/horusec-platform/archive/refs/tags/v${HORUSEC_VERSION}.zip
+unzip horusec-platform-${HORUSEC_VERSION}.zip horusec-platform-${HORUSEC_VERSION}/deployments/helm/horusec-platform/*
+rm horusec-platform-${HORUSEC_VERSION}.zip
+```
 
 * Install the Chart with [**core service**]({{< ref path="/web/services/core.md" lang="en">}}/) components: 
 
