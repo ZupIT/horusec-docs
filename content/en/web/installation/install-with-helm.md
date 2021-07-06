@@ -24,25 +24,21 @@ For this configuration, you will need:
 
 * **RabbitMQ** connection as a message-broker.
 
-* **Linux**.
-
-
-
 ## **Horusec Helm Charts**
 
-Horusec's web application solution has **8 different services** and each one of them has a specific chart. 
+Horusec's web application solution has **8 different services**. They are:
 
-The commands in this guide use Helm Charts already included in Horusec's release package according to each service:
+1. [**Core**]({{< ref path="/web/services/core.md" lang="en">}})
+2. [**Analytic**]({{< ref path="/web/services/analytic.md" lang="en">}})
+3. [**API**]({{< ref path="/web/services/api.md" lang="en">}})
+4. [**Auth**]({{< ref path="/web/services/auth.md" lang="en">}})
+5. [**Manager**]({{< ref path="/web/services/manager" lang="en">}})
+6. [**Messages**]({{< ref path="/web/services/messages.md" lang="en">}})
+7. [**Webhook**]({{< ref path="/web/services/webhook.md" lang="en">}})
+8. [**Vulnerability**]({{< ref path="/web/services/vulnerability.md" lang="en">}})
 
-
-1. [**Core**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/core)
-2. [**Analytic**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/analytic)
-3. [**Api**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/api)
-4. [**Auth**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/auth)
-5. [**Manager**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/manager)
-6. [**Messages**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/messages)
-7. [**Webhook**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/webhook)
-8. [**Vulnerability**](https://github.com/ZupIT/horusec-platform/tree/master/deployments/helm/vulnerability)
+Since version 2.0, you can manage them all with a single Helm Chart included
+in [Horusec's release](https://github.com/ZupIT/horusec-platform/tree/main/deployments/helm/horusec-platform).
 
 ## **Pre-configuration**
 
@@ -69,12 +65,19 @@ kubectl create namespace horusec-system
 **Step 2.** Add the Bitnami's Chart repository and install what you need: 
 
 ```bash
-helm repo add bitnami https://charts.bitnami.com/bitnami
-helm repo update
+# add a chart repository and make sure you get the latest list of charts
+helm repo add bitnami https://charts.bitnami.com/bitnami && helm repo update
 
+# install the RabbitMQ chart
 helm install rabbitmq bitnami/rabbitmq -n horusec-system
 
-helm install postgresql --set postgresqlDatabase=horusec_db bitnami/postgresql -n horusec-system
+# for demonstration purposes, we're using a single instance of PostgreSQL with multiple databases
+helm install postgresql bitnami/postgresql -n horusec-system -f - <<EOF
+initdbScripts:
+  userdata.sql: |
+    create database horusec_db;
+    create database analytic_db;
+EOF
 ```
 
 ### **Sensitive data configuration**
@@ -104,14 +107,11 @@ export JWT_SECRET="4ff42f67-5929-fc52-65f1-3afc77ad86d5"
 **Step 3:** Create Kubernetes' Secrets: 
 
 ```bash
-kubectl create secret generic database-username --from-literal=database-username=$POSTGRES_USERNAME
-kubectl create secret generic database-password --from-literal=database-password=$POSTGRES_PASSWORD
-kubectl create secret generic database-uri --from-literal=database-uri=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@postgresql:5432/horusec_db?sslmode=disable
+kubectl create secret generic horusec-database --from-literal=username=$POSTGRES_USERNAME --from-literal=password=$POSTGRES_PASSWORD --namespace horusec-system
 
-kubectl create secret generic broker-username --from-literal=broker-username=$RABBITMQ_USERNAME
-kubectl create secret generic broker-password --from-literal=broker-password=$RABBITMQ_PASSWORD
+kubectl create secret generic horusec-broker --from-literal=username=$RABBITMQ_USERNAME --from-literal=password=$RABBITMQ_PASSWORD --namespace horusec-system
 
-kubectl create secret generic jwt-token --from-literal=jwt-token=$JWT_SECRET
+kubectl create secret generic horusec-jwt --from-literal=jwt-token=$JWT_SECRET --namespace horusec-system
 ```
 {{% alert color="warning" %}}
 The Secrets values informed here are only examples and they are not intended to use on production.
@@ -119,64 +119,21 @@ The Secrets values informed here are only examples and they are not intended to 
 
 ## **Horusec's services installation**
 
-After finishing all configuration, you can go to Horusec's release package's root directory and follow the next instructions to install the services:  
-
-* Install the Chart with [**core service**]({{< ref path="/web/services/core.md" lang="en">}}/) components: 
+After finishing all configuration, you can go to the Horusec release page to download the Helm chart, or download and
+extract the release automatically (Linux or macOS):
 
 ```bash
-helm install core deployments/helm/core -n horusec-system
+export HORUSEC_VERSION=2.15.0
+
+curl -fsLo horusec-platform-${HORUSEC_VERSION}.zip https://github.com/ZupIT/horusec-platform/archive/refs/tags/v${HORUSEC_VERSION}.zip
+unzip horusec-platform-${HORUSEC_VERSION}.zip horusec-platform-${HORUSEC_VERSION}/deployments/helm/horusec-platform/*
+rm horusec-platform-${HORUSEC_VERSION}.zip
 ```
 
-* Install the Chart with [**vulnerability service**]({{< ref path="/web/services/vulnerability.md" lang="en">}}/) components: 
+* Install the Horusec Platform chart which deploys all selected components:
 
 ```bash
-helm install vulnerability deployments/helm/vulnerability -n horusec-system
-```
-
-* Install the Chart with [**analytic service**]({{< ref path="/web/services/analytic.md" lang="en">}}/) components: 
-
-```bash
-helm install analytic deployments/helm/analytic -n horusec-system
-```
-
-* Install the Chart with [**API service**]({{< ref path="/web/services/api.md" lang="en">}}/) components:
-
-```bash
-helm install api deployments/helm/api -n horusec-system
-```
-
-* Install the Chart with [**auth service**]({{< ref path="/web/services/auth.md" lang="en">}}/) components:
-
-```bash
-helm install auth deployments/helm/auth -n horusec-system
-```
-
-* Install the Chart with [**manager service**]({{< ref path="/web/services/manager/" lang="en">}}/) components:
-
-```bash
-helm install manager deployments/helm/manager -n horusec-system
-```
-
-* Install the Chart with [**messages service**]({{< ref path="/web/services/messages.md" lang="en">}}/) components:
-
-{{% alert color="info" %}}
-Only required if you are using the [**messaging service**]({{< ref path="/tutorials/how-to-enable-disable-messaging-service.md" lang="en">}})
-When you enable the messaging service, it is necessary to connect to your e-mail service. For that, add to **"horusec-messages"** the following environment variables:   
-- HORUSEC_SMTP_USERNAME="e-mail service username";
-- HORUSEC_SMTP_PASSWORD="e-mail password service";
-- HORUSEC_SMTP_ADDRESS: "e-mail address service";
-- HORUSEC_SMTP_HOST: "e-mail host service";
-- HORUSEC_SMTP_PORT: "e-mail service port".
-  {{% /alert %}}
-
-```bash
-helm install messages deployments/helm/messages -n horusec-system
-```
-
-* Install the Chart with [**webhook service**]({{< ref path="/web/services/webhook.md" lang="en">}}/) components:
-
-```bash
-helm install webhook deployments/helm/webhook -n horusec-system
+helm install horusec horusec-platform-${HORUSEC_VERSION}/deployments/helm/horusec-platform -n horusec-system
 ```
 
 ## **Access to Horusec Helm Charts**
@@ -187,31 +144,31 @@ The Charts default behaviour is to create an Ingress with an input rule routing 
 **Ingress Controller** to manage the external access to your Kubernetes' cluster services. 
 
 ```bash
-kubectl -n horusec-system get ingresses manager-horusec-manager -o jsonpath='{.status.loadBalancer.ingress[0].ip}'
+kubectl -n horusec-system get ingresses horusec -o jsonpath='{.status.loadBalancer.ingress[0].ip}'
 ```
 
 {{% alert color="warning" %}}
 In some environments, the load balancer can be exposed using a host name instead an IP address. When this happen, use jsonpath like the example below: 
 > ```bash
-> kubectl -n horusec-system get ingresses manager-horusec-manager -o jsonpath='{.status.loadBalancer.ingress[0].hostname}'
+> kubectl -n horusec-system get ingresses horusec -o jsonpath='{.status.loadBalancer.ingress[0].hostname}'
 > ```
 {{% /alert %}}
 
 The easiest way to access these addresses without the DNS configuration is to add them to the Host files in your machine. For example: 
 
 ```bash
-export INGRESS_HOST=$(kubectl -n horusec-system get ingresses manager-horusec-manager -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+export INGRESS_HOST=$(kubectl -n horusec-system get ingresses horusec -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
-echo "$INGRESS_HOST        api-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
-echo "$INGRESS_HOST        horus-dev.zup.com.br" | sudo tee -a /etc/hosts
-echo "$INGRESS_HOST        core-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
-echo "$INGRESS_HOST        analytic-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
-echo "$INGRESS_HOST        auth-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
-echo "$INGRESS_HOST        webhook-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
-echo "$INGRESS_HOST        vulnerability-horus-dev.zup.com.br" | sudo tee -a /etc/hosts
+echo "$INGRESS_HOST core.local" | sudo tee -a /etc/hosts
+echo "$INGRESS_HOST manager.local" | sudo tee -a /etc/hosts
+echo "$INGRESS_HOST messages.local" | sudo tee -a /etc/hosts
+echo "$INGRESS_HOST vulnerability.local" | sudo tee -a /etc/hosts
+echo "$INGRESS_HOST webhook.local" | sudo tee -a /etc/hosts
+echo "$INGRESS_HOST analytic.local" | sudo tee -a /etc/hosts
+echo "$INGRESS_HOST api.local" | sudo tee -a /etc/hosts
 ```
 
-After you've done that, access the configured URL to access Horusec's Manager **http://horus-dev.zup.com.br/**
+After you've done that, access the configured URL to access Horusec's Manager **http://manager.local/**
 
 
 {{% alert color="info" %}}
