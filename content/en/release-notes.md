@@ -83,6 +83,10 @@ Fix URI on Helm Charts' schema.
 
 Fix URLs in Helm Charts.
 
+Fix repositories created with workspace token that didn't inherit permissions.
+
+Fix the LDAP authentication, in some cases the repositories were duplicated. 
+
 {{% /release/item  %}}
 
 {{% release/item type="chore" repository="Analytic" date="May 2021" %}}
