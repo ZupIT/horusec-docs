@@ -30,7 +30,7 @@ Permite que você faça a gestão do seu projeto a partir de um dashboard que fo
 
 * Qual repositório com mais vulnerabilidades e quais são suas classificações;
 * Quais linguagens registram mais vazamentos e quais são suas classificações;
-* Quais funcinários que estão subindo essas possíveis vulnerabilidades gerando uma falha em seu projeto e quais são suas classificações.
+* Quais funcionários estão subindo essas possíveis vulnerabilidades gerando uma falha em seu projeto e quais são suas classificações.
 
 ![](/docs/ptbr/web/overview/1-1-analytic.png)
 
