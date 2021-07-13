@@ -116,10 +116,12 @@ See next, an example of a configuration file:
     "horusecCliEnableInformationSeverity": false,
     "horusecCliEnableOwaspDependencyCheck": false,
     "horusecCliFalsePositiveHashes": [],
-    "horusecCliFilesOrPathsToIgnore": [
+    "horusecCliFilesOrPathsToIgnore": 
+    [
         "*tmp*",
         "**/.vscode/**"
     ],
+    "horusecCliEnableShellcheck": false,
     "horusecCliFilterPath": "",
     "horusecCliHeaders": {},
     "horusecCliHorusecApiUri": "http://0.0.0.0:8000",
@@ -269,6 +271,7 @@ export HORUSEC_CLI_DISABLE_DOCKER="false"
 export HORUSEC_CLI_CUSTOM_RULES_PATH=""
 export HORUSEC_CLI_ENABLE_INFORMATION_SEVERITY="false"
 export HORUSEC_CLI_ENABLE_OWASP_DEPENDENCY_CHECK="false"
+export HORUSEC_CLI_ENABLE_SHELLCHECK="false"
 ```
 
 #### **3. Flags**
@@ -593,6 +596,14 @@ On the table below, you can see all the available flags. To see it better, just 
             <td style="text-align:left"> -w</td>
             <td style="text-align:left">false</td>
             <td style="text-align:left">Enables the owasp dependency check tool, it performs the dependencies analysis. `Ex: -w`
+</td>
+<tr>
+            <td style="text-align:left">HORUSEC_CLI_ENABLE_SHELLCHECK</td>
+            <td style="text-align:left">horusecCliEnableShellcheck</td>
+            <td style="text-align:left">enable-shellcheck</td>
+            <td style="text-align:left">j</td>
+            <td style="text-align:left">false</td>
+            <td style="text-align:left">Enables the shellcheck tool, it checks for errors in sh files. Ex: -j.
 </td>
     </tr>
   </tbody>

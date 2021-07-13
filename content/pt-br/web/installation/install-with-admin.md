@@ -1,5 +1,5 @@
 ---
-title: Instale com Horusec-Admin
+title: Instale utilizando o Horusec-Admin
 weight: 40
 description:  Nesta seção, você encontra como instalar a aplicação web do Horusec no cluster Kubernetes utilizando o Horusec-Admin.
 ---

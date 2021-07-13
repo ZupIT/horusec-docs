@@ -45,6 +45,11 @@ Adição da nova ferramenta dotnet-cli para C\#.
 
 {{% /release/item %}}
 
+{{% release/item repository="CLI" date="Julho 2021" %}}
+Agora o shellcheck não é habilitado por padrão. Para ativar basta passar a flag (-j OU -j=”true”).
+{{% /release/item %}}
+
+
 {{% release/item repository="platform" date="Junho 2021" %}}
 Possibilidade de fazer download dos dados do dashboard para arquivos nos formatos PDF, XLS, XML, CSV, PNG, JSON
 
@@ -64,7 +69,11 @@ Correção da análise no histórico do Git, ignorando arquivos dentro do `git f
 Correções para rodar testes com data-races.
 
 Correção do erro: CLI e o pull nas imagens mesmo com a flag de desabilitar Docker ativada.
+ 
+{{% /release/item  %}}
 
+{{% release/item repository="CLI" date="Julho 2021" %}}
+Correção na formatação do output do shellcheck.
 {{% /release/item  %}}
 
 {{% release/item repository="VSCODE" date="Maio 2021" %}}
@@ -154,9 +163,13 @@ Melhoria na performance ao atualizar uma vulnerabilidade.
 Suporte para última versão disponível da Horusec-CLI.
 {{% /release/item  %}}
 
-  {{% release/item type="docs" repository="CLI" date="Maio 2021" %}}
-  TBD
+  {{% release/item type="docs" repository="CLI" date="Junho 2021" %}}
+  Instale utilizando Operator.
+
+  Instale utilizando Horusec-Admin.
+
   {{% /release/item  %}}
+ 
 {{% /release/group %}}
 
 Acesse a página de [**Release Notes**](https://github.com/ZupIT/horusec/releases)
