@@ -15,18 +15,20 @@ In this installation case here, the goal is for you to use Horusec's web applica
 For this configuration, you will need: 
 
 * Access to the cluster where you want to install Horusec Manager (If tou are using multiple clusters
-  clusters, [**check out here**](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/)
+  clusters, [**check out kubernetes configuration**](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/)
   how to configure their access).
 
-* [**Helm**](https://helm.sh/docs/intro/install/) client with a version > 3.1.1.
+* [**Helm**](https://helm.sh/docs/intro/install/) client with a version > 3.1.1;
 
-* **PostgreSQL** connection to store data.
+* **PostgreSQL** connection to store data;
 
-* **RabbitMQ** connection as a message-broker.
+* **RabbitMQ** connection as a message-broker;
+
+* **Linux**.
 
 ## **Horusec Helm Charts**
 
-Horusec's web application solution has **8 different services**. They are:
+Horusec's web application solution has **8 different services**. See them below:
 
 1. [**Core**]({{< ref path="/web/services/core.md" lang="en">}})
 2. [**Analytic**]({{< ref path="/web/services/analytic.md" lang="en">}})
@@ -38,11 +40,11 @@ Horusec's web application solution has **8 different services**. They are:
 8. [**Vulnerability**]({{< ref path="/web/services/vulnerability.md" lang="en">}})
 
 Since version 2.0, you can manage them all with a single Helm Chart included
-in [Horusec's release](https://github.com/ZupIT/horusec-platform/tree/main/deployments/helm/horusec-platform).
+in [**Horusec's release**](https://github.com/ZupIT/horusec-platform/tree/main/deployments/helm/horusec-platform).
 
-## **Pre-configuration**
+## **Prerequisites**
 
-Before start the Horusec's web application service installation, it is important you have performed some previously configurations:
+Before start the Horusec's web application service installation, it is important you have performed some previously configuration:
 
 ### **Data storage and message-broker**
 
@@ -51,7 +53,7 @@ Check out some recommendations before the configuration:
 
 Install [**PostgreSQL**](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) and [**RabbitMQ**](https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq) using Bitnami's Helm Charts, for a quick start in non-productive environments.
 
-If you already have available connections with `PostgreSQL` and `RabbitMQ`, just follow your [**credentials configuration**]({{< ref path="/web/installation/install-with-helm.md#sensitive-data-configuration" lang="en">}}) and inform the addresses of these connections in the variables during [**Horusec's services installation**](#instalação-dos-serviços-da-horusec).
+If you already have available connections with `PostgreSQL` and `RabbitMQ`, just follow your [**credentials configuration**]({{< ref path="/web/installation/install-with-helm.md#sensitive-data-configuration" lang="en">}}) and inform the addresses of these connections in the variables during [**Horusec's services installation**](/docs/web/installation/install-with-helm/#horusecs-services-installation).
 {{% /alert %}}
 
 Follow the steps below to configure Horusec Helm Charts: 
@@ -81,7 +83,7 @@ EOF
 ```
 
 ### **Sensitive data configuration**
-If you haven't configured yet, start with: 
+If you haven't configured yet, follow the next steps: 
 
 **Step 1:** Create `horusec-system` namespace for the Horusec's components:
 
@@ -89,11 +91,11 @@ If you haven't configured yet, start with:
 kubectl create namespace horusec-system
 ```
 
-**Step 2:** The services that make this solution use Kubernetes' Secrets to manage sensitive data like passwords, oAuth tokens and SSH keys. Because of that, you have to configure some Secrets before starting the installation. 
+**Step 2:** The services make this solution use Kubernetes' Secrets to manage sensitive data like passwords, oAuth tokens and SSH keys. Because of that, you have to configure some Secrets before starting the installation. 
 
 
 {{% alert color="info" %}}
-If you have installed `PostgreSQL` and `RabbitMQ` with Bitnami's Charts, now you have to get its crendentials: 
+If you have already installed `PostgreSQL` and `RabbitMQ` with Bitnami's Charts, now you have to get its crendentials: 
 
 ```bash
 export POSTGRES_USERNAME="postgres"
@@ -119,8 +121,7 @@ The Secrets values informed here are only examples and they are not intended to 
 
 ## **Horusec's services installation**
 
-After finishing all configuration, you can go to the Horusec release page to download the Helm chart, or download and
-extract the release automatically (Linux or macOS):
+After finishing all configuration, you can go to the Horusec release page to download the Helm chart, or download and extract the release automatically (Linux or macOS):
 
 ```bash
 export HORUSEC_VERSION=2.15.0
@@ -140,7 +141,7 @@ helm install horusec horusec-platform-${HORUSEC_VERSION}/deployments/helm/horuse
 
 After all the services are installed and running in your enviroment, you can access the graphic interface through a link offered by [**Horusec-Manager**]({{< ref path="/web/services/manager" lang="en">}}) service.
 
-The Charts default behaviour is to create an Ingress with an input rule routing the HTTP traffic to your service based on a specific host. Because of that, it's recommended to use
+The Charts default behaviour is to create an Ingress with an input rule routing the HTTP traffic to your service based on a specific host. It's recommended to use
 **Ingress Controller** to manage the external access to your Kubernetes' cluster services. 
 
 ```bash

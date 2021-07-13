@@ -82,6 +82,9 @@ Correção URI no schema do Helm Charts.
 
 Correção do URLs do Helm Charts.
 
+Correção dos repositórios criados com token de workspace que não herdavam permissões.
+
+Correção na autenticação LDAP, em alguns casos os repositórios estavam sendo duplicados. 
 {{% /release/item  %}}
 
 {{% release/item type="chore" repository="Analytic" date="Maio 2021" %}}
