@@ -113,6 +113,7 @@ A seguir, um exemplo de um arquivo de configuração:
     "*tmp*",
     "**/.vscode/**"
   ],
+  "horusecCliEnableShellcheck": false,
   "horusecCliHeaders": {},
   "horusecCliHorusecApiUri": "http://0.0.0.0:8000",
   "horusecCliJsonOutputFilepath": "",
@@ -251,6 +252,7 @@ export HORUSEC_CLI_CUSTOM_RULES_PATH=""
 export HORUSEC_CLI_ENABLE_INFORMATION_SEVERITY="false"
 export HORUSEC_CLI_SHOW_VULNERABILITIES_TYPES="Vulnerability"
 export HORUSEC_CLI_ENABLE_OWASP_DEPENDENCY_CHECK="false"
+export HORUSEC_CLI_ENABLE_SHELLCHECK="false"
 ```
 
 #### **3. Flags**
@@ -537,6 +539,14 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left"> -w</td>
             <td style="text-align:left">false</td>
             <td style="text-align:left">Habilita a ferramenta owasp dependency check, que realiza a análise de dependências. `Ex: -w`
+</td>
+<tr>
+            <td style="text-align:left">HORUSEC_CLI_ENABLE_SHELLCHECK</td>
+            <td style="text-align:left">horusecCliEnableShellcheck</td>
+            <td style="text-align:left">enable-shellcheck</td>
+            <td style="text-align:left">j</td>
+            <td style="text-align:left">false</td>
+            <td style="text-align:left">Habilita o shellcheck na ferramenta, e procura erros em arquivos sh. Ex: -j.
 </td>
         </tr>
     </tbody>

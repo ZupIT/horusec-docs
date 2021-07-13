@@ -46,6 +46,10 @@ Add new tool Owasp Dependency Check for languages: Python, Ruby, Javascript/Type
 Add new tool dotnet-cli for C#.
 {{% /release/item %}}
 
+{{% release/item repository="CLI" date="July 2021" %}}
+From now on, shellcheck is not enabled by default. To enable it, use the -j flag.
+{{% /release/item %}}
+
 {{% release/item repository="Horusec Platform" date="June 2021" %}}
 Data download of the dashboard in: PDF, XLS, XML, CSV, PNG, JSON.
 
@@ -66,6 +70,10 @@ Analysis correction in the Git history ignoring files inside the `git folder`.
  Corrections to run tests with data-races.
 
 Fix error: CLI and the pull in the images even with the disable Docker flag activated. 
+{{% /release/item  %}}
+
+{{% release/item repository="CLI" date="July 2021" %}}
+Fix error in the shellcheck output parse. 
 {{% /release/item  %}}
 
 {{% release/item repository="VSCODE" date="May 2021" %}}
@@ -156,8 +164,10 @@ Change to use the enums from devkit to setup use cases of min. and max. length.
 Improvement when updating a vulnerability.
 {{% /release/item  %}}
 
-  {{% release/item type="docs" repository="CLI" date="May 2021" %}}
-  TBD
+  {{% release/item type="docs" repository="CLI" date="June 2021" %}}
+  Install with Operator.
+
+  Install with Horusec-Admin.
   {{% /release/item  %}}
 {{% /release/group %}}
 
