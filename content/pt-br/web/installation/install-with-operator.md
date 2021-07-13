@@ -1,12 +1,12 @@
 ---
 title: Instale utilizando o Operator
 weight: 30
-description:  Nesta seção, você encontra como instalar a aplicação web do Horusec no seu ambiente usando Operator.
+description: Nesta seção, você encontra como instalar a aplicação web do Horusec no seu ambiente usando Operator.
 ---
 
 ## **O que é?**
 
-**Horusec-operator** realiza o gerenciamento entre os serviços de Web fo Horusec e o cluster Kubernetes. Foi criado devido a uma ideia da comunidade de tornar a forma de instalar os serviços em um ambiente Kubernetes mais simples.
+**Horusec-operator** realiza o gerenciamento entre os serviços de Web do Horusec e o cluster Kubernetes. A ideia da criação veio da comunidade com o desejo de simplificar a forma de instalar os serviços em um ambiente Kubernetes.
 
 ### **Requisitos**
 Para realizar esta configuração, você precisará ter alguns secrets e dependências, veja abaixo:  
