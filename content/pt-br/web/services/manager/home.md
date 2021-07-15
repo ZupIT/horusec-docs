@@ -14,7 +14,7 @@ Nesta seção do Horusec, podemos administrar um workspace. Veja abaixo com deta
 
 ![](/docs/ptbr/web/services/manager/home/1-manager-workspace.gif)
 
-### administrando e selecionando um repositório
+### Administrando e selecionando um repositório
 
 Nesta seção do Horusec, podemos administrar um repositório. Veja abaixo com detalhes:
 
