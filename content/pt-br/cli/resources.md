@@ -109,6 +109,7 @@ A seguir, um exemplo de um arquivo de configuração:
   "horusecCliEnableInformationSeverity": false,
   "horusecCliEnableOwaspDependencyCheck": false,
   "horusecCliFalsePositiveHashes": [],
+  "horusecCliLogFilePath": "./tmp",
   "horusecCliFilesOrPathsToIgnore": [
     "*tmp*",
     "**/.vscode/**"
@@ -253,6 +254,7 @@ export HORUSEC_CLI_ENABLE_INFORMATION_SEVERITY="false"
 export HORUSEC_CLI_SHOW_VULNERABILITIES_TYPES="Vulnerability"
 export HORUSEC_CLI_ENABLE_OWASP_DEPENDENCY_CHECK="false"
 export HORUSEC_CLI_ENABLE_SHELLCHECK="false"
+export HORUSEC_CLI_LOG_FILE_PATH="./tmp"
 ```
 
 #### **3. Flags**
@@ -547,6 +549,14 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left">j</td>
             <td style="text-align:left">false</td>
             <td style="text-align:left">Habilita o shellcheck na ferramenta, e procura erros em arquivos sh. Ex: -j.
+</td>
+<tr>
+            <td style="text-align:left">HORUSEC_CLI_LOG_FILE_PATH</td>
+            <td style="text-align:left">horusecCliLogFilePath</td>
+            <td style="text-align:left">log-file-path</td>
+            <td style="text-align:left">l</td>
+            <td style="text-align:left">./tmp/horusec/</td>
+            <td style="text-align:left"> Mudança no caminho do arquivo de log default. 
 </td>
         </tr>
     </tbody>

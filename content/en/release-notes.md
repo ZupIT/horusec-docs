@@ -47,7 +47,10 @@ Add new tool dotnet-cli for C#.
 {{% /release/item %}}
 
 {{% release/item repository="CLI" date="July 2021" %}}
-From now on, shellcheck is not enabled by default. To enable it, use the -j flag.
+Shellcheck is not enabled by default. To enable it, use the -j flag.
+
+Add Nancy dependency check for Golang.
+
 {{% /release/item %}}
 
 {{% release/item repository="Horusec Platform" date="June 2021" %}}
@@ -60,6 +63,18 @@ Add new analysis tools in Horusec-api: **dependency check** and **dotnet-cli**.
 
 {{% /release/item %}}
 
+{{% release/item repository="Horusec Platform" date="July 2021" %}}
+
+Add Nancy support in the analysis API. 
+
+Permissions on the new Manager navigation. 
+
+Repositories' count in the workspace.
+
+New Manager screens: 'Home' and 'User'.
+
+{{% /release/item %}}
+
 {{% release/item type="fix" repository="CLI" date="May 2021" %}}
 Code base restructure.
 
@@ -69,7 +84,7 @@ Analysis correction in the Git history ignoring files inside the `git folder`.
 {{% release/item repository="CLI" date="June 2021" %}}
  Corrections to run tests with data-races.
 
-Fix error: CLI and the pull in the images even with the disable Docker flag activated. 
+Fix error: CLI was trying to pull the images even with the disable Docker flag activated. 
 {{% /release/item  %}}
 
 {{% release/item repository="CLI" date="July 2021" %}}
@@ -94,6 +109,19 @@ Fix URLs in Helm Charts.
 Fix repositories created with workspace token that didn't inherit permissions.
 
 Fix the LDAP authentication, in some cases the repositories were duplicated. 
+
+{{% /release/item  %}}
+
+{{% release/item repository="Horusec-Platform" date="July 2021" %}}
+Fix error in the 'Get' repository and in the workspace when there is LDAP authentication.
+
+Fix LDAP error message and verified other messages.
+
+Fix the 'Get' repository created with workspace token.
+
+Fix repositories created with the workspace's token that didn't inherit permissions.
+
+Fix specific cases in the LDAP authentication, some repositories were duplicated.
 
 {{% /release/item  %}}
 
