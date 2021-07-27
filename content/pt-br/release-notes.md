@@ -47,6 +47,11 @@ Adição da nova ferramenta dotnet-cli para C\#.
 
 {{% release/item repository="CLI" date="Julho 2021" %}}
 Agora o shellcheck não é habilitado por padrão. Para ativar basta passar a flag (-j OU -j=”true”).
+
+Shellcheck não está disponível por default. Para habilitar, use a flag -j.
+
+Adição da Nancy dependency check para Golang.
+
 {{% /release/item %}}
 
 
@@ -56,6 +61,18 @@ Possibilidade de fazer download dos dados do dashboard para arquivos nos formato
 Inclusão de acessibilidade no Horusec-manager.
 
 Adição de novas ferramentas de análise no Horusec-api: : **dependency check** e **dotnet-cli**.
+
+{{% /release/item %}}
+
+{{% release/item repository="Horusec Platform" date="Julho 2021" %}}
+
+Adição de Nancy para suporte na análise de API. 
+
+Permissões na nova navegação do Manager. 
+
+Contagem de repositórios no workspace. 
+
+Novas telas no Manager: 'Página inicial' e 'Usuário'. 
 
 {{% /release/item %}}
 
@@ -94,6 +111,19 @@ Correção do URLs do Helm Charts.
 Correção dos repositórios criados com token de workspace que não herdavam permissões.
 
 Correção na autenticação LDAP, em alguns casos os repositórios estavam sendo duplicados. 
+{{% /release/item  %}}
+
+{{% release/item repository="Horusec-Platform" date="Julho 2021" %}}
+Fix error in the 'Get' repository and in the workspace when there is LDAP authentication.
+
+Correção do erro de mensagem do LDAP e verificação de outras mensagens. 
+
+Correção do repositório 'get' criado com o token do workspace. 
+
+Correção de repositórios criados com toke do workspace que não herdaram permissões. 
+
+Correção de alguns casos específicos na autenticação do LDAP, alguns repositórios estavam duplicados. 
+
 {{% /release/item  %}}
 
 {{% release/item type="chore" repository="Analytic" date="Maio 2021" %}}
