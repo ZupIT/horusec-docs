@@ -116,6 +116,7 @@ See next, an example of a configuration file:
     "horusecCliEnableInformationSeverity": false,
     "horusecCliEnableOwaspDependencyCheck": false,
     "horusecCliFalsePositiveHashes": [],
+    "horusecCliLogFilePath": "./tmp",
     "horusecCliFilesOrPathsToIgnore": 
     [
         "*tmp*",
@@ -272,6 +273,7 @@ export HORUSEC_CLI_CUSTOM_RULES_PATH=""
 export HORUSEC_CLI_ENABLE_INFORMATION_SEVERITY="false"
 export HORUSEC_CLI_ENABLE_OWASP_DEPENDENCY_CHECK="false"
 export HORUSEC_CLI_ENABLE_SHELLCHECK="false"
+export HORUSEC_CLI_LOG_FILE_PATH="./tmp"
 ```
 
 #### **3. Flags**
@@ -293,7 +295,7 @@ On the table below, you can see all the available flags. To see it better, just 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Enviroment variable</th>
+      <th style="text-align:left">Environment variable</th>
       <th style="text-align:left">Configuration file attribute</th>
       <th style="text-align:left">Flag name</th>
       <th style="text-align:left">Short flag name</th>
@@ -317,7 +319,7 @@ On the table below, you can see all the available flags. To see it better, just 
       <td style="text-align:left">ignore-severity</td>
       <td style="text-align:left">s</td>
       <td style="text-align:left">INFO</td>
-      <td style="text-align:left">Esta configuração identifica quais níveis de severidade você deseja ignorar, pode ser entre: CRITICAL, HIGH, MEDIUM, LOW, UNKNOWN, INFO</td>
+      <td style="text-align:left">This configuration identifies which severity level you want to ignore, it can be: CRITICAL, HIGH, MEDIUM, LOW, UNKNOWN, INFO</td>
     </tr>
     <tr>
       <td style="text-align:left">HORUSEC_CLI_PRINT_OUTPUT_TYPE</td>
@@ -604,6 +606,14 @@ On the table below, you can see all the available flags. To see it better, just 
             <td style="text-align:left">j</td>
             <td style="text-align:left">false</td>
             <td style="text-align:left">Enables the shellcheck tool, it checks for errors in sh files. Ex: -j.
+</td>
+<tr>
+            <td style="text-align:left">HORUSEC_CLI_LOG_FILE_PATH</td>
+            <td style="text-align:left">horusecCliLogFilePath</td>
+            <td style="text-align:left">log-file-path</td>
+            <td style="text-align:left">l</td>
+            <td style="text-align:left">./tmp/horusec/</td>
+            <td style="text-align:left">Change the default log file path.
 </td>
     </tr>
   </tbody>
