@@ -124,7 +124,7 @@ The Secrets values informed here are only examples and they are not intended to 
 After finishing all configuration, you can go to the Horusec release page to download the Helm chart, or download and extract the release automatically (Linux or macOS):
 
 ```bash
-export HORUSEC_VERSION=2.15.0
+export HORUSEC_VERSION=2.16.2
 
 curl -fsLo horusec-platform-${HORUSEC_VERSION}.zip https://github.com/ZupIT/horusec-platform/archive/refs/tags/v${HORUSEC_VERSION}.zip
 unzip horusec-platform-${HORUSEC_VERSION}.zip horusec-platform-${HORUSEC_VERSION}/deployments/helm/horusec-platform/*
