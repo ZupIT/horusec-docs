@@ -58,3 +58,7 @@ It allows you to enable the messenger service and use some functionalities, like
 - Send e-mail with a security code to reset the password; 
 - Send e-mail to invite other users to join your workspace;
 - Manage webhooks and get all Horusec-CLI performed analysis. 
+
+
+### Read more
+ [**How to change the authentication type on your web application?**]({{< ref path="/tutorials/how-to-change-the-authentication-type" lang="pt-br">}})

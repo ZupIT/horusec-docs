@@ -106,3 +106,7 @@ Estas são as possíveis váriaveis de ambiente que você pode configurar neste 
 | HORUSEC_DEFAULT_USER_DATA        | {\"username\": \"dev\", \"email\":\"dev@example.com\", \"password\":\"Devpass0*\"} | Quando o usuário padrão está habilitado, precisamos criar um usuário padrão. Não se esqueça de realizar o **escape do json** no valor da variável de ambiente. |
 | HORUSEC_MANAGER_URL              | http://localhost:8043                                            | Valida onde está o link do serviço `horusec-manager` para enviar nos disparos de e-mails |
 | HORUSEC_AUTH_URL                 | http://localhost:8006                                            | Valida onde está o link do serviço `horusec-auth` para enviar nos disparos de e-mails |
+
+
+### Leia mais
+- [**Como habilitar e desabilitar o usuário padrão da aplicação?**]({{< ref path="/tutorials/how-to-enable-disable-default-user" lang="pt-br">}})

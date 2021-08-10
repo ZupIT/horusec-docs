@@ -10,6 +10,21 @@ CLI (short for command line interface) is a program reponsible to process softwa
 
 On the tool context, Horusec-CLI is the part of the code that allows you to run the security analysis commands and vulnerabilities identification and/or classification.
 
+## **How does the analysis work?** 
+ 
+Horusec performs a [**SAST**]({{< ref path="/glossary.md" lang="en">}}) analysis of your project and it just check out the code, it is not necessary to buil or run anything and this makes your analysis quicker. 
+
+All the [**security tools**]({{< ref path="/cli/analysis-tools/security-tools.md" lang="pt-br">}}) has it own output data, so Horusec reads and change it to the right format and then you are able to have data regardless the tools you are using in the analysis.
+
+Horusec-CLI sends the analysis report to the [**Horusec-Platform**](https://github.com/ZupIT/horusec-platform), and in this moment, you can see the vulnerabilities found and they can be grouped by: 
+
+- Repository; 
+- Commit author;
+- Language;
+- Vulnerabilities timeline. 
+
+Right after that, you can [**manage the vulnerabilities**]({{< ref path="/web/services/manager/vulnerabilities-management.md" lang="en">}}) changing the vulnerabilities types by **false positive**, **accepted risk** and others. 
+It is possible to change the severity as well, from the last analysis by repository to **critical**, **medium**, etc. 
 
 ## **How do you perform an analysis?**
 To perform an analysis in your project, [**install Horusec**]({{< ref path="/cli/installation.md" lang="en">}}) in your computer and then run the command below where your project is:
@@ -47,3 +62,8 @@ Another possibility is to put the full directory where your project is. In this 
 ```bash
 horusec start -p /home/user-name/folder-name/file-name
 ```
+
+### Read more
+- [**How to run Horusec in multiple directories?**]({{< ref path="/tutorials/how-to-run-horusec-multiples-directories.md" lang="en">}})
+- [**How to classify a vulnerability?**]({{< ref path="/tutorials/how-to-classify-a-vulnerability.md" lang="en">}})
+- [**How to add custom rules on Horusec-CLI?**]({{< ref path="/tutorials/how-to-adding-custom-rules" lang="en">}})

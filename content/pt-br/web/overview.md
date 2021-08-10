@@ -57,3 +57,7 @@ Permite que você habilite o serviço de menssageria está e, assim, utilize alg
 - Envio de e-mail com código de segurança para reset de senha;
 - Envio de e-mail para convidar outros usuários a fazer parte do seu workspace;
 - Gerenciar webhooks e receber todas as análises realizadas pela Horusec-CLI;
+
+
+### Leia mais
+ [**Como alterar o tipo de autenticação na aplicação web?**]({{< ref path="/tutorials/how-to-change-the-authentication-type" lang="pt-br">}})

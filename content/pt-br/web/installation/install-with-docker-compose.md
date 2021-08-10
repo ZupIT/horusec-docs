@@ -11,6 +11,11 @@ O [**Docker-Compose**](https://docs.docker.com/compose/) é uma ferramenta para 
 
 No caso desta instalação, o objetivo é que você utilize a aplicação web do Horusec vinculado ao seu ambiente usando Docker-Compose.
 
+{{% alert color="warning" %}} 
+Não é recomendado instalar o Horusec utilizando o Docker-Compose em ambientes de produção, para isso [**instale com o Helm**]({{< ref path="/web/installation/install-with-helm.md" lang="pt-br">}}) ou [**com o Operator**]({{< ref path="/web/installation/install-with-operator.md" lang="pt-br">}}). 
+{{% /alert %}} 
+
+
 ## **Requisitos**
 
 Para realizar esta configuração, é necessário ter as seguintes ferramentas em seu ambiente: 
@@ -100,3 +105,8 @@ Hoje o Horusec disponibiliza todas as suas imagens no [**dockerhub**](https://hu
 - HORUSEC_SMTP_HOST: "host do serviço de e-mail";
 - HORUSEC_SMTP_PORT: "porta do serviço de e-mail".
 {{% /alert %}}
+
+
+
+### Read more
+- [**How to use Horusec-CLI without docker?**]({{< ref path="/tutorials/how-to-use-horusec-without-docker" lang="en">}})

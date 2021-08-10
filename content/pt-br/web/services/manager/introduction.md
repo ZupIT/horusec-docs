@@ -76,3 +76,6 @@ No Horusec, você pode fazer diversos tipos de gerenciamento. Veja abaixo mais d
 ![](/docs/ptbr/web/services/manager/introduction/4-dashboard-repository.gif)
 {{% /tab %}}
 {{< /tabs >}}
+
+### Leia mais
+- [**Como gerar um token de autorização?**]({{< ref path="/tutorials/how-to-create-an-authorization-token" lang="pt-br">}})
