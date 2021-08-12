@@ -140,3 +140,12 @@ The `dotnet list package` command is an option to list all the NuGet's packages 
 ### **Nancy**
 
 [**Nancy**](https://github.com/sonatype-nexus-community/nancy) is a tool to verify vulnerabilities and its Golang's dependencies. 
+
+
+### **Trivy**
+
+[**Trivy**](https://aquasecurity.github.io/trivy/v0.19.2/) is a simple and comprehensive vulnerability/misconfiguration scanner for containers and other artifacts. A software vulnerability is a glitch or a weakness present in the software or in an Operating System. Trivy detects vulnerabilities of OS packages (Alpine, RHEL, CentOS, etc.) and language-specific packages (Bundler, Composer, npm, yarn, etc.). Trivy also scans Infrastructure as Code (IaC) files such as Terraform and Kubernetes, to detect potential configuration issues that expose your deployments to the risk of attack. 
+
+### **Checkov**
+
+[**Checkov**](https://github.com/bridgecrewio/checkov)  is a static code analysis tool for infrastructure-as-code. It scans cloud infrastructure provisioned using Terraform, Terraform plan, Cloudformation, Kubernetes, Dockerfile, Serverless or ARM Templates and detects security and compliance misconfigurations using graph-based scanning. Checkov also powers Bridgecrew, the developer-first platform that codifies and streamlines cloud security throughout the development lifecycle. Bridgecrew identifies, fixes, and prevents misconfigurations in cloud resources and infrastructure-as-code files.

@@ -53,6 +53,17 @@ Add Nancy dependency check for Golang.
 
 {{% /release/item %}}
 
+{{% release/item repository="CLI" date="August 2021" %}}
+Feature/output txt.
+
+Add new tool Trivy. 
+
+New  Horusec-Engine > Javascript rules.
+
+Add new tool Checkov as HCL analyzer.
+
+{{% /release/item %}}
+
 {{% release/item repository="Horusec Platform" date="June 2021" %}}
 Data download of the dashboard in: PDF, XLS, XML, CSV, PNG, JSON.
 
@@ -75,6 +86,12 @@ New Manager screens: 'Home' and 'User'.
 
 {{% /release/item %}}
 
+{{% release/item repository="Horusec Platform" date="August 2021" %}}
+
+Create automatic Continuous Deployment for release and deploy new images on DockerHub.
+
+{{% /release/item %}}
+
 {{% release/item type="fix" repository="CLI" date="May 2021" %}}
 Code base restructure.
 
@@ -89,6 +106,12 @@ Fix error: CLI was trying to pull the images even with the disable Docker flag a
 
 {{% release/item repository="CLI" date="July 2021" %}}
 Fix error in the shellcheck output parse. 
+{{% /release/item  %}}
+
+{{% release/item repository="CLI" date="August 2021" %}}
+Remove unnecessary paths Horusec ignored. 
+
+Remove duplicated vulnerabilities from yarn audit. 
 {{% /release/item  %}}
 
 {{% release/item repository="VSCODE" date="May 2021" %}}
@@ -122,6 +145,15 @@ Fix the 'Get' repository created with workspace token.
 Fix repositories created with the workspace's token that didn't inherit permissions.
 
 Fix specific cases in the LDAP authentication, some repositories were duplicated.
+
+{{% /release/item  %}}
+
+{{% release/item repository="Horusec-Platform" date="August 2021" %}}
+Fix readme gifs.
+
+Fix the automation of the release processes.
+
+Fix the admin application.
 
 {{% /release/item  %}}
 
@@ -176,6 +208,21 @@ Add CWE links in all descriptions of Swift rules.
 
 {{% /release/item  %}}
 
+{{% release/item repository="CLI" date="August 2021" %}}
+Build binaries for platforms and draft a GitHub release.
+
+Move tfsec formatter to match the architecture standards.
+
+Tests: refactor end-to-end tests. 
+
+Tests: fix vulnerabilities on Javascript.
+
+Remove unused constants.
+
+Normalize interfaces to follow Go standards.
+
+{{% /release/item  %}}
+
 {{% release/item repository="plugin VSCode" date="June 2021" %}}
 Support for Horusec-CLI's [**lastest available version**](https://github.com/ZupIT/horusec-vscode-plugin ). 
 {{% /release/item  %}}
@@ -196,7 +243,15 @@ Change to use the enums from devkit to setup use cases of min. and max. length.
 Improvement when updating a vulnerability.
 {{% /release/item  %}}
 
-  {{% release/item type="docs" repository="CLI" date="June 2021" %}}
+{{% release/item repository="Horusec-Platform" date="August 2021" %}}
+Update how to invite users in a workspace or repository.
+
+Improve the invitation user flow.
+
+{{% /release/item  %}}
+
+
+{{% release/item type="docs" repository="CLI" date="June 2021" %}}
   Install with Operator.
 
   Install with Horusec-Admin.
