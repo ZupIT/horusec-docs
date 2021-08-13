@@ -52,7 +52,7 @@ Veja abaixo quais são as linguagens, as ferramentas de análise e qual a versã
 | Java |[**HorusecJava**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-java.md" lang="pt-br">}}), [**Owasp Dependency Check**](https://github.com/jeremylong/DependencyCheck) (v2.2), [**Semgrep**](https://github.com/returntocorp/semgrep) e [**Trivy**](https://aquasecurity.github.io/trivy/v0.19.2/). |   v2.0
 | Kotlin | [**HorusecKotlin**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-kotlin.md" lang="pt-br">}}) | v2.0
 | Kubernetes | [**HorusecKubernetes**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-kubernetes.md" lang="pt-br">}})| 2.0
-| Terraform |[**Tfsec**](https://github.com/liamg/tfsec) | v2.0
+| Terraform |[**Tfsec**](https://github.com/liamg/tfsec) e [**Checkov**](https://github.com/bridgecrewio/checkov). | v2.0
 | Leaks |[**HorusecLeaks**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-leaks.md" lang="pt-br">}}) | v2.0
 | Leaks \(análise opcional no histórico git\) |[**GitLeaks**](https://github.com/zricethezav/gitleaks)| v2.0
 | PHP |[**Semgrep**](https://github.com/returntocorp/semgrep), [**PHP Code Scan**](https://github.com/FloeDesignTechnologies/phpcs-security-audit) e [**Trivy**](https://aquasecurity.github.io/trivy/v0.19.2/). | v2.0
