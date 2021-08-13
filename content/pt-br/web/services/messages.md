@@ -66,3 +66,7 @@ Estas são as possíveis váriaveis de ambiente que você pode configurar neste 
 | Confirmação de e-mail     | E-mail usado para confirmação pelo e-mail do usuário.                        |
 | Resetar a senha           | Um e-mail que permite ao usuário redefinir sua própria senha.                  |
 | Convidar para o workspace | Um e-mail para informar o usuário que ele foi convidado para uma organização. |
+
+
+### Leia mais
+- [**Como habilitar e desabilitar o serviço de emails?**]({{< ref path="/tutorials/how-to-enable-disable-messaging-service" lang="pt-br">}})

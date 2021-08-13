@@ -67,3 +67,7 @@ These are the environment variables you can configure in this service:
 |  E-mail confirmation   | User confirmation e-mail.                     |
 | Reset password           | An e-mail that allows the user to redefine the password.                   |
 | Invite for the workspace | An e-mail to inform the user the invitation for an organization. |
+
+
+### Read more
+- [**How to enable and disable the messaging service?**]({{< ref path="/tutorials/how-to-enable-disable-messaging-service" lang="en">}})

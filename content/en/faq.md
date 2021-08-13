@@ -63,3 +63,29 @@ To do that, follow the **Example 5: Using to get sonarqube exit** in the [**Reso
 ### **11. How can I import Horusec's output inside SonarQube?**  
 
 Check out question 10 [**"How can I export Horusec's output into a file?"**]({{< ref path="faq.md#10-how-can-i-export-horusecs-output-into-a-file" lang="en" >}}) and after that, import the generated file in you Sonarqube interface using [**this tutorial**](https://docs.sonarqube.org/latest/analysis/generic-issue/).
+
+### **12. Horusec identify which languages the project have? If yes, can I ignore a specific language to run in my project?**  
+ Yes, Horusec identifies the languages your projects has and it makes an analysis based in the [**languages it supports**]({{< ref path="/cli/analysis-tools/overview.md" lang="en">}}). It is possible to ignore the languages/tools you want to run in the analysis in Horusec's configuration. 
+
+### **13.  Horusec builds a project in each analysis?**  
+No, Horusec performs [**SAST**]{{< ref path="/glossary.md" lang="en">}}) analysis and just check the code.
+
+### **14. Horusec has some different resource in other analysis tools?**  
+Yes, Horusec:
+- Identifies how many resources are available in your machine; 
+- It scales the amount of tools it runs simultaneously to deliver results faster.
+
+### **15. Does Horusec deliver your web application in a SAAS format?**  
+No, to use Horusec in your application it is necessary to upload in your environment control.
+
+### **16. When Horusec-CLI sends the reports to the server, does it show the last analysis?** 
+You can see a dashboard with the vulnerabilities by repository, commit author, language or a timeline. 
+
+### **17. Does the analysis made by Horusec-CLI have some kind of cache to know if the file has been changed?**  
+No, each Horusec's analysis reads all the necessary files. It does that without cache or a validation if a file was changed or not. 
+
+### **18. If an analysis is performed using some market tool, like GoSec, is there a type of pattern in the analysis' output?** 
+Yes, all the market tools have its own data output. Horusec reads and puts it in the right format, after that, you are able to have data regardless the tools you are using in the analysis.
+
+### **19. Is it possible to contribute to the project with a tool I already know?** 
+Yes, check out the tutorial to add [**tool you want in Horusec**]({{< ref path="/cli/analysis-tools/security-tools.md" lang="en">}}), you can use Horusec's analysis engine or an existing tool. 

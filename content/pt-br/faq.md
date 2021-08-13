@@ -72,3 +72,32 @@ Para fazer isso, siga o [**Exemplo 5: Usando para obter uma saída sonarqube na 
 ### **11. Como importar o output do Horusec dentro do SonarQube?**  
 
 Veja a pergunta 10 [**"Como exportar o output do Horusec no Sonarqube"**]({{< ref path="/faq.md#10-como-exportar-o-output-do-horusec-em-arquivo" lang="pt-br">}}) e depois [**importe o arquivo gerado dentro da sua interface do Sonarqube usando este tutorial**](https://docs.sonarqube.org/latest/analysis/generic-issue/).
+
+
+### **12. O Horusec identifica quais as linguagens o projeto tem? Se sim, posso ignorar uma linguagem específica para rodar no meu projeto?**  
+ Sim, o Horusec identifica as linguagens que o seu projeto tem e faz uma análise baseado nas [**linguagens que ele tem suporte**]({{< ref path="/cli/analysis-tools/overview.md" lang="pt-br">}}). É possível ignorar as linguagens/ferramentas que você quer que rodar na análise na configuração do Horusec.
+
+
+### **13.  O Horusec realiza o build do projeto em cada análise?**  
+Não, o Horusec realiza análises em [**SAST**]{{< ref path="/glossary.md" lang="pt-br">}}) e olha apenas código. 
+
+### **14. Horusec possui algum recurso diferente de outras ferramentas de análises?**  
+Sim, o Horusec:
+- Identifica a quantidade de recursos disponíveis na sua máquina;
+- Escala a quantidade de ferramentas que rodam simultaneamente para entregar os resultados com mais rapidez. 
+
+### **15. O Horusec entrega a sua aplicação web em um formato SAAS?**  
+Não, para usar o Horusec na sua aplicação web, é necessário subir em seu ambiente de controle.
+
+### **16. Quando a Horusec-CLI envia os relatórios para o servidor, a última análise feita é mostrada?** 
+Você consegue ver no dashboard um agrupamento de vulnerabilidades por repositório, autor de commit, linguagem ou uma linha do tempo. 
+
+### **17. As análises realizadas pela Horusec-CLI possuem algum tipo de cache para saber se o arquivo foi modificado?**  
+Não, cada análise do Horusec faz a leitura de todos os arquivos necessários. Ele faz isso sem cache ou validação se um arquivo foi modificado ou não. 
+
+### **18. Se uma análise for realizada usando alguma ferramenta de mercado como o GoSec, por exemplo, existe algum tipo de padronização para o output da análise?** 
+Sim, todas as ferramentas de mercado tem a sua própria saída de dados. O Horusec faz a leitura e padroniza no formato ideal e com isso, você pode ter um dado centralizado independente das ferramentas que está utilizando na análise.
+
+### **19. É possível contribuir para o projeto com uma ferramenta que já conheço?** 
+Sim, veja o tutorial para adicionar a [**ferramenta que você deseja no Horusec**]({{< ref path="/cli/analysis-tools/security-tools.md" lang="pt-br">}}), você pode usar o motor de análise do Horusec ou  uma ferramenta de mercado já existente.
+

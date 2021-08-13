@@ -104,3 +104,8 @@ These are the environment variables you can configure in this service:
 | HORUSEC_APPLICATION_ADMIN_DATA   | {\"username\": \"horusec-admin\", \"email\":\"horusec-admin@example.com\", \"password\":\"Devpass0*\"} | When the application admin is enabled, you need to create a default `application admin` user. Don't forget to perform the **json leakage** on the environment variable value.|
 | HORUSEC_MANAGER_URL              | http://localhost:8043                                            | This environment variable gets where horusec-manager service link is to send on the e-mail triggers. |
  HORUSEC_AUTH_URL              | http://localhost:8006                                         | This environment variable gets the service's URL Horusec-Auth. It is used when is necessary to confirm the user's email, recently created in the platform. 
+
+
+
+### Read more
+- [**How to enable and disable the default user in the application?**]({{< ref path="/tutorials/how-to-enable-disable-default-user" lang="en">}})
