@@ -116,3 +116,8 @@ On Horusec, you have a variety of management types. Check below more information
 ![](/docs/ptbr/web/services/manager/introduction/4-dashboard-repository.gif)
 {{% /tab %}}
 {{< /tabs >}}
+
+
+
+### Read more
+- [**How to create an authorization token?**]({{< ref path="/tutorials/how-to-create-an-authorization-token" lang="en">}})

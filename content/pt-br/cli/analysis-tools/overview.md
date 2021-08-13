@@ -8,6 +8,34 @@ description: >-
 
 ---
 
+## Visão Geral 
+
+O Horusec identifica as linguagens do seu projeto e a partir disso começa uma análise. Você também pode configurar em qual linguagem/ferramenta você quer que sua análise seja feita, acesse as configurações.
+
+
+O Horusec sabe a quantidade de recursos disponível em sua máquina para realizar a análise na sua esteira CI/CD e por isso ele escala uma quantidade de ferramentas que rodam simultaneamente, isso ajuda a entrega de resultados com mais agilidade.
+
+{{% alert color="info" %}}
+Se você quiser adicionar uma ferramenta no Horusec usando o motor de análise ou outra ferramenta já existente no mercado, acesse o tutorial [**Como adicionar uma nova ferramenta usando o Horusec-engine?**]({{< ref path="/tutorials/how-to-add-tools-using-horusec-engine.md" lang="pt-br">}})
+{{% /alert %}}
+
+
+## **Ferramentas Horusec**
+A versão da CLI corresponde a versão das ferramentas criadas pelo time do Horusec. Veja abaixo: 
+
+| **Ferramenta** | **Versão** |
+| :--- | :--- |
+| Horusec-Leaks |v2.3.0 |
+| Horusec-Java |v2.3.0  | 
+| Horusec Kotlin |v2.3.0 |
+| Horusec-Kubernetes |v2.3.0| 
+| Horusec-NodeJS |v2.3.0 |
+| Horusec-CSharp |v2.3.0| 
+| Horusec Dart |v2.3.0|
+| Horusec Nginx |v2.3.0| 
+| Horusec Swift |v2.3.0| 
+
+
 ## **Linguagens de programação e ferramentas disponíveis**
 
 Atualmente, o Horusec seleciona as linguagens e ferramentas a serem utilizadas no projeto de acordo com a stack disponível.
@@ -36,4 +64,10 @@ Veja abaixo quais são as linguagens, as ferramentas de análise e qual a versã
 | Elixir |[**Mix Audit**](https://github.com/mirego/mix_audit) e [**Sobelow**](https://github.com/nccgroup/sobelow) | v2.0
 | Nginx |[**HorusecNginx**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-nginx.md" lang="pt-br">}})| v2.0
 | Swift |[**HorusecSwift**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-swift.md" lang="pt-br">}}) | v2.1
-|   
+|
+
+
+### Leia mais
+- [**Como adicionar uma nova ferramenta usando Horusec-engine?**]({{< ref path="/tutorials/how-to-add-tools-using-horusec-engine.md" lang="pt-br">}})
+- [**Como adicionar uma nova ferramenta de segurança ao Horusec?**]({{< ref path="/tutorials/how-to-add-security-tools-to-horusec.md" lang="pt-br">}})
+ - [**Como adicionar regras personalizadas na Horusec-CLI?**]({{< ref path="/tutorials/how-to-adding-custom-rules" lang="pt-br">}})

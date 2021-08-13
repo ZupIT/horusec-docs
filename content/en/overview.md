@@ -8,25 +8,21 @@ description: >-
 
 ---
 
-![](/docs/ptbr/overview/0-horusec-logo.png)
-
+## **What is Horusec?** 
 
 Horusec is an open source tool that orchestrates other security tools and identifies security flaws or vulnerabilities in projects and put all results in a database for analysis and generation of metrics.
 
 Horusec chooses the languages and tools to be used in the project according to the available stack. **[Check out all the supported languages and available tools]({{< ref path="/cli/analysis-tools/overview.md" lang="en" >}})**.
 
-## **Where can you use Horusec?**
-### **Locally**
-Horusec has an intuitive CLI, made for developers where is possible to perform local analysis. 
-
-### **CI/CD pipeline**
-It is possible to add Horusec to the `Continuous Integration` or `Continuous Deploy` pipeline, ensuring one more security layer in your project, besides preventing a malicious code to enter in production. 
-
-### **IDE extensions**
-IDE means Integrated Development Environment and it's very common to use plugins and extensions to help the development. Horusec comes to help you deliver with velocity, it is possible to perform analysis through extensions.
-
-
 ## **How does Horusec work?**
+
+Horusec performs a [**SAST**]({{< ref path="/glossary.md" lang="en">}}) analysis of your project from the code perspective. 
+
+The tool uses:
+- [**Horusec-CLI**]({{< ref path="/cli/overview.md" lang="en">}}) when you run the commands performs security
+analysis and the [**vulnerabilities identification and classification**]({{< ref path="/web/services/vulnerability.md" lang="en">}}). 
+- [**Web application**]({{< ref path="/web/overview.md" lang="pt-br">}}) is the CLI extensions used to manage and classify the vulnerabilities found in your application. 
+See the structure in the image below:  
 
 <img style="width:100%" src="/docs/en/overview/1-arquitecture.png">
 
@@ -58,6 +54,31 @@ When Horusec starts an analysis, it follows the steps below:
 </video>
 
 
+## **Horusec analysis' types**
+
+Horusec performs 3 types of analysis to identify if there are any security flaws:
+
+**1. SAST \(Static Application Security Testing\)**
+- The SAST does static code vulnerability analysis. They can be done in source code, byte code or binary.
+
+**2. Leaks**
+- The "Leaks checks the source code for possible leaks of credentials, private keys or hard coded passwords.
+
+**3.  Dependency audit** 
+- You analyze the project's dependencies to check for vulnerabilities in third-party libraries. 
+
+
+## **Where can you use Horusec?**
+### **Locally**
+Horusec has an intuitive CLI, made for developers where is possible to perform local analysis. 
+
+### **CI/CD pipeline**
+It is possible to add Horusec to the `Continuous Integration` or `Continuous Deploy` pipeline, ensuring one more security layer in your project, besides preventing a malicious code to enter in production. 
+
+### **IDE extensions**
+ It is common to use IDE (Integrated Development Environment) to use plugins and extensions to help you in the development. It is possible to perform analysis through extensions with Horusec. 
+
+
 ## **Why should you use Horusec?**
 
 **It promotes the culture of secure development by applying the logic of “security by design”** 
@@ -68,15 +89,15 @@ It brings you security, ensuring that possible unknown vulnerabilities will be f
 
 It ensures the safety of projects in the CI and CD process and it reduces the costs of correcting a vulnerability.
 
-## **Horusec analysis' types**
 
-Horusec performs 3 types of analysis to identify if there are any security flaws:
+## **Next steps**
 
-1. **SAST \(Static Application Security Testing\)**
-   The SAST does static code vulnerability analysis. They can be done in source code, byte code or binary.
+Install Horusec: 
 
-2. **Leaks**
-   The "Leaks checks the source code for possible leaks of credentials, private keys or hard coded passwords.
+**CLI**
+- [**Horusec-CLI**]({{< ref path="/cli/installation.md" lang="pt-br">}})
 
-3.  **Dependency audit** You analyze the project's dependencies to check for vulnerabilities in third-party libraries.   in third-party libraries.
-
+**Web application**
+- [**Install with Docker-Compose**]({{< ref path="/web/installation/install-with-docker-compose.md" lang="pt-br">}})
+- [**Install with Helm**]({{< ref path="/web/installation/install-with-helm.md" lang="pt-br">}})
+- [**Install with Operator**]({{< ref path="/web/installation/install-with-operator.md" lang="pt-br">}})
