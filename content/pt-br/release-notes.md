@@ -54,6 +54,16 @@ Adição da Nancy dependency check para Golang.
 
 {{% /release/item %}}
 
+{{% release/item repository="CLI" date="Agosto 2021" %}}
+Novo feature/output do txt.
+
+Adição da nova ferramenta Trivy. 
+
+Nova regras para Horusec-Engine > Javascript.
+
+Adição da nova ferramenta Checkov como analizador HCL.
+
+{{% /release/item %}}
 
 {{% release/item repository="platform" date="Junho 2021" %}}
 Possibilidade de fazer download dos dados do dashboard para arquivos nos formatos PDF, XLS, XML, CSV, PNG, JSON
@@ -76,6 +86,12 @@ Novas telas no Manager: 'Página inicial' e 'Usuário'.
 
 {{% /release/item %}}
 
+{{% release/item repository="Horusec Platform" date="Agosto 2021" %}}
+
+Criação do Continuous Deployment automático para a release e deploy de novas imagens no DockerHub.
+
+{{% /release/item %}}
+
 {{% release/item type="fix" repository="CLI" date="MAIO 2021" %}}
 Reestruturação da base do código.
 
@@ -91,6 +107,12 @@ Correção do erro: CLI e o pull nas imagens mesmo com a flag de desabilitar Doc
 
 {{% release/item repository="CLI" date="Julho 2021" %}}
 Correção na formatação do output do shellcheck.
+{{% /release/item  %}}
+
+{{% release/item repository="CLI" date="Agosto 2021" %}}
+Remoção de paths desnecessários e ignorados pelo Horusec. 
+
+Remoção de vulnerabilidades duplicadas do yarn audit. 
 {{% /release/item  %}}
 
 {{% release/item repository="VSCODE" date="Maio 2021" %}}
@@ -123,6 +145,15 @@ Correção do repositório 'get' criado com o token do workspace.
 Correção de repositórios criados com toke do workspace que não herdaram permissões. 
 
 Correção de alguns casos específicos na autenticação do LDAP, alguns repositórios estavam duplicados. 
+
+{{% /release/item  %}}
+
+{{% release/item repository="Horusec-Platform" date="Agosto 2021" %}}
+Correção dos gifs no readme.
+
+Correção da automação dos processos de release.
+
+Correção da aplicação admin.
 
 {{% /release/item  %}}
 
@@ -173,6 +204,21 @@ Adição de links CWE em todas as descrições das regras de Swift.
 
 {{% /release/item  %}}
 
+{{% release/item repository="CLI" date="Agosto 2021" %}}
+Compilar os binários para plataformas e rascunhos na release do Github.
+
+Mover o tfsec formatter para ser compatível com os padrões de arquitetura. 
+
+Testes: refatoração de testes end-to-end. 
+
+Testes: correção de vulnerabilidades no Javascript.
+
+Remoção de constantes não usadas. 
+
+Normalização de interfaces para seguir o padrão Go.
+
+{{% /release/item  %}}
+
 {{% release/item repository="Platform" date="Junho 2021" %}}
 
 Melhoria na responsividade do Horusec-Manager.
@@ -187,6 +233,13 @@ Padronização dos nomes das variavéis de ambiente no Horusec-Manager.
 Mudança do uso de enums para devkit para configurar os casos de uso de tamanho min. e max. 
 
 Melhoria na performance ao atualizar uma vulnerabilidade.
+{{% /release/item  %}}
+
+{{% release/item repository="Horusec-Platform" date="Agosto 2021" %}}
+Atualização de como convidar usuários no workspace e no repositório. 
+
+Melhoria no fluxo de convite de usuários.
+
 {{% /release/item  %}}
 
 {{% release/item repository="VSCode" date="Junho 2021" %}}
