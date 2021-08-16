@@ -6,6 +6,34 @@ description: >-
  In this section, you will find more information about what kind of tools Horusec-CLI uses in the analysis. 
 ---
 
+## Overview 
+
+Horusec identifies the languages in your project and from that starts an analysis. You can also configure which language/tool you want to perform in your analysis, just change it in the configuration.
+
+Horusec knows the resources available in your machine to perform an analysis in your CI/CD stack, and because of that it scales the amount of tools it runs simultaneously to deliver quicker results.
+
+{{% alert color="info" %}}
+If you want to add a tool in Horusec using the analysis engine already existing the market, access the tutorial [**How to add tools using Horusec-engine?**]({{< ref path="/tutorials/how-to-add-tools-using-horusec-engine.md" lang="en">}})
+{{% /alert %}}
+
+
+## **Horusec's tools**
+CLI's version corresponds to the tools' version created by Horusec's team.
+
+See below: 
+
+| **Tools** | **Version** |
+| :--- | :--- |
+| Horusec-Leaks |v2.3.0 |
+| Horusec-Java |v2.3.0  | 
+| Horusec Kotlin |v2.3.0 |
+| Horusec-Kubernetes |v2.3.0| 
+| Horusec-NodeJS |v2.3.0 |
+| Horusec-CSharp |v2.3.0| 
+| Horusec Dart |v2.3.0|
+| Horusec Nginx |v2.3.0| 
+| Horusec Swift |v2.3.0| 
+
 
 ## **Available programming languages and tools** 
 
@@ -36,3 +64,8 @@ See below these languages, the analysis tools and which version they are availab
 | Nginx |[**HorusecNginx**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-nginx.md" lang="en">}})| v2.0
 | Swift |[**HorusecSwift**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-swift.md" lang="en">}})| v2.1
 |
+
+
+### Read more
+- [**How to add tools using Horusec-engine?**]({{< ref path="/tutorials/how-to-add-tools-using-horusec-engine.md" lang="en">}})
+- [**How to add security tools to Horusec?**]({{< ref path="/tutorials/how-to-add-security-tools-to-horusec.md" lang="en">}})
