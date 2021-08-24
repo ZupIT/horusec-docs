@@ -85,7 +85,7 @@ With this configuration:
 
 * It is possible to disable/enable a tool when you start an analysis changing the **`istoignore`** key;
 
-* It is possible to use a image of your own registry. See the [**list of all languages and your deployments**](https://github.com/ZupIT/horusec/tree/master/horusec-cli/internal/services/formatters) that you can use and upload on your private registry. To change it, put the link that would be used to download the registry's image on the respective **`language`**.
+* It is possible to use a image of your own registry. See the [**list of all languages and your deployments**](https://github.com/ZupIT/horusec/tree/main/internal/services/formatters) that you can use and upload on your private registry. To change it, put the link that would be used to download the registry's image on the respective **`language`**.
 
 * The languages that use only the **own Horusec's engine** to run natively, so it doesn't need to be changed on your registry, because they already inside of Horusec-CLI.
 

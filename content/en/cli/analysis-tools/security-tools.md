@@ -34,7 +34,7 @@ If you want to know more about Gosec criteria, access the [**rules list**](https
 
 [**GitLeaks**](https://github.com/zricethezav/gitleaks) is a  [**SAST**](../../../../../../key-concepts#sast-static-application-security-testing) tool to dectect encrypted code like passwords, API keys and tokens in all git repository history. 
 
-If you want to know more about GitLeaks criteria, access the [**rules list**](https://github.com/ZupIT/horusec/blob/master/deployments/dockerfiles/gitleaks/rules.toml) that the tool applies in its analysis. 
+If you want to know more about GitLeaks criteria, access the [**rules list**](https://github.com/ZupIT/horusec/blob/main/deployments/dockerfiles/gitleaks/rules.toml) that the tool applies in its analysis. 
 
 ### NpmAudit
 

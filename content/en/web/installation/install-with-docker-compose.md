@@ -28,7 +28,7 @@ There is a **configuration file** on Horusec with all the default option for you
 This file can only be used for a testing scenario, never the production one.
 {{% /alert %}}
 
-- You can get the [**configuration file**](https://github.com/ZupIT/horusec-platform/blob/master/deployments/compose/compose.yaml) on Horusec's repository.
+- You can get the [**configuration file**](https://github.com/ZupIT/horusec-platform/blob/main/deployments/compose/compose.yaml) on Horusec's repository.
 
 Follow the next steps to configure:
 1. Clone the repository;
@@ -90,7 +90,7 @@ Horusec's images are available on [**dockerhub**](https://hub.docker.com/u/horus
 ## **Reminders**
 
 {{% alert color="warning" %}}
-1. All these configurations available on Horusec's [**docker-compose.yaml**](https://github.com/ZupIT/horusec-platform/blob/master/deployments/compose/compose.yaml) are default. It's recommended to change some information (like the user and database password) when using this service in a production environment.
+1. All these configurations available on Horusec's [**docker-compose.yaml**](https://github.com/ZupIT/horusec-platform/blob/main/deployments/compose/compose.yaml) are default. It's recommended to change some information (like the user and database password) when using this service in a production environment.
 
 
 

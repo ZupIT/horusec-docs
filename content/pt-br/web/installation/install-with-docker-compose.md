@@ -34,7 +34,7 @@ Esse arquivo deve ser usado para cenário de testes, nunca de produção.
 {{% /alert %}}
 
 
-Você pode obter o [**arquivo de configuração**](https://github.com/ZupIT/horusec-platform/blob/master/deployments/compose/compose.yaml) no repositório do Horusec:
+Você pode obter o [**arquivo de configuração**](https://github.com/ZupIT/horusec-platform/blob/main/deployments/compose/compose.yaml) no repositório do Horusec:
 
 1. Clone o repositório do Horusec em seu ambiente;
 2. Acesse a pasta onde clonou o repositório
@@ -91,7 +91,7 @@ Hoje o Horusec disponibiliza todas as suas imagens no [**dockerhub**](https://hu
 ## **Avisos importantes**
 
 {{% alert color="warning" %}}
-1. Todas as configurações que o Horusec disponibiliza em seu [**docker-compose.yaml**](https://github.com/ZupIT/horusec-platform/blob/master/deployments/compose/compose.yaml) são padrões, assim como seus dados. Por isso, é recomendado que você altere algumas informações (como usuário e senha de banco de dados) ao utilizar esse serviço em um ambiente de produção.
+1. Todas as configurações que o Horusec disponibiliza em seu [**docker-compose.yaml**](https://github.com/ZupIT/horusec-platform/blob/main/deployments/compose/compose.yaml) são padrões, assim como seus dados. Por isso, é recomendado que você altere algumas informações (como usuário e senha de banco de dados) ao utilizar esse serviço em um ambiente de produção.
 
 
 2. O Horusec está sempre em atualização e correção de imagens. Para saber qual imagem utilizar em cada versão específica, acesse nossas [**release-notes**](https://github.com/ZupIT/horusec-platform/releases) as versões corretas de cada serviço

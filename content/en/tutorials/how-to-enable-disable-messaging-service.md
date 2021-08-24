@@ -49,7 +49,7 @@ When the microservices have the `HORUSEC_DISABLED_EMAILS` environment variable w
 
 By default, the microservices below already start with a **false** value:
 
-- [**horusec-Auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth)
+- [**horusec-Auth**](https://github.com/ZupIT/horusec-platform/tree/main/auth)
 
 If the `HORUSEC_DISABLED_EMAILS` microservice value is **true**, the messaging service will be disabled. 
 To enable it, it's only necessary to change the value to **false**. 

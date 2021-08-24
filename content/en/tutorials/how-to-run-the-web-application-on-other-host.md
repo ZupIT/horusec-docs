@@ -31,7 +31,7 @@ To do so:
 
 **Example using docker-compose**
 
-When you use the `make install` command, it runs the [**docker-compose.yaml**](https://github.com/ZupIT/horusec/blob/master/deployments/docker-compose.yaml) Horusec's default. 
+When you use the `make install` command, it runs the [**docker-compose.yaml**](https://github.com/ZupIT/horusec/blob/main/deployments/docker-compose.yaml) Horusec's default. 
 The Horusec-Manager is being executed with the following configuration: 
 
 ```yaml

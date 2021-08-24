@@ -34,7 +34,7 @@ Confira, a seguir, o comando necessário para instalar o Horusec localmente de a
 Para instalar o Horusec nos sistemas MacOS ou Linux, basta rodar o comando abaixo no seu terminal:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/scripts/install.sh | bash -s latest
+curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest
 ```
 
 ### Windows
@@ -62,7 +62,7 @@ Caso você precise fazer o download para uma versão e/ou sistema operacional es
 
 👉[**A última versão disponível**](https://github.com/ZupIT/horusec/releases/latest)
 
-👉[**Todas as versões disponíveis** ](https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/all-version-cli.txt)
+👉[**Todas as versões disponíveis** ](https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/all-version-cli.txt)
 
 {{% /alert %}}
 
@@ -90,7 +90,7 @@ Caso queira uma versão específica, basta trocar a palavra `latest` no link pel
 
 👉[**A última versão disponível**](https://github.com/ZupIT/horusec/releases/latest)
 
-👉[**Todas as versões disponíveis** ](https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/all-version-cli.txt)
+👉[**Todas as versões disponíveis** ](https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/all-version-cli.txt)
 
 
 ## **Instalação via Imagem Docker**
@@ -134,7 +134,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Running Horusec Security
       run: |
-        curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/scripts/install.sh | bash -s latest
+        curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest
         horusec start -p="./" -e="true"
 ```
 
@@ -182,7 +182,7 @@ jobs:
       - run:
           name: Horusec Security Test
           command: |
-            curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/scripts/install.sh | bash -s latest
+            curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest
             horusec start -p="./" -e="true"
 workflows:
   pipeline:
@@ -199,7 +199,7 @@ stages {
                 docker { image 'docker:dind' }
             }
             steps {
-                sh 'curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/scripts/install.sh | bash -s latest'
+                sh 'curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest'
                 sh 'horusec start -p="./" -e="true"'
             }
         }
@@ -213,7 +213,7 @@ pool:
   vmImage: 'ubuntu-18.04'
 
 steps:
-- script: curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/scripts/install.sh | bash -s latest && horusec start -p ./
+- script: curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest && horusec start -p ./
 ```
 
 ### GitLab CI/CD

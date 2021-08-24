@@ -87,7 +87,7 @@ Com essa configuração:
 
 * É possível desabilitar/habilitar uma ferramenta quando você inicia uma análise alterando a chave **`istoignore`**;
 
-* É possível utilizar a imagem do seu próprio registro. Veja a [**lista de todos as linguagens e seus deployments**](https://github.com/ZupIT/horusec/tree/master/horusec-cli/internal/services/formatters) que você pode utilizar e subir no seu registro privado. 
+* É possível utilizar a imagem do seu próprio registro. Veja a [**lista de todos as linguagens e seus deployments**](https://github.com/ZupIT/horusec/tree/main/internal/services/formatters) que você pode utilizar e subir no seu registro privado. 
 Para alterar, coloque o link que seria utilizado para realizar download da imagem deste registro da sua respectiva **`linguagem`**.
 
 * As linguagem que utilizam somente o **próprio motor do Horusec** rodam de forma nativa, então não precisam ser alteradas em seu registro, porque já estão dentro da Horusec-CLI.

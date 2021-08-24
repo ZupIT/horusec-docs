@@ -38,7 +38,7 @@ O [**Gosec**](https://github.com/securego/gosec) é uma ferramenta que inspecion
 
 ### **GitLeaks**
 
-O [**GitLeaks**](https://github.com/zricethezav/gitleaks) é uma ferramenta [**SAST**](../../../../key-concepts/#sast-static-application-security-testing) para detectar segredos codificados como senhas, chaves de API e tokens em todo o histórico dos repositórios git. Para entender melhor os critérios do GitLeaks, acesse a [**lista de regras** ](https://github.com/ZupIT/horusec/blob/master/deployments/dockerfiles/gitleaks/rules.toml)que a ferramenta aplica em suas análises.
+O [**GitLeaks**](https://github.com/zricethezav/gitleaks) é uma ferramenta [**SAST**](../../../../key-concepts/#sast-static-application-security-testing) para detectar segredos codificados como senhas, chaves de API e tokens em todo o histórico dos repositórios git. Para entender melhor os critérios do GitLeaks, acesse a [**lista de regras** ](https://github.com/ZupIT/horusec/blob/main/deployments/dockerfiles/gitleaks/rules.toml)que a ferramenta aplica em suas análises.
 
 ### **NpmAudit**
 

@@ -24,9 +24,9 @@ The value can be anyone of your choice, but it is necessary to have a strong has
 
 To configure this authentication, follow the steps: 
 
-1. Add the environment variable **`HORUSEC_AUTH_TYPE=”ldap”`** in the [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth) microservice   to define the authentication via LDAP;
+1. Add the environment variable **`HORUSEC_AUTH_TYPE=”ldap”`** in the [**horusec-auth**](https://github.com/ZupIT/horusec-platform/tree/main/auth) microservice   to define the authentication via LDAP;
 
-2. Add some environment variables in the microservice [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth) to make the connection with the tool, they are:
+2. Add some environment variables in the microservice [**horusec-auth**](https://github.com/ZupIT/horusec-platform/tree/main/auth) to make the connection with the tool, they are:
 
 <table>
   <thead>
@@ -105,9 +105,9 @@ To configure this authentication, follow the steps:
 
 To configure this authentication, follow the steps: 
 
-1. Add the environment variable **`HORUSEC_AUTH_TYPE=”keycloak”`** in the [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth) microservice that you will use in the authentication via Keycloak;
+1. Add the environment variable **`HORUSEC_AUTH_TYPE=”keycloak”`** in the [**horusec-auth**](https://github.com/ZupIT/horusec-platform/tree/main/auth) microservice that you will use in the authentication via Keycloak;
 
-2. In the  [**horusec-auth**](https://github.com/ZupIT/horusec/tree/master/horusec-auth) microservice, add the connection variables with the keycloak, which are:
+2. In the  [**horusec-auth**](https://github.com/ZupIT/horusec-platform/tree/main/auth) microservice, add the connection variables with the keycloak, which are:
 
 |  **Environment variable name**  | **Standard value** | **Description** |
 | :--- | :--- | :--- |
@@ -117,7 +117,7 @@ To configure this authentication, follow the steps:
 | HORUSEC\_KEYCLOAK\_REALM |  | What is the realm used. Example: master. |
 | HORUSEC\_KEYCLOAK\_OTP | false | If you are using otp \(one-time password\). |
 
-Then, to connect correctly, the [**horusec-manager**](https://github.com/ZupIT/horusec/tree/master/horusec-manager) will also need some environment variables:
+Then, to connect correctly, the [**horusec-manager**](https://github.com/ZupIT/horusec-platform/tree/main/manager) will also need some environment variables:
 
 |  **Environment variable name** | **Standard value** | **Description** |
 | :--- | :--- | :--- |
