@@ -14,16 +14,11 @@ description: >-
 
 A seguir, você irá entender melhor cada uma delas.
 
-## **Requisitos**
+## **Requisitos** 
 Para usar é obrigatório algumas ferramentas instaladas em sua máquina:
-* [**Docker**](https://docs.docker.com/get-docker/)
-   {{% alert color="warning" %}}
-Para desabilitar o docker, veja [como usar o Horusec sem o Docker]({{< ref path="/tutorials/how-to-use-horusec-without-docker.md" lang="pt-br">}}), mas você perderá as análises por [outras ferramentas]({{< ref path="/cli/analysis-tools/security-tools" lang="pt-br">}}).
-    {{% /alert %}}
-* [**Git**](https://git-scm.com/)
-   {{% alert color="warning" %}}
-Para rodar análise com git, veja [como habilitar análise no histórico git]({{< ref path="/tutorials/how-to-enable-git-history-analysis-and-enable-commit-authors.md" lang="pt-br">}}), mas não é habilitado por padrão.
-    {{% /alert %}}
+* [**Docker**](https://docs.docker.com/get-docker/) (versão recomendada ```19.03.11```). Para desabilitar o docker, veja [**como usar o Horusec sem o Docker**]({{< ref path="/tutorials/how-to-use-horusec-without-docker.md" lang="pt-br">}}), mas você perderá as análises por [**outras ferramentas**]({{< ref path="/cli/analysis-tools/security-tools" lang="pt-br">}}).
+    
+* [**Git**](https://git-scm.com/) (versão recomendada ```2.25.1```). Para rodar análise com git, veja [**como habilitar análise no histórico git**]({{< ref path="/tutorials/how-to-enable-git-history-analysis-and-enable-commit-authors.md" lang="pt-br">}}), mas não é habilitado por padrão.
 
 ## **Instalação Local**
 A instalação feita direto no seu computador é ideal para quem quer usar logo o Horusec, seja fazer análises ou verificar as vulnerabilidades de um projeto.

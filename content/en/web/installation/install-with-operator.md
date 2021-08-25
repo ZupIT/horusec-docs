@@ -10,15 +10,11 @@ description: In this section, you will find how to install Horusec web applicati
 
 
 ### **Requirements**
-To use Horusec-Operator you will need some secrets and dependencies, check out: 
-* [**Kubectl**](https://kubernetes.io/docs/tasks/tools/#kubectl) and a connection with your cluster.
-* Connection with a database: 
-    -  You can upload a pod from a PostgreSQL database as shown in the [**Development Environment example**](https://github.com/ZupIT/horusec-operator#development-environment) or you can only create secrets of connection with your database.
-    - Create two databases for the Horusec-platform and Horusec-analytic.
-* Connection with a message broker.
-    - You can upload a pod from a RabbitMQ message broker as shown in the [**Development Environment example**](https://github.com/ZupIT/horusec-operator#development-environment) or you can only create secrets of connection with your message broker.
-* Other necessary secrets;
-    - The secrets you need to configure may vary depending on how you use horusec. [**See the configuration options**](https://horusec.io/site/#resources).
+To use Horusec-Operator you will need: 
+* Connection with your Kubernetes cluster - [**Kubectl**](https://kubernetes.io/docs/tasks/tools/#kubectl);
+* Connection with  **PostgreSQL** (recommended version ```12```). Check out the [**Development Environment example**](https://github.com/ZupIT/horusec-operator#development-environment) or you can only create secrets of connection with your database;
+* Connection with **RabbitMQ** (recommended version ```3-management```);
+* Connection with **'Kubernetes secrets'**. The secrets you need to configure may vary depending on how you use horusec. [**See the configuration options**](https://horusec.io/site/#resources).
 
 
 ## **Installing**
@@ -81,6 +77,10 @@ rabbitmq-0                                              1/1     Running     0   
 vulnerability-7d789fd655-tpjp8                          1/1     Running     0          74s
 webhook-7b5c45c859-cq4nf                                1/1     Running     0          73s
 ```
+
+{{% alert color="info" %}}
+Check out [**YAML's definition**]({{< ref path="/web/installation/yaml" lang="en">}}). 
+{{% /alert %}}
 
 ## **Development Environment**
 

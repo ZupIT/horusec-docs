@@ -16,10 +16,11 @@ We don't recommend you to install Horusec using Docker-Compose in the production
 
 
 ## **Requisites**
-To configurate you will need the following tools in your environment:
-* [**docker-compose**](https://docs.docker.com/compose/install/)
-* [**docker**](https://docs.docker.com/get-docker/)
-* **Linux**
+To configurate you will need the following tools in your environment: 
+* [**Docker-Compose**](https://docs.docker.com/compose/install/) (recommended version ```20.04```)
+* **Linux Ubuntu** (recommended version ```20.04```)
+* [**Docker**](https://docs.docker.com/get-docker/) (recommended version ```19.03.11```).
+
 
 ## **Configuration**
 There is a **configuration file** on Horusec with all the default option for you to only configure your environment, in a simple and easy way. 

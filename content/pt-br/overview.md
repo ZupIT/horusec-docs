@@ -16,6 +16,7 @@ O Horusec é uma ferramenta open source que orquestra outras ferramentas de segu
 Atualmente, o Horusec seleciona as linguagens e ferramentas a serem utilizadas no projeto de acordo com a stack disponível. **[Veja todas as linguagens suportadas e ferramentas disponíveis na plataforma]({{< ref path="/cli/analysis-tools/overview.md" lang="pt-br">}})**.
 
 
+
 ## **Como o Horusec funciona?**
 
 O Horusec faz uma análise [**SAST**]({{< ref path="/glossary.md" lang="pt-br">}}) do seu projeto a partir da observação de padrões no código. 
@@ -93,7 +94,7 @@ Garante a segurança dos projetos no processo de CI e CD e, assim, reduz os cust
 
 ## **Próximos passos**
 
-Instale o Horusec: 
+Instale o Horusec:  
 
 **CLI**
 - [**Horusec-CLI**]({{< ref path="/cli/installation.md" lang="pt-br">}})

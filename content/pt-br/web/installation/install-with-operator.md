@@ -8,15 +8,14 @@ description: Nesta seção, você encontra como instalar a aplicação web do Ho
 
 **Horusec-operator** realiza o gerenciamento entre os serviços de Web do Horusec e o cluster Kubernetes. A ideia da criação veio da comunidade com o desejo de simplificar a forma de instalar os serviços em um ambiente Kubernetes.
 
-### **Requisitos**
-Para realizar esta configuração, você precisará ter alguns secrets e dependências, veja abaixo:  
-* [**Kubectl**](https://kubernetes.io/docs/tasks/tools/#kubectl) e um conexão com seu cluster.
-* Conexão com um banco de dados: 
-    -  Você pode fazer o upload de uma pod de um banco de dados PostgreSQL como é mostrado no exemplo [**ambiente de desenvolvimento**](https://github.com/ZupIT/horusec-operator#development-environment) ou você pode apenas criar secrets de conexão com o seu banco de dados. 
+### **Requisitos** 
+Para realizar esta configuração, você precisará:  
+* Conexão com seu cluster Kubernetes - [**Kubectl**](https://kubernetes.io/docs/tasks/tools/#kubectl).
+* Conexão com o **PostgreSQL** (versão recomendada ```12```). Veja o exemplo [**ambiente de desenvolvimento**](https://github.com/ZupIT/horusec-operator#development-environment);
     - Criar dois banco de dados para o Horusec-platform e Horusec-analytic.
-* Conexão com o message broker.
-    - Você pode fazer o upload a pod de um message broker do RabbitMQ como no exemplo [**ambiente de desenvolvimento**](https://github.com/ZupIT/horusec-operator#development-environment) ou você pode apenas criar secrets de conexão com seu message broker. 
-* Outros secrets necessários;
+* Conexão com o **RabbitMQ** (versão recomendada ```3-management```);
+* Outros secrets necessários:
+    - Conexão com **'Kubernetes secrets'**
     - Os secrets que você precisa configurar pode variar, dependendo de como você usa o Horusec. [**Veja suas opções de configuração**](https://horusec.io/site/#resources).
 
 
@@ -80,6 +79,10 @@ rabbitmq-0                                              1/1     Running     0   
 vulnerability-7d789fd655-tpjp8                          1/1     Running     0          74s
 webhook-7b5c45c859-cq4nf                                1/1     Running     0          73s
 ```
+{{% alert color="info" %}}
+Acesse as [**definições de YAML**]({{< ref path="/web/installation/yaml" lang="pt-br">}}). 
+{{% /alert %}}
+
 
 ## **Ambiente de desenvolvimento**
 
