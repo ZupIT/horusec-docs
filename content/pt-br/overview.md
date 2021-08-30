@@ -102,4 +102,4 @@ Instale o Horusec:
 **Aplicação web**
 - [**Instale com o Docker-Compose**]({{< ref path="/web/installation/install-with-docker-compose.md" lang="pt-br">}})
 - [**Instale com o Helm**]({{< ref path="/web/installation/install-with-helm.md" lang="pt-br">}})
-- [**Instale com o Operator**]({{< ref path="/web/installation/install-with-operator.md" lang="pt-br">}})
+- [**Instale com o Operator**]({{< ref path="/web/installation/install-with-operator/overview.md" lang="pt-br">}})

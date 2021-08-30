@@ -1,69 +1,68 @@
 ---
-title: YAML definition
-weight: 31
-description: In this section, you will find YAML's definition. 
+title: Definição do YAML 
+weight: 20
+description: Nesta seção, você vai encontrar as definições do arquivo YAML. 
 ---
 
-| **Key** | **Type** | Default Value | **Definition** |
+| **Chave** | **Tipo** | Valor Default | **Definição** |
 | :--- | :--- | :--- | :--- |
-| components.analytic.name | String | `analytic` |  Component's name (If it's not configured it can be analytic's default)   |
-| components.analytic.port.http | Number | `8005` | Ports to be exposed |
-| components.analytic.replicaCount | Number | `1` |  Total replicas (if not configured it will be by default 1).  |
-| components.analytic.pod | String | ✓ | Pod definitions https://kubernetes.io/docs/concepts/workloads/pods/ | String | ✓ |  Component's name (if not configured it will be by default analytic).  |
-| components.analytic.pod.autoscaling | Number | ✓ | Autoscaling definition https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/. | Number | ✓ |  Component's name (if not configured it will be by default analytic).   |
-| components.analytic.pod.autoscaling.maxReplicas | Number | `3` | Maximum pods available in the application https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#autoscaling-on-multiple-metrics-and-custom-metrics (if not configured it will be by default 3). |
-| components.analytic.pod.autoscaling.minReplicas | Number | `1` |  Minimum pods available in the application https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#autoscaling-on-multiple-metrics-and-custom-metrics (if not configured it will be by default 1).  |
-|components.analytic.pod.autoscaling.targetCPU | Number | `50` | Amount of resources available by pod: CPU https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#autoscaling-on-multiple-metrics-and-custom-metrics (if not configured it will be by default 50). |
-| components.analytic.pod.autoscaling.targetMemory | Number | `50`| Amount of resources available by pod: Memory https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#autoscaling-on-multiple-metrics-and-custom-metrics  (if not configured it will be by default 50). |
-| components.analytic.securityContext | Number | ✓ | Security context https://kubernetes.io/docs/tasks/configure-pod-container/security-context/. |
-| components.analytic.securityContext.fsGroup | Number | `2000` | Security's group IDhttps://kubernetes.io/docs/tasks/configure-pod-container/security-context/  (if not configured it will be by default 2000).  |
-| components.analytic.container | Number | ✓ | Container's definition https://kubernetes.io/docs/concepts/containers/|
-| components.analytic.image | String | ✓ |  Definitions for the image's component https://kubernetes.io/docs/concepts/containers/images/  |
-| components.analytic.image.pullPolicy | String | IfNotPresent | Definition for image's download https://kubernetes.io/docs/concepts/containers/images/#updating-images  (if not configured it will be by default IfNotPresent). | 
-| components.analytic.image.registry | String | docker.io/horuszup | 
-Definitions for the image's registry download https://kubernetes.io/docs/concepts/containers/images/#updating-images. |
-| components.analytic.image.repository | String | horusec-analytic | Repository definition for image download https://kubernetes.io/docs/concepts/containers/images/#updating-images (if not configured it will be by default horusec-analytic). |
-| components.analytic.image.tag | Number | `v2.16.5` | Tag versioning definitions for image download https://kubernetes.io/docs/concepts/containers/images/#updating-images (if not configured it will be by default v2.16.5). |
-| components.analytic.livenessProbe | Number | - | Waiting time settings for verification command if the service is in good health  https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/ | 
-| components.analytic.livenessProbe.timeoutSeconds | Number | `1` |  https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 1). | 
-| components.analytic.livenessProbe.periodSeconds | Number | `10` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 10). | 
-| components.analytic.livenessProbe.successThreshold | Number | `1` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 1). | 
-| components.analytic.livenessProbe.failureThreshold | Number | `3` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 3). | 
-| components.analytic.readinessProbe | Number | - | Waiting time settings for verification command if the service is in good health https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/. | 
-| components.analytic.readinessProbe | Number | `1` | Definitions for image's download https://kubernetes.io/docs/concepts/containers/images/#updating-images  (if not configured it will be by default IfNotPresent). | 
-| components.analytic.readinessProbe.timeoutSeconds | Number | `1` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 1). | 
-| omponents.analytic.readinessProbe.periodSeconds | Number | `10` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 10). | 
-| omponents.analytic.readinessProbe.successThreshold | Number | `1` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 1). | 
-| omponents.analytic.readinessProbe.failureThreshold | Number | `3` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 3). | 
-| omponents.analytic.resources | String | {} | Definitions for the resources threshold by requests  https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/#specify-a-memory-request-and-a-memory-limit (if not configured it will be by default {} empty). | 
-| components.analytic.securityContext | -| - | Security context for the container  https://kubernetes.io/docs/tasks/configure-pod-container/security-context/. | 
-| components.analytic.securityContext.runAsUser | Number | `1000` | User ID of the security's group https://kubernetes.io/docs/tasks/configure-pod-container/security-context/ (if not configured it will be by default 1000). | 
-| components.analytic.securityContext.runAsNonRoot | String | `true` | Indicates the containers must be executed as user and not root https://kubernetes.io/blog/2016/08/security-best-practices-kubernetes-deployment/ (if not configured it will be by default true). |
-| components.analytic.ingress | - | - | What is ingress https://kubernetes.io/docs/concepts/services-networking/ingress/. | 
-| components.analytic.ingress.enabled | String | `true` | Enabled ingress for the  component (if not configured it will be by default true). | 
-| components.analytic.ingress.host | String | `analytic.local` | Host definition for the component (if not configured it will be by default  analytic.local). | 
-| components.analytic.ingress.path | String | `"/analytic"` | Path definition for the component (if not configured it will be by default  /analytic). | 
-| components.analytic.ingress.tls | String | `{} ` | TLS configurations (Transport Layer Security) do componente https://kubernetes.io/docs/concepts/services-networking/ingress/#tls (if not configured it will be by default {} empty). |
-|  components.analytic.database | - | - | Definition for the component's database connection  |
-|  components.analytic.database.name | String | `horusec_analytic_db` | (if not configured it will be by defaulthorusec_analytic_db).  |
-|  components.analytic.database.host | String | `""` | Connection host (if not configured it will be by default postgresql).  |
-|  components.analytic.database.port | Number | `5432` | Definition for the database port connection (if not configured it will be by default 5432).  |
-|  components.analytic.database.sslMode | String | `false` | Ssl is enable for the component (if not configured it will be by default false).  |
+| components.analytic.name | String | `analytic` |  Nome do componente (se não configurado irá ser por padrão analytic).  |
+| components.analytic.port.http | Number | `8005` | Portas a serem expostas |
+| components.analytic.replicaCount | Number | `1` |  Total de réplicas (se não configurado irá ser por padrão 1).  |
+| components.analytic.pod | String | ✓ | Definições da pod https://kubernetes.io/docs/concepts/workloads/pods/ | String | ✓ |  Nome do componente (se não configurado irá ser por padrão analytic).  |
+| components.analytic.pod.autoscaling | Number | ✓ | Definições de autoscaling  https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/. | Number | ✓ |  Nome do componente (se não configurado irá ser por padrão analytic).  |
+| components.analytic.pod.autoscaling.maxReplicas | Number | `3` | Máximo de pods disponível na aplicação https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#autoscaling-on-multiple-metrics-and-custom-metrics (se não configurado irá ser por padrão 3). |
+| components.analytic.pod.autoscaling.minReplicas | Number | `1` |  Minímo de pods disponível na aplicação https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#autoscaling-on-multiple-metrics-and-custom-metrics (se não configurado irá ser por padrão 1).  |
+|components.analytic.pod.autoscaling.targetCPU | Number | `50` | quantidade de recurso disponível por pod: CPU https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#autoscaling-on-multiple-metrics-and-custom-metrics (se não configurado irá ser por padrão 50). |
+| components.analytic.pod.autoscaling.targetMemory | Number | `50`|  quantidade de recurso disponível por pod: Memória https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#autoscaling-on-multiple-metrics-and-custom-metrics  (se não configurado irá ser por padrão 50).  |
+| components.analytic.securityContext | Number | ✓ | Contexto de segurança https://kubernetes.io/docs/tasks/configure-pod-container/security-context/. |
+| components.analytic.securityContext.fsGroup | Number | `2000` | ID do grupo de segurança https://kubernetes.io/docs/tasks/configure-pod-container/security-context/  (se não configurado irá ser por padrão 2000).  |
+| components.analytic.container | Number | ✓ | Definições para o container https://kubernetes.io/docs/concepts/containers/|
+| components.analytic.image | String | ✓ |  Definições para a imagem do componente https://kubernetes.io/docs/concepts/containers/images/  |
+| components.analytic.image.pullPolicy | String | IfNotPresent | Definições para download de imagem https://kubernetes.io/docs/concepts/containers/images/#updating-images  (se não configurado irá ser por padrão IfNotPresent). | 
+| components.analytic.image.registry | String | docker.io/horuszup | Definições para registro de download de imagem https://kubernetes.io/docs/concepts/containers/images/#updating-images. |
+| components.analytic.image.repository | String | horusec-analytic | Definições para repositório de download de imagem https://kubernetes.io/docs/concepts/containers/images/#updating-images (se não configurado irá ser por padrão horusec-analytic). |
+| components.analytic.image.tag | Number | `v2.16.5` | Definições da tag de versionamento para download de imagem https://kubernetes.io/docs/concepts/containers/images/#updating-images (se não configurado irá ser por padrão v2.16.5). |
+| components.analytic.livenessProbe | Number | - | Definições para comando de verificação se o serviço está com a saúde em dia https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/ | 
+| components.analytic.livenessProbe.timeoutSeconds | Number | `1` |  https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (se não configurado irá ser por padrão 1). | 
+| components.analytic.livenessProbe.periodSeconds | Number | `10` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (se não configurado irá ser por padrão 10). | 
+| components.analytic.livenessProbe.successThreshold | Number | `1` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (se não configurado irá ser por padrão 1). | 
+| components.analytic.livenessProbe.failureThreshold | Number | `3` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (se não configurado irá ser por padrão 3). | 
+| components.analytic.readinessProbe | Number | - | Definições para tempo de espera para comando de verificação se o serviço está com a saúde em dia https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/. | 
+| components.analytic.readinessProbe | Number | `1` | Definições para download de imagem https://kubernetes.io/docs/concepts/containers/images/#updating-images  (se não configurado irá ser por padrão IfNotPresent). | 
+| components.analytic.readinessProbe.timeoutSeconds | Number | `1` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (se não configurado irá ser por padrão 1). | 
+| omponents.analytic.readinessProbe.periodSeconds | Number | `10` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (se não configurado irá ser por padrão 10). | 
+| omponents.analytic.readinessProbe.successThreshold | Number | `1` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (se não configurado irá ser por padrão 1). | 
+| omponents.analytic.readinessProbe.failureThreshold | Number | `3` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (se não configurado irá ser por padrão 3). | 
+| omponents.analytic.resources | String | {} | Definições para limite de recursos por requisições https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/#specify-a-memory-request-and-a-memory-limit (se não configurado irá ser por padrão {} vazio). | 
+| components.analytic.securityContext | -| - | Contexto de segurança para o container https://kubernetes.io/docs/tasks/configure-pod-container/security-context/. | 
+| components.analytic.securityContext.runAsUser | Number | `1000` | ID do usuário do grupo de segurança https://kubernetes.io/docs/tasks/configure-pod-container/security-context/ (se não configurado irá ser por padrão 1000). | 
+| components.analytic.securityContext.runAsNonRoot | String | `true` | Indica que os contêineres devem ser executados como usuário não root https://kubernetes.io/blog/2016/08/security-best-practices-kubernetes-deployment/ (se não configurado irá ser por padrão true). | 
+| components.analytic.ingress | - | - | o que é ingress https://kubernetes.io/docs/concepts/services-networking/ingress/. | 
+| components.analytic.ingress.enabled | String | `true` | Ingress está habilitado para o componente (se não configurado irá ser por padrão true). | 
+| components.analytic.ingress.host | String | `analytic.local` | Definição de host para o componente (se não configurado irá ser por padrão analytic.local). | 
+| components.analytic.ingress.path | String | `"/analytic"` | Definição de path para o componente (se não configurado irá ser por padrão /analytic). | 
+| components.analytic.ingress.tls | String | `{} ` | Configurações para TLS (Transport Layer Security) do componente https://kubernetes.io/docs/concepts/services-networking/ingress/#tls (se não configurado irá ser por padrão {} vazio). |
+|  components.analytic.database | - | - | Definições de conexão com o banco de dados do componente  |
+|  components.analytic.database.name | String | `horusec_analytic_db` | Nome do banco de dados para conexão (se não configurado irá ser por padrão horusec_analytic_db).  |
+|  components.analytic.database.host | String | `""` | Host para conexão (se não configurado irá ser por padrão postgresql).  |
+|  components.analytic.database.port | Number | `5432` | Definição da porta do banco de dados para conexão (se não configurado irá ser por padrão 5432).  |
+|  components.analytic.database.sslMode | String | `false` | Ssl está habilitado para o componente (se não configurado irá ser por padrão false).  |
 |  components.analytic.database | String | `""` | Error message to be displayed.  |
 | components.analytic.database.migration | String | `""` | Error message to be displayed.  |
-| components.analytic.database.migration.image | - |  | Definitions for the component's migration image https://kubernetes.io/docs/concepts/containers/images/.  |
+| components.analytic.database.migration.image | - |  | Definições para a imagem de migração do componente https://kubernetes.io/docs/concepts/containers/images/.  |
 | components.analytic.database.migration.image.pullPolicy | String | `IfNotPresent` | Error message to be displayed.  |
-| components.analytic.database.migration.image.registry | String | `docker.io/horuszup` | Definitions to register the image's download https://kubernetes.io/docs/concepts/containers/images/#updating-images (if not configured it will be by default docker.io/horuszup).  |
-|components.analytic.database.migration.image.repository | String | `horusec-migrations` | Definitions for the repository of image's download https://kubernetes.io/docs/concepts/containers/images/#updating-images (if not configured it will be by default horusec-migration).  |
-| components.analytic.database.migration.image.tag | Number | `"v2.16.5` | Versioning tag's definition to download image https://kubernetes.io/docs/concepts/containers/images/#updating-images (if not configured it will be by default v2.16.5).  |
-| components.analytic.database.migration.user | - |  | User definition to database connections.  |
-| components.analytic.database.migration.user.secretKeyRef | - |  | Definitions on how to get the user through kubernetes secrets https://kubernetes.io/docs/concepts/configuration/secret/.  |
-| components.analytic.database.migration.user.secretKeyRef.name | String | `horusec-analytic-database` | Secret's definition group  (if not configured it will be by default horusec-analytic-database).  |
-|components.analytic.database.migration.user.secretKeyRef.key  | String | `username` | Key to get secret's values (if not configured it will be username default).  |
-| components.analytic.database.migration.password | - |  | Password definition for database connection.  |
-| components.analytic.database.migration.password.secretKeyRef | - |  | Definitions on how to get password through kubernetes secrets https://kubernetes.io/docs/concepts/configuration/secret/ |
-| components.analytic.database.migration.password.secretKeyRef.name | String | `horusec-analytic-database` | Secret's definition group  (if not configured it will be by default horusec-analytic-database).  |
-| components.analytic.database.migration.password.secretKeyRef.key | String | `password` |  Key to get secret's values (if not configured it will be by default password).  |
+| components.analytic.database.migration.image.registry | String | `docker.io/horuszup` | Definições para registro de download de imagem https://kubernetes.io/docs/concepts/containers/images/#updating-images (se não configurado irá ser por padrão docker.io/horuszup).  |
+|components.analytic.database.migration.image.repository | String | `horusec-migrations` | Definições para repositório de download de imagem https://kubernetes.io/docs/concepts/containers/images/#updating-images (se não configurado irá ser por padrão horusec-migration).  |
+| components.analytic.database.migration.image.tag | Number | `"v2.16.5` | Definições da tag de versionamento para download de imagem https://kubernetes.io/docs/concepts/containers/images/#updating-images (se não configurado irá ser por padrão v2.16.5).  |
+| components.analytic.database.migration.user | - |  | Definições de usuário para conexão com o banco de dados.  |
+| components.analytic.database.migration.user.secretKeyRef | - |  | Definições de como adquirir usuário atráves de secrets kubernetes https://kubernetes.io/docs/concepts/configuration/secret/.  |
+| components.analytic.database.migration.user.secretKeyRef.name | String | `horusec-analytic-database` | Grupo de definição da secret (se não configurado irá ser por padrão horusec-analytic-database).  |
+|components.analytic.database.migration.user.secretKeyRef.key  | String | `username` | Chave para adquirir valores da secret (se não configurado irá ser por padrão username).  |
+| components.analytic.database.migration.password | - |  | Definições de senha para conexão com o banco de dados.  |
+| components.analytic.database.migration.password.secretKeyRef | - |  | Definições de como adquirir senha atráves de secrets kubernetes https://kubernetes.io/docs/concepts/configuration/secret/ |
+| components.analytic.database.migration.password.secretKeyRef.name | String | `horusec-analytic-database` | Grupo de definição da secret (se não configurado irá ser por padrão horusec-analytic-database).  |
+| components.analytic.database.migration.password.secretKeyRef.key | String | `password` |  Chave para adquirir valores da secret (se não configurado irá ser por padrão password).  |
 | components.api | - | - | Component API.  |
 | components.api.name | String | `api` |   |
 | components.api.port.http | Number | `8000` |   |
@@ -276,7 +275,7 @@ Definitions for the image's registry download https://kubernetes.io/docs/concept
 | components.webhook.container.ingress.host | String | ` webhook.local` |   |
 | components.webhook.container.ingress.path | String | `"/webhook"` |   |
 | components.webhook.container.ingress.tls  | String | `{}` |   |
-| components.global|  |    | YAML file base where there are components also known as Horusec's global, they are: broker, database, jwt, keycloak, ldap. |
+| components.global|  |    | Base do arquivo YAML onde contém os componentes também conhecido com globais do horusec eles são: broker, database, jwt, keycloak, ldap. |
 | components.global.port | Number | `5672` |   |
 | components.global.broker.user.secretKeyRef.name | String | `horusec-broker` |   |
 | components.global.broker.user.secretKeyRef.key | String | `username` |   |

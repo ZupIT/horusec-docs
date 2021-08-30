@@ -1,6 +1,6 @@
 ---
-title: Instale utilizando o Operator
-weight: 30
+title: Instalação
+weight: 10
 description: Nesta seção, você encontra como instalar a aplicação web do Horusec no seu ambiente usando Operator.
 ---
 
@@ -80,7 +80,7 @@ vulnerability-7d789fd655-tpjp8                          1/1     Running     0   
 webhook-7b5c45c859-cq4nf                                1/1     Running     0          73s
 ```
 {{% alert color="info" %}}
-Acesse as [**definições de YAML**]({{< ref path="/web/installation/yaml" lang="pt-br">}}). 
+Acesse as [**definições de YAML**]({{< ref path="/web/installation/install-with-operator/yaml-definition" lang="pt-br">}}). 
 {{% /alert %}}
 
 

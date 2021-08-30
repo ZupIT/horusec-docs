@@ -1,5 +1,5 @@
 ---
-title: Install with Operator
+title: Installation
 weight: 30
 description: In this section, you will find how to install Horusec web application in your environment using Operator.
 ---
@@ -79,7 +79,7 @@ webhook-7b5c45c859-cq4nf                                1/1     Running     0   
 ```
 
 {{% alert color="info" %}}
-Check out [**YAML's definition**]({{< ref path="/web/installation/yaml" lang="en">}}). 
+Check out [**YAML's definition**]({{< ref path="/web/installation/install-with-operator/yaml-definition" lang="en">}}). 
 {{% /alert %}}
 
 ## **Development Environment**
