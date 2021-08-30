@@ -11,15 +11,16 @@ description: In this section, you will find how to install Horusec web applicati
 In this installation's case, the main goal is to use the Horusec's web application linked to your environment using Docker-Compose. 
 
 {{% alert color="warning" %}} 
-We don't recommend you to install Horusec using Docker-Compose in the production environment, for that [**install with Helm**]({{< ref path="/web/installation/install-with-helm.md" lang="en">}}) or [**Operator**]({{< ref path="/web/installation/install-with-operator.md" lang="en">}}).
+We don't recommend you to install Horusec using Docker-Compose in the production environment, for that [**install with Helm**]({{< ref path="/web/installation/install-with-helm.md" lang="en">}}) or [**Operator**]({{< ref path="/web/installation/install-with-operator/overview.md" lang="en">}}).
 {{% /alert %}}
 
 
 ## **Requisites**
-To configurate you will need the following tools in your environment:
-* [**docker-compose**](https://docs.docker.com/compose/install/)
-* [**docker**](https://docs.docker.com/get-docker/)
-* **Linux**
+To configurate you will need the following tools in your environment: 
+* [**Docker-Compose**](https://docs.docker.com/compose/install/) (recommended version ```20.04```)
+* **Linux Ubuntu** (recommended version ```20.04```)
+* [**Docker**](https://docs.docker.com/get-docker/) (recommended version ```19.03.11```).
+
 
 ## **Configuration**
 There is a **configuration file** on Horusec with all the default option for you to only configure your environment, in a simple and easy way. 

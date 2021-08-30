@@ -18,13 +18,13 @@ For this configuration, you will need:
   clusters, [**check out kubernetes configuration**](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/)
   how to configure their access).
 
-* [**Helm**](https://helm.sh/docs/intro/install/) client with a version > 3.1.1;
+* [**Helm**](https://helm.sh/docs/intro/install/) (recommended version ```3.1.1```);
 
-* **PostgreSQL** connection to store data;
+* **PostgreSQL** connection to store data (recommended version ```12```);
 
-* **RabbitMQ** connection as a message-broker;
+* **RabbitMQ** connection as a message-broker (recommended version ```3-management```);
 
-* **Linux**.
+* **Linux Ubuntu** (recommended version ```20.04```).
 
 ## **Horusec Helm Charts**
 

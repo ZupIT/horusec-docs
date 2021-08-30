@@ -1,42 +1,40 @@
 ---
-title: Install with Operator
-weight: 30
-description: In this section, you will find how to install Horusec web application in your environment using Operator.
+title: Instalação
+weight: 10
+description: Nesta seção, você encontra como instalar a aplicação web do Horusec no seu ambiente usando Operator.
 ---
 
-## **What is it?**
+## **O que é?**
 
-**Horusec-operator** performs management between Horusec web services and its Kubernetes cluster. It was created based on a community's idea to have a simpler way to install the services in an environment using Kubernetes. 
+**Horusec-operator** realiza o gerenciamento entre os serviços de Web do Horusec e o cluster Kubernetes. A ideia da criação veio da comunidade com o desejo de simplificar a forma de instalar os serviços em um ambiente Kubernetes.
 
-
-### **Requirements**
-To use Horusec-Operator you will need some secrets and dependencies, check out: 
-* [**Kubectl**](https://kubernetes.io/docs/tasks/tools/#kubectl) and a connection with your cluster.
-* Connection with a database: 
-    -  You can upload a pod from a PostgreSQL database as shown in the [**Development Environment example**](https://github.com/ZupIT/horusec-operator#development-environment) or you can only create secrets of connection with your database.
-    - Create two databases for the Horusec-platform and Horusec-analytic.
-* Connection with a message broker.
-    - You can upload a pod from a RabbitMQ message broker as shown in the [**Development Environment example**](https://github.com/ZupIT/horusec-operator#development-environment) or you can only create secrets of connection with your message broker.
-* Other necessary secrets;
-    - The secrets you need to configure may vary depending on how you use horusec. [**See the configuration options**](https://horusec.io/site/#resources).
+### **Requisitos** 
+Para realizar esta configuração, você precisará:  
+* Conexão com seu cluster Kubernetes - [**Kubectl**](https://kubernetes.io/docs/tasks/tools/#kubectl).
+* Conexão com o **PostgreSQL** (versão recomendada ```12```). Veja o exemplo [**ambiente de desenvolvimento**](https://github.com/ZupIT/horusec-operator#development-environment);
+    - Criar dois banco de dados para o Horusec-platform e Horusec-analytic.
+* Conexão com o **RabbitMQ** (versão recomendada ```3-management```);
+* Outros secrets necessários:
+    - Conexão com **'Kubernetes secrets'**
+    - Os secrets que você precisa configurar pode variar, dependendo de como você usa o Horusec. [**Veja suas opções de configuração**](https://horusec.io/site/#resources).
 
 
-## **Installing**
-To install it, follow the next step:  
+## **Instalação**
+Para instalar, siga os passo abaixo:  
  
-**Step 1.** After configuring your database connection, connecting to your broker and creating secrets. Install Horusec-Operator on your cluster, see the example below: 
+**Passo 1.** Depois de configurar a conexão com seu banco de dados, conectando o seu broker e criando secrets. Instale o Horusec-Operator no seu cluster, veja o exemplo:
 
 ```
 kubectl apply -f "https://github.com/ZupIT/horusec-operator/releases/download/v2.0.0/horusec-operator.yaml"
 ```
 
-Now, see if the resource was installed: 
+Agora, veja se o recurso foi instalado: 
 
 ```
 kubectl api-resources | grep horus
 ```
 
-The output will be similar to this:
+O output precisa ser similar ao exemplo abaixo:
 
 ```
 $ kubectl api-resources | grep horus                                                           
@@ -44,9 +42,9 @@ horusecplatforms                  horus        install.horusec.io             tr
 ```
 
 
-## **Usage**
+## **Uso**
 
-Now, you need to send the changes you want to Kubernetes. In this example, there is a [**YAML file**](https://github.com/ZupIT/horusec-operator/blob/main/config/samples/install_v2alpha1_horusecplatform.yaml), if you send an empty YAML like this below:
+Agora, você precisa enviar as mudanças que você quer para o Kubernetes. Neste exemplo o arquivo [**YAML**](https://github.com/ZupIT/horusec-operator/blob/main/config/samples/install_v2alpha1_horusecplatform.yaml) foi enviado, se você quiser enviar um YAML vazio, veja abaixo: 
 
 ```
 apiVersion: install.horusec.io/v2alpha1
@@ -55,14 +53,14 @@ metadata:
   name: horusecplatform-sample
 spec: {}
 ```
-It will have the default Horusec settings from the file [**defaults.json**](https://github.com/ZupIT/horusec-operator/blob/main/defaults.json).
+Essas configurações serão padrão Horusec, são dos arquivos [**defaults.json**](https://github.com/ZupIT/horusec-operator/blob/main/defaults.json).
 
-And now you have to apply your changes:
+Agora, aplique as mudanças: 
 
 ```
 kubectl apply -f "https://raw.githubusercontent.com/ZupIT/horusec-operator/main/config/samples/install_v2alpha1_horusecplatform.yaml"
 ```
-Now, you can see all Horusec web services upload in your cluster, see the example below: 
+Você pode ver todos os serviços web do Horusec enviadas no seu cluster, veja o exemplo abaixo: 
 
 ```
 $ kubectl get pods
@@ -81,32 +79,36 @@ rabbitmq-0                                              1/1     Running     0   
 vulnerability-7d789fd655-tpjp8                          1/1     Running     0          74s
 webhook-7b5c45c859-cq4nf                                1/1     Running     0          73s
 ```
+{{% alert color="info" %}}
+Acesse as [**definições de YAML**]({{< ref path="/web/installation/install-with-operator/yaml-definition" lang="pt-br">}}). 
+{{% /alert %}}
 
-## **Development Environment**
 
-This development enviroment is a developer experience test, it is for you to see how Horusec-Operator works.
+## **Ambiente de desenvolvimento**
+
+Este ambiente de desenvolvimento é um teste de experiência para desenvolvedores, foi criado para você entender como o Horusec-Operator funciona.
 
 
-### **Requirements** 
-You need to have installed in your local machine:
+### **Requisitos** 
+Você precisa ter instalado na sua máquina:
 - [**Helm**](https://helm.sh/docs/intro/install/#from-script).
 - [**Kind**](https://kind.sigs.k8s.io/docs/user/quick-start/#installation).  
 
 
-Now, follow the steps to configure: 
+Agora, siga os passos para a configuração: 
 
 
-##### **Step 1. Clone this project**
+##### **Passo 1. Clone o projeto**
 
 ```
 git clone https://github.com/ZupIT/horusec-operator.git && cd horusec-operator
 ```
 
-Up Kubernetes cluster with all dependencies and wait to finish:
+Suba o cluster Kubernetes com todas as dependências e espere finalizar: 
 ```
 make up-sample
 ```
-If you see this message:
+Se você ver essa mensagem: 
 ```
 Creating horusec_analytic_db...
 If you don't see a command prompt, try pressing enter.
@@ -116,21 +118,22 @@ psql: could not connect to server: Connection refused
 pod "postgresql-client" deleted
 pod default/postgresql-client terminated (Error)
 ```
-Don't worry, this is normal. The script is trying to create a new database, but the pod of the postgresql is not ready, it will run again until create a new database.
+Não se preocupe, é normal. O script está tentando criar um novo banco de dados, mas a pod do postgresql não está pronta, ele irá rodar novamente até criar essa base de dados. 
 
-##### **Step 2. Install Horusec-Operator:**
+##### **Passo 2. Instale o Horusec-Operator:**
 
-After script finish, install: 
+Após a finalização do script, instale: 
 
 ```
 kubectl apply -f "https://github.com/ZupIT/horusec-operator/releases/download/v2.0.0/horusec-operator.yaml"
 ```
-Check out if it was successfully installed: 
+Confirme se foi instalado com sucesso: 
+
 ```
 kubectl api-resources | grep horus
 
 ```
-The output will be: 
+O output será: 
 
 ```
 $ kubectl api-resources | grep horus                                                           
@@ -138,21 +141,22 @@ horusecplatforms                  horus        install.horusec.io             tr
 
 ```
 
-And you can see the pod manager: 
+E agora você pode ver o pod manager: 
 ```
 $ kubectl get pods -n horusec-operator-system
 NAME                                                   READY   STATUS              RESTARTS   AGE
 horusec-operator-controller-manager-7b9696d4c4-t7w2q   2/2     Running             0          2m10s
 
 ```
-##### **Step 3. Pass yaml with your configuration to upload in your Kubernetes cluster:**
+##### **Passo 3. Passe o yaml com sua configuração para fazer o upload no seu cluster Kubernetes:**
 
-See the example: 
+Veja o exemplo:
+
 ```
 kubectl apply -f ./config/samples/install_v2alpha1_horusecplatform.yaml
 
 ```
-Now, you can see all Horusec web services uploaded in your cluster, like the example below:
+Agora, você pode ver todos os serviços web do Horusec no seu cluster, como no exemplo abaixo:  
 
 ```
 $ kubectl get pods
