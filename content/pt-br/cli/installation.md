@@ -83,7 +83,7 @@ Caso queira uma versão específica, basta trocar a palavra `latest` no link pel
   - 📥 https://github.com/ZupIT/horusec/releases/download/v2.0.0/horusec_mac_x64
 
 {{% alert color="info" %}}
-## MAC ou Linux
+### MAC ou Linux
 Após baixar os arquivos para Mac ou Linux será necessário tranformálos em `executáveis` através do comando `chmod +x`.
 ```bash
 chmod +x path/horusec_[your version here]
