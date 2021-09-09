@@ -10,21 +10,9 @@ Helm is a package manager that gathers in one file named Chart all Kubernetes' f
 
 In this installation case here, the goal is for you to use Horusec's web application together with you Kubernete's cluster with Helm.
 
-## **Requisites**
+## **Requirements**
+Check out the requirements in the [**Set up**]({{< ref path="/web/set-up.md" lang="en">}}) section. 
 
-For this configuration, you will need: 
-
-* Access to the cluster where you want to install Horusec Manager (If tou are using multiple clusters
-  clusters, [**check out kubernetes configuration**](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/)
-  how to configure their access).
-
-* [**Helm**](https://helm.sh/docs/intro/install/) (recommended version ```3.1.1```);
-
-* **PostgreSQL** connection to store data (recommended version ```12```);
-
-* **RabbitMQ** connection as a message-broker (recommended version ```3-management```);
-
-* **Linux Ubuntu** (recommended version ```20.04```).
 
 ## **Horusec Helm Charts**
 

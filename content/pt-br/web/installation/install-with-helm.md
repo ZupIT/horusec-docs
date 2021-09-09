@@ -13,19 +13,7 @@ No caso desta instalação, o objetivo é que você utilize a aplicação web do
 
 ## **Requisitos**
 
-Para realizar esta configuração, você precisará ter:
-
-* Acesso ao cluster em que deseja instalar o Horusec Manager (caso esteja utilizando múltiplos
-  clusters, verifique [**como configurar o acesso a eles**](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/)
-  como configurar o acesso a eles)
-
-* Cliente [**Helm**](https://helm.sh/docs/intro/install/) (versão recomendada ```3.1.1```);
-
-* Conexão com um **PostgreSQL** para armazenamento dos dados (versão recomendada ```12```);
-
-* Conexão com um **RabbitMQ** como message-broker (versão recomendada ```3-management```);
-
-* **Linux Ubuntu** (versão recomendada ```20.04```).
+Veja os requisitos na seção [**Configuração do seu ambiente**]({{< ref path="/web/set-up.md" lang="pt-br">}}) section.  
 
 
 ## **Horusec Helm Charts**

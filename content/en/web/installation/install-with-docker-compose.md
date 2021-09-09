@@ -15,11 +15,8 @@ We don't recommend you to install Horusec using Docker-Compose in the production
 {{% /alert %}}
 
 
-## **Requisites**
-To configurate you will need the following tools in your environment: 
-* [**Docker-Compose**](https://docs.docker.com/compose/install/) (recommended version ```20.04```)
-* **Linux Ubuntu** (recommended version ```20.04```)
-* [**Docker**](https://docs.docker.com/get-docker/) (recommended version ```19.03.11```).
+## **Requirements**
+Check out the requirements in the [**Set up**]({{< ref path="/web/set-up.md" lang="en">}}) section. 
 
 
 ## **Configuration**
@@ -83,7 +80,7 @@ Horusec's images are available on [**dockerhub**](https://hub.docker.com/u/horus
 * [**horuszup/horusec-analytic**](https://hub.docker.com/r/horuszup/horusec-analytic)
 * [**horuszup/horusec-migration**](https://hub.docker.com/r/horuszup/horusec-migration)
 * [**horuszup/horusec-vulnerability**](https://hub.docker.com/r/horuszup/horusec-vulnerability)
-* [**horuszup/horusec-messages**](https://hub.docker.com/r/horuszup/horusec-messages) (obrigatório apenas se estiver utilizando o [**serviço de email**]({{< ref path="/tutorials/how-to-enable-disable-messaging-service" lang="pt-br">}})
+* [**horuszup/horusec-messages**](https://hub.docker.com/r/horuszup/horusec-messages) (It is a requirement when you are using the [**e-mail service**]({{< ref path="/tutorials/how-to-enable-disable-messaging-service" lang="en">}})
 * [**horuszup/horusec-webhook**](https://hub.docker.com/r/horuszup/horusec-webhook)
 
 ![](/docs/ptbr/web/installing/docker-compose/0-installing.gif)
@@ -92,7 +89,6 @@ Horusec's images are available on [**dockerhub**](https://hub.docker.com/u/horus
 
 {{% alert color="warning" %}}
 1. All these configurations available on Horusec's [**docker-compose.yaml**](https://github.com/ZupIT/horusec-platform/blob/main/deployments/compose/compose.yaml) are default. It's recommended to change some information (like the user and database password) when using this service in a production environment.
-
 
 
 2. Horusec always updates the images and performs corrections to know which image to use in specific versions. Check out [**release-notes**](https://github.com/ZupIT/horusec/releases) to see the correct versions for each service
@@ -108,5 +104,5 @@ Horusec's images are available on [**dockerhub**](https://hub.docker.com/u/horus
 - HORUSEC_SMTP_PORT: "e-mail service port".
 {{% /alert %}}
 
-### Leia mais
-- [**Como utilizar Horusec-CLI sem docker?**]({{< ref path="/tutorials/how-to-use-horusec-without-docker" lang="pt-br">}})
+### Read more
+- [**How to use Horusec without Docker?**]({{< ref path="/tutorials/how-to-use-horusec-without-docker" lang="en">}})

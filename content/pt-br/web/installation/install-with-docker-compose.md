@@ -18,12 +18,7 @@ Não é recomendado instalar o Horusec utilizando o Docker-Compose em ambientes 
 
 ## **Requisitos**
 
-Para realizar esta configuração, é necessário ter as seguintes ferramentas em seu ambiente: 
-
-* [**Docker-Compose**](https://docs.docker.com/compose/install/) (versão recomendada ```20.04```)
-* **Linux Ubuntu** (versão recomendada ```20.04```)
-* [**Docker**](https://docs.docker.com/get-docker/) (versão recomendada ```19.03.11```).
-
+Veja os requisitos na seção [**Configuração do seu ambiente**]({{< ref path="/web/set-up.md" lang="pt-br">}}) section.  
 
 
 ## **Configuração**
@@ -68,7 +63,7 @@ email: dev@example.com
 password: Devpass0*
 ```
 
-Para alterar ou desabilitar o usuário padrão do sistema basta seguir [**nosso tutorial**]({{< ref path="/tutorials/how-to-enable-disable-default-user" lang="pt-br">}})
+Para alterar ou desabilitar o usuário padrão do sistema basta seguir [**o tutorial**]({{< ref path="/tutorials/how-to-enable-disable-default-user" lang="pt-br">}})
 
 {{% alert color="info" %}}
 Todos os serviços backend são expostos utilizando **network_mode: "host"** verifique se as [**configurações do Docker estão habilitadas**](https://docs.docker.com/network/host/) para fazer uso desta funcionalidade.
@@ -109,5 +104,5 @@ Hoje o Horusec disponibiliza todas as suas imagens no [**dockerhub**](https://hu
 
 
 
-### Read more
-- [**How to use Horusec-CLI without docker?**]({{< ref path="/tutorials/how-to-use-horusec-without-docker" lang="en">}})
+### Leia mais 
+- [**Com usar o Horusec sem o Docker?**]({{< ref path="/tutorials/how-to-use-horusec-without-docker" lang="pt-br">}})
