@@ -5,7 +5,7 @@ description: Nesta seção, você vai encontrar mais informações sobre o Manag
 ---
 
 ---
-
+ 
 ## O que é?
 
 O Manager é uma **interface gráfica** do Horusec, na qual é possível:
@@ -19,19 +19,19 @@ A seguir, você verá em detalhes como realizar cada uma dessas atividades.
 ## Configurações do Manager
 
 
-### Criação de conta
+### 1. Criação de conta
 
 O Manager conta com uma funcionalidade para você criar sua conta dentro do próprio Horusec. Depois que seu usuário é criado, basta confirmar a conta direto no seu e-mail. 
 
 ![](/docs/ptbr/web/services/manager/introduction/1-create-account.gif)
 
-### Autenticação
+### 2. Autenticação
 
 O Horusec também oferece uma autenticação simples gerenciada pelo próprio sistema.
 
 ![](/docs/ptbr/web/services/manager/introduction/2-login-empty.png)
 
-### Painel analítico
+### 3. Painel analítico
 
 Quando uma análise é enviada para o Horusec armazenar, você tem acesso a um dashboard detalhado com a visão da organização ou do repositório em relação àquela análise. 
 
@@ -49,7 +49,36 @@ Veja mais sobre quais são esses dados na tabela a seguir:
 | **Linha do tempo de vulnerabilidades** | Linha do tempo com detalhes das vulnerabilidades classificadas de acordo com severidade e data, na visão da organização ou do repositório. |
 | **Detalhes das vulnerabilidades ativas**  | Visão detalhada das vulnerabilidades que estão ativas, na visão da organização ou do repositório.  |
 
-#### Donwload de dados do painel
+### 4. Gerenciamentos
+No Horusec, você pode tem duas formas de gerenciar suas informações. Na página inicial do Manager você pode visualizar todos os workspaces e repositórios da sua organização.
+
+{{< tabs id="Dash" >}}
+{{% tab name="Dashboard com visão por workspace" %}}
+![](/docs/ptbr/web/services/manager/introduction/3-dashboard-organization.gif)
+{{% /tab %}}
+
+{{% tab name="Dashboard com a visão por repositório" %}}
+![](/docs/ptbr/web/services/manager/introduction/4-dashboard-repository.gif)
+{{% /tab %}}
+{{< /tabs >}}
+
+
+Você também pode criar, editar e excluir um workspace e um repositório: 
+
+#### Administrar um workspace
+
+Veja abaixo um exemplo de como administrar um workspace:
+
+![](/docs/ptbr/web/services/manager/home/1-manager-workspace.gif)
+
+#### Administrar um repositório
+
+Veja abaixo um exemplo de como administrar um repositório:
+
+![](/docs/ptbr/web/services/manager/home/2-manager-repository.gif)
+
+
+#### 5. Download de dados do painel
 
 O Manager do Horusec permite que você faça o download dos dados do seu dashboard. Atualmente, é possível exportar dados para arquivos nos formatos JPG, PDF, JSON, XML, XLS e CSV.  
 
@@ -63,19 +92,10 @@ No GIF abaixo, você confere o procedimento para exportar os dados em todos os f
 ![](/docs/ptbr/web/services/manager/introduction//5-export-dashboardpt.gif)
 
 
-### Gerenciamentos
+{{% alert color="info" %}}
+Veja as [**variáveis de ambiente do Manager**]({{< ref path="/web/services/manager/environment-variable.md" lang="pt-br">}}).
+{{% /alert %}}
 
-No Horusec, você pode fazer diversos tipos de gerenciamento. Veja abaixo mais detalhes sobre cada um deles:
-
-{{< tabs id="Dash" >}}
-{{% tab name="Dash com visão por workspace" %}}
-![](/docs/ptbr/web/services/manager/introduction/3-dashboard-organization.gif)
-{{% /tab %}}
-
-{{% tab name="Dash com a visão por repositório" %}}
-![](/docs/ptbr/web/services/manager/introduction/4-dashboard-repository.gif)
-{{% /tab %}}
-{{< /tabs >}}
 
 ### Leia mais
 - [**Como gerar um token de autorização?**]({{< ref path="/tutorials/how-to-create-an-authorization-token" lang="pt-br">}})

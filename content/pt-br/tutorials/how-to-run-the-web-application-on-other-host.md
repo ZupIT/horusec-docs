@@ -1,7 +1,7 @@
 ---
 title: Como rodar a aplicação web em outro host?
 weight: 14
-description: Nesta seção, você encontra o tutorial para rodar a aplicação web do Horusec em uma máquina virtual
+description: Nesta seção, você encontra o tutorial para rodar a aplicação web do Horusec em uma máquina virtual.
 ---
 
 ---
@@ -61,11 +61,11 @@ O Horusec-Manager está sendo executado com a seguinte configuração:
 A partir disso, basta você exportar as variáveis referente aos serviços onde estão sendo hospedados e instalar novamente o Horusec, para este cenário seria:
 
 ```bash
-export REACT_APP_HORUSEC_ENDPOINT_API="http:\/\/YOUR_HOST:8000" && \
-export REACT_APP_HORUSEC_ENDPOINT_ANALYTIC="http:\/\/YOUR_HOST:8005" && \
-export REACT_APP_HORUSEC_ENDPOINT_CORE="http:\/\/YOUR_HOST:8003" && \
-export REACT_APP_HORUSEC_ENDPOINT_WEBHOOK="http:\/\/YOUR_HOST:8004" && \
-export REACT_APP_HORUSEC_ENDPOINT_AUTH="http:\/\/YOUR_HOST:8006" && \
-export REACT_APP_HORUSEC_ENDPOINT_VULNERABILITY="http:\/\/YOUR_HOST:8001" && \
+export REACT_APP_HORUSEC_ENDPOINT_API="http:\\/\\/YOUR_HOST:8000" && \
+export REACT_APP_HORUSEC_ENDPOINT_ANALYTIC="http:\\/\\/YOUR_HOST:8005" && \
+export REACT_APP_HORUSEC_ENDPOINT_CORE="http:\\/\\/YOUR_HOST:8003" && \
+export REACT_APP_HORUSEC_ENDPOINT_WEBHOOK="http:\\/\\/YOUR_HOST:8004" && \
+export REACT_APP_HORUSEC_ENDPOINT_AUTH="http:\\/\\/YOUR_HOST:8006" && \
+export REACT_APP_HORUSEC_ENDPOINT_VULNERABILITY="http:\\/\\/YOUR_HOST:8001" && \
 make install
 ```

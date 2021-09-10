@@ -55,12 +55,12 @@ The Horusec-Manager is being executed with the following configuration:
 Then, you just export the variables related to the services where they are hosted and install Horusec again, for this kind of  scenario: 
 
 ```bash
-export REACT_APP_HORUSEC_ENDPOINT_API="http:\/\/YOUR_HOST:8000" && \
-export REACT_APP_HORUSEC_ENDPOINT_ANALYTIC="http:\/\/YOUR_HOST:8005" && \
-export REACT_APP_HORUSEC_ENDPOINT_CORE="http:\/\/YOUR_HOST:8003" && \
-export REACT_APP_HORUSEC_ENDPOINT_WEBHOOK="http:\/\/YOUR_HOST:8004" && \
-export REACT_APP_HORUSEC_ENDPOINT_AUTH="http:\/\/YOUR_HOST:8006" && \
-export REACT_APP_HORUSEC_ENDPOINT_VULNERABILITY="http:\/\/YOUR_HOST:8001" && \
+export REACT_APP_HORUSEC_ENDPOINT_API="http:\\/\\/YOUR_HOST:8000" && \
+export REACT_APP_HORUSEC_ENDPOINT_ANALYTIC="http:\\/\\/YOUR_HOST:8005" && \
+export REACT_APP_HORUSEC_ENDPOINT_CORE="http:\\/\\/YOUR_HOST:8003" && \
+export REACT_APP_HORUSEC_ENDPOINT_WEBHOOK="http:\\/\\/YOUR_HOST:8004" && \
+export REACT_APP_HORUSEC_ENDPOINT_AUTH="http:\\/\\/YOUR_HOST:8006" && \
+export REACT_APP_HORUSEC_ENDPOINT_VULNERABILITY="http:\\/\\/YOUR_HOST:8001" && \
 make install
 ```
 
