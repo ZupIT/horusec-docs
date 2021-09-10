@@ -16,19 +16,21 @@ Manager is Horusec's  graphical interface, which is possible to:
 
 You will see below more details on how to make each one of these activities.
 
-## Creating an account 
+## Manager configurations
+
+### 1. Creating an account 
 
 Manager creates an account inside Horusec. After your user is created, you just need to confirm the account on your email. 
 
 ![](/docs/ptbr/web/services/manager/introduction/1-create-account.gif)
 
-## Authentication
+### 2. Authentication
 
 Horusec offers a simple authentication managed by its own system. 
 
 ![](/docs/ptbr/web/services/manager/introduction/2-login-empty.png)
 
-## Analytics dashboard
+### 3. Analytics dashboard
 
 When an analysis is sent to Horusec to store, you have access to a detailed dashboard with the organization or repository's view related to that analysis. 
 
@@ -91,21 +93,8 @@ See more about these data in the table below:
   </tbody>
 </table>
 
-### Download the data from the dashboard
-Horusec Manager allows you to download the data from your dashboard. You can export the data in the following formats: JPG, PDF, JSON, XML, XLS, and CSV.
-
-To export the data, follow the steps:
-- Click on the 'Export button' in the right corner of the dashboard screen;
-- Select the file format you want;
-- The file will be automatically generated. 
-
-See the whole process in the gif below: 
-
-![](/docs/ptbr/web/services/manager/introduction/export-dashboard.gif)
-
-## Managements
-
-On Horusec, you have a variety of management types. Check below more information about each one of them:
+### 4. Managements
+You have two ways to manage your information on Horusec. In the Manager's homepage you can see all the workspaces and repositories of your organization:
 
 {{< tabs name="T0" >}}
 {{% tab name= "Dashboard with workspace view" %}}
@@ -118,6 +107,38 @@ On Horusec, you have a variety of management types. Check below more information
 {{< /tabs >}}
 
 
+You can create, edit and delete a repo or a workspace, check out:  
+
+#### Manage a workspace
+
+See an example below on how to manage a workspace:
+
+![](/docs/ptbr/web/services/manager/home/1-manager-workspace.gif)
+
+#### Manage a repository
+
+See an example below on how to manage a repository:
+
+
+![](/docs/ptbr/web/services/manager/home/2-manager-repository.gif)
+
+
+### 5. Download the data from the dashboard
+Horusec Manager allows you to download the data from your dashboard. You can export the data in the following formats: JPG, PDF, JSON, XML, XLS, and CSV.
+
+To export the data, follow the steps:
+- Click on the 'Export button' in the right corner of the dashboard screen;
+- Select the file format you want;
+- The file will be automatically generated. 
+
+See the whole process in the gif below: 
+
+![](/docs/ptbr/web/services/manager/introduction/export-dashboard.gif)
+
+
+{{% alert color="info" %}}
+Check out [**Manager's environment variables**]({{< ref path="/web/services/manager/environment-variable.md" lang="en">}}).
+{{% /alert %}}
 
 ### Read more
-- [**How to create an authorization token?**]({{< ref path="/tutorials/how-to-create-an-authorization-token" lang="en">}})
+- [**How to create an authorization token?**]({{< ref path="/tutorials/how-to-create-an-authorization-token" lang="en">}}) 
