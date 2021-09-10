@@ -1,5 +1,5 @@
 ---
-title: How to run the web application in other host?
+title: How to run the web application on another host?
 weight: 20
 description: In this section, you will find a tutorial to run Horusec's web application in a virtual machine.
 ---
