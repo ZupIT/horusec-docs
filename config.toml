@@ -66,6 +66,9 @@ languageName ="English"
 version_menu = "Versions"
 # Weight used for sorting.
 weight = 1
+
+
+
 [languages.pt-br]
 title = "Horusec"
 description = "O Horusec é uma ferramenta open source que realiza análise estática de códigos para identificar falhas de segurança durante o processo de desenvolvimento."
@@ -84,6 +87,11 @@ version_menu = "Versões"
       style = "native"
       # Uncomment if you want your chosen highlight style used for code blocks without a specified language
       # guessSyntax = "true"
+
+[[menu.main]]
+    name = "FAQ"
+    weight = 20
+    url = "https://horusec.io/docs/faq"
 
 # Everything below this are Site Params
 
@@ -201,17 +209,19 @@ enable = false
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
 	name = "GitHub"
-	url = ""
+	url = "https://github.com/ZupIT/horusec"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
+
 [[params.links.developer]]
-	name = "Slack"
-	url = ""
-	icon = "fab fa-slack"
-        desc = "Chat with other project developers"
+	name = "Forum"
+	url = "http://forum.zup.com.br"
+	icon = "fab fa-stack-exchange"
+  desc = "Chat with other project developers"
+
 [[params.links.developer]]
 	name = "Developer mailing list"
-	url = ""
+	url = "mailto:horusec@zup.com.br"
 	icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
 
