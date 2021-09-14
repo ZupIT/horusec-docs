@@ -5,6 +5,7 @@ weight: 7
 type: list
 description: >-
   Nesta seção, você vai encontrar perguntas e respostas mais realizadas pela comunidade sobre o Horusec.
+toc_hide: true
 ---
 
 ### **1. Quais são as linguagens e ferramentas de programação disponíveis no Horusec?**

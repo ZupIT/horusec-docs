@@ -5,6 +5,7 @@ weight: 51
 type: list
 description: >-
   In this section, you will find frequently asked questions about Horusec.
+toc_hide: true
 ---
 
 ### **1. What languages does Horusec support?** 
