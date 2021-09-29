@@ -7,7 +7,7 @@ description: >-
 
 ## **O que é?** 
 
-O [**Docker-Compose**](https://docs.docker.com/compose/) é uma ferramenta para configurar os serviços de seu aplicativo, além de definir e executar aplicativos Docker de vários contêineres. Com um único, você cria e inicia todos os serviços de sua configuração.
+O [**Docker-Compose**](https://docs.docker.com/compose/) é uma ferramenta para configurar os serviços de seu aplicativo, além de definir e executar aplicativos Docker de vários contêineres. Com um único comando você cria e inicia todos os serviços de sua configuração.
 
 No caso desta instalação, o objetivo é que você utilize a aplicação web do Horusec vinculado ao seu ambiente usando Docker-Compose.
 
