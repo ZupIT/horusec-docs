@@ -184,16 +184,12 @@ Veja abaixo como chamar a implementação do formatter no **analyzer controller*
 Se sim, será necessário criar uma nova função para detectar as vulnerabilidades daquela linguagem. Veja como no exemplo abaixo:
 
 ```go
-func (a *Analyser) detectVulnerabilityPython(projectSubPath string) {
-	const TotalProcess = 1
-	a.monitor.AddProcess(TotalProcess)
-
-	if err := a.dockerSDK.PullImage(a.getCustomOrDefaultImage(languages.Python)); err != nil {
-		a.setErrorAndRemoveProcess(err, TotalProcess)
-		return
-	}
-
-	go bandit.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
+func (a *Analyser) detectVulnerabilityPython(wg *sync.WaitGroup, projectSubPath string) error {
+    if err := a.dockerSDK.PullImage(a.getCustomOrDefaultImage(languages.Python)); err != nil {
+        return err
+    }
+    bandit.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
+    return nil
 }
 ```
 
@@ -201,7 +197,7 @@ func (a *Analyser) detectVulnerabilityPython(projectSubPath string) {
 Você também precisa adicionar uma nova linguagem ao mapa que contém a função  **`mapDetectVulnerabilityByLanguage`**. Veja o exemplo: 
 
 ```go
-func (a *Analyser) mapDetectVulnerabilityByLanguage() map[languages.Language]func(string) {
+func (a *Analyser) detectVulnerabilityFuncs() map[languages.Language]func(string) {
 	return map[languages.Language]func(string){
 				...
 		languages.Python: a.detectVulnerabilityPython,
@@ -217,38 +213,30 @@ Se sim, apenas adicione a chamada do novo formatter na função já existente **
 **Veja como era antes de você adicionar:**
 
 ```go
-func (a *Analyser) detectVulnerabilityPython(projectSubPath string) {
-	const TotalProcess = 1
-	a.monitor.AddProcess(TotalProcess)
-
-	if err := a.dockerSDK.PullImage(a.getCustomOrDefaultImage(languages.Python)); err != nil {
-		a.setErrorAndRemoveProcess(err, TotalProcess)
-		return
-	}
-
-	go safety.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
+func (a *Analyser) detectVulnerabilityPython(wg *sync.WaitGroup, projectSubPath string) error {
+    if err := a.dockerSDK.PullImage(a.getCustomOrDefaultImage(languages.Python)); err != nil {
+        return err
+    }
+    safety.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
+    return nil
 }
 ```
 **Veja depois que você adicionou:**
 
 ```go
-func (a *Analyser) detectVulnerabilityPython(projectSubPath string) {
-	const TotalProcess = 2
-	a.monitor.AddProcess(TotalProcess)
-
-	if err := a.dockerSDK.PullImage(a.getCustomOrDefaultImage(languages.Python)); err != nil {
-		a.setErrorAndRemoveProcess(err, TotalProcess)
-		return
+func (a *Analyser) detectVulnerabilityPython(wg *sync.WaitGroup, projectSubPath string) error {
+	if err := a.docker.PullImage(a.getCustomOrDefaultImage(languages.Python)); err != nil {
+		return err
 	}
-
-	go safety.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
-	go bandit.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
+	spawn(wg, bandit.NewFormatter(a.formatter), projectSubPath)
+	safety.NewFormatter(a.formatter).StartAnalysis(projectSubPath)
+	return nil
 }
 ```
 
 {{% alert color="warning" %}}
-Essas funções devem ser realizadas em **go routines** e para cada nova go routine, é necessário atualizar o monitor, como no exemplo anterior, passando o número total de chamadas.
-Se você esquecer esse passo, o Horusec irá finalizar antes da ferramenta terminar a análise.
+Todas as analises são executadas em paralelo. Caso a função que executa a analise rode somente uma ferramente não é necessário utilizar go routine ou chamar a função `spawn` pois ela já vai estar rodando em paralelo, porém caso seja necessário rodar multiplas analises dentro de uma
+é recomendado que use a função `spawn` para cada analise complementar.
 
 {{% /alert %}}
 
