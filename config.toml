@@ -224,4 +224,3 @@ enable = false
 	url = "mailto:horusec@zup.com.br"
 	icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
-

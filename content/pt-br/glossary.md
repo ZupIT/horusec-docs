@@ -1,6 +1,6 @@
 ---
 title: Glossário
-weight: 6
+weight: 7
 description: >-
   Nesta seção, você vai encontrar mais informações sobre os principais conceitos do Horusec.
 ---
