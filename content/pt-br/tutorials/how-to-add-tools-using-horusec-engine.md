@@ -133,7 +133,7 @@ func (a *Analyzer) detectVulnerabilityCsharp(wg *sync.WaitGroup, projectSubPath 
 ```
 
 
-Você também precisa adicionar uma nova linguagem ao mapa que contém a função  **`mapDetectVulnerabilityByLanguage`**. Veja o exemplo: 
+Você também precisa adicionar uma nova linguagem ao mapa que contém a função  **`detectVulnerabilityFuncs`**. Veja o exemplo: 
 
 ```go
 func (a *Analyzer) detectVulnerabilityFuncs() map[languages.Language]func(string) {
