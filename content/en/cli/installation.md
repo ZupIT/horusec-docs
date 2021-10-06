@@ -80,9 +80,17 @@ The links below are to download the lastest version:
   - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.0/horusec_linux_x86
 - Mac x64:
   - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.0/horusec_mac_x64
+- Linux x64 Debian installer:
+  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.0/horusec_linux_64-bit.deb
+- Linux x86 Debian installer:
+  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.0/horusec_linux_32-bit.deb
+- Linux x64 RPM installer:
+  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.0/horusec_linux_64-bit.rpm
+- Linux x86 RPM installer:
+  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.0/horusec_linux_32-bit.rpm
+
 
 {{% alert color="info" %}}
-### MAC ou Linux
 After downloading the files for Mac or Linux it will be necessary to make them `executable` through the command `chmod +x`.
 ```bash
 chmod +x path/horusec_[your version here]
@@ -92,7 +100,7 @@ Having run this command, you will now be able to open the file for manual instal
 
 👉[**Lastest available version**](https://github.com/ZupIT/horusec/releases/latest)
 
-👉[**All available versions**](https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/all-version-cli.txt)
+👉[**All available versions**](https://github.com/ZupIT/horusec/releases)
 
 
 ## **Installation via image docker**
