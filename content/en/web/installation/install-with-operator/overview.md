@@ -19,7 +19,7 @@ To install it, follow the next step:
 **Step 1.** After configuring your database connection, connecting to your broker and creating secrets. Install Horusec-Operator on your cluster, see the example below: 
 
 ```
-kubectl apply -k "https://github.com/ZupIT/horusec-operator/config/default?ref=v2.1.3"
+kubectl apply -k "https://github.com/ZupIT/horusec-operator/config/default?ref=v2.2.0"
 ```
 
 Now, see if the resource was installed: 

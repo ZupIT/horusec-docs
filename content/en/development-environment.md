@@ -44,7 +44,7 @@ Don't worry, this is normal. The script is trying to create a new database, but 
 After script finish, install: 
 
 ```
-kubectl apply -f "https://github.com/ZupIT/horusec-operator/releases/download/v2.0.0/horusec-operator.yaml"
+kubectl apply -f "https://github.com/ZupIT/horusec-operator/releases/download/v2.2.0/horusec-operator.yaml"
 ```
 Check out if it was successfully installed: 
 ```

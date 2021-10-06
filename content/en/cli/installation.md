@@ -71,15 +71,15 @@ The manual installation is done according to your operation system and the versi
 The links below are to download the lastest version:
 
 - Windows x64:
-  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.5.0/horusec_win_x64.exe
+  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.0/horusec_win_x64.exe
 - Windows x86:
-  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.5.0/horusec_win_x86.exe
+  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.0/horusec_win_x86.exe
 - Linux x64:
-  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.5.0/horusec_linux_x64
+  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.0/horusec_linux_x64
 - Linux x86:
-  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.5.0/horusec_linux_x86
+  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.0/horusec_linux_x86
 - Mac x64:
-  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.5.0/horusec_mac_x64
+  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.0/horusec_mac_x64
 
 {{% alert color="info" %}}
 ### MAC ou Linux
