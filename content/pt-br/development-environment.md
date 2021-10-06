@@ -45,7 +45,7 @@ Não se preocupe, é normal. O script está tentando criar um novo banco de dado
 Após a finalização do script, instale: 
 
 ```
-kubectl apply -f "https://github.com/ZupIT/horusec-operator/releases/download/v2.0.0/horusec-operator.yaml"
+kubectl apply -f "https://github.com/ZupIT/horusec-operator/releases/download/v2.2.0/horusec-operator.yaml"
 ```
 Confirme se foi instalado com sucesso: 
 

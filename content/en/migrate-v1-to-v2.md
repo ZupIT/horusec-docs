@@ -46,7 +46,7 @@ There wasn't a new change on the optional requirement, it continues:
 ### Migration:
 To continue the migration, follow the next steps: 
 
-**Step 1:** Update the services with the lastest version available **v2.12.0**:
+**Step 1:** Update the services with the [lastest version available](https://github.com/ZupIT/horusec-platform/releases/latest):
  - [**Horusec-API**](https://hub.docker.com/r/horuszup/horusec-api)
  - [**Horusec-Analytic**](https://hub.docker.com/r/horuszup/horusec-analytic)
  - [**Horusec-Auth**](https://hub.docker.com/r/horuszup/horusec-auth)

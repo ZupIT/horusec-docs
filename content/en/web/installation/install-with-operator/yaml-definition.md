@@ -23,7 +23,7 @@ description: In this section, you will find YAML's definition.
 | components.analytic.image.registry | String | docker.io/horuszup | 
 Definitions for the image's registry download https://kubernetes.io/docs/concepts/containers/images/#updating-images. |
 | components.analytic.image.repository | String | horusec-analytic | Repository definition for image download https://kubernetes.io/docs/concepts/containers/images/#updating-images (if not configured it will be by default horusec-analytic). |
-| components.analytic.image.tag | Number | `v2.16.5` | Tag versioning definitions for image download https://kubernetes.io/docs/concepts/containers/images/#updating-images (if not configured it will be by default v2.16.5). |
+| components.analytic.image.tag | Number | `v2.17.1` | Tag versioning definitions for image download https://kubernetes.io/docs/concepts/containers/images/#updating-images (if not configured it will be by default v2.17.1). |
 | components.analytic.livenessProbe | Number | - | Waiting time settings for verification command if the service is in good health  https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/ | 
 | components.analytic.livenessProbe.timeoutSeconds | Number | `1` |  https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 1). | 
 | components.analytic.livenessProbe.periodSeconds | Number | `10` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 10). | 
@@ -55,7 +55,7 @@ Definitions for the image's registry download https://kubernetes.io/docs/concept
 | components.analytic.database.migration.image.pullPolicy | String | `IfNotPresent` | Error message to be displayed.  |
 | components.analytic.database.migration.image.registry | String | `docker.io/horuszup` | Definitions to register the image's download https://kubernetes.io/docs/concepts/containers/images/#updating-images (if not configured it will be by default docker.io/horuszup).  |
 |components.analytic.database.migration.image.repository | String | `horusec-migrations` | Definitions for the repository of image's download https://kubernetes.io/docs/concepts/containers/images/#updating-images (if not configured it will be by default horusec-migration).  |
-| components.analytic.database.migration.image.tag | Number | `"v2.16.5` | Versioning tag's definition to download image https://kubernetes.io/docs/concepts/containers/images/#updating-images (if not configured it will be by default v2.16.5).  |
+| components.analytic.database.migration.image.tag | Number | `"v2.17.1` | Versioning tag's definition to download image https://kubernetes.io/docs/concepts/containers/images/#updating-images (if not configured it will be by default v2.17.1).  |
 | components.analytic.database.migration.user | - |  | User definition to database connections.  |
 | components.analytic.database.migration.user.secretKeyRef | - |  | Definitions on how to get the user through kubernetes secrets https://kubernetes.io/docs/concepts/configuration/secret/.  |
 | components.analytic.database.migration.user.secretKeyRef.name | String | `horusec-analytic-database` | Secret's definition group  (if not configured it will be by default horusec-analytic-database).  |
@@ -76,7 +76,7 @@ Definitions for the image's registry download https://kubernetes.io/docs/concept
 | components.api.container.image.pullPolicy | String | `IfNotPresent` |   |
 | components.api.container.image.registry| String | `docker.io/horuszup` |   |
 | components.api.container.image.repository | String | `horusec-api` |   |
-| components.api.container.image.tag | Number | `v2.16.5` |   
+| components.api.container.image.tag | Number | `v2.17.1` |   
 | components.api.container.livenessProbe.timeoutSeconds | Number | `1` |   |
 | components.api.container.livenessProbe.periodSeconds | Number | `10` |   |
 | components.api.container.livenessProbe.successThreshold | Number | `1` |   |
@@ -114,7 +114,7 @@ Definitions for the image's registry download https://kubernetes.io/docs/concept
 | components.auth.container.image.pullPolicy|  String  |  `IfNotPresent`  |  |
 | components.auth.container.image.registry |  String | `docker.io/horuszup` |   |
 | components.auth.container.image.repository |   String | `horusec-auth` |   |
-| components.auth.container.image.tag  |  Number | `v2.16.5` |   |
+| components.auth.container.image.tag  |  Number | `v2.17.1` |   |
 | components.auth.container.livenessProbe.timeoutSeconds | Number |  `1`  |  |
 | components.auth.container.livenessProbe.periodSeconds | Number | `10` |   |
 | components.auth.container.livenessProbe.successThreshold | Number | `1` |   |
@@ -142,7 +142,7 @@ Definitions for the image's registry download https://kubernetes.io/docs/concept
 | components.core.container.image.pullPolicy|  String  |  `IfNotPresent`  |  |
 | components.core.container.image.registry |  String | `docker.io/horuszup` |   |
 | components.core.container.image.repository |   String | `horusec-core` |   |
-| components.core.container.image.tag  |  Number | `v2.16.5` |   |
+| components.core.container.image.tag  |  Number | `v2.17.1` |   |
 | components.core.container.livenessProbe.timeoutSeconds | Number |  `1`  |  |
 | components.core.container.livenessProbe.periodSeconds | Number | `10` |   |
 | components.core.container.livenessProbe.successThreshold | Number | `1` |   |
@@ -169,7 +169,7 @@ Definitions for the image's registry download https://kubernetes.io/docs/concept
 | components.manager.container.image.pullPolicy|  String  |  `IfNotPresent`  |  |
 | components.manager.container.image.registry |  String | `docker.io/horuszup` |   |
 | components.manager.container.image.repository |   String | `horusec-manager` |   |
-| components.manager.container.image.tag  |  Number | `v2.16.5` |   |
+| components.manager.container.image.tag  |  Number | `v2.17.1` |   |
 | components.manager.container.livenessProbe.timeoutSeconds | Number |  `1`  |  |
 | components.manager.container.livenessProbe.periodSeconds | Number | `10` |   |
 | components.manager.container.livenessProbe.successThreshold | Number | `1` |   |
@@ -204,7 +204,7 @@ Definitions for the image's registry download https://kubernetes.io/docs/concept
 | components.messages.container.image.pullPolicy|  String  |  `IfNotPresent`  |  |
 | components.messages.container.image.registry |  String | `docker.io/horuszup` |   |
 | components.messages.container.image.repository |   String | `horusec-manager` |   |
-| components.messages.container.image.tag  |  Number | `v2.16.5` |   |
+| components.messages.container.image.tag  |  Number | `v2.17.1` |   |
 | components.messages.container.livenessProbe.timeoutSeconds | Number |  `1`  |  |
 | components.messages.container.livenessProbe.periodSeconds | Number | `10` |   |
 | components.messages.container.livenessProbe.successThreshold | Number | `1` |   |
@@ -233,7 +233,7 @@ Definitions for the image's registry download https://kubernetes.io/docs/concept
 | components.vulnerability.container.image.pullPolicy|  String  |  `IfNotPresent`  |  |
 | components.vulnerability.container.image.registry |  String | `docker.io/horuszup` |   |
 | components.vulnerability.container.image.repository |   String | `horusec-vulnerability` |   |
-| components.vulnerability.container.image.tag  |  Number | `v2.16.5` |   |
+| components.vulnerability.container.image.tag  |  Number | `v2.17.1` |   |
 | components.vulnerability.container.livenessProbe.timeoutSeconds | Number |  `1`  |  |
 | components.vulnerability.container.livenessProbe.periodSeconds | Number | `10` |   |
 | components.vulnerability.container.livenessProbe.successThreshold | Number | `1` |   |
@@ -260,7 +260,7 @@ Definitions for the image's registry download https://kubernetes.io/docs/concept
 | components.webhook.container.image.pullPolicy|  String  |  `IfNotPresent`  |  |
 | components.webhook.container.image.registry |  String | `docker.io/horuszup` |   |
 | components.webhook.container.image.repository |   String | `horusec-webhook` |   |
-| components.webhook.container.image.tag  |  Number | `v2.16.5` |   |
+| components.webhook.container.image.tag  |  Number | `v2.17.1` |   |
 | components.webhook.container.livenessProbe.timeoutSeconds | Number |  `1`  |  |
 | components.webhook.container.livenessProbe.periodSeconds | Number | `10` |   |
 | components.webhook.container.livenessProbe.successThreshold | Number | `1` |   |
@@ -288,7 +288,7 @@ Definitions for the image's registry download https://kubernetes.io/docs/concept
 | components.global.database.migration.image.pullpolicy| String | `IfNotPresent`  |  |
 | components.global.database.migration.image.registry | String | `docker.io/horuszup` |   |
 | components.global.database.migration.image.repository | String | `horusec-migrations` |   |
-| components.global.database.migration.image.tag| Number | `v2.16.5` |   |
+| components.global.database.migration.image.tag| Number | `v2.17.1` |   |
 | components.global.database.migration.user.secretKeyRef.name | String | `horusec-platform-database` |   |
 | components.global.database.migration.user.secretKeyRef.key | String | `username` |   |
 | components.global.database.migration.password.secretKeyRef.name | String | `horusec-platform-database` |   |
