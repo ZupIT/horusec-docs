@@ -12,35 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-name: DocsHorusecPipeline
-
+name: DCO Validator
 on:
   pull_request:
-    branches: [ "**" ]
+    types: [opened, synchronize]
 
 jobs:
-  install-lint-build:
-    name: install-lint-build
+  dco-gpg-validator:
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
-      - name: Set up Node 12
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12'
-        id: node
-      - name: Check out code
-        uses: actions/checkout@v2
-        with:
-          submodules: true
-          fetch-depth: 0
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.79.1'
-          extended: true
-      - name: Install
-        run: make install
-      - name: Build
-        run: make build
+      - uses: ZupIT/zup-dco-validator@v1.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_GPG: false

@@ -1,6 +1,6 @@
 ---
 title: Release Notes
-weight: 52
+weight: 8
 description: >-
   In this section, you will find Horusec's Release Notes.
 ---

@@ -104,7 +104,7 @@ type WorkDir struct {
 4. To finish, change the methods with the languages:
 
 * `func NewWorkDir() *WorkDir`
-* `func (w *WorkDir) Map() map[languages.Language][]string`
+* `func (w *WorkDir) LanguagePaths() map[languages.Language][]string`
 * `func (w *WorkDir) setEmptyOrSliceEmptyInNilContent() *WorkDir`
 
 ### **Step 4: Call the formatter**
@@ -121,7 +121,6 @@ See the following path:
  -------analyser.go
 ```
 When Horusec starts the analysis, it identifies the project's languages and compares if there is one able to perform an analysis. It there is one, it will send to the **analyzer controller** which languages must be enabled in the analysis. 
-Then, the **analyzer controller** makes a process control to know if all the tools finished its analysis. So, inside each `detectVulnerability[LANGUAGE]` has the total amount of processes representing the number of tools for each language.
 
 See below how to call the formatter implementation in the **analyzer controller**.
 
@@ -131,19 +130,18 @@ If yes, it will be necessary to create a new function to detect the vulnerabilit
 
 
 ```go
-func (a *Analyser) detectVulnerabilityCsharp(projectSubPath string) {
-	const TotalProcess = 1
-	a.monitor.AddProcess(TotalProcess)
-	go horuseccsharp.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
+func (a *Analyzer) detectVulnerabilityCsharp(wg *sync.WaitGroup, projectSubPath string) error {
+    horuseccsharp.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
+    return nil
 }
 ```
 
 
-You can also add a new language to the map containing the **`mapDetectVulnerabilityByLanguage`** function. See the example:
+You can also add a new language to the map containing the **`detectVulnerabilityFuncs`** function. See the example:
 
 
 ```go
-func (a *Analyser) mapDetectVulnerabilityByLanguage() map[languages.Language]func(string) {
+func (a *Analyser) detectVulnerabilityFuncs() map[languages.Language]func(string) {
 	return map[languages.Language]func(string){
 				...
 		languages.Csharp: a.detectVulnerabilityCsharp,
@@ -159,37 +157,32 @@ If it is, just add a call for a new formatter on the **`detectVulnerability[LANG
 **See how it was before you add it:**
 
 ```go
-func (a *Analyser) detectVulnerabilityCsharp(projectSubPath string) {
-	const TotalProcess = 1
-	a.monitor.AddProcess(TotalProcess)
+func (a *Analyzer) detectVulnerabilityCsharp(wg *sync.WaitGroup, projectSubPath string) {
+    if err := a.dockerSDK.PullImage(a.getCustomOrDefaultImage(languages.CSharp)); err != nil {
+        return err
+    }
 
-	if err := a.dockerSDK.PullImage(a.getCustomOrDefaultImage(languages.CSharp)); err != nil {
-		a.setErrorAndRemoveProcess(err, TotalProcess)
-		return
-	}
-
-	go scs.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
+    scs.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
+    return nil
 }
 ```
 **Now, check out after you've added:**
 
 ```go
-func (a *Analyser) detectVulnerabilityCsharp(projectSubPath string) {
-	const TotalProcess = 2
-	a.monitor.AddProcess(TotalProcess)
-	go horuseccsharp.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
+func (a *Analyzer) detectVulnerabilityCsharp(wg *sync.WaitGroup, projectSubPath string) error {
+    spawn(wg, horuseccsharp.NewFormatter(a.formatterService), projectSubPath)
 
-	if err := a.dockerSDK.PullImage(a.getCustomOrDefaultImage(languages.CSharp)); err != nil {
-		a.setErrorAndRemoveProcess(err, TotalProcess)
-		return
-	}
+    if err := a.dockerSDK.PullImage(a.getCustomOrDefaultImage(languages.CSharp)); err != nil {
+        return err
+    }
 
-	go scs.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
+    scs.NewFormatter(a.formatterService).StartAnalysis(projectSubPath)
+    return nil
 }
 ```
 
 {{% alert color="warning" %}}
-These functions must be made on go routines and for each new **go routine**, it is necessary to update the monitor, as in the previous example, passing the total call numbers. If you forget this step, Horusec will end before the tool ends the analysis.
+All analyzes are executed in parallel.If the function performing the analysis runs only one tool is not necessary to use GO Routine or call the `spawn` function because it will already be running in parallel, but if necessary to run multiple analyzes within a it is recommended that you use the `spawn` function for each complementary analysis.
 
 In this scenario, Horusec engine does not have any dependency with docker. It is not necessary to wait to download the image, it can be executed before the download starts. When the download ends, the other tools that have this dependency with docker will be executed.
 {{% /alert %}}

@@ -19,7 +19,7 @@ Follow the next step:
 **Step 1.** Install Horusec-Operator on your cluster, see the example below: 
 
 ```
-kubectl apply -k "https://github.com/ZupIT/horusec-operator/config/default?ref=v2.1.3"
+kubectl apply -k "https://github.com/ZupIT/horusec-operator/config/default?ref=v2.2.0"
 ```
 
 Now, see if the resource was installed: 

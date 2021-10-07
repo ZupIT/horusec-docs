@@ -1,6 +1,6 @@
 ---
 title: "Documentação"
 linkTitle: "Documentação"
-weight: 20
+weight: 1
 type: list
 ---

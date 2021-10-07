@@ -22,7 +22,7 @@ description: Nesta seção, você vai encontrar as definições do arquivo YAML.
 | components.analytic.image.pullPolicy | String | IfNotPresent | Definições para download de imagem https://kubernetes.io/docs/concepts/containers/images/#updating-images  (se não configurado irá ser por padrão IfNotPresent). | 
 | components.analytic.image.registry | String | docker.io/horuszup | Definições para registro de download de imagem https://kubernetes.io/docs/concepts/containers/images/#updating-images. |
 | components.analytic.image.repository | String | horusec-analytic | Definições para repositório de download de imagem https://kubernetes.io/docs/concepts/containers/images/#updating-images (se não configurado irá ser por padrão horusec-analytic). |
-| components.analytic.image.tag | Number | `v2.16.5` | Definições da tag de versionamento para download de imagem https://kubernetes.io/docs/concepts/containers/images/#updating-images (se não configurado irá ser por padrão v2.16.5). |
+| components.analytic.image.tag | Number | `v2.17.1` | Definições da tag de versionamento para download de imagem https://kubernetes.io/docs/concepts/containers/images/#updating-images (se não configurado irá ser por padrão v2.17.1). |
 | components.analytic.livenessProbe | Number | - | Definições para comando de verificação se o serviço está com a saúde em dia https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/ | 
 | components.analytic.livenessProbe.timeoutSeconds | Number | `1` |  https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (se não configurado irá ser por padrão 1). | 
 | components.analytic.livenessProbe.periodSeconds | Number | `10` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (se não configurado irá ser por padrão 10). | 
@@ -54,7 +54,7 @@ description: Nesta seção, você vai encontrar as definições do arquivo YAML.
 | components.analytic.database.migration.image.pullPolicy | String | `IfNotPresent` | Error message to be displayed.  |
 | components.analytic.database.migration.image.registry | String | `docker.io/horuszup` | Definições para registro de download de imagem https://kubernetes.io/docs/concepts/containers/images/#updating-images (se não configurado irá ser por padrão docker.io/horuszup).  |
 |components.analytic.database.migration.image.repository | String | `horusec-migrations` | Definições para repositório de download de imagem https://kubernetes.io/docs/concepts/containers/images/#updating-images (se não configurado irá ser por padrão horusec-migration).  |
-| components.analytic.database.migration.image.tag | Number | `"v2.16.5` | Definições da tag de versionamento para download de imagem https://kubernetes.io/docs/concepts/containers/images/#updating-images (se não configurado irá ser por padrão v2.16.5).  |
+| components.analytic.database.migration.image.tag | Number | `"v2.17.1` | Definições da tag de versionamento para download de imagem https://kubernetes.io/docs/concepts/containers/images/#updating-images (se não configurado irá ser por padrão v2.17.1).  |
 | components.analytic.database.migration.user | - |  | Definições de usuário para conexão com o banco de dados.  |
 | components.analytic.database.migration.user.secretKeyRef | - |  | Definições de como adquirir usuário atráves de secrets kubernetes https://kubernetes.io/docs/concepts/configuration/secret/.  |
 | components.analytic.database.migration.user.secretKeyRef.name | String | `horusec-analytic-database` | Grupo de definição da secret (se não configurado irá ser por padrão horusec-analytic-database).  |
@@ -75,7 +75,7 @@ description: Nesta seção, você vai encontrar as definições do arquivo YAML.
 | components.api.container.image.pullPolicy | String | `IfNotPresent` |   |
 | components.api.container.image.registry| String | `docker.io/horuszup` |   |
 | components.api.container.image.repository | String | `horusec-api` |   |
-| components.api.container.image.tag | Number | `v2.16.5` |   
+| components.api.container.image.tag | Number | `v2.17.1` |   
 | components.api.container.livenessProbe.timeoutSeconds | Number | `1` |   |
 | components.api.container.livenessProbe.periodSeconds | Number | `10` |   |
 | components.api.container.livenessProbe.successThreshold | Number | `1` |   |
@@ -113,7 +113,7 @@ description: Nesta seção, você vai encontrar as definições do arquivo YAML.
 | components.auth.container.image.pullPolicy|  String  |  `IfNotPresent`  |  |
 | components.auth.container.image.registry |  String | `docker.io/horuszup` |   |
 | components.auth.container.image.repository |   String | `horusec-auth` |   |
-| components.auth.container.image.tag  |  Number | `v2.16.5` |   |
+| components.auth.container.image.tag  |  Number | `v2.17.1` |   |
 | components.auth.container.livenessProbe.timeoutSeconds | Number |  `1`  |  |
 | components.auth.container.livenessProbe.periodSeconds | Number | `10` |   |
 | components.auth.container.livenessProbe.successThreshold | Number | `1` |   |
@@ -141,7 +141,7 @@ description: Nesta seção, você vai encontrar as definições do arquivo YAML.
 | components.core.container.image.pullPolicy|  String  |  `IfNotPresent`  |  |
 | components.core.container.image.registry |  String | `docker.io/horuszup` |   |
 | components.core.container.image.repository |   String | `horusec-core` |   |
-| components.core.container.image.tag  |  Number | `v2.16.5` |   |
+| components.core.container.image.tag  |  Number | `v2.17.1` |   |
 | components.core.container.livenessProbe.timeoutSeconds | Number |  `1`  |  |
 | components.core.container.livenessProbe.periodSeconds | Number | `10` |   |
 | components.core.container.livenessProbe.successThreshold | Number | `1` |   |
@@ -168,7 +168,7 @@ description: Nesta seção, você vai encontrar as definições do arquivo YAML.
 | components.manager.container.image.pullPolicy|  String  |  `IfNotPresent`  |  |
 | components.manager.container.image.registry |  String | `docker.io/horuszup` |   |
 | components.manager.container.image.repository |   String | `horusec-manager` |   |
-| components.manager.container.image.tag  |  Number | `v2.16.5` |   |
+| components.manager.container.image.tag  |  Number | `v2.17.1` |   |
 | components.manager.container.livenessProbe.timeoutSeconds | Number |  `1`  |  |
 | components.manager.container.livenessProbe.periodSeconds | Number | `10` |   |
 | components.manager.container.livenessProbe.successThreshold | Number | `1` |   |
@@ -203,7 +203,7 @@ description: Nesta seção, você vai encontrar as definições do arquivo YAML.
 | components.messages.container.image.pullPolicy|  String  |  `IfNotPresent`  |  |
 | components.messages.container.image.registry |  String | `docker.io/horuszup` |   |
 | components.messages.container.image.repository |   String | `horusec-manager` |   |
-| components.messages.container.image.tag  |  Number | `v2.16.5` |   |
+| components.messages.container.image.tag  |  Number | `v2.17.1` |   |
 | components.messages.container.livenessProbe.timeoutSeconds | Number |  `1`  |  |
 | components.messages.container.livenessProbe.periodSeconds | Number | `10` |   |
 | components.messages.container.livenessProbe.successThreshold | Number | `1` |   |
@@ -232,7 +232,7 @@ description: Nesta seção, você vai encontrar as definições do arquivo YAML.
 | components.vulnerability.container.image.pullPolicy|  String  |  `IfNotPresent`  |  |
 | components.vulnerability.container.image.registry |  String | `docker.io/horuszup` |   |
 | components.vulnerability.container.image.repository |   String | `horusec-vulnerability` |   |
-| components.vulnerability.container.image.tag  |  Number | `v2.16.5` |   |
+| components.vulnerability.container.image.tag  |  Number | `v2.17.1` |   |
 | components.vulnerability.container.livenessProbe.timeoutSeconds | Number |  `1`  |  |
 | components.vulnerability.container.livenessProbe.periodSeconds | Number | `10` |   |
 | components.vulnerability.container.livenessProbe.successThreshold | Number | `1` |   |
@@ -259,7 +259,7 @@ description: Nesta seção, você vai encontrar as definições do arquivo YAML.
 | components.webhook.container.image.pullPolicy|  String  |  `IfNotPresent`  |  |
 | components.webhook.container.image.registry |  String | `docker.io/horuszup` |   |
 | components.webhook.container.image.repository |   String | `horusec-webhook` |   |
-| components.webhook.container.image.tag  |  Number | `v2.16.5` |   |
+| components.webhook.container.image.tag  |  Number | `v2.17.1` |   |
 | components.webhook.container.livenessProbe.timeoutSeconds | Number |  `1`  |  |
 | components.webhook.container.livenessProbe.periodSeconds | Number | `10` |   |
 | components.webhook.container.livenessProbe.successThreshold | Number | `1` |   |
@@ -287,7 +287,7 @@ description: Nesta seção, você vai encontrar as definições do arquivo YAML.
 | components.global.database.migration.image.pullpolicy| String | `IfNotPresent`  |  |
 | components.global.database.migration.image.registry | String | `docker.io/horuszup` |   |
 | components.global.database.migration.image.repository | String | `horusec-migrations` |   |
-| components.global.database.migration.image.tag| Number | `v2.16.5` |   |
+| components.global.database.migration.image.tag| Number | `v2.17.1` |   |
 | components.global.database.migration.user.secretKeyRef.name | String | `horusec-platform-database` |   |
 | components.global.database.migration.user.secretKeyRef.key | String | `username` |   |
 | components.global.database.migration.password.secretKeyRef.name | String | `horusec-platform-database` |   |

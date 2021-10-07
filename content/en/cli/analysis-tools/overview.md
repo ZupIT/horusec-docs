@@ -24,15 +24,15 @@ See below:
 
 | **Tools** | **Version** |
 | :--- | :--- |
-| Horusec-Leaks |v2.3.0 |
-| Horusec-Java |v2.3.0  | 
-| Horusec Kotlin |v2.3.0 |
-| Horusec-Kubernetes |v2.3.0| 
-| Horusec-NodeJS |v2.3.0 |
-| Horusec-CSharp |v2.3.0| 
-| Horusec Dart |v2.3.0|
-| Horusec Nginx |v2.3.0| 
-| Horusec Swift |v2.3.0| 
+| Horusec-Leaks |v2.6.1 |
+| Horusec-Java |v2.6.1  | 
+| Horusec Kotlin |v2.6.1 |
+| Horusec-Kubernetes |v2.6.1| 
+| Horusec-NodeJS |v2.6.1 |
+| Horusec-CSharp |v2.6.1| 
+| Horusec Dart |v2.6.1|
+| Horusec Nginx |v2.6.1| 
+| Horusec Swift |v2.6.1| 
 
 
 ## **Available programming languages and tools** 

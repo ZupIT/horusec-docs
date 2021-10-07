@@ -12,35 +12,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-name: DocsHorusecPipeline
-
-on:
-  pull_request:
-    branches: [ "**" ]
-
+name: License
+on: [ "push" ]
 jobs:
-  install-lint-build:
-    name: install-lint-build
+  license:
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
-      - name: Set up Node 12
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - name: Set up Go 1.16
+        uses: actions/setup-go@v1
         with:
-          node-version: '12'
-        id: node
-      - name: Check out code
-        uses: actions/checkout@v2
-        with:
-          submodules: true
-          fetch-depth: 0
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.79.1'
-          extended: true
-      - name: Install
-        run: make install
-      - name: Build
-        run: make build
+          go-version: 1.16
+        id: go
+      - name: license
+        run: |
+          export PATH=${PATH}:`go env GOPATH`/bin
+          make license

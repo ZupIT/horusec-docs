@@ -1,6 +1,6 @@
 ---
 title: Migrando da versão 1.0 para a 2.0
-weight: 0
+weight: 9
 description: >-
   Nesta seção, você vai encontrar como realizar a migração do Horusec da versão 1.0 para 2.0.
 ---
@@ -45,7 +45,7 @@ Não houve alteração no requisito opcional, ele continua sendo:
 ### Migração:
 Para prosseguir com a migração, siga os passos abaixo:
 
-**Passo 1:** Atualize os serviços para a última versão disponível **v2.12.0**:
+**Passo 1:** Atualize os serviços para a [última versão disponível](https://github.com/ZupIT/horusec-platform/releases/latest):
  - [**Horusec-API**](https://hub.docker.com/r/horuszup/horusec-api)
  - [**Horusec-Analytic**](https://hub.docker.com/r/horuszup/horusec-analytic)
  - [**Horusec-Auth**](https://hub.docker.com/r/horuszup/horusec-auth)

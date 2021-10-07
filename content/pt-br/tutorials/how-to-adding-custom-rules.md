@@ -20,7 +20,7 @@ Crie um arquivo **.json** contendo o seguinte código:
 ```json
 [
   {
-     "id": "uuid v4 aleatory",
+     "id": "id",
      "name": "Vulnerability Name",
      "description": "Description of the vulnerability with CWE link",
      "language": "Vulnerability language choice one into: C#, Dart, Java, Kotlin, YAML, Leaks, JavaScript, Nginx",
@@ -55,7 +55,7 @@ Veja abaixo a tabela com os atributos que você pode escolher:
 
 | **Campo** | **Tipo** | **Descrição** |
 | :--- | :--- | :--- |
-| ID          | uuid   | UUID v4 randômico usado para identificar a vulnerabilidade. Suas regras não devem duplicar esse ID.  |
+| ID          | uuid   | ID para identificar a vulnerabilidade. O ID deve ser no template `HS-LANGUAGE-N` onde `LANGUAGE` é a linguagem informada no campo `Language`e `N` é um número aleatório  |
 | Name        | String | Nome da vulnerabilidade. |
 | Description | String | Descrição da vulnerabilidade de preferência com um link da CWE. |
 | Language    | String | Mostra a linguagem do motor que será executada a análise da vulnerabilidade, pode ser entre: C#, Dart, Java, Kotlin, YAML, Leaks, JavaScript, Nginx. |

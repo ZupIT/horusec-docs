@@ -21,7 +21,7 @@ In order to run custom JSON rules in Horusec, you'll have to create a **.json** 
 ```json
 [
   {
-     "id": "uuid v4 aleatory",
+     "id": "id",
      "name": "Vulnerability Name",
      "description": "Description of the vulnerability with CWE link",
      "language": "Vulnerability language choice one into: C#, Dart, Java, Kotlin, YAML, Leaks, JavaScript, Nginx",
@@ -57,7 +57,7 @@ Check the following table to get to know more about each JSON's field:
 
 | **Field** | Type | **Description** |
 | :--- | :--- | :--- |
-| ID |  | Random UUID used to identify the vulnerability in your code. Your rules should not duplicate this ID. |
+| ID |  | ID to identify the vulnerability. The ID must be in the `HS-LANGUAGE-N` template where `LANGUAGE` is the language entered in the `Language` field and `N` is a random number. |
 | Name |  | The name of the vulnerability. |
 | Description | String | The description of the vulnerability. |
 Language    | String | It shows the engine's language that it will be executed in the vulnerabilities analysis, it can be: C#, Dart, Java, Kotlin, YAML, Leaks, JavaScript, Nginx. |
