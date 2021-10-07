@@ -1,7 +1,7 @@
 ---
 title: Installation
 weight: 30
-description: In this section, you will find how to install Horusec web application in your environment using Operator.
+description: In this section, you will find how to install Horusec web application in your environment using Operator. 
 ---
 
 ## **What is it?**
@@ -13,10 +13,10 @@ description: In this section, you will find how to install Horusec web applicati
 Check out the requirements in the [**Set up**]({{< ref path="/web/set-up.md" lang="en">}}) section. 
 
 
-## **Installing**
-To install it, follow the next step:  
+## **Installation**
+Follow the next step:  
  
-**Step 1.** After configuring your database connection, connecting to your broker and creating secrets. Install Horusec-Operator on your cluster, see the example below: 
+**Step 1.** Install Horusec-Operator on your cluster, see the example below: 
 
 ```
 kubectl apply -k "https://github.com/ZupIT/horusec-operator/config/default?ref=v2.1.3"
@@ -38,7 +38,7 @@ horusecplatforms                  horus        install.horusec.io             tr
 
 ## **Usage**
 
-Now, you need to send the changes you want to Kubernetes. In this example, there is a [**YAML file**](https://github.com/ZupIT/horusec-operator/blob/main/config/samples/install_v2alpha1_horusecplatform.yaml), if you send an empty YAML like this below:
+You need to send the changes you want to Kubernetes. In this example, there is a [**YAML file**](https://github.com/ZupIT/horusec-operator/blob/main/config/samples/install_v2alpha1_horusecplatform.yaml), if you send an empty YAML like this below:
 
 ```
 apiVersion: install.horusec.io/v2alpha1

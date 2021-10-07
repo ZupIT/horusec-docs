@@ -5,59 +5,69 @@ description: >-
   In this section, you will find basic concepts about Horusec-CLI usage.
 ---
 
-## **What is it?**
-CLI (short for command line interface) is a program reponsible to process software commands or any other computer program through text.
+## **What is it?** 
+CLI (short for command line interface) is a program that processes software commands or any other computer program through text.
 
-On the tool context, Horusec-CLI is the part of the code that allows you to run the security analysis commands and vulnerabilities identification and/or classification.
+Horusec-CLI is the part of the code that allows you to run the security analysis commands and vulnerabilities identification and/or classification.
 
 ## **How does the analysis work?** 
  
 Horusec performs a [**SAST**]({{< ref path="/glossary.md" lang="en">}}) analysis of your project and it just check out the code, it is not necessary to buil or run anything and this makes your analysis quicker. 
 
-All the [**security tools**]({{< ref path="/cli/analysis-tools/security-tools.md" lang="pt-br">}}) has it own output data, so Horusec reads and change it to the right format and then you are able to have data regardless the tools you are using in the analysis.
+The [**security tools**]({{< ref path="/cli/analysis-tools/security-tools.md" lang="pt-br">}}) have their own output data, so Horusec reads and changes it to the right format. After that you are able to have data regardless of the tools you are using in the analysis.
 
-Horusec-CLI sends the analysis report to the [**Horusec-Platform**](https://github.com/ZupIT/horusec-platform), and in this moment, you can see the vulnerabilities found and they can be grouped by: 
+
+### **What does Horusec-CLI do?**
+Horusec-CLI sends the analysis report to the [**Horusec-Platform**](https://github.com/ZupIT/horusec-platform), and at this moment, you are able to see the vulnerabilities Horusec found and they can be grouped by: 
 
 - Repository; 
 - Commit author;
 - Language;
 - Vulnerabilities timeline. 
 
-Right after that, you can [**manage the vulnerabilities**]({{< ref path="/web/services/manager/vulnerabilities-management.md" lang="en">}}) changing the vulnerabilities types by **false positive**, **accepted risk** and others. 
-It is possible to change the severity as well, from the last analysis by repository to **critical**, **medium**, etc. 
+After that, you can [**manage the vulnerabilities**]({{< ref path="/web/services/manager/vulnerabilities-management.md" lang="en">}}) changing the types to **false positive**, **accepted risk** and others. 
+You can also change the severity from the last repository analysis to **critical**, **medium**, etc. 
 
 ## **How do you perform an analysis?**
-To perform an analysis in your project, [**install Horusec**]({{< ref path="/cli/installation.md" lang="en">}}) in your computer and then run the command below where your project is:
+Follow the steps below: 
+
+**Step 1.** [**Install Horusec**]({{< ref path="/cli/installation.md" lang="en">}});
+
+**Step 2.** Run the command below where your project is:
 
 ```bash
 horusec start
 ```
 
-Horusec-CLI will return a confirmation message to know if the current directory is correct:
+**Step 3.** Horusec-CLI will return a confirmation message to know if the current directory is correct:
 
 ```bash
 ✔ The folder selected is: [/home/your-user/Projects/project-name]. Proceed? [Y/n]: Y
 ```
 
-To continue, just select Y and press ENTER, then the tool will start the analysis and it will show your project's vulnerabilities.
+Select **Y** and press **ENTER** to continue. Now the tool will start the analysis showing your project's vulnerabilities.
 
-If you want Horusec to start the analysis without going through this message, just type the command below and the current directory will run without questions.
+{{% alert color="info" %}}
+Horusec can start the analysis without this question. To do that, run the command below: 
 
 ```bash
 horusec start -p ./
 ```
+{{% /alert %}}
+
 
 ### **How to change directories?**
 
-In case you want to change the current directory, add the directory you want right after the symbol `./` 
-
-For example, to replace for a directory called latest-project, run the next command:
+If you want to change the current directory, add the directory you want right after the symbol **`./`** 
+ 
+#### **Example** 
+1. In this example, the replacement is for a directory called -latest-project. To change run the command:
 
 ```bash
 horusec start -p ./latest-project
 ```
 
-Another possibility is to put the full directory where your project is. In this case, the command will be like that:
+2. You can also put the full directory where your project is. In this case, the command is:
 
 ```bash
 horusec start -p /home/user-name/folder-name/file-name
