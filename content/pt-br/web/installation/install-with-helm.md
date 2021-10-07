@@ -2,18 +2,18 @@
 title: "Instale utilizando Helm"
 weight: 20
 description: >-
-  Nesta seção, você encontra informações de como instalar a aplicação web do Horusec utilizando Helm.
+  Nesta seção, você encontra informações de como instalar a aplicação web do Horusec utilizando Helm. 
 ---
 
-## **O que é?**
+## **O que é Helm?**
 
-O Helm é um gerenciador de pacotes que reúne em um só arquivo, denominado chart, todos os recursos definidos do Kubernetes que constituem uma aplicação. Saiba mais na própria [**documentação do Helm**](https://helm.sh/docs/).
+O Helm é um gerenciador de pacotes que reúne em um só arquivo, denominado chart, todos os recursos definidos do Kubernetes que constituem uma aplicação. Para mais informações, acesse a [**documentação do Helm**](https://helm.sh/docs/).
 
-No caso desta instalação, o objetivo é que você utilize a aplicação web do Horusec Web application vinculada ao seu cluster de Kubernetes com Helm.
+Esta instalação é para você utilizar a aplicação web do Horusec vinculada ao seu cluster de Kubernetes com Helm.
 
 ## **Requisitos**
 
-Veja os requisitos na seção [**Configuração do seu ambiente**]({{< ref path="/web/set-up.md" lang="pt-br">}}) section.  
+Veja os requisitos na seção [**Configuração do seu ambiente**]({{< ref path="/web/set-up.md" lang="pt-br">}}). 
 
 
 ## **Horusec Helm Charts**
@@ -31,23 +31,25 @@ Os comandos neste guia usam os Charts do Helm incluídos no pacote da release do
 7. [**Webhook**]({{< ref path="/web/services/webhook" lang="pt-br">}})
 8. [**Vulnerability**]({{< ref path="/web/services/vulnerability.md" lang="pt-br">}})
 
-A partir da versão 2.0, você pode gerenciar todos eles apenas com um Helm Chart incluso [**release do Horusec**](https://github.com/ZupIT/horusec-platform/tree/main/deployments/helm/horusec-platform).
+{{% alert color="info" %}}
+Você pode gerenciar todos os serviços com apenas um Helm Chart incluso na [**release do Horusec**](https://github.com/ZupIT/horusec-platform/tree/main/deployments/helm/horusec-platform). Está disponível a partir da versão 2.0.
+{{% /alert %}}
 
 ## **Pré-configurações**
 
-Antes de iniciar a instalação dos serviços da aplicação web do Horusec, é importante que você tenha realizado as configurações prévias:
+Antes de iniciar a instalação dos serviços da aplicação web do Horusec, você precisa configurar:
 
-### **Armazenamento dos dados e message-broker**
+### **1. Armazenamento dos dados e message-broker**
 
-{{% alert color="info" %}}
-Algumas recomendações antes de iniciar a configuração: 
+{{% alert color="warning" %}}
+Antes de iniciar a configuração: 
 
-Instale o [**PostgreSQL**](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) e o [**RabbitMQ**](https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq) para um começo rápido em ambientes não produtivos usando os Helm Charts da Bitnami.
+- Instale o [**PostgreSQL**](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) e o [**RabbitMQ**](https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq) para iniciar rapidamente em ambientes não produtivos usando os Helm Charts da Bitnami.
 
-Se já tiver conexões disponíveis com uma instalação do `PostgreSQL` e do `RabbitMQ`, siga com a [**configuração das suas credenciais**](/docs/pt-br/web/installation/install-with-helm/#configuração-de-dados-sensíveis) e informe os endereços dessas conexões nas devidas variáveis durante a [**instalação dos serviços do Horusec**](/docs/pt-br/web/installation/install-with-helm/#instalação-dos-serviços-da-horusec).
+- Se você já possuir conexões disponíveis com uma instalação do `PostgreSQL` e do `RabbitMQ`, siga com a [**configuração das suas credenciais**]({{< ref path="/web/installation/install-with-helm.md#sensitive-data-configuration" lang="pt-br">}}) e informe os endereços dessas conexões nas devidas variáveis durante a [**instalação dos serviços do Horusec**](#instalação-dos-serviços-horusec).
 {{% /alert %}}
 
-Siga os passos a seguir para configurar o Horusec Helm Charts. 
+Siga os passos para configurar o Horusec Helm Charts:
 
 **Passo 1:** Crie o namespace `horusec-system` para os componentes do Horusec (se já tiver feito, vá para o próximo passo):
 
@@ -73,9 +75,9 @@ initdbScripts:
 EOF
 ```
 
-### **Configuração de dados sensíveis**
+### **2. Configuração de dados sensíveis**
 
-Se você não fez a configuração ainda, siga os passos: 
+Configure os dados sensíveis, siga os passos: 
 
 **Passo 1:** Crie o namespace `horusec-system` para os componentes do Horusec:
 
@@ -83,7 +85,7 @@ Se você não fez a configuração ainda, siga os passos:
 kubectl create namespace horusec-system
 ```
 
-**Passo 2:** Os serviços que compõem a solução utilizam o segredo (Secrets) do Kubernetes para gerenciar dados sensíveis, como senhas de acesso, tokens OAuth e chaves SSH. Por esse motivo, é preciso configurar algumas Secrets antes de iniciar a instalação.
+**Passo 2:** Os serviços que compõem a solução utilizam o segredo (Secrets) do Kubernetes para gerenciar dados sensíveis, como senhas de acesso, tokens OAuth e chaves SSH. Você precisa configurar algumas Secrets antes de iniciar a instalação.
 
 {{% alert color="info" %}}
 Se já tiver instalado o `PostgreSQL` e o `RabbitMQ` com os Charts da Bitnami basta obter suas credenciais, veja:
@@ -108,13 +110,13 @@ kubectl create secret generic horusec-jwt --from-literal=jwt-token=$JWT_SECRET -
 ```
 
 {{% alert color="warning" %}}
-Os valores informados nas Secrets deste guia são exemplos e não se destinam ao uso em ambiente de produção.
+Os valores informados nas Secrets aqui são exemplos e não devem ser usados em ambiente de produção.
 {{% /alert %}}
 
 
-## **Instalação dos serviços da Horusec**
+## **Instalação dos serviços Horusec**
 
-Depois de realizar todas as configurações necessárias, você pode ir para a página de release para download o Helm Chart e extrair a release automaticamente (Linux ou macOS):
+Acesse a página de release para baixar o Helm Chart e extrair a release automaticamente (Linux ou macOS):
 
 ```bash
 export HORUSEC_VERSION=2.15.0
@@ -131,23 +133,24 @@ helm install horusec horusec-platform-${HORUSEC_VERSION}/deployments/helm/horuse
 
 ## **Acesso ao Horusec Helm Charts**
 
-Depois de rodar todos os serviços em seu ambiente, basta acessar a interface gráfica pelo link que aparece em sua aplicação web e que é oferecida pelo [**serviço Horusec-Manager**]({{< ref path="/web/services/manager" lang="pt-br">}}).
+Depois de rodar todos os serviços em seu ambiente, acesse a interface gráfica pelo link que aparece em sua aplicação web oferecida pelo [**serviço Horusec-Manager**]({{< ref path="/web/services/manager" lang="pt-br">}}).
 
-O comportamento padrão dos Charts é criar um Ingress com uma regra de entrada roteando o tráfego HTTP para seu serviço baseado em um host específico. Por isso, é recomendado usar um **Ingress Controller** para gerenciar o acesso externo aos serviços do seu cluster do Kubernetes.
+- O comportamento padrão dos Charts é criar um Ingress com uma regra de entrada roteando o tráfego HTTP para seu serviço baseado em um host específico. 
+Use um **Ingress Controller** para gerenciar o acesso externo aos serviços do seu cluster do Kubernetes:
 
 ```bash
 kubectl -n horusec-system get ingresses manager-horusec-manager -o jsonpath='{.status.loadBalancer.ingress[0].ip}'
 ```
 
 {{% alert color="warning" %}}
-Em certos ambientes, o load balancer pode ser exposto usando um nome de host, em vez de um endereço IP. Nestes casos, use o jsonpath como no exemplo a seguir:
+Em alguns ambientes, o **load balancer** pode ser exposto usando um nome de host, em vez de um endereço IP. Neste caso, use o **`jsonpath`**, veja o exemplo a seguir:
 
 ```bash
 kubectl -n horusec-system get ingresses horusec -o jsonpath='{.status.loadBalancer.ingress[0].hostname}'
 ```
 {{% /alert %}}
 
-A maneira mais fácil de acessar esses endereços sem precisar de configuração de DNS, é adicionando-os no arquivo de Hosts da sua máquina. Veja no exemplo a seguir:
+- A maneira mais fácil para acessar esses endereços sem precisar de configuração de DNS, é adicionando-os no arquivo de Hosts da sua máquina. Veja no exemplo abaixo:
 
 ```bash
 export INGRESS_HOST=$(kubectl -n horusec-system get ingresses horusec -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
@@ -161,11 +164,11 @@ echo "$INGRESS_HOST analytic.local" | sudo tee -a /etc/hosts
 echo "$INGRESS_HOST api.local" | sudo tee -a /etc/hosts
 ```
 
-Feito isso, acesse a URL do Horusec Manager **http://manager.local/**
+- Agora, acesse a URL do Horusec Manager: **http://manager.local/**
 
 
 {{% alert color="info" %}}
-Em casos de teste, o Horusec disponibiliza um e-mail e senha padrão para você acessar a plataforma:
+Em casos de teste, o Horusec disponibiliza um e-mail e uma senha padrão para você acessar a plataforma:
 
 ```text
 email: dev@example.com

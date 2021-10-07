@@ -12,34 +12,33 @@ There are 4 ways to install Horusec-CLI:
 3. Installation via Imagem Docker 
 4. Installation via Pipeline
 
-Next, you will understand better each one of them. 
+See each one of them below: 
 
 ## **Requirements**
-For usage is required some tools installed in your machine:
-* [**Docker**](https://docs.docker.com/get-docker/) (recommended version ```19.03.11```). For disable docker, you can see [**how to use Horusec without Docker tutorial**]({{< ref path="tutorials/how-to-use-horusec-without-docker.md" lang="en">}}), but you will lose your analysis with [**other tools**]({{< ref path="cli/analysis-tools/security-tools" lang="en">}}).
-* [**Git**](https://git-scm.com/) (recommended version ```2.25.1```). For running analysis with git, you can see [**how to enable git history analysis tutorial**]({{< ref path="tutorials/how-to-enable-git-history-analysis-and-enable-commit-authors.md" lang="en">}}), but it is not enable by default.
+Check out the requirements to use Horusec-CLI:
+
+* [**Docker**](https://docs.docker.com/get-docker/) (recommended version ```19.03.11```). If you want to disable Docker, check out [**how to use Horusec without Docker tutorial**]({{< ref path="tutorials/how-to-use-horusec-without-docker.md" lang="en">}}), but you may lose data from analysis made by [**other tools**]({{< ref path="cli/analysis-tools/security-tools" lang="en">}}).
+
+* [**Git**](https://git-scm.com/) (recommended version ```2.25.1```). If you want to run analysis with Git, check out [**how to enable git history analysis tutorial**]({{< ref path="tutorials/how-to-enable-git-history-analysis-and-enable-commit-authors.md" lang="en">}}), but it is not enabled by default.
 
 ## **Local Installation**
-The installation directly done in your computer is ideal if you want to use Horusec as soon as possible, either to perform analysis or verify vulnerabilities in your project. 
+This installation is recommended if you want to use Horusec for analysis or for searching for vulnerabilities in your project. 
 
-Check out next, the command you need to install Horusec locally according to your operating system. 
+See below the commands to install Horusec locally according to your operating system: 
 
 
 ### **MAC or Linux**
-To install Horusec-CLI on MacOS or Linux, you have to run the command below in your terminal: 
+Run the command below in your terminal: 
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest
 ```
 
 ### **Windows**
-
-To install Horusec-CLI on Windows, you have to run the command below in your terminal: 
+Run the command below in your terminal: 
 
 {{% alert color="warning" %}}
-
-Here, you have to run the command where you have downloaded the executable.
-
+You always need to run the command where you have downloaded the executable.
 {{% /alert %}}
 
 ```bash
@@ -47,7 +46,7 @@ curl "https://github.com/ZupIT/horusec/releases/latest/download/horusec_win_x64.
 ```
 
 {{% alert color="info" %}}
-If you need to download for a specific version / operating system. In this case, the supported operating systems are:
+Horusec supports the following operating systems/versions: 
 
 * linux\_x86
 * linux\_x64
@@ -66,36 +65,36 @@ If you need to download for a specific version / operating system. In this case,
 
 ## **Manual installation**
 
-The manual installation is done according to your operation system and the version you want to download. 
+The manual installation is done according to your operating system and the version you want to download. 
+See the latest versions below: 
 
-The links below are to download the lastest version:
-
-- Windows x64:
-  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_win_x64.exe
-- Windows x86:
-  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_win_x86.exe
-- Linux x64:
-  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_x64
-- Linux x86:
-  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_x86
-- Mac x64:
-  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_mac_x64
-- Linux x64 Debian installer:
-  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_64-bit.deb
-- Linux x86 Debian installer:
-  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_32-bit.deb
-- Linux x64 RPM installer:
-  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_64-bit.rpm
-- Linux x86 RPM installer:
-  - 📥 https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_32-bit.rpm
-
+- 📥 [**Windows x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_win_x64.exe)
+- 📥 [**Windows x86**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_win_x86.exe)
+- 📥 [**Linux x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_x64)
+- 📥 [**Linux x86**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_x86)
+- 📥 [**Mac x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_mac_x64)
+- 📥 [**Linux x64 Debian installer**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_64-bit.deb)
+- 📥 [**Linux x86 Debian installer**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_32-bit.deb)
+- 📥 [**Linux x64 RPM installer**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_64-bit.rpm)
+- 📥 [**Linux x86 RPM installer**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_32-bit.rpm)
 
 {{% alert color="info" %}}
+If you want a specific version, change the word `latest` in the link to the version you want. 
+{{% /alert %}}
+
+
+{{% alert color="warning" %}}
 After downloading the files for Mac or Linux it will be necessary to make them `executable` through the command `chmod +x`.
+
+1. Download the files;
+2. You have to make these files `executable` through the `chmod +x`command:
+
 ```bash
 chmod +x path/horusec_[your version here]
 ```
-Having run this command, you will now be able to open the file for manual installation.
+
+3. Now, you will be able to open the file for manual installation.
+
 {{% /alert %}}
 
 👉[**Lastest available version**](https://github.com/ZupIT/horusec/releases/latest)
@@ -103,13 +102,13 @@ Having run this command, you will now be able to open the file for manual instal
 👉[**All available versions**](https://github.com/ZupIT/horusec/releases)
 
 
-## **Installation via image docker**
+## **Installation via Docker Image**
 
-Another way to carry out your analysis is through a docker image that you can run locally or use in your pipeline. 
+You can carry out your analysis through a docker image, you are able to run locally or using your pipeline. 
 
 See some use cases below:
 
-### **Starting image with run command:**
+### **1. Starting image with the run command:**
 
 When you initialize the image with the `run` command, just run Horusec with the command you want.
 
@@ -118,16 +117,16 @@ docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src horuszup/
 ```
 
 {{% alert color="warning" %}}
-Check if the environment you are working allows you to create a bidirectional volume, because this is necessary to use Horusec in a docker image.
+Check out if the environment you are working in allows you to create a bidirectional volume because this is necessary to use Horusec in a docker image.
 {{% /alert %}}
 
-## **Installation via pipeline:**
+### **2. Installation via pipeline**
 
-This type of installation assures the safety in the deliver of your project in production, since Horusec is added to your pipeline.
+This installation assures the safety in the delivery of your project in production since Horusec is added to your pipeline.
 
 See next the ways to install considering different types of pipeline:
 
-### Github Actions
+### **Github Actions**
 
 ```yaml
 name: SecurityPipeline
@@ -147,7 +146,7 @@ jobs:
         horusec start -p="./" -e="true"
 ```
 
-### AWS Code Build
+### **AWS Code Build**
 
 * **Environment:**
 
@@ -173,7 +172,7 @@ phases:
       - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd)
 ```
 
-### Circle CI
+### **Circle CI**
 
 ```yaml
 version: 2.1
@@ -199,7 +198,7 @@ workflows:
       - horusec
 ```
 
-### Jenkins
+### **Jenkins**
 
 ```groovy
 stages {
@@ -215,7 +214,7 @@ stages {
     }
 ```
 
-### Azure DevOps Pipeline
+### **Azure DevOps Pipeline**
 
 ```yaml
 pool:
@@ -225,7 +224,7 @@ steps:
 - script: curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest && horusec start -p ./
 ```
 
-### GitLab CI/CD
+### **GitLab CI/CD**
 
 ```yaml
 image: docker:latest

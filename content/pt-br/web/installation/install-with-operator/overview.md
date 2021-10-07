@@ -16,7 +16,7 @@ Veja os requisitos na seção [**Configuração do seu ambiente**]({{< ref path=
 ## **Instalação**
 Para instalar, siga os passo abaixo:  
  
-**Passo 1.** Depois de configurar a conexão com seu banco de dados, conectando o seu broker e criando secrets. Instale o Horusec-Operator no seu cluster, veja o exemplo:
+**Passo 1.** Instale o Horusec-Operator no seu cluster, veja o exemplo:
 
 ```
 kubectl apply -k "https://github.com/ZupIT/horusec-operator/config/default?ref=v2.2.0"
@@ -38,7 +38,7 @@ horusecplatforms                  horus        install.horusec.io             tr
 
 ## **Uso**
 
-Agora, você precisa enviar as mudanças que você quer para o Kubernetes. Neste exemplo o arquivo [**YAML**](https://github.com/ZupIT/horusec-operator/blob/main/config/samples/install_v2alpha1_horusecplatform.yaml) foi enviado, se você quiser enviar um YAML vazio, veja abaixo: 
+Você precisa enviar as mudanças que você deseja para o Kubernetes. Neste exemplo o arquivo [**YAML**](https://github.com/ZupIT/horusec-operator/blob/main/config/samples/install_v2alpha1_horusecplatform.yaml) foi enviado, se você quiser enviar um YAML vazio, veja abaixo: 
 
 ```
 apiVersion: install.horusec.io/v2alpha1
@@ -47,7 +47,7 @@ metadata:
   name: horusecplatform-sample
 spec: {}
 ```
-Essas configurações serão padrão Horusec, são dos arquivos [**defaults.json**](https://github.com/ZupIT/horusec-operator/blob/main/defaults.json).
+Essas configurações são o padrão Horusec, os arquivos [**defaults.json**](https://github.com/ZupIT/horusec-operator/blob/main/defaults.json).
 
 Agora, aplique as mudanças: 
 
