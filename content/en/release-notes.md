@@ -92,11 +92,25 @@ Create automatic Continuous Deployment for release and deploy new images on Dock
 
 {{% /release/item %}}
 
-{{% release/item type="fix" repository="CLI" date="May 2021" %}}
+{{% release/item type="fix" repository="CLI" date="October 2021" %}}
+Corrections on a bug that had broken our vulnerabilites hashes, also breaking the pipelines already configured with false positive and risk accepted.
+
+To make sure we solved the problem:
+
+- On CLI's v2.6.3 release, we corrected the issue, so both hashes are identified and accepted. 
+- On Horusec's platform, we implemented a correction so the hashes could return to default before the bug. It will be available at 2.17.2 version.
+
+{{% /release/item  %}}
+
+
+{{% release/item repository="CLI" date="May 2021" %}}
+
 Code base restructure.
 
 Analysis correction in the Git history ignoring files inside the `git folder`.
 {{% /release/item  %}}
+
+
 
 {{% release/item repository="CLI" date="June 2021" %}}
  Corrections to run tests with data-races.
