@@ -34,9 +34,9 @@ Depois disso, você pode fazer a [**gestão de vulnerabilidade**]({{< ref path="
 ## **Como fazer uma análise?**
 Siga os passos abaixo: 
 
-**Passo 1.** [**Instale o Horusec**]({{< ref path="/cli/installation" lang="pt-br">}}) no seu computador; 
+**Passo 1.** [**Instale o Horusec**]({{< ref path="/cli/installation" lang="pt-br">}}) no seu computador;
 
-**Passo 2.** Rode o comando abaixo no local onde está seu projeto:
+**Passo 2.** Rode o comando abaixo no local onde está seu projeto, lembre-se de estar com o docker rodando:
 
 ```bash
 horusec start
