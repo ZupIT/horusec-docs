@@ -36,7 +36,7 @@ Siga os passos abaixo:
 
 **Passo 1.** [**Instale o Horusec**]({{< ref path="/cli/installation" lang="pt-br">}}) no seu computador;
 
-**Passo 2.** Rode o comando abaixo no local onde está seu projeto, lembre-se de estar com o docker rodando:
+**Passo 2.** Verifique os [requisitos]({{< ref path="/cli/installation/#requisitos" lang="pt-br">}}) e rode o comando abaixo no local onde está seu projeto:
 
 ```bash
 horusec start
