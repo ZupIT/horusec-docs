@@ -55,7 +55,6 @@ A sigla SAST - em português, Teste Estático de Segurança de Aplicação - se 
 Atualmente o **Horusec** é classificado como um **SAST**.
 {{% /alert %}}
 
-
 ### DAST **\(Dynamic Application Security Testing\)**
 
 A sigla DAST - em português, Teste Dinâmico de Segurança de Aplicação - se refere às ferramentas que testam as interfaces expostas em busca de vulnerabilidades. 

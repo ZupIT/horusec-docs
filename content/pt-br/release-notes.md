@@ -92,7 +92,18 @@ Criação do Continuous Deployment automático para a release e deploy de novas 
 
 {{% /release/item %}}
 
-{{% release/item type="fix" repository="CLI" date="MAIO 2021" %}}
+{{% release/item type="fix" repository="CLI" date="Outubro 2021" %}}
+Correções em um bug que quebrou as alterou os hashes das vulnerabilidades, quebrando as pipelines com vulnerabilidades já configuradas com falso positivo ou risco aceito.
+
+Para solucionar o problema:
+
+- Na release v2.6.3 do CLI, corrigimos a issue para que ambos os hashes sejam identificados e aceitos.
+- No Horusec platform, implementamos a correção para que os hashes retornem ao padrão antes do bug e, assim, a pipeline não quebre ao atualizar o CLI. Esta atualização estará disponível a partir da versão 2.17.2.
+
+{{% /release/item  %}}
+
+{{% release/item repository="CLI" date="Maio 2021" %}}
+
 Reestruturação da base do código.
 
 Correção da análise no histórico do Git, ignorando arquivos dentro do `git folder`.
