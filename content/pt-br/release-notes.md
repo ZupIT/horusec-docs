@@ -98,7 +98,7 @@ Correções em um bug que quebrou as alterou os hashes das vulnerabilidades, que
 Para solucionar o problema:
 
 - Na release v2.6.3 do CLI, corrigimos a issue para que ambos os hashes sejam identificados e aceitos.
-- No Horusec platform, implementamos a correção para que os hashes retornem ao padrão antes do bug e, assim, a pipeline não quebre ao atualizar o CLI. Esta atualização estará disponível a partir da versão 2.17.2.
+- No Horusec platform, implementamos a correção para que os hashes retornem ao padrão antes do bug e, assim, a pipeline não quebre ao atualizar o CLI. Esta atualização estará disponível a partir da versão 2.17.3.
 
 {{% /release/item  %}}
 
