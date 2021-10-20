@@ -19,7 +19,7 @@ This service inside Horusec has some functionalities used in an asynchronous mod
 
 The services used to perform the queues consume are: 
 
-* [**Horusec-Messages**]({{< ref path="/web/services/messages.md" lang="en">}})
+* [**Horusec-Messages**]({{< ref path="/web/dev-guide/services/messages.md" lang="en">}})
 
 
 {{% alert color="info" %}}
@@ -35,8 +35,8 @@ When you enable the messaging service, it is necessary to connect to your e-mail
 
 And the services that receive actions when it is necessary in it respective queues are:
 
-* [**Horusec-Auth**]({{< ref path="/web/services/auth.md" lang="en">}})
-* [**Horusec-Core**]({{< ref path="/web/services/core.md" lang="en">}})
+* [**Horusec-Auth**]({{< ref path="/web/dev-guide/services/auth.md" lang="en">}})
+* [**Horusec-Core**]({{< ref path="/web/dev-guide/services/core.md" lang="en">}})
 
 {{% alert color="info" %}}
 When you disable the messaging service, these services ignore the action of publishing in a queue and follow to the next functionality.

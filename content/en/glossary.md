@@ -1,6 +1,6 @@
 ---
 title: Glossary
-weight: 7
+weight: 8
 description: In this section, you will find more about Horusec's main concepts.
 ---
 

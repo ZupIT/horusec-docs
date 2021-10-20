@@ -6,7 +6,7 @@ description: In this section, you will find a tutorial on how to enable and disa
 
 ---
 
-The functionality of the default user allows an user to be automatically created after [**Horusec-Auth**]({{< ref path="/web/services/auth.md" lang="en">}}) starts.
+The functionality of the default user allows an user to be automatically created after [**Horusec-Auth**]({{< ref path="/web/dev-guide/services/auth.md" lang="en">}}) starts.
 
 Horusec-auth's microsservice starts with: 
 

@@ -20,7 +20,7 @@ Horusec performs a [**SAST**]({{< ref path="/glossary.md" lang="en">}}) analysis
 
 The tool uses:
 - [**Horusec-CLI**]({{< ref path="/cli/overview.md" lang="en">}}) when you run the commands performs security
-analysis and the [**vulnerabilities identification and classification**]({{< ref path="/web/services/vulnerability.md" lang="en">}}). 
+analysis and the [**vulnerabilities identification and classification**]({{< ref path="/web/dev-guide/services/vulnerability.md" lang="en">}}). 
 - [**Web application**]({{< ref path="/web/overview.md" lang="pt-br">}}) is the CLI extensions used to manage and classify the vulnerabilities found in your application. 
 See the structure in the image below:  
 

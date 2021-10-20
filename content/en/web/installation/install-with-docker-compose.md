@@ -49,7 +49,7 @@ make install
 
 ## **Access Horusec's services**
 
-Access the [**http://localhost:8043**](http://localhost:8043) to view the web application screens, showed by [**Horusec-Manager**]({{< ref path="/web/services/manager/introduction.md" lang="en">}}) service.
+Access the [**http://localhost:8043**](http://localhost:8043) to view the web application screens, showed by [**Horusec-Manager**]({{< ref path="/web/user-guide/manager/introduction.md" lang="en">}}) service.
 
  
 

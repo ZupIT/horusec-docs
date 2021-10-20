@@ -136,9 +136,7 @@ See the whole process in the gif below:
 ![](/docs/ptbr/web/services/manager/introduction/export-dashboard.gif)
 
 
-{{% alert color="info" %}}
-Check out [**Manager's environment variables**]({{< ref path="/web/services/manager/environment-variable.md" lang="en">}}).
-{{% /alert %}}
+
 
 ### Read more
 - [**How to create an authorization token?**]({{< ref path="/tutorials/how-to-create-an-authorization-token" lang="en">}}) 

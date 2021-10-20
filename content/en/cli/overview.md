@@ -25,7 +25,7 @@ Horusec-CLI sends the analysis report to the [**Horusec-Platform**](https://gith
 - Language;
 - Vulnerabilities timeline. 
 
-After that, you can [**manage the vulnerabilities**]({{< ref path="/web/services/manager/vulnerabilities-management.md" lang="en">}}) changing the types to **false positive**, **accepted risk** and others. 
+After that, you can [**manage the vulnerabilities**]({{< ref path="/web/user-guide/manager/vulnerabilities-management.md" lang="en">}}) changing the types to **false positive**, **accepted risk** and others. 
 You can also change the severity from the last repository analysis to **critical**, **medium**, etc. 
 
 ## **How do you perform an analysis?**

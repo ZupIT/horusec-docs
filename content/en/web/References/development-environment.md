@@ -1,6 +1,6 @@
 ---
 title: "Environment development"
-weight: 5
+weight: 1
 description: >-
   In this section, you will find a developement environment to see how Horusec-Operator works. 
 ---

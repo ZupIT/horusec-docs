@@ -20,14 +20,14 @@ Horusec's web application solution has **8 different services**.
 
 The commands in this guide use Helm Charts included in the Horusec's release package for each service, see them below:
 
-1. [**Core**]({{< ref path="/web/services/core.md" lang="en">}})
-2. [**Analytic**]({{< ref path="/web/services/analytic.md" lang="en">}})
-3. [**API**]({{< ref path="/web/services/api.md" lang="en">}})
-4. [**Auth**]({{< ref path="/web/services/auth.md" lang="en">}})
-5. [**Manager**]({{< ref path="/web/services/manager" lang="en">}})
-6. [**Messages**]({{< ref path="/web/services/messages.md" lang="en">}})
-7. [**Webhook**]({{< ref path="/web/services/webhook.md" lang="en">}})
-8. [**Vulnerability**]({{< ref path="/web/services/vulnerability.md" lang="en">}})
+1. [**Core**]({{< ref path="/web/dev-guide/services/core.md" lang="en">}})
+2. [**Analytic**]({{< ref path="/web/dev-guide/services/analytic.md" lang="en">}})
+3. [**API**]({{< ref path="/web/dev-guide/services/api.md" lang="en">}})
+4. [**Auth**]({{< ref path="/web/dev-guide/services/auth.md" lang="en">}})
+5. [**Manager**]({{< ref path="/web/user-guide/manager" lang="en">}})
+6. [**Messages**]({{< ref path="/web/dev-guide/services/messages.md" lang="en">}})
+7. [**Webhook**]({{< ref path="/web/dev-guide/services/webhook.md" lang="en">}})
+8. [**Vulnerability**]({{< ref path="/web/dev-guide/services/vulnerability.md" lang="en">}})
 
 {{% alert color="info" %}}
 You can manage the services with a single Helm Chart included
@@ -131,7 +131,7 @@ helm install horusec horusec-platform-${HORUSEC_VERSION}/deployments/helm/horuse
 
 ## **Access Horusec Helm Charts**
 
-After all the services are installed and running in your enviroment, you can access the graphic interface through the [**Horusec-Manager service**]({{< ref path="/web/services/manager" lang="en">}}) link. 
+After all the services are installed and running in your enviroment, you can access the graphic interface through the [**Horusec-Manager service**]({{< ref path="/web/user-guide/manager" lang="en">}}) link. 
 
 - The Charts default behaviour is to create an Ingress with an input rule, routing the HTTP traffic to your service based on a specific host. 
 Use **Ingress Controller** to manage the external access to your Kubernetes' cluster services:

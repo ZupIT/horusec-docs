@@ -10,14 +10,14 @@ On Horusec, you can make a quick test to understand how the application works an
 If you haven't installed yet, [**check out how to install**]({{< ref path="/web/installation/" lang="en">}}). 
 
 #### **Step 2:** Check the uninitiated services
-Some services are not initiated by default, for example [**Horusec-Messages**]({{< ref path="/web/services/messages.md" lang="en">}}) and [**Horusec-Webhook**]({{< ref path="/web/services/webhook.md" lang="en">}}). 
+Some services are not initiated by default, for example [**Horusec-Messages**]({{< ref path="/web/dev-guide/services/messages.md" lang="en">}}) and [**Horusec-Webhook**]({{< ref path="/web/dev-guide/services/webhook.md" lang="en">}}). 
 
 After installation, you may notice that some services, by dault, are not initiated. It happens because the services, such as messaging, is configured to be disabled, in case you need to use it, just check out [**how to enable and disable the messaging service in this tutorial**]({{< ref path="/tutorials/how-to-enable-disable-messaging-service.md" lang="en">}}).
 
 #### **Step 3:** Configure Horusec-Manager
 
 {{% alert color="info" %}}
-If, for exaple, you try to access [**Horusec-Manager**]({{< ref path="/web/services/manager/introduction.md" lang="en">}}) from your navigator and doesn't show any result, it happens because when you upload an application and try to access it through an unknown host, Horusec by default tries to stablish a communication through `127.0.0.1` IP, which means that the communication between services will always happen locally.
+If, for exaple, you try to access [**Horusec-Manager**]({{< ref path="/web/user-guide/manager/introduction.md" lang="en">}}) from your navigator and doesn't show any result, it happens because when you upload an application and try to access it through an unknown host, Horusec by default tries to stablish a communication through `127.0.0.1` IP, which means that the communication between services will always happen locally.
 {{% /alert %}}
 
 
