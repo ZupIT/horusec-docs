@@ -33,7 +33,7 @@ Follow the steps below:
 
 **Step 1.** [**Install Horusec**]({{< ref path="/cli/installation.md" lang="en">}});
 
-**Step 2.** Check the [requirements]({{< ref path="/cli/installation/#requirements" lang="en">}}) and run the command below in the location where your project is:
+**Step 2.** Check the [requirements]({{< ref path="/cli/installation" lang="en">}}) and run the command below in the location where your project is:
 
 ```bash
 horusec start
