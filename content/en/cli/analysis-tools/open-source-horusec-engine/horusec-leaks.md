@@ -10,17 +10,21 @@ description: >-
 
 ## **What is it?** 
 
-[**Horusec-Leaks**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-leaks.md" lang="en">}}) is a SAST tool created by Horusec team in order to search for vulnerabilities in projects, searching for coded secrets such as passwords, API keys, tokens and others possible vulnerabilities.
+[**Horusec-Leaks**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-leaks.md" lang="en">}}) is a SAST tool created by Horusec team to search for vulnerabilities in projects, searching for coded secrets such as passwords, API keys, tokens and others possible vulnerabilities.
 
 ## **Examples of vulnerabilities**
 
 You will find below all the vulnerabilities examples that Horusec-Leaks identify: 
 
-### AWS Manager ID
+### **AWS Manager ID**
+{{% alert color="info" %}}
+ ID: "HS-LEAKS-1"
+{{% /alert %}}
 
-> When use AWS Manager ID is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-798 \([https://cwe.mitre.org/data/definitions/798.html](https://cwe.mitre.org/data/definitions/798.html)\) advisory.
+When use AWS Manager ID is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-798 \([https://cwe.mitre.org/data/definitions/798.html](https://cwe.mitre.org/data/definitions/798.html)\) advisory.
 
-Wrong
+
+**Wrong**
 
 ```yaml
 version: '3'
@@ -31,7 +35,7 @@ services:
 	    ACCESS_KEY: 'AKIAJSIE27KKMHXXXXXX'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -42,11 +46,14 @@ services:
 	    ACCESS_KEY: ${SECRET_KEY}
 ```
 
-### AWS Secret Key
+### **AWS Secret Key**
+{{% alert color="info" %}}
+ ID: "HS-LEAKS-2"
+{{% /alert %}}
 
-> When use AWS Secret Key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-798 \([https://cwe.mitre.org/data/definitions/798.html](https://cwe.mitre.org/data/definitions/798.html)\) /Applications/FakeCarrier.appadvisory.
+When use AWS Secret Key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-798 \([https://cwe.mitre.org/data/definitions/798.html](https://cwe.mitre.org/data/definitions/798.html)\) /Applications/FakeCarrier.appadvisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -57,7 +64,7 @@ services:
       AWS_SECRET_KEY: 'doc5eRXFpsWllGC5yKJV/XXXXXXX+XXXXXXXXXXX'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -68,11 +75,14 @@ services:
 	    SECRET_KEY: ${SECRET_KEY}
 ```
 
-### AWS MWS key
+### **AWS MWS key**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-3"
+{{% /alert %}}
 
-> When use AWS MWS key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-798 \([https://cwe.mitre.org/data/definitions/798.html](https://cwe.mitre.org/data/definitions/798.html)\) advisory.
+When use AWS MWS key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-798 \([https://cwe.mitre.org/data/definitions/798.html](https://cwe.mitre.org/data/definitions/798.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -83,7 +93,7 @@ services:
       AWS_WMS_KEY: 'amzn.mws.986478f0-9775-XXXX-XXXX-XXXXXXXXXXXX'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -94,11 +104,14 @@ services:
       WMS_KEY: ${SECRET_KEY}
 ```
 
-### Facebook Secret Key
+### **Facebook Secret Key**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-4"
+{{% /alert %}}
 
-> When use Facebook Secret Key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+When use Facebook Secret Key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -109,7 +122,7 @@ services:
       FB_SECRET_KEY: 'cb6f53505911332d30867fXXXXXXXXXX'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -120,11 +133,14 @@ services:
 	    FB_SECRET_KEY: ${SECRET_KEY}
 ```
 
-### Facebook Client ID
+### **Facebook Client ID**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-5"
+{{% /alert %}}
 
-> When use Facebook Client ID is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+When use Facebook Client ID is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -135,7 +151,7 @@ services:
       FB_CLIENT_ID: '148690000000000'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -146,11 +162,14 @@ services:
 	    FB_CLIENT_ID: ${SECRET_KEY}
 ```
 
-### Twitter Secret Key
+### **Twitter Secret Key**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-6"
+{{% /alert %}}
 
-> When use Twitter Secret Key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+When use Twitter Secret Key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -161,7 +180,7 @@ services:
       TWITTER_SECRET_KEY: 'ej64cqk9k8px9ae3exxxxxxxxxxxxxxxxxxxx'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -172,11 +191,14 @@ services:
 	    TWITTER_SECRET_KEY: ${SECRET_KEY}
 ```
 
-### Twitter Client ID
+### **Twitter Client ID**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-7"
+{{% /alert %}}
 
-> When use Twitter Client ID is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+When use Twitter Client ID is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -187,7 +209,7 @@ services:
       TWITTER_CLIENT_ID: 'ej64cqk9k8px9ae3exxxxxxxxxxxxxxxxxxxx'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -198,11 +220,14 @@ services:
 	    TWITTER_CLIENT_ID: ${SECRET_KEY}
 ```
 
-### Github Tokens
+### **Github Tokens**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-8"
+{{% /alert %}}
 
-> A GitHub access token was found. This pose a critical threat against your organization since it can give access not only to the platform itself and all the members of your \(perhaps private\) organization to feed more accurate spear phishing attacks but also to actual source code from your applications. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+A GitHub access token was found. This pose a critical threat against your organization since it can give access not only to the platform itself and all the members of your \(perhaps private\) organization to feed more accurate spear phishing attacks but also to actual source code from your applications. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -213,7 +238,7 @@ services:
       GITHUB_SECRET_KEY: 'edzvPbU3SYUc7pFc9le20lzIRExxxxxxxxxx'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -224,11 +249,14 @@ services:
 	    GITHUB_SECRET_KEY: ${SECRET_KEY}
 ```
 
-### LinkedIn Client ID
+### **LinkedIn Client ID**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-9"
+{{% /alert %}}
 
-> When use LinkedIn Client ID is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+When use LinkedIn Client ID is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -239,7 +267,7 @@ services:
       LINKEDIN_CLIENT_ID: 'g309xtxxxxxx'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -250,11 +278,14 @@ services:
 	    LINKEDIN_CLIENT_ID: ${SECRET_KEY}
 ```
 
-### LinkedIn Secret Key
+### **LinkedIn Secret Key**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-10"
+{{% /alert %}}
 
-> When use LinkedIn Secret Key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+When use LinkedIn Secret Key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -265,7 +296,7 @@ services:
       LINKEDIN_SECRET_KEY: '0d16kcnjxxxxxxxx'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -276,11 +307,14 @@ services:
 	    LINKEDIN_SECRET_KEY: ${SECRET_KEY}
 ```
 
-### Slack Tokens
+### **Slack Tokens**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-11"
+{{% /alert %}}
 
-> A hardcoded credential for your company's Slack can pose a huge threat to the safety and image of your company, since, in the wrong hands, this could lead to data leaking, a high chance of a succesful spear phishing attacks and even access to logs and other development related conversations that could leverage a more critical attack. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+A hardcoded credential for your company's Slack can pose a huge threat to the safety and image of your company, since, in the wrong hands, this could lead to data leaking, a high chance of a succesful spear phishing attacks and even access to logs and other development related conversations that could leverage a more critical attack. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -291,7 +325,7 @@ services:
       SLACK_WEBHOOK: 'https://hooks.slack.com/services/xxxxxxxxx/xxxxxxxxx/xxxxxxxxxxxxxxxxxxxxxxxx'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -302,11 +336,14 @@ services:
 	    SLACK_WEBHOOK: ${SECRET_KEY}
 ```
 
-### Asymmetric Private Key
+### **Asymmetric Private Key**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-12"
+{{% /alert %}}
 
-> Found SSH and/or x.509 Cerficates among the files of your project, make sure you want this kind of information inside your Git repo, since it can be missused by someone with access to any kind of copy. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+Found SSH and/or x.509 Cerficates among the files of your project, make sure you want this kind of information inside your Git repo, since it can be missused by someone with access to any kind of copy. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -317,7 +354,7 @@ services:
       SSH_PRIVATE_KEY: '-----BEGIN PRIVATE KEY----- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -----END PRIVATE KEY-----'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -327,11 +364,14 @@ services:
     environment:
 	    SSH_PRIVATE_KEY: ${SECRET_KEY}
 ```
-### Google API key
+### **Google API key**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-13"
+{{% /alert %}}
 
-> When use Google API key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+When use Google API key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -342,7 +382,7 @@ services:
       GCP_API_KEY: 'AIzaMPZHYiu1RdzE1xxxxxxxxxxxxxxxxxxxxxx'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -353,11 +393,14 @@ services:
 	    GCP_API_KEY: ${SECRET_KEY}
 ```
 
-### Google \(GCP\) Service Account
+### **Google \(GCP\) Service Account**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-14"
+{{% /alert %}}
 
-> When use Google \(GCP\) Service Account is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+When use Google \(GCP\) Service Account is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -368,7 +411,7 @@ services:
       GCP_SERVICE_ACCOUNT: '00000000-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -379,11 +422,14 @@ services:
 	    GCP_SERVICE_ACCOUNT: ${SECRET_KEY}
 ```
 
-### Heroku API key
+### **Heroku API key**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-15"
+{{% /alert %}}
 
-> Hardcoded credentials pose a huge threat to your cloud provider account since you can lose control over who can access some resources, which can lead not only to data access violation but also to improper usage of resources leading to a financial loss. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+Hardcoded credentials pose a huge threat to your cloud provider account since you can lose control over who can access some resources, which can lead not only to data access violation but also to improper usage of resources leading to a financial loss. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -394,7 +440,7 @@ services:
       HEROKU_API_KEY: 'xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -405,11 +451,14 @@ services:
 	    HEROKU_API_KEY: ${SECRET_KEY}
 ```
 
-### MailChimp API key
+### **MailChimp API key**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-16"
+{{% /alert %}}
 
-> Mail and/or SMS providers are a huge entrypoint for more sophisticated attacks or even attacks focused on damaging a brand's reputation. Leaving them in your source code will lead your team to lost track of who can access and personificate your company or application. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+Mail and/or SMS providers are a huge entrypoint for more sophisticated attacks or even attacks focused on damaging a brand's reputation. Leaving them in your source code will lead your team to lost track of who can access and personificate your company or application. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -420,7 +469,7 @@ services:
       MAILCHIMP_API_KEY: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-us00'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -431,11 +480,14 @@ services:
 	    MAILCHIMP_API_KEY: ${SECRET_KEY}
 ```
 
-### Mailgun API key
+### **Mailgun API key**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-17"
+{{% /alert %}}
 
-> Mail and/or SMS providers are a huge entrypoint for more sophisticated attacks or even attacks focused on damaging a brand's reputation. Leaving them in your source code will lead your team to lost track of who can access and personificate your company or application. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+Mail and/or SMS providers are a huge entrypoint for more sophisticated attacks or even attacks focused on damaging a brand's reputation. Leaving them in your source code will lead your team to lost track of who can access and personificate your company or application. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -446,7 +498,7 @@ services:
       MAILGUN_API_KEY: 'key-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -457,11 +509,14 @@ services:
 	    MAILGUN_API_KEY: ${SECRET_KEY}
 ```
 
-### PayPal Braintree access token
+### **PayPal Braintree access token**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-18"
+{{% /alert %}}
 
-> Payment providers are the barebones of your companies monetization so it is a absolutely desaster if any of this tokens fall in wrong hands since they can provide access to crucial information about your company, and in worst case cenarios even lead to big finacial loss. It's important to keep this kind of info in some form of secret manager, e.g Hashicorp's Vault. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+Payment providers are the barebones of your companies monetization so it is a absolutely desaster if any of this tokens fall in wrong hands since they can provide access to crucial information about your company, and in worst case cenarios even lead to big finacial loss. It's important to keep this kind of info in some form of secret manager, e.g Hashicorp's Vault. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -472,7 +527,7 @@ services:
       PAY_PAL_ACCESS_TOKEN: 'access_token$production$xxxxxxxxxxxxxxxx$00000000000000000000000000000000'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -483,11 +538,14 @@ services:
 	    PAY_PAL_ACCESS_TOKEN: ${SECRET_KEY}
 ```
 
-### Picatic API key
+### **Picatic API key**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-19"
+{{% /alert %}}
 
-> When use Picatic API key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+When use Picatic API key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -498,7 +556,7 @@ services:
       PICATIC_API_KEY: 'sk_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -509,11 +567,14 @@ services:
 	    PICATIC_API_KEY: ${SECRET_KEY}
 ```
 
-### SendGrid API Key
+### **SendGrid API Key**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-20"
+{{% /alert %}}
 
-> When use SendGrid API Key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+When use SendGrid API Key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -524,7 +585,7 @@ services:
       SEND_GRID_API_KEY: 'SG.xxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxx'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -535,11 +596,14 @@ services:
 	    SEND_GRID_API_KEY: ${SECRET_KEY}
 ```
 
-### Stripe API key
+### **Stripe API key**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-21"
+{{% /alert %}}
 
-> When use Stripe API key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+When use Stripe API key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -550,7 +614,7 @@ services:
       STRIPE_API_KEY: 'rk_live_xxxxxxxxxxxxxxxxxxxxxxxx'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -561,11 +625,14 @@ services:
 	    STRIPE_API_KEY: ${SECRET_KEY}
 ```
 
-### Square access token
+### **Square access token**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-22"
+{{% /alert %}}
 
-> When use Square access token is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+When use Square access token is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -576,7 +643,7 @@ services:
       SQUARE_ACCESS_TOKEN: 'sq0atp-xxxxxxxxxxxxxxxxxxxxxx'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -587,11 +654,14 @@ services:
 	    SQUARE_ACCESS_TOKEN: ${SECRET_KEY}
 ```
 
-### Square OAuth secret
+### **Square OAuth secret**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-23"
+{{% /alert %}}
 
-> When use Square OAuth secret is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+When use Square OAuth secret is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -602,7 +672,7 @@ services:
       SQUARE_SECRET: 'sq0csp-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx_xxxxx'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -614,11 +684,14 @@ services:
 ```
 
 
-### Twilio API key
+### **Twilio API key**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-24"
+{{% /alert %}}
 
-> When use Twilio API key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
+When use Twilio API key is recommended use vault or environment variable encrypted for the best security. For more information checkout the CWE-312 \([https://cwe.mitre.org/data/definitions/312.html](https://cwe.mitre.org/data/definitions/312.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -629,7 +702,7 @@ services:
       TWILIO_API_KEY: 'SKaaaaaaaaaaaaaaaaaaaaaaaaaa000000'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -640,11 +713,14 @@ services:
 	    TWILIO_API_KEY: ${SECRET_KEY}
 ```
 
-### Potential Hard-coded credential
+### **Potential Hard-coded credential**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-25"
+{{% /alert %}}
 
-> The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data. For more information checkout the CWE-798 \([https://cwe.mitre.org/data/definitions/798.html](https://cwe.mitre.org/data/definitions/798.html)\) advisory.
+The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data. For more information checkout the CWE-798 \([https://cwe.mitre.org/data/definitions/798.html](https://cwe.mitre.org/data/definitions/798.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```yaml
 version: '3'
@@ -655,7 +731,7 @@ services:
       POSTGRES_DBPASSWD: 'Ch@ng3m3'
 ```
 
-OK
+**OK**
 
 ```yaml
 version: '3'
@@ -666,11 +742,14 @@ services:
 	    POSTGRES_DBPASSWD: ${SECRET_KEY}
 ```
 
-### Hard-coded password
+### **Hard-coded password**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-26"
+{{% /alert %}}
 
-> The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data. For more information checkout the CWE-798 \([https://cwe.mitre.org/data/definitions/798.html](https://cwe.mitre.org/data/definitions/798.html)\) advisory.
+The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data. For more information checkout the CWE-798 \([https://cwe.mitre.org/data/definitions/798.html](https://cwe.mitre.org/data/definitions/798.html)\) advisory.
 
-Wrong
+**Wrong**
 
 ```go
 package main
@@ -695,7 +774,7 @@ func main() {
 }
 ```
 
-OK
+**OK**
 
 ```go
 package main
@@ -721,11 +800,14 @@ func main() {
 }
 ```
 
-### Password found in a hardcoded URL
+### **Password found in a hardcoded URL**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-27"
+{{% /alert %}}
 
-> A password was found in a hardcoded URL, this can lead to not only the leak of this password but also a failure point to some more sophisticated CSRF and SSRF attacks. Check CWE-352 \([https://cwe.mitre.org/data/definitions/352.html](https://cwe.mitre.org/data/definitions/352.html)\) and CWE-918 \([https://cwe.mitre.org/data/definitions/918.html](https://cwe.mitre.org/data/definitions/918.html)\) for more details.
+A password was found in a hardcoded URL, this can lead to not only the leak of this password but also a failure point to some more sophisticated CSRF and SSRF attacks. Check CWE-352 \([https://cwe.mitre.org/data/definitions/352.html](https://cwe.mitre.org/data/definitions/352.html)\) and CWE-918 \([https://cwe.mitre.org/data/definitions/918.html](https://cwe.mitre.org/data/definitions/918.html)\) for more details.
 
-Wrong
+**Wrong**
 
 ```go
 package main
@@ -745,7 +827,7 @@ func main() {
 }
 ```
 
-OK
+**OK**
 
 ```go
 package main
@@ -766,18 +848,21 @@ func main() {
 }
 ```
 
-### Wordpress configuration file disclosure
+### **Wordpress configuration file disclosure**
+{{% alert color="info" %}}
+ID: "HS-LEAKS-28"
+{{% /alert %}}
 
-> Wordpress configuration file exposed, this can lead to the leak of admin passowrds, database credentials and a lot of sensitive data about the system. Check CWE-200 \([https://cwe.mitre.org/data/definitions/200.html](https://cwe.mitre.org/data/definitions/200.html)\) for more details.
+Wordpress configuration file exposed, this can lead to the leak of admin passowrds, database credentials and a lot of sensitive data about the system. Check CWE-200 \([https://cwe.mitre.org/data/definitions/200.html](https://cwe.mitre.org/data/definitions/200.html)\) for more details.
 
-Wrong
+**Wrong**
 
 ```php
 <?php
 define( 'AUTH_KEY', 'put your unique phrase here' );
 ```
 
-OK
+**OK**
 
 ```php
 <?php

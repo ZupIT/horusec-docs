@@ -8,120 +8,203 @@ description: Here, you will find information about vulnerabilities that Horusec 
 
 ## **What is it?**
 
- [**Horusec-Swift**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-java.md" lang="en">}}) is a SAST tool created by the Horusec team in order to search vulnerabilities on Swift projects. 
+ [**Horusec-Swift**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-java.md" lang="en">}}) is a SAST tool created by the Horusec team to search for vulnerabilities on Swift projects. 
 
 ## **Examples of vulnerabilities**
 
-### Weak Cipher Mode
+### **SQLite Database**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-1"
+{{% /alert %}}
 
-> DES is a weak hash, which can generate repeated hashes.
+App uses SQLite Database. Sensitive Information should be encrypted.
 
-### Weak Cipher Mode
+### **CoreData Database**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-2"
+{{% /alert %}}
 
-> MD5 is a weak hash, which can generate repeated hashes. For more information checkout the CWE-327 (https://cwe.mitre.org/data/definitions/327.html) advisory.
+App uses CoreData Database. Sensitive Information should be encrypted.
 
-### Reverse engineering
+### **DTLS 1.2 not used**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-3"
+{{% /alert %}}
 
-> This App may have Reverse engineering detection capabilities.
+DTLS 1.2 should be used. Detected old version - DTLS 1.0.
 
+### **TLS 1.3 not used**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-4"
+{{% /alert %}}
 
-### TLS 1.3 not used
+TLS 1.3 should be used. Detected old version - TLS 1.2.
 
-> TLS 1.3 should be used. Detected old version - TLS 1.2.
+### **Reverse engineering**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-5"
+{{% /alert %}}
 
+This App may have Reverse engineering detection capabilities.
 
-### DTLS 1.2 not used
+### **Weak MD5 hash using**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-6"
+{{% /alert %}}
 
-> DTLS 1.2 should be used. Detected old version - DTLS 1.0.
+The MD5 hash algorithm that was used is considered weak. It can also cause hash collisions. It is always recommended to use some CHF (Cryptographic Hash Function), which is mathematically strong and not reversible. SHA512 would be the most recommended hash for storing the password and it is also important to adopt some type of Salt, so that the Hash is more secure. For more information checkout the [CWE-327](https://cwe.mitre.org/data/definitions/327.html) advisory.
 
+### **Weak DES hash using**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-7"
+{{% /alert %}}
 
-### CoreData Database
+DES is considered strong ciphers for modern applications. Currently, NIST recommends the usage of AES block ciphers instead of DES. For more information checkout the [CWE-326](https://cwe.mitre.org/data/definitions/326.html) advisory.
 
-> App uses CoreData Database. Sensitive Information should be encrypted.
+### **Weak DES hash using**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-8"
+{{% /alert %}}
 
+DES is considered strong ciphers for modern applications. Currently, NIST recommends the usage of AES block ciphers instead of DES. For more information checkout the [CWE-326](https://cwe.mitre.org/data/definitions/326.html) advisory.
 
-### SQLite Database
+### **Weak Cipher Mode**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-9"
+{{% /alert %}}
 
-> App uses SQLite Database. Sensitive Information should be encrypted.
+Cipher algorithms should be robust.
+MD5 is a weak hash, which can generate repeated hashes. For more information checkout the [CWE-327](https://cwe.mitre.org/data/definitions/327.html) advisory.
 
+### **Weak MD6 hash using**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-10"
+{{% /alert %}}
 
-### Javascript injection
+MD6 is a weak hash, which can generate repeated hashes. For more information checkout the [CWE-327](https://cwe.mitre.org/data/definitions/327.html) advisory.
 
-> User input in "loadHTMLString" will result in JavaScript Injection.
+### **Weak MD5 hash using**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-11"
+{{% /alert %}}
 
+MD5 is a weak hash, which can generate repeated hashes. For more information checkout the [CWE-327](https://cwe.mitre.org/data/definitions/327.html) advisory.
 
-### Jailbreak detection
+### **Weak SHA1 hash using**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-12"
+{{% /alert %}}
 
-> This App may have Jailbreak detection capabilities.
+SHA1 is a weak hash, which can generate repeated hashes. For more information checkout the [CWE-327](https://cwe.mitre.org/data/definitions/327.html) advisory.
 
+### **Jailbreak detection**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-13"
+{{% /alert %}}
 
-### SHA1 collision
+This App may have Jailbreak detection capabilities.
 
-> SHA1 is a weak hash known to have hash collisions.
+### **Javascript injection**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-14"
+{{% /alert %}}
 
-### MD2 collision
+User input in "loadHTMLString" will result in JavaScript Injection.
 
-> MD2 is a weak hash known to have hash collisions.
+### **Weak Cipher Mode**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-15"
+{{% /alert %}}
 
+DES is considered strong ciphers for modern applications. Currently, NIST recommends the usage of AES block ciphers instead of DES. For more information checkout the [CWE-326](https://cwe.mitre.org/data/definitions/326.html) advisory.
 
-### MD4 collision
+### **Realm Database**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-16"
+{{% /alert %}}
 
-> MD4 is a weak hash known to have hash collisions.
+App uses Realm Database. Sensitive Information should be encrypted.
 
+### **Deperected tls property**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-17"
+{{% /alert %}}
 
-### MD5 collision
+Use of deprecated property tlsMinimumSupportedProtocol. To avoid potential security risks, use tlsMinimumSupportedProtocolVersion
 
-> MD5 is a weak hash known to have hash collisions.
+### **UIPasteboard**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-18"
+{{% /alert %}}
 
+This application uses UIPasteboard, improper use of this class can lead to security issues.
 
-### MD6 collision
+### **File protection**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-19"
+{{% /alert %}}
 
-> MD6 is a weak hash known to have hash collisions.
+The file has no special protections associated with it.
 
+### **WebView Safari**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-20"
+{{% /alert %}}
 
-### WebView Safari
+It is recommended to use WKWebView instead of SFSafariViewController or UIWebView to prevent navigating to arbitrary URLs.
 
-> It is recommended to use WKWebView instead of SFSafariViewController or UIWebView to prevent navigating to arbitrary URLs.
+### **Keyboard cache**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-21"
+{{% /alert %}}
 
+Keyboard cache should be disabled for all sensitive data inputs.
 
-### File protection
 
-> The file has no special protections associated with it.
+### **Weak MD4 hash using**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-22"
+{{% /alert %}}
 
+MD4 is a weak hash known to have hash collisions.
 
-### UIPasteboard
+### **Weak MD2 hash using**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-23"
+{{% /alert %}}
 
-> This application uses UIPasteboard, improper use of this class can lead to security issues.
+MD2 is a weak hash, which can generate repeated hashes. For more information checkout the [CWE-327](https://cwe.mitre.org/data/definitions/327.html) advisory.
 
+### **SHA1 collision**
+{{% alert color="info" %}}
+ID: "HS-SWIFT-21"
+{{% /alert %}}
 
-### Keyboard cache
+SHA1 is a weak hash known to have hash collisions.
 
-> Keyboard cache should be disabled for all sensitive data inputs.
+### **MD5 collision**
 
+MD5 is a weak hash known to have hash collisions.
 
-### Deperected tls property
 
-> Use of deprecated property tlsMinimumSupportedProtocol. To avoid potential security risks, use tlsMinimumSupportedProtocolVersion
+### **MD6 collision**
 
+MD6 is a weak hash known to have hash collisions.
 
-### Realm Database
 
-> App uses Realm Database. Sensitive Information should be encrypted.
+### **Improper Restriction of Rendered UI Layers or Frames**
 
+Your Nginx file must include the X-Frame-Options header. A web application is expected to place restrictions on whether it is allowed to be rendered within frames, iframes, objects, embed or applet elements. Without the restrictions, users can be tricked into interacting with the application when they were not intending to. For more information checkout the CWE-1021 (https://cwe.mitre.org/data/definitions/1021.html) advisory.
 
-### Improper Restriction of Rendered UI Layers or Frames
+### **Missing X-Content-Type-Options header**
 
-> Your Nginx file must include the X-Frame-Options header. A web application is expected to place restrictions on whether it is allowed to be rendered within frames, iframes, objects, embed or applet elements. Without the restrictions, users can be tricked into interacting with the application when they were not intending to. For more information checkout the CWE-1021 (https://cwe.mitre.org/data/definitions/1021.html) advisory.
+Setting this header will prevent the browser from interpreting files as a different MIME type to what is specified in the Content-Type HTTP header (e.g. treating text/plain as text/css). For more information checkout https://owasp.org/www-project-secure-headers/#x-content-type-options.
 
-### Missing X-Content-Type-Options header
 
-> Setting this header will prevent the browser from interpreting files as a different MIME type to what is specified in the Content-Type HTTP header (e.g. treating text/plain as text/css). For more information checkout https://owasp.org/www-project-secure-headers/#x-content-type-options.
+### **Missing Content-Security-Policy header**
 
+A Content Security Policy (also named CSP) requires careful tuning and precise definition of the policy. If enabled, CSP has significant impact on the way browsers render pages (e.g., inline JavaScript is disabled by default and must be explicitly allowed in the policy). CSP prevents a wide range of attacks, including cross-site scripting and other cross-site injections. For more information checkout https://owasp.org/www-project-secure-headers/#content-security-policy.
 
-### Missing Content-Security-Policy header
+### **Exposure of Sensitive Information**
 
->A Content Security Policy (also named CSP) requires careful tuning and precise definition of the policy. If enabled, CSP has significant impact on the way browsers render pages (e.g., inline JavaScript is disabled by default and must be explicitly allowed in the policy). CSP prevents a wide range of attacks, including cross-site scripting and other cross-site injections. For more information checkout https://owasp.org/www-project-secure-headers/#content-security-policy.
-
-### Exposure of Sensitive Information
-
-> Your Nginx file must include 'server_tokens off;' configuration. There are many different kinds of mistakes that introduce information exposures. The severities of the error can range widely, depending on the context in which the product operates, the type of sensitive information that is revealed, and the benefits it may provide to an attacker. For more information checkout the CWE-200 (https://cwe.mitre.org/data/definitions/200.html) advisory.
+Your Nginx file must include 'server_tokens off;' configuration. There are many different kinds of mistakes that introduce information exposures. The severities of the error can range widely, depending on the context in which the product operates, the type of sensitive information that is revealed, and the benefits it may provide to an attacker. For more information checkout the CWE-200 (https://cwe.mitre.org/data/definitions/200.html) advisory.

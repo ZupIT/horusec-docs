@@ -8,66 +8,74 @@ description: Nesta seção, você vai encontrar mais informações sobre vulnera
 
 ## **O que é?**
 
-O  [**Horusec-Kubernetes**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-kubernetes.md" lang="pt-br">}}) é uma ferramenta SAST criado pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos que utilizam arquivos _.yaml_ de kubernetes.
+O [**Horusec-Kubernetes**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-kubernetes.md" lang="pt-br">}}) é uma ferramenta SAST criada pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos que utilizam arquivos _.yaml_ de Kubernetes.
 
 ## **Exemplos de vulnerabilidades**
 
 {{% alert color="info" %}}
 
-A seguir, você encontra todas as regras para o Horusec-Kubernetes. O conteúdo foi traduzido, porém também foi mantido em inglês porque é assim que a mensagem aparece no sistema. 
-
+A seguir, você encontra todas as regras para o Horusec-Kubernetes. O conteúdo foi mantido em inglês porque é assim que ele aparece no sistema. 
 {{% /alert %}}
 
 ### **Allow Privilege Escalation**
+{{% alert color="info" %}}
+ID:"HS-KUBERNETES-1"
+{{% /alert %}}
 
-Containers privilegiados compartilham namespaces com o sistema host, restrições eschew cgroup e não oferece nenhuma segurança. Eles devem ser usados exclusivamente como um mecanismo de empacotamento e distribuição para o código do container e não por isolamento. 
-
-> Privileged containers share namespaces with the host system, eschew cgroup restrictions, and do not offer any security. They should be used exclusively as a bundling and distribution mechanism for the code in the container, and not for isolation.
+Privileged containers share namespaces with the host system, eschew cgroup restrictions, and do not offer any security. They should be used exclusively as a bundling and distribution mechanism for the code in the container, and not for isolation.
 
 ### **Host Aliases**
+{{% alert color="info" %}}
+ID:"HS-KUBERNETES-2"
+{{% /alert %}}
 
-Gerenciando os hosts `/etc/` pode previnir um container de modificar um arquivo depois que a pod de containers já tiverem começado. DNS deve sempre ser gerenciado pelo orquestrador. 
-
-> Managing /etc/hosts aliases can prevent the container from modifying the file after a pod's containers have already been started. DNS should be managed by the orchestrator.
+Managing /etc/hosts aliases can prevent the container from modifying the file after a pod's containers have already been started. DNS should be managed by the orchestrator.
 
 ### **Docker Sock**
+{{% alert color="info" %}}
+ID:"HS-KUBERNETES-3"
+{{% /alert %}}
 
-A instalação do `docker.socket` vaza informações sobre outros containers e pode permitir um breakout.
-
-> Mounting the docker.socket leaks information about other containers and can allow container breakout.
+Mounting the docker.socket leaks information about other containers and can allow container breakout.
 
 ### **Capability System Admin**
+{{% alert color="info" %}}
+ID:"HS-KUBERNETES-4"
+{{% /alert %}}
 
-CAP\_SYS\_ADMIN é a capacidade mais privilegiada e deve ser sempre evitada. 
-
-> CAP\_SYS\_ADMIN is the most privileged capability and should always be avoided.
+CAP\_SYS\_ADMIN is the most privileged capability and should always be avoided.
 
 ### **Privileged Container**
+{{% alert color="info" %}}
+ID:"HS-KUBERNETES-5"
+{{% /alert %}}
 
-Containers privilegiados podem permitir o acesso ao host sem restrições.  
-
-> Privileged containers can allow almost completely unrestricted host access.
+Privileged containers can allow almost completely unrestricted host access.
 
 ### **Seccomp Unconfined**
+{{% alert color="info" %}}
+ID:"HS-KUBERNETES-6"
+{{% /alert %}}
 
-Perfis Seccomp não confinados têm acesso ao sistema de chamada. 
-
-> Unconfined Seccomp profiles have full system call access.
+Unconfined Seccomp profiles have full system call access.
 
 ### **Host IPC**
+{{% alert color="info" %}}
+ID:"HS-KUBERNETES-7"
+{{% /alert %}}
 
-Compartilhando o namespace do host do IPC permite o container processar e comunicar com os processos do host. 
-
-> Sharing the host's IPC namespace allows container processes to communicate with processes on the host.
+Sharing the host's IPC namespace allows container processes to communicate with processes on the host.
 
 ### **Host PID**
+{{% alert color="info" %}}
+ID:"HS-KUBERNETES-8"
+{{% /alert %}}
 
-Compartilhar o PID do namespace do host permite uma visibilidade de processos, potencialmente vazando informação como variáveis de ambiente e configuração.
-
-> Sharing the host's PID namespace allows visibility of processes on the host, potentially leaking information such as environment variables and configuration.
+Sharing the host's PID namespace allows visibility of processes on the host, potentially leaking information such as environment variables and configuration.
 
 ### **Host Network**
+{{% alert color="info" %}}
+ID:"HS-KUBERNETES-9"
+{{% /alert %}}
 
-Compartilhar o namespace da network do host permite que a pod seja processada para comunicar os processos que serão ligados ao adaptador loopback do adaptador. 
-
-> Sharing the host's network namespace permits processes in the pod to communicate with processes bound to the host's loopback adapter.
+Sharing the host's network namespace permits processes in the pod to communicate with processes bound to the host's loopback adapter.
