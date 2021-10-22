@@ -47,7 +47,7 @@ fos = openFileOutput(filename, MODE_PRIVATE);
 ID: "HS-JAVA-100"
 {{% /alert %}}
 
-> _The file is World Writable. Any App can write to the file. For more information checkout the CWE-276 \(_[_https://cwe.mitre.org/data/definitions/276.html_](https://cwe.mitre.org/data/definitions/276.html)_\) advisory._
+ _The file is World Writable. Any App can write to the file. For more information checkout the CWE-276 \(_[_https://cwe.mitre.org/data/definitions/276.html_](https://cwe.mitre.org/data/definitions/276.html)_\) advisory._
 
 Example of a vulnerable code:
 
@@ -70,17 +70,17 @@ ID: "HS-JAVA-101"
 {{% /alert %}}
 
 _App can read/write to External Storage. Any App can read data written to External Storage. For more information checkout the CWE-276 \([https://cwe.mitre.org/data/definitions/276.html](https://cwe.mitre.org/data/definitions/276.html)\) advisory._  
-> This rule raises an issue when the following functions are called:
+This rule raises an issue when the following functions are called:
 
-> * `android.os.Environment.getExternalStorageDirectory`
-> * `android.os.Environment.getExternalStoragePublicDirectory`
-> * `android.content.Context.getExternalFilesDir`
-> * `android.content.Context.getExternalFilesDirs`
-> * `android.content.Context.getExternalMediaDirs`
-> * `android.content.Context.getExternalCacheDir`
-> * `android.content.Context.getExternalCacheDirs`
-> * `android.content.Context.getObbDir`
-> * `android.content.Context.getObbDirs`
+* `android.os.Environment.getExternalStorageDirectory`
+* `android.os.Environment.getExternalStoragePublicDirectory`
+* `android.content.Context.getExternalFilesDir`
+* `android.content.Context.getExternalFilesDirs`
+* `android.content.Context.getExternalMediaDirs`
+* `android.content.Context.getExternalCacheDir`
+* `android.content.Context.getExternalCacheDirs`
+* `android.content.Context.getObbDir`
+* `android.content.Context.getObbDirs`
 
   
 Example of a sensible code:
@@ -105,7 +105,7 @@ public class AccessExternalFiles {
 ID: "HS-JAVA-102"
 {{% /alert %}}
 
-> _The App may use weak IVs like `0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00` or `0x01,0x02,0x03,0x04,0x05,0x06,0x07`. Not using a random IV makes the resulting ciphertext much more predictable and susceptible to a dictionary attack. For more information checkout the CWE-329 \(_[_https://cwe.mitre.org/data/definitions/329.html_](https://cwe.mitre.org/data/definitions/329.html)_\) advisory._
+ _The App may use weak IVs like `0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00` or `0x01,0x02,0x03,0x04,0x05,0x06,0x07`. Not using a random IV makes the resulting ciphertext much more predictable and susceptible to a dictionary attack. For more information checkout the CWE-329 \(_[_https://cwe.mitre.org/data/definitions/329.html_](https://cwe.mitre.org/data/definitions/329.html)_\) advisory._
 
 
 
@@ -466,14 +466,14 @@ sendStickyBroadcast(...)
 ID: "HS-JAVA-126"
 {{% /alert %}}
 
-> _Possible vulnerabilities when use:_
->
-> * _`OpenFileOutput`_
-> * _`getSharedPreferences`_
-> * _`SharedPreferences.Editor`_
-> * _`getCacheDir`_
-> * _`getExternalStorageState`_
-> * _`openOrCreateDatabase`_
+_Possible vulnerabilities when use:_
+
+* _`OpenFileOutput`_
+* _`getSharedPreferences`_
+* _`SharedPreferences.Editor`_
+* _`getCacheDir`_
+* _`getExternalStorageState`_
+* _`openOrCreateDatabase`_
 
 
 
@@ -483,12 +483,12 @@ ID: "HS-JAVA-127"
 {{% /alert %}}
 
  _Inter Process Communication_
->
-> _Possible vulnerabilities when using:_
->
-> * _`IRemoteService`_
-> * _`IRemoteService.Stub`_
-> * _`IBinder`_
+
+_Possible vulnerabilities when using:_
+
+* _`IRemoteService`_
+* _`IRemoteService.Stub`_
+* _`IBinder`_
 
 \_\_
 
@@ -933,11 +933,11 @@ ID: "HS-JAVA-25"
 {{% /alert %}}
 
 This App detects frida server.
->
-> Possible vulnerabilities when using:
->
-> * `fridaserver`
-> * `27047 or LIBFRIDA`
+
+Possible vulnerabilities when using:
+
+* `fridaserver`
+* `27047 or LIBFRIDA`
 
 
 
@@ -947,11 +947,11 @@ ID: "HS-JAVA-28"
 {{% /alert %}}
 
 _This App uses an SSL Pinning Library \(org.thoughtcrime.ssl.pinning\) to prevent MITM attacks in secure communication channel._
->
-> _Possible vulnerabilities when using:_
->
-> * _`fridaserver`_
-> * _`27047 or LIBFRIDA`_
+
+_Possible vulnerabilities when using:_
+
+* _`fridaserver`_
+* _`27047 or LIBFRIDA`_
 
 \_\_
 
@@ -961,11 +961,11 @@ ID: "HS-JAVA-29"
 {{% /alert %}}
 
 _DexGuard Debug Detection code to detect wheather an App is debuggable or not is identified._
->
-> _Possible vulnerabilities when using:_
->
-> * _`import dexguard.util`_
-> * _`DebugDetector.isDebuggable`_
+
+ _Possible vulnerabilities when using:_
+
+* _`import dexguard.util`_
+* _`DebugDetector.isDebuggable`_
 
 \_\_
 
@@ -975,11 +975,11 @@ ID: "HS-JAVA-30"
 {{% /alert %}}
 
 _DexGuard Debugger Detection code is identified._
->
-> _Possible vulnerabilities when using:_
->
-> * _`import dexguard.util`_
-> * _`DebugDetector.isDebuggerConnected`_
+
+ _Possible vulnerabilities when using:_
+
+* _`import dexguard.util`_
+* _`DebugDetector.isDebuggerConnected`_
 
 \_\_
 
@@ -989,11 +989,11 @@ ID: "HS-JAVA-31"
 {{% /alert %}}
 
 _DexGuard Emulator Detection code is identified._
->
-> _Possible vulnerabilities when using:_
->
-> * _`import dexguard.util`_
-> * _`EmulatorDetector.isRunningInEmulator`_
+
+_Possible vulnerabilities when using:_
+
+* _`import dexguard.util`_
+* _`EmulatorDetector.isRunningInEmulator`_
 
 \_\_
 
@@ -1003,11 +1003,11 @@ ID: "HS-JAVA-32"
 {{% /alert %}}
 
 _DexGuard code to detect wheather the App is signed with a debug key or not is identified._
->
-> _Possible vulnerabilities when using:_
->
-> * _`import dexguard.util`_
-> * _`DebugDetector.isSignedWithDebugKey`_
+
+_Possible vulnerabilities when using:_
+
+* _`import dexguard.util`_
+* _`DebugDetector.isSignedWithDebugKey`_
 
 \_\_
 
@@ -1017,11 +1017,11 @@ ID: "HS-JAVA-33"
 {{% /alert %}}
 
 _DexGuard Root Detection code is identified._
->
-> _Possible vulnerabilities when using:_
->
-> * _`import dexguard.util`_
-> * _`RootDetector.isDeviceRooted`_
+
+_Possible vulnerabilities when using:_
+
+* _`import dexguard.util`_
+* _`RootDetector.isDeviceRooted`_
 
 \_\_
 
@@ -1031,11 +1031,11 @@ ID: "HS-JAVA-34"
 {{% /alert %}}
 
 _DexGuard App Tamper Detection code is identified._
->
-> _Possible vulnerabilities when using:_
->
-> * _`import dexguard.util`_
-> * _`TamperDetector.checkApk`_
+
+_Possible vulnerabilities when using:_
+
+* _`import dexguard.util`_
+* _`TamperDetector.checkApk`_
 
 \_\_
 
@@ -1045,11 +1045,11 @@ ID: "HS-JAVA-35"
 {{% /alert %}}
 
 _DexGuard Signer Certificate Tamper Detection code is identified._
->
-> _Possible vulnerabilities when using:_
->
-> * _`import dexguard.util`_
-> * _`TamperDetector.checkApk`_
+
+_Possible vulnerabilities when using:_
+
+* _`import dexguard.util`_
+* _`TamperDetector.checkApk`_
 
 \_\_
 
@@ -1059,11 +1059,11 @@ ID: "HS-JAVA-36"
 {{% /alert %}}
 
 _The App may use package signature for tamper detection._
->
-> _Possible vulnerabilities when using:_
->
-> * _`PackageManager.GET_SIGNATURES`_
-> * _`getPackageName(...)`_
+
+_Possible vulnerabilities when using:_
+
+* _`PackageManager.GET_SIGNATURES`_
+* _`getPackageName(...)`_
 
 \_\_
 
@@ -1073,11 +1073,11 @@ ID: "HS-JAVA-37"
 {{% /alert %}}
 
 _Load and Manipulate Dex Files_
->
-> _Possible vulnerabilities when using:_
->
-> * _`dalvik.system.PathClassLoader or dalvik.system.DexFile or dalvik.system.DexPathList`_
-> * _`loadDex or loadClass or DexClassLoader or loadDexFile`_
+
+_Possible vulnerabilities when using:_
+
+* _`dalvik.system.PathClassLoader or dalvik.system.DexFile or dalvik.system.DexPathList`_
+* _`loadDex or loadClass or DexClassLoader or loadDexFile`_
 
 \_\_
 
@@ -1087,11 +1087,11 @@ ID: "HS-JAVA-38"
 {{% /alert %}}
 
 _Obfuscation_
->
-> _Possible vulnerabilities when using:_
->
-> * _`utils.AESObfuscator`_
-> * _`getObfuscator`_
+
+_Possible vulnerabilities when using:_
+
+* _`utils.AESObfuscator`_
+* _`getObfuscator`_
 
 \_\_
 
@@ -1106,12 +1106,12 @@ ID: "HS-JAVA-39"
 
 ### TCP Server Socket
 
-> _TCP Server Socket_
->
-> _Possible vulnerabilities when using:_
->
-> * _`new ServerSocket(...)`_
-> * _`net.ServerSocket`_
+_TCP Server Socket_
+
+ _Possible vulnerabilities when using:_
+
+ * _`new ServerSocket(...)`_
+ * _`net.ServerSocket`_
 
 \_\_
 
@@ -1121,11 +1121,11 @@ ID: "HS-JAVA-40"
 {{% /alert %}}
 
  _TCP Socket_
->
-> _Possible vulnerabilities when using:_
->
-> * _`new Socket(...)`_
-> * _`net.Socket`_
+
+ _Possible vulnerabilities when using:_
+
+* _`new Socket(...)`_
+* _`net.Socket`_
 
 ### \_\_
 
@@ -1135,11 +1135,11 @@ ID: "HS-JAVA-42"
 {{% /alert %}}
 
 _UDP Datagram Packet_
->
-> _Possible vulnerabilities when using:_
->
-> * _`DatagramPacket`_
-> * _`net.DatagramPacket`_
+
+_Possible vulnerabilities when using:_
+
+* _`DatagramPacket`_
+* _`net.DatagramPacket`_
 
 \_\_
 
@@ -1149,11 +1149,11 @@ ID: "HS-JAVA-43"
 {{% /alert %}}
 
  _UDP Datagram Socket_
->
-> _Possible vulnerabilities when using:_
->
-> * _`net.DatagramPacket`_
-> * _`DatagramSocket`_
+
+_Possible vulnerabilities when using:_
+
+* _`net.DatagramPacket`_
+* _`DatagramSocket`_
 
 \_\_
 
@@ -1163,11 +1163,11 @@ ID: "HS-JAVA-44"
 {{% /alert %}}
 
  _WebView JavaScript Interface_
->
-> _Possible vulnerabilities when using:_
->
-> * _`addJavascriptInterface`_
-> * _`WebView`_
+
+_Possible vulnerabilities when using:_
+
+* _`addJavascriptInterface`_
+* _`WebView`_
 
 \_\_
 
@@ -1177,11 +1177,11 @@ ID: "HS-JAVA-45"
 {{% /alert %}}
 
  _Get Cell Information_
->
-> _Possible vulnerabilities when using:_
->
-> * _`telephony.TelephonyManager`_
-> * _`getAllCellInfo`_
+
+ _Possible vulnerabilities when using:_
+
+* _`telephony.TelephonyManager`_
+* _`getAllCellInfo`_
 
 \_\_
 
@@ -1191,11 +1191,11 @@ ID: "HS-JAVA-46"
 {{% /alert %}}
 
 _Get Cell Location_
->
-> _Possible vulnerabilities when using:_
->
-> * _`telephony.TelephonyManager`_
-> * _`getCellLocation`_
+
+_Possible vulnerabilities when using:_
+
+* _`telephony.TelephonyManager`_
+* _`getCellLocation`_
 
 \_\_
 
@@ -1205,11 +1205,11 @@ ID: "HS-JAVA-47"
 {{% /alert %}}
 
  _Get Subscriber ID_
->
-> _Possible vulnerabilities when using:_
->
-> * _`telephony.TelephonyManager`_
-> * _`getSubscriberId`_
+
+ _Possible vulnerabilities when using:_
+
+* _`telephony.TelephonyManager`_
+* _`getSubscriberId`_
 
 \_\_
 
@@ -1219,11 +1219,11 @@ ID: "HS-JAVA-48"
 {{% /alert %}}
 
 _Get Device ID_
->
-> _Possible vulnerabilities when using:_
->
-> * _`telephony.TelephonyManager`_
-> * _`getDeviceId`_
+
+_Possible vulnerabilities when using:_
+
+* _`telephony.TelephonyManager`_
+* _`getDeviceId`_
 
 \_\_
 
@@ -1233,11 +1233,11 @@ ID: "HS-JAVA-49"
 {{% /alert %}}
 
 _Get Software Version, IMEI/SV etc_
->
-> _Possible vulnerabilities when using:_
->
-> * _`telephony.TelephonyManager`_
-> * _`getDeviceSoftwareVersion`_
+
+_Possible vulnerabilities when using:_
+
+* _`telephony.TelephonyManager`_
+* _`getDeviceSoftwareVersion`_
 
 \_\_
 
@@ -1247,11 +1247,11 @@ ID: "HS-JAVA-50"
 {{% /alert %}}
 
  _Get SIM Serial Number_
->
-> _Possible vulnerabilities when using:_
->
-> * _`telephony.TelephonyManager`_
-> * _`getSimSerialNumber`_
+
+_Possible vulnerabilities when using:_
+
+* _`telephony.TelephonyManager`_
+* _`getSimSerialNumber`_
 
 \_\_
 
@@ -1261,11 +1261,11 @@ ID: "HS-JAVA-51"
 {{% /alert %}}
 
  _Get SIM Provider Details_
->
-> _Possible vulnerabilities when using:_
->
-> * _`telephony.TelephonyManager`_
-> * _`getSimOperator`_
+
+_Possible vulnerabilities when using:_
+
+* _`telephony.TelephonyManager`_
+* _`getSimOperator`_
 
 \_\_
 
@@ -1275,11 +1275,11 @@ ID: "HS-JAVA-52"
 {{% /alert %}}
 
 _Get SIM Operator Name_
->
-> _Possible vulnerabilities when using:_
->
-> * _`telephony.TelephonyManager`_
-> * _`getSimOperatorName`_
+
+_Possible vulnerabilities when using:_
+
+* _`telephony.TelephonyManager`_
+* _`getSimOperatorName`_
 
 \_\_
 
@@ -1289,11 +1289,11 @@ ID: "HS-JAVA-53"
 {{% /alert %}}
 
  _Query Database of SMS, Contacts etc._
->
-> _Possible vulnerabilities when using:_
->
-> * _`content.ContentResolver`_
-> * _`query`_
+
+ _Possible vulnerabilities when using:_
+
+* _`content.ContentResolver`_
+* _`query`_
 
 \_\_
 
@@ -1312,11 +1312,11 @@ ID: "HS-JAVA-56"
 {{% /alert %}}
 
  _A file is opened to read its content. The filename comes from an input parameter. If an unfiltered parameter is passed to this file API, files from an arbitrary filesystem location could be read. Please consider use this example:_ 
->
->   
-> _`val result = Source.fromFile("public/lists/" + FilenameUtils.getName(value_received_in_params)).getLines().mkString`_
->
-> _For more information checkout the CWE-22 \(_[_https://cwe.mitre.org/data/definitions/22.html_](https://cwe.mitre.org/data/definitions/22.html)_\) advisory._
+
+ 
+ _`val result = Source.fromFile("public/lists/" + FilenameUtils.getName(value_received_in_params)).getLines().mkString`_
+
+ _For more information checkout the CWE-22 \(_[_https://cwe.mitre.org/data/definitions/22.html_](https://cwe.mitre.org/data/definitions/22.html)_\) advisory._
 
 \_\_
 
