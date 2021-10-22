@@ -8,7 +8,9 @@ description: >-
 
 ## **O que é?**
 
-O  [**Horusec-Kotlin**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-kotlin.md#horusec-kotlin-cli" lang="pt-br">}})   e o [**Horusec-Java**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-java.md#horusec-java-cli" lang="pt-br">}}) são ferramentas SAST criadas pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos Kotlin e Java.
+O [**Horusec-Kotlin**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-kotlin.md#horusec-kotlin-cli" lang="pt-br">}}) e o [**Horusec-Java**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-java.md#horusec-java-cli" lang="pt-br">}}) são ferramentas SAST criadas pela equipe do Horusec para fazer a busca de vulnerabilidades em projetos Kotlin e Java. 
+
+Você pode aplicar regras especificas para suas linguagens e também identificar algumas regras genéricas para aplicações mobile que utilizam Kotlin/Java para Android ou IOS.
 
 ## **Exemplos de vulnerabilidades** 
 
@@ -16,15 +18,14 @@ O  [**Horusec-Kotlin**]({{< ref path="/cli/analysis-tools/open-source-horusec-en
 A seguir, você encontra todos os exemplos de vulnerabilidades que o Horusec-Kotlin e o Horusec-Java identificam. O conteúdo está em inglês porque é assim que ele aparece no sistema. 
 {{% /alert %}}
 
-### Horusec-Kotlin \(Mobile\) \| Horusec-Java \(Mobile\)
+### **No Log Sensitive Information**
+{{% alert color="info" %}}
+ID: "HS-JVM-1"
+{{% /alert %}}
 
-As ferramentas  [**Horusec-Kotlin**]({{< ref path="cli/analysis-tools/open-source-horusec-engine/horusec-kotlin.md#horusec-kotlin-cli" lang="pt-br">}}) e  [**Horusec-Java**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-java.md#horusec-java-cli" lang="pt-br">}}) além de aplicar regras especificas para suas linguagens, também é possível identificar algumas regras genéricas para aplicações mobile que utilizam Android ou IOS nestas respectivas linguagens.
+The App logs information. Sensitive information should never be logged. For more information checkout the CWE-532 \([https://cwe.mitre.org/data/definitions/532.html](https://cwe.mitre.org/data/definitions/532.html)\) advisory.
 
-### No Log Sensitive Information
-
-> The App logs information. Sensitive information should never be logged. For more information checkout the CWE-532 \([https://cwe.mitre.org/data/definitions/532.html](https://cwe.mitre.org/data/definitions/532.html)\) advisory.
-
-Exemplo de código vulnerável:
+Example of a vulnerable code:
 
 ```kotlin
 
@@ -34,71 +35,87 @@ Log.info("Connection string of the database: " + DatabaseURI)
 
 ```
 
-### HTTP Requests, Connections and Sessions 
+### **HTTP Requests, Connections and Sessions** 
+{{% alert color="info" %}}
+ID: "HS-JVM-2"
+{{% /alert %}}
 
-Ninguém utiliza a requisição http, conexão e sessões com insegurança. 
+No uses Http request, connections and sessions with insecure.
 
-> No uses Http request, connections and sessions with insecure.
-
-Exemplo de código vulnerável:
+Example of a vulnerable code:
 
 ```kotlin
 import http.client.HttpClient
 ```
 
-### No uses Content Provider 
+### **No uses safety API**
+{{% alert color="info" %}}
+ID: "HS-JVM-3"
+{{% /alert %}}
 
-Ninguém utiliza o provedor de conteúdo. 
 
-> No uses Content Provider.
+No uses safety api in your application.
 
-Exemplo de código vulnerável:
-
-```kotlin
-import android.content.ContentProvider
-```
-
-### No uses safety API
-
-Ninguém utiliza a API de segurança
-
-> No uses safety api in your application.
-
-Exemplo de código vulnerável:
+Example of a vulnerable code:
 
 ```kotlin
 import com.google.android.gms.safetynet.SafetyNetApi
 ```
 
-### Local File I/O Operations 
+### **No uses Content Provider**
+{{% alert color="info" %}}
+ID: "HS-JVM-4"
+{{% /alert %}}
 
-Ninguém utiliza operações de entrada e saida de arquivos. 
 
-> No use operations of input or output in files.
+No uses Content Provider.
 
-Exemplo de código vulnerável:
+Example of a vulnerable code:
+
+```kotlin
+import android.content.ContentProvider
+```
+### **No Use With Unsafe Bytes** 
+{{% alert color="info" %}}
+ID: "HS-JVM-5"
+{{% /alert %}}
+
+Using this implementation of '.withUnsafeBytes' can lead to the compiler's decision to use unsafe APIs, such as _malloc and _strcpy, as the method calls closing with an UnsafeRawBufferPointer. For more information checkout the [CWE-789](https://cwe.mitre.org/data/definitions/789.html) advisory.
+
+
+### **Local File I/O Operations** 
+{{% alert color="info" %}}
+ID: "HS-JVM-6"
+{{% /alert %}}
+
+No use operations of input or output in files.
+
+Example of a vulnerable code:
 
 ```kotlin
 var query: [String: Any] = [kSecAttrAccessible as String: kSecAttrAccessibleWhenUnlocked]
 ```
 
-### WebView Component 
+### **WebView Component** 
+{{% alert color="info" %}}
+ID: "HS-JVM-7"
+{{% /alert %}}
 
-Ninguém utiliza o componente WebView.
+No use WebView Component.
 
-> No use WebView Component.
+### **Encryption API** 
+{{% alert color="info" %}}
+ID: "HS-JVM-8"
+{{% /alert %}}
 
-### Encryption API 
+No use Encryption API with vulnerabilities.
 
-Ninguém utiliza API de criptografia com vulnerabilidades. 
+### **No Use Prohibited APIs** 
+{{% alert color="info" %}}
+ID: "HS-JVM-10"
+{{% /alert %}}
 
-> No use Encryption API with vulnerabilities.
-
-### No Use Prohibited APIs 
-
-A aplicação pode conter API proibidas. Essas APIs são inseguras e não devem ser usadas. 
-
-> The application may contain prohibited APIs. These APIs are insecure and should not be used. For more information checkout the CWE-676 \([https://cwe.mitre.org/data/definitions/676.html](https://cwe.mitre.org/data/definitions/676.html)\) advisory.
+The application may contain prohibited APIs. These APIs are insecure and should not be used. For more information checkout the CWE-676 \([https://cwe.mitre.org/data/definitions/676.html](https://cwe.mitre.org/data/definitions/676.html)\) advisory.
 
 > * `strcpy`
 > * `memcpy`
@@ -108,91 +125,280 @@ A aplicação pode conter API proibidas. Essas APIs são inseguras e não devem 
 > * `sprintf`
 > * `vsprintf`
 
-### UIWebView in application ignoring errors SSL 
+### **Application allow MITM attacks** 
+{{% alert color="info" %}}
+ID: "HS-JVM-11"
+{{% /alert %}}
+The application allows self-signed or invalid SSL certificates. The application is vulnerable to MITM (Man-In-The-Middle) attacks. For more information checkout the [CWE-295](https://cwe.mitre.org/data/definitions/295.html) advisory.
 
-A UIWebView ignora os erros do SSL e aceita qualquer certificado SSL. A aplicação é vulnerável a ataques do MITM \(Man-in-the-middle\). 
+### **UIWebView in application ignoring errors SSL** 
+{{% alert color="info" %}}
+ID: "HS-JVM-12"
+{{% /alert %}}
 
-> The in-app UIWebView ignores SSL errors and accepts any SSL certificate. The application is vulnerable to attacks from MITM \(Man-In-The-Middle\). For more information checkout the CWE-295 \([https://cwe.mitre.org/data/definitions/295.html](https://cwe.mitre.org/data/definitions/295.html)\) advisory.
+The in-app UIWebView ignores SSL errors and accepts any SSL certificate. The application is vulnerable to attacks from MITM \(Man-In-The-Middle\). For more information checkout the CWE-295 \([https://cwe.mitre.org/data/definitions/295.html](https://cwe.mitre.org/data/definitions/295.html)\) advisory.
 
-### No List changes on the clipboard 
 
-A aplicação permite que você liste as mudanças do clipboard. Alguns malwares também listam mudanças no clipboard. 
+### **No List changes on the clipboard** 
+{{% alert color="info" %}}
+ID: "HS-JVM-13"
+{{% /alert %}}
 
-> The application allows you to list the changes on the Clipboard. Some malware also lists changes to the Clipboard.
+The application allows you to list the changes on the Clipboard. Some malware also lists changes to the Clipboard.
 
 Exemplo de código vulnerável:
 
 ```kotlin
 const NSNotificationName UIPasteboardChangedNotification
 ```
+### **The application is using SQLite** 
+{{% alert color="info" %}}
+ID: "HS-JVM-14"
+{{% /alert %}}
 
-### No copies data to the Clipboard 
+The application is using SQLite. Confidential information must be encrypted.
 
-A aplicação copia o dado para o clipboard. Os dados confidencias não devem ser copiados para o clipboard, assim outras aplicações podem acessar. 
-
-> The application copies data to the Clipboard. Confidential data must not be copied to the Clipboard, as other applications can access it. For more information checkout the CWE-327 \([https://cwe.mitre.org/data/definitions/327.html](https://cwe.mitre.org/data/definitions/327.html)\) advisory.
-
-Exemplo de código vulnerável:
-
-```kotlin
-var clipboard UIPasteboard
-```
-
-### The application is using SQLite 
-
-A aplicação está usando SQLite. Informações confidenciais devem estar criptografadas. 
-
-> The application is using SQLite. Confidential information must be encrypted.
-
-Exemplo de código vulnerável:
+Example of a vulnerable code:
 
 ```kotlin
 sqlite3_exec(...)
 ```
 
-### No use NSTemporaryDirectory 
+### **No use NSTemporaryDirectory** 
+{{% alert color="info" %}}
+ID: "HS-JVM-15"
+{{% /alert %}}
 
-Usuário em "NSTemporaryDirectory \(\)" não é confiável e pode resultar em vulnerabilidade no diretório. 
+User use in "NSTemporaryDirectory \(\)" is unreliable, it can result in vulnerabilities in the directory. For more information checkout the CWE-22 \([https://cwe.mitre.org/data/definitions/22.html](https://cwe.mitre.org/data/definitions/22.html)\) advisory.
 
-> User use in "NSTemporaryDirectory \(\)" is unreliable, it can result in vulnerabilities in the directory. For more information checkout the CWE-22 \([https://cwe.mitre.org/data/definitions/22.html](https://cwe.mitre.org/data/definitions/22.html)\) advisory.
-
-Exemplo de código vulnerável:
+Example of a vulnerable code:
 
 ```kotlin
 const tempDirectory NSTemporaryDirectory
 ```
 
-### Send SMS 
+### **No copies data to the Clipboard** 
+{{% alert color="info" %}}
+ID: "HS-JVM-16"
+{{% /alert %}}
 
-Essa aplicação envia sms sem segurança. 
+The application copies data to the Clipboard. Confidential data must not be copied to the Clipboard, as other applications can access it. For more information checkout the CWE-327 \([https://cwe.mitre.org/data/definitions/327.html](https://cwe.mitre.org/data/definitions/327.html)\) advisory.
 
-> This App is send sms without security.
+Example of a vulnerable code:
 
-Exemplo de código vulnerável:
+```kotlin
+var clipboard UIPasteboard
+```
+
+### **No Download File Using Android Download Manager**
+{{% alert color="info" %}}
+ID: "HS-JVM-17"
+{{% /alert %}}
+
+This App downloads files using Android Download Manager.
+
+```kotlin
+import android.app.DownloadManager;
+```
+### **Android Keystore**
+{{% alert color="info" %}}
+ID: "HS-JVM-18"
+{{% /alert %}}
+
+No use Android Keystore to manager.
+
+
+### **Android Notifications**
+{{% alert color="info" %}}
+ID: "HS-JVM-19"
+{{% /alert %}}
+
+No read android notifications
+
+### **Potential Android SQL Injection**
+{{% alert color="info" %}}
+ID: "HS-JVM-20"
+{{% /alert %}}
+
+The input values included in SQL queries need to be passed in safely. Bind variables in prepared statements can be used to easily mitigate the risk of SQL injection. For more information checkout the CWE-89 \([https://cwe.mitre.org/data/definitions/89.html](https://cwe.mitre.org/data/definitions/89.html)\) advisory and [OWASP: Top 10 2017-A1-Injection](https://owasp.org/www-project-top-ten/2017/A1_2017-Injection).
+
+Example of a vulnerable code:
+
+```kotlin
+String query = "SELECT * FROM  messages WHERE uid= '"+userInput+"'" ;
+Cursor cursor = this.getReadableDatabase().rawQuery(query,null);
+```
+
+Example of an invulnerable code:
+
+```kotlin
+String query = "SELECT * FROM  messages WHERE uid= ?" ;
+Cursor cursor = this.getReadableDatabase().rawQuery(query,new String[] {userInput});
+```
+
+### **SQL Injection With SQLite**
+{{% alert color="info" %}}
+ID: "HS-JVM-21"
+{{% /alert %}}
+
+App uses SQLite Database and execute raw SQL query. Untrusted user input in raw SQL queries can cause SQL Injection. Also sensitive information should be encrypted and written to the database. For more information checkout the CWE-89 \([https://cwe.mitre.org/data/definitions/89.html](https://cwe.mitre.org/data/definitions/89.html)\) advisory and [OWASP: Top 10 2017-A1-Injection](https://owasp.org/www-project-top-ten/2017/A1_2017-Injection)..
+
+Example of a vulnerable code:
+
+```kotlin
+import android.database.sqlite;
+
+...
+String query = "SELECT * FROM  messages WHERE uid= '"+userInput+"'" ;
+Cursor cursor = conn.rawQuery(query,null);
+```
+
+Example of an invulnerable code:
+
+```kotlin
+import android.database.sqlite;
+
+...
+String query = "SELECT * FROM  messages WHERE uid= ?" ;
+Cursor cursor = conn.rawQuery(query,new String[] {userInput});
+```
+
+### **WebView GET Request** 
+{{% alert color="info" %}}
+ID: "HS-JVM-22"
+{{% /alert %}}
+WebView GET Request
+
+### **WebView POST Request** 
+{{% alert color="info" %}}
+ID: "HS-JVM-23"
+{{% /alert %}}
+WebView POST Request
+
+### **Base64 Decode** 
+{{% alert color="info" %}}
+ID: "HS-JVM-24"
+{{% /alert %}}
+
+Basic authentication's only means of obfuscation is Base64 decoding. Since Base64 decoding is easily recognized and reversed, it offers only the thinnest veil of protection to your users, and should not be used. For more information checkout the OWASP Top Ten 2017 A3\([https://owasp.org/www-project-top-ten/2017/A3\_2017-Sensitive\_Data\_Exposure.html](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html)\) advisory and CWE-522 \([https://cwe.mitre.org/data/definitions/522.html](https://cwe.mitre.org/data/definitions/522.html)\).
+
+Example of a vulnerable code:
+
+```kotlin
+var password = "PASSWORD_IN_BASE64";
+String passwordDecoded = Base64Encoder.decode(password);
+```
+### **WebView Load Request** 
+{{% alert color="info" %}}
+ID: "HS-JVM-25"
+{{% /alert %}}
+WebView Load Request.
+
+### **WebView Load Request** 
+{{% alert color="info" %}}
+ID: "HS-JVM-26"
+{{% /alert %}}
+WebView Load Request.
+
+### **Cookie Storage**
+{{% alert color="info" %}}
+ID: "HS-JVM-27"
+{{% /alert %}}
+
+No use cookie storage to save sensitive information. NSHTTPCookieStorage. sharedHTTPCookieStorage
+
+### 28 Set or Read Clipboard
+
+### **Using LoadHTMLString can result Inject**
+{{% alert color="info" %}}
+ID: "HS-JVM-29"
+{{% /alert %}}
+
+User input not sanitized in 'loadHTMLString' can result in an injection of JavaScript in the context of your application, allowing access to private data. For more information checkout the CWE-95 \([https://cwe.mitre.org/data/definitions/95.html](https://cwe.mitre.org/data/definitions/95.html)\) advisory.
+
+### **No Use SFAntiPiracy Jailbreak**
+{{% alert color="info" %}}
+ID: "HS-JVM-30"
+{{% /alert %}}
+
+Verifications found of type SFAntiPiracy Jailbreak.
+
+### **Send SMS** 
+
+
+This App is send sms without security.
+
+Example of a vulnerable code:
 
 ```kotlin
 import telephony.SmsManager
 ```
 
-### Super User Privileges 
+### **No Use SFAntiPiracy IsPirated**
+{{% alert color="info" %}}
+ID: "HS-JVM-31"
+{{% /alert %}}
 
-Essa aplicação pode fazer a requisição no  usuário root \(super user\).
+Verifications found of type SFAntiPiracy isPirated.
 
-> This App may request root \(Super User\) privileges. For more information checkout the CWE-250 \([https://cwe.mitre.org/data/definitions/250.html](https://cwe.mitre.org/data/definitions/250.html)\) advisory.
+### **Weak md5 hash using**
+{{% alert color="info" %}}
+ID: "HS-JVM-32"
+{{% /alert %}}
 
-Exemplo de código vulnerável:
+MD5 is a weak hash, which can generate repeated hashes. For more information checkout the CWE-327 \([https://cwe.mitre.org/data/definitions/327.html](https://cwe.mitre.org/data/definitions/327.html)\) advisory.
+
+### **Weak sha1 hash using**
+{{% alert color="info" %}}
+ID: "HS-JVM-33"
+{{% /alert %}}
+
+SHA1 is a weak hash, which can generate repeated hashes. For more information checkout the CWE-327 \([https://cwe.mitre.org/data/definitions/327.html](https://cwe.mitre.org/data/definitions/327.html)\) advisory.
+
+### **Weak ECB encryption algorithm using**
+{{% alert color="info" %}}
+ID: "HS-JVM-34"
+{{% /alert %}}
+
+The application uses ECB mode in the encryption algorithm. It is known that the ECB mode is weak, as it results in the same ciphertext for identical blocks of plain text. For more information checkout the CWE-327 \([https://cwe.mitre.org/data/definitions/327.html](https://cwe.mitre.org/data/definitions/327.html)\) advisory.
+
+
+
+### **The application has anti-debugger using ptrace\(\)**
+{{% alert color="info" %}}
+ID: "HS-JVM-35"
+{{% /alert %}}
+
+The application has anti-debugger using ptrace\(\).
+
+
+### **Super User Privileges** 
+{{% alert color="info" %}}
+ID: "HS-JVM-36"
+{{% /alert %}}
+
+This App may request root \(Super User\) privileges. For more information checkout the CWE-250 \([https://cwe.mitre.org/data/definitions/250.html](https://cwe.mitre.org/data/definitions/250.html)\) advisory.
+
+Example of a vulnerable code:
 
 ```kotlin
 import com.noshufou.android.su
 ```
+### **Send SMS**  
+{{% alert color="info" %}}
+ID: "HS-JVM-37"
+{{% /alert %}}
 
-### Base64 Encode 
+Send SMS. For more information checkout the [OWASP-M3](https://owasp.org/www-project-mobile-top-10/2016-risks/m3-insecure-communication) advisory.
 
-Autenticação básica que significa obfuscação na Base64 da codificação. 
+### **Base64 Encode**  
+{{% alert color="info" %}}
+ID: "HS-JVM-38"
+{{% /alert %}}
 
-> Basic authentication's only means of obfuscation is Base64 encoding. Since Base64 encoding is easily recognized and reversed, it offers only the thinnest veil of protection to your users, and should not be used. For more information checkout the OWASP Top Ten 2017 A3\([https://owasp.org/www-project-top-ten/2017/A3\_2017-Sensitive\_Data\_Exposure.html](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html)\) advisory and CWE-522 \([https://cwe.mitre.org/data/definitions/522.html](https://cwe.mitre.org/data/definitions/522.html)\).
+Basic authentication's only means of obfuscation is Base64 encoding. Since Base64 encoding is easily recognized and reversed, it offers only the thinnest veil of protection to your users, and should not be used. For more information checkout the OWASP Top Ten 2017 A3\([https://owasp.org/www-project-top-ten/2017/A3\_2017-Sensitive\_Data\_Exposure.html](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html)\) advisory and CWE-522 \([https://cwe.mitre.org/data/definitions/522.html](https://cwe.mitre.org/data/definitions/522.html)\).
 
-Exemplo de código vulnerável
+Example of a vulnerable code:
 
 ```kotlin
 // Using HttpPost from Apache HttpClient
@@ -201,30 +407,22 @@ org.apache.http.client.methods.HttpPost httppost = new HttpPost(url);
 httppost.setHeader("Authorization", "Basic " + encoding);  // Noncompliant
 ```
 
-### Base64 Decode 
+### **GPS Location Known**
+{{% alert color="info" %}}
+ID: "HS-JVM-39"
+{{% /alert %}}
 
-> Basic authentication's only means of obfuscation is Base64 decoding. Since Base64 decoding is easily recognized and reversed, it offers only the thinnest veil of protection to your users, and should not be used. For more information checkout the OWASP Top Ten 2017 A3\([https://owasp.org/www-project-top-ten/2017/A3\_2017-Sensitive\_Data\_Exposure.html](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html)\) advisory and CWE-522 \([https://cwe.mitre.org/data/definitions/522.html](https://cwe.mitre.org/data/definitions/522.html)\).
+No use GPS Location to get last known location.
 
-Exemplo de código vulnerável:
 
-```kotlin
-var password = "PASSWORD_IN_BASE64";
-String passwordDecoded = Base64Encoder.decode(password);
-```
+### **Jailbreak Detection Methods**
+{{% alert color="info" %}}
+ID: "HS-JVM-40"
+{{% /alert %}}
 
-### GPS Location Known
+The application may contain Jailbreak detection mechanisms.
 
-Sem uso do GPS para a última localização.
-
-> No use GPS Location to get last known location.
-
-### Jailbreak Detection Methods
-
-A aplicação pode conter mecanismos de detecção de jailbreak.
-
-> The application may contain Jailbreak detection mechanisms.
-
-Possíveis vulnerabilidades ao usar:
+Possible vulnerabilities when use:
 
 ```kotlin
 /Applications/Cydia.app
@@ -262,123 +460,3 @@ Possíveis vulnerabilidades ao usar:
 cydia://
 frida-server
 ```
-
-### No Download File Using Android Download Manager
-
-Essa aplicação faz o download de arquivos usando o Android download manager. 
-
-> This App downloads files using Android Download Manager.
-
-```kotlin
-import android.app.DownloadManager;
-```
-
-### Android Keystore
-
-Ninguém utiliza o gerenciamento do Android Keystore.
-
-> No use Android Keystore to manager.
-
-### Android Notifications
-
-Ninguém utiliza as notificações do Android. 
-
-> No read android notifications
-
-### Potential Android SQL Injection
-
-A entrada de valores inclusas nas consultas SQL precisam ser passadas com segurança. Variáveis bind em instruções preparadas podem ser facilmente mitigar o risco de uma injenção de SQL. 
-
-> The input values included in SQL queries need to be passed in safely. Bind variables in prepared statements can be used to easily mitigate the risk of SQL injection. For more information checkout the CWE-89 \([https://cwe.mitre.org/data/definitions/89.html](https://cwe.mitre.org/data/definitions/89.html)\) advisory and [OWASP: Top 10 2017-A1-Injection](https://owasp.org/www-project-top-ten/2017/A1_2017-Injection).
-
-Exemplo de código vulnerável:
-
-```kotlin
-String query = "SELECT * FROM  messages WHERE uid= '"+userInput+"'" ;
-Cursor cursor = this.getReadableDatabase().rawQuery(query,null);
-```
-
-Exemplo de código não vulnerável:
-
-```kotlin
-String query = "SELECT * FROM  messages WHERE uid= ?" ;
-Cursor cursor = this.getReadableDatabase().rawQuery(query,new String[] {userInput});
-```
-
-### SQL Injection With SQLite
-
-Aplicação usa a base de dados SQLite e roda consultas SQL.  Entrada de dados de usuários não confiáveis podem causar injeção de SQL. Informação sensível também deve ser criptografada e escritas na base de dados.
-
-> App uses SQLite Database and execute raw SQL query. Untrusted user input in raw SQL queries can cause SQL Injection. Also sensitive information should be encrypted and written to the database. For more information checkout the CWE-89 \([https://cwe.mitre.org/data/definitions/89.html](https://cwe.mitre.org/data/definitions/89.html)\) advisory and [OWASP: Top 10 2017-A1-Injection](https://owasp.org/www-project-top-ten/2017/A1_2017-Injection)..
-
-Exemplo de código vulnerável:
-
-```kotlin
-import android.database.sqlite;
-
-...
-String query = "SELECT * FROM  messages WHERE uid= '"+userInput+"'" ;
-Cursor cursor = conn.rawQuery(query,null);
-```
-
-Exemplo de código não vulnerável
-
-```kotlin
-import android.database.sqlite;
-
-...
-String query = "SELECT * FROM  messages WHERE uid= ?" ;
-Cursor cursor = conn.rawQuery(query,new String[] {userInput});
-```
-
-### Cookie Storage
-
-O armazenamento de cookie não é usado para salvar informações sensíveis. 
-
-> No use cookie storage to save sensitive information
->
-> NSHTTPCookieStorage
-
-> sharedHTTPCookieStorage
-
-### Using LoadHTMLString can result Inject
-
-A entrada de dados do usuário não é sanitária em 'loadHTMLString' e pode resultar em uma injeção de JavaScript no contexto da sua aplicação, o que permite o acesso a dados privados.
-
-> User input not sanitized in 'loadHTMLString' can result in an injection of JavaScript in the context of your application, allowing access to private data. For more information checkout the CWE-95 \([https://cwe.mitre.org/data/definitions/95.html](https://cwe.mitre.org/data/definitions/95.html)\) advisory.
-
-### No Use SFAntiPiracy Jailbreak
-
-Verificações encontradas são um tipo de SFAAntiPiracy Jailbreak. 
-
-> Verifications found of type SFAntiPiracy Jailbreak.
-
-### No Use SFAntiPiracy IsPirated
-
-Verificações são um tipo de SFAntiPiracy isPirate.
-
-> Verifications found of type SFAntiPiracy isPirated.
-
-### Weak5 hash using
-
-MD5 é um hash fraco, o que pode gerar hashes repetidos.
-
-> MD5 is a weak hash, which can generate repeated hashes. For more information checkout the CWE-327 \([https://cwe.mitre.org/data/definitions/327.html](https://cwe.mitre.org/data/definitions/327.html)\) advisory.
-
-### Weak sha1 hash using
-
-SHA1 é um hash fraco, que pode gerar hashes repetidos. 
-
-> SHA1 is a weak hash, which can generate repeated hashes. For more information checkout the CWE-327 \([https://cwe.mitre.org/data/definitions/327.html](https://cwe.mitre.org/data/definitions/327.html)\) advisory.
-
-### Weak ECB encryption algorithm using
-
-A aplicação usa o modo ECB na criptografia do algoritmo. É conhecido que o modo ECB é fraco, como resultado do mesmo texto cifrado para blocos identicos de texto.
-
-> The application uses ECB mode in the encryption algorithm. It is known that the ECB mode is weak, as it results in the same ciphertext for identical blocks of plain text. For more information checkout the CWE-327 \([https://cwe.mitre.org/data/definitions/327.html](https://cwe.mitre.org/data/definitions/327.html)\) advisory.
-
-### The application has anti-debugger using ptrace\(\)
-
-A aplicação possui um anti-debugger usando o ptrace\(\).
-
-> The application has anti-debugger using ptrace\(\).
