@@ -140,6 +140,8 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@v2
+        with: # Required when commit authors is enabled
+          fetch-depth: 0
     - name: Running Horusec Security
       run: |
         curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest
@@ -228,6 +230,9 @@ steps:
 
 ```yaml
 image: docker:latest
+
+variables:
+  GIT_DEPTH: 0 # Required when commit authors is enabled
 
 services:
   - docker:dind
