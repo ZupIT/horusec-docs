@@ -201,18 +201,19 @@ workflows:
 
 ### **Jenkins**
 
+{{% alert color="warning" %}}
+Em máquinas que utilizam Jenkins deve-se ter o **docker e git instalado** para que o Horusec tenha toda potencia em suas análises. Verifique mais informações na sessão de [requisitos da CLI](#Requisitos).
+{{% /alert %}}
+
 ```groovy
 stages {
-        stage('Security') {
-            agent {
-                docker { image 'docker:dind' }
-            }
-            steps {
-                sh 'curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest'
-                sh 'horusec start -p="./" -e="true"'
-            }
+    stage('Security') {
+        steps {
+            sh 'curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest'
+            sh 'horusec start -p="./" -e="true"'
         }
     }
+}
 ```
 
 ### **Azure DevOps Pipeline**
