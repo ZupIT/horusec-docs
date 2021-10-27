@@ -4,6 +4,10 @@ weight: 12
 description: Nesta seção, você encontra o tutorial para realizar uma análise com o histórico git ativado e mostrar quem são os autores das vulnerabilidades encontradas.
 ---
 
+{{% alert color="warning" %}}
+Caso esteja usando essa funcionalidade no CI, certifique-se que todos os commits estão sendo clonados. Verifque a configuração recomendada para cada CI em [Instalação via Pipeline](https://horusec.io/docs/pt-br/cli/installation/#2-instala%C3%A7%C3%A3o-via-pipeline)
+{{% /alert %}}
+
 
 O Horusec realiza suas análises por meio da Horusec-CLI e por padrão já tem os autores dos commit e o histórico git **desabilitados**.
 Para habilitar, adicione uma opção para cada ação, veja os exemplos abaixo: 
