@@ -65,7 +65,7 @@ See below these languages, the analysis tools and which version they are availab
 | Swift |[**HorusecSwift**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-swift.md" lang="en">}})| v2.1
 |
 
-### **Version available on Horusec-CLI**
+### **Available version on Horusec-CLI**
 | **Tools** | **Version** |
 | :--- | :--- |
 | [**Bandit**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/python/deployments/Dockerfile) |Version: 1.7.0 |
