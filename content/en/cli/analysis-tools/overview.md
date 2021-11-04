@@ -65,6 +65,32 @@ See below these languages, the analysis tools and which version they are availab
 | Swift |[**HorusecSwift**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-swift.md" lang="en">}})| v2.1
 |
 
+### **Version available on Horusec-CLI**
+| **Tools** | **Version** |
+| :--- | :--- |
+| [**Bandit**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/python/deployments/Dockerfile) |Version: 1.7.0 |
+| [**Brakeman**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/ruby/deployments/Dockerfile) |v5.1.1  | 
+| [**Bundler Audit**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/ruby/deployments/Dockerfile) |v0.9.0| 
+| [**Checkov**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/hcl/deployments/Dockerfile) |v2.0.474| 
+| [**DotNet CLI**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/csharp/deployments/Dockerfile) |v5.0| 
+| [**Flawfinder**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/c/deployments/Dockerfile) |v2.0.19 |
+| [**GoSec**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/go/deployments/Dockerfile) |v2.8.1| 
+| [**GitLeaks**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/leaks/deployments/Dockerfile) |v7.6.1|
+| [**MixAudit**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/elixir/deployments/Dockerfile) |v1.0.0|
+| [**Nancy**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/go/deployments/Dockerfile) |v1.0.22|
+| [**NpmAudit**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/javascript/deployments/Dockerfile) |v6.14.7| 
+| [**Owasp Dependency Check**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/generic/deployments/Dockerfile) |v6.2.2| 
+| [**PHP Code Sniffer**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/php/deployments/Dockerfile) |v8.0.11|
+| [**Safety**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/python/deployments/Dockerfile) |v1.10.3| 
+| [**Security Code Scan**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/csharp/deployments/Dockerfile) |v5.2.2| 
+| [**Semgrep**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/generic/deployments/Dockerfile) |v0.63.0|
+| [**Sobelow**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/elixir/deployments/Dockerfile) |v0.11.1|
+| [**ShellCheck**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/shell/deployments/Dockerfile) |v0.7.2| 
+| [**TFSec**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/hcl/deployments/Dockerfile) |v0.55.1|
+| [**Trivy**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/generic/deployments/Dockerfile) |v0.19.2|
+| [**YarnAudit**](https://github.com/ZupIT/horusec/blob/main/internal/services/formatters/javascript/deployments/Dockerfile) |v1.22.5|
+
+
 
 ### Read more
 - [**How to add tools using Horusec-engine?**]({{< ref path="/tutorials/how-to-add-tools-using-horusec-engine.md" lang="en">}})
