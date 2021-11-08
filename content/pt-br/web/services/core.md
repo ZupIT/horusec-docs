@@ -45,14 +45,15 @@ Estas são as possíveis váriaveis de ambiente que você pode configurar neste 
 
 | Nome da Variável de Ambiente                 | Valor Default                                                     | Descrição                                                  |
 |----------------------------------|------------------------------------------------------------------|--------------------------------------------------------------|
-| HORUSEC_SWAGGER_HOST             | localhost                                                        | Obtém o host que estará disponível no swagger.| 
+| HORUSEC_SWAGGER_HOST             | localhost                                                        | Esta variável de ambiente obtém o host que estará disponível no swagger.| 
 | HORUSEC_DATABASE_SQL_URI         | postgresql://root:root@localhost:5432/horusec_db?sslmode=disable | Obtém o URI (identificador uniforme de recursos) para conectar ao banco de dados POSTGRES. |
-| HORUSEC_DATABASE_SQL_LOG_MODE    | false                                                            | Obtém o valor para habilitar logs no POSTGRES. |
-| HORUSEC_PORT                     | 8003                                                             | Obtém a porta que o serviço irá iniciar. |
-| HORUSEC_BROKER_HOST              | 127.0.0.1                                                        | Obtém o host para se conectar ao broker RABBITMQ. | 
-| HORUSEC_BROKER_PORT              | 5672                                                             | Obtém porta para conectar no broker RABBITMQ. |
-| HORUSEC_BROKER_USERNAME          | guest                                                            | Obtém o nome de usuário para se conectar no broker RABBITMQ. |
-| HORUSEC_BROKER_PASSWORD          | guest                                                            | Obtém a senha para se conectar no broker RABBITMQ. |
-| HORUSEC_GRPC_AUTH_URL            | localhost:8007                                                   | Obtém a URL `horusec-auth` de conexão com o GRPC |
-| HORUSEC_GRPC_USE_CERTS           | false                                                            | Valida se o uso de certificados no GRPC está ativo ou não. |
-| HORUSEC_GRPC_CERT_PATH           |                                                                  | Obtém o caminho do certificado GRPC. | 
+| HORUSEC_DATABASE_SQL_LOG_MODE    | false                                                            | Esta variável de ambiente obtém o valor para habilitar logs no POSTGRES. |
+| HORUSEC_PORT                     | 8003                                                             | Esta variável de ambiente obtém a porta que o serviço irá iniciar. |
+| HORUSEC_BROKER_HOST              | 127.0.0.1                                                        | Esta variável de ambiente obtém o host para se conectar ao broker RABBITMQ. | 
+| HORUSEC_BROKER_PORT              | 5672                                                             | Esta variável de ambiente obtém porta para conectar no broker RABBITMQ. |
+| HORUSEC_BROKER_USERNAME          | guest                                                            | Esta variável de ambiente obtém o nome de usuário para se conectar no broker RABBITMQ. |
+| HORUSEC_BROKER_PASSWORD          | guest                                                            | Esta variável de ambiente obtém a senha para se conectar no broker RABBITMQ. |
+| HORUSEC_GRPC_AUTH_URL            | localhost:8007                                                   | Esta variável de ambiente obtém a URL `horusec-auth` de conexão com o GRPC |
+| HORUSEC_GRPC_USE_CERTS           | false                                                            | Esta variável de ambiente valida se o uso de certificados no GRPC está ativo ou não. |
+| HORUSEC_GRPC_CERT_PATH           |                                                                  | Esta variável de ambiente obtém o caminho do certificado GRPC. |
+| HORUSEC_MANAGER_URL    | 127.0.0.1:8043                                                           | Esta variável de ambiente representa onde está exposto o horusec-manager. Quando enviar um e-mail será redirecionado para este link. |
