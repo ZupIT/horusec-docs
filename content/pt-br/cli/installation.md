@@ -141,8 +141,8 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@v2
-        with: # Necessário quando habilitado o autores de commit
-          fetch-depth: 0
+      with: # Necessário quando habilitado o autores de commit
+        fetch-depth: 0
     - name: Running Horusec Security
       run: |
         curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest
