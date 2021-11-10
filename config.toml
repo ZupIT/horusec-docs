@@ -91,7 +91,7 @@ version_menu = "Versões"
 [[menu.main]]
     name = "C4Model"
     weight = 20
-    url = "https://docs.horusec.io/c4model"
+    url = "https://docs.horusec.io/c4model/en"
 
 [[menu.main]]
     name = "FAQ"
