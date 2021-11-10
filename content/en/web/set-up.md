@@ -18,7 +18,7 @@ These are the general requirements you need before installing Horusec:
 * **RabbitMQ** connection as a message-broker (recommended version ```3-management```);
 
 * Preconfigured **Kubernetes secrets**. 
-  - The secrets you need to configure may vary depending on how you use Horusec. [**See the configuration options**](https://horusec.io/site/#resources).
+  - The secrets you need to configure may vary depending on how you use Horusec. [**See the configuration options**]({{< ref path="/web/installation/install-with-operator/yaml-definition" lang="en">}}).
 
 ## **Helm**
 When installing Horusec with Helm, you also need

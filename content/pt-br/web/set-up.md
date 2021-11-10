@@ -18,7 +18,7 @@ Esses são os requisitos gerais que você precisa antes de instalar o Horusec:
 * Conexão com um **RabbitMQ** como message-broker (versão recomendada ```3-management```);
 
 * **'Kubernetes secrets'** pré-configurado.
-    - Os secrets que você precisa configurar pode variar, dependendo de como você usa o Horusec. [**Veja suas opções de configuração**](https://horusec.io/site/#resources).
+    - Os secrets que você precisa configurar pode variar, dependendo de como você usa o Horusec. [**Veja suas opções de configuração**]({{< ref path="/web/installation/install-with-operator/yaml-definition" lang="pt-br">}})..
 
 
 ## **Helm**

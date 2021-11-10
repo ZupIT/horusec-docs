@@ -5,7 +5,7 @@ description: Nesta seção, você encontra o tutorial para realizar uma análise
 ---
 
 {{% alert color="warning" %}}
-Caso esteja usando essa funcionalidade no CI, certifique-se que todos os commits estão sendo clonados. Verifque a configuração recomendada para cada CI em [Instalação via Pipeline](https://horusec.io/docs/pt-br/cli/installation/#2-instala%C3%A7%C3%A3o-via-pipeline)
+Caso esteja usando essa funcionalidade no CI, certifique-se que todos os commits estão sendo clonados. Verifque a configuração recomendada para cada CI em [Instalação via Pipeline]({{< ref path="/cli/installation#2-installation-via-pipeline" lang="pt-br">}})
 {{% /alert %}}
 
 
