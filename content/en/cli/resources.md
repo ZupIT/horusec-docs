@@ -79,6 +79,10 @@ When you run the start command, there are some configuration it can be changed. 
 ```bash
 horusec start
 ```
+{{% alert color="warning" %}}
+Horusec CLI works directly with Docker environment variables. For more information about these variables and a description of each one of them, check out [**Docker's documentation**](https://docs.docker.com/engine/reference/commandline/cli/#environment-variables).
+{{% /alert %}}
+
 #### **Use options for the start command**
 
 #### 1. Configuration file
