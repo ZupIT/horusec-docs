@@ -3,7 +3,7 @@ title: "Recursos"
 linkTitle: "Recursos"
 weight: 20
 description: >-
- Nessa seção você vai encontra detalhes de recursos da CLI e como utilizar cada uma delas.
+ Nessa seção você vai encontra detalhes de recursos da CLI e como utilizar cada uma delas. 
 ---
 
 ## **Flags globais**
