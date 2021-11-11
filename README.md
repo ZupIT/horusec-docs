@@ -1,6 +1,6 @@
 # Horusec Documentation
 
-In this project contains all documentation of **[HORUSEC](https://horusec.io/)**.
+In this project contains all documentation of **[HORUSEC](https://docs.horusec.io/)**.
 
 # Requirements
 To edit, run and build this project is necessary some requirements, they are:
