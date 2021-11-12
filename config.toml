@@ -1,4 +1,4 @@
-baseURL = "https://horusec.io/docs/"
+baseURL = "https://docs.horusec.io/docs/"
 
 current_version = ""
 
@@ -91,12 +91,12 @@ version_menu = "Versões"
 [[menu.main]]
     name = "C4Model"
     weight = 20
-    url = "https://horusec.io/c4model/en"
+    url = "https://docs.horusec.io/c4model/en"
 
 [[menu.main]]
     name = "FAQ"
     weight = 20
-    url = "https://horusec.io/docs/faq"
+    url = "https://docs.horusec.io/docs/faq"
 
 # Everything below this are Site Params
 
