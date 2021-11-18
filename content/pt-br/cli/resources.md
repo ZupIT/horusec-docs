@@ -3,7 +3,7 @@ title: "Recursos"
 linkTitle: "Recursos"
 weight: 20
 description: >-
- Nessa seção você vai encontra detalhes de recursos da CLI e como utilizar cada uma delas.
+ Nessa seção você vai encontra detalhes de recursos da CLI e como utilizar cada uma delas. 
 ---
 
 ## **Flags globais**
@@ -75,6 +75,11 @@ Comando usado para iniciar uma análise em busca de possíveis vulnerabilidades 
 ```bash
 horusec start
 ```
+
+{{% alert color="warning" %}}
+Horusec CLI trabalha diretamente com as variáveis de ambiente do Docker. Para mais informações sobre essas variáveis e a descrição de cada uma delas, acesse a [**documentação do Docker**](https://docs.docker.com/engine/reference/commandline/cli/#environment-variables).
+{{% /alert %}}
+
 #### **Opções de uso para o comando start**
 
 #### 1. Arquivo de configuração
