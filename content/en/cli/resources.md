@@ -611,15 +611,22 @@ On the table below, you can see all the available flags. To see it better, just 
             <td style="text-align:left">false</td>
             <td style="text-align:left">Enables the shellcheck tool, it checks for errors in sh files. Ex: -j.
 </td>
-<tr>
+        <tr>
             <td style="text-align:left">HORUSEC_CLI_LOG_FILE_PATH</td>
             <td style="text-align:left">horusecCliLogFilePath</td>
             <td style="text-align:left">log-file-path</td>
             <td style="text-align:left">l</td>
             <td style="text-align:left">./tmp/horusec/</td>
-            <td style="text-align:left">Change the default log file path.
-</td>
-    </tr>
+            <td style="text-align:left">Change the default log file path.</td>
+        </tr>
+         <tr>
+            <td style="text-align:left">HORUSEC_CLI_SHOW_VULNERABILITIES_TYPES</td>
+            <td style="text-align:left">horusecCliShowVulnerabilities</td>
+            <td style="text-align:left">--show-vulnerabilities-types</td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left">Vulnerability</td>
+            <td style="text-align:left">Used to show the vulnerabilities of the reported types. Example --show-vulnerabilities-types="Vulnerability, Risk Accepted, Corrected".</td>
+        </tr>
   </tbody>
 </table>
 

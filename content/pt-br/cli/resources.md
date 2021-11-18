@@ -561,8 +561,15 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left">log-file-path</td>
             <td style="text-align:left">l</td>
             <td style="text-align:left">./tmp/horusec/</td>
-            <td style="text-align:left"> Mudança no caminho do arquivo de log default. 
-</td>
+            <td style="text-align:left"> Mudança no caminho do arquivo de log default.</td>
+        </tr>
+         <tr>
+            <td style="text-align:left">HORUSEC_CLI_SHOW_VULNERABILITIES_TYPES</td>
+            <td style="text-align:left">horusecCliShowVulnerabilities</td>
+            <td style="text-align:left">--show-vulnerabilities-types</td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left">Vulnerability</td>
+            <td style="text-align:left">Usado para mostrar as vulnerabilidades dos tipos informados. Exemplo --show-vulnerabilities-types="Vulnerability, Risk Accepted, Corrected".</td>
         </tr>
     </tbody>
 </table>
