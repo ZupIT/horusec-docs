@@ -1,99 +1,88 @@
-# Contributing
+# **Contributing Guide**
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change.
+This is Horusec's documentation contributing guide. We'd love to accept your patches and contributions to this project. There are just a few small guidelines you need to follow.
 
-Please note we have a code of conduct, please follow it in all your interactions with the project.
 
-## Pull Request Process
+## **Table of contents**
+### 1. [**Before you contribute**](#before-you-contribute)
+> #### i. [**Legal**](#legal)
+> #### ii. [**Community Guidelines**](#community-guidelines)
+### 2. [**Prerequisites**](#prerequisites)
+> #### i.   [**Developer Certificate of Origin**](#developer-certificate-of-origin)
+### 3. [**How to contribute?**](#how-to-contribute?)
+### 4. [**Code of Conduct**](#code-of-conduct)
+### 5. [**Community**](#community)
 
-1. Ensure any install or build dependencies are removed before the end of the layer when doing a
-   build.
-2. Update the README.md with details of changes to the interface, this includes new environment
-   variables, exposed ports, useful file locations and container parameters.
-3. Everyone must commit to complying with the DCO rules. It will need to be [signed-off](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--s) and [verified](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/about-commit-signature-verification). Example: ` git commit -s --amend`.
-4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you
-   do not have permission to do that, you may request the second reviewer to merge it for you.
+## **Before you contribute**
 
-## Code of Conduct
+### **Legal**
+- Horusec's documentation is licensed over [**Creative Commons**](https://creativecommons.org/get-cc-savvy/breaking-cc-licenses/).
 
-### Our Pledge
+### **Community Guidelines**
 
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to making participation in our project and
-our community a harassment-free experience for everyone, regardless of age, body
-size, disability, ethnicity, gender identity and expression, level of experience,
-nationality, personal appearance, race, religion, or sexual identity and
-orientation.
+This project follows [**Google's Open Source Community Guidelines**](https://opensource.google.com/conduct/).
 
-### Our Standards
+## **Prerequisites**
+Check out the requisites before contributing to CharlesCD documentation:
 
-Examples of behavior that contributes to creating a positive environment
-include:
+### **Developer Certificate of Origin - DCO**
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+ This is a security layer for the project and for the developers. It is mandatory.
+ 
+ Follow one of these two methods to add DCO to your commits:
+ 
+**1. Command line**
+ Follow the steps: 
+ **Step 1:** Configure your local git environment adding the same name and e-mail configured at your GitHub account. It helps to sign commits manually during reviews and suggestions.
 
-Examples of unacceptable behavior by participants include:
+ ```
+git config --global user.name “Name”
+git config --global user.email “email@domain.com.br”
+```
+**Step 2:** Add the Signed-off-by line with the `'-s'` flag in the git commit command:
 
-* The use of sexualized language or imagery and unwelcome sexual attention or
-advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic
-  address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+```
+$ git commit -s -m "This is my commit message"
+```
+**2. GitHub website**
 
-### Our Responsibilities
+You can also manually sign your commits during GitHub reviews and suggestions, follow the steps below: 
 
-Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+**Step 1:** When the commit changes box opens, manually type or paste your signature in the comment box, see the example:
 
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
-threatening, offensive, or harmful.
+```
+Signed-off-by: Name < e-mail address >
+```
 
-### Scope
+For this method, your name and e-mail must be the same registered to your GitHub account.
 
-This Code of Conduct applies both within project spaces and in public spaces
-when an individual is representing the project or its community. Examples of
-representing a project or community include using an official project e-mail
-address, posting via an official social media account, or acting as an appointed
-representative at an online or offline event. Representation of a project may be
-further defined and clarified by project maintainers.
+## **How to contribute?** 
 
-### Enforcement
+You can suggest a change, a fix, or improvements to our documentation, such as: 
+- Add missing information.
+- Fix a grammar or code error.
+- Suggest a new section.
+- Translate. 
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at "channel will be created and inserted here". All
-complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. The project team is
-obligated to maintain confidentiality with regard to the reporter of an incident.
-Further details of specific enforcement policies may be posted separately.
+### **Opening issues and pull requests**
 
-Project maintainers who do not follow or enforce the Code of Conduct in good
-faith may face temporary or permanent repercussions as determined by other
-members of the project's leadership.
+Follow the steps below: 
 
-### Attribution
+**Step 1.** Access [**GitHub Issues**](https://github.com/ZupIT/horusec-docs/issues) and open an issue; New implementations must have the standard **`feature/`** and corrections **`hotfix/`**.
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
-available at [http://contributor-covenant.org/version/1/4][version]
+**Step 2.** Describe the issue or change you want to make; 
 
-[homepage]: http://contributor-covenant.org
-[version]: http://contributor-covenant.org/version/1/4/
+- You can also suggest solutions for opened issues following, check steps 3 to 5.
 
-# Tips
-For edit any content in this project you can see markdown files into folder `/content` in `en` and `pt-br`.
-Is necessary edit in all languages enable when is necessary any implementation
+**Step 3.** Commit your changes to a new branch and upload it to the repository; To edit any content in this project you can see markdown files into folder `/content` in `en` and `pt-br`.
 
-# GitFlow
-In this project is using (GitFlow)[http://danielkummer.github.io/git-flow-cheatsheet/] pattern!
-New implementations must have the standard `feature/**` and corrections `hotfix/**`
+**Step 4.**  Open a pull request to the published branch and fill in the template that asks what you did and how to verify it;
+
+**Step 5.** Horusec's team will check your issue, review it, and then approve your PR.  
+
+## **Code of Conduct**
+Please read the [**Code of Conduct**](https://github.com/ZupIT/horusec/blob/main/CODE_OF_CONDUCT.md).
+
+## **Community**
+
+If you have any questions or ideas, let's chat in our [**Zup Open Source Forum**](https://forum.zup.com.br).
