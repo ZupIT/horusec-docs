@@ -622,7 +622,7 @@ On the table below, you can see all the available flags. To see it better, just 
          <tr>
             <td style="text-align:left">HORUSEC_CLI_SHOW_VULNERABILITIES_TYPES</td>
             <td style="text-align:left">horusecCliShowVulnerabilities</td>
-            <td style="text-align:left">--show-vulnerabilities-types</td>
+            <td style="text-align:left">show-vulnerabilities-types</td>
             <td style="text-align:left"></td>
             <td style="text-align:left">Vulnerability</td>
             <td style="text-align:left">Used to show the vulnerabilities of the reported types. Example --show-vulnerabilities-types="Vulnerability, Risk Accepted, Corrected".</td>

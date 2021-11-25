@@ -532,14 +532,6 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left">Esta configuração informa ao Horusec o endereço para realizar download de imagens caso você tenha configurado em um registro privado.</td>
         </tr>
         <tr>
-            <td style="text-align:left">HORUSEC_CLI_SHOW_VULNERABILITIES_TYPES</td>
-            <td style="text-align:left">horusecCliShowVulnerabilitiesTypes</td>
-            <td style="text-align:left">show-vulnerabilities-types</td>
-            <td style="text-align:left"></td>
-            <td style="text-align:left">Vulnerability</td>
-            <td style="text-align:left">Esta configuração informa ao Horusec quais são as vulnerabilidades de saída, podem ser do tipo: Vulnerability, Risk Accepted, False Positive, Corrected.</td>
-        </tr>
-        <tr>
             <td style="text-align:left">HORUSEC_CLI_ENABLE_OWASP_DEPENDENCY_CHECK</td>
             <td style="text-align:left">horusecCliEnableOwaspDependencyCheck</td>
             <td style="text-align:left">enable-owasp-dependency-check</td>
@@ -566,7 +558,7 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
          <tr>
             <td style="text-align:left">HORUSEC_CLI_SHOW_VULNERABILITIES_TYPES</td>
             <td style="text-align:left">horusecCliShowVulnerabilities</td>
-            <td style="text-align:left">--show-vulnerabilities-types</td>
+            <td style="text-align:left">show-vulnerabilities-types</td>
             <td style="text-align:left"></td>
             <td style="text-align:left">Vulnerability</td>
             <td style="text-align:left">Usado para mostrar as vulnerabilidades dos tipos informados. Exemplo --show-vulnerabilities-types="Vulnerability, Risk Accepted, Corrected".</td>
