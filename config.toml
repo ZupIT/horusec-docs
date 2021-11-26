@@ -107,6 +107,7 @@ privacy_policy = "https://insights.zup.com.br/politica-privacidade"
 logoName = "icons/horusec.svg" 
 
 isDocumentationDeprecated = false
+gtm_id="GTM-WHVSWLD"
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
