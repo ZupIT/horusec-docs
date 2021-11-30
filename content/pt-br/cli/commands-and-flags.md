@@ -1,9 +1,9 @@
 ---
-title: "Recursos"
-linkTitle: "Recursos"
+title: "Comandos & Flags"
+linkTitle: "Comandos & Flags"
 weight: 20
 description: >-
- Nessa seção você vai encontra detalhes de recursos da CLI e como utilizar cada uma delas. 
+ Nessa seção você vai encontra detalhes de recursos da CLI e como utilizar cada uma delas.
 ---
 
 ## **Flags globais**
@@ -60,7 +60,7 @@ horusec version
 ``` 
 
 ### Generate 
-Comando usado para gerar um arquivo de configuração no diretório atual e, com isso, ter algumas [**opções de customização**]({{< ref path="/cli/resources.md#3-flags" lang="pt-br">}}) na análise realizada no Horusec.
+Comando usado para gerar um arquivo de configuração no diretório atual e, com isso, ter algumas [**opções de customização**]({{< ref path="/cli/commands-and-flags.md#3-flags" lang="pt-br">}}) na análise realizada no Horusec.
 
 {{% alert color="info" %}}
 Estas opções de configuração são as flags, que você pode conferir na tabela ao final da página, na terceira opção de uso do comando Start. 

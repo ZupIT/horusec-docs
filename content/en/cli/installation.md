@@ -68,15 +68,15 @@ Horusec supports the following operating systems/versions:
 The manual installation is done according to your operating system and the version you want to download. 
 See the latest versions below: 
 
-- 📥 [**Windows x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_win_x64.exe)
-- 📥 [**Windows x86**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_win_x86.exe)
-- 📥 [**Linux x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_x64)
-- 📥 [**Linux x86**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_x86)
-- 📥 [**Mac x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_mac_x64)
-- 📥 [**Linux x64 Debian installer**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_64-bit.deb)
-- 📥 [**Linux x86 Debian installer**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_32-bit.deb)
-- 📥 [**Linux x64 RPM installer**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_64-bit.rpm)
-- 📥 [**Linux x86 RPM installer**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_32-bit.rpm)
+- 📥 [**Windows x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_win_x64.exe)
+- 📥 [**Windows x86**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_win_x86.exe)
+- 📥 [**Linux x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_x64)
+- 📥 [**Linux x86**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_x86)
+- 📥 [**Mac x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_mac_x64)
+- 📥 [**Linux x64 Debian installer**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_64-bit.deb)
+- 📥 [**Linux x86 Debian installer**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_32-bit.deb)
+- 📥 [**Linux x64 RPM installer**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_64-bit.rpm)
+- 📥 [**Linux x86 RPM installer**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_32-bit.rpm)
 
 {{% alert color="info" %}}
 If you want a specific version, change the word `latest` in the link to the version you want. 

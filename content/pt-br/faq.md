@@ -68,7 +68,7 @@ Para acessar o manager, você pode subir em sua infrapessoal usando os itens Doc
  
 ### **10. Como exportar o output do Horusec em arquivo?** 
 
-Para fazer isso, siga o [**Exemplo 5: Usando para obter uma saída sonarqube na seção Recursos**]({{< ref path="/cli/resources.md#exemplo-5-usando-para-obter-uma-saída-sonarqube" lang="pt-br">}}).
+Para fazer isso, siga o [**Exemplo 5: Usando para obter uma saída sonarqube na seção Recursos**]({{< ref path="/cli/commands-and-flags.md#exemplo-5-usando-para-obter-uma-saída-sonarqube" lang="pt-br">}}).
 
 ### **11. Como importar o output do Horusec dentro do SonarQube?**  
 

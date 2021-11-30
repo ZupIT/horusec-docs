@@ -1,9 +1,9 @@
 ---
-title: "Resources"
-linkTitle: "Resources"
+title: "Commands & Flags"
+linkTitle: "Commands & Flags"
 weight: 20
 description: >-
- In this section, you will find examples and options to use Horusec-CLI. 
+ In this section, you will find examples and options to use Horusec-CLI.
 ---
 
 ## **Global flags**
@@ -61,7 +61,7 @@ horusec version
 ``` 
 
 ### Generate 
-Command used to generate a configuration file in the current directory and it has some [**customization options**]({{< ref path="/cli/resources.md#global-flags" lang="en">}}) in the analysis made by Horusec. 
+Command used to generate a configuration file in the current directory and it has some [**customization options**]({{< ref path="/cli/commands-and-flags.md#global-flags" lang="en">}}) in the analysis made by Horusec. 
 
 
 {{% alert color="info" %}}
