@@ -2,28 +2,35 @@
 
 This is Horusec's documentation contributing guide. We'd love to accept your patches and contributions to this project. There are just a few small guidelines you need to follow.
 
-
 ## **Table of contents**
 ### 1. [**Before you contribute**](#before-you-contribute)
-> #### i. [**Legal**](#legal)
-> #### ii. [**Community Guidelines**](#community-guidelines)
+> #### 1.1. [**Code of Conduct**](#code-of-conduct)
+> #### 1.2. [**Legal**](#legal)
 ### 2. [**Prerequisites**](#prerequisites)
-> #### i.   [**Developer Certificate of Origin**](#developer-certificate-of-origin)
+> #### 2.1. [**Developer Certificate of Origin**](#developer-certificate-of-origin)
+> #### 2.2. [**Code Review**](#code-review)
+> #### 2.3. [**Pull Requests**](#pull-requests)    
 ### 3. [**How to contribute?**](#how-to-contribute?)
-### 4. [**Code of Conduct**](#code-of-conduct)
-### 5. [**Community**](#community)
+ > #### 3.1. [**Prepare your development environment**](#prepare-your-development-environment)
+> #### 3.2. [**First contribution**](#first-contribution)
+> #### 3.3. [**Add new feature, bug fixing or improvement**](#add-new-feature-bugfixing-or-improvement)
+> #### 3.4. [**Pull Request's approval**](#pull-request-approval)
+> #### 3.5. [**After your pull request's approval**](#after-your-pull-request-approval)
+### 4. [**Community**](#community)
 
 ## **Before you contribute**
 
+### **Code of Conduct**
+Please follow the [**Code of Conduct**](https://github.com/ZupIT/horusec/blob/main/CODE_OF_CONDUCT.md) in all your interactions with our project.
+
 ### **Legal**
-- Horusec's documentation is licensed over [**Creative Commons**](https://creativecommons.org/get-cc-savvy/breaking-cc-licenses/).
+- Horusec is licensed over [**ASF - Apache License**](https://github.com/ZupIT/horusec/blob/main/LICENSE), version 2, so new files must have the ASF version 2 header. For more information, please check out [**Apache license**](https://www.apache.org/licenses/LICENSE-2.0).
 
-### **Community Guidelines**
-
-This project follows [**Google's Open Source Community Guidelines**](https://opensource.google.com/conduct/).
+- All contributions are subject to the [**Developer Certificate of Origin (DCO)**](https://developercertificate.org). 
+When you commit, use the ```**-s** ``` option to include the Signed-off-by line at the end of the commit log message.
 
 ## **Prerequisites**
-Check out the requisites before contributing to CharlesCD documentation:
+Check out the requisites before contributing to Horusec:
 
 ### **Developer Certificate of Origin - DCO**
 
@@ -54,35 +61,116 @@ You can also manually sign your commits during GitHub reviews and suggestions, f
 Signed-off-by: Name < e-mail address >
 ```
 
-For this method, your name and e-mail must be the same registered to your GitHub account.
+For this method, your name and e-mail must be the same registered on your GitHub account.
+
+### **Code Review**
+- All your submissions needs a review.
+
+### **Pull Requests**
+When you open a Pull Request, follow the requirements below:
+
+1. Add a title with the following pattern: 
+
+#### **[PKG][TYPE]: Description**
+
+#### **PKG:** Name of the package or main service you want to change.
+
+#### **TYPE**: Add what your Pull Request (PR) refers to:
+- **FEATURE:** PR refers to a new activity.
+- **BUGFIX:** PR refers to corrections for the next release.
+- **HOTFIX:** PR refers to corrections where you will need a cherry-pick and the update of the minor version. 
+- **CHORE:** PR refers to changes for the next release, but it was only maintenance without an activity impact.  
+
+**Example:** **[start][bugfix]: Fix bug when Horusec haven't read the new flag of authorization**
+
+ 
+2. Answer the questions about what you did, how to verify it and a short description for the changelog, see an example below:
+
+<p align="center" margin="20 0"><img src="assets/pr-template.PNG" alt="architecture" width="100%" style="max-width:100%;"/></p>
+
 
 ## **How to contribute?** 
+See the guidelines to submit your changes: 
 
-You can suggest a change, a fix, or improvements to our documentation, such as: 
-- Add missing information.
-- Fix a grammar or code error.
-- Suggest a new section.
-- Translate. 
+### **Prepare your development environment**
+To start contributing with Horusec, you need to install [**Go**](https://golang.org/dl/). The minimal version required to build is 1.17.
+[**GNU Make**](https://www.gnu.org/software/make/) is also required to development.
 
-### **Opening issues and pull requests**
+After installing Go you can build using `make build-dev`.
 
-Follow the steps below: 
 
-**Step 1.** Access [**GitHub Issues**](https://github.com/ZupIT/horusec-docs/issues) and open an issue; New implementations must have the standard **`feature/`** and corrections **`hotfix/`**.
+#### **Testing**
+Horusec has a suite of unit and end-to-end tests you can run them using the following commands. 
 
-**Step 2.** Describe the issue or change you want to make; 
+```
+make test
 
-- You can also suggest solutions for opened issues following, check steps 3 to 5.
+make test-e2e
+```
 
-**Step 3.** Commit your changes to a new branch and upload it to the repository; To edit any content in this project you can see markdown files into folder `/content` in `en` and `pt-br`.
+Make sure all the tests pass before you commit and push :)
 
-**Step 4.**  Open a pull request to the published branch and fill in the template that asks what you did and how to verify it;
+#### **Coverage**
+You can get the test coverage using the following command.
 
-**Step 5.** Horusec's team will check your issue, review it, and then approve your PR.  
+```bash
+make coverage
 
-## **Code of Conduct**
-Please read the [**Code of Conduct**](https://github.com/ZupIT/horusec/blob/main/CODE_OF_CONDUCT.md).
+go tool cover -html=coverage.out # Open coverage status in your browser
+``` 
+
+#### **Repositories**
+Horusec has other repositories, check them below:
+
+- [**Charts**](https://github.com/ZupIT/charlescd/tree/main/circle-matcher)
+- [**Devkit**](https://github.com/ZupIT/horusec-devkit)
+- [**Engine**](https://github.com/ZupIT/horusec-engine)
+- [**Jenkins**](https://github.com/ZupIT/horusec-jenkins-sharedlib)
+- [**Operator**](https://github.com/ZupIT/horusec-operator)
+- [**Platform**](https://github.com/ZupIT/horusec-platform)
+- [**VSCode plugin**](https://github.com/ZupIT/horusec-vscode-plugin)
+- [**Kotlin**](https://github.com/ZupIT/horusec-tree-sitter-kotlin)
+- [**Vulnerabilities**](https://github.com/ZupIT/horusec-examples-vulnerabilities)
+
+### **First contribution**
+Contributing to a new feature is only allowed in the [**main repository**](https://github.com/ZupIT/horusec).
+
+Before contributing to this repository, please discuss the changes you wish to make via e-mail or [**forum**](https://forum.zup.com.br/c/en/horusec/14). 
+
+### **Add new feature, bug fixing or improvement**
+If you want to add an improvement, a new feature or bug fix, follow the steps to contribute: 
+
+**Step 1:** Make sure your branch is based on main;
+
+**Step 2:** When opening an issue, choose a template to answer the questions regarding what you want to contribute: 
+- [**Bug Report**](https://github.com/ZupIT/horusec/blob/main/.github/ISSUE_TEMPLATE/bug_report.md)
+- [**Feature request**](https://github.com/ZupIT/horusec/blob/main/.github/ISSUE_TEMPLATE/feature_request.md)
+- [**Improvement**](https://github.com/ZupIT/horusec/blob/main/.github/ISSUE_TEMPLATE/improvement.md)
+- [**Support request**](https://github.com/ZupIT/horusec/blob/main/.github/ISSUE_TEMPLATE/support_request.md)
+
+**Step 3:** Make your changes and open a GitHub pull request;
+
+**Step 4:** Make sure to write a title describing what you have done;
+
+**Step 5:** Fill in the template in the PR, here you need to write what you did and how the team can verify it; 
+
+**Step 6:** You must commit to comply with the DCO rules. It will need to be [**signed-off**](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--s) and [**verified**](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/about-commit-signature-verification). Example: ` git commit -s --amend`.
+
+
+### **Pull Request's approval**
+Your pull request is approved when:
+- 2 code owners approve it.
+- Pass all GitHub actions checking process (lint, test, coverage, license, build, e2e, security, dco).
+
+### **After your pull request's approval**
+- If it is a bug fix, the team will perform the changes and there will be a new release.
+- If it is a feature, it will be in the next release. 
 
 ## **Community**
 
-If you have any questions or ideas, let's chat in our [**Zup Open Source Forum**](https://forum.zup.com.br).
+- Do you have any question about Horusec? Send to our [**mailing list**](horusec@zup.com.br). 
+- Let's chat in our [**forum**](https://forum.zup.com.br/c/en/horusec/14).
+
+Thank you for your contribution, you rock! 🚀
+
+**Horusec team** 
