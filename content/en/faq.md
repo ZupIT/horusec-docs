@@ -58,7 +58,7 @@ To access the Manager, you have to upload in your personal infra using Docker Co
  
 ### **10. How can I export Horusec's output into a file**
 
-To do that, follow the **Example 5: Using to get sonarqube exit** in the [**Resources section**]({{< ref path="/cli/resources.md#example-5-using-to-get-sonarqube-exit" lang="en" >}}).
+To do that, follow the **Example 5: Using to get sonarqube exit** in the [**Resources section**]({{< ref path="/cli/commands-and-flags.md#example-5-using-to-get-sonarqube-exit" lang="en" >}}).
  
 
 ### **11. How can I import Horusec's output inside SonarQube?**  

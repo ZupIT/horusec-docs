@@ -68,15 +68,15 @@ A instalação manual é feita de acordo com o seu sistema operacional e a vers�
 Veja as últimas versões abaixo: 
 
 
-- 📥 [**Windows x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_win_x64.exe)
-- 📥 [**Windows x86**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_win_x86.exe)
-- 📥 [**Linux x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_x64)
-- 📥 [**Linux x86**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_x86)
-- 📥 [**Mac x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_mac_x64)
-- 📥 [**Linux x64 Debian instalador**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_64-bit.deb)
-- 📥 [**Linux x86 Debian instalador**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_32-bit.deb)
-- 📥 [**Linux x64 RPM instalador**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_64-bit.rpm)
-- 📥 [**Linux x86 RPM instalador**](https://github.com/ZupIT/horusec/releases/download/v2.6.1/horusec_linux_32-bit.rpm)
+- 📥 [**Windows x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_win_x64.exe)
+- 📥 [**Windows x86**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_win_x86.exe)
+- 📥 [**Linux x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_x64)
+- 📥 [**Linux x86**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_x86)
+- 📥 [**Mac x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_mac_x64)
+- 📥 [**Linux x64 Debian instalador**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_64-bit.deb)
+- 📥 [**Linux x86 Debian instalador**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_32-bit.deb)
+- 📥 [**Linux x64 RPM instalador**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_64-bit.rpm)
+- 📥 [**Linux x86 RPM instalador**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_32-bit.rpm)
 
 {{% alert color="info" %}}
 Se você quiser uma versão específica, troque a palavra `latest` no link pela versão que você precisa.
