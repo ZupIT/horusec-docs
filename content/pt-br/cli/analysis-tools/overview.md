@@ -25,15 +25,15 @@ A versão da CLI corresponde a versão das ferramentas criadas pelo time do Horu
 
 | **Ferramenta** | **Versão** |
 | :--- | :--- |
-| Horusec-Leaks |v2.6.4 |
-| Horusec-Java |v2.6.4  | 
-| Horusec Kotlin |v2.6.4 |
-| Horusec-Kubernetes |v2.6.4| 
-| Horusec-NodeJS |v2.6.4 |
-| Horusec-CSharp |v2.6.4| 
-| Horusec Dart |v2.6.4|
-| Horusec Nginx |v2.6.4| 
-| Horusec Swift |v2.6.4| 
+| Horusec-Leaks |v2.6.5 |
+| Horusec-Java |v2.6.5  | 
+| Horusec Kotlin |v2.6.5 |
+| Horusec-Kubernetes |v2.6.5| 
+| Horusec-NodeJS |v2.6.5 |
+| Horusec-CSharp |v2.6.5| 
+| Horusec Dart |v2.6.5|
+| Horusec Nginx |v2.6.5| 
+| Horusec Swift |v2.6.5| 
 
 
 ## **Linguagens de programação e ferramentas disponíveis**

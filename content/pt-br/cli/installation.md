@@ -43,23 +43,20 @@ Você precisa executar o comando sempre no local onde foi feito o download que e
 {{% /alert %}}
 
 ```bash
-curl "https://github.com/ZupIT/horusec/releases/latest/download/horusec_win_x64.exe" -o "./horusec.exe" && ./horusec.exe version
+curl -k "https://github.com/ZupIT/horusec/releases/latest/download/horusec_win_amd64.exe" -o "./horusec.exe" && ./horusec.exe version
 ```
 
 
 {{% alert color="info" %}}
-O Horusec suporta as versões e/ou sistema operacionais:
+No Horusec existe dois tipos de binários:
+- "Normal": Neste tipo de binário você tem a execução padrão utilizando docker;
+- "StandAlone": Neste tipo de binário você tem apenas ferramentas que utilizam Horusec-Engine sem dependencia com o docker.
+{{% /alert %}}
 
-- linux_x86
-- linux_x64
-- mac_x64
-- win_x86
-- win_x64
-
+{{% alert color="info" %}}
 👉[**A última versão disponível**](https://github.com/ZupIT/horusec/releases/latest)
 
-👉[**Todas as versões disponíveis** ](https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/all-version-cli.txt)
-
+👉[**Todas as versões disponíveis** ](https://github.com/ZupIT/horusec/releases)
 {{% /alert %}}
 
 ## **Instalação Manual**
@@ -68,15 +65,26 @@ A instalação manual é feita de acordo com o seu sistema operacional e a vers�
 Veja as últimas versões abaixo: 
 
 
-- 📥 [**Windows x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_win_x64.exe)
-- 📥 [**Windows x86**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_win_x86.exe)
-- 📥 [**Linux x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_x64)
-- 📥 [**Linux x86**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_x86)
-- 📥 [**Mac x64**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_mac_x64)
-- 📥 [**Linux x64 Debian instalador**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_64-bit.deb)
-- 📥 [**Linux x86 Debian instalador**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_32-bit.deb)
-- 📥 [**Linux x64 RPM instalador**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_64-bit.rpm)
-- 📥 [**Linux x86 RPM instalador**](https://github.com/ZupIT/horusec/releases/download/v2.6.4/horusec_linux_32-bit.rpm)
+**O Horusec tem suporte para:**
+
+| Sistema Operacional | Arquitetura de processador | Tipo de Binário | Download |
+|---------------------|----------------------------|-----------------|----------|
+| Linux               | amd64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_linux_amd64) |
+| Linux               | arm64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_linux_arm64) |
+| Linux               | amd64                      | Instalador debian normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_linux_amd64.deb) |
+| Linux               | arm64                      | Instalador debian normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_linux_arm64.deb) |
+| Linux               | amd64                      | Instalador rpm normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_linux_amd64.rpm) |
+| Linux               | arm64                      | Instalador rpm normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_linux_arm64.rpm) |
+| Linux               | amd64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_linux_amd64_stand_alone) |
+| Linux               | arm64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_linux_arm64_stand_alone) |
+| Mac                 | amd64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_mac_amd64) |
+| Mac                 | arm64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_mac_arm64) |
+| Mac                 | amd64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_mac_amd64_stand_alone) |
+| Mac                 | arm64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_mac_arm64_stand_alone) |
+| Windows             | amd64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_win_amd64.exe) |
+| Windows             | arm64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_win_arm64.exe) |
+| Windows             | amd64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_win_amd64_stand_alone.exe) |
+| Windows             | arm64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_win_arm64_stand_alone.exe) |
 
 {{% alert color="info" %}}
 Se você quiser uma versão específica, troque a palavra `latest` no link pela versão que você precisa.
