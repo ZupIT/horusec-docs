@@ -627,6 +627,14 @@ On the table below, you can see all the available flags. To see it better, just 
             <td style="text-align:left">Vulnerability</td>
             <td style="text-align:left">Used to show the vulnerabilities of the reported types. Example --show-vulnerabilities-types="Vulnerability, Risk Accepted, Corrected".</td>
         </tr>
+         <tr>
+            <td style="text-align:left">GITHUB_TOKEN</td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left">This environment variable is consumed by tools that require integration with Github's APIs as the <a href="https://github.com/sonatype-nexus-community/nancy">Nancy</a> in order to avoid the "rate-limiting" error</td>
+        </tr>
   </tbody>
 </table>
 
