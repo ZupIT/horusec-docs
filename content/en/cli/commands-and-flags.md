@@ -30,7 +30,7 @@ The current global flags on CLI are:
         <p>This configuration will define which log level you want to view, it can be:</p>
         <ul>
           <li>&quot;panic&quot;</li>
-          <li>fatal&quot;</li>
+          <li>&quot;fatal&quot;</li>
           <li>&quot;error&quot;</li>
           <li>&quot;warn&quot;</li>
           <li>&quot;info&quot;</li>
