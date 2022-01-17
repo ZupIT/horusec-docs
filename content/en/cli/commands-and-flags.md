@@ -212,9 +212,7 @@ See next, an example of a configuration file:
         },
          "Nancy": {
             "istoignore": false
-   },
-
-
+        }
     },
     "horusecCliWorkDir": {
     "go": [],
