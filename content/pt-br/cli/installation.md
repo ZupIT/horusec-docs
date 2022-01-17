@@ -69,22 +69,22 @@ Veja as últimas versões abaixo:
 
 | Sistema Operacional | Arquitetura de processador | Tipo de Binário | Download |
 |---------------------|----------------------------|-----------------|----------|
-| Linux               | amd64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_linux_amd64) |
-| Linux               | arm64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_linux_arm64) |
-| Linux               | amd64                      | Instalador debian normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_linux_amd64.deb) |
-| Linux               | arm64                      | Instalador debian normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_linux_arm64.deb) |
-| Linux               | amd64                      | Instalador rpm normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_linux_amd64.rpm) |
-| Linux               | arm64                      | Instalador rpm normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_linux_arm64.rpm) |
-| Linux               | amd64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_linux_amd64_stand_alone) |
-| Linux               | arm64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_linux_arm64_stand_alone) |
-| Mac                 | amd64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_mac_amd64) |
-| Mac                 | arm64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_mac_arm64) |
-| Mac                 | amd64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_mac_amd64_stand_alone) |
-| Mac                 | arm64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_mac_arm64_stand_alone) |
-| Windows             | amd64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_win_amd64.exe) |
-| Windows             | arm64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_win_arm64.exe) |
-| Windows             | amd64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_win_amd64_stand_alone.exe) |
-| Windows             | arm64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.5/horusec_win_arm64_stand_alone.exe) |
+| Linux               | amd64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_linux_amd64) |
+| Linux               | arm64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_linux_arm64) |
+| Linux               | amd64                      | Instalador debian normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_linux_amd64.deb) |
+| Linux               | arm64                      | Instalador debian normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_linux_arm64.deb) |
+| Linux               | amd64                      | Instalador rpm normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_linux_amd64.rpm) |
+| Linux               | arm64                      | Instalador rpm normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_linux_arm64.rpm) |
+| Linux               | amd64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_linux_amd64_stand_alone) |
+| Linux               | arm64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_linux_arm64_stand_alone) |
+| Mac                 | amd64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_mac_amd64) |
+| Mac                 | arm64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_mac_arm64) |
+| Mac                 | amd64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_mac_amd64_stand_alone) |
+| Mac                 | arm64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_mac_arm64_stand_alone) |
+| Windows             | amd64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_win_amd64.exe) |
+| Windows             | arm64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_win_arm64.exe) |
+| Windows             | amd64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_win_amd64_stand_alone.exe) |
+| Windows             | arm64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_win_arm64_stand_alone.exe) |
 
 {{% alert color="info" %}}
 Se você quiser uma versão específica, troque a palavra `latest` no link pela versão que você precisa.
@@ -110,6 +110,20 @@ chmod +x path/horusec_[your version here]
 👉[**Todas as versões disponíveis** ](https://github.com/ZupIT/horusec/releases)
 
 
+{{% alert color="warning" %}}
+Se você recebeu a seguinte mensagem em sua análise:
+```bash
+{HORUSEC_CLI} Nancy tool failed to query the GitHub API for updates.
+This is most likely due to GitHub rate-limiting on unauthenticated requests.
+To make authenticated requests please:
+  1. Generate a token at https://github.com/settings/tokens
+  2. Set the token by setting the GITHUB_TOKEN environment variable.
+Instructions for generating a token can be found at:
+https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line.
+```
+Não se preocupe, basta você adicionar a seguinte variável de ambiente `GITHUB_TOKEN` com seu valor como segue [nesta documentação](https://docs.github.com/articles/creating-a-personal-access-token-for-the-command-line).
+{{% /alert %}}
+
 ## **Instalação via Imagem Docker**
 
 Esta forma de instalação permite que você realize suas análises por meio de uma imagem docker, você pode rodar localmente ou utilizando sua pipeline. 
@@ -122,12 +136,11 @@ Veja alguns casos de uso:
 Quando você inicializa a imagem com o comando run, basta executar o Horusec com o comando que você deseja:
 
 ```bash
-docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src horuszup/horusec-cli:latest horusec start -p /src -P $(pwd)
+docker run -v /var/run/docker.sock:/var/run/docker.sock \
+        -v $(pwd):/src/horusec \
+        -e=GITHUB_TOKEN=$GITHUB_TOKEN \
+        horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd) --config-file-path=/src/horusec/horusec-config.json
 ```
-
-{{% alert color="warning" %}}
-Verifique se o ambiente que você está trabalhando permite a criação de um volume bidirecional, isso é necessário para você usar o Horusec na imagem docker.
-{{% /alert %}}
 
 ### **2. Instalação via Pipeline**
 
@@ -152,38 +165,46 @@ jobs:
       with: # Necessário quando habilitado o autores de commit
         fetch-depth: 0
     - name: Running Horusec Security
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest
         horusec start -p="./" -e="true"
 ```
 
 ### **AWS Code Build**
+Adicione a variável de ambiente `GITHUB_TOKEN` [dentro do seu projeto](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html#build-spec.env.secrets-manager) e adicione esta configuração.
 
-* **Environment:**
+* **Origem**
+  - Profundidade do clone de Git: `Full`
+
+* **Ambiente:**
 
   * Imagem de ambiente: `Imagem gerenciada`
   * Sistema operational: `Ubuntu`
   * Tempo(s) de execução: `Standard`
-  * Imagem: `aws/codebuild/standard:3.0`
-  * Versão de imagem:  `Latest`
+  * Imagem: `aws/codebuild/standard:5.0`
+  * Versão de imagem:  `Usar sempre a imagem mais recente para esta versão do tempo de execução`
   * Tipo de ambiente:  `Linux`
   * Habilite esse indicador se você quiser criar imagens do Docker ou quiser que suas compilações obtenham privilégios elevados:  `true`
+  * Variáveis de ambiente:
+     - Nome: `GITHUB_TOKEN`
+     - Valor: `TestSecret:MY_GITHUB_TOKEN`
+     - Tipo: `Secret Manager`
 
-* Buildspec:
-
+* **Buildspec**:
+  - Alterne para o editor e inserira comandos de compilação:
 ```yaml
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      docker: 18
   build:
     commands:
-      - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd)
+      - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec -e=GITHUB_TOKEN=$GITHUB_TOKEN horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd) --config-file-path=/src/horusec/horusec-config.json
 ```
 
 ### **Circle CI**
+Adicione a variável de ambiente `GITHUB_TOKEN` [dentro do seu projeto](https://circleci.com/docs/2.0/env-vars/#setting-an-environment-variable-in-a-project) e adicione esta configuração.
 
 ```yaml
 version: 2.1
@@ -211,6 +232,8 @@ workflows:
 
 ### **Jenkins**
 
+Adicione a variável de ambiente `GITHUB_TOKEN` [dentro do seu projeto](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#secret-variables) e adicione esta configuração.
+
 {{% alert color="warning" %}}
 Em máquinas que utilizam Jenkins deve-se ter o **docker e git instalado** para que o Horusec tenha toda potencia em suas análises. Verifique mais informações na sessão de [requisitos da CLI](#Requisitos).
 {{% /alert %}}
@@ -228,15 +251,22 @@ stages {
 
 ### **Azure DevOps Pipeline**
 
+Adicione a variável de ambiente `GITHUB_TOKEN` [dentro do seu projeto](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#secret-variables) e adicione esta configuração.
+
 ```yaml
 pool:
   vmImage: 'ubuntu-18.04'
 
 steps:
-- script: curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest && horusec start -p ./
+- script: |
+    curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest
+    horusec start -p ./
+  env:
+    GITHUB_TOKEN: $(GITHUB_TOKEN)
 ```
 
 ### **GitLab CI/CD**
+Adicione a variável de ambiente `GITHUB_TOKEN` [dentro do seu projeto](https://docs.gitlab.com/ee/ci/variables/#view-all-group-level-variables-available-in-a-project) e adicione esta configuração.
 
 ```yaml
 image: docker:latest

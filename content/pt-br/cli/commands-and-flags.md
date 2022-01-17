@@ -563,6 +563,14 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left">Vulnerability</td>
             <td style="text-align:left">Usado para mostrar as vulnerabilidades dos tipos informados. Exemplo --show-vulnerabilities-types="Vulnerability, Risk Accepted, Corrected".</td>
         </tr>
+         <tr>
+            <td style="text-align:left">GITHUB_TOKEN</td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left"></td>
+            <td style="text-align:left">Esta variável de ambiente é consumida por ferramentas que necessitam de uma integração com as API's do Github como o <a href="https://github.com/sonatype-nexus-community/nancy">Nancy</a> a fim de evitar o erro "limitante de taxa"</td>
+        </tr>
     </tbody>
 </table>
 
