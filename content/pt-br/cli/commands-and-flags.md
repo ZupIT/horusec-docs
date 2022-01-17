@@ -30,7 +30,7 @@ As flags globais que atualmente temos em nossa CLI são:
         <p>Essa configuração irá definir qual é o nível de log que você deseja visualizar, podem estar entre:</p>
         <ul>
           <li>&quot;panic&quot;</li>
-          <li>fatal&quot;</li>
+          <li>&quot;fatal&quot;</li>
           <li>&quot;error&quot;</li>
           <li>&quot;warn&quot;</li>
           <li>&quot;info&quot;</li>
