@@ -138,7 +138,6 @@ Quando você inicializa a imagem com o comando run, basta executar o Horusec com
 ```bash
 docker run -v /var/run/docker.sock:/var/run/docker.sock \
         -v $(pwd):/src/horusec \
-        -e=GITHUB_TOKEN=$GITHUB_TOKEN \
         horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd) --config-file-path=/src/horusec/horusec-config.json
 ```
 
@@ -165,16 +164,12 @@ jobs:
       with: # Necessário quando habilitado o autores de commit
         fetch-depth: 0
     - name: Running Horusec Security
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest
         horusec start -p="./" -e="true"
 ```
 
 ### **AWS Code Build**
-Adicione a variável de ambiente `GITHUB_TOKEN` [dentro do seu projeto](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html#build-spec.env.secrets-manager) e adicione esta configuração.
-
 * **Origem**
   - Profundidade do clone de Git: `Full`
 
@@ -187,10 +182,6 @@ Adicione a variável de ambiente `GITHUB_TOKEN` [dentro do seu projeto](https://
   * Versão de imagem:  `Usar sempre a imagem mais recente para esta versão do tempo de execução`
   * Tipo de ambiente:  `Linux`
   * Habilite esse indicador se você quiser criar imagens do Docker ou quiser que suas compilações obtenham privilégios elevados:  `true`
-  * Variáveis de ambiente:
-     - Nome: `GITHUB_TOKEN`
-     - Valor: `TestSecret:MY_GITHUB_TOKEN`
-     - Tipo: `Secret Manager`
 
 * **Buildspec**:
   - Alterne para o editor e inserira comandos de compilação:
@@ -200,12 +191,10 @@ version: 0.2
 phases:
   build:
     commands:
-      - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec -e=GITHUB_TOKEN=$GITHUB_TOKEN horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd) --config-file-path=/src/horusec/horusec-config.json
+      - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd) --config-file-path=/src/horusec/horusec-config.json
 ```
 
 ### **Circle CI**
-Adicione a variável de ambiente `GITHUB_TOKEN` [dentro do seu projeto](https://circleci.com/docs/2.0/env-vars/#setting-an-environment-variable-in-a-project) e adicione esta configuração.
-
 ```yaml
 version: 2.1
 
@@ -231,9 +220,6 @@ workflows:
 ```
 
 ### **Jenkins**
-
-Adicione a variável de ambiente `GITHUB_TOKEN` [dentro do seu projeto](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#secret-variables) e adicione esta configuração.
-
 {{% alert color="warning" %}}
 Em máquinas que utilizam Jenkins deve-se ter o **docker e git instalado** para que o Horusec tenha toda potencia em suas análises. Verifique mais informações na sessão de [requisitos da CLI](#Requisitos).
 {{% /alert %}}
@@ -250,9 +236,6 @@ stages {
 ```
 
 ### **Azure DevOps Pipeline**
-
-Adicione a variável de ambiente `GITHUB_TOKEN` [dentro do seu projeto](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#secret-variables) e adicione esta configuração.
-
 ```yaml
 pool:
   vmImage: 'ubuntu-18.04'
@@ -261,13 +244,9 @@ steps:
 - script: |
     curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest
     horusec start -p ./
-  env:
-    GITHUB_TOKEN: $(GITHUB_TOKEN)
 ```
 
 ### **GitLab CI/CD**
-Adicione a variável de ambiente `GITHUB_TOKEN` [dentro do seu projeto](https://docs.gitlab.com/ee/ci/variables/#view-all-group-level-variables-available-in-a-project) e adicione esta configuração.
-
 ```yaml
 image: docker:latest
 
