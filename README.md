@@ -8,10 +8,11 @@ This repository uses [**hugo server**](https://gohugo.io/commands/hugo_server/) 
 > #### i. [**Requirements**](#requirements)
 > #### ii. [**Installation**](#installation)
 > #### iii. [**Build**](#build)
-### 3. [**Contributing Guide**](#contributing-guide)
-### 4. [**Roadmap**](#roadmap)
-### 5. [**Code of Conduct**](#code-of-conduct)
-### 6. [**Community**](#community)
+### 3. [**Issues**](#issues)
+### 4. [**Contributing Guide**](#contributing-guide)
+### 5. [**Roadmap**](#roadmap)
+### 6. [**Code of Conduct**](#code-of-conduct)
+### 7. [**Community**](#community)
 
 ## **About**
 Horusec is an open source tool that performs a static code analysis to identify security flaws during the development process. Currently, the languages for analysis are C#, Java, Kotlin, Python, Ruby, Golang, Terraform, Javascript, Typescript, Kubernetes, PHP, C, HTML, JSON, Dart, Elixir, Shell, Nginx. 
@@ -61,6 +62,10 @@ Once you've cloned this repo, from the `root` folder, run the command:
 ```
 make build
 ```
+
+## **Issues**
+
+To open or track an issue for this project, in order to better coordinate your discussions, we recommend that you use the [**Issues tab**](https://github.com/ZupIT/horusec/issues) in the main [**Horusec**](https://github.com/ZupIT/horusec) repository.
 
 ### **Contributing Guide**
 Check out Horusec's [**contributing guide**]https://github.com/ZupIT/horusec-docs/blob/main/CONTRIBUTING.md). 
