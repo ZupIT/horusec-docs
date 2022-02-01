@@ -68,7 +68,7 @@ make build
 To open or track an issue for this project, in order to better coordinate your discussions, we recommend that you use the [**Issues tab**](https://github.com/ZupIT/horusec/issues) in the main [**Horusec**](https://github.com/ZupIT/horusec) repository.
 
 ### **Contributing Guide**
-Check out Horusec's [**contributing guide**]https://github.com/ZupIT/horusec-docs/blob/main/CONTRIBUTING.md). 
+Check out Horusec's [**contributing guide**](https://github.com/ZupIT/horusec-docs/blob/main/CONTRIBUTING.md). 
 
 
 ## **Roadmap**
