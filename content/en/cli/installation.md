@@ -68,22 +68,22 @@ See the latest versions below:
 
 | Operational system | Processor Architecture | Binary Type | Download |
 |---------------------|----------------------------|-----------------|----------|
-| Linux               | amd64                      | Binary normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_linux_amd64) |
-| Linux               | arm64                      | Binary normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_linux_arm64) |
-| Linux               | amd64                      | Installer debian normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_linux_amd64.deb) |
-| Linux               | arm64                      | Installer debian normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_linux_arm64.deb) |
-| Linux               | amd64                      | Installer rpm normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_linux_amd64.rpm) |
-| Linux               | arm64                      | Installer rpm normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_linux_arm64.rpm) |
-| Linux               | amd64                      | Binary Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_linux_amd64_stand_alone) |
-| Linux               | arm64                      | Binary Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_linux_arm64_stand_alone) |
-| Mac                 | amd64                      | Binary normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_mac_amd64) |
-| Mac                 | arm64                      | Binary normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_mac_arm64) |
-| Mac                 | amd64                      | Binary Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_mac_amd64_stand_alone) |
-| Mac                 | arm64                      | Binary Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_mac_arm64_stand_alone) |
-| Windows             | amd64                      | Binary normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_win_amd64.exe) |
-| Windows             | arm64                      | Binary normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_win_arm64.exe) |
-| Windows             | amd64                      | Binary Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_win_amd64_stand_alone.exe) |
-| Windows             | arm64                      | Binary Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.6.9/horusec_win_arm64_stand_alone.exe) |
+| Linux               | amd64                      | Binary normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.0/horusec_linux_amd64) |
+| Linux               | arm64                      | Binary normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.0/horusec_linux_arm64) |
+| Linux               | amd64                      | Installer debian normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.0/horusec_linux_amd64.deb) |
+| Linux               | arm64                      | Installer debian normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.0/horusec_linux_arm64.deb) |
+| Linux               | amd64                      | Installer rpm normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.0/horusec_linux_amd64.rpm) |
+| Linux               | arm64                      | Installer rpm normal | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.0/horusec_linux_arm64.rpm) |
+| Linux               | amd64                      | Binary Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.0/horusec_linux_amd64_stand_alone) |
+| Linux               | arm64                      | Binary Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.0/horusec_linux_arm64_stand_alone) |
+| Mac                 | amd64                      | Binary normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.0/horusec_mac_amd64) |
+| Mac                 | arm64                      | Binary normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.0/horusec_mac_arm64) |
+| Mac                 | amd64                      | Binary Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.0/horusec_mac_amd64_stand_alone) |
+| Mac                 | arm64                      | Binary Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.0/horusec_mac_arm64_stand_alone) |
+| Windows             | amd64                      | Binary normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.0/horusec_win_amd64.exe) |
+| Windows             | arm64                      | Binary normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.0/horusec_win_arm64.exe) |
+| Windows             | amd64                      | Binary Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.0/horusec_win_amd64_stand_alone.exe) |
+| Windows             | arm64                      | Binary Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.0/horusec_win_arm64_stand_alone.exe) |
 
 
 {{% alert color="info" %}}
