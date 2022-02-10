@@ -91,11 +91,18 @@ If you have already installed `PostgreSQL` and `RabbitMQ` with Bitnami's Charts,
 
 ```bash
 export POSTGRES_USERNAME="postgres"
-export POSTGRES_PASSWORD=$(kubectl get secret --namespace horusec-system postgresql -o jsonpath="{.data.postgresql-password}" | base64 --decode)
+export POSTGRES_PASSWORD=$(kubectl get secret --namespace horusec-system postgresql -o jsonpath="{.data.postgres-password}" | base64 --decode)
 export RABBITMQ_USERNAME="user"
 export RABBITMQ_PASSWORD=$(kubectl get secret --namespace horusec-system rabbitmq -o jsonpath="{.data.rabbitmq-password}" | base64 --decode)
 export JWT_SECRET="4ff42f67-5929-fc52-65f1-3afc77ad86d5"
 ```
+
+If your postgres helm chart is in a version < 11.0.0, the password export must be done as follows:
+
+```bash
+export POSTGRES_PASSWORD=$(kubectl get secret --namespace horusec-system postgresql -o jsonpath="{.data.postgresql-password}" | base64 --decode)
+```
+
 {{% /alert %}}
 
 **Step 3:** Create Kubernetes' Secrets: 
