@@ -18,32 +18,32 @@ description: In this section, you will find YAML's definition.
 | components.analytic.securityContext | Number | ✓ | Security context https://kubernetes.io/docs/tasks/configure-pod-container/security-context/. |
 | components.analytic.securityContext.fsGroup | Number | `2000` | Security's group IDhttps://kubernetes.io/docs/tasks/configure-pod-container/security-context/  (if not configured it will be by default 2000).  |
 | components.analytic.container | Number | ✓ | Container's definition https://kubernetes.io/docs/concepts/containers/|
-| components.analytic.image | String | ✓ |  Definitions for the image's component https://kubernetes.io/docs/concepts/containers/images/  |
-| components.analytic.image.pullPolicy | String | IfNotPresent | Definition for image's download https://kubernetes.io/docs/concepts/containers/images/#updating-images  (if not configured it will be by default IfNotPresent). | 
-| components.analytic.image.registry | String | docker.io/horuszup | 
+| components.analytic.container.image | String | ✓ |  Definitions for the image's component https://kubernetes.io/docs/concepts/containers/images/  |
+| components.analytic.container.image.pullPolicy | String | IfNotPresent | Definition for image's download https://kubernetes.io/docs/concepts/containers/images/#updating-images  (if not configured it will be by default IfNotPresent). | 
+| components.analytic.container.image.registry | String | docker.io/horuszup | 
 Definitions for the image's registry download https://kubernetes.io/docs/concepts/containers/images/#updating-images. |
-| components.analytic.image.repository | String | horusec-analytic | Repository definition for image download https://kubernetes.io/docs/concepts/containers/images/#updating-images (if not configured it will be by default horusec-analytic). |
-| components.analytic.image.tag | Number | `v2.17.3` | Tag versioning definitions for image download https://kubernetes.io/docs/concepts/containers/images/#updating-images (if not configured it will be by default v2.17.3). |
-| components.analytic.livenessProbe | Number | - | Waiting time settings for verification command if the service is in good health  https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/ | 
-| components.analytic.livenessProbe.timeoutSeconds | Number | `1` |  https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 1). | 
-| components.analytic.livenessProbe.periodSeconds | Number | `10` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 10). | 
-| components.analytic.livenessProbe.successThreshold | Number | `1` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 1). | 
-| components.analytic.livenessProbe.failureThreshold | Number | `3` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 3). | 
-| components.analytic.readinessProbe | Number | - | Waiting time settings for verification command if the service is in good health https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/. | 
-| components.analytic.readinessProbe | Number | `1` | Definitions for image's download https://kubernetes.io/docs/concepts/containers/images/#updating-images  (if not configured it will be by default IfNotPresent). | 
-| components.analytic.readinessProbe.timeoutSeconds | Number | `1` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 1). | 
-| omponents.analytic.readinessProbe.periodSeconds | Number | `10` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 10). | 
-| omponents.analytic.readinessProbe.successThreshold | Number | `1` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 1). | 
-| omponents.analytic.readinessProbe.failureThreshold | Number | `3` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 3). | 
-| omponents.analytic.resources | String | {} | Definitions for the resources threshold by requests  https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/#specify-a-memory-request-and-a-memory-limit (if not configured it will be by default {} empty). | 
-| components.analytic.securityContext | -| - | Security context for the container  https://kubernetes.io/docs/tasks/configure-pod-container/security-context/. | 
-| components.analytic.securityContext.runAsUser | Number | `1000` | User ID of the security's group https://kubernetes.io/docs/tasks/configure-pod-container/security-context/ (if not configured it will be by default 1000). | 
-| components.analytic.securityContext.runAsNonRoot | String | `true` | Indicates the containers must be executed as user and not root https://kubernetes.io/blog/2016/08/security-best-practices-kubernetes-deployment/ (if not configured it will be by default true). |
-| components.analytic.ingress | - | - | What is ingress https://kubernetes.io/docs/concepts/services-networking/ingress/. | 
-| components.analytic.ingress.enabled | String | `true` | Enabled ingress for the  component (if not configured it will be by default true). | 
-| components.analytic.ingress.host | String | `analytic.local` | Host definition for the component (if not configured it will be by default  analytic.local). | 
-| components.analytic.ingress.path | String | `"/analytic"` | Path definition for the component (if not configured it will be by default  /analytic). | 
-| components.analytic.ingress.tls | String | `{} ` | TLS configurations (Transport Layer Security) do componente https://kubernetes.io/docs/concepts/services-networking/ingress/#tls (if not configured it will be by default {} empty). |
+| components.analytic.container.image.repository | String | horusec-analytic | Repository definition for image download https://kubernetes.io/docs/concepts/containers/images/#updating-images (if not configured it will be by default horusec-analytic). |
+| components.analytic.container.image.tag | Number | `v2.17.3` | Tag versioning definitions for image download https://kubernetes.io/docs/concepts/containers/images/#updating-images (if not configured it will be by default v2.17.3). |
+| components.analytic.container.livenessProbe | Number | - | Waiting time settings for verification command if the service is in good health  https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/ | 
+| components.analytic.container.livenessProbe.timeoutSeconds | Number | `1` |  https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 1). | 
+| components.analytic.container.livenessProbe.periodSeconds | Number | `10` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 10). | 
+| components.analytic.container.livenessProbe.successThreshold | Number | `1` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 1). | 
+| components.analytic.container.livenessProbe.failureThreshold | Number | `3` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 3). | 
+| components.analytic.container.readinessProbe | Number | - | Waiting time settings for verification command if the service is in good health https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/. | 
+| components.analytic.container.readinessProbe | Number | `1` | Definitions for image's download https://kubernetes.io/docs/concepts/containers/images/#updating-images  (if not configured it will be by default IfNotPresent). | 
+| components.analytic.container.readinessProbe.timeoutSeconds | Number | `1` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 1). | 
+| omponents.analytic.container.readinessProbe.periodSeconds | Number | `10` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 10). | 
+| omponents.analytic.container.readinessProbe.successThreshold | Number | `1` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 1). | 
+| omponents.analytic.container.readinessProbe.failureThreshold | Number | `3` | https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes (if not configured it will be by default 3). | 
+| omponents.analytic.container.resources | String | {} | Definitions for the resources threshold by requests  https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/#specify-a-memory-request-and-a-memory-limit (if not configured it will be by default {} empty). | 
+| components.analytic.container.securityContext | -| - | Security context for the container  https://kubernetes.io/docs/tasks/configure-pod-container/security-context/. | 
+| components.analytic.container.securityContext.runAsUser | Number | `1000` | User ID of the security's group https://kubernetes.io/docs/tasks/configure-pod-container/security-context/ (if not configured it will be by default 1000). | 
+| components.analytic.container.securityContext.runAsNonRoot | String | `true` | Indicates the containers must be executed as user and not root https://kubernetes.io/blog/2016/08/security-best-practices-kubernetes-deployment/ (if not configured it will be by default true). |
+| components.analytic.container.ingress | - | - | What is ingress https://kubernetes.io/docs/concepts/services-networking/ingress/. | 
+| components.analytic.container.ingress.enabled | String | `true` | Enabled ingress for the  component (if not configured it will be by default true). | 
+| components.analytic.container.ingress.host | String | `analytic.local` | Host definition for the component (if not configured it will be by default  analytic.local). | 
+| components.analytic.container.ingress.path | String | `"/analytic"` | Path definition for the component (if not configured it will be by default  /analytic). | 
+| components.analytic.container.ingress.tls | String | `{} ` | TLS configurations (Transport Layer Security) do componente https://kubernetes.io/docs/concepts/services-networking/ingress/#tls (if not configured it will be by default {} empty). |
 |  components.analytic.database | - | - | Definition for the component's database connection  |
 |  components.analytic.database.name | String | `horusec_analytic_db` | (if not configured it will be by defaulthorusec_analytic_db).  |
 |  components.analytic.database.host | String | `""` | Connection host (if not configured it will be by default postgresql).  |
@@ -88,10 +88,10 @@ Definitions for the image's registry download https://kubernetes.io/docs/concept
 | components.api.container.resources| String | `{}` |   |
 | components.api.container.securityContext.runAsUser | Number | `1000` |   |
 | components.api.container.securityContext.runAsNonRoot | String | `true` |   |
-| components.api.ingress.enabled| String | `true` |   |
-| components.api.ingress.host | String | `api.local` |   |
-| components.api.ingress.path | String | `"/api"` |   |
-| components.api.ingress.tls | String | `{}` |   | 
+| components.api.container.ingress.enabled| String | `true` |   |
+| components.api.container.ingress.host | String | `api.local` |   |
+| components.api.container.ingress.path | String | `"/api"` |   |
+| components.api.container.ingress.tls | String | `{}` |   | 
 | components.auth |  |  | Component auth |
 | components.auth.type | String | `horusec` |   |
 | components.auth.user.administrator.secretKeyRef.name | String | `horusec-administrator` |   |
