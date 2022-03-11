@@ -42,16 +42,20 @@ Você precisa executar o comando sempre no local onde foi feito o download que e
 
 {{% /alert %}}
 
+- amd64
 ```bash
-curl -k "https://github.com/ZupIT/horusec/releases/latest/download/horusec_win_amd64.exe" -o "./horusec.exe" && ./horusec.exe version
+curl -k "https://github.com/ZupIT/horusec/releases/latest/download/horusec_win_amd64.exe" -o "./horusec.exe" -L
 ```
 
+- arm64
+```bash
+curl -k "https://github.com/ZupIT/horusec/releases/latest/download/horusec_win_arm64.exe" -o "./horusec.exe" -L
+```
 
 {{% alert color="info" %}}
-No Horusec existe dois tipos de binários:
-- "Normal": Neste tipo de binário você tem a execução padrão utilizando docker;
-- "StandAlone": Neste tipo de binário você tem apenas ferramentas que utilizam Horusec-Engine sem dependencia com o docker.
+Se você quiser uma versão específica, troque a palavra `latest` no link pela versão que você precisa.
 {{% /alert %}}
+
 
 {{% alert color="info" %}}
 👉[**A última versão disponível**](https://github.com/ZupIT/horusec/releases/latest)
@@ -60,6 +64,10 @@ No Horusec existe dois tipos de binários:
 {{% /alert %}}
 
 ## **Instalação Manual**
+
+No Horusec existe dois tipos de binários:
+- "Normal": Neste tipo de binário você tem a execução padrão utilizando docker;
+- "StandAlone": Neste tipo de binário você tem apenas ferramentas que utilizam Horusec-Engine sem dependencia com o docker.
 
 A instalação manual é feita de acordo com o seu sistema operacional e a versão que deseja fazer download. 
 Veja as últimas versões abaixo: 
@@ -85,11 +93,6 @@ Veja as últimas versões abaixo:
 | Windows             | arm64                      | Binário normal  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.1/horusec_win_arm64.exe) |
 | Windows             | amd64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.1/horusec_win_amd64_stand_alone.exe) |
 | Windows             | arm64                      | Binário Stand Alone  | [📥 Download](https://github.com/ZupIT/horusec/releases/download/v2.7.1/horusec_win_arm64_stand_alone.exe) |
-
-{{% alert color="info" %}}
-Se você quiser uma versão específica, troque a palavra `latest` no link pela versão que você precisa.
-{{% /alert %}}
-
 
 {{% alert color="warning" %}}
 Após baixar os arquivos para Mac ou Linux será necessário tranformálos em **executáveis** através do comando `chmod +x`.
