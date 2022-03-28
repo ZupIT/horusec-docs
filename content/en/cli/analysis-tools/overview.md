@@ -58,7 +58,7 @@ See below these languages, the analysis tools and which version they are availab
 | C\/C++ |[**Semgrep**](https://github.com/returntocorp/semgrep) and [**Flawfinder**](https://github.com/david-a-wheeler/flawfinder) | v2.0
 | HTML |[**Semgrep**](https://github.com/returntocorp/semgrep)| v2.0
 | JSON |[**Semgrep**](https://github.com/returntocorp/semgrep)| v2.0
-| Dart |[**HorusecDart**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-dart.md" lang="pt-br">}})| v2.0
+| Dart |[**HorusecDart**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-dart.md" lang="en">}})| v2.0
 | Shell Script |[**Shellcheck**](https://github.com/koalaman/shellcheck)| v2.0
 | Elixir |[**Mix Audit**](https://github.com/mirego/mix_audit) and [**Sobelow**](https://github.com/nccgroup/sobelow) | v2.0
 | Nginx |[**HorusecNginx**]({{< ref path="/cli/analysis-tools/open-source-horusec-engine/horusec-nginx.md" lang="en">}})| v2.0

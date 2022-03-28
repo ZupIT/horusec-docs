@@ -7,16 +7,16 @@ description: >-
 
 On May 2021, Horusec made a change in its Github repositories:
 
-- Now, the main repository **https://github.com/ZupIT/horusec** will be [**Horusec-CLI**]({{< ref path="/cli" lang="pt-br">}}) property.
+- Now, the main repository **https://github.com/ZupIT/horusec** will be [**Horusec-CLI**]({{< ref path="/cli" lang="en">}}) property.
 
 - All the Web application was migrated to the **https://github.com/ZupIT/horusec-platform** repository.
 
 With that, all the following services have a new repository: 
-  * [**Horusec-API**]({{< ref path="/web/services/api" lang="pt-br">}})
-  * [**Horusec-Analytic**]({{< ref path="/web/services/analytic" lang="pt-br">}})
-  * [**Horusec-Auth**]({{< ref path="/web/services/auth" lang="pt-br">}})
-  * [**Horusec-Webhook**]({{< ref path="/web/services/webhook" lang="pt-br">}})
-  * [**Horusec-Messages**]({{< ref path="/web/services/messages" lang="pt-br">}}).
+  * [**Horusec-API**]({{< ref path="/web/services/api" lang="en">}})
+  * [**Horusec-Analytic**]({{< ref path="/web/services/analytic" lang="en">}})
+  * [**Horusec-Auth**]({{< ref path="/web/services/auth" lang="en">}})
+  * [**Horusec-Webhook**]({{< ref path="/web/services/webhook" lang="en">}})
+  * [**Horusec-Messages**]({{< ref path="/web/services/messages" lang="en">}}).
 
 Other changes also happened: 
   * [**Horusec-Vulnerability**]({{< ref path="/web/services/vulnerability.md" lang="en" >}}) was created, a new service responsible to manage all the vulnerabilities found on Horusec-CLI.

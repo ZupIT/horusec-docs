@@ -61,4 +61,4 @@ It allows you to enable the messenger service and use some functionalities, like
 
 
 ### Read more
- [**How to change the authentication type on your web application?**]({{< ref path="/tutorials/how-to-change-the-authentication-type" lang="pt-br">}})
+ [**How to change the authentication type on your web application?**]({{< ref path="/tutorials/how-to-change-the-authentication-type" lang="en">}})
