@@ -21,7 +21,7 @@ Horusec performs a [**SAST**]({{< ref path="/glossary.md" lang="en">}}) analysis
 The tool uses:
 - [**Horusec-CLI**]({{< ref path="/cli/overview.md" lang="en">}}) when you run the commands performs security
 analysis and the [**vulnerabilities identification and classification**]({{< ref path="/web/services/vulnerability.md" lang="en">}}). 
-- [**Web application**]({{< ref path="/web/overview.md" lang="pt-br">}}) is the CLI extensions used to manage and classify the vulnerabilities found in your application. 
+- [**Web application**]({{< ref path="/web/overview.md" lang="en">}}) is the CLI extensions used to manage and classify the vulnerabilities found in your application. 
 See the structure in the image below:  
 
 <img style="width:100%" src="/docs/en/overview/1-arquitecture.png">
@@ -95,9 +95,9 @@ It ensures the safety of projects in the CI and CD process and it reduces the co
 Install Horusec: 
 
 **CLI**
-- [**Horusec-CLI**]({{< ref path="/cli/installation.md" lang="pt-br">}})
+- [**Horusec-CLI**]({{< ref path="/cli/installation.md" lang="en">}})
 
 **Web application**
-- [**Install with Docker-Compose**]({{< ref path="/web/installation/install-with-docker-compose.md" lang="pt-br">}})
-- [**Install with Helm**]({{< ref path="/web/installation/install-with-helm.md" lang="pt-br">}})
-- [**Install with Operator**]({{< ref path="/web/installation/install-with-operator/overview.md" lang="pt-br">}})
+- [**Install with Docker-Compose**]({{< ref path="/web/installation/install-with-docker-compose.md" lang="en">}})
+- [**Install with Helm**]({{< ref path="/web/installation/install-with-helm.md" lang="en">}})
+- [**Install with Operator**]({{< ref path="/web/installation/install-with-operator/overview.md" lang="en">}})

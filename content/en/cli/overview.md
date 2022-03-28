@@ -14,7 +14,7 @@ Horusec-CLI is the part of the code that allows you to run the security analysis
  
 Horusec performs a [**SAST**]({{< ref path="/glossary.md" lang="en">}}) analysis of your project and it just check out the code, it is not necessary to buil or run anything and this makes your analysis quicker. 
 
-The [**security tools**]({{< ref path="/cli/analysis-tools/security-tools.md" lang="pt-br">}}) have their own output data, so Horusec reads and changes it to the right format. After that you are able to have data regardless of the tools you are using in the analysis.
+The [**security tools**]({{< ref path="/cli/analysis-tools/security-tools.md" lang="en">}}) have their own output data, so Horusec reads and changes it to the right format. After that you are able to have data regardless of the tools you are using in the analysis.
 
 
 ### **What does Horusec-CLI do?**
