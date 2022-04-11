@@ -312,7 +312,7 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left">output-format</td>
             <td style="text-align:left">o</td>
             <td style="text-align:left">text</td>
-            <td style="text-align:left">A saída pode ser alterada entre <code>json</code> ou <code>sonarqube</code> ou <code>text</code></td>
+            <td style="text-align:left">A saída pode ser alterada entre <code>json</code>, <code>sonarqube</code>, <code>text</code> ou <code>sarif</code></td>
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_JSON_OUTPUT_FILEPATH</td>
@@ -320,7 +320,9 @@ Na tabela abaixo, você confere todas as flags disponíveis. Para melhor visuali
             <td style="text-align:left">json-output-file</td>
             <td style="text-align:left">O</td>
             <td style="text-align:left"></td>
-            <td style="text-align:left">Caso a saída seja <code>sonarqube</code> ou <code>json</code> deverá ter um nome do arquivo a ser salvo. Ex.:<code>./output.json</code></td>
+            <td style="text-align:left">Caso a saída seja <code>sonarqube</code>, <code>json</code> ou <code>sarif</code> deverá ter um nome do arquivo a ser salvo.
+            <br />Ex.:<code>./output.json</code> 
+            <br /><strong>Nota:</strong> Para o formato sarif, você deve usar: <code>./output.sarif.json</code> ou <code>./output.sarif</code></td>            
         </tr>
         <tr>
             <td style="text-align:left">HORUSEC_CLI_FILES_OR_PATHS_TO_IGNORE</td>
@@ -638,7 +640,23 @@ Neste exemplo, estamos utilizando:
 horusec start -p="/home/user/project" -a="REPOSITORY_TOKEN" -o="sonarqube" -O="./sonarqube.json"
 ```
 
-### Exemplo 6: Usando como imagem docker localmente
+### Exemplo 6: Usando para obter uma saída Sarif
+
+Neste exemplo, estamos utilizando:
+
+* A `flag -p` para informar o local onde está o projeto;
+* A `flag -a` passando o token de autorização a fim de enviar essa análise para nossa interface web;
+* A `flag -o` onde o output está sendo utilizado é `“sarif”` e o local do arquivo de saída será em `“./output-horusec.sarif.json”`
+
+```bash
+horusec start -p="/home/user/project" -a="REPOSITORY_TOKEN" -o="sarif" -O="./output-horusec.sarif.json"
+```
+
+{{% alert color="info" %}}
+A flag `json-output-file` ou `-O`, deve ser na extensão `.sarif` ou `.sarif.json`. 
+{{% /alert %}}
+
+### Exemplo 7: Usando como imagem docker localmente
 
 Veja que, neste exemplo, o comando `horusec start` já é executado. Por isso, ao iniciar a imagem, basta adicionar as flags que deseja.
 

@@ -329,8 +329,7 @@ On the table below, you can see all the available flags. To see it better, just 
       <td style="text-align:left">output-format</td>
       <td style="text-align:left">o</td>
       <td style="text-align:left">text</td>
-      <td style="text-align:left">The exit can be changed among <code>json</code> or <code>sonarqube </code> or <code>text</code>
-      </td>
+      <td style="text-align:left">The exit can be changed among <code>json</code>, <code>sonarqube </code>, <code>text</code> or <code>sarif</code></td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
@@ -349,9 +348,10 @@ On the table below, you can see all the available flags. To see it better, just 
       <td style="text-align:left">json-output-file</td>
       <td style="text-align:left">O</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">In case the exit is <code>sonarqube</code> or <code>json</code> it must have
+      <td style="text-align:left">In case the exit is <code>sonarqube</code>, <code>json</code> or <code>sarif</code> it must have
         a name to be saved.
         <br />Ex.:<code>./output.json</code>
+        <br /><strong>Note:</strong> For sarif output you must use: <code>./output.sarif.json</code> or <code>./output.sarif</code>
       </td>
     </tr>
     <tr>
@@ -674,7 +674,7 @@ In this example, we used:
 horusec start -p="/home/user/project" -a="REPOSITORY_TOKEN" -i="**/node_modules/**, **/vendor/**, **/*_test.go"
 ```
 
-### Example 4: To get the JSON exit 
+### Example 4: Using to get the JSON exit 
 
 In this example, we are using:
 
@@ -699,7 +699,23 @@ In this example, we are using:
 horusec start -p="/home/user/project" -a="REPOSITORY_TOKEN" -o="sonarqube" -O="./sonarqube.json"
 ```
 
-### Example 6: Using as docker image locally 
+### Example 6: Using to get sarif exit  
+
+In this example, we are using:
+
+* A `flag -p` to inform where the project is;
+* A `flag -a` passing the authorization token to send the analysis to our web interface;
+* A `flag -o` where the output is being used is  `“sarif”` and the local file output will be  `“./output-horusec.sarif.json”`
+
+```bash
+horusec start -p="/home/user/project" -a="REPOSITORY_TOKEN" -o="sarif" -O="./output-horusec.sarif.json"
+```
+
+{{% alert color="info" %}}
+The `json-output-file` or `-O` flag, must be in the `.sarif` or `.sarif.json` extension. 
+{{% /alert %}}
+
+### Example 7: Using as docker image locally 
 
 See, this example the `horusec start` command is already executed. When starting the image, just add the flag you want. 
 
