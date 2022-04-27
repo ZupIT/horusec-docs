@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 linkTitle: "FAQ"
-weight: 51
+weight: 10
 type: list
 description: >-
   In this section, you will find frequently asked questions about Horusec.
@@ -90,3 +90,15 @@ Yes, all the market tools have its own data output. Horusec reads and puts it in
 
 ### **19. Is it possible to contribute to the project with a tool I already know?** 
 Yes, check out the tutorial to add [**tool you want in Horusec**]({{< ref path="/cli/analysis-tools/security-tools.md" lang="en">}}), you can use Horusec's analysis engine or an existing tool. 
+
+### **20. Horusec now supports the SARIF output format, but how does this file work?**
+
+**SARIF (Static Analysis Results Interchange Format)**, is a file format based on the JSON standard used in the output of static analysis tools. However, unlike the output file in JSON format, SARIF has a dictionary with all the rules of all the engines, this simplifies the use of several analysis tools for the same analyzed target.
+
+**Why use SARIF as output in Horusec?**
+
+- Supports all engines with less effort in deployment, as it requires few adjustments such as semantic changes or basic adjustments to the file structure.
+- Using an output file in SARIF format in Horusec avoids errors in converting a JSON file to SARIF.
+- It has native integration with [**Github's security dashboard.**](https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/sarif-support-for-code-scanning#example-showing-all-supported-sarif-properties)
+
+See in this section [**how to get a SARIF output**]({{< ref path="/cli/commands-and-flags.md#example-6-using-to-get-sarif-exit" lang="en" >}}).
