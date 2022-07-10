@@ -726,3 +726,17 @@ In pipelines it is extremely important to have the privileged configuration enab
     commands:
       - docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd)
 ```
+
+### Example 8: Sending vulnerabilities from CLI to web application using docker
+
+On the web application
+
+1. Create a workspace
+2. Create a repository, eg. `mysoft`
+3. Add a new token, eg. `b7a6fbac-e600-4ed1-8d6a-d098e844267a` will be generated
+
+On the CLI add the `-n` (repository-name) and `-a` (authorization) options, eg. for docker image locally
+
+```
+docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):/src/horusec horuszup/horusec-cli:latest horusec start -p /src/horusec -P $(pwd) --config-file-path=/src/horusec/horusec-config.json -a b7a6fbac-e600-4ed1-8d6a-d098e844267a -n mysoft
+```
